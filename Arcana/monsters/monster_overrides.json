@@ -168,12 +168,6 @@
     "death_drops": "mon_zombie_master_death_drops"
   },
   {
-    "id": "mon_zombie_hollow",
-    "copy-from": "mon_zombie_hollow",
-    "type": "MONSTER",
-    "death_drops": "mon_zombie_hollow_death_drops"
-  },
-  {
     "id": "mon_fleshy_shambler",
     "copy-from": "mon_fleshy_shambler",
     "type": "MONSTER",
@@ -259,12 +253,6 @@
     "copy-from": "mon_fungaloid",
     "type": "MONSTER",
     "death_drops": "mon_fungaloid_death_drops"
-  },
-  {
-    "id": "mon_fungaloid_young",
-    "copy-from": "mon_fungaloid_young",
-    "type": "MONSTER",
-    "death_drops": "mon_fungaloid_young_death_drops"
   },
   {
     "id": "mon_fungaloid_queen",
