@@ -438,6 +438,18 @@
     ]
   },
   {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_MAGICLYSM_ARCANA_VEILBLADE_MUTANT",
+    "condition": { "math": [ "0 == 1" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
+    "condition": { "math": [ "0 == 1" ] },
+    "effect": [  ]
+  },
+  {
     "id": "arcana_veilblade_react_mutants_consequence",
     "type": "SPELL",
     "name": { "str": "Arcana Veilblade Anti-mutant Zap" },
