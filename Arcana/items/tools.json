@@ -1676,6 +1676,11 @@
         "values": [ { "value": "INTELLIGENCE", "add": 4 }, { "value": "REGEN_MANA", "multiply": 0.5 } ],
         "ench_effects": [ { "effect": "arcana_veilblade_halt_portal_storms", "intensity": 1 } ],
         "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_veilblade" } ] } ] }
+      },
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "intermittent_activation": { "effects": [ { "frequency": "10 seconds", "spell_effects": [ { "id": "arcana_veilblade_react_mutants" } ] } ] }
       }
     ],
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],

@@ -36,7 +36,7 @@
     "energy_increment": -400,
     "damage_type": "pure",
     "field_id": "fd_fatigue",
-    "field_chance": 20,
+    "field_chance": 10,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
     "spell_class": "ARCANA_SANGUINE_MARKS",

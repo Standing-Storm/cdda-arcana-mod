@@ -1,0 +1,8 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
+    "condition": { "or": [ { "math": [ "u_sum_traits_of_category_char_has('MANATOUCHED') >= 3" ] } ] },
+    "effect": [  ]
+  }
+]

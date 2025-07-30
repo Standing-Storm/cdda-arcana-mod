@@ -381,5 +381,76 @@
         "direction_var": { "context_val": "player_position" }
       }
     ]
+  },
+  {
+    "id": "arcana_veilblade_react_mutants",
+    "type": "SPELL",
+    "name": { "str": "Arcana Veilblade Anti-mutant" },
+    "description": "This punishes you if you're a mutant and try to use the veilblade.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_ARCANA_VEILBLADE_MUTANT",
+    "shape": "blast"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_VEILBLADE_MUTANT",
+    "condition": {
+      "or": [
+        { "test_eoc": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT" },
+        { "test_eoc": "EOC_CONDITION_MAGICLYSM_ARCANA_VEILBLADE_MUTANT" },
+        { "and": [ { "u_has_flag": "MUTATION_THRESHOLD" }, { "not": { "u_has_trait": "THRESH_VEIL" } } ] },
+        { "math": [ "u_sum_traits_of_category_char_has('ALPHA') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('BATRACHIAN') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('BEAST') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('BIRD') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('CATTLE') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('CEPHALOPOD') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('CHIMERA') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('CHIROPTERAN') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('CRUSTACEAN') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('DRAGONBLOOD') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('ELFA') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('FELINE') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('FISH') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('GASTROPOD') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('INSECT') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('LIZARD') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('LUPINE') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('MARLOSS') >= 1" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('MEDICAL') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('MOUSE') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('MYCUS') >= 1" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('PLANT') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('RABBIT') >= 1" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('RAPTOR') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('RAT') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('SLIME') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('SPIDER') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('TROGLOBITE') >= 5" ] },
+        { "math": [ "u_sum_traits_of_category_char_has('URSINE') >= 5" ] }
+      ]
+    },
+    "effect": [
+      { "u_message": "The ritual blade glows briefly and a shock passes through your entire body!", "type": "bad" },
+      { "u_cast_spell": { "id": "arcana_veilblade_react_mutants_consequence", "hit_self": true } }
+    ]
+  },
+  {
+    "id": "arcana_veilblade_react_mutants_consequence",
+    "type": "SPELL",
+    "name": { "str": "Arcana Veilblade Anti-mutant Zap" },
+    "description": "This is the actual spell that punishes you if you're a mutant and try to use the veilblade.",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "SPLIT_DAMAGE" ],
+    "effect": "attack",
+    "effect_str": "stunned",
+    "shape": "blast",
+    "min_damage": 12,
+    "max_damage": 30,
+    "damage_type": "pure",
+    "min_duration": 100,
+    "max_duration": 100
   }
 ]

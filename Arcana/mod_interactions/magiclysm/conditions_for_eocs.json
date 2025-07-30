@@ -1,0 +1,29 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
+    "condition": {
+      "or": [
+        {
+          "and": [ { "u_has_trait": "RAVENFOLK_BUILD" }, { "math": [ "u_sum_traits_of_category_char_has('SPECIES_RAVENFOLK') <= 12" ] } ]
+        },
+        {
+          "and": [ { "u_has_trait": "ELVEN_BUILD" }, { "math": [ "u_sum_traits_of_category_char_has('SPECIES_ELF') <= 12" ] } ]
+        },
+        {
+          "and": [ { "u_has_trait": "DWARVEN_BUILD" }, { "math": [ "u_sum_traits_of_category_char_has('DWARVEN_BUILD') <= 12" ] } ]
+        },
+        {
+          "and": [ { "u_has_trait": "GOBLIN_BUILD" }, { "math": [ "u_sum_traits_of_category_char_has('SPECIES_GOBLIN') <= 12" ] } ]
+        },
+        {
+          "and": [
+            { "u_has_trait": "LIZARDFOLK_BUILD" },
+            { "math": [ "u_sum_traits_of_category_char_has('SPECIES_LIZARDFOLK') <= 12" ] }
+          ]
+        }
+      ]
+    },
+    "effect": [  ]
+  }
+]
