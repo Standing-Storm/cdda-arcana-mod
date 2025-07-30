@@ -12,7 +12,7 @@
   {
     "id": "arcana_mark_destructive_absorption",
     "type": "SPELL",
-    "name": { "str": "Destructive Absorption" },
+    "name": { "str": "Rending of the Veils" },
     "description": "Using this spell will drain energy from your surroundings, creating a void in reality that will heavily damage a single target, rapidly restoring your stamina afterward.  Beware the risk of tearing the fabric of reality.",
     "message": "With a strange gesture, the fabric of the Veil warps and decays.  %s!",
     "effect": "attack",
@@ -36,7 +36,7 @@
     "energy_increment": -400,
     "damage_type": "pure",
     "field_id": "fd_fatigue",
-    "field_chance": 100,
+    "field_chance": 20,
     "min_field_intensity": 1,
     "max_field_intensity": 1,
     "spell_class": "ARCANA_SANGUINE_MARKS",
