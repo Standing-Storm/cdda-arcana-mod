@@ -1,0 +1,10 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_DRAGONBLOOD_LOAD_GIVE_MAGIC_TYPE",
+    "eoc_type": "EVENT",
+    "required_event": "game_load",
+    "condition": { "math": [ "u_spell_count('school': 'ARCANA_SANGUINE_MARKS') >= 1" ] },
+    "effect": [ { "u_add_trait": "ARCANA_SANGUINE_MARKS" } ]
+  }
+]
