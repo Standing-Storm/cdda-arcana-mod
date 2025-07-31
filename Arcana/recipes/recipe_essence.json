@@ -10,7 +10,7 @@
     "time": "2 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 95, 5 ],
-    "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_elementalism", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_purification" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "result_mult": 20,
     "using": [ [ "arcana_purification_standard", 1 ] ],
