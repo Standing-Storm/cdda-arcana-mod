@@ -5,7 +5,7 @@
     "time": "30 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_grove",
@@ -13,7 +13,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_sanguine",
@@ -21,7 +21,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_chalice",
@@ -29,7 +29,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_flame",
@@ -37,7 +37,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_sanguine_tenet",
@@ -45,7 +45,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_chalice_tenet",
@@ -53,7 +53,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_flame_tenet",
@@ -61,7 +61,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_sanguine_hint",
@@ -69,7 +69,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_chalice_hint",
@@ -77,7 +77,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_flame_hint",
@@ -85,7 +85,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_starry_missive",
@@ -93,7 +93,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "note_soa_mission",
@@ -101,7 +101,7 @@
     "time": "6 s",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "essence_pure",
@@ -120,7 +120,7 @@
     "time": "1 m",
     "activity_level": "LIGHT_EXERCISE",
     "components": [ [ [ "paper", 5 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "silver_glyph",
@@ -130,7 +130,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "components": [ [ [ "silver_small", 95 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "CF_golden_scale",
@@ -140,7 +140,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "components": [ [ [ "gold_small", 5 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_magicfordummies",
@@ -151,7 +151,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 20 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_potioncraft",
@@ -162,7 +162,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_scrollcraft",
@@ -173,7 +173,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_bloodmagic",
@@ -184,7 +184,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_hexenhammer",
@@ -195,7 +195,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_sacrifice",
@@ -206,7 +206,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_syncretism",
@@ -217,7 +217,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "book_summoning",
@@ -228,7 +228,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_potioncraft",
@@ -239,7 +239,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_scrollcraft",
@@ -250,7 +250,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_bloodmagic",
@@ -261,7 +261,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_hexenhammer",
@@ -272,7 +272,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_sacrifice",
@@ -283,7 +283,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_syncretism",
@@ -294,7 +294,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "index_summoning",
@@ -305,7 +305,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "arcana_mech_shem",
@@ -388,76 +388,6 @@
     "components": [ [ [ "silver_small", 6 ] ], [ [ "essence_dull", 300 ] ] ]
   },
   {
-    "result": "cyborg_matrix",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 15 ] ], [ [ "plastic_chunk", 15 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
-    "result": "exodii_computer",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 10 ] ], [ [ "plastic_chunk", 20 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
-    "result": "exodii_module",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
-    "result": "exodii_sensor",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 2 ] ], [ [ "plastic_chunk", 1 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
-    "result": "exodii_motor",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
-    "result": "exodii_scanner_dish",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 1 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
-    "result": "exodii_portalizer",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "40 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 1 ] ], [ [ "shadow_gem", 1 ] ], [ [ "essence_dull", 5 ] ] ]
-  },
-  {
     "result": "flame_talisman",
     "type": "uncraft",
     "skill_used": "magic",
@@ -466,7 +396,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "water_talisman",
@@ -476,8 +406,8 @@
     "time": "10 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 20 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "10" ]
   },
   {
     "result": "earth_talisman",
@@ -487,8 +417,8 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "10" ]
   },
   {
     "result": "air_talisman",
@@ -498,8 +428,8 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "10" ]
   },
   {
     "result": "lightning_talisman",
@@ -509,8 +439,8 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 20 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "10" ]
   },
   {
     "result": "forest_talisman",
@@ -520,8 +450,8 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "10" ]
   },
   {
     "result": "spirit_talisman",
@@ -531,8 +461,8 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 4 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "components": [ [ [ "essence_dull", 10 ] ], [ [ "ash", 4 ] ] ],
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "charm_bone_empowered",
@@ -1101,7 +1031,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_moon",
@@ -1112,7 +1042,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_artiface",
@@ -1124,7 +1054,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_nature",
@@ -1136,7 +1066,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_destruction",
@@ -1148,7 +1078,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_subversion",
@@ -1160,7 +1090,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_confusion",
@@ -1171,7 +1101,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_free_action",
@@ -1182,7 +1112,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_insight",
@@ -1193,7 +1123,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_plants",
@@ -1204,7 +1134,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 30 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_agile",
@@ -1215,7 +1145,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_clarity",
@@ -1226,7 +1156,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_acidspray",
@@ -1237,7 +1167,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_elecresist",
@@ -1248,7 +1178,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_flamearmor",
@@ -1259,7 +1189,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_strength",
@@ -1270,7 +1200,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_lightning",
@@ -1281,7 +1211,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_cleric",
@@ -1292,7 +1222,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 50 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_invis",
@@ -1303,7 +1233,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_clairvoyance",
@@ -1314,7 +1244,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "totem_heal",
@@ -1325,7 +1255,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 80 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_confusion",
@@ -1336,7 +1266,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_free_action",
@@ -1347,7 +1277,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_insight",
@@ -1358,7 +1288,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_plants",
@@ -1369,7 +1299,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_agile",
@@ -1380,7 +1310,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_clarity",
@@ -1391,7 +1321,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_acidspray",
@@ -1402,7 +1332,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_elecresist",
@@ -1413,7 +1343,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_flame_armor",
@@ -1424,7 +1354,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_might",
@@ -1435,7 +1365,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_lightning",
@@ -1446,7 +1376,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_cleric",
@@ -1457,7 +1387,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_invis",
@@ -1468,7 +1398,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_clairvoyance",
@@ -1479,7 +1409,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_heal",
@@ -1490,7 +1420,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_moon",
@@ -1501,7 +1431,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_sun",
@@ -1512,7 +1442,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_destruction",
@@ -1523,7 +1453,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_nature",
@@ -1534,7 +1464,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_artiface",
@@ -1545,7 +1475,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_subversion",
@@ -1556,7 +1486,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 200 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_earthweaving",
@@ -1567,7 +1497,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 150 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_dark_lance",
@@ -1578,7 +1508,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "scroll_spell_phase_shield",
@@ -1589,7 +1519,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "satchel_eternity",
@@ -1631,7 +1561,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ], [ [ "book_hexenhammer", -1 ] ] ],
     "components": [ [ [ "essence_dull", 200 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "10" ]
   },
   {
     "result": "arcane_accelerator_railgun",
