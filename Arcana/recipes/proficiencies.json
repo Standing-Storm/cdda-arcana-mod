@@ -24,9 +24,9 @@
     "category": "prof_arcana",
     "description": "You have an understanding of how the hidden forces of the world interact and possible ways to manipulate them yourself.",
     "can_learn": true,
-    "default_time_multiplier": 1.2,
+    "default_time_multiplier": 1.1,
     "default_skill_penalty": 0.75,
-    "time_to_learn": "20 h"
+    "time_to_learn": "16 h"
   },
   {
     "type": "proficiency",
@@ -35,7 +35,7 @@
     "category": "prof_arcana",
     "description": "You have learned the necessary ways and methods to write down occult formulae so they can be learned and mastered.",
     "can_learn": true,
-    "default_time_multiplier": 1.2,
+    "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "24 h",
     "required_proficiencies": [ "prof_thaumatology" ]
@@ -47,7 +47,7 @@
     "category": "prof_arcana",
     "description": "You have an understanding of what the Great Work entails and just how difficult it is to achieve.",
     "can_learn": true,
-    "default_time_multiplier": 1.2,
+    "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "16 h"
   },
@@ -58,7 +58,7 @@
     "category": "prof_arcana",
     "description": "You are familiar with the process of using alchemy to change one substance into another.",
     "can_learn": true,
-    "default_time_multiplier": 1.2,
+    "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "16 h",
     "required_proficiencies": [ "prof_arcana_alchemy" ]
@@ -70,9 +70,20 @@
     "category": "prof_arcana",
     "description": "You know exactly how to create tonics and tinctures that have preternatural effects from anomalous materials.",
     "can_learn": true,
-    "default_time_multiplier": 1.2,
+    "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "16 h",
     "required_proficiencies": [ "prof_arcana_alchemy" ]
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_enchantment",
+    "name": { "str": "Principles of Imbuement" },
+    "category": "prof_arcana",
+    "description": "You are familiar with using residuum to impart anomalous properties to ordinary objects.",
+    "can_learn": true,
+    "default_time_multiplier": 1.1,
+    "default_skill_penalty": 1,
+    "time_to_learn": "16 h"
   }
 ]
