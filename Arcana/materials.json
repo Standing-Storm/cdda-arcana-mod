@@ -39,7 +39,7 @@
     "type": "material",
     "id": "arcana_fuel_essence_pure",
     "copy-from": "essencemat",
-    "name": "Crystallized Essence",
+    "name": "Quintessence",
     "fuel_data": { "energy": "100000 kJ" }
   },
   {

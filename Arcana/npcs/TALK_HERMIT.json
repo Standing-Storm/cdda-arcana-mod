@@ -816,7 +816,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_2",
-    "dynamic_line": "There are two methods.  The first is to draw upon the energy given off by a portal.  You need to be close to one, as close as you can without stepping into it.  Other than that, crystallized essence can be used as a substitute.",
+    "dynamic_line": "There are two methods.  The first is to draw upon the energy given off by a portal.  You need to be close to one, as close as you can without stepping into it.  Other than that, quintessence can be used as a substitute.",
     "responses": [
       { "text": "So that's why you mentioned an anomaly.", "topic": "TALK_HERMIT_QUEST_HELP_2_ANOMALY" },
       { "text": "Crystallized essence?", "topic": "TALK_HERMIT_QUEST_HELP_2_ESSENCE" },
@@ -2421,7 +2421,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_SPELL_MENU",
-    "dynamic_line": "There are many secrets that He From Beyond The Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring crystallized essence in exchange, as I can use it for these rituals and for other wards I maintain here.",
+    "dynamic_line": "There are many secrets that He From Beyond The Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring quintessence in exchange, as I can use it for these rituals and for other wards I maintain here.",
     "responses": [
       {
         "text": "What can you tell me about Free Action?",
@@ -2457,7 +2457,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_SPELL_MENU_1",
-    "dynamic_line": "Though both it and Surging Force can halt time briefly, the main purpose of Free Action is in traversing rough terrain, slipping out of a monster's grasp, or negating other hazards that might slow you down.  I use it to traverse the woods when gathering firewood or hunting, I'm not as light on my feet as I used to be.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+    "dynamic_line": "Though both it and Surging Force can halt time briefly, the main purpose of Free Action is in traversing rough terrain, slipping out of a monster's grasp, or negating other hazards that might slow you down.  I use it to traverse the woods when gathering firewood or hunting, I'm not as light on my feet as I used to be.  If you bring me 1 mote of quintessence, I can imprint this knowledge upon you.",
     "responses": [
       {
         "text": "Sure, here you go.",
@@ -2477,7 +2477,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_SPELL_MENU_2",
-    "dynamic_line": "It's a warding spell that lashes out against those who strike you, similar to the more well-known Shadowy Shield.  Rather than harming your attacker directly, it shunts them a short distance away from you.  It does the same to any other threats close enough, when it activates.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+    "dynamic_line": "It's a warding spell that lashes out against those who strike you, similar to the more well-known Shadowy Shield.  Rather than harming your attacker directly, it shunts them a short distance away from you.  It does the same to any other threats close enough, when it activates.  If you bring me 1 mote of quintessence, I can imprint this knowledge upon you.",
     "responses": [
       {
         "text": "Sure, here you go.",
@@ -2497,7 +2497,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_SPELL_MENU_3",
-    "dynamic_line": "This secret has been passed down among a few of the more learned ascetics of my order.  It shrouds your aura against monsters from Beyond, blinding them to your presence.  It doesn't hide you from the undead I've found, earthly life in general seems to spot you more easily under its effect, but it has its uses.  If you bring me 1 crystallized essence, I can imprint this knowledge upon you.",
+    "dynamic_line": "This secret has been passed down among a few of the more learned ascetics of my order.  It shrouds your aura against monsters from Beyond, blinding them to your presence.  It doesn't hide you from the undead I've found, earthly life in general seems to spot you more easily under its effect, but it has its uses.  If you bring me 1 mote of quintessence, I can imprint this knowledge upon you.",
     "responses": [
       {
         "text": "Sure, here you go.",

@@ -48,7 +48,7 @@
     "symbol": "(",
     "color": "light_blue",
     "name": { "str": "rift focus cannon" },
-    "description": "A bulky, heavy-duty experimental rifle with peculiar golden inlays along the length of its body.  Exploits otherworldly energy to tear a rift in reality, focusing it into a highly-destructive beam that risks carving wounds in The Veil with each shot.  While its impact creates an EMP effect, the beam itself is utterly useless against robotic targets, and some anomalous monsters may also be immune to it.  Consuming crystallized essence to fire makes its overall energy usage considerable, but its overwhelming power makes it more efficient than most energy weapons.",
+    "description": "A bulky, heavy-duty experimental rifle with peculiar golden inlays along the length of its body.  Exploits otherworldly energy to tear a rift in reality, focusing it into a highly-destructive beam that risks carving wounds in The Veil with each shot.  While its impact creates an EMP effect, the beam itself is utterly useless against robotic targets, and some anomalous monsters may also be immune to it.  Consuming quintessence to fire makes its overall energy usage considerable, but its overwhelming power makes it more efficient than most energy weapons.",
     "price": "1800 USD",
     "price_postapoc": "80 USD",
     "material": [ "steel", "plastic" ],
