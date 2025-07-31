@@ -472,7 +472,7 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ] ]
+    "components": [ [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "stinger_flute_empowered",
@@ -482,7 +482,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 100 ] ] ]
+    "components": [ [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "triffid_garland_empowered",
@@ -492,7 +492,7 @@
     "time": "30 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 70 ] ] ]
+    "components": [ [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "amulet_exotic_empowered",
@@ -502,7 +502,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 90 ] ] ]
+    "components": [ [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "brooch_iridescent_empowered",
@@ -512,7 +512,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 110 ] ] ]
+    "components": [ [ [ "essence_dull", 20 ] ] ]
   },
   {
     "result": "meteoric_talisman",
