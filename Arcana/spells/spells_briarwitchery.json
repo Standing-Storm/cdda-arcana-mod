@@ -1,0 +1,39 @@
+[
+  {
+    "id": "arcana_briar_witchery",
+    "type": "magic_type",
+    "energy_source": "NONE",
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC", "NO_ARCANA_BRIARWITCHERY", "NO_SPELLCASTING" ],
+    "failure_cost_percent": 1,
+    "max_book_level": 0,
+    "cannot_cast_message": "The power of the Green will not answer you!"
+  },
+  {
+    "id": "arcana_briarwitchery_hide_from_unnatural",
+    "type": "SPELL",
+    "name": { "str": "Submersion into Nature" },
+    "description": "Using this spell will shroud you with a faded halo, which will make you undetectable to otherworldly creatures (Nether creatures, fungus, triffids, etc), in exchange for being easier to spot by any other creatures.",
+    "message": "\"I am one among the beasts of the wild…\"  You cast %s!",
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "effect_arcana_briarwitchery_hide_from_unnatural",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT", "NO_PROJECTILE" ],
+    "condition": { "math": [ "u_vitamin('arcana_briarwitch_vitamin') > 150" ] },
+    "max_level": 10,
+    "difficulty": 80,
+    "skill": "magic",
+    "min_duration": 96000,
+    "max_duration": 192000,
+    "duration_increment": 9600,
+    "base_casting_time": 360,
+    "final_casting_time": 180,
+    "casting_time_increment": -18,
+    "energy_source": "NONE",
+    "base_energy_cost": 4500,
+    "final_energy_cost": 2250,
+    "energy_increment": -225,
+    "spell_class": "ARCANA_BRIARWITCH",
+    "magic_type": "arcana_briar_witchery"
+  }
+]

@@ -838,17 +838,19 @@
   },
   {
     "type": "effect_type",
-    "id": "effect_arcana_temporal_aura",
-    "name": [ "The Otherworldly Guise" ],
+    "id": "effect_arcana_briarwitchery_hide_from_unnatural",
+    "name": [ "Submersion into Nature" ],
     "desc": [
-      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to mundane creatures."
+      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to natural creatures."
     ],
     "remove_message": "Your otherworldly guise drops.",
     "decay_messages": [ [ "Your otherworldly guise is beginning to fade.", "bad" ] ],
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
-    "enchantments": [ { "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] } ]
+    "enchantments": [
+      { "condition": { "test_eoc": "EOC_CONDITION_BRIARWITCHERY_IS_EFFECTIVE" }, "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] }
+    ]
   },
   {
     "type": "effect_type",

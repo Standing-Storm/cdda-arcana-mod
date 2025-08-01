@@ -19,5 +19,19 @@
         "values": [ { "value": "METABOLISM", "multiply": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') * 0.1" ] } } ]
       }
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_temporal_aura",
+    "name": [ "The Otherworldly Guise" ],
+    "desc": [
+      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to mundane creatures."
+    ],
+    "remove_message": "Your otherworldly guise drops.",
+    "decay_messages": [ [ "Your otherworldly guise is beginning to fade.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] } ]
   }
 ]

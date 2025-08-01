@@ -38,7 +38,15 @@
     "id": "ARCANA_SANGUINE_MARKS",
     "name": { "str": "Sanguine Marks" },
     "points": 0,
-    "description": "You a greater power in your blood, no longer fueled by pain or death but rather by the blood itself.",
+    "description": "You have a greater power in your blood, no longer fueled by pain or death but rather by the blood itself.",
+    "flags": [ "ATTUNEMENT" ]
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_BRIARWITCH",
+    "name": { "str": "Briarwitch" },
+    "points": 0,
+    "description": "You serve the Green.  Before humanity, before the animals, there was the Green, and its ancient power is yours to draw on.",
     "flags": [ "ATTUNEMENT" ]
   }
 ]

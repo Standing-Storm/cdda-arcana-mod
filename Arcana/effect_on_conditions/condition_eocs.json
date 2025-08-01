@@ -1,0 +1,8 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_BRIARWITCHERY_IS_EFFECTIVE",
+    "condition": { "math": [ "0 == 0" ] },
+    "effect": [  ]
+  }
+]

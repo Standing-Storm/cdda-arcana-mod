@@ -1286,7 +1286,7 @@
     "id": "arcana_item_orb_veil_wonder_ward",
     "type": "SPELL",
     "name": { "str": "Orb: Ward" },
-    "description": "Grants a random duration of Ward Against Evil.",
+    "description": "Grants a random duration of Abjuration of the Darkness.",
     "message": "You see a vision of something watching over you, among the strange sights within the orb.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],

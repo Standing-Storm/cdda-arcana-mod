@@ -575,7 +575,7 @@
     "name": "Keeper Mendicant",
     "description": "When your order crumbled, and the world fell into darkness soon thereafter, you were driven to wander in your struggle to survive.  But your oath is immortal, and when the stars are right you will find a way to serve the Shrouded King once more.",
     "points": 10,
-    "spells": [ { "id": "arcana_magic_temporal_aura", "level": 1 } ],
+    "spells": [ { "id": "arcana_magic_clairvoyance", "level": 1 } ],
     "skills": [
       { "level": 2, "name": "fabrication" },
       { "level": 3, "name": "tailor" },

@@ -30,6 +30,11 @@
     "info": "Prevents you from using any sanguine marks."
   },
   {
+    "id": "NO_ARCANA_BRIARWITCHERY",
+    "type": "json_flag",
+    "info": "Prevents you from using briarwitchery."
+  },
+  {
     "id": "MAGIC_USER",
     "type": "monster_flag",
     "//": "A monster that uses a lot of magic, for detection magic purposes."
