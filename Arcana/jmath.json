@@ -24,6 +24,12 @@
     "return": "0"
   },
   {
+    "id": "arcana_summoning_failure_chance",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
     "id": "weariness_calcs",
     "type": "jmath_function",
     "num_args": 0,

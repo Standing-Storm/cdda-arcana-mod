@@ -35,6 +35,14 @@
   },
   {
     "type": "mutation",
+    "id": "ARCANA_SUMMONING",
+    "name": { "str": "Evocation" },
+    "points": 0,
+    "description": "You have learned how to call beings from the Beyond and bind them to your service.",
+    "flags": [ "ATTUNEMENT" ]
+  },
+  {
+    "type": "mutation",
     "id": "ARCANA_SANGUINE_MARKS",
     "name": { "str": "Sanguine Marks" },
     "points": 0,
@@ -44,7 +52,7 @@
   {
     "type": "mutation",
     "id": "ARCANA_BRIARWITCH",
-    "name": { "str": "Briarwitch" },
+    "name": { "str": "Briarwitchery" },
     "points": 0,
     "description": "You serve the Green.  Before humanity, before the animals, there was the Green, and its ancient power is yours to draw on.",
     "flags": [ "ATTUNEMENT" ]

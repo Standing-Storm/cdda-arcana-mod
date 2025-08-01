@@ -1,0 +1,105 @@
+[
+  {
+    "id": "arcana_summoning",
+    "type": "magic_type",
+    "energy_source": "NONE",
+    "cannot_cast_flags": [ "NO_ARCANA_MAGIC", "NO_ARCANA_SUMMONING", "NO_SPELLCASTING" ],
+    "failure_cost_percent": 1,
+    "max_book_level": 5,
+    "cannot_cast_message": "You cannot reach out to the Beyond!",
+    "failure_chance_formula_id": "arcana_summoning_failure_chance"
+  },
+  {
+    "//": "Summoning spells characteristics only go up 10 levels, but the spells scale to level 15 for extra bonuses on the control roll",
+    "id": "arcana_summoning_succcessful_control",
+    "type": "SPELL",
+    "name": { "str": "Control Summon", "//~": "NO_I18N" },
+    "description": { "str": "This spell is used if the summoning control is successful.", "//~": "NO_I18N" },
+    "message": "",
+    "valid_targets": [ "ground", "ally", "hostile" ],
+    "flags": [ "SILENT" ],
+    "effect": "charm_monster",
+    "shape": "blast",
+    "energy_source": "STAMINA",
+    "max_level": 15,
+    "difficulty": 60,
+    "skill": "magic",
+    "min_aoe": 3,
+    "max_aoe": 3,
+    "min_damage": 10000,
+    "max_damage": 10000,
+    "min_range": 40,
+    "max_range": 40,
+    "min_duration": 7200000,
+    "max_duration": 14400000,
+    "duration_increment": 720000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning",
+    "targeted_monster_species": [ "ARCANA_SUMMONED" ]
+  },
+  {
+    "id": "arcana_summoning_crawling_things",
+    "type": "SPELL",
+    "name": { "str": "Call Forth the Crawling Ones" },
+    "description": "Using this spell will summon a twisted mockery of the human form to grasp at your foes, which will be loyal but not permanent.",
+    "message": "\"I am that which is grim yet necessary, for there is no life without death…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_CRAWLING_THINGS",
+    "energy_source": "STAMINA",
+    "max_level": 10,
+    "difficulty": 60,
+    "skill": "magic",
+    "min_damage": 1,
+    "max_damage": 3,
+    "damage_increment": 0.2,
+    "base_casting_time": 280,
+    "final_casting_time": 140,
+    "casting_time_increment": -14,
+    "base_energy_cost": 3500,
+    "final_energy_cost": 1750,
+    "energy_increment": -175,
+    "min_duration": 720000,
+    "max_duration": 1440000,
+    "duration_increment": 72000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_CRAWLING_THINGS",
+    "//": "94% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Crawling Thing",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_crawler_summoned",
+          "real_count": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 0.2) + 1" ] },
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 72000) + 720000" ] },
+          "spawn_message": "A hideous mockery of the human form materializes!",
+          "spawn_message_plural": "Hideous mockerys of the human form materialize!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The things you called up resist your attempt to control them!", "type": "bad" } ]
+      }
+    ]
+  }
+]

@@ -1724,6 +1724,14 @@
     "show_in_info": true
   },
   {
+    "id": "effect_arcana_summoning_bonus_chance",
+    "type": "effect_type",
+    "name": [ "Summoning Preparations" ],
+    "desc": [ "You have made the proper preparations for a successful summon…hopefully." ],
+    "rating": "good",
+    "show_in_info": true
+  },
+  {
     "id": "effect_arcana_underwater_travel",
     "type": "effect_type",
     "name": [ "Manannán's Cloak" ],

@@ -14,7 +14,8 @@
     "required_event": "game_load",
     "effect": [
       { "math": [ "u_spell_level('arcana_magic_ward_against_evil') = -1" ] },
-      { "math": [ "u_spell_level('arcana_magic_temporal_aura') = -1" ] }
+      { "math": [ "u_spell_level('arcana_magic_temporal_aura') = -1" ] },
+      { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes') = -1" ] }
     ]
   }
 ]

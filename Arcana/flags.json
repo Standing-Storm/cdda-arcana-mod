@@ -20,6 +20,11 @@
     "info": "Prevents you from using any Arcana magic."
   },
   {
+    "id": "NO_ARCANA_SUMMONING",
+    "type": "json_flag",
+    "info": "Prevents you from summonming any monsters."
+  },
+  {
     "id": "NO_ARCANA_BLOOD_MAGIC",
     "type": "json_flag",
     "info": "Prevents you from using any blood magic."

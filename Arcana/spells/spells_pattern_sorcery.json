@@ -10,6 +10,7 @@
   },
   {
     "id": "arcana_magic_agility",
+    "//": "Air spell",
     "type": "SPELL",
     "name": { "str": "Zéphuros's Grace" },
     "description": "Using this spell will grant a temporary speed and agility-enhancing effect.  It can be used on yourself or an ally.",
@@ -71,6 +72,7 @@
   },
   {
     "id": "arcana_magic_clairvoyance",
+    "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Sight Beyond Sight" },
     "description": "Using this spell will anoint you with an ivory halo, forcing open your inner eye and allowing you to see beyond.",
@@ -100,6 +102,7 @@
   },
   {
     "id": "arcana_magic_clarity_blood",
+    "//": "Forest spell",
     "type": "SPELL",
     "name": { "str": "Clarity of Blood" },
     "description": "Using this spell will grant protection against parasites and the Mycus.  It can be used on yourself or an ally.",
@@ -130,6 +133,7 @@
   },
   {
     "id": "arcana_magic_cold_ward",
+    "//": "Air spell",
     "type": "SPELL",
     "name": { "str": "Hyperborean Mantle" },
     "description": "Using this spell will protect against the cold, and all its side effects.  It can be used on yourself or an ally.",
@@ -239,6 +243,7 @@
   },
   {
     "id": "arcana_magic_conjure_flame",
+    "//": "Fire spell",
     "type": "SPELL",
     "name": { "str": "Incandescent Conflagration" },
     "description": "Using this spell will conjure a fiery explosion at the location targeted, starting fires and damaging terrain.  Anything caught in the center will take double damage, and it can be dangerous to nearby allies.",
@@ -396,6 +401,7 @@
   },
   {
     "id": "arcana_magic_earthweaving",
+    "//": "Earth spell",
     "type": "SPELL",
     "name": { "str": "Earthweaving" },
     "description": "Using this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from natural stone.",
@@ -458,6 +464,7 @@
   },
   {
     "id": "arcana_magic_elemental_burst",
+    "//": "Multi-element spell",
     "type": "SPELL",
     "name": { "str": "Wrath of the Elements" },
     "description": "Using this spell will blast a cone-shaped area with elemental force, leaving random side effects in its wake.  Creatures caught in the center line will take double damage.  Beware the risk of friendly fire!",
@@ -492,6 +499,7 @@
   },
   {
     "id": "arcana_magic_free_action",
+    "//": "Air spell",
     "type": "SPELL",
     "name": { "str": "The Unbound Heart" },
     "description": "Using this spell will grant protection against paralytic effects, grabs, and other hindrances, along with freezing time briefly to allow an escape.  It can be used on yourself or an ally.",
@@ -553,6 +561,7 @@
   },
   {
     "id": "arcana_magic_healing",
+    "//": "Forest spell",
     "type": "SPELL",
     "name": { "str": "Corporeal Restoration" },
     "description": "Using this spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.  It can be used on yourself or an ally.",
@@ -586,6 +595,7 @@
   },
   {
     "id": "arcana_magic_heat_ward",
+    "//": "Fire spell",
     "type": "SPELL",
     "name": { "str": "Forge-Hardened Flesh" },
     "description": "Using this spell will grant temporary resistance to heat and smoke.  Direct contact with flame will still cause harm, however.  It can be used on yourself or an ally.",
@@ -646,6 +656,7 @@
   },
   {
     "id": "arcana_magic_light",
+    "//": "Fire spell",
     "type": "SPELL",
     "name": { "str": "Lambent Glow" },
     "description": "Using this spell will conjure a field of magical light, lingering in the area around you.  It will also deal minor damage to creatures that shun the light.",
@@ -680,6 +691,7 @@
   },
   {
     "id": "arcana_magic_lightning_ward",
+    "//": "Lightning spell",
     "type": "SPELL",
     "name": { "str": "The Eye of the Storm" },
     "description": "Using this spell will grant a blessing that completely protects against lightning, at the expense of slowing you down a bit.  It can be cast on yourself or an ally.",
@@ -774,6 +786,7 @@
   },
   {
     "id": "arcana_magic_overgrowth",
+    "//": "Forest spell",
     "type": "SPELL",
     "name": { "str": "A Spread of Rampant Green" },
     "description": "Using this spell will conjure an eruption of the living forest, at the location you target.  It will destroy most furniture in the affected area and disrupt terrain.",
@@ -896,6 +909,7 @@
   },
   {
     "id": "arcana_magic_shockstorm",
+    "//": "Lightning spell",
     "type": "SPELL",
     "name": { "str": "Fulminating Wave" },
     "description": "Using this spell will call forth lightning all around you.  Anything close to you will take double damage.  Beware using it around allies.",
@@ -945,6 +959,7 @@
   },
   {
     "id": "arcana_magic_sundering_quake",
+    "//": "Earth spell",
     "type": "SPELL",
     "name": { "str": "Cleaving the Living Earth" },
     "description": "Using this spell will bring down structures and leave broken stones in your wake, damaging any foes (or allies) caught in the blast.  Enemies in the epicenter will take double damage.",
@@ -959,9 +974,9 @@
     ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "flags": [ "SILENT", "VERBAL", "SOMATIC", "NO_LEGS" ],
-    "min_damage": 80,
-    "max_damage": 160,
-    "damage_increment": 8,
+    "min_damage": 40,
+    "max_damage": 80,
+    "damage_increment": 4,
     "damage_type": "bash",
     "min_range": 10,
     "max_range": 20,
@@ -979,41 +994,6 @@
     "base_energy_cost": 4500,
     "final_energy_cost": 2250,
     "energy_increment": -225,
-    "spell_class": "PATTERN_SORCERY",
-    "magic_type": "arcana_pattern_sorcery"
-  },
-  {
-    "id": "arcana_magic_summon_giant_centipedes",
-    "type": "SPELL",
-    "name": { "str": "Call Forth the Crawling Ones" },
-    "description": "Using this spell will summon a twisted mockery of the human form to grasp at your foes, which will be loyal but not permanent.",
-    "message": "\"I am that which is grim yet necessary, for there is no life without death…\"  You cast %s!",
-    "valid_targets": [ "ground" ],
-    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
-    "effect": "summon",
-    "shape": "blast",
-    "effect_str": "mon_crawler_summoned",
-    "energy_source": "STAMINA",
-    "max_level": 10,
-    "difficulty": 60,
-    "skill": "magic",
-    "min_damage": 1,
-    "max_damage": 3,
-    "damage_increment": 0.2,
-    "min_range": 3,
-    "max_range": 8,
-    "range_increment": 0.5,
-    "min_aoe": 2,
-    "max_aoe": 2,
-    "base_casting_time": 280,
-    "final_casting_time": 140,
-    "casting_time_increment": -14,
-    "base_energy_cost": 3500,
-    "final_energy_cost": 1750,
-    "energy_increment": -175,
-    "min_duration": 720000,
-    "max_duration": 1440000,
-    "duration_increment": 72000,
     "spell_class": "PATTERN_SORCERY",
     "magic_type": "arcana_pattern_sorcery"
   },
@@ -1146,6 +1126,7 @@
   },
   {
     "id": "arcana_magic_underwater_travel",
+    "//": "Water spell",
     "type": "SPELL",
     "name": { "str": "Manannán's Cloak" },
     "description": "Using this spell will allow you to breathe, see, and move freely underwater.",
