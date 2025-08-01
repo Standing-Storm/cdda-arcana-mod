@@ -361,7 +361,7 @@
     "id": "arcanist_summoner_apprentice",
     "name": "Apprentice Summoner",
     "description": "You were a student of a master arcanist.  Not taught to merely take advantage of power from beyond, no.  Taught to draw it forth in living form, bind it to your will.  If only your master hadn't summoned more power than could be controlled.",
-    "spells": [ { "id": "arcana_magic_summon_shadow", "level": 1 }, { "id": "arcana_magic_summon_shadow_snake", "level": 1 } ],
+    "spells": [ { "id": "arcana_summoning_shadow", "level": 1 }, { "id": "arcana_magic_summon_shadow_snake", "level": 1 } ],
     "points": 6,
     "skills": [
       { "level": 4, "name": "magic" },
@@ -417,8 +417,9 @@
     "name": "Journeyman Summoner",
     "description": "You had left your apprenticeship and become a full-fledged sorcerer before the Cataclysm struck.  Your specialty was summoning, the drawing of creatures from Beyond into the earthly realms and binding them to your will.  You were intoxicated with your power and your control over the outer mysteries, but the Cataclysm showed you how little power you really had.",
     "spells": [
-      { "id": "arcana_magic_summon_shadow", "level": 4 },
+      { "id": "arcana_summoning_shadow", "level": 4 },
       { "id": "arcana_magic_summon_shadow_snake", "level": 5 },
+      { "id": "arcana_summoning_increase_success_chance", "level": 5 },
       { "id": "arcana_magic_summon_skeletal_dog", "level": 3 },
       { "id": "arcana_summoning_crawling_things", "level": 2 }
     ],

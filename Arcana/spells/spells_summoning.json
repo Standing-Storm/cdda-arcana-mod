@@ -38,10 +38,93 @@
     "targeted_monster_species": [ "ARCANA_SUMMONED" ]
   },
   {
+    "id": "arcana_summoning_increase_success_chance",
+    "type": "SPELL",
+    "name": "The Rites of Evocation",
+    "description": "Summoning is very risky but it's possible to make it less so with the proper rites.  This ritual, when performed ebfore a summoning attempt, greatly increases the odds of that which you summon submitting to your control.",
+    "message": "\"By the depths of the ocean, by the light of the stars, by the circles of the moon, I bind you, I bind you, I bind you…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "SILENT", "NO_FAIL" ],
+    "effect": "attack",
+    "effect_str": "effect_arcana_summoning_bonus_chance",
+    "shape": "blast",
+    "energy_source": "STAMINA",
+    "max_level": 1,
+    "difficulty": 10,
+    "min_duration": 6000,
+    "max_duration": 6000,
+    "base_casting_time": 6000,
+    "base_energy_cost": 2000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "id": "arcana_summoning_shadow",
+    "type": "SPELL",
+    "name": { "str": "Call Forth the Dark One" },
+    "description": "Using this spell will summon a living shadow that prowls the night.  You must be indoors or at night to summon the shadow.  It is <color_yellow>somewhat easy</color> to control.",
+    "message": "\"Neherit, otira atvess…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "condition": { "or": [ { "not": "is_day" }, { "not": "u_is_outside" } ] },
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_SHADOW",
+    "energy_source": "STAMINA",
+    "difficulty": 30,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 200,
+    "final_casting_time": 100,
+    "casting_time_increment": -10,
+    "base_energy_cost": 3000,
+    "final_energy_cost": 1500,
+    "energy_increment": -150,
+    "min_duration": 600000,
+    "max_duration": 1200000,
+    "duration_increment": 60000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_SHADOW",
+    "//": "98% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Dark One",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_shadow') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_shadow_summoned",
+          "real_count": 1,
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_shadow') * 60000) + 600000" ] },
+          "spawn_message": "An animate shadow detaches from a nearby patch of darkness!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The things you called up resist your attempt to control them!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
     "id": "arcana_summoning_crawling_things",
     "type": "SPELL",
     "name": { "str": "Call Forth the Crawling Ones" },
-    "description": "Using this spell will summon a twisted mockery of the human form to grasp at your foes, which will be loyal but not permanent.",
+    "description": "Using this spell will summon a twisted mockery of the human form to grasp at your foes.  It is <color_yellow>somewhat difficult</color> to control.",
     "message": "\"I am that which is grim yet necessary, for there is no life without death…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
