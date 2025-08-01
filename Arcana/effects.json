@@ -1720,5 +1720,24 @@
     "desc": [ "The bloodwalker has absorbed blood and is regenerating." ],
     "rating": "good",
     "show_in_info": true
+  },
+  {
+    "id": "effect_arcana_underwater_travel",
+    "type": "effect_type",
+    "name": [ "Manannán's Cloak" ],
+    "desc": [ "You can function freely underwater." ],
+    "remove_message": "The cloak protecting you from water is gone.",
+    "decay_messages": [ [ "You ability to travel beneath the waves is waning.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "60 m",
+    "max_intensity": 60,
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "condition": { "u_is_on_terrain_with_flag": "DEEP_WATER" },
+        "values": [ { "value": "REGEN_STAMINA", "multiply": 7.3 } ]
+      }
+    ],
+    "flags": [ "ITEM_WATERPROOFING", "GILLS", "EYE_MEMBRANE" ]
   }
 ]

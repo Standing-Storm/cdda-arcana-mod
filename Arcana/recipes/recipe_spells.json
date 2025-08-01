@@ -129,7 +129,7 @@
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
     "components": [ [ [ "iron_thorn", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "totem_elecresist",
@@ -149,7 +149,7 @@
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
     "components": [ [ [ "blob_gem", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "totem_flamearmor",
@@ -266,7 +266,7 @@
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
     "components": [ [ [ "bone_twisted", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "totem_translocation",
@@ -305,6 +305,29 @@
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
   },
   {
+    "result": "totem_underwater_travel",
+    "//": "Casts Manannán's Cloak",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "//2": "Requires purification, soaking, and polishing.",
+    "skills_required": [ [ "fabrication", 3 ] ],
+    "difficulty": 4,
+    "time": "2 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_elementalism", 4 ] ],
+    "using": [
+      [ "arcana_polishing_standard", 1 ],
+      [ "arcana_purification_standard", 1 ],
+      [ "arcana_soaking_standard", 1 ],
+      [ "arcana_essence_any", 2 ]
+    ],
+    "proficiencies": [ { "proficiency": "prof_arcana_purification" } ],
+    "components": [ [ [ "iridescent_plate", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
+  },
+  {
     "result": "scroll_spell_confusion",
     "type": "recipe",
     "category": "CC_ARCANA",
@@ -319,7 +342,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_confusion", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_free_action",
@@ -335,7 +358,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_free_action", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_insight",
@@ -351,7 +374,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_insight", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_plants",
@@ -367,7 +390,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_plants", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_acidspray",
@@ -383,7 +406,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_acidspray", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_agile",
@@ -399,7 +422,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_agile", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_clarity",
@@ -415,7 +438,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_clarity", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_elecresist",
@@ -431,7 +454,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_elecresist", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_flame_armor",
@@ -447,7 +470,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_flamearmor", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_lightning",
@@ -463,7 +486,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_lightning", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_might",
@@ -479,7 +502,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_strength", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_cleric",
@@ -495,7 +518,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_cleric", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_invis",
@@ -511,7 +534,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_invis", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_clairvoyance",
@@ -527,7 +550,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_clairvoyance", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_heal",
@@ -543,7 +566,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_heal", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_ethereal_translocation",
@@ -559,7 +582,23 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_translocation", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "scroll_spell_magic_underwater_travel",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "7 h",
+    "activity_level": "NO_EXERCISE",
+    "book_learn": [ [ "book_hexenhammer", 8 ] ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
+    "components": [ [ [ "totem_underwater_travel", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_spell_moon",
@@ -582,7 +621,7 @@
     ],
     "components": [ [ [ "scroll_moon", 1 ] ], [ [ "totem_flamearmor", 1 ], [ "totem_elecresist", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_incandescent_conflagration",
@@ -602,7 +641,7 @@
     ],
     "components": [ [ [ "scroll_sun", 1 ] ], [ [ "scroll_destruction", 1 ] ], [ [ "flame_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_sun",
@@ -622,7 +661,7 @@
     ],
     "components": [ [ [ "scroll_sun", 1 ] ], [ [ "totem_heal", 1 ], [ "totem_cleric", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_destruction",
@@ -642,7 +681,7 @@
     ],
     "components": [ [ [ "scroll_destruction", 1 ] ], [ [ "totem_clarity", 1 ], [ "totem_confusion", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_nature",
@@ -662,7 +701,7 @@
     ],
     "components": [ [ [ "scroll_nature", 1 ] ], [ [ "totem_acidspray", 1 ], [ "totem_plants", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_artiface",
@@ -682,7 +721,7 @@
     ],
     "components": [ [ [ "scroll_artiface", 1 ] ], [ [ "totem_lightning", 1 ], [ "totem_strength", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_subversion",
@@ -702,7 +741,7 @@
     ],
     "components": [ [ [ "scroll_subversion", 1 ] ], [ [ "totem_invis", 1 ], [ "totem_clairvoyance", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_earthweaving",
@@ -722,7 +761,7 @@
     ],
     "components": [ [ [ "scroll_artiface", 1 ] ], [ [ "scroll_nature", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_dark_lance",
@@ -742,7 +781,7 @@
     ],
     "components": [ [ [ "scroll_destruction", 1 ] ], [ [ "scroll_subversion", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "scroll_spell_phase_shield",
@@ -762,6 +801,6 @@
     ],
     "components": [ [ [ "scroll_sun", 1 ] ], [ [ "scroll_moon", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   }
 ]

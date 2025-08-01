@@ -1225,6 +1225,17 @@
     "flags": [ "10" ]
   },
   {
+    "result": "totem_underwater_travel",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 80 ] ] ],
+    "flags": [ "10" ]
+  },
+  {
     "result": "totem_invis",
     "type": "uncraft",
     "skill_used": "magic",
@@ -1409,6 +1420,28 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
+    "flags": [ "10" ]
+  },
+  {
+    "result": "scroll_spell_ethereal_translocation",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "40 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 80 ] ], [ [ "ash", 10 ] ] ],
+    "flags": [ "10" ]
+  },
+  {
+    "result": "scroll_spell_magic_underwater_travel",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
     "flags": [ "10" ]
   },
   {
