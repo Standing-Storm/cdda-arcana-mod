@@ -1,0 +1,70 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLESSING_PURITY_OF_FORM",
+    "eoc_type": "EVENT",
+    "effect": [
+      { "math": [ "u_pain() += (15 + rand(20) )" ] },
+      {
+        "if": { "u_has_trait": "HUMAN_BUILD" },
+        "then": [
+          { "math": [ "u_vitamin('mutagen_human')", "+=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "+=", "1000" ] },
+          { "u_mutate": 0 },
+          { "math": [ "u_vitamin('mutagen_human')", "-=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "-=", "1000" ] }
+        ]
+      },
+      {
+        "if": { "u_has_trait": "DWARVEN_BUILD" },
+        "then": [
+          { "math": [ "u_vitamin('mutagen_species_dwarf')", "+=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "+=", "1000" ] },
+          { "u_mutate": 0 },
+          { "math": [ "u_vitamin('mutagen_species_dwarf')", "-=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "-=", "1000" ] }
+        ]
+      },
+      {
+        "if": { "u_has_trait": "ELVEN_BUILD" },
+        "then": [
+          { "math": [ "u_vitamin('mutagen_species_elf')", "+=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "+=", "1000" ] },
+          { "u_mutate": 0 },
+          { "math": [ "u_vitamin('mutagen_species_elf')", "-=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "-=", "1000" ] }
+        ]
+      },
+      {
+        "if": { "u_has_trait": "GOBLIN_BUILD" },
+        "then": [
+          { "math": [ "u_vitamin('mutagen_species_goblin')", "+=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "+=", "1000" ] },
+          { "u_mutate": 0 },
+          { "math": [ "u_vitamin('mutagen_species_goblin')", "-=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "-=", "1000" ] }
+        ]
+      },
+      {
+        "if": { "u_has_trait": "LIZARDFOLK_BUILD" },
+        "then": [
+          { "math": [ "u_vitamin('mutagen_species_lizardfolk')", "+=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "+=", "1000" ] },
+          { "u_mutate": 0 },
+          { "math": [ "u_vitamin('mutagen_species_lizardfolk')", "-=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "-=", "1000" ] }
+        ]
+      },
+      {
+        "if": { "u_has_trait": "RAVENFOLK_BUILD" },
+        "then": [
+          { "math": [ "u_vitamin('mutagen_species_ravenfolk')", "+=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "+=", "1000" ] },
+          { "u_mutate": 0 },
+          { "math": [ "u_vitamin('mutagen_species_ravenfolk')", "-=", "2500" ] },
+          { "math": [ "u_vitamin('mutagen')", "-=", "1000" ] }
+        ]
+      }
+    ]
+  }
+]

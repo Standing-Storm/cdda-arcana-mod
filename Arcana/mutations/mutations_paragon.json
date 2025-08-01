@@ -24,6 +24,17 @@
   },
   {
     "type": "mutation",
+    "id": "VEIL_PURIFY_FORM",
+    "name": { "str": "Purity of Form" },
+    "points": 1,
+    "description": "\"Those who would preserve this world from corruption must take care to remain uncorrupted themselves.\"\nUnknowable forces have given you a gift, to cleanse your physical body of the Cataclysm's corruption.",
+    "valid": false,
+    "purifiable": false,
+    "category": [ "VEIL" ],
+    "spells_learned": [ [ "arcana_blessing_purity_of_form", 1 ] ]
+  },
+  {
+    "type": "mutation",
     "id": "SPELL_SMOKE",
     "//": "IDs for Arcane Blessings are reused to reduce the amount of obsolete JSON.",
     "name": { "str": "Sign of Alteration I" },

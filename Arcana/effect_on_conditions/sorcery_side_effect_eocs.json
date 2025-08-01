@@ -3,7 +3,7 @@
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_WEARINESS_ADD_WEARINESS_COST",
     "eoc_type": "EVENT",
-    "//": "All magic costs weariness.  Arcane Blessings cost less, and blood magic and briarwitchery cost much less.",
+    "//": "All magic costs weariness.  Arcane Blessings cost less, and blood magic and briarwitchery cost much less. Blood magic only if you have to use your own blood, and briarwitchery only if you aren't in the wild",
     "required_event": "spellcasting_finish",
     "condition": {
       "and": [
@@ -27,7 +27,7 @@
         "else": {
           "if": { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
           "then": {
-            "math": [ "u_spell_weariness_cost", "=", "(5 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+            "math": [ "u_spell_weariness_cost", "=", "(7 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
           },
           "else": {
             "if": {
