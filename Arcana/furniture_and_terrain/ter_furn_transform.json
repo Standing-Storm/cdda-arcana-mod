@@ -470,7 +470,7 @@
   },
   {
     "type": "ter_furn_transform",
-    "id": "druid_summoned_brambles",
+    "id": "arcana_summoned_brambles",
     "furniture": [
       {
         "result": "f_druid_brambles",
@@ -499,5 +499,10 @@
     "type": "ter_furn_transform",
     "id": "ter_arcana_clean_up_blood",
     "field": [ { "result": [ "fd_null" ], "valid_field": [ "fd_blood" ], "message": "" } ]
+  },
+  {
+    "type": "ter_furn_transform",
+    "id": "ter_arcana_create_rift_in_ground",
+    "terrain": [ { "result": "t_pit", "valid_flags": [ "DIGGABLE" ], "message": "The ground caves in!" } ]
   }
 ]

@@ -4,7 +4,6 @@
     "id": "scroll_spell_phase_shield",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Halo of the Sun)", "str_pl": "Pattern Scrolls (Halo of the Sun)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
     "//2": "Barter value is 50 baseline, plus 10 times the Spell Rank of the spell it teaches you.  Magic Seals have a value half that of its related pattern scroll.",
@@ -24,8 +23,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, radiant designs seemingly bursting out from the paper…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -37,7 +35,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 7" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_phase_shield", "count": 1 }
               ]
             }
           ]
@@ -49,7 +48,6 @@
     "id": "scroll_spell_earthweaving",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Earthweaving)", "str_pl": "Pattern Scrolls (Earthweaving)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell will alter terrain at a single targeted point, raising and lowering earthen barriers from any diggable terrain, or raising and lowering solid rock from other walls or floors.\"",
     "price_postapoc": "90 USD",
@@ -68,8 +66,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, shifting intertwinned thorns and stony motifs…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -81,7 +78,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_earthweaving", "count": 1 }
               ]
             }
           ]
@@ -93,7 +91,6 @@
     "id": "scroll_spell_dark_lance",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Tenebrous Lance)", "str_pl": "Pattern Scrolls (Tenebrous Lance)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.\"",
     "price_postapoc": "100 USD",
@@ -112,8 +109,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 { "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…", "type": "good" },
@@ -122,7 +118,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_dark_lance", "count": 1 }
               ]
             }
           ]
@@ -134,7 +131,6 @@
     "id": "scroll_spell_sun",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Banish the Beyond)", "str_pl": "Pattern Scrolls (Banish the Beyond)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
     "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
@@ -154,8 +150,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, resembling rays of light shrouded in wings…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -167,7 +162,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_sun", "count": 1 }
               ]
             }
           ]
@@ -179,7 +175,6 @@
     "id": "scroll_spell_moon",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Hyperborean Mantle)", "str_pl": "Pattern Scrolls (Hyperborean Mantle)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will protect against the cold, and all its side effects.\"",
     "price_postapoc": "100 USD",
@@ -198,8 +193,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, constellations of alien skies…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 { "u_message": "You gaze deep into the strange patterns, constellations of alien skies…", "type": "good" },
@@ -208,7 +202,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_moon", "count": 1 }
               ]
             }
           ]
@@ -220,8 +215,7 @@
     "id": "scroll_spell_artiface",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Pattern Scroll (Cleaving the Living Earth)", "str_pl": "Pattern Scrolls (Cleaving the Living Earth)" },
+    "name": { "str": "Pattern Scroll (The Earth Trembles)", "str_pl": "Pattern Scrolls (The Earth Trembles)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will bring down structures and bury them in rubble, damaging creatures caught in the blast.\"",
     "price_postapoc": "130 USD",
     "use_action": {
@@ -239,8 +233,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -252,7 +245,51 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 8" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_artiface", "count": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "scroll_spell_create_rift_in_ground",
+    "copy-from": "scroll_magic_base",
+    "type": "ITEM",
+    "name": { "str": "Pattern Scroll (Yawn Wide the Rift)", "str_pl": "Pattern Scrolls (Yawn Wide the Rift)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will tear a rift in the ground, damaging buildings and causing anyone caught to fall in.\"",
+    "price_postapoc": "130 USD",
+    "use_action": {
+      "type": "effect_on_conditions",
+      "description": "Study the scroll",
+      "effect_on_conditions": [
+        {
+          "id": "EOC_scroll_create_rift_in_ground",
+          "condition": { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "<=", "0" ] },
+          "effect": [
+            {
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "then": [
+                { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "=", "1" ] },
+                {
+                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
+                  "type": "good"
+                }
+              ],
+              "else": [
+                {
+                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
+                  "type": "good"
+                },
+                {
+                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
+                  "type": "bad"
+                },
+                { "math": [ "u_pain()", "+=", "rand(10) + 8" ] },
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_create_rift_in_ground", "count": 1 }
               ]
             }
           ]
@@ -264,7 +301,6 @@
     "id": "scroll_spell_nature",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Wrath of the Elements)", "str_pl": "Pattern Scrolls (Wrath of the Elements)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will blast a cone-shaped area with a random elemental effect, with double damage for enemies caught in the center.\"",
     "price_postapoc": "120 USD",
@@ -283,8 +319,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, stirring strange instinctive responses in the back of your mind…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -296,7 +331,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 7" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_nature", "count": 1 }
               ]
             }
           ]
@@ -308,7 +344,6 @@
     "id": "scroll_spell_destruction",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Call Forth the Crawling Ones)", "str_pl": "Pattern Scrolls (Call Forth the Crawling Ones)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
     "price_postapoc": "110 USD",
@@ -327,8 +362,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -340,7 +374,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_destruction", "count": 1 }
               ]
             }
           ]
@@ -352,7 +387,6 @@
     "id": "scroll_spell_subversion",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Eclipse)", "str_pl": "Pattern Scrolls (Eclipse)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will bring forth monsters and darkness, in exchange for a long-lasting adrenaline surge, life-draining ability, and night vision.\"",
     "price_postapoc": "140 USD",
@@ -371,8 +405,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, symbols fading into incomprehensible motifs…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -384,7 +417,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 9" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_subversion", "count": 1 }
               ]
             }
           ]
@@ -396,7 +430,6 @@
     "id": "scroll_spell_agile",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Zéphuros's Grace)", "str_pl": "Pattern Scrolls (Zéphuros's Grace)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant a temporary speed and agility-enhancing effect.\"",
     "//": "Unlike divine pattern scrolls, basic pattern scrolls were rare but at least existed pre-cataclysm.",
@@ -417,8 +450,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, endless spirals weaving through each other…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 { "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…", "type": "good" },
@@ -427,7 +459,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_agile", "count": 1 }
               ]
             }
           ]
@@ -439,7 +472,6 @@
     "id": "scroll_spell_clairvoyance",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Sight Beyond Sight)", "str_pl": "Pattern Scrolls (Sight Beyond Sight)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will anoint you with an ivory halo, granting you sight beyond sight.\"",
     "price": "3000 USD",
@@ -459,8 +491,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 { "u_message": "You gaze deep into the strange patterns, an overlapping web of exotic eye motifs…", "type": "good" },
@@ -469,7 +500,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_clairvoyance", "count": 1 }
               ]
             }
           ]
@@ -481,7 +513,6 @@
     "id": "scroll_spell_clarity",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Clarity of Blood)", "str_pl": "Pattern Scrolls (Clarity of Blood)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant protection against parasites and the Mycus.\"",
     "price": "3000 USD",
@@ -501,8 +532,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, an alchemical circle with seemingly impossible geometries…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -514,7 +544,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_clarity", "count": 1 }
               ]
             }
           ]
@@ -526,7 +557,6 @@
     "id": "scroll_spell_confusion",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Anointment of Lunacy)", "str_pl": "Pattern Scrolls (Anointment of Lunacy)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will stun all hostiles in the area around you.\"",
     "price": "3000 USD",
@@ -546,8 +576,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, a ring of unearthly calligraphy giving way to inhuman imagery…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -559,7 +588,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_confusion", "count": 1 }
               ]
             }
           ]
@@ -571,7 +601,6 @@
     "id": "scroll_spell_acidspray",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Caustic Eruption)", "str_pl": "Pattern Scrolls (Caustic Eruption)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
     "price": "3000 USD",
@@ -591,8 +620,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -604,7 +632,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_acidspray", "count": 1 }
               ]
             }
           ]
@@ -616,7 +645,6 @@
     "id": "scroll_spell_free_action",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (The Unbound Heart)", "str_pl": "Pattern Scrolls (The Unbound Heart)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant protection against paralytic effects and other hindrances, along with briefly freezing time.\"",
     "price": "3000 USD",
@@ -636,8 +664,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, intricate lines giving a three-dimensional impression…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -649,7 +676,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 3" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_free_action", "count": 1 }
               ]
             }
           ]
@@ -661,7 +689,6 @@
     "id": "scroll_spell_heal",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Corporeal Restoration)", "str_pl": "Pattern Scrolls (Corporeal Restoration)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "price": "3000 USD",
@@ -681,8 +708,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -694,7 +720,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_heal", "count": 1 }
               ]
             }
           ]
@@ -706,7 +733,6 @@
     "id": "scroll_spell_flame_armor",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Forge-Hardened Flesh)", "str_pl": "Pattern Scrolls (Forge-Hardened Flesh)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant temporary resistance to heat and smoke, but not direct contact with fire.\"",
     "price": "3000 USD",
@@ -726,8 +752,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, strange designs that waver like dancing flames…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -739,7 +764,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_flame_armor", "count": 1 }
               ]
             }
           ]
@@ -751,7 +777,6 @@
     "id": "scroll_spell_insight",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Opening the Inner Eye)", "str_pl": "Pattern Scrolls (Opening the Inner Eye)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant a temporary boost to perception, and night vision.\"",
     "price": "3000 USD",
@@ -771,8 +796,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, peculiar symbols blending in with scenery of surreal perspectives…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -784,7 +808,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 3" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_insight", "count": 1 }
               ]
             }
           ]
@@ -796,7 +821,6 @@
     "id": "scroll_spell_elecresist",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (The Eye of the Storm)", "str_pl": "Pattern Scrolls (The Eye of the Storm)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant you immunity to lightning, at the cost of slowing you down.\"",
     "price": "3000 USD",
@@ -816,8 +840,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, endless linear paths intersecting and bending in ways defying the laws of geometry…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -829,7 +852,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_elecresist", "count": 1 }
               ]
             }
           ]
@@ -841,7 +865,6 @@
     "id": "scroll_spell_might",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Otherworldly Potence)", "str_pl": "Pattern Scrolls (Otherworldly Potence)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant a temporary boost to strength.\"",
     "price": "3000 USD",
@@ -861,8 +884,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, a maze of patterns bleeding into vague impressions of otherworldly animals…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -874,7 +896,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_might", "count": 1 }
               ]
             }
           ]
@@ -886,7 +909,6 @@
     "id": "scroll_spell_plants",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (A Spread of Rampant Green)", "str_pl": "Pattern Scrolls (A Spread of Rampant Green)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will conjure an eruption of the living forest, at the location you target.\"",
     "price": "3000 USD",
@@ -906,8 +928,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, weaving in and all throughout itself like ever-shifting ivy…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -919,7 +940,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 2" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_plants", "count": 1 }
               ]
             }
           ]
@@ -932,7 +954,6 @@
     "copy-from": "scroll_magic_base",
     "//": "ID retained to avoid breaking stuff.",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Obsidian Mantle of Shadows)", "str_pl": "Pattern Scrolls (Obsidian Mantle of Shadows)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike your attackers blind.\"",
     "price": "3000 USD",
@@ -952,8 +973,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, coiled serpentine lines winding into endless ouroboros motifs…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -965,7 +985,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_invis", "count": 1 }
               ]
             }
           ]
@@ -977,7 +998,6 @@
     "id": "scroll_spell_lightning",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Fulminating Wave)", "str_pl": "Pattern Scrolls (Fulminating Wave)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will call forth lightning all around you, with close enemies taking double damage.\"",
     "price": "3000 USD",
@@ -997,8 +1017,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, irregular jagged artwork folding in on itself…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -1010,7 +1029,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 2" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_lightning", "count": 1 }
               ]
             }
           ]
@@ -1022,7 +1042,6 @@
     "id": "scroll_spell_cleric",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Abjuration of the Darkness)", "str_pl": "Pattern Scrolls (Abjuration of the Darkness)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "price": "3000 USD",
@@ -1042,8 +1061,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -1055,7 +1073,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_cleric", "count": 1 }
               ]
             }
           ]
@@ -1067,7 +1086,6 @@
     "id": "scroll_spell_incandescent_conflagration",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Incandescent Conflagration)", "str_pl": "Pattern Scrolls (Incandescent Conflagration)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will summon a roar of flame in the target area, searing your enemies to the bone.\"",
     "price": "3000 USD",
@@ -1087,8 +1105,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -1100,7 +1117,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_incandescent_conflagration", "count": 1 }
               ]
             }
           ]
@@ -1112,7 +1130,6 @@
     "id": "scroll_spell_ethereal_translocation",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Ethereal Translocation)", "str_pl": "Pattern Scrolls (Ethereal Translocation)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will entangle you with your target, swapping both of your locations.\"",
     "price": "3000 USD",
@@ -1132,8 +1149,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -1145,7 +1161,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_ethereal_translocation", "count": 1 }
               ]
             }
           ]
@@ -1157,7 +1174,6 @@
     "id": "scroll_spell_magic_underwater_travel",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
     "name": { "str": "Pattern Scroll (Manannán's Cloak)", "str_pl": "Pattern Scrolls (Manannán's Cloak)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will allow you to travel under the waves with no ill effects.\"",
     "price": "3000 USD",
@@ -1177,8 +1193,7 @@
                 {
                   "u_message": "You gaze deep into the strange patterns, endless symbols and charts blending in with otherworldly iconography…",
                   "type": "good"
-                },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                }
               ],
               "else": [
                 {
@@ -1190,7 +1205,8 @@
                   "type": "bad"
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 5" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true }
+                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
+                { "u_consume_item": "scroll_spell_magic_underwater_travel", "count": 1 }
               ]
             }
           ]

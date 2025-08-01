@@ -25,8 +25,7 @@
   {
     "abstract": "scroll_magic_base",
     "type": "ITEM",
-    "subtypes": [ "COMESTIBLE" ],
-    "comestible_type": "MED",
+    "subtypes": [ "TOOL" ],
     "category": "tools",
     "name": { "str": "scroll base" },
     "weight": "415 g",
@@ -35,8 +34,7 @@
     "symbol": "!",
     "looks_like": "recipe_creepy",
     "color": "white",
-    "stack_size": 1,
-    "flags": [ "NO_SALVAGE", "NO_INGEST", "NUTRIENT_OVERRIDE" ]
+    "flags": [ "NO_SALVAGE" ]
   },
   {
     "abstract": "totem_base",
