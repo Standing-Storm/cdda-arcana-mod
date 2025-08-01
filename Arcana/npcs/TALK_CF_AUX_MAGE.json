@@ -158,7 +158,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_AUX_MAGE_SPELL_MENU",
-    "dynamic_line": "I know a few tricks I could help you learn; pattern sorcery, we call it.  Well, help is an overstatement.  They're hard to teach and most of it is internal.  I can give you the scrolls that will hopefully let you learn them, though.  The arts of Zéphuros's Grace, Incandescent Conflagration, and Ethereal Translocation.  If you have the coin, I'll put the materials and such together to help with learning the spell pattern.  Same sort of Golden Scales the others here use.",
+    "dynamic_line": "I know a few tricks I could help you learn; pattern sorcery, it was called.  Well, help is an overstatement.  They're hard to teach and most of it is internal.  I can give you the scrolls that will hopefully let you learn them, though.  The arts of Zéphuros's Grace, Incandescent Conflagration, and Ethereal Translocation.  If you have the coin, I'll put the materials and such together to help with learning the spell pattern.  Same sort of Golden Scales the others here use.",
     "responses": [
       {
         "text": "What can you tell me about Zéphuros's Grace?",
