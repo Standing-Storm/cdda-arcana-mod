@@ -12,13 +12,13 @@
           "or": [
             { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
             { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
-            { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
-            { "compare_string": [ "ARCANA_SANGUINE_MARKS", { "context_val": "school" } ] }
+            { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
           ]
         }
       ]
     },
     "effect": [
+      { "math": [ "u_spell_weariness_cost = 0" ] },
       {
         "if": { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
         "then": {
