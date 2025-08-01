@@ -27,10 +27,20 @@
         "else": {
           "if": { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
           "then": {
-            "math": [ "u_spell_weariness_cost", "=", "(10 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+            "math": [ "u_spell_weariness_cost", "=", "(5 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
           },
           "else": {
-            "math": [ "u_spell_weariness_cost", "=", "(5 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+            "if": {
+              "and": [
+                { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
+                {
+                  "not": { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
+                }
+              ]
+            },
+            "then": {
+              "math": [ "u_spell_weariness_cost", "=", "(5 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+            }
           }
         }
       },
