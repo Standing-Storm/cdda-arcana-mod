@@ -3,48 +3,48 @@
     "type": "scenario",
     "id": "arcane_seeker",
     "copy-from": "arcane_seeker",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "arcane_urban",
     "copy-from": "arcane_urban",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "surrounded",
     "copy-from": "surrounded",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "ambushed",
     "copy-from": "ambushed",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "summer_advanced_start",
     "copy-from": "summer_advanced_start",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "Mine_bottom",
     "copy-from": "Mine_bottom",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "migo_prisoner",
     "copy-from": "migo_prisoner",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   },
   {
     "type": "scenario",
     "id": "Mansion",
     "copy-from": "Mansion",
-    "extend": { "professions": [ "arcanist_operator" ] }
+    "extend": { "professions": [ "arcanist_operator", "arcanist_purifier" ] }
   }
 ]
