@@ -2,7 +2,6 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_BLESSING_PURITY_OF_FORM",
-    "eoc_type": "EVENT",
     "effect": [
       { "math": [ "u_pain() += (15 + rand(20) )" ] },
       {
