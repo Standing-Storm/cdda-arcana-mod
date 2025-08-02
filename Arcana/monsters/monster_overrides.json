@@ -556,6 +556,8 @@
     "copy-from": "mon_shadow",
     "type": "MONSTER",
     "melee_dice_sides": 3,
+    "vision_day": 5,
+    "vision_night": 50,
     "melee_damage": [ { "damage_type": "cold", "amount": 3 } ],
     "death_drops": "mon_shadow_death_drops",
     "extend": { "flags": [ "COLDPROOF" ], "categories": [ "CLASSIC" ] }

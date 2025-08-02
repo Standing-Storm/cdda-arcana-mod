@@ -17,7 +17,9 @@
       { "math": [ "u_spell_level('arcana_magic_temporal_aura') = -1" ] },
       { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes') = -1" ] },
       { "math": [ "u_spell_level('arcana_magic_summon_shadow') = -1" ] },
-      { "math": [ "u_spell_level('arcana_magic_dark_lance') = -1" ] }
+      { "math": [ "u_spell_level('arcana_magic_dark_lance') = -1" ] },
+      { "math": [ "u_spell_level('arcana_magic_summon_shadow_snake') = -1" ] },
+      { "math": [ "u_spell_level('arcana_magic_summon_skeletal_dog') = -1" ] }
     ]
   }
 ]

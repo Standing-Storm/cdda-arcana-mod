@@ -11,6 +11,7 @@
   },
   {
     "//": "Summoning spells characteristics only go up 10 levels, but the spells scale to level 15 for extra bonuses on the control roll",
+    "//2": "Control difficulty is spell Difficulty / 10, plus 6.",
     "id": "arcana_summoning_succcessful_control",
     "type": "SPELL",
     "name": { "str": "Control Summon", "//~": "NO_I18N" },
@@ -41,7 +42,7 @@
     "id": "arcana_summoning_increase_success_chance",
     "type": "SPELL",
     "name": "The Rites of Evocation",
-    "description": "Summoning is very risky but it's possible to make it less so with the proper rites.  This ritual, when performed ebfore a summoning attempt, greatly increases the odds of that which you summon submitting to your control.",
+    "description": "Summoning is very risky but it's possible to make it less so with the proper rites.  This ritual, when performed before a summoning attempt, greatly increases the odds of that which you summon submitting to your control.",
     "message": "\"By the depths of the ocean, by the light of the stars, by the circles of the moon, I bind you, I bind you, I bind you…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT", "NO_FAIL" ],
@@ -57,6 +58,72 @@
     "base_energy_cost": 2000,
     "spell_class": "ARCANA_SUMMONING",
     "magic_type": "arcana_summoning"
+  },
+  {
+    "id": "arcana_summoning_skeletal_dog",
+    "type": "SPELL",
+    "name": { "str": "Call Forth the Hound of Bone" },
+    "description": "Using this spell will summon an animalistic revenant, which will be loyal but not permanent.  It is <color_yellow>somewhat easy</color> to control.  You <color_yellow>must target diggable ground</color> for the spell to succeed.",
+    "message": "\"Loyal unto death, and even beyond…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_SKELETAL_DOG",
+    "energy_source": "STAMINA",
+    "difficulty": 30,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 160,
+    "final_casting_time": 80,
+    "casting_time_increment": -8,
+    "base_energy_cost": 2000,
+    "final_energy_cost": 1000,
+    "energy_increment": -100,
+    "min_duration": 360000,
+    "max_duration": 720000,
+    "duration_increment": 36000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_SKELETAL_DOG",
+    "//": "98% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Hound of Bone",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_skeletal_dog') * 0.5) + 3" ] }
+      },
+      {
+        "if": {
+          "and": [
+            { "math": [ "has_var(_summoning_loc)" ] },
+            { "map_terrain_with_flag": "DIGGABLE", "loc": { "context_val": "summoning_loc" } }
+          ]
+        },
+        "then": {
+          "u_spawn_monster": "mon_dog_skeleton_summoned",
+          "real_count": 1,
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_skeletal_dog') * 36000) + 360000" ] },
+          "spawn_message": "The hound of bone digs its way out of the ground!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+      }
+    ]
   },
   {
     "id": "arcana_summoning_shadow",
@@ -116,7 +183,7 @@
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
-        "else": [ { "u_message": "The things you called up resist your attempt to control them!", "type": "bad" } ]
+        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
       }
     ]
   },
@@ -182,6 +249,67 @@
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
         "else": [ { "u_message": "The things you called up resist your attempt to control them!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "id": "arcana_summoning_living_vortex",
+    "type": "SPELL",
+    "name": { "str": "Call Forth the Living Vortex" },
+    "description": "Using this spell will summon a spirit of living wind that glows with ethereal light.  It is <color_yellow>somewhat difficult</color> to control",
+    "message": "\"Tvakaros, ievona karoh…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_LIVING_VORTEX",
+    "energy_source": "STAMINA",
+    "difficulty": 60,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 280,
+    "final_casting_time": 140,
+    "casting_time_increment": -14,
+    "base_energy_cost": 3500,
+    "final_energy_cost": 1750,
+    "energy_increment": -175,
+    "min_duration": 720000,
+    "max_duration": 1440000,
+    "duration_increment": 72000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_LIVING_VORTEX",
+    "//": "94% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Living Vortex",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_living_vortex') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_vortex_summoned",
+          "real_count": 1,
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_living_vortex') * 72000) + 720000" ] },
+          "spawn_message": "A swirl of wind and light coalesces out of the air!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The things you called up resist your attempt to control it!", "type": "bad" } ]
       }
     ]
   }
