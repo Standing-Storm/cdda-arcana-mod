@@ -19,7 +19,8 @@
       { "math": [ "u_spell_level('arcana_magic_summon_shadow') = -1" ] },
       { "math": [ "u_spell_level('arcana_magic_dark_lance') = -1" ] },
       { "math": [ "u_spell_level('arcana_magic_summon_shadow_snake') = -1" ] },
-      { "math": [ "u_spell_level('arcana_magic_summon_skeletal_dog') = -1" ] }
+      { "math": [ "u_spell_level('arcana_magic_summon_skeletal_dog') = -1" ] },
+      { "math": [ "u_spell_level('arcana_magic_conjure_acid') = -1" ] }
     ]
   }
 ]

@@ -325,5 +325,40 @@
       ],
       [ [ "fletching", 1, "LIST" ] ]
     ]
+  },
+  {
+    "result": "totem_acidspray",
+    "//": "Casts Caustic Eruption",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "//2": "Requires purification, carving, and polishing.",
+    "skills_required": [ [ "fabrication", 4 ] ],
+    "difficulty": 3,
+    "time": "1 h 30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [  ],
+    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
+    "components": [ [ [ "wyrmskin_piece", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
+  },
+  {
+    "result": "scroll_spell_acidspray",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_SPELLS",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "8 h",
+    "activity_level": "NO_EXERCISE",
+    "book_learn": [  ],
+    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
+    "components": [ [ [ "totem_acidspray", 1 ] ] ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_HARD" ]
   }
 ]

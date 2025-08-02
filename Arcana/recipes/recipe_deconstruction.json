@@ -1159,7 +1159,7 @@
     "flags": [ "10" ]
   },
   {
-    "result": "totem_acidspray",
+    "result": "totem_ironskin",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 2,
@@ -1335,7 +1335,7 @@
     "flags": [ "10" ]
   },
   {
-    "result": "scroll_spell_acidspray",
+    "result": "scroll_spell_ironskin",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 5,

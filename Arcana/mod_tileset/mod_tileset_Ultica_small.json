@@ -32,7 +32,7 @@
               "scroll_spell_clairvoyance",
               "scroll_spell_clarity",
               "scroll_spell_confusion",
-              "scroll_spell_acidspray",
+              "scroll_spell_ironskin",
               "scroll_spell_flame_armor",
               "scroll_spell_free_action",
               "scroll_spell_heal",
@@ -42,7 +42,8 @@
               "scroll_spell_plants",
               "scroll_spell_invis",
               "scroll_spell_lightning",
-              "scroll_spell_cleric"
+              "scroll_spell_cleric",
+              "scroll_spell_magic_underwater_travel"
             ],
             "fg": 7
           },
@@ -62,7 +63,7 @@
               "totem_clarity",
               "totem_lightning",
               "totem_heal",
-              "totem_acidspray",
+              "totem_ironskin",
               "dimensional_warp_trap"
             ],
             "fg": 8

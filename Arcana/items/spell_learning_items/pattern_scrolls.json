@@ -554,11 +554,11 @@
     }
   },
   {
-    "id": "scroll_spell_acidspray",
+    "id": "scroll_spell_ironskin",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Caustic Eruption)", "str_pl": "Pattern Scrolls (Caustic Eruption)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
+    "name": { "str": "Pattern Scroll (Invulnerable Skin of Iron)", "str_pl": "Pattern Scrolls (Invulnerable Skin of Iron)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will infuse the essence of iron into your skin, providing increased protection at the cost of greater encumbrance and weight.\"",
     "price": "3000 USD",
     "price_postapoc": "90 USD",
     "use_action": {
@@ -566,13 +566,13 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_acidspray",
-          "condition": { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "<=", "0" ] },
+          "id": "EOC_scroll_spell_ironskin",
+          "condition": { "math": [ "u_spell_level('arcana_magic_iron_skin')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
               "then": [
-                { "math": [ "u_spell_level('arcana_magic_conjure_acid')", "=", "1" ] },
+                { "math": [ "u_spell_level('arcana_magic_iron_skin')", "=", "1" ] },
                 {
                   "u_message": "You gaze deep into the strange patterns, dizzying orbital diagrams almost resembling a model of some complex chemical compound…",
                   "type": "good"
@@ -589,7 +589,7 @@
                 },
                 { "math": [ "u_pain()", "+=", "rand(10) + 4" ] },
                 { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
-                { "u_consume_item": "scroll_spell_acidspray", "count": 1 }
+                { "u_consume_item": "scroll_spell_ironskin", "count": 1 }
               ]
             }
           ]

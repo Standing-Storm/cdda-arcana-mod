@@ -420,7 +420,7 @@
       { "id": "arcana_summoning_shadow", "level": 4 },
       { "id": "arcana_summoning_living_vortex", "level": 5 },
       { "id": "arcana_summoning_increase_success_chance", "level": 5 },
-      { "id": "arcana_magic_summon_skeletal_dog", "level": 3 },
+      { "id": "arcana_summoning_skeletal_dog", "level": 3 },
       { "id": "arcana_summoning_crawling_things", "level": 2 }
     ],
     "points": 10,

@@ -1,0 +1,29 @@
+[
+  {
+    "type": "profession",
+    "subtype": "hobby",
+    "id": "hobby_arcana_arcanist",
+    "name": "Occultist",
+    "description": "While not a member of one of the major cults in the area, you were a student of the Beyond before the Cataclysm and had experimented with the properties of anomalous materials.  And it's a good thing, because you'll need that knowledge now more than ever.",
+    "points": 1,
+    "traits": [ "PROF_ARCANIST" ],
+    "skills": [ { "level": 2, "name": "magic" } ],
+    "chargen_allow_npc": false
+  },
+  {
+    "type": "profession",
+    "subtype": "hobby",
+    "id": "hobby_arcana_arcanist2",
+    "name": "Sorcerer",
+    "description": "While not a member of one of the major cults in the area, you were a student of the Beyond before the Cataclysm and had delved into the power of sorcery.  And it's a good thing, because you'll need that knowledge now more than ever.",
+    "points": 4,
+    "traits": [ "PROF_ARCANIST2" ],
+    "skills": [ { "level": 4, "name": "magic" } ],
+    "spells": [
+      { "id": "arcana_magic_light", "level": 3 },
+      { "id": "arcana_magic_free_action", "level": 3 },
+      { "id": "arcana_magic_clarity_blood", "level": 1 }
+    ],
+    "chargen_allow_npc": false
+  }
+]

@@ -243,7 +243,7 @@
               "scroll_spell_clairvoyance",
               "scroll_spell_clarity",
               "scroll_spell_confusion",
-              "scroll_spell_acidspray",
+              "scroll_spell_ironskin",
               "scroll_spell_flame_armor",
               "scroll_spell_free_action",
               "scroll_spell_heal",
@@ -278,7 +278,7 @@
               "overlay_wielded_scroll_spell_clairvoyance",
               "overlay_wielded_scroll_spell_clarity",
               "overlay_wielded_scroll_spell_confusion",
-              "overlay_wielded_scroll_spell_acidspray",
+              "overlay_wielded_scroll_spell_ironskin",
               "overlay_wielded_scroll_spell_flame_armor",
               "overlay_wielded_scroll_spell_free_action",
               "overlay_wielded_scroll_spell_heal",
@@ -288,7 +288,8 @@
               "overlay_wielded_scroll_spell_plants",
               "overlay_wielded_scroll_spell_invis",
               "overlay_wielded_scroll_spell_lightning",
-              "overlay_wielded_scroll_spell_cleric"
+              "overlay_wielded_scroll_spell_cleric",
+              "overlay_wielded_scroll_spell_magic_underwater_travel"
             ],
             "fg": 150
           },
@@ -340,7 +341,7 @@
               "totem_clarity",
               "totem_lightning",
               "totem_heal",
-              "totem_acidspray"
+              "totem_ironskin"
             ],
             "fg": 159
           },

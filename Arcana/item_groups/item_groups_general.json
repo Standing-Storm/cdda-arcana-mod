@@ -159,7 +159,7 @@
       [ "totem_invis", 3 ],
       [ "totem_cleric", 2 ],
       [ "totem_free_action", 2 ],
-      [ "totem_acidspray", 2 ],
+      [ "totem_ironskin", 2 ],
       [ "dragonblood_mutagen", 1 ]
     ]
   },
@@ -182,7 +182,7 @@
       [ "totem_underwater_travel", 3 ],
       [ "totem_cleric", 2 ],
       [ "totem_free_action", 2 ],
-      [ "totem_acidspray", 2 ],
+      [ "totem_ironskin", 2 ],
       [ "totem_translocation", 2 ]
     ]
   },
@@ -285,7 +285,7 @@
       [ "scroll_spell_flame_armor", 1 ],
       [ "scroll_spell_invis", 1 ],
       [ "scroll_spell_free_action", 1 ],
-      [ "scroll_spell_acidspray", 1 ]
+      [ "scroll_spell_ironskin", 1 ]
     ]
   },
   {

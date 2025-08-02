@@ -40,7 +40,6 @@
       "items": [
         [ "scroll_spell_lightning", 10 ],
         [ "scroll_spell_confusion", 10 ],
-        [ "scroll_spell_acidspray", 10 ],
         [ "scroll_spell_insight", 10 ],
         [ "scroll_spell_plants", 10 ]
       ]
@@ -50,7 +49,14 @@
     "id": "spell_scroll_tier_1",
     "type": "item_group",
     "copy-from": "spell_scroll_tier_1",
-    "extend": { "items": [ [ "scroll_spell_agile", 10 ], [ "scroll_spell_clarity", 10 ], [ "scroll_spell_elecresist", 10 ] ] }
+    "extend": {
+      "items": [
+        [ "scroll_spell_agile", 10 ],
+        [ "spell_scroll_ironskin", 10 ],
+        [ "scroll_spell_clarity", 10 ],
+        [ "scroll_spell_elecresist", 10 ]
+      ]
+    }
   },
   {
     "id": "spell_scroll_tier_2",

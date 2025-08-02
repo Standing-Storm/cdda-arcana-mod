@@ -243,5 +243,25 @@
     "show_stats": true,
     "critical_multiplier": 6,
     "recovery_chance": 98
+  },
+  {
+    "id": "totem_acidspray",
+    "copy-from": "totem_base",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "name": { "str": "Magic Seal (Caustic Eruption)", "str_pl": "Magic Seals (Caustic Eruption)" },
+    "description": "A carved scale of acrid-smelling, otherworldly flesh.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will conjure a splash of acid at the point targeted, with double damage for enemies caught in the center.\"",
+    "price_postapoc": "45 USD",
+    "color": "blue",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_seal_conjure_acid", "no_fail": true, "level": 5 }
+  },
+  {
+    "id": "scroll_spell_acidspray",
+    "copy-from": "scroll_magic_base",
+    "type": "ITEM",
+    "name": { "str": "Pattern Scroll (Obsolete)", "str_pl": "Pattern Scrolls (Obsolete)" },
+    "description": "This scroll is obsolete and does nothing.",
+    "price": "0 USD",
+    "price_postapoc": "0 USD"
   }
 ]
