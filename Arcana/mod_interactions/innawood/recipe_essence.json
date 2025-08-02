@@ -110,7 +110,7 @@
     "using": [ [ "arcana_essence_any", 10 ], [ "arcana_purification_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_purification" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "essence_pure",
@@ -150,6 +150,6 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   }
 ]

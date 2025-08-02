@@ -91,7 +91,7 @@
       [ [ "essence_blood", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -112,7 +112,7 @@
       [ [ "essence_dull", 20 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "type": "recipe",
@@ -132,7 +132,7 @@
       [ [ "arcana_essence_any", 1, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -153,7 +153,7 @@
       [ [ "essence", 1 ], [ "arcana_bone_standard", 5, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -180,7 +180,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -201,7 +201,7 @@
       [ [ "essence_dull", 20 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -221,7 +221,7 @@
       [ [ "arcana_essence_any", 3, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -238,7 +238,7 @@
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "charm_bone", 1 ] ], [ [ "flame_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "type": "recipe",
@@ -255,7 +255,7 @@
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "stinger_flute", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "result": "offering_chalice",
@@ -309,7 +309,7 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "tallow", 4 ], [ "tallow_tainted", 4 ], [ "monster_fang", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "summon_vinebeast",
@@ -326,7 +326,7 @@
     "tools": [ [ [ "book_summoning", -1 ], [ "book_naturemagic", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "tanbark", 3 ], [ "birchbark", 3 ], [ "willowbark", 3 ], [ "triffid_garland", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_flesh_angel",
@@ -343,7 +343,7 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_hunting_horror",
@@ -364,7 +364,7 @@
       [ [ "essence", 2 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_dark_wyrm",
@@ -384,7 +384,7 @@
       [ [ "wyrmskin_piece", 1 ], [ "graboid_fang", 1 ], [ "chem_acetic_acid", 4 ], [ "any_strong_acid", 4, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_nether_huntsman",
@@ -404,7 +404,7 @@
       [ [ "seed_mushroom", 12 ], [ "seed_mushroom_morel", 12 ], [ "yeast", 24 ], [ "iridescent_plate", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_jabberwock",
@@ -421,7 +421,7 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "mirror", 1 ], [ "iridescent_plate", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_flying_polyp",
@@ -438,7 +438,7 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "bone_tainted", 6 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_yugg",
@@ -465,7 +465,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "summon_shoggoth",
@@ -482,7 +482,7 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "slime_scrap", 8 ], [ "blob_gem", 2 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "dimensional_warp_trap",
@@ -531,7 +531,7 @@
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "gold_small", 6 ], [ "copper", 12 ], [ "monster_tear", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_moon",
@@ -547,7 +547,7 @@
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "silver_small", 6 ], [ "tin", 12 ], [ "shadow_gem", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_artiface",
@@ -563,7 +563,7 @@
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "engraved_stone", 1 ], [ "material_quicklime", 15 ], [ "chem_saltpetre", 20 ], [ "salt", 100 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_nature",
@@ -579,7 +579,7 @@
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "inflorescent_root", 1 ], [ "triffid_queen_flower", 1 ], [ "arcana_flora_flowers", 5, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
   {
     "result": "scroll_destruction",
@@ -595,7 +595,7 @@
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "charm_bone", 1 ], [ "bone_human", 5 ], [ "bone_demihuman", 10 ], [ "bone", 15 ], [ "bone_tainted", 20 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "scroll_subversion",
@@ -611,7 +611,7 @@
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
     "components": [ [ [ "vortex_shard", 1 ], [ "cured_hide", 20 ], [ "cured_pelt", 20 ], [ "chitin_piece", 40 ], [ "feather", 80 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "petrified_eye",
@@ -670,7 +670,7 @@
       [ [ "salt", 20 ] ],
       [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "transmutation_crucible",
@@ -695,7 +695,7 @@
       [ [ "platinum_small", 25 ], [ "gold_small", 50 ], [ "silver_small", 100 ], [ "copper", 200 ] ],
       [ [ "earth_talisman", 1 ] ]
     ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "orb_veil",
@@ -754,7 +754,7 @@
     "book_learn": [ [ "book_potioncraft", 3 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_potioncraft", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "index_scrollcraft",
@@ -768,7 +768,7 @@
     "book_learn": [ [ "book_scrollcraft", 5 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "index_bloodmagic",
@@ -782,7 +782,7 @@
     "book_learn": [ [ "book_bloodmagic", 6 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "index_hexenhammer",
@@ -796,7 +796,7 @@
     "book_learn": [ [ "book_hexenhammer", 7 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_hexenhammer", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "index_sacrifice",
@@ -810,7 +810,7 @@
     "book_learn": [ [ "book_sacrifice", 8 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "index_syncretism",
@@ -824,7 +824,7 @@
     "book_learn": [ [ "book_syncretism", 9 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_syncretism", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "index_summoning",
@@ -838,6 +838,6 @@
     "book_learn": [ [ "book_summoning", 10 ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   }
 ]

@@ -9,7 +9,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_dull", 40 ] ] ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "mana_dust",

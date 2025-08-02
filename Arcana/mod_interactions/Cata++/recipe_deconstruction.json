@@ -16,7 +16,7 @@
       [ [ "essence_blood", 5 ] ],
       [ [ "essence_dull", 25 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "flesh_blade",
@@ -35,7 +35,7 @@
       [ [ "essence_blood", 15 ] ],
       [ [ "essence_dull", 50 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "flesh_pistol",
@@ -54,7 +54,7 @@
       [ [ "essence_blood", 5 ] ],
       [ [ "essence_dull", 25 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "flesh_smg",
@@ -73,7 +73,7 @@
       [ [ "essence_blood", 15 ] ],
       [ [ "essence_dull", 50 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "flesh_rifle",
@@ -92,7 +92,7 @@
       [ [ "essence_blood", 15 ] ],
       [ [ "essence_dull", 50 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "flesh_lmg",
@@ -111,7 +111,7 @@
       [ [ "essence_blood", 15 ] ],
       [ [ "essence_dull", 50 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   },
   {
     "result": "flesh_shotgun",
@@ -130,6 +130,6 @@
       [ [ "essence_blood", 15 ] ],
       [ [ "essence_dull", 50 ] ]
     ],
-    "flags": [ "BLIND_EASY" ]
+    "flags": [ "BLIND_HARD" ]
   }
 ]

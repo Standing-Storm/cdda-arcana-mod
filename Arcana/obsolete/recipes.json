@@ -10,7 +10,7 @@
     "activity_level": "NO_EXERCISE",
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "somen_clairvoyance_xl",
@@ -65,7 +65,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_blood", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "essence_dull",
@@ -83,7 +83,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "essence_dull",
@@ -124,7 +124,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "essence_blood",
@@ -141,7 +141,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "arcana_flesh_standard", 5, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "essence_blood",
@@ -160,7 +160,7 @@
     "tools": [ [ [ "blood_athame", -1 ] ] ],
     "components": [ [ [ "essence", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "essence_blood",
@@ -200,7 +200,7 @@
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [ [ [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "essence",
@@ -233,7 +233,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN", "SECRET" ]
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
   {
     "result": "essence",
@@ -264,7 +264,7 @@
       ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_EASY", "SECRET" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "type": "recipe",
@@ -360,5 +360,233 @@
     "components": [ [ [ "totem_acidspray", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "result": "armor_qt_lightplate",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 7,
+    "time": "4 h 50 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 6 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 20 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "fur", 20 ], [ "leather", 20 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "helmet_barbute",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "4 h 30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 4 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 10 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "fur", 4 ], [ "leather", 4 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "helmet_plate",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "4 h 30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 5 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 14 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "fur", 4 ], [ "leather", 4 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "qt_mitten_gaunt",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "3 h 30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 4 ],
+    "book_learn": [  ],
+    "using": [
+      [ "steel_standard", 3 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "fabric_leather_fur_hide", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "qt_demi_gaunt",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "3 h 30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 4 ],
+    "book_learn": [  ],
+    "using": [
+      [ "steel_standard", 3 ],
+      [ "arcana_forging_tools_standard", 1 ],
+      [ "fabric_leather_fur_hide", 1 ],
+      [ "arcana_essence_any", 1 ]
+    ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "boots_plate",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "4 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 3 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 8 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "fur", 16 ], [ "leather", 16 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "qt_chainmail_hauberk",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "5 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 5 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 7 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "chainmail_hood",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "40 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 5 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "cotton_patchwork", 4 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "chainmail_hands",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "40 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 5 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "cotton_patchwork", 4 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "result": "chainmail_feet",
+    "type": "recipe",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 6,
+    "time": "40 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [ "fabrication", 5 ],
+    "book_learn": [  ],
+    "using": [ [ "steel_standard", 1 ], [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "cotton_patchwork", 4 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "armor_cuirass",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 3 ],
+    "time": "2 h 20 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [  ],
+    "using": [ [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "scrap_bronze", 28 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "legguard_bronze",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "fabrication", 3 ],
+    "time": "4 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [  ],
+    "using": [ [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "scrap_bronze", 12 ] ], [ [ "fur", 6 ], [ "leather", 6 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
+  },
+  {
+    "type": "recipe",
+    "result": "helmet_corinthian",
+    "id_suffix": "arcana",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "fabrication", 4 ],
+    "time": "35 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [  ],
+    "using": [ [ "arcana_forging_tools_standard", 1 ], [ "arcana_essence_any", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [ [ [ "scrap_bronze", 7 ] ], [ [ "fur", 4 ], [ "leather", 4 ] ] ],
+    "flags": [ "BLIND_HARD", "SECRET" ]
   }
 ]
