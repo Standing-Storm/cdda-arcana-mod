@@ -48,7 +48,8 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "blood_athame", -1 ] ] ],
-    "components": [ [ [ "leather", 1 ] ], [ [ "scrap", 5 ] ], [ [ "copper", 15 ] ], [ [ "essence_blood", 3 ] ] ]
+    "components": [ [ [ "leather", 1 ] ], [ [ "scrap", 5 ] ], [ [ "copper", 15 ] ], [ [ "essence_blood", 3 ] ] ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "essence_dull",
@@ -294,7 +295,8 @@
         [ "shadow_gem", 1 ]
       ],
       [ [ "fletching", 1, "LIST" ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "type": "recipe",
@@ -324,7 +326,8 @@
         [ "shadow_gem", 1 ]
       ],
       [ [ "fletching", 1, "LIST" ] ]
-    ]
+    ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "totem_acidspray",
@@ -343,7 +346,8 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
     "components": [ [ [ "wyrmskin_piece", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
-    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ]
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "SECRET" ]
   },
   {
     "result": "scroll_spell_acidspray",
@@ -359,7 +363,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
     "components": [ [ [ "totem_acidspray", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_HARD" ]
+    "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
     "result": "armor_qt_lightplate",
