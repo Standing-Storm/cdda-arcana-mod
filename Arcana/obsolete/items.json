@@ -263,5 +263,17 @@
     "description": "This scroll is obsolete and does nothing.",
     "price": "0 USD",
     "price_postapoc": "0 USD"
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_mark_summon_dark_wyrm",
+    "name": {
+      "str": "Sanguine Grimoire: Calling the Worms of the Earth",
+      "str_pl": "Sanguine Grimoires: Calling the Worms of the Earth"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual summons subterranean wyrms who will answer the call of the blood--though whether as friend or foe, who can say.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_dark_wyrm" ] }
   }
 ]

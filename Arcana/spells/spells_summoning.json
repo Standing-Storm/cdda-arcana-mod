@@ -63,7 +63,7 @@
     "id": "arcana_summoning_skeletal_dog",
     "type": "SPELL",
     "name": { "str": "Call Forth the Hound of Bone" },
-    "description": "Using this spell will summon an animalistic revenant, which will be loyal but not permanent.  It is <color_yellow>somewhat easy</color> to control.  You <color_yellow>must target diggable ground</color> for the spell to succeed.",
+    "description": "Using this spell will summon an animalistic revenant, which will be loyal but not permanent.  It is <color_yellow>somewhat easy</color> to control.  You <color_yellow>must target diggable ground</color> for the summoning to succeed.",
     "message": "\"Loyal unto death, and even beyond…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
@@ -74,9 +74,9 @@
     "difficulty": 30,
     "skill": "magic",
     "max_level": 15,
-    "base_casting_time": 160,
-    "final_casting_time": 80,
-    "casting_time_increment": -8,
+    "base_casting_time": 320,
+    "final_casting_time": 160,
+    "casting_time_increment": -16,
     "base_energy_cost": 2000,
     "final_energy_cost": 1000,
     "energy_increment": -100,
@@ -109,7 +109,7 @@
           "real_count": 1,
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
-          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_skeletal_dog') * 36000) + 360000" ] },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_skeletal_dog') * 360.00) + 3600.00" ] },
           "spawn_message": "The hound of bone digs its way out of the ground!"
         },
         "else": { "u_message": "Canceled." }
@@ -141,9 +141,9 @@
     "difficulty": 30,
     "skill": "magic",
     "max_level": 15,
-    "base_casting_time": 200,
-    "final_casting_time": 100,
-    "casting_time_increment": -10,
+    "base_casting_time": 320,
+    "final_casting_time": 160,
+    "casting_time_increment": -16,
     "base_energy_cost": 3000,
     "final_energy_cost": 1500,
     "energy_increment": -150,
@@ -171,7 +171,7 @@
           "real_count": 1,
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
-          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_shadow') * 60000) + 600000" ] },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_shadow') * 600.00) + 6000.00" ] },
           "spawn_message": "An animate shadow detaches from a nearby patch of darkness!"
         },
         "else": { "u_message": "Canceled." }
@@ -184,6 +184,72 @@
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
         "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "id": "arcana_summoning_dark_wyrm",
+    "type": "SPELL",
+    "name": { "str": "Calling the Worms of the Earth" },
+    "description": "Using this spell will summon a dark wyrm.  It is <color_yellow>somewhat difficult</color> to control.  You <color_yellow>must target diggable ground</color> for the summoning to succeed.",
+    "message": "\"Crawlers from below, writhe forth and devour those who walk upon the earth…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_DARK_WYRM",
+    "difficulty": 50,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 480,
+    "final_casting_time": 240,
+    "casting_time_increment": -24,
+    "base_energy_cost": 3350,
+    "final_energy_cost": 1650,
+    "energy_increment": -165,
+    "min_duration": 680000,
+    "max_duration": 1360000,
+    "duration_increment": 68000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_DARK_WYRM",
+    "//": "95% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Dark Wyrm",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_dark_wyrm') * 0.5) + 3" ] }
+      },
+      {
+        "if": {
+          "and": [
+            { "math": [ "has_var(_summoning_loc)" ] },
+            { "map_terrain_with_flag": "DIGGABLE", "loc": { "context_val": "summoning_loc" } }
+          ]
+        },
+        "then": {
+          "u_spawn_monster": "mon_crawler_summoned",
+          "real_count": { "math": [ "(u_spell_level('arcana_summoning_dark_wyrm') * 0.2) + 1" ] },
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_dark_wyrm') * 680.00) + 6800.00" ] },
+          "spawn_message": "A hideous mockery of the human form materializes!",
+          "spawn_message_plural": "Hideous mockerys of the human form materialize!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resists your attempt to control it!", "type": "bad" } ]
       }
     ]
   },
@@ -202,12 +268,9 @@
     "max_level": 10,
     "difficulty": 60,
     "skill": "magic",
-    "min_damage": 1,
-    "max_damage": 3,
-    "damage_increment": 0.2,
-    "base_casting_time": 280,
-    "final_casting_time": 140,
-    "casting_time_increment": -14,
+    "base_casting_time": 560,
+    "final_casting_time": 280,
+    "casting_time_increment": -28,
     "base_energy_cost": 3500,
     "final_energy_cost": 1750,
     "energy_increment": -175,
@@ -235,7 +298,7 @@
           "real_count": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 0.2) + 1" ] },
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
-          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 72000) + 720000" ] },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 720.00) + 7200.00" ] },
           "spawn_message": "A hideous mockery of the human form materializes!",
           "spawn_message_plural": "Hideous mockerys of the human form materialize!"
         },
@@ -267,9 +330,9 @@
     "difficulty": 60,
     "skill": "magic",
     "max_level": 15,
-    "base_casting_time": 280,
-    "final_casting_time": 140,
-    "casting_time_increment": -14,
+    "base_casting_time": 560,
+    "final_casting_time": 280,
+    "casting_time_increment": -28,
     "base_energy_cost": 3500,
     "final_energy_cost": 1750,
     "energy_increment": -175,
@@ -297,7 +360,7 @@
           "real_count": 1,
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
-          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_living_vortex') * 72000) + 720000" ] },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_living_vortex') * 720.00) + 7200.00" ] },
           "spawn_message": "A swirl of wind and light coalesces out of the air!"
         },
         "else": { "u_message": "Canceled." }
