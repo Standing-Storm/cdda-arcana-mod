@@ -772,7 +772,7 @@
     "difficulty": 6,
     "time": "8 h",
     "activity_level": "NO_EXERCISE",
-    "book_learn": [ [ "book_scrollcraft", 6 ], [ "book_sacrifice", 7 ] ],
+    "book_learn": [ [ "book_elementalism", 6 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ], [ "arcana_essence_any", 1 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ], [ "book_sacrifice", -1 ] ], [ [ "charm_bone", -1 ], [ "amulet_exotic", -1 ] ] ],
     "proficiencies": [

@@ -72,6 +72,41 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_controlling_weather",
+    "//": "Hidden effect, used to distinguish magical quick weather change from the weather returning to normal",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_controlling_weather_fog",
+    "//": "Hidden effect, used to track magical summoned fog",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_controlling_weather_rains",
+    "//": "Hidden effect, used to track magical summoned rain",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_controlling_weather_rainstorm",
+    "//": "Hidden effect, used to track magical summoned rainstorms",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_controlling_weather_lightningstorm",
+    "//": "Hidden effect, used to track magical summoned lightning storms",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
     "id": "magic_sign_exertion",
     "name": [ "Pattern Sorcery Exertion" ],
     "desc": [ "Use of pattern sorcery increases sleepiness gain." ],

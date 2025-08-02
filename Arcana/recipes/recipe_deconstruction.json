@@ -1478,17 +1478,6 @@
     "flags": [ "10" ]
   },
   {
-    "result": "scroll_spell_destruction",
-    "type": "uncraft",
-    "skill_used": "magic",
-    "difficulty": 6,
-    "time": "60 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
-    "flags": [ "10" ]
-  },
-  {
     "result": "scroll_spell_nature",
     "type": "uncraft",
     "skill_used": "magic",
@@ -1534,6 +1523,17 @@
   },
   {
     "result": "scroll_spell_dark_lance",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "50 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 10 ] ] ],
+    "flags": [ "10" ]
+  },
+  {
+    "result": "scroll_spell_destruction",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 5,

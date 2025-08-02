@@ -222,5 +222,21 @@
     "min_duration": 44000,
     "max_duration": 22000,
     "duration_increment": -4400
+  },
+  {
+    "id": "arcana_aftermath_dark_lance_side_effect",
+    "type": "SPELL",
+    "name": { "str": "Dark Lance Side Effect" },
+    "description": "This adds nether attention at the same rate as the exertion side effect.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
+    "effect_str": "attention",
+    "effect": "attack",
+    "shape": "blast",
+    "max_level": 10,
+    "min_duration": 30000,
+    "max_duration": 10000,
+    "duration_increment": -1500
   }
 ]

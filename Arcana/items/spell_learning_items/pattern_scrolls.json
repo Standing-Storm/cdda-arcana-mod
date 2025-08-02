@@ -91,8 +91,8 @@
     "id": "scroll_spell_dark_lance",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Tenebrous Lance)", "str_pl": "Pattern Scrolls (Tenebrous Lance)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell will loose a beam of otherworldly energy, blinding all in its path.  Machines and some otherworldly creatures will be immune, and its use will attract otherworldly attention.\"",
+    "name": { "str": "Pattern Scroll (Majesty of Jove)", "str_pl": "Pattern Scrolls (Majesty of Jove)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell will rapidly cloud the sky over and cause a torrential rain interspersed with blasts of lightning.\"",
     "price_postapoc": "100 USD",
     "use_action": {
       "type": "effect_on_conditions",
@@ -100,12 +100,12 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_dark_lance",
-          "condition": { "math": [ "u_spell_level('arcana_magic_dark_lance')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "11" ] },
               "then": [
-                { "math": [ "u_spell_level('arcana_magic_dark_lance')", "=", "1" ] },
+                { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "=", "1" ] },
                 {
                   "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…",
                   "type": "good"
@@ -133,7 +133,6 @@
     "type": "ITEM",
     "name": { "str": "Pattern Scroll (Banish the Beyond)", "str_pl": "Pattern Scrolls (Banish the Beyond)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
-    "//": "Pattern scrolls were extremely rare pre-cataclysm as spell development was in its infancy, but now they're all quite useful in various ways.  Divine pattern scrolls especially were almost non-existent.",
     "price_postapoc": "110 USD",
     "use_action": {
       "type": "effect_on_conditions",
@@ -255,49 +254,6 @@
     }
   },
   {
-    "id": "scroll_spell_create_rift_in_ground",
-    "copy-from": "scroll_magic_base",
-    "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Yawn Wide the Rift)", "str_pl": "Pattern Scrolls (Yawn Wide the Rift)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will tear a rift in the ground, damaging buildings and causing anyone caught to fall in.\"",
-    "price_postapoc": "130 USD",
-    "use_action": {
-      "type": "effect_on_conditions",
-      "description": "Study the scroll",
-      "effect_on_conditions": [
-        {
-          "id": "EOC_scroll_create_rift_in_ground",
-          "condition": { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "<=", "0" ] },
-          "effect": [
-            {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
-              "then": [
-                { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "=", "1" ] },
-                {
-                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
-                  "type": "good"
-                }
-              ],
-              "else": [
-                {
-                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
-                  "type": "good"
-                },
-                {
-                  "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
-                  "type": "bad"
-                },
-                { "math": [ "u_pain()", "+=", "rand(10) + 8" ] },
-                { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
-                { "u_consume_item": "scroll_spell_create_rift_in_ground", "count": 1 }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
     "id": "scroll_spell_nature",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
@@ -344,36 +300,36 @@
     "id": "scroll_spell_destruction",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Call Forth the Crawling Ones)", "str_pl": "Pattern Scrolls (Call Forth the Crawling Ones)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will summon mutated vermin, which will be loyal but not permanent.\"",
-    "price_postapoc": "110 USD",
+    "name": { "str": "Pattern Scroll (Yawn Wide the Rift)", "str_pl": "Pattern Scrolls (Yawn Wide the Rift)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will tear a rift in the ground, damaging buildings and causing anyone caught to fall in.\"",
+    "price_postapoc": "130 USD",
     "use_action": {
       "type": "effect_on_conditions",
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_destruction",
-          "condition": { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "<=", "0" ] },
           "effect": [
             {
               "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
               "then": [
-                { "math": [ "u_spell_level('arcana_magic_summon_giant_centipedes')", "=", "1" ] },
+                { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "=", "1" ] },
                 {
-                  "u_message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
+                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
                   "type": "good"
                 }
               ],
               "else": [
                 {
-                  "u_message": "You gaze deep into the strange patterns, strange linear patterns giving way to more organic motifs…",
+                  "u_message": "You gaze deep into the strange patterns, alien symbols and artwork contorted into more orderly forms…",
                   "type": "good"
                 },
                 {
                   "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
                   "type": "bad"
                 },
-                { "math": [ "u_pain()", "+=", "rand(10) + 6" ] },
+                { "math": [ "u_pain()", "+=", "rand(10) + 8" ] },
                 { "u_spawn_item": "scroll_blank", "count": 1, "suppress_message": true },
                 { "u_consume_item": "scroll_spell_destruction", "count": 1 }
               ]
