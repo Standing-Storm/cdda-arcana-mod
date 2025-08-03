@@ -10,7 +10,6 @@
     "effect": "summon",
     "shape": "blast",
     "effect_str": "mon_dark_wyrm_summoned",
-    "extra_effects": [ { "id": "arcana_mark_summon_dark_wyrm_sacrifice_check", "hit_self": true } ],
     "difficulty": 50,
     "skill": "magic",
     "max_level": 5,
