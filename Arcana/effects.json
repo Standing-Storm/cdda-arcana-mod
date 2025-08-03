@@ -1080,10 +1080,20 @@
   },
   {
     "type": "effect_type",
-    "id": "arcane_healing_staunch",
-    "removes_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
-    "max_duration": "1 s",
-    "base_mods": { "pain_min": [ -5 ] }
+    "id": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding_display",
+    "name": [ "Corporeal Restoration" ],
+    "desc": [ "You are healing slowly over time." ],
+    "flags": [ "BLEEDSLOW2" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "max_intensity": 10,
+    "int_add_val": 1,
+    "base_mods": { "hurt_min": [ -1 ], "hurt_chance": [ 3 ], "hurt_tick": [ 60 ] },
+    "scaling_mods": { "hurt_chance": [ 2 ], "hurt_tick": [ 60 ] }
   },
   {
     "type": "effect_type",

@@ -21,4 +21,4 @@
 - Missing sprites are now visible in MSX
 - Humans are not the only masters of sorcery! The triffids and the mi-go both mastered the arcane before humanity discovered fire. Beware when approaching their strongholds...
 - Another strange cult! The Briarwitches, worshippers of a deity of the natural world unspoiled by humans--and intending to return it to that state.  This is based on the lore about "One of [the otherworldly deities], linked thematically to scrolls of regrowth."  They did not fare any better than the Sanguine Order or the Keepers of the Oath in the cults' conficts (heavily WIP)
-- Briarwitchery, a new type of magic. Briarwitchery focuses on animal and plant life, and requires its own version of mana that only regenerates in the wild (and is reduced to zero if you have ANY bionic power), but has severely reduced function in civilized areas. (heavily WIP)
+- Briarwitchery, a new type of magic. Briarwitchery focuses on animal and plant life, and requires its own version of mana that only regenerates in the wild (and is reduced to zero if you have ANY bionics at all), but has severely reduced function in civilized areas. (heavily WIP)

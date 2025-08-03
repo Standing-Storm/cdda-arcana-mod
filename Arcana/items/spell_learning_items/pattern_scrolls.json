@@ -655,12 +655,12 @@
       "effect_on_conditions": [
         {
           "id": "EOC_scroll_spell_heal",
-          "condition": { "math": [ "u_spell_level('arcana_magic_healing')", "<=", "0" ] },
+          "condition": { "math": [ "u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding')", "<=", "0" ] },
           "effect": [
             {
               "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
               "then": [
-                { "math": [ "u_spell_level('arcana_magic_healing')", "=", "1" ] },
+                { "math": [ "u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding')", "=", "1" ] },
                 {
                   "u_message": "You gaze deep into the strange patterns, complex anatomical imagery mingled with unearthly diagrams…",
                   "type": "good"
