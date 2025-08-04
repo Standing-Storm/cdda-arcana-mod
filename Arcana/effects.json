@@ -1517,6 +1517,12 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_item_scroll_nature_healing_buff",
+    "rating": "good",
+    "enchantments": [ { "values": [ { "value": "REGEN_HP_AWAKE", "multiply": 0.5 }, { "value": "REGEN_HP", "multiply": 3 } ] } ]
+  },
+  {
+    "type": "effect_type",
     "id": "arcana_evil_mimic",
     "resist_effects": [ "arcana_evil_mimic_active" ],
     "apply_message": "You feel an evil presence…",
