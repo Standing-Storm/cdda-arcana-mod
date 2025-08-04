@@ -236,7 +236,7 @@
     "melee_dice_sides": 8,
     "melee_damage": [ { "damage_type": "cut", "amount": 3 } ],
     "dodge": 2,
-    "armor": { "bash": 10, "cut": 20, "stab": 15, "bullet": 15, "acid": 10 },
+    "armor": { "bash": 10, "cut": 20, "stab": 15, "bullet": 35, "acid": 10 },
     "vision_day": 50,
     "vision_night": 30,
     "harvest": "dracolich_harvest",
