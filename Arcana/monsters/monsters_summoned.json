@@ -107,7 +107,7 @@
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "death_drops": {  },
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_skeleton_summoned",
@@ -143,7 +143,7 @@
     "melee_damage": [ { "damage_type": "electric", "amount": 10 } ],
     "regenerates": 10,
     "regeneration_modifiers": [ [ "dazed", -10 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "STUMBLES" ] }
   },
   {
@@ -185,7 +185,7 @@
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY", "PET_HARNESSABLE" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
     "delete": { "flags": [ "BASHES" ] }
   },
   {
@@ -317,7 +317,7 @@
     "death_drops": {  },
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
   },
   {
@@ -362,7 +362,7 @@
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "regenerates_in_dark": true,
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "CANPLAY" ] },
+    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] },
     "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
   },
   {
