@@ -52,7 +52,7 @@
     "extend": {
       "items": [
         [ "scroll_spell_agile", 10 ],
-        [ "spell_scroll_ironskin", 10 ],
+        [ "scroll_spell_ironskin", 10 ],
         [ "scroll_spell_clarity", 10 ],
         [ "scroll_spell_elecresist", 10 ]
       ]
