@@ -4,14 +4,7 @@
     "id": "lost_faith",
     "copy-from": "lost_faith",
     "extend": {
-      "professions": [
-        "arcanist_magehunter",
-        "arcanist_dark_priest",
-        "arcanist_purifier",
-        "arcanist_operator",
-        "arcanist_mendicant",
-        "arcanist_purifier"
-      ]
+      "professions": [ "arcanist_magehunter", "arcanist_dark_priest", "arcanist_purifier", "arcanist_operator", "arcanist_mendicant" ]
     }
   },
   {
