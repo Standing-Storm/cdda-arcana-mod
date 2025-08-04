@@ -20,11 +20,11 @@
             }
           ]
         },
-        "then": [ { "math": [ "u_spellcasting_adjustment('difficulty', 'mod': 'Arcana', 'flag_whitelist': 'SOMATIC' )", "=", "10" ] } ]
+        "then": [ { "math": [ "u_spellcasting_adjustment('difficulty', 'mod': 'Arcana', 'flag_whitelist': 'SOMATIC' )", "=", "100" ] } ]
       },
       {
         "if": { "and": [ { "u_has_effect": "disabled", "bodypart": "arm_r" }, { "u_has_effect": "disabled", "bodypart": "arm_l" } ] },
-        "then": [ { "math": [ "u_spellcasting_adjustment('difficulty', 'mod': 'Arcana', 'flag_whitelist': 'SOMATIC' )", "=", "30" ] } ]
+        "then": [ { "math": [ "u_spellcasting_adjustment('difficulty', 'mod': 'Arcana', 'flag_whitelist': 'SOMATIC' )", "=", "300" ] } ]
       }
     ]
   }

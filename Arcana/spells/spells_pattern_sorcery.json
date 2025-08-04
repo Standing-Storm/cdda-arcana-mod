@@ -547,7 +547,7 @@
     "//": "Forest spell",
     "type": "SPELL",
     "name": { "str": "Corporeal Restoration" },
-    "description": "Using this spell will slow your rate of bleeding and mend wounds over time, though overuse can be harmful in the long run.  Additional castings before the first runs out will dilute the original effect in addition to the possible effects of overuse.  It can be used on yourself or an ally.  It <color_yellow>must be cast outside</color>.",
+    "description": "Using this spell will slow your rate of bleeding and mend wounds over time, though overuse can be harmful in the long run.  Additional castings before the first runs out will dilute the original effect in addition to the possible effects of overuse, and it <color_red>cannot heal broken limbs</color>.  It can be used on yourself or an ally.  It <color_yellow>must be cast outside</color>.",
     "message": "\"We shall not yet fall into extinction…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT" ],
@@ -589,9 +589,12 @@
         "var": { "context_val": "id" },
         "effect": [
           {
-            "u_add_effect": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding",
-            "duration": { "math": [ "(u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding') * 12000) + 60000" ] },
-            "target_part": { "context_val": "id" }
+            "if": { "not": { "u_has_effect": "disabled", "bodypart": { "context_val": "id" } } },
+            "then": {
+              "u_add_effect": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding",
+              "duration": { "math": [ "(u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding') * 12000) + 60000" ] },
+              "target_part": { "context_val": "id" }
+            }
           }
         ]
       }
