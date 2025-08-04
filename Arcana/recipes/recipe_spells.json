@@ -85,7 +85,7 @@
     "difficulty": 3,
     "time": "1 h 30 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 2 ] ],
+    "book_learn": [ [ "book_elementalism", 2 ] ],
     "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
