@@ -1744,7 +1744,7 @@
     "max_intensity": 30,
     "int_dur_factor": "1 m",
     "rating": "good",
-    "flags": [ "WATERWALKING", "ITEM_WATERPROOFING" ]
+    "flags": [ "WATERWALKING", "ITEM_WATERPROOFING", "SLUDGE_IMMUNE" ]
   },
   {
     "type": "effect_type",

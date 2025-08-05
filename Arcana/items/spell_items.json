@@ -24,7 +24,7 @@
     "type": "ITEM",
     "category": "other",
     "name": { "str": "water talisman" },
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to walk on water for a short period of time.",
+    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  Using it will buoy you up, allowing you to walk on water and also rendering you immune to being slowed by goo or sludge on the ground.",
     "price_postapoc": "6 USD",
     "weight": "150 g",
     "volume": "100 ml",
