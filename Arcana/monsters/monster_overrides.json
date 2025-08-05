@@ -676,18 +676,6 @@
     "death_drops": "mon_skeleton_hulk_death_drops"
   },
   {
-    "id": "mon_boomer_fungus",
-    "copy-from": "mon_boomer_fungus",
-    "type": "MONSTER",
-    "death_drops": "mon_boomer_fungus_death_drops"
-  },
-  {
-    "id": "mon_zombie_gasbag_fungus",
-    "copy-from": "mon_zombie_gasbag_fungus",
-    "type": "MONSTER",
-    "death_drops": "mon_zombie_gasbag_fungus_death_drops"
-  },
-  {
     "id": "mon_zombie_smoker_fungus",
     "copy-from": "mon_zombie_smoker_fungus",
     "type": "MONSTER",
