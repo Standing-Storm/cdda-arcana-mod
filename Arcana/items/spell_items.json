@@ -24,7 +24,7 @@
     "type": "ITEM",
     "category": "other",
     "name": { "str": "water talisman" },
-    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to mend minor wounds, along with providing limited resistance to certain alchemical effects, though repeated usage in a short period of time will have detremental side effects.",
+    "description": "A crude paper talisman marked with strange patterns, and anointed with a hunter's sacrifice.  It can be used to walk on water for a short period of time.",
     "price_postapoc": "6 USD",
     "weight": "150 g",
     "volume": "100 ml",
