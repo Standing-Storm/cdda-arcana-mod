@@ -5,7 +5,7 @@
     "subtype": "distribution",
     "entries": [
       { "item": "poetry_book", "damage": 5 },
-      { "item": "philosophy_book", "damage": 3 },
+      { "item": "philosophy_book", "damage": 10 },
       { "item": "essay_book", "damage": 3 },
       {
         "distribution": [
@@ -47,7 +47,7 @@
     "subtype": "distribution",
     "entries": [
       { "item": "poetry_book", "damage": 5 },
-      { "item": "philosophy_book", "damage": 3 },
+      { "item": "philosophy_book", "damage": 10 },
       { "item": "essay_book", "damage": 3 },
       {
         "distribution": [
