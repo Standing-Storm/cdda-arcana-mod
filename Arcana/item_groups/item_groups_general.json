@@ -253,7 +253,7 @@
       { "item": "novel_experimental", "prob": 5 },
       { "item": "philosophy_book", "prob": 25 },
       { "item": "poetry_book", "prob": 25 },
-      { "group": "esoteric_books", "prob": 25 },
+      { "group": "esoteric_books", "prob": 45 },
       {
         "distribution": [
           { "item": "book_potioncraft", "prob": 25 },
@@ -275,7 +275,7 @@
       { "item": "novel_experimental", "prob": 15 },
       { "item": "philosophy_book", "prob": 25 },
       { "item": "poetry_book", "prob": 15 },
-      { "group": "esoteric_books", "prob": 25 },
+      { "group": "esoteric_books", "prob": 45 },
       {
         "distribution": [
           { "item": "book_potioncraft", "prob": 25 },
