@@ -25,31 +25,37 @@
             { "item": "book_scrollcraft", "prob": 10 },
             { "item": "book_sacrifice", "prob": 5 }
           ],
-          "prob": 10
+          "prob": 2
         }
       ]
     }
+  },
+  {
+    "id": "magic_and_esoteric_books",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "esoteric_books", "prob": 8 }, { "group": "magic_books", "prob": 1 } ] }
   },
   {
     "id": "mansion_books",
     "copy-from": "mansion_books",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "group": "magic_books", "prob": 5 } ] }
+    "extend": { "entries": [ { "group": "magic_and_esoteric_books", "prob": 5 } ] }
   },
   {
     "id": "mansion_bookcase",
     "copy-from": "mansion_bookcase",
     "type": "item_group",
     "subtype": "collection",
-    "extend": { "groups": [ [ "magic_books", 5 ] ] }
+    "extend": { "groups": [ [ "magic_and_esoteric_books", 5 ] ] }
   },
   {
     "id": "exotic_books",
     "copy-from": "exotic_books",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "group": "magic_books", "prob": 5 } ] }
+    "extend": { "entries": [ { "group": "magic_and_esoteric_books", "prob": 5 } ] }
   },
   {
     "id": "book_martial_rare",
@@ -57,26 +63,6 @@
     "type": "item_group",
     "subtype": "distribution",
     "extend": { "entries": [ { "item": "manual_cleansingflame", "prob": 1 }, { "item": "manual_shrike", "prob": 1 } ] }
-  },
-  {
-    "id": "SUS_book_nonf_hard_spirit",
-    "copy-from": "SUS_book_nonf_hard_spirit",
-    "type": "item_group",
-    "subtype": "distribution",
-    "extend": {
-      "entries": [
-        { "item": "book_hexenhammer", "prob": 2 },
-        { "item": "book_scrollcraft", "prob": 2 },
-        { "item": "book_sacrifice", "prob": 1 }
-      ]
-    }
-  },
-  {
-    "id": "SUS_book_nonf_soft_occult",
-    "copy-from": "SUS_book_nonf_soft_occult",
-    "type": "item_group",
-    "subtype": "distribution",
-    "extend": { "entries": [ { "group": "magic_books", "prob": 1 } ] }
   },
   {
     "id": "mansion_safe",

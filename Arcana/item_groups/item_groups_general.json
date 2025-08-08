@@ -285,7 +285,7 @@
           { "item": "book_magicfordummies", "prob": 15 },
           { "item": "book_syncretism", "prob": 10 }
         ],
-        "prob": 15
+        "prob": 20
       }
     ]
   },
