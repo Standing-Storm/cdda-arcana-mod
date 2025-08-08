@@ -8,14 +8,17 @@
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
-    "book_learn": [ [ "book_potioncraft", 4 ] ],
+    "book_learn": [ [ "book_alchemical_transmutation", 4 ], [ "book_easyalchemy", 5 ] ],
     "time": "4 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [
+      [ [ "book_alchemical_transmutation", -1 ], [ "book_easyalchemy", -1 ] ],
+      [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ]
+    ],
     "components": [
       [
         [ "lead", 150 ],
@@ -37,14 +40,14 @@
     "skill_used": "magic",
     "difficulty": 4,
     "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
-    "book_learn": [ [ "book_potioncraft", 4 ] ],
+    "book_learn": [ [ "book_alchemical_transmutation", 4 ] ],
     "time": "4 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
     "result_mult": 3,
     "using": [ [ "forging_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_alchemical_transmutation", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "lead", 200 ], [ "bismuth", 300 ], [ "copper", 300 ], [ "tin", 300 ] ],
       [ [ "silver_small", 20 ], [ "gold_small", 12 ], [ "platinum_small", 12 ] ],
@@ -60,14 +63,14 @@
     "skill_used": "magic",
     "difficulty": 5,
     "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
-    "book_learn": [ [ "book_potioncraft", 5 ] ],
+    "book_learn": [ [ "book_alchemical_transmutation", 5 ] ],
     "time": "5 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_alchemical_transmutation", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [
         [ "lead", 200 ],
@@ -89,14 +92,14 @@
     "skill_used": "magic",
     "difficulty": 6,
     "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
-    "book_learn": [ [ "book_potioncraft", 6 ] ],
+    "book_learn": [ [ "book_alchemical_transmutation", 6 ] ],
     "time": "6 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_alchemical_transmutation", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [
         [ "lead", 400 ],
@@ -118,14 +121,14 @@
     "skill_used": "magic",
     "difficulty": 6,
     "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
-    "book_learn": [ [ "book_potioncraft", 6 ] ],
+    "book_learn": [ [ "book_alchemical_transmutation", 6 ] ],
     "time": "6 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 50, 2 ],
     "charges": 200,
     "using": [ [ "forging_standard", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "tools": [ [ [ "book_alchemical_transmutation", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [
         [ "lead", 400 ],
@@ -135,31 +138,6 @@
         [ "silver_small", 400 ],
         [ "gold_small", 200 ]
       ],
-      [ [ "healing_potion", 1 ] ]
-    ]
-  },
-  {
-    "result": "chem_black_powder",
-    "type": "recipe",
-    "id_suffix": "magical",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_ALCHEMY",
-    "skill_used": "magic",
-    "difficulty": 5,
-    "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
-    "book_learn": [ [ "book_potioncraft", 5 ] ],
-    "time": "5 h",
-    "activity_level": "NO_EXERCISE",
-    "batch_time_factors": [ 50, 2 ],
-    "charges": 200,
-    "using": [ [ "forging_standard", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [
-      [ [ "salt", 75 ] ],
-      [ [ "ash", 50 ] ],
-      [ [ "material_sand", 5 ] ],
-      [ [ "flame_talisman", 1 ] ],
       [ [ "healing_potion", 1 ] ]
     ]
   },
@@ -175,10 +153,19 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "batch_time_factors": [ 80, 4 ],
-    "book_learn": [ [ "book_potioncraft", 0 ] ],
-    "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
+    "book_learn": [ [ "book_potioncraft", 0 ], [ "book_easyalchemy", 2 ] ],
+    "using": [ [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_potions" } ],
-    "components": [ [ [ "fat_tainted", 2 ], [ "bone_tainted", 1 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ], [ "book_easyalchemy", -1 ] ] ],
+    "components": [
+      [ [ "fat_tainted", 2 ], [ "bone_tainted", 1 ] ],
+      [
+        [ "hard_liquor_toxic", 1, "LIST" ],
+        [ "chem_methanol", 125 ],
+        [ "cheap_wine", 21, "LIST" ],
+        [ "worthy_wine", 15, "LIST" ]
+      ]
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
@@ -193,7 +180,7 @@
     "time": "3 h",
     "activity_level": "LIGHT_EXERCISE",
     "batch_time_factors": [ 80, 4 ],
-    "book_learn": [ [ "book_potioncraft", 1 ] ],
+    "book_learn": [ [ "book_potioncraft", 1 ], [ "book_easyalchemy", 2 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_potions" } ],
     "components": [ [ [ "tallow_tainted", 1 ], [ "meal_bone_tainted", 4 ] ], [ [ "material_limestone", 1 ], [ "ash", 500 ] ] ],

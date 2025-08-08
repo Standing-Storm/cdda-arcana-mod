@@ -141,7 +141,7 @@
           "red_black_vulnerary",
           "chem_ethanol",
           "bottle_glass",
-          "book_potioncraft"
+          "book_easyalchemy"
         ],
         "entries": [
           { "item": "mana_gem", "contents-group": "starting_mana_gem_4_essence" },

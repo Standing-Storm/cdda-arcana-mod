@@ -5,7 +5,13 @@
     "copy-from": "magic_shop_books",
     "//": "Additions to magic shop itemgroups are for automatic compatibility with Magiclysm.  General assumption is only the non-faction books were traded around enough for the non-arcanist magical community to start collecting samples.  Todo: remember magic_CBM itemgroup for when magitech is added to arcana.",
     "extend": {
-      "items": [ [ "book_potioncraft", 25 ], [ "book_scrollcraft", 15 ], [ "book_summoning", 10 ], [ "book_syncretism", 5 ] ]
+      "items": [
+        [ "book_potioncraft", 25 ],
+        { "item": "book_alchemical_transmutation", "prob": 15 },
+        [ "book_scrollcraft", 15 ],
+        [ "book_summoning", 10 ],
+        [ "book_syncretism", 5 ]
+      ]
     }
   },
   {
@@ -18,13 +24,27 @@
     "id": "alchemy_items",
     "type": "item_group",
     "copy-from": "alchemy_items",
-    "extend": { "items": [ [ "book_potioncraft", 5 ], { "group": "arcana_hunt_random", "prob": 10 } ] }
+    "extend": {
+      "items": [
+        [ "book_potioncraft", 5 ],
+        { "item": "book_alchemical_transmutation", "prob": 5 },
+        { "item": "book_easyalchemy", "prob": 5 },
+        { "group": "arcana_hunt_random", "prob": 10 }
+      ]
+    }
   },
   {
     "id": "magic_recipe_basic",
     "type": "item_group",
     "copy-from": "magic_recipe_basic",
-    "extend": { "items": [ [ "book_potioncraft", 25 ], [ "book_scrollcraft", 15 ] ] }
+    "extend": {
+      "items": [
+        [ "book_potioncraft", 25 ],
+        { "item": "book_alchemical_transmutation", "prob": 20 },
+        { "item": "book_easyalchemy", "prob": 10 },
+        [ "book_scrollcraft", 15 ]
+      ]
+    }
   },
   {
     "id": "magic_recipe_advanced",

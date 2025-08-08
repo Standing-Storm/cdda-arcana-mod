@@ -13,7 +13,10 @@
       {
         "distribution": [
           { "item": "book_bloodmagic", "prob": 25 },
-          { "item": "book_potioncraft", "prob": 15 },
+          {
+            "distribution": [ { "item": "book_potioncraft", "prob": 2 }, { "item": "book_easyalchemy", "prob": 1 } ],
+            "prob": 15
+          },
           { "item": "book_summoning", "prob": 3 },
           { "item": "book_magicfordummies", "prob": 10 },
           { "item": "manual_shrike", "prob": 5 },
@@ -38,7 +41,10 @@
       {
         "distribution": [
           { "item": "book_bloodmagic", "prob": 25 },
-          { "item": "book_potioncraft", "prob": 15 },
+          {
+            "distribution": [ { "item": "book_potioncraft", "prob": 3 }, { "item": "book_easyalchemy", "prob": 1 } ],
+            "prob": 15
+          },
           { "item": "book_summoning", "prob": 8 },
           { "item": "book_magicfordummies", "prob": 3 },
           { "item": "book_syncretism", "prob": 1 },

@@ -623,5 +623,31 @@
     ],
     "components": [ [ [ "stormbringer", 1 ] ], [ [ "salt", 100 ] ], [ [ "essence_blood", 12 ] ] ],
     "flags": [ "SECRET" ]
+  },
+  {
+    "result": "chem_black_powder",
+    "type": "recipe",
+    "id_suffix": "magical",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ALCHEMY",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ [ "fabrication", 4 ], [ "chemistry", 6 ] ],
+    "book_learn": [  ],
+    "time": "5 h",
+    "activity_level": "NO_EXERCISE",
+    "batch_time_factors": [ 50, 2 ],
+    "charges": 200,
+    "using": [ [ "forging_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_transmutation" } ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
+    "components": [
+      [ [ "salt", 75 ] ],
+      [ [ "ash", 50 ] ],
+      [ [ "material_sand", 5 ] ],
+      [ [ "flame_talisman", 1 ] ],
+      [ [ "healing_potion", 1 ] ]
+    ],
+    "flags": [ "SECRET" ]
   }
 ]
