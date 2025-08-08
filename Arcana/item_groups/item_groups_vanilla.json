@@ -55,7 +55,7 @@
     "copy-from": "exotic_books",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "group": "magic_and_esoteric_books", "prob": 5 } ] }
+    "extend": { "entries": [ { "group": "magic_books", "prob": 1 } ] }
   },
   {
     "id": "book_martial_rare",
