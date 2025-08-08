@@ -65,6 +65,13 @@
     "extend": { "entries": [ { "item": "manual_cleansingflame", "prob": 1 }, { "item": "manual_shrike", "prob": 1 } ] }
   },
   {
+    "id": "esoteric_books",
+    "copy-from": "esoteric_books",
+    "type": "item_group",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "item": "book_magicfordummies", "prob": 2 } ] }
+  },
+  {
     "id": "mansion_safe",
     "copy-from": "mansion_safe",
     "type": "item_group",
