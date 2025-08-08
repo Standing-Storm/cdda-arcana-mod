@@ -204,6 +204,7 @@
     "id": "magic_books",
     "type": "item_group",
     "items": [
+      { "group": "esoteric_books", "prob": 75 },
       [ "book_magicfordummies", 20 ],
       [ "book_potioncraft", 15 ],
       [ "book_scrollcraft", 15 ],
@@ -225,6 +226,7 @@
     "id": "magic_books_postapoc",
     "type": "item_group",
     "items": [
+      { "group": "esoteric_books", "prob": 75 },
       [ "book_magicfordummies", 20 ],
       [ "book_potioncraft", 10 ],
       [ "book_scrollcraft", 5 ],
@@ -245,32 +247,46 @@
   {
     "id": "unaligned_arcanist_books",
     "type": "item_group",
-    "items": [
-      [ "novel_drama", 5 ],
-      [ "novel_experimental", 5 ],
-      [ "philosophy_book", 15 ],
-      [ "poetry_book", 10 ],
-      [ "book_potioncraft", 25 ],
-      [ "book_elementalism", 20 ],
-      [ "book_scrollcraft", 20 ],
-      [ "book_summoning", 10 ],
-      [ "book_magicfordummies", 15 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "novel_drama", "prob": 5 },
+      { "item": "novel_experimental", "prob": 5 },
+      { "item": "philosophy_book", "prob": 25 },
+      { "item": "poetry_book", "prob": 25 },
+      { "group": "esoteric_books", "prob": 25 },
+      {
+        "distribution": [
+          { "item": "book_potioncraft", "prob": 25 },
+          { "item": "book_elementalism", "prob": 20 },
+          { "item": "book_scrollcraft", "prob": 20 },
+          { "item": "book_summoning", "prob": 10 },
+          { "item": "book_magicfordummies", "prob": 10 }
+        ],
+        "prob": 15
+      }
     ]
   },
   {
     "id": "unaligned_arcanist_books_postapoc",
     "type": "item_group",
-    "items": [
-      [ "novel_drama", 5 ],
-      [ "novel_experimental", 5 ],
-      [ "philosophy_book", 15 ],
-      [ "poetry_book", 10 ],
-      [ "book_potioncraft", 25 ],
-      [ "book_elementalism", 25 ],
-      [ "book_scrollcraft", 15 ],
-      [ "book_summoning", 10 ],
-      [ "book_magicfordummies", 15 ],
-      [ "book_syncretism", 10 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "novel_drama", "prob": 5 },
+      { "item": "novel_experimental", "prob": 15 },
+      { "item": "philosophy_book", "prob": 25 },
+      { "item": "poetry_book", "prob": 15 },
+      { "group": "esoteric_books", "prob": 25 },
+      {
+        "distribution": [
+          { "item": "book_potioncraft", "prob": 25 },
+          { "item": "book_elementalism", "prob": 20 },
+          { "item": "book_scrollcraft", "prob": 15 },
+          { "item": "book_summoning", "prob": 10 },
+          { "item": "book_magicfordummies", "prob": 15 },
+          { "item": "book_magicfordummies", "prob": 10 }
+        ],
+        "prob": 15
+      }
     ]
   },
   {

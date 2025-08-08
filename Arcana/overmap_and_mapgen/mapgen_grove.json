@@ -120,7 +120,7 @@
       "mapping": { "%": { "item": [ { "item": "rock", "repeat": [ 5, 10 ] } ] } },
       "items": {
         "{": [ { "item": "magic_crafting", "chance": 75 }, { "item": "magic_consumables", "chance": 40 } ],
-        "]": [ { "item": "unaligned_arcanist_books", "chance": 50, "repeat": 3 } ]
+        "]": [ { "item": "unaligned_arcanist_books", "chance": 50, "repeat": [ 5, 10 ] } ]
       },
       "place_loot": [
         { "group": "briarwitch_casualties", "x": [ 12, 21 ], "y": [ 9, 11 ], "repeat": [ 1, 4 ] },

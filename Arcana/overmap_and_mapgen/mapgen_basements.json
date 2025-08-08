@@ -208,7 +208,7 @@
         { "group": "reading_lights", "x": 5, "y": 5, "chance": 90 },
         { "group": "cannedfood", "x": [ 11, 15 ], "y": 1, "chance": 75, "repeat": 5 },
         { "group": "homebooks", "x": 18, "y": [ 1, 5 ], "chance": 75, "repeat": 6 },
-        { "group": "unaligned_arcanist_books_postapoc", "x": 18, "y": [ 1, 5 ], "chance": 50, "repeat": 6 },
+        { "group": "unaligned_arcanist_books_postapoc", "x": 18, "y": [ 1, 5 ], "chance": 50, "repeat": [ 5, 10 ] },
         { "group": "magic_crafting", "x": 7, "y": [ 8, 10 ], "chance": 50, "repeat": 3 },
         { "group": "magic_crafting", "x": 15, "y": [ 8, 10 ], "chance": 50, "repeat": 3 },
         { "group": "magic_consumables", "x": 7, "y": 5, "chance": 50, "repeat": 3 },
@@ -270,7 +270,7 @@
       },
       "items": {
         " ": { "item": "SUS_trash_floor_light", "chance": 1 },
-        "R": { "item": "unaligned_arcanist_books_postapoc", "chance": 25, "repeat": 3 },
+        "R": { "item": "unaligned_arcanist_books_postapoc", "chance": 25, "repeat": [ 5, 10 ] },
         "h": { "item": "summoner_casualties_fresh", "chance": 100 },
         "s": { "item": "magic_consumables", "chance": 25, "repeat": 2 },
         "N": { "item": "magic_crafting", "chance": 50, "repeat": 2 }

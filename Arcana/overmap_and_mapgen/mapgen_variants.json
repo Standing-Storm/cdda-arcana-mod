@@ -1018,7 +1018,7 @@
         { "item": "glass_shard", "x": [ 4, 7 ], "y": 21, "repeat": [ 20, 40 ] },
         { "item": "glass_shard", "x": [ 15, 18 ], "y": 21, "repeat": [ 20, 40 ] },
         { "group": "cult_sacrifice", "x": 2, "y": 20 },
-        { "group": "unaligned_arcanist_books_postapoc", "x": [ 9, 13 ], "y": 15, "chance": 25, "repeat": 2 },
+        { "group": "unaligned_arcanist_books_postapoc", "x": [ 9, 13 ], "y": 15, "chance": 25, "repeat": [ 3, 6 ] },
         { "group": "arcana_hunt_random", "x": [ 9, 13 ], "y": 15, "chance": 25 },
         { "group": "summoner_casualties_fresh", "x": [ 6, 7 ], "y": [ 8, 9 ], "chance": 90 },
         { "group": "ammo_casings", "x": [ 5, 8 ], "y": [ 7, 10 ], "chance": 50 },
@@ -1508,7 +1508,7 @@
       },
       "place_loot": [
         { "group": "summoner_casualties_fresh", "x": [ 10, 11 ], "y": [ 14, 15 ] },
-        { "group": "unaligned_arcanist_books_postapoc", "x": 12, "y": [ 14, 15 ], "chance": 50, "repeat": 5 }
+        { "group": "unaligned_arcanist_books_postapoc", "x": 12, "y": [ 14, 15 ], "chance": 50, "repeat": [ 5, 10 ] }
       ],
       "place_monster": [ { "monster": "mon_darkman", "x": [ 10, 11 ], "y": [ 15, 16 ] } ]
     }
