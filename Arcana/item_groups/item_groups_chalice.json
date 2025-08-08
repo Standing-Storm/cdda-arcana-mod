@@ -2,36 +2,49 @@
   {
     "id": "chalice_cult_books",
     "type": "item_group",
-    "items": [
-      [ "essay_book", 5 ],
-      [ "poetry_book", 10 ],
-      [ "plays_book", 10 ],
-      [ "philosophy_book", 15 ],
-      [ "novel_experimental", 5 ],
-      [ "book_sacrifice", 25 ],
-      [ "book_summoning", 12 ],
-      [ "book_scrollcraft", 10 ],
-      [ "book_magicfordummies", 3 ],
-      [ "manual_sojutsu", 4 ],
-      [ "manual_swordsmanship", 1 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "essay_book", "prob": 5 },
+      { "item": "poetry_book", "prob": 10 },
+      { "item": "plays_book", "prob": 12 },
+      { "item": "essay_book", "prob": 6 },
+      { "item": "philosophy_book", "prob": 15 },
+      { "item": "novel_experimental", "prob": 5 },
+      {
+        "distribution": [
+          { "item": "book_sacrifice", "prob": 25 },
+          { "item": "book_summoning", "prob": 12 },
+          { "item": "book_scrollcraft", "prob": 5 },
+          { "item": "book_magicfordummies", "prob": 3 },
+          { "item": "manual_sojutsu", "prob": 5 },
+          { "item": "manual_swordsmanship", "prob": 1 }
+        ],
+        "prob": 15
+      }
     ]
   },
   {
     "id": "chalice_cult_books_postapoc",
     "type": "item_group",
-    "items": [
-      [ "essay_book", 5 ],
-      [ "poetry_book", 10 ],
-      [ "plays_book", 10 ],
-      [ "philosophy_book", 15 ],
-      [ "novel_experimental", 5 ],
-      [ "book_sacrifice", 25 ],
-      [ "book_summoning", 10 ],
-      [ "book_scrollcraft", 10 ],
-      [ "book_magicfordummies", 3 ],
-      [ "book_syncretism", 5 ],
-      [ "manual_sojutsu", 1 ],
-      [ "manual_swordsmanship", 1 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "essay_book", "prob": 5 },
+      { "item": "poetry_book", "prob": 10 },
+      { "item": "plays_book", "prob": 12 },
+      { "item": "essay_book", "prob": 6 },
+      { "item": "philosophy_book", "prob": 15 },
+      { "item": "novel_experimental", "prob": 5 },
+      {
+        "distribution": [
+          { "item": "book_sacrifice", "prob": 25 },
+          { "item": "book_summoning", "prob": 10 },
+          { "item": "book_scrollcraft", "prob": 10 },
+          { "item": "book_magicfordummies", "prob": 3 },
+          { "item": "manual_sojutsu", "prob": 5 },
+          { "item": "manual_swordsmanship", "prob": 1 }
+        ],
+        "prob": 15
+      }
     ]
   },
   {

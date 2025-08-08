@@ -138,6 +138,7 @@
       [ "summon_nether_huntsman", 1 ],
       [ "summon_yugg", 1 ],
       [ "summon_shoggoth", 1 ],
+      [ "flame_talisman", 2 ],
       [ "portal", 1 ]
     ]
   },
