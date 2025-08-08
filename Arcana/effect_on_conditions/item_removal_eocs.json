@@ -46,6 +46,21 @@
     "effect": [ { "u_consume_item": "water_talisman", "count": 1 } ]
   },
   {
+    "id": "ice_talisman_self_destruct",
+    "type": "SPELL",
+    "shape": "blast",
+    "name": { "str": "Ice Talisman Self destruct", "//~": "NO_I18N" },
+    "description": { "str": "Removes ice talisman.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_ICE_TALISMAN"
+  },
+  {
+    "id": "EOC_REMOVE_ICE_TALISMAN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "ice_talisman", "count": 1 } ]
+  },
+  {
     "id": "lightning_talisman_self_destruct",
     "type": "SPELL",
     "shape": "blast",

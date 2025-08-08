@@ -1748,6 +1748,32 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_talisman_heat_protection",
+    "name": [ "Chill Aura" ],
+    "desc": [ "An aura of cold air is protecting you from heat." ],
+    "remove_message": "A warm breeze touches your skin.",
+    "decay_messages": [ [ "The cold aura around you is fading away.", "bad" ] ],
+    "max_duration": "30 m",
+    "max_intensity": 180,
+    "int_dur_factor": "10 s",
+    "rating": "good",
+    "flags": [ "HEAT_IMMUNE" ],
+    "removes_effects": [ "blisters" ],
+    "enchantments": [ { "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 1000 } ] } ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_talisman_freezing_other",
+    "name": [ "Frozen Aura" ],
+    "desc": [ "You cannot move because you are frozen." ],
+    "max_duration": "1 m",
+    "max_intensity": 1,
+    "rating": "bad",
+    "show_in_info": true,
+    "flags": [ "CANNOT_ATTACK", "CANNOT_MOVE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "effect_arcana_gilded_aegis_active",
     "//": "You gain more pain but the pain affects you much less.  Turning it off is going to HURT",
     "rating": "good",

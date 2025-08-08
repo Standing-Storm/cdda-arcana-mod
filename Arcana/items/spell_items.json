@@ -92,6 +92,22 @@
     "flags": [ "NO_SALVAGE", "NO_INGEST", "SINGLE_USE" ]
   },
   {
+    "id": "ice_talisman",
+    "type": "ITEM",
+    "category": "other",
+    "name": { "str": "ice talisman" },
+    "description": "A crude paper talisman marked with strange patterns, anointed with a lucent sacrifice.  Using it on another target will freeze them in place for a few moments, and using it on yourself will protect you from heat and flame for a brief period.",
+    "price_postapoc": "6 USD",
+    "weight": "150 g",
+    "volume": "100 ml",
+    "material": [ "paper" ],
+    "looks_like": "birchbark",
+    "symbol": ",",
+    "color": "cyan",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_frozen_switcher", "no_fail": true, "level": 0 },
+    "flags": [ "NO_SALVAGE", "NO_INGEST", "SINGLE_USE" ]
+  },
+  {
     "id": "forest_talisman",
     "type": "ITEM",
     "category": "other",
