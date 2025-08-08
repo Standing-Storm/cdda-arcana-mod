@@ -12,30 +12,6 @@
     "death_drops": "mon_alpha_razorclaw_death_drops"
   },
   {
-    "id": "mon_ant_queen",
-    "copy-from": "mon_ant_queen",
-    "type": "MONSTER",
-    "death_drops": "mon_ant_queen_death_drops"
-  },
-  {
-    "id": "mon_ant_acid",
-    "copy-from": "mon_ant_acid",
-    "type": "MONSTER",
-    "death_drops": "mon_ant_acid_death_drops"
-  },
-  {
-    "id": "mon_ant_acid_soldier",
-    "copy-from": "mon_ant_acid_soldier",
-    "type": "MONSTER",
-    "death_drops": "mon_ant_acid_soldier_death_drops"
-  },
-  {
-    "id": "mon_ant_acid_queen",
-    "copy-from": "mon_ant_acid_queen",
-    "type": "MONSTER",
-    "death_drops": "mon_ant_acid_queen_death_drops"
-  },
-  {
     "id": "mon_graboid",
     "copy-from": "mon_graboid",
     "type": "MONSTER",
@@ -565,13 +541,6 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
-    "id": "mon_breather",
-    "copy-from": "mon_breather",
-    "type": "MONSTER",
-    "death_drops": "mon_breather_death_drops",
-    "extend": { "categories": [ "CLASSIC" ] }
-  },
-  {
     "id": "mon_shadow_snake",
     "copy-from": "mon_shadow_snake",
     "melee_dice": 2,
@@ -662,12 +631,6 @@
     ],
     "death_drops": "mon_flesh_angel_death_drops",
     "flags": [ "SEES", "HEARS", "SMELLS", "WARM", "HARDTOSHOOT", "ATTACKMON", "FLIES", "HUMAN", "POISON", "REVIVES", "FILTHY" ]
-  },
-  {
-    "id": "mon_player_blob",
-    "copy-from": "mon_player_blob",
-    "type": "MONSTER",
-    "death_drops": "mon_player_blob_death_drops"
   },
   {
     "id": "mon_skeleton_hulk",
@@ -886,36 +849,6 @@
     "copy-from": "mon_leech_root_drone",
     "type": "MONSTER",
     "death_drops": "mon_leech_root_drone_death_drops"
-  },
-  {
-    "id": "mon_exodii_worker",
-    "copy-from": "mon_exodii_worker",
-    "type": "MONSTER",
-    "death_drops": "mon_exodii_worker_death_drops"
-  },
-  {
-    "id": "mon_exodii_quad",
-    "copy-from": "mon_exodii_quad",
-    "type": "MONSTER",
-    "death_drops": "mon_exodii_quad_death_drops"
-  },
-  {
-    "id": "mon_zomborg",
-    "copy-from": "mon_zomborg",
-    "type": "MONSTER",
-    "death_drops": "mon_zomborg_death_drops"
-  },
-  {
-    "id": "exodii_sniper_drone",
-    "copy-from": "exodii_sniper_drone",
-    "type": "MONSTER",
-    "death_drops": "exodii_sniper_drone_death_drops"
-  },
-  {
-    "id": "mon_exodii_turret",
-    "copy-from": "mon_exodii_turret",
-    "type": "MONSTER",
-    "death_drops": "mon_exodii_turret_death_drops"
   },
   {
     "id": "mon_zombie_soldier_blackops_1",
