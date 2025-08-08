@@ -73,11 +73,11 @@
   {
     "id": "mon_moruboru",
     "type": "MONSTER",
-    "name": { "str": "moruboru", "str_pl": "moruboru" },
+    "name": { "str": "mandragora", "str_pl": "mandragora" },
     "description": "A large plantlike creature with a gaping, toothy maw and numerous vines.  A hideous smell permeates the air around it.",
     "default_faction": "moruboru",
     "categories": [ "CLASSIC" ],
-    "species": [ "ABERRATION" ],
+    "species": [ "FOREST_ELEMENTAL" ],
     "volume": "92500 ml",
     "weight": "120000 g",
     "diff": 30,
