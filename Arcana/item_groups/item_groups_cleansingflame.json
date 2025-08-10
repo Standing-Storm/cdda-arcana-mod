@@ -148,6 +148,8 @@
       [ "numbness_potion", 5 ],
       [ "strength_potion", 10 ],
       [ "speed_potion", 5 ],
+      [ "arcana_poison_disease_infection_resist_potion", 10 ],
+      [ "arcana_cold_hot_resist_potion", 5 ],
       [ "healing_potion", 15 ],
       [ "scroll_sun", 5 ],
       [ "scroll_moon", 5 ],
@@ -345,6 +347,9 @@
       [ "numbness_potion", 15 ],
       [ "strength_potion", 15 ],
       [ "speed_potion", 10 ],
+      [ "arcana_cold_hot_resist_potion", 10 ],
+      [ "arcana_health_potion1", 5 ],
+      [ "arcana_poison_disease_infection_resist_potion", 10 ],
       [ "healing_potion", 10 ],
       { "item": "red_black_vulnerary", "prob": 5, "count": 2 },
       { "item": "yellow_white_incense", "prob": 5, "count": 2 }

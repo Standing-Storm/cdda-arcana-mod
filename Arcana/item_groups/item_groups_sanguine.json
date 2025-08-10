@@ -136,6 +136,7 @@
       [ "strength_potion", 2 ],
       [ "speed_potion", 3 ],
       [ "healing_potion", 1 ],
+      [ "arcana_health_potion", 3 ],
       [ "summon_kreck", 2 ],
       [ "summon_vinebeast", 2 ],
       [ "summon_flesh_angel", 2 ],

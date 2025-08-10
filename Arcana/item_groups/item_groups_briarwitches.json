@@ -6,6 +6,7 @@
       [ "numbness_potion", 45 ],
       [ "strength_potion", 40 ],
       [ "speed_potion", 35 ],
+      [ "arcana_health_potion", 35 ],
       [ "healing_potion", 30 ],
       { "item": "forest_talisman", "prob": 30 },
       { "item": "red_black_vulnerary", "prob": 25, "count": 2 },
