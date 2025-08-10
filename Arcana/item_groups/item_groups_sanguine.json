@@ -42,7 +42,7 @@
         "distribution": [
           { "item": "book_bloodmagic", "prob": 25 },
           {
-            "distribution": [ { "item": "book_potioncraft", "prob": 3 }, { "item": "book_easyalchemy", "prob": 1 } ],
+            "distribution": [ { "item": "book_potioncraft", "prob": 2 }, { "item": "book_easyalchemy", "prob": 1 } ],
             "prob": 15
           },
           { "item": "book_summoning", "prob": 8 },

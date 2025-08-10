@@ -104,7 +104,7 @@
             "fg": 40
           },
           { "id": "book_magicfordummies", "fg": 41 },
-          { "id": "book_potioncraft", "fg": 42 },
+          { "id": [ "book_potioncraft", "book_alternate_potions" ], "fg": 42 },
           { "id": "book_scrollcraft", "fg": 43 },
           { "id": "book_bloodmagic", "fg": 44 },
           { "id": "book_hexenhammer", "fg": 45 },

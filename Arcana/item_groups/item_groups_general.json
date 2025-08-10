@@ -203,18 +203,21 @@
   {
     "id": "magic_books",
     "type": "item_group",
-    "items": [
-      { "group": "esoteric_books", "prob": 75 },
-      [ "book_magicfordummies", 20 ],
-      [ "book_potioncraft", 15 ],
-      [ "book_scrollcraft", 15 ],
-      [ "book_summoning", 10 ],
-      [ "book_naturemagic", 10 ],
-      [ "book_elementalism", 15 ],
-      [ "book_hexenhammer", 15 ],
-      [ "book_bloodmagic", 15 ],
-      [ "book_sacrifice", 10 ],
-      { "group": "magic_books_rare", "prob": 5 }
+    "subtype": "distribution",
+    "entries": [
+      { "group": "magic_books_beginner", "prob": 65 },
+      {
+        "distribution": [ { "item": "book_potioncraft", "prob": 1 }, { "item": "book_alternate_potions", "prob": 1 } ],
+        "prob": 10
+      },
+      { "item": "book_scrollcraft", "prob": 15 },
+      { "item": "book_summoning", "prob": 10 },
+      { "item": "book_naturemagic", "prob": 10 },
+      { "item": "book_elementalism", "prob": 10 },
+      { "item": "book_hexenhammer", "prob": 15 },
+      { "item": "book_bloodmagic", "prob": 15 },
+      { "item": "book_sacrifice", "prob": 10 },
+      { "group": "magic_books_rare_postapoc", "prob": 5 }
     ]
   },
   {
@@ -225,24 +228,33 @@
   {
     "id": "magic_books_postapoc",
     "type": "item_group",
-    "items": [
-      { "group": "esoteric_books", "prob": 75 },
-      [ "book_magicfordummies", 20 ],
-      [ "book_potioncraft", 10 ],
-      [ "book_scrollcraft", 5 ],
-      [ "book_summoning", 5 ],
-      [ "book_naturemagic", 10 ],
-      [ "book_elementalism", 10 ],
-      [ "book_hexenhammer", 15 ],
-      [ "book_bloodmagic", 15 ],
-      [ "book_sacrifice", 15 ],
-      { "group": "magic_books_rare_postapoc", "prob": 10 }
+    "subtype": "distribution",
+    "entries": [
+      { "group": "magic_books_beginner", "prob": 35 },
+      {
+        "distribution": [ { "item": "book_potioncraft", "prob": 1 }, { "item": "book_alternate_potions", "prob": 1 } ],
+        "prob": 10
+      },
+      { "item": "book_scrollcraft", "prob": 10 },
+      { "item": "book_summoning", "prob": 5 },
+      { "item": "book_naturemagic", "prob": 10 },
+      { "item": "book_elementalism", "prob": 10 },
+      { "item": "book_hexenhammer", "prob": 15 },
+      { "item": "book_bloodmagic", "prob": 15 },
+      { "item": "book_sacrifice", "prob": 15 },
+      { "group": "magic_books_rare_postapoc", "prob": 5 }
     ]
   },
   {
     "id": "magic_books_rare_postapoc",
     "type": "item_group",
     "items": [ [ "book_syncretism", 50 ], [ "manual_cleansingflame", 20 ], [ "manual_shrike", 20 ], [ "recipe_lab_arcana", 10 ] ]
+  },
+  {
+    "id": "magic_books_beginner",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "book_easyalchemy", "prob": 1 }, { "item": "book_magicfordummies", "prob": 1 } ]
   },
   {
     "id": "unaligned_arcanist_books",
@@ -256,7 +268,14 @@
       { "group": "esoteric_books", "prob": 45 },
       {
         "distribution": [
-          { "item": "book_potioncraft", "prob": 25 },
+          {
+            "distribution": [
+              { "item": "book_alternate_potions", "prob": 2 },
+              { "item": "book_potioncraft", "prob": 1 },
+              { "item": "book_easyalchemy", "prob": 2 }
+            ],
+            "prob": 25
+          },
           { "item": "book_elementalism", "prob": 20 },
           { "item": "book_scrollcraft", "prob": 20 },
           { "item": "book_summoning", "prob": 10 },
@@ -278,7 +297,14 @@
       { "group": "esoteric_books", "prob": 45 },
       {
         "distribution": [
-          { "item": "book_potioncraft", "prob": 25 },
+          {
+            "distribution": [
+              { "item": "book_alternate_potions", "prob": 2 },
+              { "item": "book_potioncraft", "prob": 1 },
+              { "item": "book_easyalchemy", "prob": 2 }
+            ],
+            "prob": 25
+          },
           { "item": "book_elementalism", "prob": 20 },
           { "item": "book_scrollcraft", "prob": 15 },
           { "item": "book_summoning", "prob": 10 },

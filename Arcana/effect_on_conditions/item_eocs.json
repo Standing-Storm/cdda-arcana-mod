@@ -23,5 +23,13 @@
         ]
       }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_VIRIDIAN_POTION_WEAROFF_PENALTY",
+    "eoc_type": "EVENT",
+    "required_event": "character_loses_effect",
+    "condition": { "and": [ { "compare_string": [ "arcana_potion_bonus_health", { "context_val": "effect" } ] } ] },
+    "effect": [ { "u_add_effect": "arcana_potion_bonus_health_wearoff_penalty", "duration": "14 days" } ]
   }
 ]

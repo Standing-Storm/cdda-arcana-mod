@@ -26,9 +26,10 @@
     "copy-from": "alchemy_items",
     "extend": {
       "items": [
-        [ "book_potioncraft", 5 ],
+        { "item": "book_potioncraft", "prob": 5 },
         { "item": "book_alchemical_transmutation", "prob": 5 },
         { "item": "book_easyalchemy", "prob": 5 },
+        { "item": "book_alternate_potions", "prob": 5 },
         { "group": "arcana_hunt_random", "prob": 10 }
       ]
     }
@@ -39,10 +40,10 @@
     "copy-from": "magic_recipe_basic",
     "extend": {
       "items": [
-        [ "book_potioncraft", 25 ],
+        { "item": "book_potioncraft", "prob": 25 },
         { "item": "book_alchemical_transmutation", "prob": 20 },
         { "item": "book_easyalchemy", "prob": 10 },
-        [ "book_scrollcraft", 15 ]
+        { "item": "book_scrollcraft", "prob": 15 }
       ]
     }
   },

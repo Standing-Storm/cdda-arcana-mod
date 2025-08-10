@@ -99,8 +99,8 @@
     "type": "requirement",
     "//": "Tools and components for making potions.",
     "qualities": [ { "id": "CHEM", "level": 1 } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "components": [
+      [ [ "wild_herbs", 30 ] ],
       [
         [ "hard_liquor_toxic", 1, "LIST" ],
         [ "chem_methanol", 125 ],
@@ -108,13 +108,6 @@
         [ "worthy_wine", 15, "LIST" ]
       ]
     ]
-  },
-  {
-    "id": "arcana_potioncraft_upgrade",
-    "type": "requirement",
-    "//": "Tools and components for upgrading potions.",
-    "qualities": [ { "id": "CHEM", "level": 1 } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ] ]
   },
   {
     "id": "arcana_purification_standard",

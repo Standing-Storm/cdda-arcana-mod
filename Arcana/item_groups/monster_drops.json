@@ -721,7 +721,7 @@
         "prob": 2
       },
       { "group": "magic_consumables", "prob": 3 },
-      { "group": "magic_books", "prob": 25 }
+      { "group": "magic_books_beginner", "prob": 25 }
     ]
   },
   {
@@ -734,8 +734,7 @@
       { "item": "engraved_stone", "prob": 25 },
       { "group": "magic_tools", "prob": 4, "damage": [ 1, 4 ] },
       { "group": "magic_items", "prob": 8, "damage": [ 1, 4 ] },
-      { "group": "magic_consumables", "prob": 12 },
-      { "group": "magic_books", "prob": 16 }
+      { "group": "magic_consumables", "prob": 12 }
     ]
   },
   {
@@ -753,8 +752,7 @@
       { "item": "engraved_stone", "prob": 50 },
       { "group": "magic_tools", "prob": 5, "damage": [ 1, 4 ] },
       { "group": "magic_items", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "magic_consumables", "prob": 15 },
-      { "group": "magic_books", "prob": 20 }
+      { "group": "magic_consumables", "prob": 15 }
     ]
   },
   {
@@ -1030,21 +1028,21 @@
     "//": "Orphaned Item group",
     "type": "item_group",
     "subtype": "collection",
-    "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 }, { "group": "magic_books_postapoc", "prob": 1 } ] }
+    "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 }, { "group": "magic_books_beginner", "prob": 1 } ] }
   },
   {
     "id": "feral_fancy_death_drops_rapier_fake",
     "//": "Orphaned Item group",
     "type": "item_group",
     "subtype": "collection",
-    "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 }, { "group": "magic_books_postapoc", "prob": 1 } ] }
+    "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 }, { "group": "magic_books_beginner", "prob": 1 } ] }
   },
   {
     "id": "feral_fancy_death_drops_crossbow",
     "type": "item_group",
     "//": "Orphaned Item group",
     "subtype": "collection",
-    "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 }, { "group": "magic_books_postapoc", "prob": 1 } ] }
+    "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 }, { "group": "magic_books_beginner", "prob": 1 } ] }
   },
   {
     "id": "feral_armored_death_drops_mace",
