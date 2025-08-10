@@ -334,6 +334,61 @@
   },
   {
     "type": "effect_type",
+    "id": "arcana_potion_cold_hot_resist",
+    "name": [ "Even Temperature" ],
+    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "You are comfortable in the hottest summer or the chill of winter." ],
+    "remove_message": "You are exposed to the full effects of the weather.",
+    "decay_messages": [ [ "The regulating effect of your potion is starting to fade.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "2 hours",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      {
+        "values": [
+          { "value": "CLIMATE_CONTROL_HEAT", "add": 60 },
+          { "value": "CLIMATE_CONTROL_CHILL", "add": 60 },
+          { "value": "PAIN", "multiply": 0.25 }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_potion_poison_disease_infection_resist",
+    "name": [ "Malaise Ward" ],
+    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "You are immune to sickness and poisoning." ],
+    "remove_message": "Your immunity to poison and disease fades away.",
+    "decay_messages": [ [ "The immunity effect from your potion is fading.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "12 hours",
+    "max_intensity": 720,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": -0.75 } ] } ],
+    "removes_effects": [
+      "poison",
+      "badpoison",
+      "bloodworms",
+      "paincysts",
+      "brainworms",
+      "tapeworm",
+      "poison",
+      "venom_dmg",
+      "venom_weaken",
+      "stung",
+      "badpoison",
+      "foodpoison",
+      "paralyzepoison",
+      "tetanus",
+      "rat_bite_fever",
+      "infected"
+    ],
+    "flags": [ "NO_DISEASE", "INFECTION_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
     "id": "potion_vulnerary",
     "name": [ "Vulnerary" ],
     "resist_effects": [ "talisman_warding" ],
