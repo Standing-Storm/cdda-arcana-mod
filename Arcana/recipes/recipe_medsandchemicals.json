@@ -334,7 +334,7 @@
     "book_learn": [ [ "book_alternate_potions", 3 ] ],
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10, "LIST" ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_potions" } ],
-    "components": [ [ [ "arcana_blood_standard", 2, "LIST" ], [ "arcana_flesh_standard", 10, "LIST" ] ] ],
+    "components": [ [ [ "scrap_cast_iron", 5 ] ], [ [ "arcana_blood_standard", 2, "LIST" ], [ "arcana_flesh_standard", 10, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
