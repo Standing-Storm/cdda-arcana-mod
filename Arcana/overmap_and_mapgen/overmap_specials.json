@@ -20,18 +20,24 @@
   },
   {
     "type": "overmap_special",
-    "id": "Strange Grove",
+    "id": "Overgrown Hunting Lodge",
     "overmaps": [
-      { "point": [ 0, 0, 0 ], "overmap": "strange_grove_north" },
-      { "point": [ 0, 1, 0 ], "overmap": "strange_grove_2_north" },
-      { "point": [ 0, 0, -1 ], "overmap": "grove_ruins_north" },
-      { "point": [ 0, 1, -1 ], "overmap": "grove_ruins_2_north" }
+      { "point": [ 0, 0, 0 ], "overmap": "arcana_grove_lodge_ground1_north" },
+      { "point": [ 1, 0, 0 ], "overmap": "arcana_grove_lodge_ground2_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "arcana_grove_lodge_2ndfloor1_north" },
+      { "point": [ 1, 0, 1 ], "overmap": "arcana_grove_lodge_2ndfloor2_north" },
+      { "point": [ 0, 0, 2 ], "overmap": "arcana_grove_lodge_roof1_north" },
+      { "point": [ 1, 0, 2 ], "overmap": "arcana_grove_lodge_roof2_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "arcana_grove_lodge_basement_1_north" },
+      { "point": [ 1, 0, -1 ], "overmap": "arcana_grove_lodge_basement_2_north" },
+      { "point": [ -1, 0, 0 ], "locations": [ "land", "road" ] }
     ],
+    "connections": [ { "point": [ -1, 0, 0 ], "terrain": "road", "from": [ 0, 0, 0 ] } ],
     "locations": [ "forest" ],
-    "city_distance": [ 0, -1 ],
+    "city_distance": [ 30, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 25, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "GLOBALLY_UNIQUE" ]
+    "flags": [ "CLASSIC", "MAN_MADE", "GLOBALLY_UNIQUE" ]
   },
   {
     "type": "overmap_special",
