@@ -112,6 +112,11 @@
       "W": [ [ "t_double_pane_glass_with_curtain", 2 ], "t_double_pane_glass_with_curtain_open_window_closed" ],
       "<": "t_wood_stairs_down",
       "Z": "t_floor",
+      "a": "t_floor",
+      "A": "t_floor",
+      "e": "t_floor",
+      "S": "t_floor",
+      "t": "t_floor",
       ".": "t_flat_roof",
       "=": "t_flat_roof",
       "%": "t_gutter_downspout",
@@ -122,20 +127,22 @@
       "a": "f_armchair",
       "A": "f_bookcase",
       "D": "f_dresser",
+      "e": "f_entertainment_center",
       "F": "f_fridge",
       "h": "f_bathtub",
       "t": "f_table",
       "O": "f_sofa",
+      "S": "f_speaker_cabinet",
       "Z": "f_fireplace",
       "=": "f_vent_pipe",
       "é": "f_freezer"
     },
     "items": {
       "A": [
-        { "item": "homebooks", "chance": 60, "repeat": [ 1, 3 ] },
+        { "item": "homebooks", "chance": 60, "repeat": [ 4, 10 ] },
         { "item": "magazines", "chance": 30, "repeat": [ 0, 4 ] },
-        { "item": "novels", "chance": 60, "repeat": [ 1, 8 ] },
-        { "item": "esoteric_books", "chance": 60, "repeat": [ 2, 4 ] },
+        { "item": "novels", "chance": 60, "repeat": [ 4, 12 ] },
+        { "item": "esoteric_books", "chance": 60, "repeat": [ 1, 3 ] },
         { "item": "unaligned_arcanist_books", "chance": 30, "repeat": [ 1, 2 ] }
       ],
       "D": [

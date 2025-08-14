@@ -227,6 +227,15 @@
     "monsters": [ { "monster": "mon_feral_magehunter", "freq": 25, "cost_multiplier": 5, "starts": "250 hours" } ]
   },
   {
+    "id": "GROUP_THE_GREEN",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_thornwight", "freq": 200, "cost_multiplier": 0 },
+      { "monster": "mon_thornbear", "weight": 50 },
+      { "monster": "mon_arcana_tanglevine", "freq": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
     "type": "monstergroup",
     "id": "GROUP_NETHERMANCER_SUMMON",
     "default": "mon_blank",

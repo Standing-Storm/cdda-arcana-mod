@@ -131,7 +131,7 @@
       }
     ],
     "death_drops": { "subtype": "collection", "items": [ { "item": "triffid_spellbook", "prob": 25 } ] },
-    "extend": { "flags": [ "MAGIC_USER" ] }
+    "extend": { "flags": [ "MAGIC_USER", "PATH_AVOID_FALL" ] }
   },
   {
     "id": "mon_triffid_seedshaper",
@@ -180,6 +180,6 @@
     ],
     "emit_fields": [ { "emit_id": "emit_pollen_stream", "delay": "3 s" } ],
     "death_drops": { "subtype": "collection", "items": [ { "item": "triffid_spellbook", "prob": 25 } ] },
-    "extend": { "flags": [ "MAGIC_USER" ] }
+    "extend": { "flags": [ "MAGIC_USER", "PATH_AVOID_FALL" ] }
   }
 ]

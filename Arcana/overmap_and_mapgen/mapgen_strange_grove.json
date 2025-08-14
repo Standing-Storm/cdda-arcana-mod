@@ -50,8 +50,8 @@
         "  W____///______t#_/_/____OOOOO_ZZZ_____W       ",
         "  #a___/_/______a#/___/___O_____ZZZ_///D#       ",
         "  #__O_///O______+_/___/________ZZZ_/_/D#       ",
-        "  W__OOOOOO______#__/_/____hhh______///_W       ",
-        "  #a________éFF__#___/_____hhh_________<#       ",
+        "  W__OOOOOO______#__/_/_____________///_W       ",
+        "  #a________éFF__#___/____SeeeS________<#       ",
         " %########w#######wwww#############www###       ",
         "                                  -...%         ",
         "                       5-----------...-         ",
@@ -71,6 +71,7 @@
         "       5---------------------------5            "
       ],
       "palettes": [ "arcana_strange_grove_lodge_2ndfloor" ],
+      "place_item": [ { "item": "television", "x": 29, "y": 6, "chance": 100 } ],
       "place_items": [
         { "item": "SUS_trash_roof", "x": [ 35, 37 ], "y": [ 8, 9 ], "chance": 50, "repeat": [ 1, 3 ] },
         { "item": "SUS_trash_roof", "x": [ 24, 37 ], "y": [ 10, 15 ], "chance": 50, "repeat": [ 1, 3 ] },
@@ -92,6 +93,7 @@
         }
       ],
       "place_monster": [
+        { "monster": "mon_thornwight", "x": [ 24, 36 ], "y": [ 1, 6 ], "chance": 50, "repeat": [ 1, 4 ] },
         { "monster": "mon_triffid_seedshaper", "x": 12, "y": 3, "chance": 75 },
         { "monster": "mon_triffid_vineweaver", "x": 9, "y": 3, "chance": 75 }
       ]
