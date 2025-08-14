@@ -228,7 +228,8 @@
   {
     "id": "magic_books_rare",
     "type": "item_group",
-    "items": [ [ "manual_cleansingflame", 60 ], [ "manual_shrike", 40 ] ]
+    "subtype": "distribution",
+    "entries": [ { "item": "manual_cleansingflame", "prob": 3 }, { "item": "manual_shrike", "prob": 2 } ]
   },
   {
     "id": "magic_books_postapoc",
@@ -253,7 +254,13 @@
   {
     "id": "magic_books_rare_postapoc",
     "type": "item_group",
-    "items": [ [ "book_syncretism", 50 ], [ "manual_cleansingflame", 20 ], [ "manual_shrike", 20 ], [ "recipe_lab_arcana", 10 ] ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "book_syncretism", "prob": 5 },
+      { "item": "manual_cleansingflame", "prob": 2 },
+      { "item": "manual_shrike", "prob": 2 },
+      { "item": "recipe_lab_arcana", "prob": 1 }
+    ]
   },
   {
     "id": "magic_books_beginner",
