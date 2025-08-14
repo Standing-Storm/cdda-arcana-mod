@@ -149,6 +149,7 @@
       [ "strength_potion", 10 ],
       [ "speed_potion", 5 ],
       [ "arcana_poison_disease_infection_resist_potion", 10 ],
+      [ "arcana_need_no_sleep_potion", 5 ],
       [ "arcana_cold_hot_resist_potion", 5 ],
       [ "healing_potion", 15 ],
       [ "scroll_sun", 5 ],

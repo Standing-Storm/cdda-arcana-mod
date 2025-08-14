@@ -143,18 +143,18 @@
     "int_dur_factor": "1 m",
     "base_mods": {
       "pain_min": [ -1 ],
-      "pain_tick": [ 30 ],
+      "pain_tick": [ 45 ],
       "pain_chance": [ 3 ],
       "stamina_min": [ 20 ],
       "stamina_tick": [ 30 ],
       "stamina_chance": [ 3 ],
       "health_min": [ 1 ],
       "health_tick": [ 30 ],
-      "health_chance": [ 3 ],
+      "health_chance": [ 10 ],
       "h_mod_min": [ 1 ],
       "rad_min": [ -1 ],
       "rad_tick": [ 30 ],
-      "rad_chance": [ 3 ]
+      "rad_chance": [ 6 ]
     }
   },
   {
@@ -386,6 +386,19 @@
       "infected"
     ],
     "flags": [ "NO_DISEASE", "INFECTION_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "arcana_potion_need_no_sleep",
+    "name": [ "Awake and Aware" ],
+    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "The potion is keeping you from needing to sleep." ],
+    "remove_message": "You are almost crushed by an overpowering wave of exhaustion.",
+    "decay_messages": [ [ "You yawn suddenly.  Your potion must be fading.", "bad" ] ],
+    "max_duration": "24 hours",
+    "max_intensity": 1440,
+    "int_dur_factor": "1 m",
+    "base_mods": { "sleepiness_min": [ -1 ], "sleepiness_chance": [ 1 ], "sleepiness_min_val": [ 0 ], "sleepiness_tick": [ 300 ] }
   },
   {
     "type": "effect_type",
