@@ -8,6 +8,7 @@
       [ "speed_potion", 35 ],
       [ "arcana_health_potion", 35 ],
       [ "healing_potion", 30 ],
+      { "item": "arcana_do_not_eat_potion", "prob": 45 },
       { "item": "forest_talisman", "prob": 30 },
       { "item": "red_black_vulnerary", "prob": 25, "count": 2 },
       { "item": "yellow_white_incense", "prob": 20, "count": 2 },

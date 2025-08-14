@@ -135,6 +135,7 @@
       [ "numbness_potion", 4 ],
       [ "strength_potion", 2 ],
       [ "speed_potion", 3 ],
+      [ "arcana_need_no_sleep_potion", 3 ],
       [ "healing_potion", 1 ],
       [ "arcana_health_potion", 3 ],
       [ "summon_kreck", 2 ],
