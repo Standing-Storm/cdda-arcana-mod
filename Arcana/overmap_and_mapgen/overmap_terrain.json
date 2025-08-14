@@ -110,43 +110,6 @@
     "color": "light_green"
   },
   {
-    "id": "strange_grove",
-    "type": "overmap_terrain",
-    "name": "overgrown cabin",
-    "sym": "C",
-    "color": "i_light_green",
-    "looks_like": "cabin_strange",
-    "vision_levels": "blends_till_details",
-    "see_cost": "high",
-    "flags": [ "RISK_HIGH" ]
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "strange_grove_2",
-    "copy-from": "strange_grove",
-    "name": "strange grove",
-    "sym": "T",
-    "vision_levels": "blends_till_details",
-    "looks_like": "triffid_grove"
-  },
-  {
-    "id": "grove_ruins",
-    "type": "overmap_terrain",
-    "name": "underground ruin",
-    "sym": "T",
-    "color": "i_green",
-    "vision_levels": "underground_dirt",
-    "looks_like": "triffid_roots",
-    "travel_cost_type": "basement",
-    "see_cost": "high"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "grove_ruins_2",
-    "copy-from": "grove_ruins",
-    "name": "strange cavern"
-  },
-  {
     "id": "impact_site",
     "type": "overmap_terrain",
     "name": "impact site",

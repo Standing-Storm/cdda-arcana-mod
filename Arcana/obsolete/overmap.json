@@ -1,0 +1,54 @@
+[
+  {
+    "id": "strange_grove",
+    "type": "overmap_terrain",
+    "name": "overgrown cabin",
+    "sym": "C",
+    "color": "i_light_green",
+    "looks_like": "cabin_strange",
+    "vision_levels": "blends_till_details",
+    "see_cost": "high",
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "strange_grove_2",
+    "copy-from": "strange_grove",
+    "name": "strange grove",
+    "sym": "T",
+    "vision_levels": "blends_till_details",
+    "looks_like": "triffid_grove"
+  },
+  {
+    "id": "grove_ruins",
+    "type": "overmap_terrain",
+    "name": "underground ruin",
+    "sym": "T",
+    "color": "i_green",
+    "vision_levels": "underground_dirt",
+    "looks_like": "triffid_roots",
+    "travel_cost_type": "basement",
+    "see_cost": "high"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "grove_ruins_2",
+    "copy-from": "grove_ruins",
+    "name": "strange cavern"
+  },
+  {
+    "type": "overmap_special",
+    "id": "Strange Grove",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "strange_grove_north" },
+      { "point": [ 0, 1, 0 ], "overmap": "strange_grove_2_north" },
+      { "point": [ 0, 0, -1 ], "overmap": "grove_ruins_north" },
+      { "point": [ 0, 1, -1 ], "overmap": "grove_ruins_2_north" }
+    ],
+    "locations": [ "forest" ],
+    "city_distance": [ 0, -1 ],
+    "city_sizes": [ 0, 12 ],
+    "occurrences": [ 0, 0 ],
+    "flags": [ "CLASSIC", "WILDERNESS" ]
+  }
+]
