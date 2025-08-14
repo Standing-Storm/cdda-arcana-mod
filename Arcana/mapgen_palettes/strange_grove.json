@@ -3,19 +3,19 @@
     "type": "palette",
     "id": "arcana_strange_grove_palette",
     "terrain": {
-      "#": "t_rock_wall",
+      "#": [ [ "t_rock_wall", 10 ], [ "t_root_wall", 1 ] ],
       "+": [ [ "t_door_c", 3 ], "t_door_locked", "t_door_elocked", "t_door_elocked_alarm" ],
       "=": "t_door_c",
       "z": "t_door_metal_interior_locked",
-      ".": [ [ "t_region_groundcover", 4 ], "t_region_groundcover_forest" ],
+      ".": [ [ "t_region_groundcover", 2 ], "t_region_groundcover_forest", 2 ],
       "~": [ [ "t_region_groundcover_barren", 3 ], "t_region_groundcover" ],
       "*": [ [ "t_region_groundcover", 15 ], "t_region_shrub" ],
-      "G": "t_sidewalk",
-      "o": "t_pavement",
+      "G": [ [ "t_sidewalk", 12 ], [ "t_region_groundcover_forest", 1 ] ],
+      "o": [ [ "t_pavement", 4 ], [ "t_region_groundcover_forest", 1 ] ],
       "-": "t_window_bars_curtains",
       "w": "t_double_pane_glass_with_curtain_open_window_closed",
       "W": [ [ "t_double_pane_glass_with_curtain", 2 ], "t_double_pane_glass_with_curtain_open_window_closed" ],
-      "0": "t_dirt",
+      "0": [ [ "t_dirt", 4 ], [ "t_region_groundcover_forest", 1 ] ],
       "%": "t_gutter_downspout",
       "<": "t_wood_stairs_down",
       ">": "t_wood_stairs_up"
@@ -99,9 +99,10 @@
     "type": "palette",
     "id": "arcana_strange_grove_lodge_2ndfloor",
     "terrain": {
+      "+": "t_door_locked",
       "#": "t_rock_wall",
-      "_": "t_carpet_green",
-      "/": "t_carpet_yellow",
+      "_": [ [ "t_carpet_green", 10 ], [ "t_open_air", 1 ] ],
+      "/": [ [ "t_carpet_yellow", 10 ], [ "t_open_air", 1 ] ],
       "h": "t_carpet_green",
       "D": "t_carpet_green",
       "O": "t_carpet_green",
@@ -118,15 +119,25 @@
       "5": "t_gutter_drop"
     },
     "furniture": {
+      "a": "f_armchair",
+      "A": "f_bookcase",
       "D": "f_dresser",
       "F": "f_fridge",
       "h": "f_bathtub",
+      "t": "f_table",
       "O": "f_sofa",
       "Z": "f_fireplace",
       "=": "f_vent_pipe",
       "é": "f_freezer"
     },
     "items": {
+      "A": [
+        { "item": "homebooks", "chance": 60, "repeat": [ 1, 3 ] },
+        { "item": "magazines", "chance": 30, "repeat": [ 0, 4 ] },
+        { "item": "novels", "chance": 60, "repeat": [ 1, 8 ] },
+        { "item": "esoteric_books", "chance": 60, "repeat": [ 2, 4 ] },
+        { "item": "unaligned_arcanist_books", "chance": 30, "repeat": [ 1, 2 ] }
+      ],
       "D": [
         { "item": "SUS_dresser_mens", "chance": 50, "repeat": [ 1, 4 ] },
         { "item": "SUS_dresser_womens", "chance": 50, "repeat": [ 1, 4 ] }
