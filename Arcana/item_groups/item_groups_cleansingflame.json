@@ -350,6 +350,7 @@
       [ "speed_potion", 10 ],
       [ "arcana_cold_hot_resist_potion", 10 ],
       [ "arcana_health_potion", 5 ],
+      [ "arcana_do_not_eat_potion", 3 ],
       [ "arcana_poison_disease_infection_resist_potion", 10 ],
       [ "healing_potion", 10 ],
       { "item": "red_black_vulnerary", "prob": 5, "count": 2 },

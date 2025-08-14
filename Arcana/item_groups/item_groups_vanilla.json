@@ -69,7 +69,7 @@
     "copy-from": "esoteric_books",
     "type": "item_group",
     "subtype": "distribution",
-    "extend": { "entries": [ { "item": "book_magicfordummies", "prob": 2 }, { "item": "book_easyalchemy", "prob": 1 } ] }
+    "extend": { "entries": [ { "group": "magic_books_beginner", "prob": 1 } ] }
   },
   {
     "id": "mansion_safe",

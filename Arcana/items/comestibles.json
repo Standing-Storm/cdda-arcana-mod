@@ -237,7 +237,7 @@
     "looks_like": "poppy_pain",
     "symbol": "~",
     "color": "white",
-    "healthy": 2,
+    "healthy": -2,
     "fun": 2,
     "charges": 1,
     "freezing_point": -150,
@@ -263,6 +263,57 @@
     "required_event": "character_loses_effect",
     "condition": { "compare_string": [ "arcana_potion_need_no_sleep", { "context_val": "effect" } ] },
     "effect": [ { "math": [ "u_val('sleepiness') = 450" ] }, { "math": [ "u_val('sleep_deprivation') = 1500" ] } ]
+  },
+  {
+    "id": "arcana_do_not_eat_potion",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "DRINK",
+    "category": "drugs",
+    "name": { "str": "turquoise potion", "str_pl": "turquoise potion" },
+    "description": "A strange blue liquid the inviting color of a tropical sea.  A side-path on the road to the elixir of life.  Drinking this will prevent you from needing to eat at all while it is in effect, but it will make you much more thirsty.",
+    "weight": "150 g",
+    "volume": "250 ml",
+    "price": "200 USD",
+    "price_postapoc": "30 USD",
+    "phase": "liquid",
+    "container": "flask_glass",
+    "looks_like": "poppy_pain",
+    "symbol": "~",
+    "color": "white",
+    "healthy": -4,
+    "fun": -2,
+    "charges": 1,
+    "freezing_point": -150,
+    "use_action": {
+      "type": "consume_drug",
+      "activation_message": "You drink the potion your hunger abates.",
+      "effects": [ { "id": "arcana_potion_do_not_eat", "duration": 43200 } ]
+    },
+    "flags": [ "NO_INGEST", "EATEN_COLD", "NPC_SAFE", "NUTRIENT_OVERRIDE" ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_DO_NOT_EAT_POTION",
+    "eoc_type": "EVENT",
+    "required_event": "character_gains_effect",
+    "condition": { "compare_string": [ "arcana_potion_do_not_eat", { "context_val": "effect" } ] },
+    "effect": [ { "run_eocs": "EOC_ARCANA_DO_NOT_EAT_POTION_CONTINUOUS" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_DO_NOT_EAT_POTION_CONTINUOUS",
+    "condition": { "u_has_effect": "arcana_potion_do_not_eat" },
+    "effect": [
+      {
+        "if": {
+          "and": [ { "math": [ "u_calories('dont_affect_weariness': true) <= 179999" ] }, { "math": [ "u_calories() >= 75000" ] } ]
+        },
+        "then": { "math": [ "u_calories('dont_affect_weariness': true) += 7" ] },
+        "else": { "if": { "math": [ "u_calories() <= 74999" ] }, "then": { "math": [ "u_calories() += 12" ] } }
+      },
+      { "run_eocs": "EOC_ARCANA_DO_NOT_EAT_POTION_CONTINUOUS", "time_in_future": "3 minutes" }
+    ]
   },
   {
     "id": "red_black_vulnerary",

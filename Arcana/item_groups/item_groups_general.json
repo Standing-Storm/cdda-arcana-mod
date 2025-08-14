@@ -129,6 +129,7 @@
       [ "healing_potion", 15 ],
       { "item": "arcana_cold_hot_resist_potion", "prob": 40 },
       { "item": "arcana_health_potion", "prob": 30 },
+      { "item": "arcana_do_not_eat_potion", "prob": 30 },
       { "item": "arcana_poison_disease_infection_resist_potion", "prob": 35 },
       { "item": "arcana_need_no_sleep_potion", "prob": 30 },
       { "item": "red_black_vulnerary", "prob": 25, "count": 2 },

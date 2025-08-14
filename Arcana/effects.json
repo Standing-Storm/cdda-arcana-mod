@@ -402,6 +402,20 @@
   },
   {
     "type": "effect_type",
+    "id": "arcana_potion_do_not_eat",
+    "name": [ "Calm Stomach" ],
+    "resist_effects": [ "talisman_warding" ],
+    "desc": [ "You no longer need to eat, but your throat is pretty dry." ],
+    "remove_message": "You need to eat once again.",
+    "decay_messages": [ [ "Your stomach rumbles.  The potion must be fading away.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "12 hours",
+    "max_intensity": 720,
+    "int_dur_factor": "1 m",
+    "enchantments": [ { "values": [ { "value": "HUNGER", "multiply": -1 }, { "value": "THIRST", "multiply": 3 } ] } ]
+  },
+  {
+    "type": "effect_type",
     "id": "potion_vulnerary",
     "name": [ "Vulnerary" ],
     "resist_effects": [ "talisman_warding" ],
