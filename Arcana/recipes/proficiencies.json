@@ -85,5 +85,16 @@
     "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "16 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_summoning",
+    "name": { "str": "Principles of Invocation" },
+    "category": "prof_arcana",
+    "description": "You are familiar with the creation of talismans that can call beings from the Beyond to this world.",
+    "can_learn": true,
+    "default_time_multiplier": 1.1,
+    "default_skill_penalty": 1,
+    "time_to_learn": "16 h"
   }
 ]

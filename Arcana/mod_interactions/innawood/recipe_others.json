@@ -85,6 +85,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_bloodmagic", 0 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "ash", 25 ], [ "corpse_ash", 25 ] ],
@@ -105,6 +106,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_naturemagic", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "water", 30 ], [ "water_clean", 30 ] ],
@@ -126,6 +128,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "feather", 20 ] ],
@@ -146,6 +149,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
@@ -167,6 +171,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_naturemagic", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "wild_herbs", 30 ], [ "pine_bough", 1 ] ],
@@ -194,11 +199,34 @@
     "autolearn": true,
     "book_learn": [ [ "book_hexenhammer", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "copper", 3 ] ],
       [ [ "glass_shard", 10 ] ],
       [ [ "essence_dull", 20 ] ]
+    ],
+    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
+  },
+  {
+    "type": "recipe",
+    "result": "ice_talisman",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_OTHER",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "60 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "autolearn": true,
+    "book_learn": [ [ "book_hexenhammer", 2 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [
+      [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
+      [ [ "water", 30 ], [ "water_clean", 30 ] ],
+      [ [ "glass_shard", 10 ] ],
+      [ [ "vortex_shard", 1 ], [ "engraved_stone", 1 ], [ "monster_tear", 1 ], [ "blob_gem", 1 ], [ "essence", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
@@ -215,6 +243,7 @@
     "autolearn": true,
     "book_learn": [ [ "book_hexenhammer", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "arcana_blood_standard", 5, "LIST" ] ],

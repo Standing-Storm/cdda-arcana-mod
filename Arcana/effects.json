@@ -865,7 +865,7 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "base_mods": { "str_mod": [ 1 ], "bash_mod": [ 1 ] },
-    "scaling_mods": { "str_mod": [ 0.0825 ], "bash_mod": [ 0.0825 ] },
+    "scaling_mods": { "str_mod": [ 0.0625 ], "bash_mod": [ 0.0325 ] },
     "show_in_info": true
   },
   {
@@ -881,11 +881,11 @@
     "int_dur_factor": "1 m",
     "base_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ], "stamina_min": [ 1 ], "hit_mod": [ 1 ], "dodge_mod": [ 1 ] },
     "scaling_mods": {
-      "dex_mod": [ 0.0825 ],
-      "speed_mod": [ 0.38 ],
+      "dex_mod": [ 0.0625 ],
+      "speed_mod": [ 0.17 ],
       "stamina_min": [ 0.08 ],
-      "hit_mod": [ 0.0825 ],
-      "dodge_mod": [ 0.0825 ]
+      "hit_mod": [ 0.0325 ],
+      "dodge_mod": [ 0.0325 ]
     },
     "show_in_info": true
   },
@@ -903,7 +903,7 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 1 ] },
-    "scaling_mods": { "per_mod": [ 0.0825 ] },
+    "scaling_mods": { "per_mod": [ 0.0625 ] },
     "enchantments": [ { "values": [ { "value": "NIGHT_VIS", "add": { "math": [ "6 + (u_spell_level('arcana_magic_insight') / 2)" ] } } ] } ]
   },
   {
