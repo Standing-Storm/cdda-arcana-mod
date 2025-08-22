@@ -330,16 +330,20 @@
   {
     "id": "unaligned_arcanist_spells",
     "type": "item_group",
-    "items": [
-      [ "scroll_spell_confusion", 1 ],
-      [ "scroll_spell_plants", 1 ],
-      [ "scroll_spell_might", 1 ],
-      [ "scroll_spell_clarity", 1 ],
-      [ "scroll_spell_heal", 1 ],
-      [ "scroll_spell_flame_armor", 1 ],
-      [ "scroll_spell_invis", 1 ],
-      [ "scroll_spell_free_action", 1 ],
-      [ "scroll_spell_ironskin", 1 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "scroll_spell_confusion", "prob": 5 },
+      { "item": "scroll_spell_phase_shield", "prob": 5 },
+      { "item": "scroll_spell_clairvoyance", "prob": 5 },
+      { "item": "scroll_spell_plants", "prob": 3 },
+      { "item": "scroll_spell_might", "prob": 3 },
+      { "item": "scroll_spell_clarity", "prob": 5 },
+      { "item": "scroll_spell_heal", "prob": 5 },
+      { "item": "scroll_spell_cleric", "prob": 1 },
+      { "item": "scroll_spell_sun", "prob": 1 },
+      { "item": "scroll_spell_insight", "prob": 5 },
+      { "item": "scroll_spell_free_action", "prob": 5 },
+      { "item": "scroll_spell_ironskin", "prob": 5 }
     ]
   },
   {

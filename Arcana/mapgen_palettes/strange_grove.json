@@ -58,7 +58,8 @@
         { "item": "magazines", "chance": 30, "repeat": [ 0, 4 ] },
         { "item": "novels", "chance": 60, "repeat": [ 1, 8 ] },
         { "item": "religious_books", "chance": 60, "repeat": [ 0, 3 ] },
-        { "item": "manuals", "chance": 30 }
+        { "item": "manuals", "chance": 30 },
+        { "item": "unaligned_arcanist_spells", "chance": 5, "repeat": [ 1, 2 ] }
       ],
       "B": { "item": "bed", "chance": 60 },
       "d": [ { "item": "livingroom", "chance": 40 }, { "item": "SUS_office_desk", "chance": 40 } ],
