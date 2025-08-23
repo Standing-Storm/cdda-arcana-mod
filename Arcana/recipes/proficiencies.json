@@ -38,7 +38,7 @@
     "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "24 h",
-    "required_proficiencies": [ "prof_thaumatology" ]
+    "required_proficiencies": [ "prof_arcana_thaumatology" ]
   },
   {
     "type": "proficiency",
