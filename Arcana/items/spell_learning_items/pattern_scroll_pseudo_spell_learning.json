@@ -1,4 +1,4 @@
-[,
+[
   {
     "id": "scroll_spell_phase_shield_learning_stub",
     "type": "ITEM",
@@ -7,10 +7,20 @@
     "copy-from": "scroll_magic_base",
     "name": { "str_sp": "The Real Actual Pattern Scroll (Retribution of the Whirlwind)", "//~": "NO_I18N" },
     "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_insight" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_phase_shield" ] }
   },
   {
-    "id": "spellbook_hedge_farm_stub",
+    "id": "scroll_spell_earthweaving_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Earthweaving)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_earthweaving" ] }
+  },
+  {
+    "id": "scroll_spell_insight_learning_stub",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "category": "manuals",
