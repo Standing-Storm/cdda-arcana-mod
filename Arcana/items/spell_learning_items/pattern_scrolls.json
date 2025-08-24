@@ -4,8 +4,8 @@
     "id": "scroll_spell_phase_shield",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Halo of the Sun)", "str_pl": "Pattern Scrolls (Halo of the Sun)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.\"",
+    "name": { "str": "Pattern Scroll (Retribution of the Whirlwind)", "str_pl": "Pattern Scrolls (Retribution of the Whirlwind)" },
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"Using this spell surrounds you with lashing winds, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.  It also makes you slightly colder.\"",
     "//2": "Barter value is 50 baseline, plus 10 times the Spell Rank of the spell it teaches you.  Magic Seals have a value half that of its related pattern scroll.",
     "price_postapoc": "120 USD",
     "use_action": {
@@ -39,6 +39,24 @@
                 { "u_consume_item": "scroll_spell_phase_shield", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_phase_shield_learning_stub", "suppress_message": true },
+            {
+              "run_eocs": [
+                {
+                  "id": "EOC_scroll_spell_phase_shield_learning",
+                  "effect": [
+                    {
+                      "u_run_inv_eocs": "random",
+                      "search_data": [ { "id": "scroll_spell_phase_shield_learning_stub" } ],
+                      "true_eocs": [ { "id": "EOC_scroll_spell_phase_shield_learning_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+                    }
+                  ]
+                }
+              ]
+            },
+            { "u_remove_item_with": "scroll_spell_phase_shield_learning_stub" }
           ]
         }
       ]
@@ -768,6 +786,24 @@
                 { "u_consume_item": "scroll_spell_insight", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_insight_learning_stub", "suppress_message": true },
+            {
+              "run_eocs": [
+                {
+                  "id": "EOC_scroll_spell_insight_spell_learning",
+                  "effect": [
+                    {
+                      "u_run_inv_eocs": "random",
+                      "search_data": [ { "id": "scroll_spell_insight_learning_stub" } ],
+                      "true_eocs": [ { "id": "EOC_scroll_spell_insight_learning_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+                    }
+                  ]
+                }
+              ]
+            },
+            { "u_remove_item_with": "scroll_spell_insight_learning_stub" }
           ]
         }
       ]

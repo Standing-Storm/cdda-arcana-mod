@@ -799,7 +799,7 @@
       { "proficiency": "prof_arcana_thaumatology", "required": true },
       { "proficiency": "prof_arcana_spellwriting", "required": true }
     ],
-    "components": [ [ [ "scroll_sun", 1 ] ], [ [ "scroll_moon", 1 ] ] ],
+    "components": [ [ [ "scroll_sun", 1 ] ], [ [ "air_talisman", 1 ] ], [ [ "totem_agile", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   }
