@@ -20,6 +20,16 @@
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_earthweaving" ] }
   },
   {
+    "id": "scroll_spell_summon_raging_thunderstorm_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Majesty of Jove)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_summon_raging_thunderstorm" ] }
+  },
+  {
     "id": "scroll_spell_insight_learning_stub",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],

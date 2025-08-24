@@ -43,18 +43,9 @@
           "false_effect": [
             { "u_spawn_item": "scroll_spell_phase_shield_learning_stub", "suppress_message": true },
             {
-              "run_eocs": [
-                {
-                  "id": "EOC_scroll_spell_phase_shield_learning",
-                  "effect": [
-                    {
-                      "u_run_inv_eocs": "random",
-                      "search_data": [ { "id": "scroll_spell_phase_shield_learning_stub" } ],
-                      "true_eocs": [ { "id": "EOC_scroll_spell_phase_shield_learning_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
-                    }
-                  ]
-                }
-              ]
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_phase_shield_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_phase_shield_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
             },
             { "u_remove_item_with": "scroll_spell_phase_shield_learning_stub" }
           ]
@@ -104,18 +95,9 @@
           "false_effect": [
             { "u_spawn_item": "scroll_spell_earthweaving_learning_stub", "suppress_message": true },
             {
-              "run_eocs": [
-                {
-                  "id": "EOC_scroll_spell_earthweaving_learning",
-                  "effect": [
-                    {
-                      "u_run_inv_eocs": "random",
-                      "search_data": [ { "id": "scroll_spell_earthweaving_learning_stub" } ],
-                      "true_eocs": [ { "id": "EOC_scroll_spell_earthweaving_learning_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
-                    }
-                  ]
-                }
-              ]
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_earthweaving_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_earthweaving_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
             },
             { "u_remove_item_with": "scroll_spell_earthweaving_learning_stub" }
           ]
@@ -135,7 +117,7 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_dark_lance",
+          "id": "EOC_scroll_spell_summon_raging_thunderstorm",
           "condition": { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "<=", "0" ] },
           "effect": [
             {
@@ -158,6 +140,15 @@
                 { "u_consume_item": "scroll_spell_dark_lance", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_summon_raging_thunderstorm_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_summon_raging_thunderstorm_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_summon_raging_thunderstorm_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_summon_raging_thunderstorm_learning_stub" }
           ]
         }
       ]
