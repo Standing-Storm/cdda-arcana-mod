@@ -30,6 +30,66 @@
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_summon_raging_thunderstorm" ] }
   },
   {
+    "id": "scroll_spell_banish_beyond_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Banish the Beyond)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_consecrate" ] }
+  },
+  {
+    "id": "scroll_spell_cold_ward_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Hyperborean Mantle)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_cold_ward" ] }
+  },
+  {
+    "id": "scroll_spell_sundering_quake_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (The Earth Trembles)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_sundering_quake" ] }
+  },
+  {
+    "id": "scroll_spell_elemental_burst_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Wrath of the Elements)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_elemental_burst" ] }
+  },
+  {
+    "id": "scroll_spell_create_rift_in_ground_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Yawn Wide the Rift)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_create_rift_in_ground" ] }
+  },
+  {
+    "id": "scroll_spell_agility_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Zéphuros's Grace)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_agility" ] }
+  },
+  {
     "id": "scroll_spell_insight_learning_stub",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],

@@ -125,12 +125,15 @@
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "=", "1" ] },
                 {
-                  "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…",
+                  "u_message": "You gaze deep into the strange patterns, the text almost flowing like wind-driven clouds…",
                   "type": "good"
                 }
               ],
               "else": [
-                { "u_message": "You gaze deep into the strange patterns, the text seeming to frost over…", "type": "good" },
+                {
+                  "u_message": "You gaze deep into the strange patterns, the text almost flowing like wind-driven clouds…",
+                  "type": "good"
+                },
                 {
                   "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
                   "type": "bad"
@@ -192,6 +195,15 @@
                 { "u_consume_item": "scroll_spell_sun", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_banish_beyond_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_banish_beyond_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_banish_beyond_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_banish_beyond_learning_stub" }
           ]
         }
       ]
@@ -217,12 +229,12 @@
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_cold_ward')", "=", "1" ] },
                 {
-                  "u_message": "You gaze deep into the strange patterns, constellations of alien skies…",
+                  "u_message": "You gaze deep into the strange patterns, the text almost seeming to frost over…",
                   "type": "good"
                 }
               ],
               "else": [
-                { "u_message": "You gaze deep into the strange patterns, constellations of alien skies…", "type": "good" },
+                { "u_message": "You gaze deep into the strange patterns, the text almost seeming to frost over…", "type": "good" },
                 {
                   "u_message": "As the patterns swirl, your head starts to pound!  You tear your gaze away as the patterns fade.",
                   "type": "bad"
@@ -232,6 +244,15 @@
                 { "u_consume_item": "scroll_spell_moon", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_cold_ward_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_cold_ward_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_cold_ward_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_cold_ward_learning_stub" }
           ]
         }
       ]
@@ -249,7 +270,7 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_artiface",
+          "id": "EOC_scroll_spell_sundering_quake",
           "condition": { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "<=", "0" ] },
           "effect": [
             {
@@ -275,6 +296,15 @@
                 { "u_consume_item": "scroll_spell_artiface", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_sundering_quake_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_sundering_quake_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_sundering_quake_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_sundering_quake_learning_stub" }
           ]
         }
       ]
@@ -318,6 +348,15 @@
                 { "u_consume_item": "scroll_spell_nature", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_elemental_burst_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_elemental_burst_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_elemental_burst_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_elemental_burst_learning_stub" }
           ]
         }
       ]
@@ -335,7 +374,7 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_destruction",
+          "id": "EOC_scroll_spell_create_rift_in_ground",
           "condition": { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "<=", "0" ] },
           "effect": [
             {
@@ -361,6 +400,15 @@
                 { "u_consume_item": "scroll_spell_destruction", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_create_rift_in_ground_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_create_rift_in_ground_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_create_rift_in_ground_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_create_rift_in_ground_learning_stub" }
           ]
         }
       ]
@@ -423,7 +471,7 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_agile",
+          "id": "EOC_scroll_spell_agility",
           "condition": { "math": [ "u_spell_level('arcana_magic_agility')", "<=", "0" ] },
           "effect": [
             {
@@ -446,6 +494,15 @@
                 { "u_consume_item": "scroll_spell_agile", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_agility_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_agility_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_agility_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_agility_learning_stub" }
           ]
         }
       ]
