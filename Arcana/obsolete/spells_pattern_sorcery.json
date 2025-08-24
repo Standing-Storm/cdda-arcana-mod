@@ -303,5 +303,22 @@
     "energy_source": "STAMINA",
     "spell_class": "PATTERN_SORCERY",
     "magic_type": "arcana_pattern_sorcery"
+  },
+  {
+    "id": "arcana_aftermath_eclipse_halo",
+    "type": "SPELL",
+    "name": { "str": "Eclipse Halo" },
+    "description": "Adds a standard lifedrain halo.",
+    "valid_targets": [ "self" ],
+    "message": "",
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "effect_arcana_blessing_drain_life",
+    "max_level": 10,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_duration": 324000,
+    "max_duration": 648000,
+    "duration_increment": 32400
   }
 ]

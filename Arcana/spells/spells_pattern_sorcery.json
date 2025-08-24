@@ -419,9 +419,10 @@
   },
   {
     "id": "arcana_magic_eclipse",
+    "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Eclipse" },
-    "description": "Using this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness in exchange for a surge of unnatural adrenaline, life-drain, and night vision.",
+    "description": "Using this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness.  You have no control over the interlopers that spill forth due to the spell.",
     "message": "\"I am that which stands defiant, the finite made infinite…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
@@ -430,7 +431,6 @@
     "effect_str": "spell_eclipse",
     "extra_effects": [
       { "id": "arcana_aftermath_eclipse_darkness", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_eclipse_halo", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_eclipse_wonder", "hit_self": false },
       { "id": "arcana_aftermath_eclipse_sleepiness", "hit_self": false }
     ],

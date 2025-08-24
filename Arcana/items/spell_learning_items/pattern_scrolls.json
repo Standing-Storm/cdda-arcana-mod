@@ -426,7 +426,7 @@
       "description": "Study the scroll",
       "effect_on_conditions": [
         {
-          "id": "EOC_scroll_spell_subversion",
+          "id": "EOC_scroll_spell_eclipse",
           "condition": { "math": [ "u_spell_level('arcana_magic_eclipse')", "<=", "0" ] },
           "effect": [
             {
@@ -452,6 +452,15 @@
                 { "u_consume_item": "scroll_spell_subversion", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "croll_spell_eclipse_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "croll_spell_eclipse_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_eclipse_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "croll_spell_eclipse_learning_stub" }
           ]
         }
       ]

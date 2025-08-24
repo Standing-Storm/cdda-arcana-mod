@@ -80,6 +80,16 @@
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_create_rift_in_ground" ] }
   },
   {
+    "id": "croll_spell_eclipse_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Eclipse)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_eclipse" ] }
+  },
+  {
     "id": "scroll_spell_agility_learning_stub",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
