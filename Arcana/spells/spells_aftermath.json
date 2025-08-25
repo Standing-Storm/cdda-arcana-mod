@@ -962,23 +962,6 @@
     "flags": [ "NO_EXPLOSION_SFX", "RANDOM_TARGET" ]
   },
   {
-    "id": "arcana_aftermath_eclipse_halo",
-    "type": "SPELL",
-    "name": { "str": "Eclipse Halo" },
-    "description": "Adds a standard lifedrain halo.",
-    "valid_targets": [ "self" ],
-    "message": "",
-    "effect": "attack",
-    "shape": "blast",
-    "effect_str": "effect_arcana_blessing_drain_life",
-    "max_level": 10,
-    "min_damage": 1,
-    "max_damage": 1,
-    "min_duration": 324000,
-    "max_duration": 648000,
-    "duration_increment": 32400
-  },
-  {
     "type": "SPELL",
     "id": "arcana_aftermath_eclipse_wonder",
     "name": { "str": "Eclipse Wonder" },
@@ -996,7 +979,8 @@
       { "id": "arcana_aftermath_eclipse_wonder_kreck" },
       { "id": "arcana_aftermath_eclipse_wonder_mi_go" },
       { "id": "arcana_aftermath_eclipse_wonder_flaming_eye" },
-      { "id": "arcana_aftermath_eclipse_wonder_flying_polyp" }
+      { "id": "arcana_aftermath_eclipse_wonder_flying_polyp" },
+      { "id": "arcana_aftermath_eclipse_wonder_wraith" }
     ]
   },
   {
@@ -1100,6 +1084,24 @@
     "effect": "summon",
     "shape": "blast",
     "effect_str": "mon_flying_polyp",
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_duration": 1000,
+    "max_duration": 1000
+  },
+  {
+    "id": "arcana_aftermath_eclipse_wonder_wraith",
+    "type": "SPELL",
+    "name": { "str": "Eclipse Wraith" },
+    "description": "Darkman comes thanks to the darkness…",
+    "valid_targets": [ "ground" ],
+    "message": "",
+    "flags": [ "NO_EXPLOSION_SFX", "PERMANENT", "RANDOM_TARGET", "HOSTILE_SUMMON" ],
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_darkman",
     "min_damage": 1,
     "max_damage": 1,
     "min_range": 60,

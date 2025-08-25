@@ -84,6 +84,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_bloodmagic", 0 ], [ "book_elementalism", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "ash", 25 ], [ "corpse_ash", 25 ] ],
@@ -109,6 +110,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_elementalism", 1 ], [ "book_naturemagic", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "water", 30 ], [ "water_clean", 30 ] ],
@@ -135,6 +137,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_elementalism", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "feather", 20 ] ],
@@ -154,6 +157,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_elementalism", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
@@ -180,6 +184,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_naturemagic", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "wild_herbs", 30 ], [ "pine_bough", 1 ] ],
@@ -206,6 +211,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "copper", 3 ] ],
@@ -232,6 +238,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "water", 30 ], [ "water_clean", 30 ] ],
@@ -252,6 +259,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_hexenhammer", 3 ], [ "book_elementalism", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "arcana_blood_standard", 5, "LIST" ] ],
@@ -289,6 +297,7 @@
     "book_learn": [ [ "book_magicfordummies", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "stinger_flute", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
@@ -305,7 +314,7 @@
     "book_learn": [ [ "book_sacrifice", 5 ], [ "book_syncretism", 6 ] ],
     "using": [ [ "forging_standard", 2 ], [ "bronzesmithing_tools", 1 ] ],
     "tools": [ [ [ "book_sacrifice", -1 ], [ "book_syncretism", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" }, { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "gold_small", 625 ] ],
       [ [ "arcana_holy_relic_any", 1, "LIST" ], [ "arcana_holy_symbol_any", 1, "LIST" ] ],
@@ -324,7 +333,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_magicfordummies", 4 ], [ "book_summoning", 3 ] ],
     "using": [ [ "forging_standard", 1 ], [ "bronzesmithing_tools", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking" } ],
+    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_fine_metalsmithing" } ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_small", 95 ] ] ]
   },
@@ -342,6 +351,7 @@
     "using": [ [ "arcana_purification_standard", 1 ], [ "arcana_essence_exclude_dull", 1 ] ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "tallow", 4 ], [ "tallow_tainted", 4 ], [ "monster_fang", 1 ] ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" }, { "proficiency": "prof_arcana_summoning" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
@@ -359,6 +369,7 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_summoning", -1 ], [ "book_naturemagic", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "tanbark", 3 ], [ "birchbark", 3 ], [ "willowbark", 3 ], [ "triffid_garland", 1 ] ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_summoning" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -376,6 +387,7 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_summoning" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -397,6 +409,7 @@
       [ [ "cured_pelt", 4 ], [ "cured_hide", 4 ], [ "wyrmskin_piece", 1 ], [ "iridescent_plate", 1 ] ],
       [ [ "essence", 2 ] ]
     ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_summoning" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -417,6 +430,7 @@
       [ [ "silver_glyph", 1 ] ],
       [ [ "wyrmskin_piece", 1 ], [ "graboid_fang", 1 ], [ "chem_acetic_acid", 4 ], [ "any_strong_acid", 4, "LIST" ] ]
     ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_summoning" } ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -437,6 +451,10 @@
       [ [ "silver_glyph", 1 ] ],
       [ [ "seed_mushroom", 12 ], [ "seed_mushroom_morel", 12 ], [ "yeast", 24 ], [ "iridescent_plate", 1 ] ]
     ],
+    "proficiencies": [
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_summoning", "required": true }
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -454,6 +472,10 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "mirror", 1 ], [ "iridescent_plate", 1 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_summoning", "required": true }
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -471,6 +493,10 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "bone_tainted", 6 ], [ "graboid_fang", 1 ], [ "monster_fang", 1 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_summoning", "required": true }
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -498,6 +524,10 @@
         [ "copper", 100 ]
       ]
     ],
+    "proficiencies": [
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_summoning", "required": true }
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
@@ -515,6 +545,10 @@
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [ [ [ "silver_glyph", 1 ] ], [ [ "slime_scrap", 8 ], [ "blob_gem", 2 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_summoning", "required": true }
+    ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   },

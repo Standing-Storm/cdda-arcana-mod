@@ -224,6 +224,7 @@
           { "id": "overlay_wielded_spear_pestilence", "fg": 148 },
           {
             "id": [
+              "scroll_magic_base",
               "scroll_sun",
               "scroll_moon",
               "scroll_artiface",

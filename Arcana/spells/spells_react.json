@@ -345,7 +345,7 @@
   {
     "id": "arcana_react_phase_shield",
     "type": "SPELL",
-    "name": { "str": "Phase Shield Effect" },
+    "name": { "str": "Heart of the Storm Effect" },
     "description": "This pushes your attackers away.",
     "valid_targets": [ "ally", "hostile" ],
     "flags": [ "SILENT" ],

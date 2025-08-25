@@ -865,7 +865,7 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "base_mods": { "str_mod": [ 1 ], "bash_mod": [ 1 ] },
-    "scaling_mods": { "str_mod": [ 0.0825 ], "bash_mod": [ 0.0825 ] },
+    "scaling_mods": { "str_mod": [ 0.0625 ], "bash_mod": [ 0.0325 ] },
     "show_in_info": true
   },
   {
@@ -881,11 +881,11 @@
     "int_dur_factor": "1 m",
     "base_mods": { "dex_mod": [ 1 ], "speed_mod": [ 5 ], "stamina_min": [ 1 ], "hit_mod": [ 1 ], "dodge_mod": [ 1 ] },
     "scaling_mods": {
-      "dex_mod": [ 0.0825 ],
-      "speed_mod": [ 0.38 ],
+      "dex_mod": [ 0.0625 ],
+      "speed_mod": [ 0.17 ],
       "stamina_min": [ 0.08 ],
-      "hit_mod": [ 0.0825 ],
-      "dodge_mod": [ 0.0825 ]
+      "hit_mod": [ 0.0325 ],
+      "dodge_mod": [ 0.0325 ]
     },
     "show_in_info": true
   },
@@ -903,8 +903,8 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "base_mods": { "per_mod": [ 1 ] },
-    "scaling_mods": { "per_mod": [ 0.0825 ] },
-    "enchantments": [ { "values": [ { "value": "NIGHT_VIS", "add": { "math": [ "6 + (u_spell_level('arcana_magic_insight') / 2)" ] } } ] } ]
+    "scaling_mods": { "per_mod": [ 0.0625 ] },
+    "enchantments": [ { "values": [ { "value": "NIGHT_VIS", "add": { "math": [ "4 + (u_spell_level('arcana_magic_insight') / 2)" ] } } ] } ]
   },
   {
     "type": "effect_type",
@@ -1189,7 +1189,7 @@
   {
     "type": "effect_type",
     "id": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding_display",
-    "name": [ "Corporeal Restoration" ],
+    "name": [ "Balm of Nature" ],
     "desc": [ "You are healing slowly over time." ],
     "flags": [ "BLEEDSLOW2" ]
   },
@@ -1248,22 +1248,23 @@
   {
     "type": "effect_type",
     "id": "arcana_halo_phase_shield",
-    "name": [ "sunstone halo" ],
-    "desc": [ "A strange radiance permeating your body, repelling nearby attackers away from you." ],
-    "remove_message": "The radiance around you finally dies.",
-    "decay_messages": [ [ "The radiance surrounding you is beginning to dim.", "bad" ] ],
+    "name": [ "Retribution of the Whirlwind" ],
+    "desc": [ "Wind constantly whirls around you, repelling nearby attackers away from you but cooling you as well." ],
+    "remove_message": "The lashing winds around you finally die.",
+    "decay_messages": [ [ "The winds surrounding you are beginning to slow.", "bad" ] ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "enchantments": [
       {
+        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": -10 } ],
         "hit_me_effect": [
           {
             "id": "arcana_react_phase_shield",
             "once_in": 10,
-            "message": "%2$s is suddenly forced back!",
-            "npc_message": "%2$s is suddenly forced away from %1$s!"
+            "message": "%2$s is blown backward by the winds!",
+            "npc_message": "%2$s is blown away from %1$s!"
           }
         ]
       }

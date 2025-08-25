@@ -462,8 +462,8 @@
     "copy-from": "totem_base",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Magic Seal (Corporeal Restoration)", "str_pl": "Magic Seals (Corporeal Restoration)" },
-    "description": "A tangled knot of flowing, molded bone.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
+    "name": { "str": "Magic Seal (Balm of Nature)", "str_pl": "Magic Seals (Balm of Nature)" },
+    "description": "A tangled knot of wood with roots still attached.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "price_postapoc": "55 USD",
     "color": "white",
     "use_action": { "type": "cast_spell", "spell_id": "arcana_seal_healing", "no_fail": true, "level": 5 }

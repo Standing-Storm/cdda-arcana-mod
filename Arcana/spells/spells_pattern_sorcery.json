@@ -5,6 +5,7 @@
     "energy_source": "STAMINA",
     "cannot_cast_flags": [ "NO_ARCANA_MAGIC", "NO_SPELLCASTING" ],
     "failure_cost_percent": 1,
+    "max_book_level": 6,
     "cannot_cast_message": "You cannot use your sorcery now!",
     "failure_chance_formula_id": "arcana_pattern_sorcery_failure_chance"
   },
@@ -159,6 +160,7 @@
   },
   {
     "id": "arcana_magic_confuse_monster",
+    "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Anointment of Lunacy" },
     "description": "Using this spell will stun all hostiles in the area around you.",
@@ -418,9 +420,10 @@
   },
   {
     "id": "arcana_magic_eclipse",
+    "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Eclipse" },
-    "description": "Using this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness in exchange for a surge of unnatural adrenaline, life-drain, and night vision.",
+    "description": "Using this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness.  You have no control over the interlopers that spill forth due to the spell.",
     "message": "\"I am that which stands defiant, the finite made infinite…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
@@ -429,7 +432,6 @@
     "effect_str": "spell_eclipse",
     "extra_effects": [
       { "id": "arcana_aftermath_eclipse_darkness", "hit_self": false, "max_level": 10 },
-      { "id": "arcana_aftermath_eclipse_halo", "hit_self": false, "max_level": 10 },
       { "id": "arcana_aftermath_eclipse_wonder", "hit_self": false },
       { "id": "arcana_aftermath_eclipse_sleepiness", "hit_self": false }
     ],
@@ -546,15 +548,26 @@
     "id": "arcana_magic_heal_gradually_over_time_reduce_bleeding",
     "//": "Forest spell",
     "type": "SPELL",
-    "name": { "str": "Corporeal Restoration" },
-    "description": "Using this spell will slow your rate of bleeding and mend wounds over time, though overuse can be harmful in the long run.  Additional castings before the first runs out will dilute the original effect in addition to the possible effects of overuse, and it <color_red>cannot heal broken limbs</color>.  It can be used on yourself or an ally.  It <color_yellow>must be cast outside</color>.",
-    "message": "\"We shall not yet fall into extinction…\"  You cast %s!",
+    "name": { "str": "Balm of Nature" },
+    "description": "Using this spell will slow your rate of bleeding and mend wounds over time, though overuse can be harmful in the long run.  Additional castings before the first runs out will dilute the original effect in addition to the possible effects of overuse, and it <color_red>cannot heal broken limbs</color>.  It can be used on yourself or an ally.  It <color_yellow>must be cast outside on natural ground</color>.",
+    "message": "\"As the forest grows and flourishes, so too shall we…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT" ],
     "effect": "effect_on_condition",
     "effect_str": "EOC_ARCANA_MAGIC_HEALING_OVER_TIME",
-    "condition": "u_is_outside",
     "extra_effects": [ { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 } ],
+    "condition": {
+      "and": [
+        {
+          "or": [
+            { "u_is_on_terrain_with_flag": "DIGGABLE" },
+            { "u_is_on_terrain_with_flag": "SHRUB" },
+            { "u_is_on_terrain_with_flag": "YOUNG" }
+          ]
+        },
+        "u_is_outside"
+      ]
+    },
     "max_level": 10,
     "min_range": 1,
     "max_range": 10,
@@ -820,10 +833,11 @@
   },
   {
     "id": "arcana_magic_phase_shield",
+    "//": "Air spell",
     "type": "SPELL",
-    "name": { "str": "Halo of the Sun" },
-    "description": "Using this spell will anoint you with a sunstone halo, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.",
-    "message": "\"Turn aside not the blade, but the hand that wields it…\"  You cast %s!",
+    "name": { "str": "Retribution of the Whirlwind" },
+    "description": "Using this spell will surround you with lashing winds, granting a temporary defensive effect that will push any nearby attackers away from you in random directions, activating at random when you're struck.  It will also make you slightly colder.",
+    "message": "\"You that sow the wind, know that you shall reap the whirlwind…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
     "effect": "attack",
