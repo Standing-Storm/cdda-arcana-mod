@@ -12,6 +12,7 @@
 - Summoning is now its own magic type! You can play just a summoner if you want...but remember that summons can be difficult to control.  Do not call up what you can not put down. 
 - Healing is harder to come by, and magical healing can often have undesirable side effects if used too freely.
 - Reduced drop rates for magic books. Ferals generally don't have them now, you'll have to search more esoteric places
+- Writing/rewriting scrolls now takes ink infused with magical energy. Craft this ink or find it!
 - Essence is no longer fungible! Each type is its own type and cannot be converted into any others.
   - Types have been renamed Essentia, Vitae, and Residuum
 - New locations making use of weights and nests--rare variants of existing places might have housed an occultist or researcher into the Beyond. Peer into those nooks and crannies!
