@@ -146,7 +146,7 @@
   {
     "id": "arcana_scrollwriting_standard",
     "type": "requirement",
-    "//": "Tools and components for writing scrolls, old-school style.  No ink is used, hence no consuming charcoal markers.",
+    "//": "Tools and components for writing scrolls, old-school style.",
     "tools": [
       [
         [ "fire", -1 ],
@@ -158,7 +158,7 @@
         [ "tinderbox_on", -1 ],
         [ "candle_warding_active", -1 ]
       ],
-      [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
+      [ [ "feather", -1 ] ]
     ],
     "components": [ [ [ "scroll_blank", 1 ] ] ]
   },
@@ -177,7 +177,7 @@
         [ "tinderbox_on", -1 ],
         [ "candle_warding_active", -1 ]
       ],
-      [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
+      [ [ "feather", -1 ] ]
     ]
   },
   {

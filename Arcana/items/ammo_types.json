@@ -34,5 +34,11 @@
     "name": "recharge",
     "default": "primitive_magic_item_ammo",
     "type": "ammunition_type"
+  },
+  {
+    "type": "ammunition_type",
+    "id": "infused_ink",
+    "name": "infused ink",
+    "default": "infused_ink"
   }
 ]
