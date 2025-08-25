@@ -454,13 +454,13 @@
             }
           ],
           "false_effect": [
-            { "u_spawn_item": "croll_spell_eclipse_learning_stub", "suppress_message": true },
+            { "u_spawn_item": "scroll_spell_eclipse_learning_stub", "suppress_message": true },
             {
               "u_run_inv_eocs": "random",
-              "search_data": [ { "id": "croll_spell_eclipse_learning_stub" } ],
+              "search_data": [ { "id": "scroll_spell_eclipse_learning_stub" } ],
               "true_eocs": [ { "id": "EOC_scroll_spell_eclipse_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
             },
-            { "u_remove_item_with": "croll_spell_eclipse_learning_stub" }
+            { "u_remove_item_with": "scroll_spell_eclipse_learning_stub" }
           ]
         }
       ]
@@ -553,6 +553,15 @@
                 { "u_consume_item": "scroll_spell_clairvoyance", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_clairvoyance_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_clairvoyance_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_clairvoyance_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_clairvoyance_learning_stub" }
           ]
         }
       ]
@@ -597,6 +606,15 @@
                 { "u_consume_item": "scroll_spell_clarity", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_clarity_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_clarity_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_clarity_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_clarity_learning_stub" }
           ]
         }
       ]
@@ -641,6 +659,15 @@
                 { "u_consume_item": "scroll_spell_confusion", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_confusion_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_confusion_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_confusion_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_confusion_learning_stub" }
           ]
         }
       ]
@@ -685,6 +712,15 @@
                 { "u_consume_item": "scroll_spell_ironskin", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_ironskin_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_ironskin_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_ironskin_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_ironskin_learning_stub" }
           ]
         }
       ]
@@ -729,6 +765,15 @@
                 { "u_consume_item": "scroll_spell_free_action", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_free_action_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_free_action_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_free_action_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_free_action_learning_stub" }
           ]
         }
       ]
@@ -738,7 +783,7 @@
     "id": "scroll_spell_heal",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Corporeal Restoration)", "str_pl": "Pattern Scrolls (Corporeal Restoration)" },
+    "name": { "str": "Pattern Scroll (Balm of Nature)", "str_pl": "Pattern Scrolls (Balm of Nature)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will staunch bleeding and mend wounds, though overuse can be harmful in the long run.\"",
     "price": "3000 USD",
     "price_postapoc": "110 USD",
@@ -773,6 +818,15 @@
                 { "u_consume_item": "scroll_spell_heal", "count": 1 }
               ]
             }
+          ],
+          "false_effect": [
+            { "u_spawn_item": "scroll_spell_heal_learning_stub", "suppress_message": true },
+            {
+              "u_run_inv_eocs": "random",
+              "search_data": [ { "id": "scroll_spell_heal_learning_stub" } ],
+              "true_eocs": [ { "id": "EOC_scroll_spell_heal_ACTIVATE", "effect": { "u_activate": "learn_spell" } } ]
+            },
+            { "u_remove_item_with": "scroll_spell_heal_learning_stub" }
           ]
         }
       ]

@@ -160,6 +160,7 @@
   },
   {
     "id": "arcana_magic_confuse_monster",
+    "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Anointment of Lunacy" },
     "description": "Using this spell will stun all hostiles in the area around you.",
@@ -547,15 +548,26 @@
     "id": "arcana_magic_heal_gradually_over_time_reduce_bleeding",
     "//": "Forest spell",
     "type": "SPELL",
-    "name": { "str": "Corporeal Restoration" },
-    "description": "Using this spell will slow your rate of bleeding and mend wounds over time, though overuse can be harmful in the long run.  Additional castings before the first runs out will dilute the original effect in addition to the possible effects of overuse, and it <color_red>cannot heal broken limbs</color>.  It can be used on yourself or an ally.  It <color_yellow>must be cast outside</color>.",
-    "message": "\"We shall not yet fall into extinction…\"  You cast %s!",
+    "name": { "str": "Balm of Nature" },
+    "description": "Using this spell will slow your rate of bleeding and mend wounds over time, though overuse can be harmful in the long run.  Additional castings before the first runs out will dilute the original effect in addition to the possible effects of overuse, and it <color_red>cannot heal broken limbs</color>.  It can be used on yourself or an ally.  It <color_yellow>must be cast outside on natural ground</color>.",
+    "message": "\"As the forest grows and flourishes, so too shall we…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT" ],
     "effect": "effect_on_condition",
     "effect_str": "EOC_ARCANA_MAGIC_HEALING_OVER_TIME",
-    "condition": "u_is_outside",
     "extra_effects": [ { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 } ],
+    "condition": {
+      "and": [
+        {
+          "or": [
+            { "u_is_on_terrain_with_flag": "DIGGABLE" },
+            { "u_is_on_terrain_with_flag": "SHRUB" },
+            { "u_is_on_terrain_with_flag": "YOUNG" }
+          ]
+        },
+        "u_is_outside"
+      ]
+    },
     "max_level": 10,
     "min_range": 1,
     "max_range": 10,

@@ -276,14 +276,26 @@
     "id": "arcana_magic_healing",
     "//": "Forest spell",
     "type": "SPELL",
-    "name": { "str": "Corporeal Restoration" },
-    "description": "Using this spell will staunch bleeding and mend wounds over time, though overuse can be harmful in the long run.  It can be used on yourself or an ally.",
+    "name": { "str": "Balm of Nature" },
+    "description": "Using this spell will staunch bleeding and mend wounds over time, though overuse can be harmful in the long run.  It can be used on yourself or an ally.  It may only be used outdoors on natural ground",
     "message": "\"We shall not yet fall into extinction…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS", "SILENT" ],
     "effect": "effect_on_condition",
     "effect_str": "EOC_ARCANA_MAGIC_HEALING_OVER_TIME",
     "extra_effects": [ { "id": "arcana_aftermath_healing_side_effects", "max_level": 10 } ],
+    "condition": {
+      "and": [
+        {
+          "or": [
+            { "u_is_on_terrain_with_flag": "DIGGABLE" },
+            { "u_is_on_terrain_with_flag": "SHRUB" },
+            { "u_is_on_terrain_with_flag": "YOUNG" }
+          ]
+        },
+        "u_is_outside"
+      ]
+    },
     "max_level": 10,
     "min_range": 1,
     "max_range": 10,

@@ -245,7 +245,7 @@
   },
   {
     "result": "totem_heal",
-    "//": "Casts Corporeal Restoration",
+    "//": "Casts Balm of Nature",
     "type": "recipe",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_SPELLS",
@@ -264,7 +264,7 @@
     ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CONTAIN", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
-    "components": [ [ [ "bone_twisted", 1 ] ] ],
+    "components": [ [ [ "inflorescent_root", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD" ]
   },

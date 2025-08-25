@@ -80,7 +80,7 @@
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_create_rift_in_ground" ] }
   },
   {
-    "id": "croll_spell_eclipse_learning_stub",
+    "id": "scroll_spell_eclipse_learning_stub",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "category": "manuals",
@@ -98,6 +98,66 @@
     "name": { "str_sp": "The Real Actual Pattern Scroll (Zéphuros's Grace)", "//~": "NO_I18N" },
     "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_agility" ] }
+  },
+  {
+    "id": "scroll_spell_clairvoyance_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Sight Beyond Sight)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_clairvoyance" ] }
+  },
+  {
+    "id": "scroll_spell_clarity_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Clarity of Blood)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_clarity_blood" ] }
+  },
+  {
+    "id": "scroll_spell_confusion_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Anointment of Lunacy)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_confuse_monster" ] }
+  },
+  {
+    "id": "scroll_spell_ironskin_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Invulnerable Skin of Iron)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_iron_skin" ] }
+  },
+  {
+    "id": "scroll_spell_free_action_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (The Unbound Heart)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_free_action" ] }
+  },
+  {
+    "id": "scroll_spell_heal_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Balm of Nature)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_free_action" ] }
   },
   {
     "id": "scroll_spell_insight_learning_stub",
