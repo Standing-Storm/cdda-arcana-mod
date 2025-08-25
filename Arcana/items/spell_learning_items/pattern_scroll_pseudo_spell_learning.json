@@ -157,7 +157,17 @@
     "copy-from": "scroll_magic_base",
     "name": { "str_sp": "The Real Actual Pattern Scroll (Balm of Nature)", "//~": "NO_I18N" },
     "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_free_action" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_heal_gradually_over_time_reduce_bleeding" ] }
+  },
+  {
+    "id": "scroll_spell_flame_armor_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Forge-Hardened Flesh)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_heat_ward" ] }
   },
   {
     "id": "scroll_spell_insight_learning_stub",
@@ -168,5 +178,95 @@
     "name": { "str_sp": "The Real Actual Pattern Scroll (Opening the Inner Eye)", "//~": "NO_I18N" },
     "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_insight" ] }
+  },
+  {
+    "id": "scroll_spell_lightning_ward_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (The Eye of the Storm)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_lightning_ward" ] }
+  },
+  {
+    "id": "scroll_spell_might_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Otherworldly Potence)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_might" ] }
+  },
+  {
+    "id": "scroll_spell_plants_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (A Spread of Rampant Green)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_overgrowth" ] }
+  },
+  {
+    "id": "scroll_spell_invis_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Obsidian Mantle of Shadows)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_serpentine_shield" ] }
+  },
+  {
+    "id": "scroll_spell_lightning_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Fulminating Wave)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_shockstorm" ] }
+  },
+  {
+    "id": "scroll_spell_cleric_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Abjuration of the Darkness)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_ward_against_evil" ] }
+  },
+  {
+    "id": "scroll_spell_incandescent_conflagration_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Incandescent Conflagration)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_conjure_flame" ] }
+  },
+  {
+    "id": "scroll_spell_ethereal_translocation_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Ethereal Translocation)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_translocation" ] }
+  },
+  {
+    "id": "scroll_spell_magic_underwater_travel_learning_stub",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "copy-from": "scroll_magic_base",
+    "name": { "str_sp": "The Real Actual Pattern Scroll (Manannán's Cloak)", "//~": "NO_I18N" },
+    "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_underwater_travel" ] }
   }
 ]
