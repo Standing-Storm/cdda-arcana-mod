@@ -181,6 +181,12 @@
     ]
   },
   {
+    "id": "arcana_scrollwriting_ink",
+    "type": "requirement",
+    "//": "Ink required for magical writing.  Each unit is 1 ml of ink.  50 ml of ink can write 1000 pages, so the absolute requirements are low.",
+    "components": [ [ [ "infused_ink", 1 ] ] ]
+  },
+  {
     "id": "arcana_soaking_standard",
     "type": "requirement",
     "//": "A container plus some water, for certain items.",
