@@ -1,6 +1,6 @@
 [
   {
-    "result": "enchanted_ink",
+    "result": "infused_ink",
     "type": "recipe",
     "activity_level": "LIGHT_EXERCISE",
     "id_suffix": "from_fruit",
@@ -21,7 +21,7 @@
     "components": [ [ [ "sweet_fruit", 1, "LIST" ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ], [ [ "essence_dull", 4 ] ] ]
   },
   {
-    "result": "enchanted_ink",
+    "result": "infused_ink",
     "type": "recipe",
     "id_suffix": "from_butternut",
     "activity_level": "LIGHT_EXERCISE",
