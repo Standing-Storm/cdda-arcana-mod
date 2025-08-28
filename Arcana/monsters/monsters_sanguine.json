@@ -6,7 +6,7 @@
     "description": "A large, humanoid being seemingly made of animated blood.  Two slightly darker patches serve as its eyes.  Its hands end in long claws, which flex as it walks.",
     "default_faction": "cult",
     "bodytype": "human",
-    "species": [ "ARCANA_SUMMONED" ],
+    "species": [ "SUMMONED_CREATURE" ],
     "volume": "120 L",
     "weight": "122 kg",
     "hp": 150,

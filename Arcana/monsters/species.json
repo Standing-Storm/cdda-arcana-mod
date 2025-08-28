@@ -1,7 +1,7 @@
 [
   {
     "type": "SPECIES",
-    "id": "ARCANA_SUMMONED",
+    "id": "SUMMONED_CREATURE",
     "description": "a summoned monster",
     "footsteps": "faint whispers.",
     "anger_triggers": [ "FRIEND_DIED", "FRIEND_ATTACKED", "HURT", "STALK", "PLAYER_CLOSE" ]

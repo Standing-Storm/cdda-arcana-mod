@@ -36,7 +36,7 @@
     "duration_increment": 720000,
     "spell_class": "ARCANA_SUMMONING",
     "magic_type": "arcana_summoning",
-    "targeted_monster_species": [ "ARCANA_SUMMONED" ]
+    "targeted_monster_species": [ "SUMMONED_CREATURE" ]
   },
   {
     "id": "arcana_summoning_increase_success_chance",

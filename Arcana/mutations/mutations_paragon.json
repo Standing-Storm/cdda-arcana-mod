@@ -11,7 +11,7 @@
     "//": "The good news, you regen mana faster and vortices are friendly.  The bad news, HFBTV doesn't want you getting any more dependent on the blob (or worse, the Mycus) than you already are.",
     "ignored_by": [ "UNKNOWN" ],
     "anger_relations": [
-      [ "ARCANA_SUMMONED", -95 ],
+      [ "SUMMONED_CREATURE", -95 ],
       [ "NETHER", 20 ],
       [ "SLIME", 20 ],
       [ "HORROR", 15 ],

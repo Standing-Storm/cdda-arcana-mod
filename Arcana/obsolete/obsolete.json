@@ -791,5 +791,10 @@
     "type": "vehicle_part_migration",
     "from": "rift_focus_cannon_part",
     "to": "turret_rift_focus_cannon"
+  },
+  {
+    "type": "SPECIES",
+    "id": "ARCANA_SUMMONED",
+    "description": "a summoned monster"
   }
 ]
