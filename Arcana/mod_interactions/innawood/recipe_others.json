@@ -29,7 +29,7 @@
     "book_learn": [ [ "adv_chemistry", 5 ], [ "recipe_labchem", 5 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "surface_heat", 15 ] ] ],
-    "components": [ [ [ "iridescent_plate", 1 ] ], [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 1 ] ] ]
+    "components": [ [ [ "iridescent_plate", 1 ] ], [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 1, "LIST" ] ] ]
   },
   {
     "type": "recipe",
@@ -175,7 +175,7 @@
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "wild_herbs", 30 ], [ "pine_bough", 1 ] ],
-      [ [ "arcana_flora_forage", 5 ], [ "arcana_flora_flowers", 2 ] ],
+      [ [ "arcana_flora_forage", 5, "LIST" ], [ "arcana_flora_flowers", 2, "LIST" ] ],
       [
         [ "arcana_essence_any", 2 ],
         [ "iron_thorn", 1 ],
@@ -246,7 +246,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
-      [ [ "arcana_blood_standard", 5 ] ],
+      [ [ "arcana_blood_standard", 5, "LIST" ] ],
       [ [ "arcana_essence_any", 3 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
@@ -302,7 +302,7 @@
     "proficiencies": [ { "proficiency": "prof_metalworking" } ],
     "components": [
       [ [ "gold_small", 625 ] ],
-      [ [ "arcana_holy_relic_any", 1 ], [ "arcana_holy_symbol_any", 1 ] ],
+      [ [ "arcana_holy_relic_any", 1, "LIST" ], [ "arcana_holy_symbol_any", 1, "LIST" ] ],
       [ [ "essence", 1 ], [ "earth_talisman", 1 ] ]
     ]
   },
@@ -410,7 +410,7 @@
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "components": [
       [ [ "silver_glyph", 1 ] ],
-      [ [ "wyrmskin_piece", 1 ], [ "graboid_fang", 1 ], [ "chem_acetic_acid", 4 ], [ "any_strong_acid", 4 ] ]
+      [ [ "wyrmskin_piece", 1 ], [ "graboid_fang", 1 ], [ "chem_acetic_acid", 4 ], [ "any_strong_acid", 4, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "SECRET" ]
@@ -606,7 +606,7 @@
     "autolearn": true,
     "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_exclude_blood", 2 ] ],
     "tools": [ [ [ "book_scrollcraft", -1 ] ] ],
-    "components": [ [ [ "inflorescent_root", 1 ], [ "triffid_queen_flower", 1 ], [ "arcana_flora_flowers", 5 ] ] ],
+    "components": [ [ [ "inflorescent_root", 1 ], [ "triffid_queen_flower", 1 ], [ "arcana_flora_flowers", 5, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
   },
@@ -656,7 +656,7 @@
     "autolearn": true,
     "using": [ [ "arcana_essence_any", 3 ], [ "arcana_polishing_standard", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "book_syncretism", -1 ] ], [ [ "surface_heat", 10 ] ] ],
+    "tools": [ [ [ "book_syncretism", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
     "components": [ [ [ "engraved_stone", 1 ] ], [ [ "monster_tear", 2 ] ] ]
   },
   {
@@ -693,8 +693,8 @@
     "qualities": [ { "id": "CONTAIN", "level": 1 } ],
     "tools": [ [ [ "book_syncretism", -1 ], [ "book_hexenhammer", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ] ],
     "components": [
-      [ [ "wax", 1 ], [ "any_tallow", 4 ], [ "edible_lard", 1 ] ],
-      [ [ "cordage_short", 1 ] ],
+      [ [ "wax", 1 ], [ "any_tallow", 4, "LIST" ], [ "edible_lard", 1, "LIST" ] ],
+      [ [ "cordage_short", 1, "LIST" ] ],
       [ [ "flame_talisman", 1 ] ],
       [ [ "salt", 20 ] ],
       [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ]
@@ -738,12 +738,15 @@
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 1 } ],
-    "tools": [ [ [ "book_syncretism", -1 ], [ "book_sacrifice", -1 ], [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10 ] ] ],
+    "tools": [
+      [ [ "book_syncretism", -1 ], [ "book_sacrifice", -1 ], [ "book_hexenhammer", -1 ] ],
+      [ [ "surface_heat", 10, "LIST" ] ]
+    ],
     "components": [
       [ [ "petrified_eye", 1 ], [ "engraved_stone", 1 ] ],
       [ [ "gold_small", 500 ] ],
       [ [ "pearl", 1 ], [ "opal", 1 ], [ "diamond", 1 ], [ "vortex_shard", 1 ], [ "engraved_stone", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },

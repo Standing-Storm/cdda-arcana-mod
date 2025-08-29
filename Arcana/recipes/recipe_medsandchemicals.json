@@ -17,8 +17,8 @@
       { "proficiency": "prof_distilling" },
       { "proficiency": "prof_arcana_enchantment" }
     ],
-    "tools": [ [ [ "surface_heat", 2 ] ] ],
-    "components": [ [ [ "sweet_fruit", 1 ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ], [ [ "essence_dull", 4 ] ] ]
+    "tools": [ [ [ "surface_heat", 2, "LIST" ] ] ],
+    "components": [ [ [ "sweet_fruit", 1, "LIST" ] ], [ [ "salt", 2 ] ], [ [ "vinegar", 2 ] ], [ [ "essence_dull", 4 ] ] ]
   },
   {
     "result": "infused_ink",
@@ -38,8 +38,8 @@
       { "proficiency": "prof_arcana_enchantment" }
     ],
     "qualities": [ { "id": "CHEM", "level": 1 }, { "id": "CUT_FINE", "level": 1 }, { "id": "COOK", "level": 2 } ],
-    "tools": [ [ [ "filter_paper_quantitative", 1 ] ], [ [ "surface_heat", 30 ] ] ],
-    "components": [ [ [ "butternut_husk", 2 ] ], [ [ "water_clean", 3 ] ], [ [ "hard_liquor", 1 ] ], [ [ "essence_dull", 2 ] ] ]
+    "tools": [ [ [ "filter_paper_quantitative", 1 ] ], [ [ "surface_heat", 30, "LIST" ] ] ],
+    "components": [ [ [ "butternut_husk", 2 ] ], [ [ "water_clean", 3 ] ], [ [ "hard_liquor", 1, "LIST" ] ], [ [ "essence_dull", 2 ] ] ]
   },
   {
     "result": "copper",
@@ -311,7 +311,7 @@
     "components": [
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 30 ] ],
       [ [ "gold_small", 10 ], [ "silver_small", 20 ] ],
-      [ [ "arcana_blood_standard", 1 ], [ "arcana_flesh_standard", 5 ] ]
+      [ [ "arcana_blood_standard", 1, "LIST" ], [ "arcana_flesh_standard", 5, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
@@ -334,7 +334,7 @@
     "qualities": [ { "id": "CHEM", "level": 1 } ],
     "tools": [ [ [ "book_potioncraft", -1 ] ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy", "required": true }, { "proficiency": "prof_arcana_alchemy_potions" } ],
-    "components": [ [ [ "speed_potion", 2 ] ], [ [ "arcana_blood_standard", 1 ], [ "arcana_flesh_standard", 5 ] ] ],
+    "components": [ [ [ "speed_potion", 2 ] ], [ [ "arcana_blood_standard", 1, "LIST" ], [ "arcana_flesh_standard", 5, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
@@ -355,7 +355,7 @@
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy", "required": true }, { "proficiency": "prof_arcana_alchemy_potions" } ],
     "tools": [ [ [ "offering_chalice", -1 ] ], [ [ "book_potioncraft", -1 ] ] ],
-    "components": [ [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ] ],
+    "components": [ [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN", "SECRET" ]
   },
@@ -377,7 +377,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_potions" } ],
     "components": [
       [ [ "scrap_cast_iron", 5 ], [ "chunk_cast_iron", 1 ] ],
-      [ [ "arcana_blood_standard", 2 ], [ "arcana_flesh_standard", 10 ] ]
+      [ [ "arcana_blood_standard", 2, "LIST" ], [ "arcana_flesh_standard", 10, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
@@ -478,7 +478,7 @@
       [ [ "healing_potion", 1 ] ],
       [ [ "numbness_potion", 1 ] ],
       [ [ "cotton_patchwork", 2 ], [ "medical_gauze", 1 ] ],
-      [ [ "arcana_flora_flowers", 1 ] ]
+      [ [ "arcana_flora_flowers", 1, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
@@ -498,7 +498,7 @@
     "book_learn": [ [ "book_potioncraft", 5 ] ],
     "qualities": [ { "id": "HAMMER", "level": 1 }, { "id": "BOIL", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_potions" } ],
-    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "water_boiling_heat", 6 ] ] ],
+    "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "water_boiling_heat", 6, "LIST" ] ] ],
     "components": [
       [ [ "speed_potion", 1 ] ],
       [ [ "strength_potion", 1 ] ],
@@ -539,7 +539,7 @@
     ],
     "components": [
       [ [ "salt_water", 1 ], [ "saline", 5 ] ],
-      [ [ "arcana_blood_standard", 1 ], [ "arcana_flesh_standard", 5 ] ],
+      [ [ "arcana_blood_standard", 1, "LIST" ], [ "arcana_flesh_standard", 5, "LIST" ] ],
       [
         [ "mutagen_jabberblood", 1 ],
         [ "slime_scrap", 2 ],
