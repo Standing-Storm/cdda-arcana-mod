@@ -30,10 +30,10 @@
       { "id": "SEW", "level": 1 },
       { "id": "ANVIL", "level": 1 }
     ],
-    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 2 ] ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
-      [ [ "steel_chunk_any", 1 ], [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
+      [ [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
       [ [ "leather", 1 ], [ "fur", 1 ] ],
       [ [ "copper", 15 ], [ "silver_small", 15 ], [ "gold_small", 15 ], [ "CF_golden_scale", 3 ] ],
       [ [ "essence_dull", 30 ] ]
