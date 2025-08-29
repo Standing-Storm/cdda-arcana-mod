@@ -9,10 +9,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
     "proficiencies": [ { "proficiency": "prof_fibers" }, { "proficiency": "prof_arcana_thaumatology" } ],
-    "components": [
-      [ [ "filament", 50, "LIST" ], [ "cordage_short", 1, "LIST" ] ],
-      [ [ "inflorescent_root", 1 ], [ "triffid_queen_flower", 1 ] ]
-    ]
+    "components": [ [ [ "filament", 50 ], [ "cordage_short", 1 ] ], [ [ "inflorescent_root", 1 ], [ "triffid_queen_flower", 1 ] ] ]
   },
   {
     "type": "recipe",
@@ -25,7 +22,7 @@
     "autolearn": true,
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
-      [ [ "cordage_short", 1, "LIST" ], [ "silver_necklace", 1 ] ],
+      [ [ "cordage_short", 1 ], [ "silver_necklace", 1 ] ],
       [ [ "vortex_shard", 1 ], [ "blob_gem", 1 ], [ "monster_tear", 1 ], [ "shadow_gem", 1 ] ]
     ]
   },
@@ -41,7 +38,7 @@
     "autolearn": true,
     "qualities": [ { "id": "HAMMER", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
-    "tools": [ [ [ "surface_heat", 10, "LIST" ] ] ],
+    "tools": [ [ [ "surface_heat", 10 ] ] ],
     "components": [
       [ [ "bone", 1 ], [ "bone_human", 1 ] ],
       [ [ "copper", 10 ], [ "silver_small", 10 ], [ "gold_small", 10 ] ],
@@ -205,7 +202,7 @@
     "book_learn": [ [ "book_hexenhammer", 5 ] ],
     "using": [ [ "filament", 18 ], [ "steel_standard", 2 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SEW", "level": 1 }, { "id": "ANVIL", "level": 2 } ],
-    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10, "LIST" ] ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 10 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_leatherworking" },
       { "proficiency": "prof_metalworking" },
@@ -234,7 +231,7 @@
       { "id": "SEW", "level": 1 },
       { "id": "ANVIL", "level": 3 }
     ],
-    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4, "LIST" ] ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ] ], [ [ "surface_heat", 4 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_fine_metalsmithing" },
@@ -242,7 +239,7 @@
       { "proficiency": "prof_arcana_enchantment" }
     ],
     "components": [
-      [ [ "steel_chunk_any", 2, "LIST" ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
+      [ [ "steel_chunk_any", 2 ], [ "scrap", 10 ], [ "scrap_bronze", 2 ] ],
       [ [ "leather", 2 ], [ "fur", 2 ] ],
       [ [ "copper", 30 ], [ "silver_small", 30 ], [ "gold_small", 30 ], [ "CF_golden_scale", 6 ] ],
       [ [ "essence_dull", 30 ] ]
@@ -281,7 +278,7 @@
         [ "citrine", 1 ],
         [ "emerald", 1 ]
       ],
-      [ [ "wyrmskin_piece", 1 ], [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2, "LIST" ] ],
+      [ [ "wyrmskin_piece", 1 ], [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2 ] ],
       [ [ "essence_blood", 4 ] ]
     ],
     "flags": [ "SECRET" ]
@@ -326,7 +323,7 @@
     "activity_level": "BRISK_EXERCISE",
     "book_learn": [ [ "book_sacrifice", 6 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 2 } ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6, "LIST" ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_fine_metalsmithing" },
@@ -349,7 +346,7 @@
     "activity_level": "BRISK_EXERCISE",
     "book_learn": [ [ "book_sacrifice", 8 ], [ "book_syncretism", 7 ] ],
     "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "ANVIL", "level": 2 } ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6, "LIST" ] ] ],
+    "tools": [ [ [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 6 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_fine_metalsmithing" },
@@ -440,10 +437,7 @@
     "book_learn": [ [ "book_syncretism", 7 ], [ "book_bloodmagic", 8 ], [ "book_sacrifice", 8 ] ],
     "using": [ [ "filament", 24 ], [ "bronzesmithing_tools", 1 ], [ "arcana_essence_exclude_dull", 8 ] ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "SEW", "level": 1 } ],
-    "tools": [
-      [ [ "book_syncretism", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ],
-      [ [ "surface_heat", 4, "LIST" ] ]
-    ],
+    "tools": [ [ [ "book_syncretism", -1 ], [ "book_bloodmagic", -1 ], [ "book_sacrifice", -1 ] ], [ [ "surface_heat", 4 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_metalworking" },
       { "proficiency": "prof_redsmithing", "required": true },
@@ -482,7 +476,7 @@
       [ [ "gilded_aegis", 1 ] ],
       [ [ "copper", 300 ], [ "scrap_copper", 12 ] ],
       [ [ "jade_wreath", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10, "LIST" ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_blood", 10 ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -506,11 +500,11 @@
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
       [ [ "armor_wyrm", 1 ] ],
-      [ [ "arcana_holy_relic_any", 1, "LIST" ] ],
+      [ [ "arcana_holy_relic_any", 1 ] ],
       [ [ "dragonblood_mutagen", 1 ] ],
       [ [ "material_shrd_limestone", 3 ], [ "material_limestone", 30 ] ],
       [ [ "charcoal", 30 ], [ "coal_lump", 30 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_dull", 10, "LIST" ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_exclude_dull", 10 ] ]
     ],
     "flags": [ "BLIND_HARD", "SECRET" ]
   }

@@ -101,12 +101,7 @@
     "qualities": [ { "id": "CHEM", "level": 1 } ],
     "components": [
       [ [ "wild_herbs", 30 ] ],
-      [
-        [ "hard_liquor_toxic", 1, "LIST" ],
-        [ "chem_methanol", 125 ],
-        [ "cheap_wine", 21, "LIST" ],
-        [ "worthy_wine", 15, "LIST" ]
-      ]
+      [ [ "hard_liquor_toxic", 1 ], [ "chem_methanol", 125 ], [ "cheap_wine", 21 ], [ "worthy_wine", 15 ] ]
     ]
   },
   {
@@ -210,6 +205,6 @@
       ],
       [ [ "survival_marker", -1 ], [ "feather", -1 ] ]
     ],
-    "components": [ [ [ "paper", 20 ] ], [ [ "arcana_essence_any", 1, "LIST" ] ] ]
+    "components": [ [ [ "paper", 20 ] ], [ [ "arcana_essence_any", 1 ] ] ]
   }
 ]

@@ -30,10 +30,10 @@
       { "id": "SEW", "level": 1 },
       { "id": "ANVIL", "level": 1 }
     ],
-    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 2, "LIST" ] ] ],
+    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ], [ [ "surface_heat", 2 ] ] ],
     "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
-      [ [ "steel_chunk_any", 1, "LIST" ], [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
+      [ [ "steel_chunk_any", 1 ], [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
       [ [ "leather", 1 ], [ "fur", 1 ] ],
       [ [ "copper", 15 ], [ "silver_small", 15 ], [ "gold_small", 15 ], [ "CF_golden_scale", 3 ] ],
       [ [ "essence_dull", 30 ] ]
@@ -140,7 +140,7 @@
     "batch_time_factors": [ 95, 5 ],
     "book_learn": [  ],
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "arcana_flesh_standard", 5, "LIST" ] ] ],
+    "components": [ [ [ "arcana_flesh_standard", 5 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
   },
@@ -179,7 +179,7 @@
     "qualities": [ { "id": "CHEM", "level": 3 }, { "id": "DISTILL", "level": 1 } ],
     "tools": [ [ [ "electrolysis_kit", 100 ] ] ],
     "components": [
-      [ [ "arcana_blood_standard", 1, "LIST" ] ],
+      [ [ "arcana_blood_standard", 1 ] ],
       [ [ "salt", 5 ] ],
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 30 ] ]
     ],
@@ -225,7 +225,7 @@
         [ "marloss_gel", 1 ],
         [ "marloss_berry", 15 ],
         [ "slime_scrap", 25 ],
-        [ "arcana_bone_standard", 5, "LIST" ],
+        [ "arcana_bone_standard", 5 ],
         [ "chitin_piece", 50 ],
         [ "acidchitin_piece", 25 ],
         [ "stick_fiber", 100 ],
@@ -280,7 +280,7 @@
     "book_learn": [  ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
     "components": [
-      [ [ "adhesive", 1, "LIST" ], [ "filament", 10, "LIST" ] ],
+      [ [ "adhesive", 1 ], [ "filament", 10 ] ],
       [ [ "stick", 2 ], [ "broom", 2 ], [ "2x4", 2 ], [ "bee_sting", 2 ] ],
       [
         [ "bone_twisted", 1 ],
@@ -294,7 +294,7 @@
         [ "monster_tear", 1 ],
         [ "shadow_gem", 1 ]
       ],
-      [ [ "fletching", 1, "LIST" ] ]
+      [ [ "fletching", 1 ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -311,7 +311,7 @@
     "book_learn": [  ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
     "components": [
-      [ [ "adhesive", 1, "LIST" ], [ "filament", 20, "LIST" ] ],
+      [ [ "adhesive", 1 ], [ "filament", 20 ] ],
       [ [ "stick", 2 ], [ "broom", 2 ], [ "2x4", 2 ], [ "bee_sting", 2 ] ],
       [
         [ "bone_twisted", 1 ],
@@ -325,7 +325,7 @@
         [ "monster_tear", 1 ],
         [ "shadow_gem", 1 ]
       ],
-      [ [ "fletching", 1, "LIST" ] ]
+      [ [ "fletching", 1 ] ]
     ],
     "flags": [ "SECRET" ]
   },
