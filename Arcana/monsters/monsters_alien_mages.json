@@ -18,7 +18,6 @@
     "extend": {
       "flags": [ "MAGIC_USER" ],
       "special_attacks": [
-        [ "PARROT", 100 ],
         {
           "id": "migo_fleshwarper_blood_spell",
           "type": "spell",
@@ -64,7 +63,6 @@
     "extend": {
       "flags": [ "MAGIC_USER" ],
       "special_attacks": [
-        [ "PARROT", 100 ],
         {
           "id": "migo_nethermancer_grab",
           "type": "spell",
