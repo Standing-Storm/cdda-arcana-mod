@@ -12,7 +12,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "batch_time_factors": [ 80, 4 ],
-    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10, "LIST" ], [ "waterproofing", 1 ] ],
+    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10 ], [ "waterproofing", 1 ] ],
     "components": [
       [
         [ "canister_empty", 1 ],
@@ -39,7 +39,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "batch_time_factors": [ 80, 4 ],
-    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10, "LIST" ], [ "waterproofing", 1 ] ],
+    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 10 ], [ "waterproofing", 1 ] ],
     "components": [
       [
         [ "canister_empty", 1 ],
@@ -66,7 +66,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "batch_time_factors": [ 80, 4 ],
-    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25, "LIST" ], [ "waterproofing", 1 ] ],
+    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25 ], [ "waterproofing", 1 ] ],
     "components": [
       [
         [ "canister_empty", 1 ],
@@ -93,7 +93,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "batch_time_factors": [ 80, 4 ],
-    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25, "LIST" ], [ "waterproofing", 1 ] ],
+    "using": [ [ "arcana_essence_any", 1 ], [ "surface_heat", 25 ], [ "waterproofing", 1 ] ],
     "components": [
       [
         [ "canister_empty", 1 ],

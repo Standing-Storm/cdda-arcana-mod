@@ -9,7 +9,7 @@
     "purifiable": false,
     "profession": true,
     "anger_relations": [
-      [ "ARCANA_SUMMONED", 15 ],
+      [ "SUMMONED_CREATURE", 15 ],
       [ "NETHER", 15 ],
       [ "SLIME", 15 ],
       [ "HORROR", 15 ],
