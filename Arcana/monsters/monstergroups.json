@@ -43,8 +43,8 @@
       { "monster": "mon_fungal_fighter", "freq": 200, "cost_multiplier": 0 },
       { "monster": "mon_vinebeast", "freq": 200, "cost_multiplier": 10 },
       { "monster": "mon_arcana_tanglevine", "freq": 50, "cost_multiplier": 0 },
-      { "monster": "mon_triffid_seedshaper", "weight": 25, "cost_multiplier": 5 },
-      { "monster": "mon_triffid_vineweaver", "weight": 25, "cost_multiplier": 5 }
+      { "monster": "mon_triffid_seedshaper", "weight": 125, "cost_multiplier": 5 },
+      { "monster": "mon_triffid_vineweaver", "weight": 125, "cost_multiplier": 5 }
     ]
   },
   {
@@ -63,12 +63,12 @@
     "id": "GROUP_GROVEBASEMENT_NATURAL",
     "type": "monstergroup",
     "monsters": [
-      { "monster": "mon_triffid_seedshaper", "weight": 50, "cost_multiplier": 5 },
-      { "monster": "mon_triffid_vineweaver", "weight": 50, "cost_multiplier": 5 },
+      { "monster": "mon_triffid_seedshaper", "weight": 150, "cost_multiplier": 5 },
+      { "monster": "mon_triffid_vineweaver", "weight": 150, "cost_multiplier": 5 },
       { "monster": "mon_thornwight", "freq": 200, "cost_multiplier": 0 },
       { "monster": "mon_triffid", "weight": 250 },
-      { "monster": "mon_thornbear", "weight": 50 },
-      { "monster": "mon_vinebeast", "freq": 200, "cost_multiplier": 10 },
+      { "monster": "mon_thornbear", "weight": 100 },
+      { "monster": "mon_vinebeast", "freq": 200, "cost_multiplier": 2 },
       { "monster": "mon_arcana_tanglevine", "freq": 50, "cost_multiplier": 0 },
       { "monster": "mon_feral_summoner", "freq": 100, "cost_multiplier": 0, "starts": "250 hours" }
     ]
