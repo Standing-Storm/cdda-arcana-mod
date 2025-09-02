@@ -108,5 +108,44 @@
       "ter_set": "t_null",
       "items": [ { "item": "rock", "count": [ 8, 15 ] }, { "item": "brick", "count": [ 2, 6 ] } ]
     }
+  },
+  {
+    "type": "terrain",
+    "id": "t_door_locked_and_warded",
+    "name": "closed wood door",
+    "description": "A standard wooden door that doesn't look very resilient.  It'd probably burn easily, too.  This one has a deadbolt keyhole, so it's likely locked.  You could pry it open or pick the lock, or unlock the deadbolt from the inside.  There are some odd-looking markings around the lock and the door edges",
+    "symbol": "+",
+    "looks_like": "t_door_locked",
+    "color": "brown",
+    "move_cost": 0,
+    "coverage": 95,
+    "lockpick_result": "t_door_c",
+    "lockpick_message": "With a satisfying click, the lock on the door opens.",
+    "roof": "t_wood_roof",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "FLAMMABLE_ASH", "NOITEM", "REDUCE_SCENT", "BARRICADABLE_DOOR", "LOCKED", "BLOCK_WIND", "PICKABLE", "SUPPORTS_ROOF" ],
+    "examine_action": "locked_object",
+    "bash": {
+      "str_min": 100,
+      "str_max": 360,
+      "sound": "smash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_door_b",
+      "items": [
+        { "item": "2x4", "prob": 25 },
+        { "item": "wood_panel", "prob": 10 },
+        { "item": "splinter", "count": [ 1, 2 ] },
+        { "item": "nail", "charges": [ 0, 2 ] }
+      ],
+      "hit_field": [ "fd_dust", 2 ],
+      "destroyed_field": [ "fd_splinters", 1 ]
+    },
+    "prying": {
+      "result": "t_door_o",
+      "message": "You pry open the door.",
+      "prying_data": { "difficulty": 15, "prying_level": 2, "noisy": true, "failure": "You pry, but can't pry open the door." }
+    },
+    "shoot": { "reduce_damage": [ 15, 30 ], "reduce_damage_laser": [ 5, 20 ], "destroy_damage": [ 20, 90 ] }
   }
 ]
