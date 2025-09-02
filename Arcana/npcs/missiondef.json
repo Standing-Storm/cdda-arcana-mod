@@ -542,7 +542,7 @@
     "origins": [ "ORIGIN_SECONDARY" ],
     "followup": "MISSION_CF_GM_2",
     "start": {
-      "assign_mission_target": { "om_terrain": "strange_grove", "om_special": "Strange Grove", "reveal_radius": 3, "z": 0 }
+      "assign_mission_target": { "om_terrain": "arcana_grove_lodge_basement_1", "om_special": "overgrown_hunting_lodge", "reveal_radius": 3, "z": 0 }
     },
     "end": {
       "effect": [ { "u_add_effect": "cf_mission_1", "duration": "PERMANENT" }, { "u_spawn_item": "CF_golden_scale", "count": 6 } ],

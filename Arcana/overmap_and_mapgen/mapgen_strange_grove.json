@@ -157,7 +157,7 @@
         " @o-ØØ---+__|_|/ooooo//|_____+/____/3t|O#       ",
         " @ooØØoo-+___oooo_||ooo|/_|||+/__||_33|O#       ",
         " #--o--oo@ooooo|_//_|_oo//_|_#_//____//_#       ",
-        " #-oo----#/_||ooo//__||__//__#_//____||/#       ",
+        " #-oo----#4444ooo//__||__4444#_//____||/#       ",
         " ##@@#..########o####################!###       ",
         "     %..%%    %%o%%                 #_#         ",
         "     %%..%    %.oo%%     ############+#         ",
@@ -184,7 +184,11 @@
         "C": [ { "item": "games", "chance": 80, "repeat": [ 3, 6 ] } ],
         "1": [ { "item": "wines_worthy", "chance": 75, "repeat": [ 5, 10 ] } ],
         "2": [ { "item": "scrollwriting_materials", "chance": 75, "repeat": [ 2, 5 ] } ],
-        "3": [ { "item": "magazines", "chance": 80, "repeat": [ 1, 3 ] }, { "item": "novels", "chance": 100, "repeat": [ 0, 2 ] } ]
+        "3": [ { "item": "magazines", "chance": 80, "repeat": [ 1, 3 ] }, { "item": "novels", "chance": 100, "repeat": [ 0, 2 ] } ],
+        "4": [
+          { "item": "magic_crafting", "chance": 75, "repeat": [ 1, 3 ] },
+          { "item": "magic_consumables", "chance": 40, "repeat": [ 1, 3 ] }
+        ]
       },
       "place_loot": [
         { "group": "briarwitch_casualties", "x": [ 27, 31 ], "y": [ 16, 18 ], "repeat": [ 1, 2 ] },

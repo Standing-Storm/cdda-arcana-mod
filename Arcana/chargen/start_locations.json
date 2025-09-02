@@ -1,6 +1,13 @@
 [
   {
     "type": "start_location",
+    "id": "overgrown_lodge",
+    "name": { "str": "Overgrown Lodge" },
+    "terrain": [ "arcana_grove_lodge_ground2" ],
+    "flags": [ "ALLOW_OUTSIDE" ]
+  },
+  {
+    "type": "start_location",
     "id": "strange_grove",
     "name": { "str": "Strange Grove" },
     "terrain": [ "strange_grove" ],
