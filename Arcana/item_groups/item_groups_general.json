@@ -525,5 +525,23 @@
       { "item": "tailors_kit", "prob": 20, "charges": [ 0, 100 ] },
       [ "kevlar_shears", 5 ]
     ]
+  },
+  {
+    "id": "scrollwriting_materials",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "book_scrollcraft", "prob": 5 },
+      { "item": "paper", "prob": 50, "charges": [ 20, 50 ] },
+      {
+        "item": "infused_ink",
+        "prob": 25,
+        "charges": [ 1, 25 ],
+        "container-item": "bottle_plastic_tiny",
+        "sealed": false
+      },
+      { "item": "scroll_blank", "prob": 35 },
+      { "item": "feather", "prob": 50 }
+    ]
   }
 ]

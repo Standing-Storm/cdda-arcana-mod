@@ -20,7 +20,7 @@
   },
   {
     "type": "overmap_special",
-    "id": "Overgrown Hunting Lodge",
+    "id": "overgrown_hunting_lodge",
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "arcana_grove_lodge_ground1_north" },
       { "point": [ 1, 0, 0 ], "overmap": "arcana_grove_lodge_ground2_north" },
@@ -37,6 +37,7 @@
     "city_distance": [ 30, -1 ],
     "city_sizes": [ 0, 12 ],
     "occurrences": [ 25, 100 ],
+    "spawns": { "group": "GROUP_GROVESURFACE", "population": [ 25, 45 ], "radius": [ 2, 2 ] },
     "flags": [ "CLASSIC", "MAN_MADE", "GLOBALLY_UNIQUE" ]
   },
   {
