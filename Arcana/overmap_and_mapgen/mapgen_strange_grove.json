@@ -200,6 +200,8 @@
       ],
       "place_monster": [
         { "monster": "mon_moruboru", "x": 4, "y": 3 },
+        { "monster": "mon_triffid_seedshaper", "x": 15, "y": 10, "chance": 85 },
+        { "monster": "mon_triffid_vineweaver", "x": 15, "y": 15, "chance": 85 },
         { "group": "GROUP_GROVEBASEMENT_NATURAL", "x": [ 2, 23 ], "y": [ 1, 22 ], "repeat": [ 6, 10 ] },
         { "group": "GROUP_GROVEBASEMENT_NATURAL", "x": [ 24, 43 ], "y": [ 1, 22 ], "repeat": [ 6, 10 ] }
       ]
