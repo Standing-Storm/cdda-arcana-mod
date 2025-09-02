@@ -73,7 +73,7 @@
   {
     "id": "mon_moruboru",
     "type": "MONSTER",
-    "name": { "str": "mandragora", "str_pl": "mandragora" },
+    "name": { "str_sp": "mandragora" },
     "description": "A large plantlike creature with a gaping, toothy maw and numerous vines.  A hideous smell permeates the air around it.",
     "default_faction": "moruboru",
     "categories": [ "CLASSIC" ],
@@ -97,7 +97,7 @@
     "armor": { "bash": 15, "cut": 5, "stab": 10, "bullet": 5, "acid": 5 },
     "vision_day": 20,
     "vision_night": 20,
-    "emit_fields": [ "emit_toxic_leak" ],
+    "emit_fields": [ { "emit_id": "emit_toxic_stream", "delay": "1 s" } ],
     "harvest": "moruboru_harvest",
     "special_attacks": [
       { "type": "bite", "cooldown": 5 },

@@ -1,0 +1,204 @@
+[
+  {
+    "type": "mapgen",
+    "om_terrain": [ [ "arcana_grove_lodge_ground1", "arcana_grove_lodge_ground2" ] ],
+    "object": {
+      "fill_ter": "t_floor",
+      "rows": [
+        ".%##W###W###W###W###+##W#################%......",
+        ".*#c B#c B#B c#B c#  #h s#a            <#*......",
+        ".*Wd B#d B#B d#B d#  #h T#^   a ZZZ OC  W*......",
+        ".*##=###=###=###=##  ##=##a   a ZZZ OC  #*......",
+        ".*#c     ctc                  a ZZZ OC  #*......",
+        ".*Wt                                    W*......",
+        ".*#c   YY   YY  AAAAAAAA  ata ^        <#*......",
+        ".%########+########################   ###*......",
+        "ooooooooooGGGGGGG~~~~~~~~~~~~~~~~~#   #%**......",
+        "ooooooooooooooooG~~~~~%############   #*........",
+        "ooooooooooooooooG~~~~~*w              #*........",
+        "ooooooooooooooooG~~~~~*#Y   c c c     w*........",
+        "ooooooooooooooooGGGGGGG+    ttttt    bw*........",
+        "ooooooooooooooooGGGGGGG+    ttttt    bw*........",
+        "oooooooooooooooo~~~~~~*#Y   c c c     w*........",
+        "oooooooooooooooo~~~~~~*w           tttw*........",
+        "oooooooooooooooo~~~~~~*#####   ########*........",
+        "oooooooooooooooo~~~~~~***#>#   #********........",
+        "oooooooooooooooo%~~~~~~~~# +   #%****...........",
+        "......*###-###-###-#########   #####*...........",
+        ".....0*#UU URU URU URU #12C     5 é#*...........",
+        ".....0*#R              z      C   uW*...........",
+        ".....0*#UU URU URU URU #3CC&  4CVuF#*...........",
+        "......%###-###-###-##########+######%..........."
+      ],
+      "palettes": [ "arcana_strange_grove_palette" ],
+      "place_nested": [ { "chunks": [ [ "lodge_pantry_15x15", 80 ] ], "x": 8, "y": 9 } ],
+      "place_loot": [
+        { "group": "briarwitch_casualties", "x": 24, "y": [ 12, 23 ], "repeat": [ 0, 1 ] },
+        { "group": "briarwitch_casualties", "x": [ 25, 30 ], "y": [ 10, 15 ], "repeat": [ 1, 2 ] },
+        { "group": "summoner_casualties", "x": [ 25, 30 ], "y": [ 10, 15 ], "repeat": [ 1, 2 ] },
+        { "group": "summoner_casualties", "x": [ 30, 38 ], "y": [ 1, 6 ], "repeat": [ 1, 2 ] },
+        { "group": "summoner_casualties", "x": [ 3, 6 ], "y": [ 15, 18 ], "repeat": [ 1, 2 ] }
+      ],
+      "place_monster": [
+        { "group": "GROUP_GROVESURFACE", "x": [ 0, 23 ], "y": [ 0, 23 ], "repeat": [ 5, 12 ] },
+        { "group": "GROUP_GROVESURFACE", "x": [ 24, 47 ], "y": [ 0, 23 ], "repeat": [ 5, 12 ] }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ [ "arcana_grove_lodge_2ndfloor1", "arcana_grove_lodge_2ndfloor2" ] ],
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        " %##W###W###W###W###w##W#################%      ",
+        "  #AAAAAAAAAAAAAA#__/ata_______________>#       ",
+        "  W____///______t#_/_/____OOOOO_ZZZ_____W       ",
+        "  #a___/_/______a#/___/___O_____ZZZ_///D#       ",
+        "  #__O_///O______+_/___/________ZZZ_/_/D#       ",
+        "  W__OOOOOO______#__/_/_____________///_W       ",
+        "  #a________éFF__#___/____SeeeS________>#       ",
+        " %########w#######wwww#############www###       ",
+        "                                  -...%         ",
+        "                       5-----------...-         ",
+        "                       -..............-         ",
+        "                       -..............-         ",
+        "                       -..............-         ",
+        "                       -..............-         ",
+        "                       -..............-         ",
+        "                       -..............-         ",
+        "                       ---.....--------         ",
+        "                         -.....-                ",
+        "                         -.....-                ",
+        "       ---------5---------.....5----            ",
+        "       -...........................-            ",
+        "       -...........................-            ",
+        "       -........................=..-            ",
+        "       5---------------------------5            "
+      ],
+      "palettes": [ "arcana_strange_grove_lodge_2ndfloor" ],
+      "place_item": [ { "item": "television", "x": 29, "y": 6, "chance": 100 } ],
+      "place_items": [
+        { "item": "SUS_trash_roof", "x": [ 35, 37 ], "y": [ 8, 9 ], "chance": 50, "repeat": [ 1, 3 ] },
+        { "item": "SUS_trash_roof", "x": [ 24, 37 ], "y": [ 10, 15 ], "chance": 50, "repeat": [ 1, 3 ] },
+        { "item": "SUS_trash_roof", "x": [ 26, 30 ], "y": [ 16, 19 ], "chance": 50, "repeat": [ 1, 3 ] },
+        { "item": "SUS_trash_roof", "x": [ 8, 23 ], "y": [ 20, 22 ], "chance": 50, "repeat": [ 1, 3 ] },
+        { "item": "SUS_trash_roof", "x": [ 24, 34 ], "y": [ 20, 22 ], "chance": 50, "repeat": [ 1, 3 ] }
+      ],
+      "place_nested": [
+        {
+          "chunks": [
+            [ "null", 150 ],
+            [ "roof_2x2_golf", 25 ],
+            [ "roof_3x3_wine", 25 ],
+            [ "roof_4x4_party", 25 ],
+            [ "roof_4x4_survivor", 25 ]
+          ],
+          "x": [ 24, 34 ],
+          "y": [ 10, 12 ]
+        }
+      ],
+      "place_loot": [ { "group": "summoner_casualties", "x": [ 6, 13 ], "y": [ 2, 6 ], "repeat": [ 1, 3 ] } ],
+      "place_monster": [
+        { "monster": "mon_thornwight", "x": [ 24, 36 ], "y": [ 1, 6 ], "chance": 50, "repeat": [ 3, 4 ] },
+        { "monster": "mon_triffid_seedshaper", "x": 12, "y": 3, "chance": 75 },
+        { "monster": "mon_triffid_vineweaver", "x": 9, "y": 3, "chance": 75 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ [ "arcana_grove_lodge_roof1", "arcana_grove_lodge_roof2" ] ],
+    "object": {
+      "fill_ter": "t_flat_roof",
+      "rows": [
+        "  5-------------------------------------5       ",
+        "  -.....................................-       ",
+        "  -.............................~~~.....-       ",
+        "  -.............................~~~.....-       ",
+        "  -V............................~~~.....-       ",
+        "  -.....................................-       ",
+        "  -.....................................-       ",
+        "  5-----------------------------------5--       ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                ",
+        "                                                "
+      ],
+      "palettes": [ "roof_palette" ],
+      "furniture": { "V": "f_wind_vane" },
+      "place_items": [
+        { "item": "SUS_trash_roof", "x": [ 3, 23 ], "y": [ 1, 6 ], "chance": 20, "repeat": [ 1, 3 ] },
+        { "item": "SUS_trash_roof", "x": [ 24, 39 ], "y": [ 1, 6 ], "chance": 20, "repeat": [ 1, 3 ] }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ [ "arcana_grove_lodge_basement_1", "arcana_grove_lodge_basement_2" ] ],
+    "object": {
+      "fill_ter": "t_soil",
+      "rows": [
+        " ####@@##################################       ",
+        " #---oo--#DDD¢/¢||_/oo|||_222#OOO33OOOOO#       ",
+        " #---o---#_||¢¢¢_oooo//_||ccc#O__||_//_O#       ",
+        " @o-ØØ---+__|_|/ooooo//|_____+/____/3t|O#       ",
+        " @ooØØoo-+___oooo_||ooo|/_|||+/__||_33|O#       ",
+        " #--o--oo@ooooo|_//_|_oo//_|_#_//____//_#       ",
+        " #-oo----#/_||ooo//__||__//__#_//____||/#       ",
+        " ##@@#..########o####################!###       ",
+        "     %..%%    %%o%%                 #_#         ",
+        "     %%..%    %.oo%%     ############+#         ",
+        "    %%..%%   %%..%%%%%%  #____________#         ",
+        "     %.%%    %...%....%  #____________#         ",
+        "     %%%     %%....%..%%%#____________# %%%%    ",
+        "              %...%%......____________# %..%    ",
+        "            %%%...%%....%#____________# %%.%%   ",
+        "          %%%....%%..%%%%#____________# %%..%   ",
+        "         %%..%.%%..%.%%  ###______###:# %..%%%  ",
+        "  %%%    %%.%...%..%%%   #<#______# %:%%%..%.%  ",
+        "  %.%%    %%.:%..%%%     #_+______# %%:%..%.%%  ",
+        "  %..%%######:################+##### %::..%     ",
+        " %%%.:::_ata|_|#|||_|ata|#CC_____|1# %%%..%     ",
+        " %...%%#__|____+__|___||_+___SttS_1#   %.%%     ",
+        " %%%%% #AA|A|A|#ata_||ta_#___SttS_1#  %%..%     ",
+        "       #############################  %%%%%     "
+      ],
+      "palettes": [ "arcana_strange_grove_lodge_basement" ],
+      "place_nested": [
+        { "chunks": [ [ "room_6x6_woodworker", 5 ], [ "room_6x6_bike", 15 ], [ "room_6x6_office_E", 5 ] ], "x": 26, "y": 10 }
+      ],
+      "items": {
+        "C": [ { "item": "games", "chance": 80, "repeat": [ 3, 6 ] } ],
+        "1": [ { "item": "wines_worthy", "chance": 75, "repeat": [ 5, 10 ] } ],
+        "2": [ { "item": "scrollwriting_materials", "chance": 75, "repeat": [ 2, 5 ] } ],
+        "3": [ { "item": "magazines", "chance": 80, "repeat": [ 1, 3 ] }, { "item": "novels", "chance": 100, "repeat": [ 0, 2 ] } ]
+      },
+      "place_loot": [
+        { "group": "briarwitch_casualties", "x": [ 27, 31 ], "y": [ 16, 18 ], "repeat": [ 1, 2 ] },
+        { "group": "summoner_casualties", "x": [ 3, 8 ], "y": [ 1, 6 ], "repeat": [ 2, 3 ] },
+        { "group": "summoner_casualties", "x": 6, "y": 11 },
+        { "group": "summoner_casualties", "x": 4, "y": 18, "chance": 50 },
+        { "group": "summoner_casualties", "x": 3, "y": 21, "chance": 50 },
+        { "group": "summoner_casualties", "x": 41, "y": 13, "chance": 50 }
+      ],
+      "place_monster": [
+        { "monster": "mon_moruboru", "x": 4, "y": 3 },
+        { "group": "GROUP_GROVEBASEMENT_NATURAL", "x": [ 2, 23 ], "y": [ 1, 22 ], "repeat": [ 6, 10 ] },
+        { "group": "GROUP_GROVEBASEMENT_NATURAL", "x": [ 24, 43 ], "y": [ 1, 22 ], "repeat": [ 6, 10 ] }
+      ]
+    }
+  }
+]

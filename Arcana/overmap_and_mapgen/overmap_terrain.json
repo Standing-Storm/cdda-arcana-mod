@@ -65,41 +65,49 @@
     "copy-from": "curious_structure_b2"
   },
   {
-    "id": "strange_grove",
     "type": "overmap_terrain",
-    "name": "overgrown cabin",
-    "sym": "C",
-    "color": "i_light_green",
-    "looks_like": "cabin_strange",
-    "vision_levels": "blends_till_details",
+    "id": [ "arcana_grove_lodge_ground1", "arcana_grove_lodge_ground2" ],
+    "name": "overgrown hunting lodge",
+    "sym": "L",
+    "vision_levels": "isolated_building",
+    "travel_cost_type": "structure",
+    "copy-from": "generic_forest",
+    "color": "light_green",
     "see_cost": "high",
-    "flags": [ "RISK_HIGH" ]
+    "extend": { "flags": [ "SOURCE_GUN", "SOURCE_AMMO" ] }
   },
   {
     "type": "overmap_terrain",
-    "id": "strange_grove_2",
-    "copy-from": "strange_grove",
-    "name": "strange grove",
-    "sym": "T",
-    "vision_levels": "blends_till_details",
-    "looks_like": "triffid_grove"
+    "id": [ "arcana_grove_lodge_2ndfloor1", "arcana_grove_lodge_2ndfloor2" ],
+    "name": "overgrown hunting lodge",
+    "travel_cost_type": "structure",
+    "vision_levels": "isolated_building",
+    "copy-from": "generic_forest",
+    "sym": "L",
+    "see_cost": "high",
+    "color": "light_green"
   },
   {
-    "id": "grove_ruins",
     "type": "overmap_terrain",
-    "name": "underground ruin",
-    "sym": "T",
-    "color": "i_green",
+    "id": [ "arcana_grove_lodge_roof1", "arcana_grove_lodge_roof2" ],
+    "name": "hunting lodge roof",
+    "travel_cost_type": "roof",
+    "vision_levels": "roof_or_air",
+    "copy-from": "generic_forest",
+    "sym": "L",
+    "see_cost": "none",
+    "color": "light_green"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "arcana_grove_lodge_basement_1", "arcana_grove_lodge_basement_2" ],
+    "name": "overgrown hunting lodge basement",
     "vision_levels": "underground_dirt",
-    "looks_like": "triffid_roots",
     "travel_cost_type": "basement",
-    "see_cost": "high"
-  },
-  {
-    "type": "overmap_terrain",
-    "id": "grove_ruins_2",
-    "copy-from": "grove_ruins",
-    "name": "strange cavern"
+    "copy-from": "generic_forest",
+    "sym": "L",
+    "see_cost": "full_high",
+    "color": "light_green"
   },
   {
     "id": "impact_site",
