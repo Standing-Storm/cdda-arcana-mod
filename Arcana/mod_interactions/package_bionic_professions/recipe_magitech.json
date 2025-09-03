@@ -37,7 +37,12 @@
     "using": [ [ "blacksmithing_standard", 3 ], [ "surface_heat", 6 ], [ "arcana_essence_any", 2 ] ],
     "qualities": [ { "id": "CHISEL", "level": 3 }, { "id": "CHEM", "level": 2 } ],
     "tools": [ [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
-    "components": [ [ [ "salt", 15 ] ], [ [ "copper", 9 ] ], [ [ "lye_powder", 6 ] ], [ [ "steel_chunk_any", 3 ], [ "scrap", 6 ] ] ]
+    "components": [
+      [ [ "salt", 15 ] ],
+      [ [ "copper", 9 ] ],
+      [ [ "lye_powder", 6 ] ],
+      [ [ "steel_chunk_any", 3, "LIST" ], [ "scrap", 6 ] ]
+    ]
   },
   {
     "type": "recipe",
@@ -59,7 +64,7 @@
       [ [ "salt", 60 ] ],
       [ [ "copper", 36 ] ],
       [ [ "lye_powder", 24 ] ],
-      [ [ "steel_chunk_any", 12 ], [ "scrap", 24 ] ]
+      [ [ "steel_chunk_any", 12, "LIST" ], [ "scrap", 24 ] ]
     ]
   },
   {
@@ -82,7 +87,7 @@
       [ [ "salt", 125 ] ],
       [ [ "copper", 75 ] ],
       [ [ "lye_powder", 50 ] ],
-      [ [ "steel_chunk_any", 25 ], [ "scrap", 50 ] ]
+      [ [ "steel_chunk_any", 25, "LIST" ], [ "scrap", 50 ] ]
     ]
   },
   {
@@ -106,7 +111,7 @@
       [ [ "amplifier", 2 ] ],
       [ [ "motor_tiny", 1 ] ],
       [ [ "blob_gem", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -132,7 +137,7 @@
       [ [ "element", 2 ] ],
       [ [ "thermostat", 1 ] ],
       [ [ "iridescent_plate", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -160,7 +165,7 @@
       [ [ "directional_antenna", 1 ] ],
       [ [ "lead", 50 ] ],
       [ [ "engraved_stone", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -189,7 +194,7 @@
       [ [ "copper", 50 ], [ "scrap_copper", 25 ] ],
       [ [ "vortex_shard", 1 ] ],
       [ [ "iridescent_plate", 1 ] ],
-      [ [ "arcana_essence_any", 5 ] ]
+      [ [ "arcana_essence_any", 5, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -246,7 +251,7 @@
       [ [ "shadow_gem", 1 ] ],
       [ [ "gold_small", 100 ] ],
       [ [ "silver_glyph", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -298,7 +303,7 @@
       [ [ "cable", 30 ] ],
       [ [ "vortex_shard", 1 ] ],
       [ [ "blob_gem", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -322,7 +327,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -346,7 +351,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem_blood", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -370,7 +375,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem_dull", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -394,7 +399,7 @@
       [ [ "cable", 30 ] ],
       [ [ "mana_gem_pure", 1 ] ],
       [ [ "iron_thorn", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -423,7 +428,7 @@
       [ [ "shadow_gem", 1 ] ],
       [ [ "gold_small", 100 ] ],
       [ [ "silver_glyph", 1 ] ],
-      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10 ] ]
+      [ [ "essence_pure", 1 ], [ "arcana_essence_any", 10, "LIST" ] ]
     ],
     "flags": [ "SECRET" ]
   },
