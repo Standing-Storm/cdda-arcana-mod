@@ -12,7 +12,7 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "adv_chemistry", 5 ], [ "recipe_labchem", 5 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "surface_heat", 15 ] ] ],
+    "tools": [ [ [ "surface_heat", 15, "LIST" ] ] ],
     "components": [ [ [ "wyrmskin_piece", 1 ] ], [ [ "ammonia_liquid", 2 ], [ "lye", 6 ], [ "lye_powder", 180 ] ] ]
   },
   {
@@ -28,7 +28,7 @@
     "batch_time_factors": [ 80, 4 ],
     "book_learn": [ [ "adv_chemistry", 5 ], [ "recipe_labchem", 5 ] ],
     "qualities": [ { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "surface_heat", 15 ] ] ],
+    "tools": [ [ [ "surface_heat", 15, "LIST" ] ] ],
     "components": [ [ [ "iridescent_plate", 1 ] ], [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 1, "LIST" ] ] ]
   },
   {
@@ -45,7 +45,7 @@
     "result_mult": 5,
     "book_learn": [ [ "recipe_labchem", 6 ], [ "recipe_creepy", 6 ], [ "recipe_serum", 6 ] ],
     "qualities": [ { "id": "CUT", "level": 1 }, { "id": "CHEM", "level": 2 } ],
-    "tools": [ [ [ "surface_heat", 15 ] ] ],
+    "tools": [ [ [ "surface_heat", 15, "LIST" ] ] ],
     "components": [ [ [ "blob_gem", 1 ] ], [ [ "bleach", 1 ], [ "oxy_powder", 100 ] ] ]
   },
   {
@@ -132,7 +132,7 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "feather", 20 ] ],
-      [ [ "arcana_essence_any", 1 ] ]
+      [ [ "arcana_essence_any", 1, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
@@ -154,7 +154,7 @@
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
       [ [ "ash", 25 ], [ "withered", 5 ] ],
-      [ [ "essence", 1 ], [ "arcana_bone_standard", 5 ] ]
+      [ [ "essence", 1 ], [ "arcana_bone_standard", 5, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
@@ -177,7 +177,7 @@
       [ [ "wild_herbs", 30 ], [ "pine_bough", 1 ] ],
       [ [ "arcana_flora_forage", 5, "LIST" ], [ "arcana_flora_flowers", 2, "LIST" ] ],
       [
-        [ "arcana_essence_any", 2 ],
+        [ "arcana_essence_any", 2, "LIST" ],
         [ "iron_thorn", 1 ],
         [ "inflorescent_root", 1 ],
         [ "triffid_queen_flower", 1 ],
@@ -247,7 +247,7 @@
     "components": [
       [ [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "arcana_blood_standard", 5, "LIST" ] ],
-      [ [ "arcana_essence_any", 3 ] ]
+      [ [ "arcana_essence_any", 3, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
