@@ -212,8 +212,7 @@
       }
     ],
     "attack_effs": [ { "id": "venom_dmg", "duration": 500, "affect_hit_bp": true } ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "BASHES", "GROUP_BASH" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_flesh_angel_summoned",
@@ -284,7 +283,7 @@
     "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
     "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "BASHES", "ATTACKMON" ] }
+    "delete": { "flags": [ "BASHES" ] }
   },
   {
     "id": "mon_shoggoth_summoned",
