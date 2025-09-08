@@ -43,6 +43,15 @@
   },
   {
     "type": "mutation",
+    "id": "ARCANA_NO_SUMMONING",
+    "name": { "str": "No Evocation" },
+    "points": 0,
+    "description": "You have DEFINITELY NOT learned how to call beings from the Beyond and bind them to your service. Should not be visible.",
+    "player_display": false,
+    "cancels": [ "ARCANA_SUMMONING" ]
+  },
+  {
+    "type": "mutation",
     "id": "ARCANA_SANGUINE_MARKS",
     "name": { "str": "Sanguine Marks" },
     "points": 0,

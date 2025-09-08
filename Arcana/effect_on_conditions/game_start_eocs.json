@@ -3,8 +3,16 @@
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_MOST_PEOPLE_CANT_USE_BLOOD_MAGIC",
     "recurrence": 1,
-    "condition": { "not": { "u_has_trait": "ARCANA_BLOOD_MAGIC" } },
+    "condition": { "not": { "u_has_any_trait": [ "ARCANA_NO_BLOOD_MAGIC", "ARCANA_BLOOD_MAGIC" ] } },
     "deactivate_condition": { "or": [ { "u_has_any_trait": [ "ARCANA_NO_BLOOD_MAGIC", "ARCANA_BLOOD_MAGIC" ] } ] },
     "effect": [ { "u_add_trait": "ARCANA_NO_BLOOD_MAGIC" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_MOST_PEOPLE_CANT_USE_SUMMONING_MAGIC",
+    "recurrence": 1,
+    "condition": { "not": { "u_has_any_trait": [ "ARCANA_NO_SUMMONING", "ARCANA_SUMMONING" ] } },
+    "deactivate_condition": { "or": [ { "u_has_any_trait": [ "ARCANA_NO_SUMMONING", "ARCANA_SUMMONING" ] } ] },
+    "effect": [ { "u_add_trait": "ARCANA_NO_SUMMONING" } ]
   }
 ]
