@@ -563,7 +563,6 @@
     "time": "24 h",
     "activity_level": "LIGHT_EXERCISE",
     "book_learn": [ [ "book_summoning", 10 ] ],
-    "using": [ [ "blacksmithing_standard", 3 ] ],
     "tools": [ [ [ "book_summoning", -1 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_arcana_thaumatology", "required": true },
