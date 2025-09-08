@@ -89,5 +89,107 @@
     "id": "EOC_REMOVE_SPIRIT_TALISMAN",
     "type": "effect_on_condition",
     "effect": [ { "u_consume_item": "spirit_talisman", "count": 1 } ]
+  },
+  {
+    "id": "arcana_item_scroll_artifice_self_destruct",
+    "type": "SPELL",
+    "name": { "str": "Artifice Scroll Removal" },
+    "description": { "str": "Removes scrolls of artifice.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SCROLL_ARTIFICE"
+  },
+  {
+    "id": "EOC_REMOVE_SCROLL_ARTIFICE",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "scroll_artiface", "count": 1 } ]
+  },
+  {
+    "id": "arcana_item_scroll_destruction_self_destruct",
+    "type": "SPELL",
+    "name": { "str": "Destruction Scroll Removal" },
+    "description": { "str": "Removes scrolls of destruction.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SCROLL_DESTRUCTION"
+  },
+  {
+    "id": "EOC_REMOVE_SCROLL_DESTRUCTION",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "scroll_destruction", "count": 1 } ]
+  },
+  {
+    "id": "arcana_item_scroll_moon_self_destruct",
+    "type": "SPELL",
+    "name": { "str": "Moon Scroll Removal" },
+    "description": { "str": "Removes scrolls of moon.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SCROLL_MOON"
+  },
+  {
+    "id": "EOC_REMOVE_SCROLL_MOON",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "scroll_moon", "count": 1 } ]
+  },
+  {
+    "id": "arcana_item_scroll_nature_self_destruct",
+    "type": "SPELL",
+    "name": { "str": "Nature Scroll Removal" },
+    "description": { "str": "Removes scrolls of nature.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SCROLL_NATURE"
+  },
+  {
+    "id": "EOC_REMOVE_SCROLL_NATURE",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "scroll_nature", "count": 1 } ]
+  },
+  {
+    "id": "arcana_item_scroll_subversion_self_destruct",
+    "type": "SPELL",
+    "name": { "str": "Subversion Scroll Removal" },
+    "description": { "str": "Removes scrolls of subversion.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SCROLL_SUBVERSION"
+  },
+  {
+    "id": "EOC_REMOVE_SCROLL_SUBVERSION",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "scroll_subversion", "count": 1 } ]
+  },
+  {
+    "id": "arcana_item_scroll_sun_self_destruct",
+    "type": "SPELL",
+    "name": { "str": "Sun Scroll Removal" },
+    "description": { "str": "Removes scrolls of sun.  You can't see it except in debug mode.", "//~": "NO_I18N" },
+    "message": "",
+    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
+    "valid_targets": [ "self" ],
+    "shape": "blast",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_REMOVE_SCROLL_SUN"
+  },
+  {
+    "id": "EOC_REMOVE_SCROLL_SUN",
+    "type": "effect_on_condition",
+    "effect": [ { "u_consume_item": "scroll_sun", "count": 1 } ]
   }
 ]
