@@ -214,5 +214,10 @@
     "copy-from": "mon_yulecat_zombie_brute",
     "type": "MONSTER",
     "death_drops": "mon_yulecat_zombie_brute_death_drops"
+  },
+  {
+    "type": "MONSTER",
+    "id": "mon_mi_go_nethermancer",
+    "copy-from": "mon_mi_go_nethermancer"
   }
 ]
