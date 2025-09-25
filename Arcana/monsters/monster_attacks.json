@@ -488,8 +488,8 @@
     "min_aoe": 1,
     "max_aoe": 1,
     "effect_str": "stun",
-    "min_duration": 3000,
-    "max_duration": 6000
+    "min_duration": 400,
+    "max_duration": 800
   },
   {
     "id": "arcana_monster_moruboru_wonder_paralyzepoison",
