@@ -246,6 +246,7 @@
     "turns_per_charge": 50,
     "revert_to": "sun_sword",
     "techniques": [ "WBLOCK_2", "tec_weapon_incorruptible_slash" ],
+    "light": 240,
     "use_action": [
       { "type": "firestarter", "moves": 30 },
       {
@@ -257,7 +258,7 @@
       }
     ],
     "melee_damage": { "bash": 10, "cut": 35, "heat": 6 },
-    "extend": { "flags": [ "FIRE", "LIGHT_240", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
+    "extend": { "flags": [ "FIRE", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
   {
@@ -385,6 +386,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "light": 50,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -399,7 +401,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 500, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
     "id": "blast_canister_arcana_water",
@@ -446,6 +448,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "light": 50,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -460,7 +463,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 625, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
     "id": "blast_canister_arcana_earth",
@@ -507,6 +510,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "light": 50,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -521,7 +525,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 750, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
     "id": "blast_canister_arcana_air",
@@ -568,6 +572,7 @@
     "initial_charges": 3,
     "max_charges": 3,
     "turns_per_charge": 1,
+    "light": 50,
     "use_action": {
       "type": "message",
       "message": "You've already activated the %s, it would be smarter to throw this instead.",
@@ -582,7 +587,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 1125, "distance_factor": 0.2 }
     },
-    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "LIGHT_50" ]
+    "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR" ]
   },
   {
     "id": "summon_kreck",
@@ -707,7 +712,7 @@
     "price_postapoc": "60 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_nether_huntsman_summoned",
+      "monster_id": "mon_nether_huntsman_summoned_glyph",
       "friendly_msg": "You recite an incantation, and the eldritch huntsman stands ready.  It seems to be friendly.",
       "hostile_msg": "You begin to recite an incantation, only for the eldritch huntsman to shake its quills and hunnch over, ready to spring!",
       "difficulty": 6,
@@ -898,7 +903,7 @@
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A nether huntsman has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_nether_huntsman_summoned",
+      "monster_id": "mon_nether_huntsman_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned nether huntsman, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -1027,6 +1032,7 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 5 } } ],
     "tool_ammo": "essence_blood_type",
     "revert_to": "bloodaxe",
+    "light": 8,
     "use_action": {
       "type": "message",
       "message": "You can't dispel the effect.  Might want to try throwing it instead.",
@@ -1040,7 +1046,7 @@
       "fields_max_intensity": 3,
       "explosion": { "power": 625, "distance_factor": 0.45 }
     },
-    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "LIGHT_8", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
+    "flags": [ "DURABLE_MELEE", "NONCONDUCTIVE", "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD" ]
   },
   {
     "id": "shrike_misericorde",
@@ -1149,6 +1155,7 @@
     "repairs_like": "candle_warding",
     "symbol": ",",
     "color": "white",
+    "light": 12,
     "use_action": [
       {
         "target": "candle_warding",
@@ -1160,7 +1167,7 @@
       { "type": "firestarter", "moves": 100 },
       { "type": "deploy_furn", "furn_type": "f_candle_barrier_playermade" }
     ],
-    "flags": [ "NO_SALVAGE", "LIGHT_12", "FIRESTARTER" ]
+    "flags": [ "NO_SALVAGE", "FIRESTARTER" ]
   },
   {
     "id": "transmutation_crucible",

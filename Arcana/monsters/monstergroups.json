@@ -175,8 +175,6 @@
   {
     "id": "GROUP_STANDING_STONES",
     "type": "monstergroup",
-    "override": false,
-    "auto_total": true,
     "monsters": [
       {
         "monster": "mon_shadow_snake_summoned",
@@ -197,16 +195,12 @@
   {
     "id": "GROUP_CAVE",
     "type": "monstergroup",
-    "override": false,
-    "auto_total": true,
     "is_animal": true,
     "monsters": [ { "monster": "mon_fleshy_shambler", "weight": 25, "cost_multiplier": 10 } ]
   },
   {
     "id": "GROUP_MANSION_START",
     "type": "monstergroup",
-    "override": false,
-    "auto_total": true,
     "monsters": [
       { "monster": "mon_feral_summoner", "freq": 10, "cost_multiplier": 5, "starts": "250 hours" },
       { "monster": "mon_feral_magehunter", "freq": 4, "cost_multiplier": 5, "starts": "500 hours" },
@@ -217,15 +211,11 @@
   {
     "id": "GROUP_CHURCH_ZOMBIE",
     "type": "monstergroup",
-    "override": false,
-    "auto_total": true,
     "monsters": [ { "monster": "mon_feral_magehunter", "freq": 10, "cost_multiplier": 10, "starts": "500 hours" } ]
   },
   {
     "id": "GROUP_CHURCH_BLANK",
     "type": "monstergroup",
-    "override": false,
-    "auto_total": true,
     "monsters": [ { "monster": "mon_feral_magehunter", "freq": 25, "cost_multiplier": 5, "starts": "250 hours" } ]
   },
   {
@@ -250,6 +240,60 @@
       { "monster": "mon_gelatin_migo", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_flaming_eye_migo", "weight": 100, "cost_multiplier": 0 },
       { "monster": "mon_kreck_migo", "weight": 100, "cost_multiplier": 0 }
+    ]
+  },
+  {
+    "id": "GROUP_ARCANA_SUMMONING_PRACTICE",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_dark_wyrm_summoned", "weight": 3 },
+      { "monster": "mon_shadow_summoned", "weight": 5 },
+      { "monster": "mon_shadow_summoned", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_shadow_snake_summoned", "weight": 5 },
+      { "monster": "mon_zombie_fiend_summoned", "weight": 5 },
+      { "monster": "mon_crawler_summoned", "weight": 5 },
+      { "monster": "mon_crawler_summoned", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_jabberwock_summoned", "weight": 1 },
+      { "monster": "mon_homunculus_summoned", "weight": 5 },
+      { "monster": "mon_thing_summoned", "weight": 1 },
+      { "monster": "mon_dog_skeleton_summoned", "weight": 4 },
+      { "monster": "mon_skeleton_summoned", "weight": 4 },
+      { "monster": "mon_vortex_summoned", "weight": 3 },
+      { "monster": "mon_yugg_summoned", "weight": 2 },
+      { "monster": "mon_kreck_summoned", "weight": 5 },
+      { "monster": "mon_kreck_summoned", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_vinebeast_summoned", "weight": 2 },
+      { "monster": "mon_flesh_angel_summoned", "weight": 3 },
+      { "monster": "mon_hunting_horror_summoned", "weight": 4 },
+      { "monster": "mon_nether_huntsman_summoned", "weight": 4 },
+      { "monster": "mon_flying_polyp_summoned", "weight": 3 },
+      { "monster": "mon_shoggoth_summoned", "weight": 1 }
+    ]
+  },
+  {
+    "id": "GROUP_ARCANA_SUMMONING_PRACTICE_NO_DIGGABLE",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_shadow_summoned", "weight": 5 },
+      { "monster": "mon_shadow_summoned", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_shadow_snake_summoned", "weight": 5 },
+      { "monster": "mon_zombie_fiend_summoned", "weight": 5 },
+      { "monster": "mon_crawler_summoned", "weight": 5 },
+      { "monster": "mon_crawler_summoned", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_jabberwock_summoned", "weight": 1 },
+      { "monster": "mon_homunculus_summoned", "weight": 5 },
+      { "monster": "mon_thing_summoned", "weight": 1 },
+      { "monster": "mon_dog_skeleton_summoned", "weight": 4 },
+      { "monster": "mon_skeleton_summoned", "weight": 4 },
+      { "monster": "mon_vortex_summoned", "weight": 3 },
+      { "monster": "mon_kreck_summoned", "weight": 5 },
+      { "monster": "mon_kreck_summoned", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_vinebeast_summoned", "weight": 2 },
+      { "monster": "mon_flesh_angel_summoned", "weight": 3 },
+      { "monster": "mon_hunting_horror_summoned", "weight": 4 },
+      { "monster": "mon_nether_huntsman_summoned", "weight": 4 },
+      { "monster": "mon_flying_polyp_summoned", "weight": 3 },
+      { "monster": "mon_shoggoth_summoned", "weight": 1 }
     ]
   },
   {

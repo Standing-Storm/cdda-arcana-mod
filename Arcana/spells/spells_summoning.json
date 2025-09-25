@@ -12,7 +12,7 @@
   {
     "//": "Summoning spells characteristics only go up 10 levels, but the spells scale to level 15 for extra bonuses on the control roll",
     "//2": "Control difficulty is spell Difficulty / 10, plus 6.",
-    "id": "arcana_summoning_succcessful_control",
+    "id": "arcana_summoning_successful_control",
     "type": "SPELL",
     "name": { "str": "Control Summon", "//~": "NO_I18N" },
     "description": { "str": "This spell is used if the summoning control is successful.", "//~": "NO_I18N" },
@@ -106,6 +106,7 @@
         },
         "then": {
           "u_spawn_monster": "mon_dog_skeleton_summoned",
+          "summoner_is_alpha": true,
           "real_count": 1,
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
@@ -120,8 +121,8 @@
             "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
           ]
         },
-        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
-        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resists your attempt to control it!", "type": "bad" } ]
       }
     ]
   },
@@ -168,6 +169,7 @@
         "if": { "math": [ "has_var(_summoning_loc)" ] },
         "then": {
           "u_spawn_monster": "mon_shadow_summoned",
+          "summoner_is_alpha": true,
           "real_count": 1,
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
@@ -182,8 +184,69 @@
             "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
           ]
         },
-        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
-        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resists your attempt to control it!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "id": "arcana_summoning_kreck_group",
+    "type": "SPELL",
+    "name": { "str": "Calling the Lean and Hungry Ones" },
+    "description": "Using this spell will summon a pack of otherworldly hounds.  They are <color_yellow>somewhat difficult</color> to control.",
+    "message": "\"The hunt is up!  Come forth, and let your howls strike fear into mortals' hearts…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_KRECK_GROUP",
+    "difficulty": 50,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 480,
+    "final_casting_time": 240,
+    "casting_time_increment": -24,
+    "base_energy_cost": 3350,
+    "final_energy_cost": 1650,
+    "energy_increment": -165,
+    "min_duration": 680000,
+    "max_duration": 1360000,
+    "duration_increment": 68000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_KRECK_GROUP",
+    "//": "95% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Lean and Hungry Ones",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_kreck_group') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_kreck_summoned",
+          "summoner_is_alpha": true,
+          "real_count": { "math": [ "(u_spell_level('arcana_summoning_kreck_group') * 0.4) + 2" ] },
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_kreck_group') * 680.00) + 6800.00" ] },
+          "spawn_message": "With a chilling baying sound, canine shapes appear!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_kreck_group') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The things you called up resist your attempt to control them!", "type": "bad" } ]
       }
     ]
   },
@@ -232,23 +295,23 @@
           ]
         },
         "then": {
-          "u_spawn_monster": "mon_crawler_summoned",
+          "u_spawn_monster": "mon_dark_wyrm_summoned",
+          "summoner_is_alpha": true,
           "real_count": { "math": [ "(u_spell_level('arcana_summoning_dark_wyrm') * 0.2) + 1" ] },
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
           "lifespan": { "math": [ "(u_spell_level('arcana_summoning_dark_wyrm') * 680.00) + 6800.00" ] },
-          "spawn_message": "A hideous mockery of the human form materializes!",
-          "spawn_message_plural": "Hideous mockerys of the human form materialize!"
+          "spawn_message": "The ground churns ominously!"
         },
         "else": { "u_message": "Canceled." }
       },
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_dark_wyrm') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
           ]
         },
-        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
         "else": [ { "u_message": "The thing you called up resists your attempt to control it!", "type": "bad" } ]
       }
     ]
@@ -295,6 +358,7 @@
         "if": { "math": [ "has_var(_summoning_loc)" ] },
         "then": {
           "u_spawn_monster": "mon_crawler_summoned",
+          "summoner_is_alpha": true,
           "real_count": { "math": [ "(u_spell_level('arcana_summoning_crawling_things') * 0.2) + 1" ] },
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
@@ -310,7 +374,7 @@
             "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
           ]
         },
-        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
         "else": [ { "u_message": "The things you called up resist your attempt to control them!", "type": "bad" } ]
       }
     ]
@@ -357,6 +421,7 @@
         "if": { "math": [ "has_var(_summoning_loc)" ] },
         "then": {
           "u_spawn_monster": "mon_vortex_summoned",
+          "summoner_is_alpha": true,
           "real_count": 1,
           "max_radius": 2,
           "target_var": { "context_val": "summoning_loc" },
@@ -368,11 +433,135 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_living_vortex') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
           ]
         },
-        "then": [ { "u_cast_spell": { "id": "arcana_summoning_succcessful_control" }, "loc": { "context_val": "summoning_loc" } } ],
-        "else": [ { "u_message": "The things you called up resist your attempt to control it!", "type": "bad" } ]
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "id": "arcana_summoning_shapeshifting_thing",
+    "type": "SPELL",
+    "name": { "str": "Call Forth that Which Wears the Skins of Men" },
+    "description": "Using this spell will summon a shapeshifting thing that hides in humanoid form until close to its prey.  It is <color_yellow>difficult</color> to control",
+    "message": "\"That which hides among us, which hunts us even in our most guarded habitation, come forth…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_SHAPESHIFTING_THING",
+    "energy_source": "STAMINA",
+    "difficulty": 80,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 720,
+    "final_casting_time": 360,
+    "casting_time_increment": -36,
+    "base_energy_cost": 3800,
+    "final_energy_cost": 1900,
+    "energy_increment": -190,
+    "min_duration": 960000,
+    "max_duration": 1920000,
+    "duration_increment": 96000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_SHAPESHIFTING_THING",
+    "//": "89% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon Shapeshifting Thing",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_shapeshifting_thing') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_thing_summoned",
+          "summoner_is_alpha": true,
+          "real_count": 1,
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_shapeshifting_thing') * 960.00) + 9600.00" ] },
+          "spawn_message": "An amorphous abomination coalesces out of the air!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_shapeshifting_thing') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 14 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "id": "arcana_summoning_nether_huntsman",
+    "type": "SPELL",
+    "name": { "str": "Call Forth the Hunter from Beyond" },
+    "description": "Using this spell will summon a shapeshifting thing that hides in humanoid form until close to its prey.  It is <color_yellow>difficult</color> to control",
+    "message": "\"Tvakaros, ievona karoh…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_NETHER_HUNTSMAN",
+    "energy_source": "STAMINA",
+    "difficulty": 90,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 760,
+    "final_casting_time": 380,
+    "casting_time_increment": -38,
+    "base_energy_cost": 3950,
+    "final_energy_cost": 1975,
+    "energy_increment": -197.5,
+    "min_duration": 1080000,
+    "max_duration": 2160000,
+    "duration_increment": 108000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_NETHER_HUNTSMAN",
+    "//": "85% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon the Hunter from Beyond",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_nether_huntsman') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_thing_summoned",
+          "summoner_is_alpha": true,
+          "real_count": { "math": [ "(u_spell_level('arcana_summoning_nether_huntsman') * 0.2) + 1" ] },
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_nether_huntsman') * 1080.00) + 10800.00" ] },
+          "spawn_message": "A hulking creature covered with numerous spines suddenly appears!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_nether_huntsman') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 15 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
       }
     ]
   }

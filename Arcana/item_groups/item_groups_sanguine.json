@@ -24,7 +24,8 @@
           { "item": "manual_dragon", "prob": 1 }
         ],
         "prob": 15
-      }
+      },
+      { "group": "sanguine_cult_spells", "prob": 10 }
     ]
   },
   {
@@ -53,13 +54,15 @@
           { "item": "manual_dragon", "prob": 1 }
         ],
         "prob": 15
-      }
+      },
+      { "group": "sanguine_cult_spells", "prob": 10 }
     ]
   },
   {
     "id": "sanguine_cult_spells",
     "type": "item_group",
-    "items": [
+    "subtype": "distribution",
+    "entries": [
       {
         "distribution": [
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_rite_of_sacrifice", "prob": 2 },

@@ -378,15 +378,11 @@
         { "item": "novels", "x": [ 13, 18 ], "y": 17, "chance": 90, "repeat": [ 4, 9 ] },
         { "item": "coffee_display", "x": 2, "y": 5, "chance": 50, "repeat": [ 2, 3 ] },
         { "item": "coffee_fridge", "x": 2, "y": 4, "chance": 50, "repeat": [ 2, 3 ] },
+        { "item": "magic_books", "x": 18, "y": 19, "chance": 35, "repeat": [ 2, 3 ] },
         { "item": "bookstore_misc", "x": [ 13, 21 ], "y": 3, "chance": 50, "repeat": [ 3, 6 ] }
       ],
       "place_item": [
         { "item": "coffeemaker", "x": 4, "y": 7, "chance": 40 },
-        { "item": "book_potioncraft", "x": 18, "y": 19, "chance": 35 },
-        { "item": "book_scrollcraft", "x": 18, "y": 19, "chance": 15 },
-        { "item": "book_summoning", "x": 18, "y": 19, "chance": 10 },
-        { "item": "book_bloodmagic", "x": 18, "y": 19, "chance": 4 },
-        { "item": "book_sacrifice", "x": 18, "y": 19, "chance": 4 },
         { "item": "money_bundle_twenty", "x": [ 16, 17 ], "y": 19, "chance": 30, "repeat": 4 },
         { "item": "CF_golden_scale", "x": [ 16, 17 ], "y": 19, "chance": 30 }
       ],

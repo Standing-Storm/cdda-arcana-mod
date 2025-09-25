@@ -1,0 +1,109 @@
+[
+  {
+    "id": "research_summoning_recipe",
+    "name": "practice summoning creatures from Beyond",
+    "description": "Practice summoning creatures from the Beyond and see if you can figure out the trick to doing so consistently and safely.  Do not call up what you cannot put down.",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "1 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_easyevocation", 1 ], [ "book_summoning", 2 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [
+      [
+        [ "essence", 1 ],
+        [ "iron_thorn", 1 ],
+        [ "inflorescent_root", 1 ],
+        [ "graboid_fang", 1 ],
+        [ "triffid_queen_flower", 1 ],
+        [ "dermatik_sting", 1 ],
+        [ "vortex_shard", 1 ],
+        [ "blob_gem", 1 ],
+        [ "monster_tear", 1 ],
+        [ "shadow_gem", 1 ],
+        [ "bone_twisted", 1 ],
+        [ "gracken_knuckles", 1 ],
+        [ "wyrmskin_piece", 1 ],
+        [ "monster_fang", 1 ],
+        [ "iridescent_plate", 1 ],
+        [ "engraved_stone", 1 ],
+        [ "living_bramble", 1 ]
+      ]
+    ],
+    "flags": [ "SECRET", "NO_BENCH", "NO_ENCHANTMENT" ],
+    "result_eocs": [
+      {
+        "id": "EOC_ARCANA_LEARN_SUMMONING",
+        "effect": [
+          {
+            "u_query_tile": "line_of_sight",
+            "target_var": { "context_val": "summoning_loc" },
+            "message": "Where will you evoke something from Beyond?",
+            "range": 6
+          },
+          {
+            "if": { "math": [ "has_var(_summoning_loc)" ] },
+            "then": {
+              "if": { "math": [ "( rand(u_skill('magic') ) + u_arcana_summoning_counter_tracker + rand(8) + rand(8) ) > 14 " ] },
+              "then": [
+                {
+                  "if": { "map_terrain_with_flag": "DIGGABLE", "loc": { "context_val": "summoning_loc" } },
+                  "then": {
+                    "u_spawn_monster": "GROUP_ARCANA_SUMMONING_PRACTICE",
+                    "real_count": 1,
+                    "max_radius": 2,
+                    "group": true,
+                    "target_var": { "context_val": "summoning_loc" },
+                    "lifespan": 6000,
+                    "spawn_message": "A shape coalesces out of the air!"
+                  },
+                  "else": {
+                    "u_spawn_monster": "GROUP_ARCANA_SUMMONING_PRACTICE_NO_DIGGABLE",
+                    "real_count": 1,
+                    "max_radius": 2,
+                    "group": true,
+                    "target_var": { "context_val": "summoning_loc" },
+                    "lifespan": 6000,
+                    "spawn_message": "A shape coalesces out of the air!"
+                  }
+                },
+                {
+                  "u_cast_spell": { "id": "arcana_summoning_successful_control" },
+                  "loc": { "context_val": "summoning_loc" }
+                },
+                { "math": [ "u_arcana_summoning_counter_tracker += 3" ] },
+                {
+                  "if": { "math": [ "( rand(u_skill('magic') ) + rand(u_arcana_summoning_counter_tracker) + rand(8) + rand(8) ) > 35 " ] },
+                  "then": [
+                    { "u_lose_trait": "ARCANA_NO_SUMMONING" },
+                    { "u_add_trait": "ARCANA_SUMMONING" },
+                    {
+                      "u_message": "As the thing appears with a swirl of air and an acrid stench, you realize you've done it.  You can see the patterns necessary to reach out to the Beyond, to pull one of its denizens into this world and bind it to your will.  With further study, you could learn to do so in a controlled fashion, to pick something specific rather than merely sending a beacon into the Nether.",
+                      "type": "good"
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "u_spawn_monster": "GROUP_ARCANA_SUMMONING_PRACTICE",
+                  "real_count": 1,
+                  "max_radius": 2,
+                  "group": true,
+                  "target_var": { "context_val": "summoning_loc" },
+                  "spawn_message": "A shape coalesces out of the air!"
+                },
+                { "u_message": "The thing you called up resists your attempt to control it!", "type": "bad" },
+                { "math": [ "u_arcana_summoning_counter_tracker ++" ] }
+              ]
+            },
+            "else": { "u_message": "Canceled." }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "abstract": "summoning_magic_spell_scroll",
+    "looks_like": "spell_scroll",
+    "name": { "str": "Summoning Magic Spell Scroll" },
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "weight": "900 g",
+    "volume": "1200 ml",
+    "price": "40 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "color": "white"
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_increase_success_chance",
+    "name": { "str": "Evocation Grimoire: The Rites of Evocation", "str_pl": "Evocation Grimoires: The Rites of Evocation" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This is a ritual preparation making it easier to control the creature when it arrives.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_increase_success_chance" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_skeletal_dog",
+    "name": {
+      "str": "Evocation Grimoire: Call Forth the Hound of Bone",
+      "str_pl": "Evocation Grimoires: Call Forth the Hound of Bone"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons an undead hound which will hunt your enemies.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_skeletal_dog" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_shadow",
+    "name": { "str": "Evocation Grimoire: Call Forth the Dark One", "str_pl": "Evocation Grimoires: Call Forth the Dark One" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons an animated shadow to drain the life from your enemies.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_shadow" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_kreck_group",
+    "name": {
+      "str": "Evocation Grimoire: Calling the Lean and Hungry Ones",
+      "str_pl": "Evocation Grimoires: Calling the Lean and Hungry Ones"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons a pack of otherworldly hounds to harry your enemies.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_kreck_group" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_dark_wyrm",
+    "name": {
+      "str": "Evocation Grimoire: Calling the Worms of the Earth",
+      "str_pl": "Evocation Grimoires: Calling the Worms of the Earth"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons giant worms which will drag your enemies down into the depths of the earth.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_dark_wyrm" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_crawling_things",
+    "name": {
+      "str": "Evocation Grimoire: Call Forth the Crawling Ones",
+      "str_pl": "Evocation Grimoires: Call Forth the Crawling Ones"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons twisted mockeries of the human form which will grasp and clutch at your enemies.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_crawling_things" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_living_vortex",
+    "name": {
+      "str": "Evocation Grimoire: Call Forth the Living Vortex",
+      "str_pl": "Evocation Grimoires: Call Forth the Living Vortex"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons a hole in the air, a swirl of animate winds.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_living_vortex" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_shapeshifting_thing",
+    "name": {
+      "str": "Evocation Grimoire: Call Forth that Which Wears the Skins of Men",
+      "str_pl": "Evocation Grimoires: Call Forth that Which Wears the Skins of Men"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons a shapeshifting abomination which wears ordinary form until it is close enough for its tentacles and blades to do its deadly work.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_shapeshifting_thing" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_nether_huntsman",
+    "name": {
+      "str": "Evocation Grimoire: Call Forth the Hunter from Beyond",
+      "str_pl": "Evocation Grimoires: Call Forth the Hunter from Beyond"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons an otherworldly hunter of men.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_nether_huntsman" ] }
+  }
+]

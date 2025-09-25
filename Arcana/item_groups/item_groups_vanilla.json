@@ -48,7 +48,7 @@
     "copy-from": "mansion_bookcase",
     "type": "item_group",
     "subtype": "collection",
-    "extend": { "groups": [ [ "magic_and_esoteric_books", 5 ] ] }
+    "extend": { "groups": [ { "group": "magic_and_esoteric_books", "prob": 5 } ] }
   },
   {
     "id": "exotic_books",

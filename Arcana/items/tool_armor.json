@@ -553,6 +553,7 @@
     "description": "An ornate round mirror in an archaic style.  It casts a brightly-glowing barrier that protects the user from electricity and radiation, along with partial protection from psychic influence, some resistance to extreme temperatures, increased physical resistance, and halved damage from other elemental damage.",
     "turns_per_charge": 600,
     "revert_to": "cyclopean_mirror",
+    "light": 60,
     "use_action": {
       "target": "cyclopean_mirror",
       "menu_text": "Turn off protective aura",
@@ -562,7 +563,6 @@
     },
     "extend": {
       "flags": [
-        "LIGHT_60",
         "NO_TAKEOFF",
         "PSYSHIELD_PARTIAL",
         "RAD_PROOF",

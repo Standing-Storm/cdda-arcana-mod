@@ -286,6 +286,7 @@
     "reload": 200,
     "use_action": { "type": "cast_spell", "spell_id": "arcana_item_sparks", "no_fail": true, "level": 0, "need_wielding": true },
     "ammo_effects": [ "NAPALM_CLAW" ],
+    "light": 45,
     "passive_effects": [
       {
         "has": "WIELD",
@@ -297,16 +298,7 @@
     ],
     "techniques": [ "WBLOCK_1" ],
     "qualities": [ [ "BUTCHER", 12 ] ],
-    "flags": [
-      "LIGHT_45",
-      "NEVER_JAMS",
-      "UNBREAKABLE_MELEE",
-      "FIRE",
-      "FLAMING",
-      "PRIMITIVE_RANGED_WEAPON",
-      "TRADER_KEEP_EQUIPPED",
-      "NO_TURRET"
-    ]
+    "flags": [ "NEVER_JAMS", "UNBREAKABLE_MELEE", "FIRE", "FLAMING", "PRIMITIVE_RANGED_WEAPON", "TRADER_KEEP_EQUIPPED", "NO_TURRET" ]
   },
   {
     "id": "scourge_staff",

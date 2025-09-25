@@ -44,41 +44,44 @@
     "id": "arcanist_corpses_adult_random",
     "//": "Various adult corpses, no restriction on how they died.",
     "type": "item_group",
-    "items": [
-      [ "corpse", 25 ],
-      [ "corpse_bloody", 15 ],
-      [ "corpse_generic_male", 10 ],
-      [ "corpse_generic_female", 10 ],
-      [ "corpse_painful", 10 ],
-      [ "corpse_oldwoman_jewelry", 5 ],
-      [ "corpse_scorched", 5 ],
-      [ "corpse_stabbed", 5 ],
-      [ "corpse_gunned", 5 ],
-      [ "corpse_halved_upper", 5 ],
-      [ "corpse_half_beheaded", 5 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "corpse", "prob": 25 },
+      { "item": "corpse_bloody", "prob": 15 },
+      { "item": "corpse_generic_male", "prob": 10 },
+      { "item": "corpse_generic_female", "prob": 10 },
+      { "item": "corpse_painful", "prob": 10 },
+      { "item": "corpse_oldwoman_jewelry", "prob": 5 },
+      { "item": "corpse_scorched", "prob": 5 },
+      { "item": "corpse_stabbed", "prob": 5 },
+      { "item": "corpse_gunned", "prob": 5 },
+      { "item": "corpse_halved_upper", "prob": 5 },
+      { "item": "corpse_half_beheaded", "prob": 5 }
     ]
   },
   {
     "id": "reading_lights",
     "type": "item_group",
-    "items": [
-      [ "candle", 20 ],
-      [ "oil_lamp", 20 ],
-      [ "oil_lamp_clay", 20 ],
-      [ "flashlight", 15 ],
-      [ "wearable_light", 15 ],
-      [ "electric_lantern", 10 ],
-      [ "gasoline_lantern", 10 ],
-      [ "atomic_lamp", 1 ]
+    "subtype": "distribution",
+    "entries": [
+      { "item": "candle", "prob": 20 },
+      { "item": "oil_lamp", "prob": 20 },
+      { "item": "oil_lamp_clay", "prob": 20 },
+      { "item": "flashlight", "prob": 15 },
+      { "item": "wearable_light", "prob": 15 },
+      { "item": "electric_lantern", "prob": 10 },
+      { "item": "gasoline_lantern", "prob": 10 },
+      { "item": "atomic_lamp", "prob": 1 }
     ]
   },
   {
     "id": "magic_crafting",
     "type": "item_group",
-    "items": [
-      [ "holy_symbol", 5 ],
-      [ "pot", 5 ],
-      [ "bowl_clay", 15 ],
+    "subtype": "distribution",
+    "entries": [
+      { "item": "holy_symbol", "prob": 5 },
+      { "item": "pot", "prob": 5 },
+      { "item": "bowl_clay", "prob": 15 },
       { "item": "candle", "prob": 10, "charges": [ 75, 100 ] },
       { "item": "matches", "prob": 15, "charges": [ 15, 20 ] },
       { "item": "copper", "prob": 5, "charges": [ 25, 100 ] },
@@ -91,7 +94,7 @@
       { "item": "thread", "prob": 5, "charges": [ 30, 90 ] },
       { "item": "bone", "prob": 5, "count": [ 1, 5 ] },
       { "item": "paper", "prob": 5, "charges": [ 20, 50 ] },
-      [ "chem_ethanol", 10 ],
+      { "item": "chem_ethanol", "prob": 10 },
       { "group": "arcana_hunt_random", "prob": 25 },
       {
         "item": "infused_ink",
@@ -229,7 +232,15 @@
       { "item": "book_hexenhammer", "prob": 15 },
       { "item": "book_bloodmagic", "prob": 15 },
       { "item": "book_sacrifice", "prob": 10 },
-      { "group": "magic_books_rare_postapoc", "prob": 5 }
+      { "group": "magic_books_rare_postapoc", "prob": 5 },
+      {
+        "distribution": [
+          { "group": "unaligned_arcanist_spells", "prob": 3 },
+          { "group": "summoning_spellbooks", "prob": 2 },
+          { "group": "sanguine_cult_spells", "prob": 1 }
+        ],
+        "prob": 35
+      }
     ]
   },
   {
@@ -255,7 +266,15 @@
       { "item": "book_hexenhammer", "prob": 15 },
       { "item": "book_bloodmagic", "prob": 15 },
       { "item": "book_sacrifice", "prob": 15 },
-      { "group": "magic_books_rare_postapoc", "prob": 5 }
+      { "group": "magic_books_rare_postapoc", "prob": 5 },
+      {
+        "distribution": [
+          { "group": "unaligned_arcanist_spells", "prob": 3 },
+          { "group": "summoning_spellbooks", "prob": 2 },
+          { "group": "sanguine_cult_spells", "prob": 1 }
+        ],
+        "prob": 30
+      }
     ]
   },
   {
@@ -273,7 +292,11 @@
     "id": "magic_books_beginner",
     "type": "item_group",
     "subtype": "distribution",
-    "entries": [ { "item": "book_easyalchemy", "prob": 1 }, { "item": "book_magicfordummies", "prob": 1 } ]
+    "entries": [
+      { "item": "book_easyalchemy", "prob": 1 },
+      { "item": "book_magicfordummies", "prob": 1 },
+      { "item": "book_easyevocation", "prob": 1 }
+    ]
   },
   {
     "id": "unaligned_arcanist_books",
@@ -288,11 +311,7 @@
       {
         "distribution": [
           {
-            "distribution": [
-              { "item": "book_alternate_potions", "prob": 2 },
-              { "item": "book_potioncraft", "prob": 1 },
-              { "item": "book_easyalchemy", "prob": 2 }
-            ],
+            "distribution": [ { "item": "book_alternate_potions", "prob": 2 }, { "group": "magic_books_beginner", "prob": 5 } ],
             "prob": 25
           },
           { "item": "book_elementalism", "prob": 20 },
@@ -301,6 +320,10 @@
           { "item": "book_magicfordummies", "prob": 10 }
         ],
         "prob": 15
+      },
+      {
+        "distribution": [ { "group": "unaligned_arcanist_spells", "prob": 2 }, { "group": "summoning_spellbooks", "prob": 1 } ],
+        "prob": 20
       }
     ]
   },
@@ -317,11 +340,7 @@
       {
         "distribution": [
           {
-            "distribution": [
-              { "item": "book_alternate_potions", "prob": 2 },
-              { "item": "book_potioncraft", "prob": 1 },
-              { "item": "book_easyalchemy", "prob": 2 }
-            ],
+            "distribution": [ { "item": "book_alternate_potions", "prob": 2 }, { "group": "magic_books_beginner", "prob": 5 } ],
             "prob": 25
           },
           { "item": "book_elementalism", "prob": 20 },
@@ -331,6 +350,10 @@
           { "item": "book_syncretism", "prob": 10 }
         ],
         "prob": 20
+      },
+      {
+        "distribution": [ { "group": "unaligned_arcanist_spells", "prob": 2 }, { "group": "summoning_spellbooks", "prob": 1 } ],
+        "prob": 20
       }
     ]
   },
@@ -338,19 +361,60 @@
     "id": "unaligned_arcanist_spells",
     "type": "item_group",
     "subtype": "distribution",
+    "//": "Scrolls that are only found in a specific cult's texts are not included here",
     "entries": [
       { "item": "scroll_spell_confusion", "prob": 5 },
       { "item": "scroll_spell_phase_shield", "prob": 5 },
-      { "item": "scroll_spell_clairvoyance", "prob": 5 },
-      { "item": "scroll_spell_plants", "prob": 3 },
+      { "item": "scroll_spell_free_action", "prob": 3 },
+      { "item": "scroll_spell_lightning", "prob": 3 },
       { "item": "scroll_spell_might", "prob": 3 },
-      { "item": "scroll_spell_clarity", "prob": 5 },
+      { "item": "scroll_spell_earthweaving", "prob": 3 },
+      { "item": "scroll_spell_incandescent_conflagration", "prob": 1 },
+      { "item": "scroll_spell_artiface", "prob": 3 },
       { "item": "scroll_spell_heal", "prob": 5 },
-      { "item": "scroll_spell_cleric", "prob": 1 },
+      { "item": "scroll_spell_elecresist", "prob": 3 },
       { "item": "scroll_spell_sun", "prob": 1 },
+      { "item": "scroll_spell_moon", "prob": 1 },
       { "item": "scroll_spell_insight", "prob": 5 },
+      { "item": "scroll_spell_destruction", "prob": 3 },
+      { "item": "scroll_spell_dark_lance", "prob": 5 },
       { "item": "scroll_spell_free_action", "prob": 5 },
-      { "item": "scroll_spell_ironskin", "prob": 5 }
+      { "item": "scroll_spell_ironskin", "prob": 5 },
+      { "item": "scroll_spell_subversion", "prob": 1 }
+    ]
+  },
+  {
+    "id": "summoning_spellbooks",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_increase_success_chance", "prob": 1 },
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_skeletal_dog", "prob": 1 },
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_shadow", "prob": 1 }
+        ],
+        "prob": 50
+      },
+      {
+        "distribution": [
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_kreck_group", "prob": 1 },
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_dark_wyrm", "prob": 1 },
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_crawling_things", "prob": 1 }
+        ],
+        "prob": 30
+      },
+      {
+        "distribution": [
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_shapeshifting_thing", "prob": 1 },
+          { "item": "summoning_magic_spell_scroll_arcana_summoning_nether_huntsman", "prob": 1 }
+        ],
+        "prob": 10
+      },
+      {
+        "distribution": [ { "item": "summoning_magic_spell_scroll_arcana_summoning_nether_huntsman", "prob": 1 } ],
+        "prob": 3
+      }
     ]
   },
   {
@@ -425,7 +489,7 @@
   },
   {
     "id": "lab_magitech_weaponry",
-    "//": "These itemgroups require the Bionic Professions mod to spawn magitech.",
+    "//": "These itemgroups require the Bionic Professions or Magiclysm mods to spawn magitech.",
     "type": "item_group",
     "items": [ { "group": "tools_science", "prob": 1 } ]
   },

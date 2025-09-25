@@ -90,8 +90,7 @@
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "death_drops": {  },
     "special_attacks": [ { "id": "ranged_pull", "cooldown": 20 }, [ "LUNGE", 10 ] ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
-    "delete": { "flags": [ "BASHES", "GROUP_BASH", "ATTACKMON" ] }
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] }
   },
   {
     "id": "mon_dog_skeleton_summoned",
@@ -143,8 +142,7 @@
     "melee_damage": [ { "damage_type": "electric", "amount": 10 } ],
     "regenerates": 10,
     "regeneration_modifiers": [ [ "dazed", -10 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] },
-    "delete": { "flags": [ "STUMBLES" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_yugg_summoned",
@@ -170,7 +168,7 @@
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_yugg_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
-    "delete": { "flags": [ "BASHES", "DESTROYS", "DIGS" ] }
+    "delete": { "flags": [ "DESTROYS" ] }
   },
   {
     "id": "mon_kreck_summoned",
@@ -185,8 +183,7 @@
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "BASHES" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_vinebeast_summoned",
@@ -250,8 +247,7 @@
     "armor": { "electric": 1, "stab": 10, "bullet": 10 },
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_hunting_horror_bound",
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "SUNDEATH", "HIT_AND_RUN" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_nether_huntsman_summoned",
@@ -263,10 +259,21 @@
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
+    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" }
+  },
+  {
+    "id": "mon_nether_huntsman_summoned_glyph",
+    "copy-from": "mon_nether_huntsman",
+    "type": "MONSTER",
+    "name": { "str": "summoned nether huntsman" },
+    "categories": [ "CLASSIC" ],
+    "species": [ "SUMMONED_CREATURE" ],
+    "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+    "regenerates": 1,
+    "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_nether_huntsman_bound",
-    "delete": { "flags": [ "BASHES" ] }
+    "revert_to_itype": "summon_nether_huntsman_bound"
   },
   {
     "id": "mon_flying_polyp_summoned",
@@ -282,8 +289,7 @@
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
-    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
-    "delete": { "flags": [ "BASHES" ] }
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
   },
   {
     "id": "mon_shoggoth_summoned",
@@ -316,8 +322,7 @@
     "death_drops": {  },
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] },
-    "delete": { "flags": [ "SUNDEATH", "HEARS", "GOODHEARING", "SMELLS", "HIT_AND_RUN", "ELECTRIC" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_shadow_summoned_fake",
@@ -361,8 +366,7 @@
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "regenerates_in_dark": true,
     "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] },
-    "delete": { "flags": [ "SUNDEATH", "SMELLS" ] }
+    "extend": { "flags": [ "FLIES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] }
   },
   {
     "id": "mon_shadow_snake_summoned_fake",

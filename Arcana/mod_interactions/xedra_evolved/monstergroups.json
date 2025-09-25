@@ -1,0 +1,14 @@
+[
+  {
+    "type": "monstergroup",
+    "id": "GROUP_GROVESURFACE",
+    "default": "mon_triffid",
+    "monsters": [ { "group": "GROUP_TRIFFID_MAGES", "weight": 35, "cost_multiplier": 5 } ]
+  },
+  {
+    "type": "monstergroup",
+    "id": "GROUP_GROVEBASEMENT_NATURAL",
+    "default": "mon_triffid",
+    "monsters": [ { "group": "GROUP_TRIFFID_MAGES", "weight": 35, "cost_multiplier": 5 } ]
+  }
+]
