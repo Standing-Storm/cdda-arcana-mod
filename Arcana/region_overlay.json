@@ -1,24 +1,8 @@
 [
   {
-    "type": "region_overlay",
-    "regions": [ "all" ],
-    "forest_mapgen_settings": {
-      "forest_thick": {
-        "terrains": [
-          "forest_thick",
-          "forest_trail",
-          "forest_trail_intersection",
-          "natural_spring",
-          "special_forest",
-          "spider_pit",
-          "standing_stones",
-          "stream",
-          "stream_corner",
-          "stream_end",
-          "arcana_grove_lodge_ground1",
-          "arcana_grove_lodge_ground2"
-        ]
-      }
-    }
+    "type": "forest_biome_mapgen",
+    "id": "biome_forest_thick_default_arcana",
+    "overlay_id": "biome_forest_thick_default",
+    "terrains": [ "arcana_grove_lodge_ground1", "arcana_grove_lodge_ground2" ]
   }
 ]
