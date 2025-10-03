@@ -622,7 +622,7 @@
     "price_postapoc": "20 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_vinebeast_summoned",
+      "monster_id": "mon_vinebeast_summoned_glyph",
       "friendly_msg": "The movement of the plant creature is hard to read, but you suspect it is either friendly, or doesn't regard you as a threat.",
       "hostile_msg": "Even without words or recognizable body language, it quickly becomes apparent that the plant monster is hostile.",
       "difficulty": 2,
@@ -667,7 +667,7 @@
     "price_postapoc": "40 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_hunting_horror_summoned",
+      "monster_id": "mon_hunting_horror_summoned_glyph",
       "friendly_msg": "The hunting horror is at your beck and call.  A gift from the Stalker among the Stars?",
       "hostile_msg": "You feel the gaze of Nyarlathotep upon you.  How foolish of you, to steal the harrier of the Faceless God!",
       "difficulty": 4,
@@ -757,7 +757,7 @@
     "price_postapoc": "80 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flying_polyp_summoned",
+      "monster_id": "mon_flying_polyp_summoned_glyph",
       "friendly_msg": "The flying polyp twitches for a moment, before its movement steadies.  It seems to be friendly.",
       "hostile_msg": "The flying polyp twitches erratically, reacting to your presence with apparent hostility!",
       "difficulty": 8,
@@ -780,7 +780,7 @@
     "price_postapoc": "90 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_yugg_summoned",
+      "monster_id": "mon_yugg_summoned_glyph",
       "friendly_msg": "With the riches of a dead world as an offering, you bind the yugg to serve you.  You feel like this is the opposite of how it normally works.",
       "hostile_msg": "An offering of wealth is not enough to placate a servant of Ubb.  The creature turns hostile!",
       "difficulty": 9,
@@ -803,7 +803,7 @@
     "price_postapoc": "100 USD",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_shoggoth_summoned",
+      "monster_id": "mon_shoggoth_summoned_glyph",
       "friendly_msg": "You hear a voice in your mind.  \"Tekili …l-li?\"  Your mind exerts a strange influence upon the shoggoth.",
       "hostile_msg": "You hear a voice in your mind.  \"Tekeli-li!\"  The shoggoth resists your efforts to control it!",
       "difficulty": 10,
@@ -839,7 +839,7 @@
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A vinebeast has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_vinebeast_summoned",
+      "monster_id": "mon_vinebeast_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned triffid, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -871,7 +871,7 @@
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A hunting horror has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_hunting_horror_summoned",
+      "monster_id": "mon_hunting_horror_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned hunting horror, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -935,7 +935,7 @@
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A flying polyp has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_flying_polyp_summoned",
+      "monster_id": "mon_flying_polyp_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned flying polyp, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -951,7 +951,7 @@
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A yugg has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_yugg_summoned",
+      "monster_id": "mon_yugg_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned yugg, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,
@@ -967,7 +967,7 @@
     "description": "A charm of living essence wrapped around what looks to be a ghostly image of a silver glyph.  A shoggoth has been bound into this after a successful summon, activate to redeploy it.",
     "use_action": {
       "type": "place_monster",
-      "monster_id": "mon_shoggoth_summoned",
+      "monster_id": "mon_shoggoth_summoned_glyph",
       "friendly_msg": "You undo the energy binding the summoned shoggoth, causing it to reappear.",
       "moves": 60,
       "place_randomly": true,

@@ -165,6 +165,31 @@
       }
     ],
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_drops": {  },
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
+    "delete": { "flags": [ "DESTROYS" ] }
+  },
+  {
+    "id": "mon_yugg_summoned_glyph",
+    "copy-from": "mon_yugg",
+    "type": "MONSTER",
+    "name": { "str": "summoned yugg" },
+    "categories": [ "CLASSIC" ],
+    "species": [ "SUMMONED_CREATURE" ],
+    "weight": "200000 g",
+    "mountable_weight_ratio": 0.9,
+    "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+    "regenerates": 1,
+    "regeneration_modifiers": [ [ "dazed", -1 ] ],
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "arcana_monster_dart_yugg" },
+        "cooldown": 20,
+        "monster_message": "The summoned yugg fires a dart at %3$s!"
+      }
+    ],
+    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_yugg_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_MOUNTABLE" ] },
@@ -187,6 +212,31 @@
   },
   {
     "id": "mon_vinebeast_summoned",
+    "copy-from": "mon_vinebeast",
+    "looks_like": "mon_vinebeast",
+    "type": "MONSTER",
+    "name": { "str": "summoned vinebeast" },
+    "categories": [ "CLASSIC" ],
+    "species": [ "SUMMONED_CREATURE" ],
+    "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+    "regenerates": 1,
+    "regeneration_modifiers": [ [ "dazed", -1 ] ],
+    "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
+    "death_drops": {  },
+    "special_attacks": [
+      { "type": "bite", "cooldown": 10 },
+      {
+        "type": "spell",
+        "spell_data": { "id": "arcana_monster_dart_triffid" },
+        "cooldown": 5,
+        "monster_message": "The summoned vinebeast fires a dart at %3$s!"
+      }
+    ],
+    "attack_effs": [ { "id": "venom_dmg", "duration": 500, "affect_hit_bp": true } ],
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
+  },
+  {
+    "id": "mon_vinebeast_summoned_glyph",
     "copy-from": "mon_vinebeast",
     "looks_like": "mon_vinebeast",
     "type": "MONSTER",
@@ -245,6 +295,23 @@
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "armor": { "electric": 1, "stab": 10, "bullet": 10 },
+    "death_drops": {  },
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE" ] }
+  },
+  {
+    "id": "mon_hunting_horror_summoned_glyph",
+    "copy-from": "mon_hunting_horror",
+    "type": "MONSTER",
+    "name": { "str": "summoned hunting horror" },
+    "categories": [ "CLASSIC" ],
+    "species": [ "SUMMONED_CREATURE" ],
+    "mountable_weight_ratio": 0.9,
+    "melee_dice_sides": 6,
+    "melee_damage": [ { "damage_type": "cut", "amount": 3 }, { "damage_type": "cold", "amount": 9 } ],
+    "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+    "regenerates": 1,
+    "regeneration_modifiers": [ [ "dazed", -1 ] ],
+    "armor": { "electric": 1, "stab": 10, "bullet": 10 },
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_hunting_horror_bound",
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "ELECTRIC", "PET_HARNESSABLE" ] }
@@ -286,6 +353,21 @@
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
     "regenerates": 1,
     "regeneration_modifiers": [ [ "dazed", -1 ] ],
+    "death_drops": {  },
+    "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
+    "extend": { "flags": [ "SEES", "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] }
+  },
+  {
+    "id": "mon_flying_polyp_summoned_glyph",
+    "copy-from": "mon_flying_polyp",
+    "type": "MONSTER",
+    "name": { "str": "summoned flying polyp" },
+    "categories": [ "CLASSIC" ],
+    "species": [ "SUMMONED_CREATURE" ],
+    "mountable_weight_ratio": 0.9,
+    "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+    "regenerates": 1,
+    "regeneration_modifiers": [ [ "dazed", -1 ] ],
     "death_drops": "mon_bound_glyph_death_drops_universal",
     "revert_to_itype": "summon_flying_polyp_bound",
     "special_attacks": [ { "type": "bite", "cooldown": 20, "damage_max_instance": [ { "damage_type": "cold", "amount": 20 } ] } ],
@@ -293,6 +375,21 @@
   },
   {
     "id": "mon_shoggoth_summoned",
+    "copy-from": "mon_shoggoth",
+    "type": "MONSTER",
+    "name": { "str": "summoned shoggoth" },
+    "categories": [ "CLASSIC" ],
+    "species": [ "SUMMONED_CREATURE" ],
+    "mountable_weight_ratio": 0.9,
+    "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
+    "regenerates": 5,
+    "regeneration_modifiers": [ [ "dazed", -5 ] ],
+    "death_drops": {  },
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS", "PET_HARNESSABLE" ] },
+    "special_attacks": [ { "id": "slam", "cooldown": 25, "damage_max_instance": [ { "damage_type": "acid", "amount": 35 } ] } ]
+  },
+  {
+    "id": "mon_shoggoth_summoned_glyph",
     "copy-from": "mon_shoggoth",
     "type": "MONSTER",
     "name": { "str": "summoned shoggoth" },

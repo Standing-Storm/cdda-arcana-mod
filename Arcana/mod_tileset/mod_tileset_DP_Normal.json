@@ -393,6 +393,7 @@
           { "id": "mon_kreck_summoned", "fg": 200 },
           { "id": "mon_triffid_summoned", "fg": 201 },
           { "id": "mon_hunting_horror_summoned", "fg": 202 },
+          { "id": "mon_hunting_horror_summoned_glyph", "fg": 202 },
           {
             "id": [ "mon_shadow_summoned", "mon_shadow_summoned_fake" ],
             "fg": [
