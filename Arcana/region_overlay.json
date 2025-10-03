@@ -1,5 +1,22 @@
 [
   {
+    "type": "region_overlay_new",
+    "id": "default_arcana",
+    "apply_to_tags": [ "all" ],
+    "cities": "default_arcana",
+    "forest_composition": "default_arcana"
+  },
+  {
+    "type": "region_settings_city",
+    "id": "default_arcana",
+    "houses": [ [ "house_arcana", 50 ], [ "house_arcana_2", 35 ] ]
+  },
+  {
+    "type": "region_settings_forest_mapgen",
+    "id": "default_arcana",
+    "biomes": [ "biome_forest_thick_default_arcana" ]
+  },
+  {
     "type": "forest_biome_mapgen",
     "id": "biome_forest_thick_default_arcana",
     "overlay_id": "biome_forest_thick_default",
