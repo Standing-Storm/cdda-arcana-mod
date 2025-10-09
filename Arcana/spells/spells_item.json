@@ -687,7 +687,6 @@
     "message": "The talisman burns away, loosing a bolt of flame!",
     "effect": "attack",
     "shape": "blast",
-    "extra_effects": [ { "id": "flame_talisman_self_destruct", "hit_self": true } ],
     "valid_targets": [ "ally", "hostile", "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "min_damage": 30,
@@ -711,7 +710,6 @@
     "effect": "attack",
     "shape": "blast",
     "effect_str": "effect_arcana_talisman_lighten",
-    "extra_effects": [ { "id": "air_talisman_self_destruct", "hit_self": true } ],
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
     "min_duration": 60000,
@@ -726,7 +724,6 @@
     "valid_targets": [ "self", "ally", "hostile" ],
     "effect": "flashbang",
     "shape": "blast",
-    "extra_effects": [ { "id": "lightning_talisman_self_destruct", "hit_self": true } ],
     "min_aoe": 5,
     "max_aoe": 5
   },
@@ -739,7 +736,6 @@
     "effect": "attack",
     "shape": "blast",
     "effect_str": "effect_arcana_talisman_waterwalking",
-    "extra_effects": [ { "id": "water_talisman_self_destruct", "hit_self": true } ],
     "valid_targets": [ "self" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
     "min_duration": 60000,
@@ -755,8 +751,7 @@
     "shape": "blast",
     "extra_effects": [
       { "id": "arcana_item_frozen_freeze_other_target", "hit_self": false },
-      { "id": "arcana_item_frozen_protect_self_from_heat" },
-      { "id": "ice_talisman_self_destruct", "hit_self": true }
+      { "id": "arcana_item_frozen_protect_self_from_heat" }
     ],
     "valid_targets": [ "self", "hostile" ],
     "min_range": 1,
@@ -1675,8 +1670,7 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_artifice_pain", "hit_self": true },
       { "id": "arcana_item_scroll_artifice_paralyze", "hit_self": true },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false },
-      { "id": "arcana_item_scroll_artifice_self_destruct", "hit_self": true }
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "min_damage": 180,
     "max_damage": 240,
@@ -1728,8 +1722,7 @@
       { "id": "arcana_item_scroll_destruction_attention", "hit_self": true },
       { "id": "arcana_item_scroll_destruction_cold", "hit_self": false },
       { "id": "arcana_item_scroll_destruction_pulse", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false },
-      { "id": "arcana_item_scroll_destruction_self_destruct", "hit_self": true }
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE", "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
@@ -1856,8 +1849,7 @@
     "extra_effects": [
       { "id": "arcana_item_scroll_moon_blind", "hit_self": false },
       { "id": "arcana_item_scroll_moon_event", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false },
-      { "id": "arcana_item_scroll_moon_self_destruct", "hit_self": true }
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "effect": "attack",
     "shape": "blast",
@@ -1912,8 +1904,7 @@
       { "id": "arcana_item_scroll_nature_plants", "hit_self": false },
       { "id": "arcana_item_scroll_nature_healing_buff", "hit_self": true },
       { "id": "arcana_item_scroll_nature_wonder", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false },
-      { "id": "arcana_item_scroll_nature_self_destruct", "hit_self": true }
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "flags": [ "SILENT", "RANDOM_DAMAGE", "NO_HANDS", "NO_LEGS" ],
     "effect_str": "arcana_scroll_nature_effect",
@@ -2022,8 +2013,7 @@
       { "id": "arcana_item_scroll_subversion_shadows", "hit_self": false },
       { "id": "AEA_SLEEPINESS", "hit_self": false },
       { "id": "arcana_item_scroll_subversion_teleport", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false },
-      { "id": "arcana_item_scroll_subversion_self_destruct", "hit_self": true }
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "valid_targets": [ "self", "ally", "hostile", "ground" ],
     "flags": [ "SILENT", "IGNORE_WALLS", "NO_PROJECTILE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS" ],
@@ -2080,8 +2070,7 @@
       { "id": "arcana_item_scroll_sun_event", "hit_self": false },
       { "id": "arcana_item_scroll_sun_adrenaline", "hit_self": false },
       { "id": "arcana_item_scroll_sun_timewarp", "hit_self": false },
-      { "id": "arcana_item_scroll_leftover", "hit_self": false },
-      { "id": "arcana_item_scroll_sun_self_destruct", "hit_self": true }
+      { "id": "arcana_item_scroll_leftover", "hit_self": false }
     ],
     "effect": "attack",
     "shape": "blast",
@@ -2354,7 +2343,7 @@
     "message": "Faint wisps of mist fly from the talisman, to reinforce those who fight by your side.",
     "effect": "attack",
     "shape": "blast",
-    "extra_effects": [ { "id": "arcana_item_pet_heal", "hit_self": false }, { "id": "spirit_talisman_self_destruct", "hit_self": true } ],
+    "extra_effects": [ { "id": "arcana_item_pet_heal", "hit_self": false } ],
     "valid_targets": [ "ally" ],
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION" ],
     "effect_str": "talisman_pet_buff",
