@@ -275,5 +275,11 @@
     },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual summons subterranean wyrms who will answer the call of the blood--though whether as friend or foe, who can say.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_dark_wyrm" ] }
+  },
+  {
+    "type": "MIGRATION",
+    "//": "remove after 0.J",
+    "id": [ "blood_magic_spell_scroll_arcana_mark_summon_jabberwock" ],
+    "replace": "blood_magic_spell_scroll_arcana_blood_magic_summon_jabberwock"
   }
 ]

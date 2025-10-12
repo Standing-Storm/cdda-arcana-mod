@@ -113,13 +113,13 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_summon_jabberwock",
     "name": {
-      "str": "Sanguine Grimoire: Calling the Flesh-woven Titan",
-      "str_pl": "Sanguine Grimoires: Calling the Flesh-woven Titan"
+      "str": "Sanguine Grimoire: Fashioning the Flesh-woven Titan",
+      "str_pl": "Sanguine Grimoires: Fashioning the Flesh-woven Titan"
     },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual weaves blood and flesh together into a titan that will crush those before it--though whether you or your enemies, who can say.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_summon_jabberwock" ] }
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual weaves blood and flesh together into a titan that will crush those before it.  It requires a significant amount of corpses to create.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_summon_jabberwock" ] }
   },
   {
     "type": "ITEM",

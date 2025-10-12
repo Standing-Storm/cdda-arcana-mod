@@ -60,6 +60,20 @@
     "delete": { "flags": [ "BASHES", "DESTROYS", "ATTACKMON" ] }
   },
   {
+    "id": "mon_jabberwock_titan_summoned",
+    "looks_like": "mon_jabberwock_summoned",
+    "copy-from": "mon_jabberwock",
+    "type": "MONSTER",
+    "name": { "str": "summoned jabberwock titan" },
+    "weight": "500000 g",
+    "proportional": { "hp": 2 },
+    "relative": {
+      "melee_dice_sides": 4,
+      "melee_damage": [ { "damage_type": "bash", "amount": 7 } ],
+      "armor": { "bash": 10, "cut": 6, "stab": 6, "bullet": 6 }
+    }
+  },
+  {
     "id": "mon_homunculus_summoned",
     "copy-from": "mon_homunculus",
     "type": "MONSTER",

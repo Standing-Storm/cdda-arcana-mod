@@ -83,7 +83,7 @@
       },
       {
         "distribution": [
-          { "item": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_summon_jabberwock", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_summon_fiend", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_call_bloodwalker", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_blood_teleport", "prob": 1 }
@@ -91,7 +91,7 @@
         "prob": 10
       },
       {
-        "distribution": [ { "item": "blood_magic_spell_scroll_arcana_mark_summon_jabberwock", "prob": 1 } ],
+        "distribution": [ { "item": "blood_magic_spell_scroll_arcana_blood_magic_summon_jabberwock", "prob": 1 } ],
         "prob": 3
       }
     ]

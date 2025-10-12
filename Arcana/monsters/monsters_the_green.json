@@ -44,7 +44,7 @@
         "cooldown": 3,
         "move_cost": 100,
         "damage_max_instance": [ { "damage_type": "stab", "amount": 6, "armor_penetration": 30 } ],
-        "//": "armor penetration here represents that you'll literally surrounded by thorns",
+        "//": "armor penetration here represents that you're literally surrounded by thorns",
         "condition": { "and": [ { "u_has_flag": "GRAB_FILTER" }, { "npc_has_flag": "GRAB" } ] },
         "hit_dmg_u": "%1$s squeezes and its thorns dig into your %2$s!",
         "hit_dmg_npc": "%1$s squeezes <npcname>!",

@@ -276,25 +276,19 @@
     "targeted_monster_ids": [ "mon_zombie_fiend_summoned" ]
   },
   {
-    "id": "arcana_mark_summon_jabberwock",
+    "id": "arcana_blood_magic_summon_jabberwock",
     "type": "SPELL",
-    "name": { "str": "Calling the Flesh-woven Titan" },
-    "description": "Using this spell will summon a golem woven of flesh.  Whether it will obey you is <color_yellow>completely up to chance</color>.\n\nIf you cast this spell after a sacrifice, the summon will be <color_green>completely loyal</color>.",
-    "message": "The ground warps at your command, a host of rotting bodies emerging from the disturbance, forms fusing together into an abomination.  %s!",
-    "valid_targets": [ "ground" ],
+    "name": { "str": "Fashioning the Flesh-woven Titan" },
+    "description": "Using this spell will summon a golem woven of flesh, formed from a mound of nearby corpses.  If you cast this spell after a sacrifice, you will need <color_green>fewer corpses</color> to create the titan.",
+    "message": "The ground warps at your command, the rotting bodies at the point pulling together, forms fusing together into an abomination.  %s!",
+    "valid_targets": [ "self" ],
     "flags": [ "SOMATIC", "NO_HANDS", "HOSTILE_50" ],
-    "effect": "summon",
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_ARCANA_BLOOD_MAGIC_SUMMON_JABBERWOCK",
     "shape": "blast",
-    "effect_str": "mon_jabberwock_summoned",
-    "extra_effects": [ { "id": "arcana_mark_summon_jabberwock_sacrifice_check", "hit_self": true } ],
     "difficulty": 80,
     "skill": "magic",
     "max_level": 5,
-    "min_damage": 1,
-    "max_damage": 1,
-    "min_range": 4,
-    "max_range": 7,
-    "range_increment": 0.6,
     "base_casting_time": 270,
     "final_casting_time": 135,
     "casting_time_increment": -27,
@@ -308,47 +302,172 @@
     "magic_type": "arcana_blood_magic"
   },
   {
-    "id": "arcana_mark_summon_jabberwock_sacrifice_check",
-    "type": "SPELL",
-    "name": { "str": "Calling the Flesh-woven Titan Sacrifice Check" },
-    "description": "Check to see if you're able to auto-control the jabberwock.",
-    "message": "",
-    "valid_targets": [ "self" ],
-    "flags": [ "SILENT", "NO_HANDS" ],
-    "effect": "effect_on_condition",
-    "shape": "blast",
-    "effect_str": "EOC_ARCANA_SUMMON_JABBERWOCK_SACRIFICE_CHECK",
-    "difficulty": 50,
-    "skill": "magic",
-    "spell_class": "ARCANA_BLOOD_MAGIC",
-    "magic_type": "arcana_blood_magic"
-  },
-  {
     "type": "effect_on_condition",
-    "id": "EOC_ARCANA_SUMMON_JABBERWOCK_SACRIFICE_CHECK",
-    "condition": { "or": [ { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] } ] },
-    "effect": { "u_cast_spell": { "id": "arcana_mark_summon_jabberwock_control", "hit_self": true } }
+    "id": "EOC_ARCANA_BLOOD_MAGIC_SUMMON_JABBERWOCK",
+    "effect": [
+      { "math": [ "u_blood_magic_generic_counting_variable = 0" ] },
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "jabberwock_target_point" },
+        "range": { "math": [ "(u_spell_level('arcana_blood_magic_summon_jabberwock') * 0.6) + 4" ] },
+        "z_level": false,
+        "message": "Select target point."
+      },
+      {
+        "u_map_run_eocs": [
+          {
+            "id": "EOC_ARCANA_BLOOD_MAGIC_CHECK_FOR_CORPSE_IN_EACH_TILE",
+            "effect": [
+              {
+                "u_map_run_item_eocs": "all",
+                "loc": { "context_val": "jabberwock_corpse_check_point" },
+                "min_radius": 0,
+                "max_radius": 0,
+                "search_data": [ { "flags": [ "CORPSE" ] } ],
+                "true_eocs": [
+                  {
+                    "id": "EOC_ARCANA_BLOOD_MAGIC_CHECK_FOR_CORPSE_REMOVE_CORPSE",
+                    "effect": [ { "math": [ "u_blood_magic_generic_counting_variable ++" ] }, "npc_die" ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "range": 2,
+        "store_coordinates_in": { "context_val": "jabberwock_corpse_check_point" },
+        "stop_at_first": false,
+        "condition": { "math": [ "1 == 1" ] },
+        "target_var": { "context_val": "jabberwock_target_point" }
+      },
+      { "u_message": "You found <u_val:blood_magic_generic_counting_variable> corpses.", "type": "debug" },
+      {
+        "if": { "u_has_effect": "effect_arcana_blood_magic_killed_human" },
+        "then": { "math": [ "_jabberwock_summon_bonus = 4" ] }
+      },
+      {
+        "if": { "u_has_effect": "effect_arcana_blood_magic_killed" },
+        "then": { "math": [ "_jabberwock_summon_bonus = 2" ] }
+      },
+      {
+        "u_message": "Your total bonus is <u_val:blood_magic_generic_counting_variable> + <context_val:jabberwock_summon_bonus>.",
+        "type": "debug"
+      },
+      {
+        "switch": { "math": [ "u_blood_magic_generic_counting_variable + _jabberwock_summon_bonus" ] },
+        "cases": [
+          { "case": 0, "effect": [ { "u_message": "With no flesh to mold, the ritual fails.", "type": "bad" } ] },
+          {
+            "case": 1,
+            "effect": [
+              {
+                "u_cast_spell": { "id": "arcana_blood_magic_summon_jabberwock_flesh_wall_summon" },
+                "loc": { "context_val": "jabberwock_target_point" }
+              },
+              {
+                "u_message": "The flesh writhes and warps together, limbs and faces reaching out, before collapsing back into a solid mass.  There were not enough corpses to spawn the titan.",
+                "type": "bad"
+              }
+            ]
+          },
+          {
+            "case": 5,
+            "effect": [
+              {
+                "u_cast_spell": { "id": "arcana_blood_magic_summon_jabberwock_jabberwock_summon" },
+                "loc": { "context_val": "jabberwock_target_point" }
+              },
+              {
+                "u_message": "The flesh writhes and warps together, limbs and faces reaching out, before a patchwork monstrosity rises up with a roar!",
+                "type": "good"
+              }
+            ]
+          },
+          {
+            "case": 10,
+            "effect": [
+              {
+                "u_cast_spell": { "id": "arcana_blood_magic_summon_jabberwock_jabberwock_titan_summon" },
+                "loc": { "context_val": "jabberwock_target_point" }
+              },
+              {
+                "u_message": "The flesh writhes and warps together, limbs and faces reaching out, before a patchwork monstrosity rises up with a roar!",
+                "type": "good"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
-    "id": "arcana_mark_summon_jabberwock_control",
+    "id": "arcana_blood_magic_summon_jabberwock_flesh_wall_summon",
     "type": "SPELL",
-    "name": { "str": "Calling the Flesh-Woven-Titan Charm Spell" },
-    "description": "Charms summoned ashen revenants to make them loyal",
+    "name": { "str": "Calling the Flesh-woven Titan Flesh Wall", "//~": "NO_I18N" },
+    "description": { "str": "Summons a flesh wall if you don't have enough corpses for a jabberwock", "//~": "NO_I18N" },
     "message": "",
-    "valid_targets": [ "hostile" ],
-    "flags": [ "SOMATIC", "NO_HANDS", "NO_EXPLOSION_SFX" ],
-    "effect": "charm_monster",
+    "valid_targets": [ "ground", "hostile", "ally" ],
+    "flags": [ "SILENT", "NO_HANDS" ],
+    "effect": "summon",
     "shape": "blast",
-    "min_damage": 1000,
-    "max_damage": 1000,
+    "effect_str": "mon_zombie_living_wall",
     "skill": "magic",
     "max_level": 5,
-    "min_aoe": 8,
-    "min_duration": 15000000,
-    "max_duration": 15000000,
-    "spell_class": "ARCANA_BLOOD_MAGIC",
-    "magic_type": "arcana_blood_magic",
-    "targeted_monster_ids": [ "mon_jabberwock_summoned" ]
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_duration": 1080000,
+    "max_duration": 2700000,
+    "duration_increment": 324000
+  },
+  {
+    "id": "arcana_blood_magic_summon_jabberwock_jabberwock_summon",
+    "type": "SPELL",
+    "name": { "str": "Calling the Flesh-woven Titan Jabberwock", "//~": "NO_I18N" },
+    "description": { "str": "Summons a jabberwock if you do have enough corpses for a jabberwock", "//~": "NO_I18N" },
+    "message": "",
+    "valid_targets": [ "ground", "hostile", "ally" ],
+    "flags": [ "SILENT", "NO_HANDS" ],
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_jabberwock_summoned",
+    "skill": "magic",
+    "max_level": 5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_duration": 1080000,
+    "max_duration": 2700000,
+    "duration_increment": 324000
+  },
+  {
+    "id": "arcana_blood_magic_summon_jabberwock_jabberwock_titan_summon",
+    "type": "SPELL",
+    "name": { "str": "Calling the Flesh-woven Titan Jabberwock summon", "//~": "NO_I18N" },
+    "description": { "str": "Summons a jabberwock titan if you have extra corpses", "//~": "NO_I18N" },
+    "message": "",
+    "valid_targets": [ "ground", "hostile", "ally" ],
+    "flags": [ "SILENT", "NO_HANDS" ],
+    "effect": "summon",
+    "shape": "blast",
+    "effect_str": "mon_jabberwock_titan_summoned",
+    "skill": "magic",
+    "max_level": 5,
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_range": 60,
+    "max_range": 60,
+    "min_aoe": 1,
+    "max_aoe": 1,
+    "min_duration": 1080000,
+    "max_duration": 2700000,
+    "duration_increment": 324000
   },
   {
     "id": "arcana_mark_surge_adrenaline",

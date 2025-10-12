@@ -132,7 +132,7 @@
     "changes_to": [ "SPELL_BEYOND_DRAGONBLOOD" ],
     "category": [ "DRAGONBLOOD" ],
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
-    "spells_learned": [ [ "arcana_mark_call_bloodwalkers", 1 ], [ "arcana_mark_summon_jabberwock", 1 ] ]
+    "spells_learned": [ [ "arcana_mark_call_bloodwalkers", 1 ], [ "arcana_blood_magic_summon_jabberwock", 1 ] ]
   },
   {
     "type": "mutation",
@@ -147,7 +147,7 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "spells_learned": [
       [ "arcana_mark_call_bloodwalkers", 1 ],
-      [ "arcana_mark_summon_jabberwock", 1 ],
+      [ "arcana_blood_magic_summon_jabberwock", 1 ],
       [ "arcana_mark_destructive_absorption", 1 ],
       [ "arcana_mark_malevolent_gaze", 1 ]
     ]
