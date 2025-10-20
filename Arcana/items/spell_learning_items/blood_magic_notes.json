@@ -26,19 +26,19 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline",
-    "name": { "str": "Sanguine Grimoire: Surge of Fury", "str_pl": "Sanguine Grimoires: Surge of Fury" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual causes a surge of bloodlust that enhances your combat prowess but makes it hard to concentrate on anything but violence.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_surge_adrenaline" ] }
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_corrupted_flesh",
+    "name": { "str": "Sanguine Grimoire: Corrupted Flesh", "str_pl": "Sanguine Grimoires: Corrupted Flesh" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual curse's the target's flesh, nearly stopping natural healing and even preventing any occult methods of healing from affecting the target.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_corrupted_flesh" ] }
   },
   {
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_revenant_blood",
-    "name": { "str": "Sanguine Grimoire: Revenant Blood", "str_pl": "Sanguine Grimoires: Revenant Blood" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual infuses your blood with the energies of death, killing off parasites and fungal infection and protecting you against poison.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_revenant_blood" ] }
+    "id": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline",
+    "name": { "str": "Sanguine Grimoire: Surge of Fury", "str_pl": "Sanguine Grimoires: Surge of Fury" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual causes a surge of bloodlust that enhances your combat prowess but makes it hard to concentrate on anything but violence.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_surge_adrenaline" ] }
   },
   {
     "type": "ITEM",

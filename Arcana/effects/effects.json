@@ -690,6 +690,19 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_blood_magic_corrupted_flesh",
+    "name": [ "Corrupted Flesh" ],
+    "desc": [ "Your flesh twitches and wriggles unnaturally." ],
+    "apply_message": "",
+    "remove_message": "Your flesh finally settles down.",
+    "rating": "bad",
+    "max_duration": "7 days",
+    "show_in_info": true,
+    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": -0.75 } ] } ],
+    "flags": [ "BLOCK_SUPERNATURAL_HEALING" ]
+  },
+  {
+    "type": "effect_type",
     "id": "blood_clarity",
     "name": [ "Clarity of Blood" ],
     "desc": [ "Protection against parasitic and corruptive threats, such as the Mycus." ],
@@ -1176,7 +1189,7 @@
     "max_duration": "1200 m",
     "max_intensity": 1200,
     "int_dur_factor": "1 m",
-    "base_mods": { "rad_min": [ -1 ] }
+    "base_mods": { "rad_min": [ -1 ], "rad_tick": [ 60 ] }
   },
   {
     "type": "effect_type",

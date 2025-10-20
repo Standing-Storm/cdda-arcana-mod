@@ -219,7 +219,7 @@
           "waterskin",
           "bowl_clay",
           "book_bloodmagic",
-          "blood_magic_spell_scroll_arcana_mark_revenant_blood"
+          "blood_magic_spell_scroll_arcana_blood_magic_rite_of_sacrifice"
         ],
         "entries": [
           { "item": "mana_gem_blood", "contents-group": "starting_mana_gem_9_blood_essence" },

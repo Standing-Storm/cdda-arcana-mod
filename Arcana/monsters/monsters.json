@@ -20,7 +20,7 @@
     "melee_skill": 6,
     "melee_dice": 3,
     "melee_dice_sides": 6,
-    "melee_damage": [ { "damage_type": "cut", "amount": 6 } ],
+    "melee_damage": [ { "damage_type": "heat", "amount": 6 } ],
     "dodge": 3,
     "armor": { "bash": 10, "cut": 10, "stab": 15, "bullet": 20, "acid": 10 },
     "vision_day": 50,
@@ -701,43 +701,6 @@
     ],
     "death_drops": "mon_feral_keeper_death_drops",
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "STALK" ]
-  },
-  {
-    "id": "mon_feral_sanguinist",
-    "copy-from": "mon_feral_summoner",
-    "type": "MONSTER",
-    "name": { "str": "maddened sanguinist" },
-    "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, flames dance around the gem-adorned staff they use as a walking stick.",
-    "aggression": 10,
-    "melee_skill": 6,
-    "melee_dice_sides": 8,
-    "armor": { "bash": 10, "cut": 10, "stab": 10, "bullet": 7 },
-    "dodge": 2,
-    "diff": 3,
-    "special_attacks": [
-      [ "PARROT_AT_DANGER", 5 ],
-      {
-        "type": "gun",
-        "cooldown": 5,
-        "move_cost": 100,
-        "gun_type": "monster_fire_fake",
-        "fake_str": 9,
-        "fake_dex": 10,
-        "fake_per": 7,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "targeting_cost": 100,
-        "targeting_sound": "\"Burn!\"  The maddened sanguinist levels its hellfire staff!",
-        "targeting_volume": 30,
-        "description": "Flames erupt from the maddened sanguinist's hellfire staff!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
-    "death_drops": "mon_feral_sanguinist_death_drops",
-    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "extend": { "flags": [ "ACIDPROOF" ] }
   },
   {
     "id": "mon_feral_swamp_witch",

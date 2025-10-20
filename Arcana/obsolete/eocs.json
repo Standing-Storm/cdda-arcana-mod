@@ -25,5 +25,13 @@
       { "math": [ "u_spell_level('arcana_magic_healing') = -1" ] },
       { "math": [ "u_spell_level('arcana_mark_summon_jabberwock') = -1" ] }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SANGUINE_MARK_SPELL_OBSOLETER",
+    "eoc_type": "EVENT",
+    "required_event": "game_load",
+    "condition": { "not": { "u_has_trait": "ARCANA_SANGUINE_MARKS" } },
+    "effect": [ { "math": [ "u_spell_level('arcana_mark_revenant_blood') = -1" ] } ]
   }
 ]
