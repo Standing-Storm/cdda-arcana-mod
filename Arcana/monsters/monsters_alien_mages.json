@@ -13,7 +13,8 @@
     "//": "Speed (and armor values and regeneration) assume additional protective spells",
     "morale": 35,
     "melee_skill": 6,
-    "regenerates": 2,
+    "regenerates": 20,
+    "regeneration_modifiers": [ [ "effect_migo_enhance_flesh_monster", 2 ] ],
     "bleed_rate": 50,
     "extend": {
       "flags": [ "MAGIC_USER" ],
@@ -41,10 +42,51 @@
           "cooldown": { "math": [ "25 + rand(50)" ] },
           "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
           "monster_message": "As %1$s touches %3$s, the flesh warps and twists!"
+        },
+        {
+          "id": "migo_fleshwarper_block_healing_spell",
+          "type": "spell",
+          "spell_data": { "id": "migo_fleshwarper_block_healing", "min_level": 1 },
+          "cooldown": { "math": [ "12 + rand(25)" ] },
+          "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+          "monster_message": "%1$s's numerous antennae synch and point at %3$s."
+        },
+        {
+          "id": "migo_fleshwarper_enhance_flesh_spell",
+          "type": "spell",
+          "spell_data": { "id": "migo_enhance_flesh_monster", "hit_self": true, "min_level": 1 },
+          "cooldown": { "math": [ "40 + rand(80)" ] },
+          "condition": {
+            "and": [ { "not": { "u_has_effect": "effect_migo_enhance_flesh_monster" } }, { "not": { "u_has_flag": "NO_SPELLCASTING" } } ]
+          },
+          "monster_message": "%1$s's numerous antennae sync their movements for a brief moment."
+        },
+        {
+          "type": "monster_attack",
+          "attack_type": "melee",
+          "id": "migo_fleshwarper_enhance_flesh_initial",
+          "//": "fake attack, allowing the mi-go to put up Enhance Flesh immediately",
+          "cooldown": 1,
+          "move_cost": 80,
+          "dodgeable": false,
+          "blockable": false,
+          "uncanny_dodgeable": false,
+          "range": 50,
+          "self_effects_always": [
+            { "id": "effect_migo_enhance_flesh_monster", "duration": 50 },
+            { "id": "effect_monster_no_double_cast", "duration": 8000 }
+          ],
+          "effects_require_dmg": false,
+          "condition": { "not": { "u_has_effect": "effect_monster_no_double_cast" } },
+          "hit_dmg_u": "%1$s's numerous antennae sync their movements for a brief moment.",
+          "hit_dmg_npc": "%1$s's numerous antennae sync their movements for a brief moment.",
+          "miss_msg_u": "%1$s's numerous antennae sync their movements for a brief moment.",
+          "miss_msg_npc": "%1$s's numerous antennae sync their movements for a brief moment.",
+          "no_dmg_msg_u": "%1$s's numerous antennae sync their movements for a brief moment.",
+          "no_dmg_msg_npc": "%1$s's numerous antennae sync their movements for a brief moment."
         }
       ]
-    },
-    "armor": { "bash": 15, "cut": 20, "stab": 10, "bullet": 10, "electric": 3, "acid": 40 }
+    }
   },
   {
     "id": "mon_mi_go_nethermancer",
