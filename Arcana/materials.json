@@ -47,7 +47,7 @@
     "id": "wyrmskin",
     "copy-from": "leather",
     "name": "Wyrmskin",
-    "resist": { "bash": 1, "cut": 3, "acid": 99, "heat": 2, "bullet": 2 }
+    "resist": { "bash": 1, "cut": 3, "acid": 35, "heat": 5, "bullet": 2 }
   },
   {
     "type": "material",

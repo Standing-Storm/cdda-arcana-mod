@@ -183,15 +183,15 @@
   {
     "id": "armor_wyrm",
     "type": "ITEM",
-    "subtypes": [ "TOOL", "ARMOR" ],
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
     "name": { "str": "wyrmskin armor", "str_pl": "sets of wyrmskin armor" },
-    "description": "A set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It can be used to conjure a long-lasting spray of acid.",
+    "description": "A full set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It provides protection from acid when worn, and to a lesser extent, from fire and heat.",
     "weight": "4400 g",
     "volume": "9 L",
     "material": [ "wyrmskin", "leather" ],
     "price": "450 USD",
     "price_postapoc": "30 USD",
-    "to_hit": -5,
+    "to_hit": { "grip": "none", "length": "hand", "surface": "any", "balance": "clumsy" },
     "melee_damage": { "bash": 2 },
     "symbol": "[",
     "looks_like": "armor_larmor",
@@ -208,24 +208,43 @@
           { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.5 }
         ]
       },
-      { "covers": [ "arm_l", "arm_r" ], "coverage": 90, "encumbrance": 7 },
-      { "covers": [ "leg_l", "leg_r" ], "coverage": 85, "encumbrance": 7 },
+      {
+        "covers": [ "arm_l", "arm_r" ],
+        "coverage": 90,
+        "encumbrance": 7,
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1 }
+        ]
+      },
+      {
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 85,
+        "encumbrance": 7,
+        "material": [
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
+        ]
+      },
       {
         "covers": [ "foot_l", "foot_r" ],
         "coverage": 100,
         "encumbrance": 9,
         "material": [
-          { "type": "leather", "covered_by_mat": 100, "thickness": 2.5 },
-          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.5 }
+          { "type": "leather", "covered_by_mat": 100, "thickness": 2 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2 }
         ]
       }
     ],
     "warmth": 20,
-    "charges_per_use": 2,
-    "tool_ammo": "essence_blood_type",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 16 } } ],
-    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_wyrmskin_acid", "no_fail": true, "level": 0, "need_worn": true } ],
-    "flags": [ "OVERSIZE", "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "POCKETS", "STURDY" ]
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [ { "effect": "effect_arcana_wyrmskin_armor", "intensity": 1 } ]
+      }
+    ],
+    "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "STURDY" ]
   },
   {
     "id": "revenant_crown",

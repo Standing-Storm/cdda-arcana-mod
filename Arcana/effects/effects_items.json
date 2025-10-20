@@ -1,0 +1,10 @@
+[
+  {
+    "id": "effect_monster_no_double_cast",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "removes_effects": [ "onfire", "corroding" ]
+  }
+]
