@@ -208,5 +208,36 @@
     "duration_increment": 18000,
     "spell_class": "ARCANA_SANGUINE_MARKS",
     "magic_type": "arcana_sanguine_marks"
+  },
+  {
+    "id": "arcana_mark_elemental_sign",
+    "type": "SPELL",
+    "name": { "str": "Sign of the Inferno" },
+    "description": "Using this spell will grant complete immunity to fire, spreading a deathly chill and driving away flames from your immediate area.",
+    "message": "With a gesture, your inner fire flares up.  %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "SOMATIC", "NO_HANDS" ],
+    "extra_effects": [
+      { "id": "arcana_aftermath_brief_cold_ward", "hit_self": true },
+      { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 5 },
+      { "id": "arcana_aftermath_elemental_field_effect", "hit_self": false, "max_level": 5 }
+    ],
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "heat_ward_true_blood_magic",
+    "difficulty": 50,
+    "skill": "magic",
+    "max_level": 5,
+    "base_casting_time": 180,
+    "final_casting_time": 90,
+    "casting_time_increment": -18,
+    "base_energy_cost": 24,
+    "final_energy_cost": 12,
+    "energy_increment": -2.4,
+    "min_duration": 30000,
+    "max_duration": 150000,
+    "duration_increment": 24000,
+    "spell_class": "ARCANA_SANGUINE_MARKS",
+    "magic_type": "arcana_sanguine_marks"
   }
 ]

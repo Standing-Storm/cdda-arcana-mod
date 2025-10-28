@@ -574,61 +574,25 @@
   },
   {
     "id": "mon_feral_summoner",
+    "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened wanderer" },
     "description": "Torn robes cover a shuffling human form, still breathing despite its zombie-like unsteadiness.  Gripped by raving madness, a strange aura gathers around them as they clutch a tarnished silver talisman.",
-    "default_faction": "cult",
-    "looks_like": "mon_dementia",
-    "bodytype": "human",
-    "species": [ "HUMAN" ],
-    "volume": "62500 ml",
-    "weight": "81500 g",
-    "hp": 100,
-    "speed": 100,
-    "material": [ "flesh" ],
-    "symbol": "@",
-    "color": "magenta",
-    "aggression": -10,
-    "morale": 100,
-    "melee_skill": 4,
-    "melee_dice": 2,
-    "melee_dice_sides": 3,
-    "armor": { "bash": 2, "cut": 2, "stab": 2, "bullet": 2 },
-    "dodge": 1,
-    "harvest": "human",
-    "vision_day": 45,
-    "vision_night": 3,
-    "path_settings": { "max_dist": 30, "allow_open_doors": true, "avoid_traps": true, "avoid_sharp": true, "avoid_dangerous_fields": true },
-    "diff": 1,
-    "special_attacks": [
-      [ "PARROT_AT_DANGER", 5 ],
-      {
-        "type": "spell",
-        "spell_data": { "id": "arcana_monster_summoner", "hit_self": true },
-        "cooldown": 15,
-        "monster_message": "The air wavers as the maddened wanderer raises its talisman!"
-      }
-    ],
-    "death_drops": "mon_feral_summoner_death_drops",
-    "zombify_into": "mon_zombie_shady",
-    "anger_triggers": [ "FRIEND_DIED", "PLAYER_CLOSE" ],
-    "fear_triggers": [ "HURT" ],
-    "flags": [
-      "SEES",
-      "HEARS",
-      "SMELLS",
-      "WARM",
-      "BASHES",
-      "GROUP_BASH",
-      "HUMAN",
-      "CAN_OPEN_DOORS",
-      "PATH_AVOID_DANGER",
-      "MAGIC_USER"
-    ]
+    "extend": {
+      "special_attacks": [
+        {
+          "type": "spell",
+          "spell_data": { "id": "arcana_monster_summoner", "hit_self": true },
+          "cooldown": 15,
+          "monster_message": "The air wavers as the maddened wanderer raises its talisman!"
+        }
+      ]
+    },
+    "death_drops": "mon_feral_summoner_death_drops"
   },
   {
     "id": "mon_feral_magehunter",
-    "copy-from": "mon_feral_summoner",
+    "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened hunter" },
     "description": "A cloak of metal scales obscures this humanoid figure, heavy breaths revealing it to still be among the living.  Gripped by raving madness, bloodshot eyes glower from under a metal mask, as they grasp a silver-decorated war hammer.",
@@ -638,37 +602,38 @@
     "armor": { "bash": 12, "cut": 12, "stab": 12, "bullet": 9 },
     "dodge": 2,
     "diff": 4,
-    "special_attacks": [
-      [ "PARROT_AT_DANGER", 5 ],
-      { "id": "feral_weapon_monster_warhammer", "accuracy": 8 },
-      {
-        "type": "gun",
-        "cooldown": 5,
-        "move_cost": 100,
-        "gun_type": "monster_hammer_fake",
-        "fake_str": 10,
-        "fake_dex": 6,
-        "fake_per": 9,
-        "ranges": [ [ 2, 7, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "targeting_cost": 100,
-        "targeting_sound": "\"Ave martello!\"  The maddened hunter raises its hammer high!",
-        "targeting_volume": 30,
-        "description": "The maddened hunter's hammer gives off a blinding flash!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
+    "extend": {
+      "flags": [ "STUN_IMMUNE" ],
+      "special_attacks": [
+        { "id": "feral_weapon_monster_warhammer", "accuracy": 8 },
+        {
+          "type": "gun",
+          "cooldown": 5,
+          "move_cost": 100,
+          "gun_type": "monster_hammer_fake",
+          "fake_str": 10,
+          "fake_dex": 6,
+          "fake_per": 9,
+          "ranges": [ [ 2, 7, "DEFAULT" ] ],
+          "require_targeting_player": true,
+          "require_targeting_npc": true,
+          "require_targeting_monster": true,
+          "targeting_cost": 100,
+          "targeting_sound": "\"Ave martello!\"  The maddened hunter raises its hammer high!",
+          "targeting_volume": 30,
+          "description": "The maddened hunter's hammer gives off a blinding flash!",
+          "no_ammo_sound": "a cry of anger!"
+        }
+      ]
+    },
     "death_drops": "mon_feral_magehunter_death_drops",
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "FIRE", "HURT" ],
     "fear_triggers": [  ],
-    "extend": { "flags": [ "STUN_IMMUNE" ] },
     "delete": { "flags": [ "MAGIC_USER" ] }
   },
   {
     "id": "mon_feral_keeper",
-    "copy-from": "mon_feral_summoner",
+    "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened keeper" },
     "description": "Dark robes and a heavy fur mantle conceal a human figure, still breathing despite looking to be on the edge of death.  Gripped by raving madness, they desperately clutch a golden talisman that crackles with electricity.",
@@ -678,60 +643,62 @@
     "armor": { "bash": 4, "cut": 4, "stab": 4, "bullet": 3 },
     "dodge": 3,
     "diff": 3,
-    "special_attacks": [
-      [ "PARROT_AT_DANGER", 5 ],
-      {
-        "type": "gun",
-        "cooldown": 5,
-        "move_cost": 100,
-        "gun_type": "monster_lightning_fake",
-        "fake_str": 6,
-        "fake_dex": 7,
-        "fake_per": 8,
-        "ranges": [ [ 2, 25, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "targeting_cost": 100,
-        "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
-        "targeting_volume": 30,
-        "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
+    "extend": {
+      "special_attacks": [
+        {
+          "type": "gun",
+          "cooldown": 5,
+          "move_cost": 100,
+          "gun_type": "monster_lightning_fake",
+          "fake_str": 6,
+          "fake_dex": 7,
+          "fake_per": 8,
+          "ranges": [ [ 2, 25, "DEFAULT" ] ],
+          "require_targeting_player": true,
+          "require_targeting_npc": true,
+          "require_targeting_monster": true,
+          "targeting_cost": 100,
+          "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
+          "targeting_volume": 30,
+          "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
+          "no_ammo_sound": "a cry of anger!"
+        }
+      ]
+    },
     "death_drops": "mon_feral_keeper_death_drops",
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "STALK" ]
   },
   {
     "id": "mon_feral_swamp_witch",
-    "copy-from": "mon_feral_summoner",
+    "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened hermit" },
     "description": "Wearing tattered and dirty clothes and clutching a knife in one hand, this bloodshot-eyed madman is still somehow among the living.  Their other hand twitches in a series of mystical gestures.",
     "diff": 6,
     "aggression": 10,
-    "special_attacks": [
-      [ "PARROT_AT_DANGER", 5 ],
-      { "id": "feral_weapon_monster_knife", "accuracy": 3 },
-      {
-        "type": "gun",
-        "cooldown": 10,
-        "move_cost": 100,
-        "gun_type": "monster_lightning_spell_fake",
-        "fake_str": 6,
-        "fake_dex": 7,
-        "fake_per": 6,
-        "ranges": [ [ 2, 10, "DEFAULT" ] ],
-        "require_targeting_player": true,
-        "require_targeting_npc": true,
-        "require_targeting_monster": true,
-        "targeting_cost": 120,
-        "targeting_sound": "\"Fùlmina!\"  The maddened hermit raises a hand crackling with lightning!",
-        "targeting_volume": 30,
-        "description": "Lightning arcs from the maddened hermit's outstretched hand!",
-        "no_ammo_sound": "a cry of anger!"
-      }
-    ],
+    "extend": {
+      "special_attacks": [
+        { "id": "feral_weapon_monster_knife", "accuracy": 3 },
+        {
+          "type": "gun",
+          "cooldown": 10,
+          "move_cost": 100,
+          "gun_type": "monster_lightning_spell_fake",
+          "fake_str": 6,
+          "fake_dex": 7,
+          "fake_per": 6,
+          "ranges": [ [ 2, 10, "DEFAULT" ] ],
+          "require_targeting_player": true,
+          "require_targeting_npc": true,
+          "require_targeting_monster": true,
+          "targeting_cost": 120,
+          "targeting_sound": "\"Fùlmina!\"  The maddened hermit raises a hand crackling with lightning!",
+          "targeting_volume": 30,
+          "description": "Lightning arcs from the maddened hermit's outstretched hand!",
+          "no_ammo_sound": "a cry of anger!"
+        }
+      ]
+    },
     "death_drops": "mon_feral_hermit_death_drops"
   },
   {

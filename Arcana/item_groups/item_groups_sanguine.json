@@ -68,7 +68,6 @@
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_rite_of_sacrifice", "prob": 2 },
           { "item": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_corrupted_flesh", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_mark_elemental_sign", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_might", "prob": 1 }
         ],
         "prob": 50
@@ -77,7 +76,8 @@
         "distribution": [
           { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_drain_energy", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_blood_magic_increased_healing", "prob": 1 }
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_increased_healing", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_call_bloodwalker", "prob": 1 }
         ],
         "prob": 30
       },
@@ -85,8 +85,8 @@
         "distribution": [
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_summon_jabberwock", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_mark_summon_fiend", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_blood_magic_call_bloodwalker", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_blood_magic_blood_teleport", "prob": 1 }
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_blood_teleport", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_sacrifice_healing", "prob": 1 }
         ],
         "prob": 10
       },

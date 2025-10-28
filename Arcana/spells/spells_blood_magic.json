@@ -10,37 +10,6 @@
     "failure_chance_formula_id": "arcana_blood_magic_failure_chance"
   },
   {
-    "id": "arcana_mark_elemental_sign",
-    "type": "SPELL",
-    "name": { "str": "Sign of the Inferno" },
-    "description": "Using this spell will grant complete immunity to fire, spreading a deathly chill and driving away flames from your immediate area.",
-    "message": "With a gesture, your inner fire flares up.  %s!",
-    "valid_targets": [ "self" ],
-    "flags": [ "SOMATIC", "NO_HANDS" ],
-    "extra_effects": [
-      { "id": "arcana_aftermath_brief_cold_ward", "hit_self": true },
-      { "id": "arcana_aftermath_elemental_coldness", "hit_self": false, "max_level": 5 },
-      { "id": "arcana_aftermath_elemental_field_effect", "hit_self": false, "max_level": 5 }
-    ],
-    "effect": "attack",
-    "shape": "blast",
-    "effect_str": "heat_ward_true_blood_magic",
-    "difficulty": 50,
-    "skill": "magic",
-    "max_level": 5,
-    "base_casting_time": 180,
-    "final_casting_time": 90,
-    "casting_time_increment": -18,
-    "base_energy_cost": 24,
-    "final_energy_cost": 12,
-    "energy_increment": -2.4,
-    "min_duration": 30000,
-    "max_duration": 150000,
-    "duration_increment": 24000,
-    "spell_class": "ARCANA_BLOOD_MAGIC",
-    "magic_type": "arcana_blood_magic"
-  },
-  {
     "id": "arcana_blood_magic_corrupted_flesh",
     "type": "SPELL",
     "name": { "str": "Corrupted Flesh" },
@@ -632,6 +601,36 @@
       "u_die",
       { "npc_add_effect": "effect_arcana_blood_magic_killed", "duration": 300 }
     ]
+  },
+  {
+    "id": "arcana_blood_magic_sacrifice_healing",
+    "type": "SPELL",
+    "name": { "str": "Heartblood Revitalization" },
+    "description": "There is power in the blood and in the death of others, and that power can be used to restore life and health to the initiate.  After a successful blood sacrifice, you may use this ritual to heal wounds and cure any illnesses the target may be suffering from.  It may be used on yourself or an ally.",
+    "message": "The blood is the life.  %s!",
+    "valid_targets": [ "self", "ally" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "SILENT" ],
+    "effect": "attack",
+    "shape": "blast",
+    "condition": {
+      "or": [ { "u_has_effect": "effect_arcana_blood_magic_killed_human" }, { "u_has_effect": "effect_arcana_blood_magic_killed" } ]
+    },
+    "difficulty": 90,
+    "skill": "magic",
+    "max_level": 5,
+    "min_damage": { "math": [ "(u_spell_level('arcana_blood_magic_sacrifice_healing') * -3) + -4" ] },
+    "max_damage": { "math": [ "(u_spell_level('arcana_blood_magic_sacrifice_healing') * -6) + -10" ] },
+    "min_duration": 21600000,
+    "max_duration": 21600000,
+    "min_range": 3,
+    "max_range": 3,
+    "energy_source": "NONE",
+    "base_casting_time": 250,
+    "final_casting_time": 125,
+    "casting_time_increment": -25,
+    "base_energy_cost": 0,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   },
   {
     "id": "arcana_blood_magic_blood_teleport",

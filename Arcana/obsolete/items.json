@@ -279,7 +279,7 @@
   {
     "type": "MIGRATION",
     "//": "remove after 0.J",
-    "id": [ "blood_magic_spell_scroll_arcana_mark_revenant_blood" ],
+    "id": [ "blood_magic_spell_scroll_arcana_mark_revenant_blood", "blood_magic_spell_scroll_arcana_mark_elemental_sign" ],
     "replace": "manual_swimming"
   }
 ]

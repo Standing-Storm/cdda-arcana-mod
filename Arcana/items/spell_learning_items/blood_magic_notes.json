@@ -44,10 +44,10 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_elemental_sign",
-    "name": { "str": "Sanguine Grimoire: Sign of the Inferno", "str_pl": "Sanguine Grimoires: Sign of the Inferno" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual provides immunity against heat and flames.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_elemental_sign" ] }
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_sacrifice_healing",
+    "name": { "str": "Sanguine Grimoire: Heartblood Revitalization", "str_pl": "Sanguine Grimoires: Heartblood Revitalization" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to heal your own or another's wounds, after performing the proper sacrifice.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_sacrifice_healing" ] }
   },
   {
     "type": "ITEM",

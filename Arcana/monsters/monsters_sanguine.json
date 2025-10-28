@@ -1,69 +1,70 @@
 [
   {
     "id": "mon_feral_sanguinist",
-    "copy-from": "mon_feral_summoner",
+    "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened sanguinist" },
-    "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite its unsteady gait and bloodshot gaze.  Gripped by raving madness, they clutch a blood-stained dagger in one grimy hand.",
+    "description": "Clad in well-worn leather armor, this wretch is still alive and breathing despite their unsteady gait and bloodshot gaze.  Gripped by raving madness, they clutch a blood-stained dagger in one grimy hand.",
     "aggression": 10,
     "melee_skill": 6,
     "melee_dice_sides": 8,
     "armor": { "bash": 10, "cut": 10, "stab": 10, "bullet": 7 },
     "dodge": 2,
     "diff": 3,
-    "special_attacks": [
-      [ "PARROT_AT_DANGER", 5 ],
-      { "id": "feral_weapon_monster_knife", "accuracy": 3 },
-      {
-        "type": "monster_attack",
-        "attack_type": "melee",
-        "id": "mon_feral_sanguinist_enervation",
-        "accuracy": 10,
-        "cooldown": 15,
-        "move_cost": 80,
-        "dodgeable": false,
-        "blockable": false,
-        "uncanny_dodgeable": false,
-        "range": 3,
-        "effects_require_dmg": false,
-        "effects": [ { "id": "effect_arcana_blood_magic_drain_energy", "duration": [ 120, 360 ] } ],
-        "condition": {
-          "and": [ { "math": [ "u_hp('ALL')", ">", "60" ] }, { "not": { "npc_has_effect": "effect_arcana_blood_magic_drain_energy" } } ]
+    "extend": {
+      "flags": [ "ACIDPROOF" ],
+      "special_attacks": [
+        { "id": "feral_weapon_monster_knife", "accuracy": 3 },
+        {
+          "type": "monster_attack",
+          "attack_type": "melee",
+          "id": "mon_feral_sanguinist_enervation",
+          "accuracy": 10,
+          "cooldown": 15,
+          "move_cost": 80,
+          "dodgeable": false,
+          "blockable": false,
+          "uncanny_dodgeable": false,
+          "range": 3,
+          "effects_require_dmg": false,
+          "effects": [ { "id": "effect_arcana_blood_magic_drain_energy", "duration": [ 120, 360 ] } ],
+          "condition": {
+            "and": [ { "math": [ "u_hp('ALL')", ">", "60" ] }, { "not": { "npc_has_effect": "effect_arcana_blood_magic_drain_energy" } } ]
+          },
+          "eoc": [ "EOC_FERAL_SANGUINIST_BLOOD_MAGIC_DAMAGE" ],
+          "hit_dmg_u": "%1$s's slashes their flesh and the air between you turns faintly crimson!",
+          "hit_dmg_npc": "%1$s's slashes their flesh and the air between them and <npcname> turns faintly crimson!",
+          "miss_msg_u": "%1$s's slashes their flesh and the air between you turns faintly crimson!",
+          "miss_msg_npc": "%1$s's slashes their flesh and the air between them and <npcname> turns faintly crimson!",
+          "no_dmg_msg_u": "%1$s's slashes their flesh and the air between you turns faintly crimson!",
+          "no_dmg_msg_npc": "%1$s's slashes their flesh and the air between them and <npcname> turns faintly crimson!"
         },
-        "eoc": [ "EOC_FERAL_SANGUINIST_BLOOD_MAGIC_DAMAGE" ],
-        "hit_dmg_u": "%1$s's slashes their flesh and the air between you turns faintly crimson!",
-        "hit_dmg_npc": "%1$s's slashes their flesh and the air between them and <npcname> turns faintly crimson!",
-        "miss_msg_u": "%1$s's slashes their flesh and the air between you turns faintly crimson!",
-        "miss_msg_npc": "%1$s's slashes their flesh and the air between them and <npcname> turns faintly crimson!",
-        "no_dmg_msg_u": "%1$s's slashes their flesh and the air between you turns faintly crimson!",
-        "no_dmg_msg_npc": "%1$s's slashes their flesh and the air between them and <npcname> turns faintly crimson!"
-      },
-      {
-        "type": "monster_attack",
-        "attack_type": "melee",
-        "id": "mon_feral_sanguinist_corrupted_flesh",
-        "accuracy": 10,
-        "cooldown": 25,
-        "move_cost": 80,
-        "dodgeable": false,
-        "blockable": false,
-        "uncanny_dodgeable": false,
-        "range": 3,
-        "effects_require_dmg": false,
-        "effects": [ { "id": "effect_arcana_blood_magic_corrupted_flesh", "duration": [ 25200, 25200 ] } ],
-        "condition": { "math": [ "u_hp('ALL')", ">", "60" ] },
-        "eoc": [ "EOC_FERAL_SANGUINIST_BLOOD_MAGIC_DAMAGE" ],
-        "hit_dmg_u": "%1$s's slashes their flesh and flings the blood at you!",
-        "hit_dmg_npc": "%1$s's slashes their flesh and flings the blood at <npcname>!",
-        "miss_msg_u": "%1$s's slashes their flesh and flings the blood at you!",
-        "miss_msg_npc": "%1$s's slashes their flesh and flings the blood at <npcname>!",
-        "no_dmg_msg_u": "%1$s's slashes their flesh and flings the blood at you!",
-        "no_dmg_msg_npc": "%1$s's slashes their flesh and flings the blood at <npcname>!"
-      }
-    ],
+        {
+          "type": "monster_attack",
+          "attack_type": "melee",
+          "id": "mon_feral_sanguinist_corrupted_flesh",
+          "accuracy": 10,
+          "cooldown": 25,
+          "move_cost": 80,
+          "dodgeable": false,
+          "blockable": false,
+          "uncanny_dodgeable": false,
+          "range": 3,
+          "effects_require_dmg": false,
+          "effects": [ { "id": "effect_arcana_blood_magic_corrupted_flesh", "duration": [ 25200, 25200 ] } ],
+          "condition": { "math": [ "u_hp('ALL')", ">", "60" ] },
+          "eoc": [ "EOC_FERAL_SANGUINIST_BLOOD_MAGIC_DAMAGE" ],
+          "hit_dmg_u": "%1$s's slashes their flesh and flings the blood at you!",
+          "hit_dmg_npc": "%1$s's slashes their flesh and flings the blood at <npcname>!",
+          "miss_msg_u": "%1$s's slashes their flesh and flings the blood at you!",
+          "miss_msg_npc": "%1$s's slashes their flesh and flings the blood at <npcname>!",
+          "no_dmg_msg_u": "%1$s's slashes their flesh and flings the blood at you!",
+          "no_dmg_msg_npc": "%1$s's slashes their flesh and flings the blood at <npcname>!"
+        }
+      ]
+    },
     "death_drops": "mon_feral_sanguinist_death_drops",
-    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ],
-    "extend": { "flags": [ "ACIDPROOF" ] }
+    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ]
   },
   {
     "type": "effect_on_condition",
