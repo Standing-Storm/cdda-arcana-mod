@@ -1,44 +1,13 @@
 [
   {
-    "result": "summon_flaming_eye",
     "type": "recipe",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_OTHER",
-    "skill_used": "magic",
-    "difficulty": 10,
-    "time": "1 s",
-    "activity_level": "NO_EXERCISE",
-    "qualities": [ { "id": "CUT", "level": 1 } ],
-    "components": [ [ [ "paper", 1 ] ] ],
-    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN", "SECRET" ]
+    "result": "summon_flaming_eye",
+    "obsolete": true
   },
   {
-    "result": "somen_clairvoyance_xl",
     "type": "recipe",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_ARMOR",
-    "skill_used": "magic",
-    "difficulty": 7,
-    "skills_required": [ "tailor", 4 ],
-    "time": "20 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [  ],
-    "using": [ [ "filament", 5 ] ],
-    "qualities": [
-      { "id": "HAMMER", "level": 2 },
-      { "id": "CUT", "level": 1 },
-      { "id": "SEW", "level": 1 },
-      { "id": "ANVIL", "level": 1 }
-    ],
-    "tools": [ [ [ "book_hexenhammer", -1 ], [ "book_syncretism", -1 ] ] ],
-    "proficiencies": [ { "proficiency": "prof_metalworking" }, { "proficiency": "prof_arcana_thaumatology" } ],
-    "components": [
-      [ [ "scrap", 5 ], [ "scrap_bronze", 1 ] ],
-      [ [ "leather", 1 ], [ "fur", 1 ] ],
-      [ [ "copper", 15 ], [ "silver_small", 15 ], [ "gold_small", 15 ], [ "CF_golden_scale", 3 ] ],
-      [ [ "essence_dull", 30 ] ]
-    ],
-    "flags": [ "SECRET" ]
+    "result": "somen_clairvoyance_xl",
+    "obsolete": true
   },
   {
     "result": "somen_clairvoyance_xl",
@@ -264,96 +233,22 @@
   {
     "type": "recipe",
     "result": "arrow_arcana_unpowered",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_AMMO",
-    "skill_used": "magic",
-    "skills_required": [ [ "fabrication", 4 ], [ "archery", 1 ], [ "survival", 1 ] ],
-    "difficulty": 1,
-    "time": "20 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [  ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [
-      [ [ "stick", 2 ], [ "broom", 2 ], [ "2x4", 2 ], [ "bee_sting", 2 ] ],
-      [
-        [ "bone_twisted", 1 ],
-        [ "gracken_knuckles", 1 ],
-        [ "graboid_fang", 1 ],
-        [ "monster_fang", 1 ],
-        [ "iron_thorn", 1 ],
-        [ "dermatik_sting", 1 ],
-        [ "vortex_shard", 1 ],
-        [ "blob_gem", 1 ],
-        [ "monster_tear", 1 ],
-        [ "shadow_gem", 1 ]
-      ]
-    ],
-    "flags": [ "SECRET" ]
+    "obsolete": true
   },
   {
     "type": "recipe",
     "result": "bolt_arcana_unpowered",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_AMMO",
-    "skill_used": "magic",
-    "skills_required": [ [ "fabrication", 4 ], [ "survival", 1 ] ],
-    "difficulty": 1,
-    "time": "20 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [  ],
-    "qualities": [ { "id": "CUT", "level": 1 }, { "id": "HAMMER", "level": 1 } ],
-    "components": [
-      [ [ "stick", 2 ], [ "broom", 2 ], [ "2x4", 2 ], [ "bee_sting", 2 ] ],
-      [
-        [ "bone_twisted", 1 ],
-        [ "gracken_knuckles", 1 ],
-        [ "graboid_fang", 1 ],
-        [ "monster_fang", 1 ],
-        [ "iron_thorn", 1 ],
-        [ "dermatik_sting", 1 ],
-        [ "vortex_shard", 1 ],
-        [ "blob_gem", 1 ],
-        [ "monster_tear", 1 ],
-        [ "shadow_gem", 1 ]
-      ]
-    ],
-    "flags": [ "SECRET" ]
+    "obsolete": true
   },
   {
+    "type": "recipe",
     "result": "totem_acidspray",
-    "//": "Casts Caustic Eruption",
-    "type": "recipe",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_SPELLS",
-    "skill_used": "magic",
-    "//2": "Requires purification, carving, and polishing.",
-    "skills_required": [ [ "fabrication", 4 ] ],
-    "difficulty": 3,
-    "time": "1 h 30 m",
-    "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [  ],
-    "using": [ [ "arcana_polishing_standard", 1 ], [ "arcana_purification_standard", 1 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 } ],
-    "proficiencies": [ { "proficiency": "prof_carving" }, { "proficiency": "prof_arcana_purification" } ],
-    "components": [ [ [ "wyrmskin_piece", 1 ] ], [ [ "essence_blood", 2 ], [ "essence_dull", 20 ] ] ],
-    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "SECRET" ]
+    "obsolete": true
   },
   {
-    "result": "scroll_spell_acidspray",
     "type": "recipe",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_SPELLS",
-    "skill_used": "magic",
-    "difficulty": 6,
-    "time": "8 h",
-    "activity_level": "NO_EXERCISE",
-    "book_learn": [  ],
-    "using": [ [ "arcana_scrollwriting_standard", 1 ], [ "arcana_essence_any", 2 ] ],
-    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology", "required": true }, { "proficiency": "prof_arcana_spellwriting" } ],
-    "components": [ [ [ "totem_acidspray", 1 ] ] ],
-    "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
-    "flags": [ "BLIND_HARD", "SECRET" ]
+    "result": "scroll_spell_acidspray",
+    "obsolete": true
   },
   {
     "result": "armor_qt_lightplate",
@@ -584,35 +479,9 @@
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
-    "result": "veilblade",
     "type": "recipe",
-    "category": "CC_ARCANA",
-    "subcategory": "CSC_ARCANA_WEAPON",
-    "//": "References an idea had by Noct, with some differences.",
-    "skill_used": "magic",
-    "difficulty": 4,
-    "time": "30 m",
-    "activity_level": "NO_EXERCISE",
-    "book_learn": [  ],
-    "using": [ [ "arcana_purification_standard", 1 ] ],
-    "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [
-      [ [ "book_sacrifice", -1 ] ],
-      [ [ "book_bloodmagic", -1 ] ],
-      [
-        [ "holy_symbol", -1 ],
-        [ "holy_symbol_wood", -1 ],
-        [ "charm_bone", -1 ],
-        [ "small_relic", -1 ],
-        [ "amulet_exotic", -1 ],
-        [ "offering_chalice", -1 ],
-        [ "thunder_sigil", -1 ],
-        [ "hexenhammer", -1 ],
-        [ "sun_sword", -1 ]
-      ]
-    ],
-    "components": [ [ [ "stormbringer", 1 ] ], [ [ "salt", 100 ] ], [ [ "essence_blood", 12 ] ] ],
-    "flags": [ "SECRET" ]
+    "result": "veilblade",
+    "obsolete": true
   },
   {
     "result": "chem_black_powder",
