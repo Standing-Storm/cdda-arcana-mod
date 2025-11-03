@@ -1,25 +1,14 @@
 [
   {
-    "type": "region_overlay",
-    "id": "default_arcana",
-    "apply_to_tags": [ "all" ],
-    "cities": "default_arcana",
-    "forest_composition": "default_arcana"
-  },
-  {
     "type": "region_settings_city",
-    "id": "default_arcana",
-    "houses": [ [ "house_arcana", 50 ], [ "house_arcana_2", 35 ] ]
-  },
-  {
-    "type": "region_settings_forest_mapgen",
-    "id": "default_arcana",
-    "biomes": [ "biome_forest_thick_default_arcana" ]
+    "id": "default",
+    "copy-from": "default",
+    "extend": { "shops": [ [ "house_arcana", 50 ], [ "house_arcana_2", 35 ] ] }
   },
   {
     "type": "forest_biome_mapgen",
-    "id": "biome_forest_thick_default_arcana",
-    "overlay_id": "biome_forest_thick_default",
-    "terrains": [ "arcana_grove_lodge_ground1", "arcana_grove_lodge_ground2" ]
+    "id": "biome_forest_thick_default",
+    "copy-from": "biome_forest_thick_default",
+    "extend": { "terrains": [ "arcana_grove_lodge_ground1", "arcana_grove_lodge_ground2" ] }
   }
 ]
