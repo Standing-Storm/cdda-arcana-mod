@@ -1,44 +1,14 @@
 [
   {
-    "type": "effect_type",
-    "id": "effect_water_talisman_aftermath",
-    "name": [ "Talismanic Enervation" ],
-    "desc": [ "You are feeling fatigued as part of the aftermath of using the water talisman." ],
-    "remove_message": "The aftereffects of using the water talisman fades away.",
-    "rating": "bad",
-    "max_intensity": 24,
-    "int_add_val": 1,
-    "base_mods": { "sleepiness_min": [ 1 ], "sleepiness_tick": [ 125 ] },
-    "scaling_mods": { "sleepiness_tick": [ -2 ] },
-    "enchantments": [
-      {
-        "condition": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') >= 3" ] },
-        "values": [ { "value": "DODGE_CHANCE", "add": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') / -3" ] } } ]
-      },
-      {
-        "values": [ { "value": "METABOLISM", "multiply": { "math": [ "u_effect_intensity('effect_water_talisman_aftermath') * 0.1" ] } } ]
-      }
-    ]
+    "type": "effect_migration",
+    "from": "effect_water_talisman_aftermath"
   },
   {
-    "type": "effect_type",
-    "id": "effect_arcana_temporal_aura",
-    "name": [ "The Otherworldly Guise" ],
-    "desc": [
-      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to mundane creatures."
-    ],
-    "remove_message": "Your otherworldly guise drops.",
-    "decay_messages": [ [ "Your otherworldly guise is beginning to fade.", "bad" ] ],
-    "max_duration": "120 m",
-    "max_intensity": 120,
-    "int_dur_factor": "1 m",
-    "enchantments": [ { "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] } ]
+    "type": "effect_migration",
+    "from": "effect_arcana_temporal_aura"
   },
   {
-    "type": "effect_type",
-    "id": "arcane_healing_staunch",
-    "removes_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
-    "max_duration": "1 s",
-    "base_mods": { "pain_min": [ -5 ] }
+    "type": "effect_migration",
+    "from": "arcane_healing_staunch"
   }
 ]
