@@ -65,5 +65,13 @@
     "species": [ "PLANT" ],
     "default_faction": "triffid",
     "aggression": 60
+  },
+  {
+    "id": "mon_shadow_archon",
+    "copy-from": "mon_shadow_summoned",
+    "looks_like": "mon_shadow_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned shadow" },
+    "default_faction": "archon"
   }
 ]

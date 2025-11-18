@@ -431,14 +431,6 @@
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ], "special_attacks": [ [ "PARROT", 900 ] ] }
   },
   {
-    "id": "mon_shadow_archon",
-    "copy-from": "mon_shadow_summoned",
-    "looks_like": "mon_shadow_summoned",
-    "type": "MONSTER",
-    "name": { "str": "summoned shadow" },
-    "default_faction": "archon"
-  },
-  {
     "id": "mon_shadow_summoned_fake",
     "looks_like": "mon_shadow_summoned",
     "type": "MONSTER",
