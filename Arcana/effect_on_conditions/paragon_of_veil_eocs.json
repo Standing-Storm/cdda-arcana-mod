@@ -20,5 +20,44 @@
       ]
     },
     "effect": [ { "math": [ "u_val('mana') += 100" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_PARAGON_HFBTV_IS_NOT_A_FAN_OF_SUMMONING",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        { "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "THRESH_VEIL" ] },
+        { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] }
+      ]
+    },
+    "effect": [
+      {
+        "if": { "u_has_trait": "THRESH_VEIL" },
+        "then": [
+          {
+            "u_message": "As you complete the ritual you feel a moment of overwhelming dread.  He From Beyond the Veil is very displeased that you have brought forth more interlopers into this world.",
+            "type": "bad"
+          },
+          {
+            "u_add_effect": "effect_veil_paragon_summoning_displeasure",
+            "intensity": { "math": [ "u_effect_intensity('effect_veil_paragon_summoning_displeasure') + 3 + rand(6)" ] },
+            "duration": { "math": [ "108000 + rand(432000)" ] }
+          }
+        ],
+        "else": [
+          {
+            "u_message": "As you complete the ritual you feel the hair rise on the back of your neck.  He From Beyond the Veil is not pleased that you have brought forth more interlopers into this world.",
+            "type": "bad"
+          },
+          {
+            "u_add_effect": "effect_veil_paragon_summoning_displeasure",
+            "intensity": { "math": [ "u_effect_intensity('effect_veil_paragon_summoning_displeasure') + 1 + rand(2)" ] },
+            "duration": { "math": [ "21600 + rand(86400)" ] }
+          }
+        ]
+      }
+    ]
   }
 ]

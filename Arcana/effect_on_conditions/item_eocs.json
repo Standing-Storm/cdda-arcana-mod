@@ -12,6 +12,7 @@
         "true_eocs": [
           {
             "id": "EOC_ARCANE_BLESSING_WIELD_VEILBLADE_RESULT_TRUE",
+            "condition": { "not": { "u_has_effect": "effect_veil_paragon_summoning_displeasure" } },
             "effect": [ { "u_add_effect": "effect_arcana_wielding_veilblade", "duration": "PERMANENT" } ]
           }
         ],

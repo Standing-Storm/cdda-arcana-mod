@@ -12,6 +12,7 @@
 - Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Magic Signs (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed). Blood magic has no chance to fail--the HP cost is enough. Summoning also has no chance to fail but there *is* a chance you fail to control the summon when it arrives.
 - Summoning is now its own magic type! You can play just a summoner if you want...but remember that summons can be difficult to control.  Do not call up what you can not put down. 
   - Summoning is now learnable! Learning summoning from first principles, by summoning random creatures until you get the hang of it, is perilous, however--take appropriate precautions. 
+- He From Beyond the Veil enforces his tenets--using summoning magic if you have sworn yourself to HFBTV will incur his displeasure, making using Arcane Blessings harder. This effect is greatly increased if you're post-threshold.
 - Healing is harder to come by, and magical healing can often have undesirable side effects if used too freely.
 - Reduced drop rates for magic books. Ferals generally don't have them now, you'll have to search more esoteric places
 - Writing/rewriting scrolls now takes ink infused with magical energy. Craft this ink or find it!
