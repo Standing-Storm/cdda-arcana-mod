@@ -425,15 +425,18 @@
     "name": { "str": "summoned shadow" },
     "categories": [ "CLASSIC" ],
     "species": [ "SUMMONED_CREATURE" ],
-    "melee_damage": [ { "damage_type": "cold", "amount": 4 } ],
-    "dodge": 2,
-    "armor": { "cut": 3, "stab": 8, "bullet": 8 },
     "path_settings": { "max_dist": 10, "avoid_traps": true, "avoid_dangerous_fields": true },
-    "regenerates_in_dark": true,
     "death_drops": {  },
     "death_function": { "message": "The %s's body melts away.", "corpse_type": "NO_CORPSE" },
-    "special_attacks": [ [ "PARROT", 900 ] ],
-    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ] }
+    "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ], "special_attacks": [ [ "PARROT", 900 ] ] }
+  },
+  {
+    "id": "mon_shadow_archon",
+    "copy-from": "mon_shadow_summoned",
+    "looks_like": "mon_shadow_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned shadow" },
+    "default_faction": "archon"
   },
   {
     "id": "mon_shadow_summoned_fake",

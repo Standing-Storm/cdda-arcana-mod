@@ -368,5 +368,23 @@
     "min_duration": 12000,
     "max_duration": 36000,
     "ignored_monster_species": [ "ROBOT", "ROBOT_FLYING" ]
+  },
+  {
+    "id": "seraphic_summon_shadow",
+    "type": "SPELL",
+    "name": { "str": "Seraphic Summon Shadow", "//~": "NO_I18N" },
+    "description": { "str": "Summons hostile shadows.", "//~": "NO_I18N" },
+    "effect": "summon",
+    "effect_str": "mon_shadow_archon",
+    "message": "",
+    "shape": "blast",
+    "valid_targets": [ "self", "ground" ],
+    "flags": [ "SILENT", "NO_EXPLOSION_SFX", "HOSTILE_SUMMON" ],
+    "min_damage": 1,
+    "max_damage": 1,
+    "min_aoe": 2,
+    "max_aoe": 2,
+    "min_duration": 30000,
+    "max_duration": 30000
   }
 ]

@@ -341,7 +341,14 @@
         "monster_message": "",
         "cooldown": 50
       },
-      [ "GRENADIER_ELITE", 20 ],
+      {
+        "type": "spell",
+        "id": "seraphic_summon_shadow_spell",
+        "spell_data": { "id": "seraphic_summon_shadow", "hit_self": true },
+        "monster_message": "",
+        "cooldown": 20,
+        "allow_no_target": true
+      },
       [ "PARROT", 40 ],
       {
         "type": "gun",
