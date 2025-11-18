@@ -699,7 +699,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 120 ] ], [ [ "essence_dull", 120 ] ] ]
+    "components": [ [ [ "scrap_leather", 120 ] ], [ [ "essence_dull", 120 ] ] ]
   },
   {
     "result": "gauntlets_necro_xl",
@@ -709,7 +709,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "scrap", 80 ] ], [ [ "essence_dull", 120 ] ] ]
+    "components": [ [ [ "scrap_leather", 200 ] ], [ [ "essence_dull", 120 ] ] ]
   },
   {
     "result": "thunder_sigil",
