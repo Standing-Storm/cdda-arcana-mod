@@ -243,6 +243,19 @@
     ]
   },
   {
+    "id": "GROUP_ARCANA_ITEM_PESTILENCE",
+    "type": "monstergroup",
+    "monsters": [
+      { "monster": "mon_black_rat", "weight": 10, "pack_size": [ 3, 10 ] },
+      { "monster": "mon_rattlesnake", "weight": 10, "pack_size": [ 2, 6 ] },
+      { "monster": "mon_fly", "weight": 4, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_moth_fly", "weight": 4, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_wasp_small", "weight": 4, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_tunnel_rat", "weight": 3, "pack_size": [ 2, 4 ] },
+      { "monster": "mon_centipede_giant", "weight": 1 }
+    ]
+  },
+  {
     "id": "GROUP_ARCANA_SUMMONING_PRACTICE",
     "type": "monstergroup",
     "monsters": [
