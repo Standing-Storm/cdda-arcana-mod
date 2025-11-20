@@ -83,7 +83,7 @@
       "ammo_scale": 0
     },
     "relative": { "weight": "3020g" },
-    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "RELIC_PINK" ] }
   },
   {
     "id": "gilded_aegis_on",
@@ -244,7 +244,7 @@
         "ench_effects": [ { "effect": "effect_arcana_wyrmskin_armor", "intensity": 1 } ]
       }
     ],
-    "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "STURDY" ]
+    "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "STURDY", "RELIC_PINK" ]
   },
   {
     "id": "revenant_crown",
@@ -485,7 +485,7 @@
     "price": "600 USD",
     "price_postapoc": "50 USD",
     "material": [ "leather", "silver" ],
-    "warmth": 8,
+    "warmth": 15,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 8 } } ],
     "charges_per_use": 1,
     "tool_ammo": "essence_type",
