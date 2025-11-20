@@ -471,7 +471,7 @@
       }
     ],
     "relative": { "weight": "210g" },
-    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "RELIC_PINK" ] }
   },
   {
     "id": "gauntlets_necro_xl",
@@ -519,7 +519,7 @@
       }
     ],
     "relative": { "weight": "120g" },
-    "extend": { "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE", "OUTER" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "OVERSIZE" ] }
   },
   {
     "id": "cyclopean_mirror",
