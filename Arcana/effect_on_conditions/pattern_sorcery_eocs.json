@@ -1,0 +1,41 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_PATTERN_SORCERY_GRANT_PROFICIENCIES",
+    "eoc_type": "EVENT",
+    "required_event": "player_levels_spell",
+    "condition": { "u_has_trait": "PATTERN_SORCERY" },
+    "effect": [
+      {
+        "if": {
+          "and": [
+            { "not": { "u_has_proficiency": "prof_arcana_pattern_sorcery" } },
+            { "math": [ "u_spell_level_sum('school': 'PATTERN_SORCERY') >= 30" ] }
+          ]
+        },
+        "then": [
+          { "math": [ "u_proficiency('prof_arcana_pattern_sorcery', 'format': 'percent', 'direct': true) += 100" ] },
+          {
+            "u_message": "Your studies of pattern sorcery have gone very well, and you are starting to understand the principles behind it.  You gain the Pattern Sorcery Initiate proficiency.",
+            "type": "good"
+          }
+        ]
+      },
+      {
+        "if": {
+          "and": [
+            { "not": { "u_has_proficiency": "prof_arcana_pattern_sorcery_master" } },
+            { "math": [ "u_spell_level_sum('school': 'PATTERN_SORCERY') >= 100" ] }
+          ]
+        },
+        "then": [
+          { "math": [ "u_proficiency('prof_arcana_pattern_sorcery_master', 'format': 'percent', 'direct': true) += 100" ] },
+          {
+            "u_message": "Your studies of pattern sorcery have taken you as far as one of the pre-Cataclysm masters, and the secrets of the occult are laid bare to you.  You gain the Pattern Sorcery Adept proficiency.",
+            "type": "good"
+          }
+        ]
+      }
+    ]
+  }
+]

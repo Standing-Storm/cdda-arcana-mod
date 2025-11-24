@@ -17,7 +17,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_phase_shield')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "11" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_phase_shield')", "=", "1" ] },
                 {
@@ -69,7 +69,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_earthweaving')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_earthweaving')", "=", "1" ] },
                 {
@@ -121,7 +121,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "11" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "=", "1" ] },
                 {
@@ -173,7 +173,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_consecrate')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_consecrate')", "=", "1" ] },
                 {
@@ -225,7 +225,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_cold_ward')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_cold_ward')", "=", "1" ] },
                 {
@@ -274,7 +274,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "12" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "12" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "=", "1" ] },
                 {
@@ -326,7 +326,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "11" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "=", "1" ] },
                 {
@@ -378,7 +378,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "=", "1" ] },
                 {
@@ -430,7 +430,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_eclipse')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "13" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "13" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_eclipse')", "=", "1" ] },
                 {
@@ -484,7 +484,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_agility')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_agility')", "=", "1" ] },
                 {
@@ -534,7 +534,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "=", "1" ] },
                 {
@@ -584,7 +584,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "=", "1" ] },
                 {
@@ -637,7 +637,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "=", "1" ] },
                 {
@@ -690,7 +690,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_iron_skin')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_iron_skin')", "=", "1" ] },
                 {
@@ -743,7 +743,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_free_action')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_free_action')", "=", "1" ] },
                 {
@@ -796,7 +796,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding')", "=", "1" ] },
                 {
@@ -849,7 +849,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_heat_ward')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_heat_ward')", "=", "1" ] },
                 {
@@ -902,7 +902,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_insight')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_insight')", "=", "1" ] },
                 {
@@ -955,7 +955,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "=", "1" ] },
                 {
@@ -1008,7 +1008,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_might')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_might')", "=", "1" ] },
                 {
@@ -1061,7 +1061,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_overgrowth')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_overgrowth')", "=", "1" ] },
                 {
@@ -1115,7 +1115,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "10" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "=", "1" ] },
                 {
@@ -1168,7 +1168,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_shockstorm')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "6" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "6" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_shockstorm')", "=", "1" ] },
                 {
@@ -1221,7 +1221,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "9" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "=", "1" ] },
                 {
@@ -1274,7 +1274,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_conjure_flame')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_conjure_flame')", "=", "1" ] },
                 {
@@ -1327,7 +1327,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_translocation')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "7" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_translocation')", "=", "1" ] },
                 {
@@ -1380,7 +1380,7 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_underwater_travel')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "u_skill('magic') + ( rng(-5,5) + rng(-5,5) )", ">=", "8" ] },
+              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_underwater_travel')", "=", "1" ] },
                 {

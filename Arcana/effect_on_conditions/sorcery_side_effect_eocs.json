@@ -23,42 +23,40 @@
     "effect": [
       { "math": [ "u_spell_weariness_cost = 0" ] },
       {
-        "if": {
-          "or": [
-            { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
-            { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] }
+        "if": { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] },
+        "then": {
+          "math": [
+            "u_spell_weariness_cost",
+            "=",
+            "(12 - u_effect_intensity('effect_arcana_summoning_bonus_chance') > -1 ? 6 : 1 ) * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5)"
           ]
         },
-        "then": {
-          "if": {
-            "and": [
-              { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] },
-              { "u_has_effect": "effect_arcana_summoning_bonus_chance" }
+        "else": {
+          "if": { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
+          "then": {
+            "math": [
+              "u_spell_weariness_cost",
+              "=",
+              "( (12 - u_has_proficiency('prof_arcana_pattern_sorcery') - (u_has_proficiency('prof_arcana_pattern_sorcery_master') * 2) ) * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )"
             ]
           },
-          "then": {
-            "math": [ "u_spell_weariness_cost", "=", "(6 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
-          },
           "else": {
-            "math": [ "u_spell_weariness_cost", "=", "(12 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
-          }
-        },
-        "else": {
-          "if": { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
-          "then": {
-            "math": [ "u_spell_weariness_cost", "=", "(6 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
-          },
-          "else": {
-            "if": {
-              "and": [
-                { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
-                {
-                  "not": { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
-                }
-              ]
-            },
+            "if": { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
             "then": {
-              "math": [ "u_spell_weariness_cost", "=", "(3 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+              "math": [ "u_spell_weariness_cost", "=", "(6 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+            },
+            "else": {
+              "if": {
+                "and": [
+                  { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
+                  {
+                    "not": { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
+                  }
+                ]
+              },
+              "then": {
+                "math": [ "u_spell_weariness_cost", "=", "(3 * ( _difficulty * 0.4 ) * max( ( ( 30 - u_spell_level(_spell) ) / 30 ), 0.5) )" ]
+              }
             }
           }
         }

@@ -96,5 +96,23 @@
     "default_time_multiplier": 1.1,
     "default_skill_penalty": 1,
     "time_to_learn": "16 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_pattern_sorcery",
+    "name": { "str": "Pattern Sorcery Initiate" },
+    "category": "prof_arcana",
+    "description": "You have learned enough of pattern sorcery to make learning it slightly easier and using it slightly less tiring.",
+    "can_learn": true,
+    "time_to_learn": "1 h"
+  },
+  {
+    "type": "proficiency",
+    "id": "prof_arcana_pattern_sorcery_master",
+    "name": { "str": "Pattern Sorcery Adept" },
+    "category": "prof_arcana",
+    "description": "You have learned much of pattern sorcery, and have an easier time learning and using it.",
+    "can_learn": true,
+    "time_to_learn": "1 h"
   }
 ]
