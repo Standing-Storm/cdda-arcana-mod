@@ -197,6 +197,7 @@
         { "item": "note_chalice_hint", "x": 19, "y": 8 },
         { "item": "arcanemap", "x": 19, "y": 8 }
       ],
+      "place_monster": [ { "monster": "mon_feral_magehunter", "x": 15, "y": 10, "chance": 15 } ],
       "place_nested": [ { "chunks": [ [ "null", 2 ], [ "cabin_cellar_stairs", 1 ] ], "x": 12, "y": 7 } ]
     }
   },
@@ -243,6 +244,7 @@
         { "item": "note_flame_hint", "x": 15, "y": 6 },
         { "item": "arcanemap", "x": 15, "y": 6 }
       ],
+      "place_monster": [ { "monster": "mon_feral_swamp_witch", "x": 6, "y": 11, "chance": 30 } ],
       "place_nested": [ { "chunks": [ [ "null", 2 ], [ "cabin_cellar_stairs", 1 ] ], "x": 3, "y": 9 } ]
     }
   },
@@ -290,6 +292,7 @@
         { "item": "note_sanguine_hint", "x": 6, "y": 10 },
         { "item": "arcanemap", "x": 6, "y": 10 }
       ],
+      "place_monster": [ { "monster": "mon_feral_sanguinist", "x": 12, "y": 9, "chance": 30 } ],
       "place_nested": [ { "chunks": [ [ "null", 2 ], [ "cabin_cellar_stairs", 1 ] ], "x": 6, "y": 6 } ]
     }
   },
