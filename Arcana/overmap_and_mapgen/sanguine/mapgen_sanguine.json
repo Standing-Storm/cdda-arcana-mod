@@ -2,7 +2,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "island_temple_roof" ],
-    "weight": 250,
     "object": {
       "fill_ter": "t_open_air",
       "rows": [
@@ -37,7 +36,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "island_temple_1" ],
-    "weight": 250,
     "object": {
       "rows": [
         ",,,,,,,,,,,,,,,,,,,~~~~,",
@@ -73,10 +71,45 @@
   },
   {
     "type": "mapgen",
-    "om_terrain": [ "island_temple_b_1" ],
-    "weight": 250,
+    "om_terrain": [
+      [ "island_temple_basement_1", "island_temple_basement_2" ],
+      [ "island_temple_basement_3", "island_temple_basement_4" ]
+    ],
     "object": {
       "fill_ter": "t_soil",
+      "rows": [
+        ",,,,,,,,,,,,,,,,,,,~~~~,",
+        ",,,,,,,,,~~~~~~~~~~~~~~g",
+        ",,,,,,,~~~~~~~~~~~~~;;;g",
+        ",,,,,~~~~~;;;;;;;;;;;;;g",
+        ",,,,~~~;;;;;;;;;;;;;;;;g",
+        ",,,~~~;;;;;;;;;;;;;;;;;g",
+        ",,~~~;;;;;;;;;;;;;;;;;;g",
+        ",,~~;;;;;;;;;;;;;;;;;;;g",
+        ",,~~;;;;;;;;;;;;;;;;;;;g",
+        ",~~~;;;;;;;;;;;;;;;;;;;g",
+        ",~~;;;;;;;;;;;;;;;;;;;;g",
+        ",~~;;;;;;;;;;;;;;;;;;;;g",
+        ",~~;;;;;;;;;;;;;;;;~~~~g",
+        ",~~;;;;;;;;;;;;;;;;~~~~,",
+        ",~~;;;;;;;;;;;;;;;~~~,,,",
+        ",~~;;;;;;;;;;;;;;;~~~,|-",
+        ",~~;;;;;;;;;;;;;~~~~,,+_",
+        ",~~;;;;;;;;;;;;;~~~~,||_",
+        ",~~;;;;;;;;;;;~~~~,,,|d_",
+        ",~~;;;;;;;;;~~~~~~,|-|h_",
+        "~~~;;;;;;;;;~~~~,,,|____",
+        "~~;;;;;;;;;;~~,,,|-|_|-x",
+        "~~;;;;;;;;;;~~,|+|dh_|__",
+        ",gggggggggggg,,|_____x_>"
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "island_temple_subbasement_1" ],
+    "object": {
+      "fill_ter": "t_rock",
       "rows": [
         "                    ====",
         "                   ==...",
@@ -112,18 +145,14 @@
         { "group": "sanguine_cult_books", "x": [ 11, 12 ], "y": [ 8, 12 ], "chance": 50, "repeat": 10 },
         { "group": "sanguine_cult_spells", "x": [ 11, 12 ], "y": [ 8, 12 ], "chance": 10 }
       ],
-      "place_monster": [
-        { "group": "GROUP_SANGUINE_BASEMENT", "x": [ 11, 18 ], "y": [ 11, 18 ], "repeat": [ 3, 5 ] },
-        { "monster": "mon_dracolich", "x": 23, "y": 4 }
-      ]
+      "place_monster": [ { "group": "GROUP_SANGUINE_BASEMENT", "x": [ 11, 18 ], "y": [ 11, 18 ], "repeat": [ 3, 5 ] } ]
     }
   },
   {
     "type": "mapgen",
-    "om_terrain": [ "island_temple_b_2" ],
-    "weight": 250,
+    "om_terrain": [ "island_temple_subbasement_2" ],
     "object": {
-      "fill_ter": "t_soil",
+      "fill_ter": "t_rock",
       "rows": [
         "====                    ",
         "...==                   ",
@@ -135,7 +164,7 @@
         "+===   =...........=    ",
         "i=    ==...IgggI...==   ",
         ".=    =a...g~~~g.Z.8=   ",
-        "X======b...g~;~g...a=   ",
+        "X======b...g~.~g...a=   ",
         "......=a...g~~~g.K.[=   ",
         "g~~~~.==...IgggI...==   ",
         "g~~~~..X...........=    ",
@@ -151,7 +180,7 @@
         "<.X.....=.gg.=          "
       ],
       "palettes": [ "arcana_palette" ],
-      "terrain": { "g": "t_floor_blue" },
+      "terrain": { "g": "t_floor_blue", "~": "f_arcana_magic_circle" },
       "set": [ { "point": "trap", "id": "tr_portal", "x": [ 12, 14 ], "y": [ 9, 11 ] } ],
       "mapping": {
         "a": {
@@ -163,15 +192,17 @@
         },
         "b": { "items": { "item": "cult_sacrifice", "chance": 100 } }
       },
-      "place_monster": [ { "group": "GROUP_SANGUINE_BASEMENT", "x": [ 5, 12 ], "y": [ 11, 18 ], "repeat": [ 3, 5 ] } ]
+      "place_monster": [
+        { "group": "GROUP_SANGUINE_BASEMENT", "x": [ 5, 12 ], "y": [ 11, 18 ], "repeat": [ 3, 5 ] },
+        { "monster": "mon_dracolich", "x": 13, "y": 10 }
+      ]
     }
   },
   {
     "type": "mapgen",
-    "om_terrain": [ "island_temple_b_3" ],
-    "weight": 250,
+    "om_terrain": [ "island_temple_subbasement_3" ],
     "object": {
-      "fill_ter": "t_soil",
+      "fill_ter": "t_rock",
       "rows": [
         "          =.gg.=.....X.<",
         "          =.~~.=X=b..=..",
@@ -210,10 +241,9 @@
   },
   {
     "type": "mapgen",
-    "om_terrain": [ "island_temple_b_4" ],
-    "weight": 250,
+    "om_terrain": [ "island_temple_subbasement_4" ],
     "object": {
-      "fill_ter": "t_soil",
+      "fill_ter": "t_rock",
       "rows": [
         "<.X.....=.gg.=          ",
         "..=..b=X=.~~.=          ",
