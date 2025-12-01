@@ -374,7 +374,15 @@
         "******qq***qqqqq********"
       ],
       "palettes": [ "cabin_palette" ],
-      "terrain": { "[": "t_floor", "]": "t_floor", "6": "t_floor", "X": "t_door_boarded" },
+      "terrain": {
+        "G": "t_slide",
+        ">": "t_dock",
+        "b": "t_region_groundcover",
+        "[": "t_floor",
+        "]": "t_floor",
+        "6": "t_floor",
+        "X": "t_door_boarded"
+      },
       "furniture": { "[": "f_bookcase", "]": "f_counter", "6": "f_statue" },
       "items": { "[": { "item": "cleansing_flame_books_postapoc", "chance": 60, "repeat": 3 } },
       "place_loot": [
