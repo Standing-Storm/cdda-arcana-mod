@@ -211,7 +211,7 @@
     "price": "1500 USD",
     "price_postapoc": "75 USD",
     "to_hit": 2,
-    "melee_damage": { "bash": 10, "cut": 35 },
+    "melee_damage": { "bash": 6, "cut": 35 },
     "material": [ { "type": "qt_steel", "portion": 25 }, { "type": "gold" } ],
     "symbol": "/",
     "looks_like": "arming_sword",
@@ -256,7 +256,7 @@
         "ammo_scale": 0
       }
     ],
-    "melee_damage": { "bash": 10, "cut": 35, "heat": 6 },
+    "melee_damage": { "bash": 6, "cut": 35, "heat": 10 },
     "extend": { "flags": [ "FIRE", "CHARGEDIM", "FLAMING", "NONCONDUCTIVE", "SPAWN_ACTIVE" ] },
     "delete": { "flags": [ "SHEATH_SWORD" ] }
   },
