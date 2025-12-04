@@ -88,10 +88,10 @@
     "id": "gilded_aegis_on",
     "type": "ITEM",
     "name": { "str": "gilded aegis (on)", "str_pl": "gilded aegises (on)" },
-    "subtypes": [ "TOOL", "ARMOR" ],
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "copy-from": "gilded_aegis",
     "turns_per_charge": 150,
-	"extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
     "revert_to": "gilded_aegis",
     "use_action": {
       "target": "gilded_aegis",
@@ -138,7 +138,6 @@
               ]
             },
             "distance": 25,
-            "ignores_aiming_cone": true,
             "descriptions": [ { "id": "nether_creature_sense", "symbol": "N", "text": "You sense an otherworldly interloper here." } ]
           }
         ],
@@ -162,7 +161,7 @@
   {
     "id": "somen_clairvoyance_on",
     "type": "ITEM",
-    "subtypes": [ "TOOL", "ARMOR" ],
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "copy-from": "somen_clairvoyance",
     "repairs_like": "somen_clairvoyance",
     "name": { "str": "mask of insight (on)", "str_pl": "masks of insight (on)" },
@@ -297,7 +296,7 @@
     "name": { "str": "revenant crown (on)", "str_pl": "revenant crown (on)" },
     "description": "A wicked-looking crown made of precious metal, decorated with scenes of skeletons in a \"danse macabre\" motif.  A single brilliant gem adorns it, seemingly aglow with a blood-red tinge.  While active it protects against food poisoning and parasites, in exchange for increased hunger.  It will not cure existing ailments, only prevent them.  Use it to turn it back off.",
     "turns_per_charge": 900,
-	"extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
     "revert_to": "revenant_crown",
     "revert_msg": "The peculiar shimmer of the crown fades, and the craving for rotten flesh subsides.",
     "use_action": [
@@ -353,7 +352,7 @@
     "name": { "str": "mantle of shadows (on)", "str_pl": "mantles of shadows (on)" },
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders.  The air wavers around it, barely noticeable to you.",
     "turns_per_charge": 300,
-	"extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
     "revert_to": "robe_shadow",
     "revert_msg": "The robe's fabric returns to its normal gray color, dispelling the illusion.",
     "use_action": [
@@ -414,7 +413,7 @@
     "name": { "str": "illusory mantle (on)", "str_pl": "illusory mantles (on)" },
     "description": "A loose-fitting, short cape with decorative trim over the shoulders, dyed a simple dark gray.  Loosely fits over the shoulders even for mutant survivors.  The air wavers around it, barely noticeable to you.",
     "turns_per_charge": 300,
-	"extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
     "revert_to": "robe_shadow_xl",
     "revert_msg": "The cape's fabric returns to its normal gray color, dispelling the illusion.",
     "use_action": [
@@ -605,8 +604,8 @@
         "ZERO_WEIGHT",
         "ELECTRIC_IMMUNE",
         "DIMENSIONAL_ANCHOR",
-        "UNBREAKABLE", 
-		"SPAWN_ACTIVE"
+        "UNBREAKABLE",
+        "SPAWN_ACTIVE"
       ]
     }
   },
@@ -674,7 +673,18 @@
       "ammo_scale": 0
     },
     "qualities": [ [ "GLARE", 1 ] ],
-    "extend": { "flags": [ "GAS_PROOF", "RAD_PROOF", "SUN_GLASSES", "BULLET_IMMUNE", "STAB_IMMUNE", "HEAT_IMMUNE", "UNBREAKABLE", "SPAWN_ACTIVE" ] }
+    "extend": {
+      "flags": [
+        "GAS_PROOF",
+        "RAD_PROOF",
+        "SUN_GLASSES",
+        "BULLET_IMMUNE",
+        "STAB_IMMUNE",
+        "HEAT_IMMUNE",
+        "UNBREAKABLE",
+        "SPAWN_ACTIVE"
+      ]
+    }
   },
   {
     "id": "armor_wyrm_berserker",
