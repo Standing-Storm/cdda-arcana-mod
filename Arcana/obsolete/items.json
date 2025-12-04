@@ -163,7 +163,6 @@
     "use_action": {
       "target": "somen_clairvoyance_xl_on",
       "msg": "The visor's surface shifts subtly, the eyeholes momentarily seeming to glow as a strange perception replaces your natural vision.",
-      "active": true,
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "Fuel the visor with consecrated essence, to open your eyes.",
@@ -192,7 +191,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF" ] }
+    "extend": { "flags": [ "SUN_GLASSES", "BLIND", "PARTIAL_DEAF", "SPAWN_ACTIVE" ] }
   },
   {
     "type": "ITEM",
