@@ -200,6 +200,7 @@
     "using": [ [ "arcana_potioncraft_standard", 1 ], [ "surface_heat", 10 ], [ "arcana_essence_any", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_alchemy" }, { "proficiency": "prof_arcana_alchemy_potions" } ],
     "tools": [ [ [ "book_potioncraft", -1 ], [ "book_easyalchemy", -1 ] ] ],
+    "components": [ [ [ "meal_bone", 3 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
     "flags": [ "ALLOW_ROTTEN" ]
   },
