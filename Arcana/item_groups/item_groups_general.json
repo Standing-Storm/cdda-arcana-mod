@@ -412,7 +412,7 @@
         "prob": 10
       },
       {
-        "distribution": [ { "item": "summoning_magic_spell_scroll_arcana_summoning_nether_huntsman", "prob": 1 } ],
+        "distribution": [ { "item": "summoning_magic_spell_scroll_arcana_summoning_seraphic_shade", "prob": 1 } ],
         "prob": 3
       }
     ]
