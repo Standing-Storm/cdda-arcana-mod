@@ -241,7 +241,7 @@
     "proficiencies": [ "prof_arcana_thaumatology" ],
     "spells": [
       { "id": "arcana_mark_malevolent_gaze", "level": 2 },
-      { "id": "arcana_mark_revenant_blood", "level": 3 },
+      { "id": "arcana_blood_magic_corrupted_flesh", "level": 3 },
       { "id": "arcana_blood_magic_drain_energy", "level": 3 },
       { "id": "arcana_blood_magic_rite_of_sacrifice", "level": 3 }
     ],
