@@ -490,7 +490,7 @@
     "duration_increment": 480,
     "targeted_monster_species": [
       "NETHER",
-      "CYBORG",
+      "EXODII",
       "FUNGUS",
       "SUMMONED_CREATURE",
       "MIGO",
@@ -527,7 +527,7 @@
     "duration_increment": 360,
     "targeted_monster_species": [
       "NETHER",
-      "CYBORG",
+      "EXODII",
       "FUNGUS",
       "SUMMONED_CREATURE",
       "MIGO",
