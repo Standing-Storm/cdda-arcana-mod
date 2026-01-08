@@ -1,0 +1,29 @@
+[
+  {
+    "type": "overmap_special",
+    "id": "ruined_shrine_innawood_1",
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_north" } ],
+    "locations": [ "wilderness", "swamp" ],
+    "city_distance": [ 20, -1 ],
+    "occurrences": [ 25, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "ruined_shrine_innawood_2",
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_2_north" } ],
+    "locations": [ "wilderness", "swamp" ],
+    "city_distance": [ 20, -1 ],
+    "occurrences": [ 25, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+  },
+  {
+    "type": "overmap_special",
+    "id": "ruined_shrine_innawood_3",
+    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_3_north" } ],
+    "locations": [ "wilderness", "swamp" ],
+    "city_distance": [ 20, -1 ],
+    "occurrences": [ 25, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+  }
+]
