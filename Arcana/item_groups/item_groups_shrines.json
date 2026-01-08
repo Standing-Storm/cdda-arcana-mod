@@ -1,0 +1,12 @@
+[
+  {
+    "id": "arcana_wilderness_shrine_loot",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jade_wreath", "prob": 20 },
+      { "item": "moonstone_fang", "prob": 20 },
+      { "item": "meteoric_talisman", "prob": 20 }
+    ]
+  }
+]
