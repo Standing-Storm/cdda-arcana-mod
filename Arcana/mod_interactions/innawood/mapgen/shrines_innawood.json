@@ -11,10 +11,10 @@
         ",TT,,======++======,,TT,",
         ",T,,==............==,,T,",
         ",T,==..I........I..==,T,",
-        ",T,T]..............]T,T,",
-        ",T,T]..I........I..]T,T,",
-        ",T,T]..............]T,T,",
-        ",=,T]..I........I..]T,=,",
+        ",T,=]..............]=,T,",
+        ",T,=]..I........I..]=,T,",
+        ",T,=]..............]=,T,",
+        ",=,=]..I........I..]=,=,",
         ",=,=]..............]=,=,",
         ",,,========xx========,,,",
         ",,,=C..............C=,,,",
@@ -32,9 +32,24 @@
       ],
       "palettes": [ "arcana_palette" ],
       "set": [ { "point": "trap", "id": "tr_portal", "x": [ 11, 12 ], "y": [ 0, 2 ], "repeat": [ 0, 1 ] } ],
-      "terrain": { "T": [ "t_rock_smooth", "t_rock_smooth", "t_dirt", "t_lava" ], "x": "t_rdoor_boarded" },
-      "furniture": { "C": "f_coffin_c", "i": "f_candle_barrier" },
-      "mapping": { "C": { "furniture": "f_coffin_c", "items": [ { "item": "summoner_casualties", "chance": 80 } ] } },
+      "terrain": {
+        "T": [ "t_rock_wall", "t_rock_wall", "t_dirt" ],
+        "x": "t_rdoor_boarded",
+        "=": "t_rock_wall",
+        "I": "t_vitrified_column"
+      },
+      "furniture": { "C": "f_coffin_c", "i": "f_candle_barrier", "p": "f_rack_primitive", "]": "f_rack_primitive" },
+      "items": {
+        "C": { "item": "summoner_casualties", "chance": 50 },
+        "p": [
+          { "item": "magic_crafting", "chance": 25, "repeat": [ 1, 3 ] },
+          { "item": "magic_consumables", "chance": 40, "repeat": [ 1, 3 ] }
+        ],
+        "]": [
+          { "item": "magic_crafting", "chance": 3, "repeat": [ 1, 3 ] },
+          { "item": "magic_consumables", "chance": 5, "repeat": [ 1, 3 ] }
+        ]
+      },
       "place_loot": [
         { "item": "essence_blood", "x": [ 11, 12 ], "y": 16, "chance": 50, "repeat": [ 5, 10 ] },
         { "item": "jade_wreath", "x": [ 11, 12 ], "y": 16 }
@@ -85,15 +100,22 @@
         ";": "t_swater_dp",
         "#": "t_rock_wall",
         "x": "t_door_locked",
-        "e": "t_carpet_green",
-        "r": "t_carpet_green"
+        "=": "t_rock_wall",
+        "I": "t_vitrified_column",
+        "r": "t_dirtfloor"
       },
-      "furniture": { "i": "f_candle_barrier" },
+      "furniture": { "i": "f_candle_barrier", "]": "f_rack_primitive", "{": "f_rack_primitive" },
       "set": [
         { "point": "trap", "id": "tr_snake", "x": [ 6, 7 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] },
         { "point": "trap", "id": "tr_snake", "x": [ 16, 17 ], "y": [ 7, 16 ], "repeat": [ 3, 6 ] },
         { "point": "trap", "id": "tr_portal", "x": [ 1, 22 ], "y": [ 21, 23 ], "repeat": [ 0, 1 ] }
       ],
+      "items": {
+        "]": [
+          { "item": "magic_crafting", "chance": 3, "repeat": [ 1, 3 ] },
+          { "item": "magic_consumables", "chance": 5, "repeat": [ 1, 3 ] }
+        ]
+      },
       "place_loot": [
         { "group": "magic_consumables", "x": [ 15, 17 ], "y": 6, "chance": 40, "repeat": 4 },
         { "group": "magic_consumables", "x": [ 15, 17 ], "y": 17, "chance": 40, "repeat": 4 },
@@ -103,7 +125,8 @@
         { "monster": "mon_rattlesnake", "x": [ 0, 23 ], "y": [ 0, 4 ], "repeat": [ 2, 4 ] },
         { "monster": "mon_rattlesnake_giant", "x": [ 0, 23 ], "y": [ 19, 23 ], "repeat": [ 2, 4 ] },
         { "monster": "mon_sewer_snake", "x": [ 0, 4 ], "y": [ 0, 23 ], "repeat": [ 3, 6 ] },
-        { "monster": "mon_sewer_snake", "x": [ 19, 23 ], "y": [ 0, 23 ], "repeat": [ 3, 6 ] }
+        { "monster": "mon_sewer_snake", "x": [ 19, 23 ], "y": [ 0, 23 ], "repeat": [ 3, 6 ] },
+        { "monster": "mon_sanguine_blood_golem", "x": [ 9, 14 ], "y": [ 9, 14 ], "repeat": [ 1, 3 ] }
       ],
       "place_monsters": [ { "monster": "GROUP_SHRINE_SANGUINE", "x": [ 9, 14 ], "y": [ 9, 14 ], "density": 0.1 } ]
     }

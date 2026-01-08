@@ -31,7 +31,7 @@
     "entries": [
       { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
       { "group": "magic_consumables", "prob": 50 },
-      { "group": "magic_crafting", "prob": 50, "repeat": [ 1, 2 ] },
+      { "group": "magic_crafting", "prob": 50, "count": [ 1, 2 ] },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   }

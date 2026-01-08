@@ -5,8 +5,8 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+    "occurrences": [ 10, 100 ],
+    "flags": [ "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -14,8 +14,8 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_2_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+    "occurrences": [ 10, 100 ],
+    "flags": [ "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -23,7 +23,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_3_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
+    "occurrences": [ 10, 100 ],
+    "flags": [ "WILDERNESS", "OVERMAP_UNIQUE" ]
   }
 ]
