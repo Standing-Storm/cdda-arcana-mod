@@ -563,6 +563,7 @@
     "copy-from": "mon_dementia",
     "type": "MONSTER",
     "death_drops": "mon_dementia_death_drops",
+    "name": { "str": "undead cultist" },
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
