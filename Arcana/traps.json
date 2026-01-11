@@ -1,0 +1,25 @@
+[
+  {
+    "type": "trap",
+    "id": "tr_rune_trap_summon_bloodwalker",
+    "name": "glowing runes",
+    "color": "red",
+    "symbol": "o",
+    "visibility": 15,
+    "avoidance": 13,
+    "difficulty": 99,
+    "action": "eocs",
+    "eocs": [ "EOC_TRAPS_SUMMON_BLOODWALKER" ],
+    "trigger_weight": "50000 g",
+    "trigger_message_u": "As you step forward, runes suddenly begin glowing crimson!",
+    "trigger_message_npc": "As <npcname> steps forward, runes suddenly begin glowing crimson!"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_TRAPS_SUMMON_BLOODWALKER",
+    "//": "Traps don't go off for Sanguine Order members",
+    "condition": { "not": { "u_has_trait": "PROF_SANGUINE" } },
+    "effect": [ { "u_spawn_monster": "mon_sanguine_blood_golem", "real_count": 1, "min_radius": 1, "max_radius": 1 } ],
+    "false_effect": { "u_message": "The runes recognize your position in the Order and fade away.", "type": "neutral" }
+  }
+]

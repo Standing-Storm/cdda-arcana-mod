@@ -26,6 +26,7 @@
       "2": "t_window_stained_green",
       "3": "t_window_stained_blue",
       "8": "t_rock_floor",
+      "Ø": "t_rock_floor",
       "A": "t_rock_floor",
       "B": "t_rock_floor",
       "C": "t_rock_floor",
@@ -65,6 +66,7 @@
       "{": "f_rack_wood",
       "}": "f_safe_l",
       "8": "f_shackle",
+      "Ø": "f_arcana_magic_circle",
       "A": "f_anvil",
       "B": "f_bed",
       "C": "f_counter",
@@ -92,7 +94,7 @@
     "toilets": { "&": {  } },
     "mapping": {
       "B": { "items": [ { "item": "bed", "chance": 90 }, { "item": "bed", "chance": 60 } ] },
-      "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 75 }, { "item": "clothing_outdoor_pants", "chance": 75 } ] }
+      "D": { "items": [ { "item": "clothing_outdoor_set", "chance": 100, "repeat": [ 1, 3 ] } ] }
     }
   }
 ]

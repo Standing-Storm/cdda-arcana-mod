@@ -192,7 +192,6 @@
         "monster_message": "You briefly sense the otherworldly presence controlling the host, as it glares at %3$s."
       }
     ],
-    "//": "Here, have some chalice-specific loot",
     "death_drops": "mon_archon_death_drops",
     "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
     "flags": [
@@ -214,8 +213,8 @@
   {
     "id": "mon_dracolich",
     "type": "MONSTER",
-    "name": { "str": "dracolich", "str_pl": "dracoliches" },
-    "description": "A massive, reptilian creature with batlike wings.  Its decaying body looks like it was halfway through being dissected, and the membranes of its wings are in tatters.  You wonder how such a large beast could fly in the first place, let alone in that condition.",
+    "name": { "str": "undead firedrake", "str_pl": "undead firedrakes" },
+    "description": "A massive, reptilian creature with batlike wings, its former grandeur filmed over with death.  Its decaying body looks like it was halfway through being dissected, and the membranes of its wings are in tatters.  You wonder how such a large beast could fly in the first place, let alone in that condition.",
     "default_faction": "nether",
     "species": [ "ABERRATION" ],
     "categories": [ "CLASSIC" ],
