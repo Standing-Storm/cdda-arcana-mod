@@ -244,40 +244,16 @@
     "flags": [ "RISK_HIGH" ]
   },
   {
-    "id": "island_temple_b_1",
-    "type": "overmap_terrain",
-    "name": "underground ruin",
-    "sym": "T",
-    "vision_levels": "underground_dirt",
-    "color": "dark_gray",
-    "looks_like": "temple_finale",
-    "travel_cost_type": "basement",
-    "see_cost": "high"
-  },
-  {
-    "id": "island_temple_b_2",
-    "type": "overmap_terrain",
-    "name": "underground ruin",
-    "sym": "T",
-    "vision_levels": "underground_dirt",
-    "color": "dark_gray",
-    "looks_like": "temple_finale",
-    "travel_cost_type": "basement",
-    "see_cost": "high"
-  },
-  {
-    "id": "island_temple_b_3",
-    "type": "overmap_terrain",
-    "name": "underground ruin",
-    "sym": "T",
-    "vision_levels": "underground_dirt",
-    "color": "dark_gray",
-    "looks_like": "temple_finale",
-    "travel_cost_type": "basement",
-    "see_cost": "high"
-  },
-  {
-    "id": "island_temple_b_4",
+    "id": [
+      "island_temple_basement_1",
+      "island_temple_basement_2",
+      "island_temple_basement_3",
+      "island_temple_basement_4",
+      "island_temple_subbasement_1",
+      "island_temple_subbasement_2",
+      "island_temple_subbasement_3",
+      "island_temple_subbasement_4"
+    ],
     "type": "overmap_terrain",
     "name": "underground ruin",
     "sym": "T",

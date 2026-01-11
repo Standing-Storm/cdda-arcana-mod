@@ -19,6 +19,7 @@
     "id": "EOC_TRAPS_SUMMON_BLOODWALKER",
     "//": "Traps don't go off for Sanguine Order members",
     "condition": { "not": { "u_has_trait": "PROF_SANGUINE" } },
-    "effect": [ { "u_spawn_monster": "mon_sanguine_blood_golem", "real_count": 1, "min_radius": 1, "max_radius": 1 } ]
+    "effect": [ { "u_spawn_monster": "mon_sanguine_blood_golem", "real_count": 1, "min_radius": 1, "max_radius": 1 } ],
+    "false_effect": { "u_message": "The runes recognize your position in the Order and fade away.", "type": "neutral" }
   }
 ]

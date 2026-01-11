@@ -1,0 +1,13 @@
+[
+  {
+    "id": [ "island_temple_b_1", "island_temple_b_2", "island_temple_b_3", "island_temple_b_4" ],
+    "type": "overmap_terrain",
+    "name": "underground ruin",
+    "sym": "T",
+    "vision_levels": "underground_dirt",
+    "color": "dark_gray",
+    "looks_like": "temple_finale",
+    "travel_cost_type": "basement",
+    "see_cost": "high"
+  }
+]
