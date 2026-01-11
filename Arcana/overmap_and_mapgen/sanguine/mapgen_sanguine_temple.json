@@ -95,7 +95,7 @@
         "                  ==D=..x.=D==                  ",
         "                  =B.====.=.B=                  ",
         "                ====x=BD=.=x====                ",
-        "                =DB..=..x.=..BD=                ",
+        "                =DBx.=..x.=.xBD=                ",
         "              ======x====x=x======              ",
         "            ===BD.=..........=.DB===            ",
         "            =D===x=..........=x===D=            ",
@@ -108,7 +108,7 @@
         "            =B.==x=..........=x==.B=            ",
         "            ====DB=..........=DB====            ",
         "              ======x=x====x======              ",
-        "                =DB..=.x..=..BD=                ",
+        "                =DBx.=.x..=.xBD=                ",
         "                ====x=.=BD======                ",
         "                  =D.=.====.D=                  ",
         "                  ==B=.x..=B==                  ",
@@ -137,7 +137,7 @@
         ".": "t_floor"
       },
       "items": { "D": [ { "item": "sanguine_cult_gear", "chance": 5 }, { "item": "sanguine_cult_gear_magic", "chance": 1 } ] },
-      "monsters": { "B": { "monster": "GROUP_SINGLE_DEMENTIA", "chance": 33 } },
+      "nested": { "B": { "chunks": [ [ "arcana_sanguine_room_dementia", 1 ], [ "null", 4 ] ] } },
       "place_monster": [
         { "monster": "mon_dementia", "x": [ 19, 23 ], "y": [ 19, 23 ], "repeat": [ 0, 2 ] },
         { "monster": "mon_dementia", "x": [ 24, 28 ], "y": [ 19, 23 ], "repeat": [ 0, 2 ] },
@@ -145,6 +145,11 @@
         { "monster": "mon_dementia", "x": [ 24, 28 ], "y": [ 24, 28 ], "repeat": [ 0, 2 ] }
       ]
     }
+  },
+  {
+    "type": "mapgen",
+    "nested_mapgen_id": "arcana_sanguine_room_dementia",
+    "object": { "mapgensize": [ 1, 1 ], "place_monster": [ { "monster": "mon_dementia", "x": 0, "y": 0, "chance": 100 } ] }
   },
   {
     "type": "mapgen",

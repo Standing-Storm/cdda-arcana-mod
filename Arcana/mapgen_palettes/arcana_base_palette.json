@@ -94,7 +94,7 @@
     "toilets": { "&": {  } },
     "mapping": {
       "B": { "items": [ { "item": "bed", "chance": 90 }, { "item": "bed", "chance": 60 } ] },
-      "D": { "items": [ { "item": "clothing_outdoor_torso", "chance": 75 }, { "item": "clothing_outdoor_pants", "chance": 75 } ] }
+      "D": { "items": [ { "item": "clothing_outdoor_set", "chance": 100, "repeat": [ 1, 3 ] } ] }
     }
   }
 ]
