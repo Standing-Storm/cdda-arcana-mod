@@ -507,7 +507,7 @@
     "id": "arcana_summoning_nether_huntsman",
     "type": "SPELL",
     "name": { "str": "Call Forth the Hunter from Beyond" },
-    "description": "Using this spell will summon a shapeshifting thing that hides in humanoid form until close to its prey.  It is <color_yellow>difficult</color> to control",
+    "description": "Using this spell will summon an otherworldly hunter of men.  It is <color_yellow>difficult</color> to control.",
     "message": "\"Tvakaros, ievona karoh…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
@@ -558,6 +558,68 @@
         "if": {
           "math": [
             "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_nether_huntsman') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 15 "
+          ]
+        },
+        "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
+        "else": [ { "u_message": "The thing you called up resist your attempt to control it!", "type": "bad" } ]
+      }
+    ]
+  },
+  {
+    "id": "arcana_summoning_seraphic_shade",
+    "type": "SPELL",
+    "name": { "str": "Call Forth the Messenger of the Abyss" },
+    "description": "Using this spell will summon a shadowy being with wings of darkness.  It is <color_yellow>extremely difficult</color> to control",
+    "message": "\"Tvakaros, ievona karoh…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_SUMMON_SERAPHIC_SHADE",
+    "energy_source": "STAMINA",
+    "difficulty": 140,
+    "skill": "magic",
+    "max_level": 15,
+    "base_casting_time": 1080,
+    "final_casting_time": 540,
+    "casting_time_increment": -54,
+    "base_energy_cost": 6500,
+    "final_energy_cost": 3250,
+    "energy_increment": -320,
+    "min_duration": 1080000,
+    "max_duration": 2160000,
+    "duration_increment": 108000,
+    "spell_class": "ARCANA_SUMMONING",
+    "magic_type": "arcana_summoning"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SUMMON_SERAPHIC_SHADE",
+    "//": "50% chance to control at max level.",
+    "effect": [
+      {
+        "u_query_tile": "line_of_sight",
+        "target_var": { "context_val": "summoning_loc" },
+        "message": "Summon the Messenger of the Abyss",
+        "range": { "math": [ "(u_spell_level('arcana_summoning_seraphic_shade') * 0.5) + 3" ] }
+      },
+      {
+        "if": { "math": [ "has_var(_summoning_loc)" ] },
+        "then": {
+          "u_spawn_monster": "mon_seraphic_shade_summoned",
+          "summoner_is_alpha": true,
+          "real_count": 1,
+          "max_radius": 2,
+          "target_var": { "context_val": "summoning_loc" },
+          "lifespan": { "math": [ "(u_spell_level('arcana_summoning_seraphic_shade') * 1080.00) + 10800.00" ] },
+          "spawn_message": "A shadow with enormous dark wings appears!"
+        },
+        "else": { "u_message": "Canceled." }
+      },
+      {
+        "if": {
+          "math": [
+            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_seraphic_shade') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 23 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],

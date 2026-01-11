@@ -15,5 +15,10 @@
   {
     "type": "SPECIES",
     "id": "FOREST_ELEMENTAL"
+  },
+  {
+    "type": "SPECIES",
+    "id": "EXODII",
+    "description": "a cyborg from another dimension"
   }
 ]

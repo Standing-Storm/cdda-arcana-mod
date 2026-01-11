@@ -1,0 +1,14 @@
+[
+  {
+    "id": [ "shrine_anomaly_innawood", "shrine_anomaly_innawood_2", "shrine_anomaly_innawood_3" ],
+    "type": "overmap_terrain",
+    "name": "ruined shrine",
+    "sym": "S",
+    "color": "i_light_gray",
+    "looks_like": "standing_stones",
+    "vision_levels": "isolated_building",
+    "see_cost": "high",
+    "travel_cost_type": "structure",
+    "flags": [ "RISK_HIGH" ]
+  }
+]

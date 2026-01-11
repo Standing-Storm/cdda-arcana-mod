@@ -114,5 +114,17 @@
     },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons an otherworldly hunter of men.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_nether_huntsman" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "summoning_magic_spell_scroll",
+    "id": "summoning_magic_spell_scroll_arcana_summoning_seraphic_shade",
+    "name": {
+      "str": "Evocation Grimoire: Call Forth the Messenger of the Abyss",
+      "str_pl": "Evocation Grimoires: Call Forth the Messenger of the Abyss"
+    },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of evocation.  This ritual summons a living shadow with wings of darkness.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_summoning_seraphic_shade" ] }
   }
 ]

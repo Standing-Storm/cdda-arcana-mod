@@ -577,5 +577,100 @@
     "name": { "str": "summoned bloodwalker" },
     "species": [ "SUMMONED_CREATURE" ],
     "default_faction": "player"
+  },
+  {
+    "id": "mon_seraphic_shade_summoned",
+    "type": "MONSTER",
+    "name": { "str": "seraphic shade" },
+    "description": "A tall living shadow with a humanoid silhouette.  Six projections of shifting darkness disrupt its outline, giving the impression of a six-winged figure.  An outright tangible aura of malevolence radiates from it.",
+    "default_faction": "archon",
+    "categories": [ "CLASSIC" ],
+    "species": [ "NETHER" ],
+    "volume": "77500 ml",
+    "weight": "81500 g",
+    "hp": 950,
+    "speed": 80,
+    "symbol": "H",
+    "looks_like": "mon_seraphic_shade",
+    "color": "blue",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 7,
+    "melee_dice": 1,
+    "melee_dice_sides": 4,
+    "melee_damage": [ { "damage_type": "cut", "amount": 1 }, { "damage_type": "cold", "amount": 9, "armor_multiplier": 0.1 } ],
+    "dodge": 4,
+    "armor": { "bash": 15, "cut": 10, "stab": 15, "bullet": 25, "heat": 20, "acid": 25 },
+    "vision_day": 50,
+    "vision_night": 50,
+    "luminance": 1,
+    "harvest": "exempt",
+    "starting_ammo": { "bot_shadows_fake": 5, "bot_seraphic_mimic": 10 },
+    "regeneration_modifiers": [ [ "onfire", -50 ], [ "dazed", -25 ] ],
+    "regenerates_in_dark": true,
+    "regen_morale": true,
+    "special_attacks": [
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_1",
+        "spell_data": { "id": "stare" },
+        "monster_message": "",
+        "cooldown": 75
+      },
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_2",
+        "spell_data": { "id": "fear_paralyze" },
+        "monster_message": "",
+        "cooldown": 50
+      },
+      {
+        "type": "spell",
+        "id": "seraphic_summon_shadow_spell",
+        "spell_data": { "id": "seraphic_summon_shadow", "hit_self": true },
+        "monster_message": "",
+        "cooldown": 20,
+        "allow_no_target": true
+      },
+      {
+        "type": "gun",
+        "cooldown": 25,
+        "move_cost": 50,
+        "gun_type": "monster_laser_fake",
+        "fake_str": 8,
+        "fake_dex": 7,
+        "fake_per": 9,
+        "ranges": [ [ 2, 20, "DEFAULT" ] ],
+        "require_targeting_player": false,
+        "description": "A radiant beam of otherworldly energy lances out from the seraphic shade's body!",
+        "no_ammo_sound": "a horrific screech!"
+      },
+      {
+        "type": "spell",
+        "id": "arcana_monster_seraph_stare_3",
+        "spell_data": { "id": "arcana_monster_archon_gaze_improved" },
+        "cooldown": 25,
+        "monster_message": "You briefly sense the seraphic shade's otherworldly presence, as it glares at %3$s."
+      }
+    ],
+    "death_function": { "message": "The %s's body evaporates.", "corpse_type": "NO_CORPSE" },
+    "path_settings": { "avoid_traps": true, "avoid_dangerous_fields": true },
+    "flags": [
+      "PATH_AVOID_DANGER",
+      "CAN_OPEN_DOORS",
+      "PRIORITIZE_TARGETS",
+      "SEES",
+      "FLIES",
+      "HARDTOSHOOT",
+      "BIOLOGICALPROOF",
+      "STUN_IMMUNE",
+      "STUMBLES",
+      "PUSH_MON",
+      "NO_BREATHE",
+      "NOHEAD",
+      "COLDPROOF",
+      "QUEEN",
+      "MAGIC_USER"
+    ]
   }
 ]

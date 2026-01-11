@@ -563,6 +563,7 @@
     "copy-from": "mon_dementia",
     "type": "MONSTER",
     "death_drops": "mon_dementia_death_drops",
+    "name": { "str": "undead cultist" },
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
@@ -988,5 +989,35 @@
     "copy-from": "mon_sloth",
     "type": "MONSTER",
     "death_drops": "mon_sloth_death_drops"
+  },
+  {
+    "id": "exodii_sniper_drone",
+    "copy-from": "exodii_sniper_drone",
+    "type": "MONSTER",
+    "species": [ "ROBOT", "EXODII" ]
+  },
+  {
+    "id": "mon_exodii_worker",
+    "copy-from": "mon_exodii_worker",
+    "type": "MONSTER",
+    "species": [ "ROBOT", "EXODII" ]
+  },
+  {
+    "id": "mon_exodii_quad",
+    "copy-from": "mon_exodii_quad",
+    "type": "MONSTER",
+    "species": [ "ROBOT", "EXODII" ]
+  },
+  {
+    "id": "mon_zomborg",
+    "copy-from": "mon_zomborg",
+    "type": "MONSTER",
+    "species": [ "CYBORG", "ZOMBIE", "EXODII" ]
+  },
+  {
+    "id": "mon_zomborg_devourer",
+    "copy-from": "mon_zomborg_devourer",
+    "type": "MONSTER",
+    "species": [ "CYBORG", "ZOMBIE", "EXODII" ]
   }
 ]
