@@ -169,7 +169,6 @@
         "monster_message": "",
         "cooldown": 40
       },
-      [ "GRENADIER_ELITE", 15 ],
       [ "PARROT", 25 ],
       {
         "type": "gun",
