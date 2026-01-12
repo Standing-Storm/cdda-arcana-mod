@@ -556,13 +556,13 @@
         "has": "WORN",
         "condition": "ACTIVE",
         "incoming_damage_mod": [
-          { "type": "bash", "add": -10 },
-          { "type": "cut", "add": -10 },
-          { "type": "stab", "add": -10 },
+          { "type": "bash", "add": -5 },
+          { "type": "cut", "add": -5 },
+          { "type": "stab", "add": -5 },
           { "type": "bullet", "add": -10 },
-          { "type": "heat", "multiply": -0.5 },
-          { "type": "cold", "multiply": -0.5 },
-          { "type": "acid", "multiply": -0.5 }
+          { "type": "heat", "multiply": -0.25 },
+          { "type": "cold", "multiply": -0.25 },
+          { "type": "acid", "multiply": -0.25 }
         ],
         "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
       }
@@ -594,15 +594,10 @@
     "extend": {
       "flags": [
         "NO_TAKEOFF",
-        "PSYSHIELD_PARTIAL",
-        "RAD_PROOF",
         "RAINPROOF",
-        "SUN_GLASSES",
-        "SWIM_GOGGLES",
         "TRADER_AVOID",
         "WATERPROOF",
         "ZERO_WEIGHT",
-        "ELECTRIC_IMMUNE",
         "DIMENSIONAL_ANCHOR",
         "UNBREAKABLE",
         "SPAWN_ACTIVE"
