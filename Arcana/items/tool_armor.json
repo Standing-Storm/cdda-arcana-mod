@@ -619,7 +619,7 @@
       {
         "has": "WORN",
         "condition": "ACTIVE",
-        "incoming_damage_mod": [ { "type": "stab", "multiply": -0.25 }, { "type": "bullet", "multiply": -0.25 } ],
+        "incoming_damage_mod": [ { "type": "stab", "multiply": -0.33 }, { "type": "bullet", "multiply": -0.5 } ],
         "ench_effects": [ { "effect": "effect_arcana_gilded_aegis_active", "intensity": 1 } ]
       },
       { "has": "WORN", "incoming_damage_mod": [ { "type": "electric", "multiply": -0.8 } ] }
