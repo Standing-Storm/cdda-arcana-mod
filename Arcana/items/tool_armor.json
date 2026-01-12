@@ -615,8 +615,7 @@
     "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "copy-from": "qt_chainmail_hauberk",
     "name": { "str": "jade hauberk" },
-    "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  The copper conducts electric shocks around you, providing passive immunity to lightning.  Activating it will grant immunity to fire and blade, reduce ballistic damage to one-tenth what you would normally take, and give resistance to other environmental hazards.",
-    "//": "Requires an item that did not exist pre-cataclysm to make.",
+    "description": "A set of mail armor with a mantle made from a gilded aegis draped over it, splints of copper worked into the arms and sides.  Underneath the mantle is a gorget of copper, with otherworldly green stones set into it.  The copper conducts electric shocks around you, providing resistance to lightning.  Activating it will strengthen its protection against stabbing and ballistic attacks, in addition to the standard effects of a gilded aegis.",
     "price_postapoc": "150 USD",
     "material": [ "iron", "copper", "leather", "cotton" ],
     "color": "light_red",
@@ -625,9 +624,10 @@
       {
         "has": "WORN",
         "condition": "ACTIVE",
-        "incoming_damage_mod": [ { "type": "heat", "multiply": -1.0 }, { "type": "stab", "multiply": -1.0 }, { "type": "bullet", "multiply": -0.9 } ],
-        "values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
-      }
+        "incoming_damage_mod": [ { "type": "stab", "multiply": -0.25 }, { "type": "bullet", "multiply": -0.25 } ],
+        "ench_effects": [ { "effect": "effect_arcana_gilded_aegis_active", "intensity": 1 } ]
+      },
+      { "has": "WORN", "incoming_damage_mod": [ { "type": "electric", "multiply": -0.8 } ] }
     ],
     "tool_ammo": "essence_dull_type",
     "use_action": [
@@ -640,17 +640,10 @@
         "menu_text": "Project barrier",
         "type": "transform",
         "ammo_scale": 0
-      },
-      {
-        "type": "cast_spell",
-        "spell_id": "arcana_item_jade_hauberk_healing",
-        "no_fail": true,
-        "level": 0,
-        "need_worn": true
       }
     ],
     "relative": { "weight": "3020 g", "price": "550 USD" },
-    "extend": { "flags": [ "NO_SALVAGE", "ELECTRIC_IMMUNE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] },
+    "extend": { "flags": [ "NO_SALVAGE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 7,
     "environmental_protection": 1,
     "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
@@ -672,19 +665,7 @@
       "type": "transform",
       "ammo_scale": 0
     },
-    "qualities": [ [ "GLARE", 1 ] ],
-    "extend": {
-      "flags": [
-        "GAS_PROOF",
-        "RAD_PROOF",
-        "SUN_GLASSES",
-        "BULLET_IMMUNE",
-        "STAB_IMMUNE",
-        "HEAT_IMMUNE",
-        "UNBREAKABLE",
-        "SPAWN_ACTIVE"
-      ]
-    }
+    "extend": { "flags": [ "UNBREAKABLE", "SPAWN_ACTIVE" ] }
   },
   {
     "id": "armor_wyrm_berserker",

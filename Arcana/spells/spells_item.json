@@ -816,54 +816,6 @@
     "max_damage": 30
   },
   {
-    "id": "arcana_item_jade_hauberk_healing",
-    "type": "SPELL",
-    "name": { "str": "Hauberk Mending" },
-    "description": "Weaker healing than gilded aegis, but less pain.",
-    "message": "Your armor's mantle shimmers with an odd light, sending the dull ache of healing magic through your body.",
-    "valid_targets": [ "self" ],
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "extra_effects": [
-      { "id": "arcana_item_jade_hauberk_healing_sleepiness", "hit_self": true },
-      { "id": "arcana_item_jade_hauberk_pain", "hit_self": true }
-    ],
-    "effect_str": "arcana_aegis_mending",
-    "min_damage": -5,
-    "max_damage": -10,
-    "effect": "attack",
-    "shape": "blast",
-    "min_duration": 100,
-    "max_duration": 100
-  },
-  {
-    "id": "arcana_item_jade_hauberk_healing_sleepiness",
-    "type": "SPELL",
-    "name": { "str": "Hauberk Mending Fatigue" },
-    "description": "Causes a very small amount of sleepiness.",
-    "valid_targets": [ "self" ],
-    "message": "",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -15,
-    "max_damage": -15,
-    "effect": "recover_energy",
-    "shape": "blast",
-    "effect_str": "SLEEPINESS"
-  },
-  {
-    "id": "arcana_item_jade_hauberk_pain",
-    "type": "SPELL",
-    "name": { "str": "Hauberk Pain Side Effect" },
-    "description": "Still stings a bit.",
-    "valid_targets": [ "self" ],
-    "message": "",
-    "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DAMAGE" ],
-    "min_damage": -7,
-    "max_damage": -8,
-    "effect": "recover_energy",
-    "shape": "blast",
-    "effect_str": "PAIN"
-  },
-  {
     "id": "arcana_item_lichhook",
     "type": "SPELL",
     "name": { "str": "Sundering Flesh" },
