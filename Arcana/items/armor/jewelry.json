@@ -1,0 +1,139 @@
+[
+  {
+    "id": "triffid_garland_empowered",
+    "copy-from": "triffid_garland",
+    "sub": "triffid_garland",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "name": { "str": "verdant triffid garland" },
+    "description": "A wreath of brightly-colored flowers from another world, worn around the neck.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will grant a burst of renewed stamina, recovering pain and speeding up the body's natural healing.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 25 hours to charge.",
+    "price_postapoc": "12 USD",
+    "charges_per_use": 25,
+    "tool_ammo": "primitive_magic_item_ammo_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 125 } } ],
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true },
+    "//": "Forest talisman and earth talisman.  Each use has power equivalent to 250 mana.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_triffid_garland_empowered", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "amulet_exotic_empowered",
+    "copy-from": "amulet_exotic",
+    "sub": "amulet_exotic",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "name": { "str": "shrouded exotic amulet" },
+    "description": "A makeshift necklace with a single gem, a charm worked from some manner of unnatural material.  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Activating it will shroud your life force, rendering you invisible (but not inaudible) to the undead, in exchange for making mundane wildlife more aggressive towards you.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 28 hours to charge.",
+    "price_postapoc": "15 USD",
+    "charges_per_use": 35,
+    "tool_ammo": "primitive_magic_item_ammo_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 175 } } ],
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true },
+    "//": "Flame talisman and air talisman.  Each use has power equivalent to 350 mana.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_amulet_exotic_empowered", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "brooch_iridescent_empowered",
+    "copy-from": "brooch_iridescent",
+    "sub": "brooch_iridescent",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "name": { "str": "bolstered iridescent brooch" },
+    "description": "A hand-crafted disc brooch made from a strange, unearthly material vaguely resembling mother-of-pearl  Elemental magic has been woven into its structure, converting it into a primitive magic item.  Using it will reduce all incoming damage by 25%.  It will take a long time to recharge after each use, and activating it also fatigues the user.  It can hold up to 5 uses, each use takes 45 hours to charge.",
+    "price_postapoc": "20 USD",
+    "charges_per_use": 45,
+    "tool_ammo": "primitive_magic_item_ammo_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "primitive_magic_item_ammo_type": 225 } } ],
+    "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
+    "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true },
+    "//": "Earth talisman and air talisman.  Each use has power equivalent to 450 mana.",
+    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_brooch_iridescent_empowered", "no_fail": true, "level": 0 }
+  },
+  {
+    "id": "cleric_ring",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "repairs_like": "orb_veil",
+    "name": { "str": "ring of the fallen angel", "str_pl": "rings of the fallen angel" },
+    "description": "A simple silver ring, adorned with a small red gem and a wing motif.  Activating it channels a powerful protective spell, guarding against many forms of supernatural harm.",
+    "//": "While unassuming, those who knew what rituals it was useful for would value it highly.  Those people are probably now dead.",
+    "price": "3600 USD",
+    "price_postapoc": "150 USD",
+    "weight": "10 mg",
+    "volume": "1 ml",
+    "symbol": "[",
+    "material": [ { "type": "silver", "portion": 9 }, { "type": "essencemat" } ],
+    "color": "white",
+    "sided": true,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
+    "tool_ammo": "essence_type",
+    "use_action": {
+      "target": "cleric_ring_on",
+      "msg": "A strange energy radiates from the ring's gem, spreading a calming sensation over you.",
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "Provide essence, and the fallen angel shall spread its wings.",
+      "menu_text": "Activate ward against evil",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "armor": [
+      {
+        "encumbrance": 0,
+        "coverage": 0,
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "layers": [ "SKINTIGHT" ],
+        "rigid_layer_only": true
+      }
+    ],
+    "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "cleric_warding", "intensity": 1 } ] } ],
+    "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "PSYSHIELD_PARTIAL" ]
+  },
+  {
+    "id": "cleric_ring_on",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "copy-from": "cleric_ring",
+    "repairs_like": "cleric_ring",
+    "name": { "str": "ring of the fallen angel (on)", "str_pl": "rings of the fallen angel (on)" },
+    "description": "A simple silver ring, adorned with a small red gem and a wing motif.  The wings encircle the gem and shimmer with an eerie pale glow, its protective magic protecting against various anomalous influences.",
+    "turns_per_charge": 450,
+    "revert_to": "cleric_ring",
+    "use_action": {
+      "target": "cleric_ring",
+      "msg": "The ring's energy fades, returning to normal.",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "DIMENSIONAL_ANCHOR", "PORTAL_PROOF", "SPAWN_ACTIVE" ] }
+  },
+  {
+    "id": "divine_sealing_charm",
+    "looks_like": "small_relic",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "category": "tools",
+    "name": { "str": "divine sealing charm" },
+    "description": "A silver and gold relic encircling and framing a pitch-black gem.  All across the metal are holy symbols and engraved text mixing archaic Latin, Old Norse runes, and symbols that don't seem to match any writing humans have devised.  Combining dimensional fatigue research with the knowledge of multiple arcane orders, it was made to serve the same purpose as the Keepers' relics and Project Kairos.\n\nLinger near a portal to collapse it into a form you can harvest quintessence from, then fuel it with quintessence.  Channeling this energy will create a powerful healing effect affecting you and nearby allies, remove alien influence on your surroundings, as well as restore dead plant life nearby.  Note that essence loaded into it cannot be unloaded.",
+    "weight": "1200 g",
+    "volume": "750 ml",
+    "price_postapoc": "150 USD",
+    "material": [ "silver", "gold", "essencemat" ],
+    "symbol": "[",
+    "color": "yellow",
+    "charges_per_use": 1,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 10 } } ],
+    "tool_ammo": "essence_pure_type",
+    "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_divine_seal", "no_fail": true, "need_worn": true, "level": 0 } ],
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "intermittent_activation": { "effects": [ { "frequency": "3 minutes", "spell_effects": [ { "id": "arcana_react_veilblade" } ] } ] }
+      }
+    ],
+    "flags": [ "NO_SALVAGE", "NO_UNLOAD", "DIMENSIONAL_ANCHOR", "PSYSHIELD_PARTIAL", "PORTAL_PROOF" ]
+  }
+]

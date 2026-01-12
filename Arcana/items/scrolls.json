@@ -1,5 +1,20 @@
 [
   {
+    "id": "scroll_blank",
+    "type": "ITEM",
+    "category": "other",
+    "name": { "str": "blank scroll" },
+    "description": "A simple sheet of paper, with wooden rollers to support it.  You feel as if it was meant to have ancient, eldritch text written on it.  But sadly, it's blank.",
+    "weight": "415 g",
+    "volume": "250 ml",
+    "price": "20 USD",
+    "price_postapoc": "2 USD",
+    "material": [ "paper" ],
+    "symbol": "!",
+    "looks_like": "recipe_creepy",
+    "color": "light_gray"
+  },
+  {
     "id": "scroll_sun",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
