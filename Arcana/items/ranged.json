@@ -172,7 +172,7 @@
     "longest_side": "65 cm",
     "price": "450 USD",
     "price_postapoc": "80 USD",
-    "to_hit": 1,
+    "to_hit": { "grip": "none", "length": "short", "surface": "any", "balance": "uneven" },
     "melee_damage": { "bash": 11 },
     "material": [ "steel", "wood", "gold" ],
     "symbol": "(",
