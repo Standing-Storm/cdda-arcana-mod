@@ -106,7 +106,7 @@
         "type": "spell",
         "spell_data": { "id": "arcana_monster_moruboru_fetid_exhalation" },
         "cooldown": 50,
-        "monster_message": "A strange vapor emanates from the moruboru."
+        "monster_message": "A strange vapor emanates from the mandragora."
       }
     ],
     "death_drops": "mon_moruboru_death_drops",
@@ -590,7 +590,7 @@
           "type": "spell",
           "spell_data": { "id": "arcana_monster_summoner", "hit_self": true },
           "cooldown": 15,
-          "monster_message": "The air wavers as the maddened wanderer raises its talisman!"
+          "monster_message": "The air wavers as the maddened wanderer raises their talisman!"
         }
       ]
     },
@@ -625,7 +625,7 @@
           "require_targeting_npc": true,
           "require_targeting_monster": true,
           "targeting_cost": 100,
-          "targeting_sound": "\"Ave martello!\"  The maddened hunter raises its hammer high!",
+          "targeting_sound": "\"Ave martello!\"  The maddened hunter raises their hammer high!",
           "targeting_volume": 30,
           "description": "The maddened hunter's hammer gives off a blinding flash!",
           "no_ammo_sound": "a cry of anger!"
@@ -664,7 +664,7 @@
           "require_targeting_npc": true,
           "require_targeting_monster": true,
           "targeting_cost": 100,
-          "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises its symbol of judgment!",
+          "targeting_sound": "\"May He forge your chains!\"  The maddened keeper raises their symbol of judgment!",
           "targeting_volume": 30,
           "description": "Lightning arcs from the maddened keeper's symbol of judgment!",
           "no_ammo_sound": "a cry of anger!"
