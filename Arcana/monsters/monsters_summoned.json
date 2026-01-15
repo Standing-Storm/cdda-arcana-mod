@@ -431,6 +431,38 @@
     "extend": { "flags": [ "PATH_AVOID_DANGER", "PRIORITIZE_TARGETS" ], "special_attacks": [ [ "PARROT", 900 ] ] }
   },
   {
+    "id": "mon_kreck_summoned_glyph",
+    "copy-from": "mon_kreck_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned kreck" },
+    "death_drops": "mon_bound_glyph_death_drops_universal",
+    "revert_to_itype": "summon_kreck_bound"
+  },
+  {
+    "id": "mon_flesh_angel_summoned_glyph",
+    "copy-from": "mon_flesh_angel_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned flesh angel" },
+    "death_drops": "mon_bound_glyph_death_drops_universal",
+    "revert_to_itype": "summon_flesh_angel_bound"
+  },
+  {
+    "id": "mon_dark_wyrm_summoned_glyph",
+    "copy-from": "mon_dark_wyrm_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned dark wyrm" },
+    "death_drops": "mon_bound_glyph_death_drops_universal",
+    "revert_to_itype": "summon_dark_wyrm_bound"
+  },
+  {
+    "id": "mon_jabberwock_summoned_glyph",
+    "copy-from": "mon_jabberwock_summoned",
+    "type": "MONSTER",
+    "name": { "str": "summoned jabberwock" },
+    "death_drops": "mon_bound_glyph_death_drops_universal",
+    "revert_to_itype": "summon_jabberwock_bound"
+  },
+  {
     "id": "mon_shadow_summoned_fake",
     "looks_like": "mon_shadow_summoned",
     "type": "MONSTER",

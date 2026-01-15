@@ -20,27 +20,31 @@
     "copy-from": "mon_tazer_hack",
     "looks_like": "mon_tazer_hack",
     "type": "MONSTER",
-    "default_faction": "archon"
+    "default_faction": "archon",
+    "death_function": { "message": "The %s vanishes.", "corpse_type": "NO_CORPSE" }
   },
   {
     "id": "mon_grenade_hack_archon",
     "copy-from": "mon_grenade_hack",
     "looks_like": "mon_grenade_hack",
     "type": "MONSTER",
-    "default_faction": "archon"
+    "default_faction": "archon",
+    "death_function": { "message": "The %s vanishes.", "corpse_type": "NO_CORPSE" }
   },
   {
     "id": "mon_flashbang_hack_archon",
     "copy-from": "mon_flashbang_hack",
     "looks_like": "mon_flashbang_hack",
     "type": "MONSTER",
-    "default_faction": "archon"
+    "default_faction": "archon",
+    "death_function": { "message": "The %s vanishes.", "corpse_type": "NO_CORPSE" }
   },
   {
     "id": "mon_c4_hack_archon",
     "copy-from": "mon_c4_hack",
     "looks_like": "mon_c4_hack",
     "type": "MONSTER",
-    "default_faction": "archon"
+    "default_faction": "archon",
+    "death_function": { "message": "The %s vanishes.", "corpse_type": "NO_CORPSE" }
   }
 ]
