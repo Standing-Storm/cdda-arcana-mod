@@ -169,7 +169,14 @@
         "monster_message": "",
         "cooldown": 40
       },
-      [ "GRENADIER_ELITE", 15 ],
+      {
+        "type": "spell",
+        "id": "arcana_monster_archon_dispel_summons",
+        "spell_data": { "id": "arcana_monster_archon_dispel_summons", "min_level": 10 },
+        "monster_message": "%1$s intones, \"Avaunt, interloper!\"",
+        "condition": { "npc_has_species": "SUMMONED_CREATURE" },
+        "cooldown": 40
+      },
       [ "PARROT", 25 ],
       {
         "type": "gun",
@@ -706,37 +713,5 @@
       ]
     },
     "death_drops": "mon_feral_hermit_death_drops"
-  },
-  {
-    "id": "mon_kreck_summoned_glyph",
-    "copy-from": "mon_kreck_summoned",
-    "type": "MONSTER",
-    "name": { "str": "summoned kreck" },
-    "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_kreck_bound"
-  },
-  {
-    "id": "mon_flesh_angel_summoned_glyph",
-    "copy-from": "mon_flesh_angel_summoned",
-    "type": "MONSTER",
-    "name": { "str": "summoned flesh angel" },
-    "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_flesh_angel_bound"
-  },
-  {
-    "id": "mon_dark_wyrm_summoned_glyph",
-    "copy-from": "mon_dark_wyrm_summoned",
-    "type": "MONSTER",
-    "name": { "str": "summoned dark wyrm" },
-    "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_dark_wyrm_bound"
-  },
-  {
-    "id": "mon_jabberwock_summoned_glyph",
-    "copy-from": "mon_jabberwock_summoned",
-    "type": "MONSTER",
-    "name": { "str": "summoned jabberwock" },
-    "death_drops": "mon_bound_glyph_death_drops_universal",
-    "revert_to_itype": "summon_jabberwock_bound"
   }
 ]
