@@ -190,7 +190,7 @@
     ]
   },
   {
-    "id": "cleansing_flame_casualties",
+    "id": "cleansing_flame_casualties_items",
     "type": "item_group",
     "subtype": "collection",
     "entries": [
@@ -198,8 +198,16 @@
       { "group": "cleansing_flame_gear", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "cleansing_flame_crafting", "prob": 25 },
-      { "group": "cf_corpse_combatants", "damage": 4 }
+      { "group": "cleansing_flame_crafting", "prob": 25 }
+    ]
+  },
+  {
+    "id": "cleansing_flame_casualties",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "cleansing_flame_casualties_items", "prob": 100 },
+      { "group": "cf_corpse_combatants", "prob": 100, "damage": 4 }
     ]
   },
   {
@@ -207,11 +215,7 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 15, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "cleansing_flame_crafting", "prob": 25 },
+      { "group": "cleansing_flame_casualties_items", "prob": 100 },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
@@ -219,14 +223,7 @@
     "id": "cleansing_flame_casualty_specific",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "cleansing_flame_crafting", "prob": 25 },
-      { "item": "corpse_gunned", "damage": 4 }
-    ]
+    "entries": [ { "group": "cleansing_flame_casualties_items", "prob": 100 }, { "item": "corpse_gunned", "prob": 100, "damage": 4 } ]
   },
   {
     "id": "cf_corpse_combatants",
