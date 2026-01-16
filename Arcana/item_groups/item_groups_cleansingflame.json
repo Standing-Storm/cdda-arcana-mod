@@ -122,8 +122,8 @@
     "id": "cleansing_flame_spells",
     "type": "item_group",
     "items": [
-      [ "scroll_spell_plants", 1 ],
-      [ "scroll_spell_heal", 1 ],
+      [ "scroll_spell_might", 1 ],
+      [ "scroll_spell_insight", 1 ],
       [ "scroll_spell_flame_armor", 1 ],
       [ "scroll_spell_clairvoyance", 1 ],
       [ "scroll_spell_cleric", 1 ]
