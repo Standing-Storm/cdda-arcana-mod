@@ -9,7 +9,7 @@
     "sym": "t",
     "color": "green",
     "autonote": false,
-    "flags": [ "WILDERNESS" ]
+    "flags": [ "WILDERNESS", "CLASSIC" ]
   },
   {
     "id": "mx_cleansing_flame_vs_monsters",
@@ -21,6 +21,6 @@
     "sym": "c",
     "color": "red",
     "autonote": false,
-    "flags": [ "MAN_MADE" ]
+    "flags": [ "MAN_MADE", "CLASSIC" ]
   }
 ]
