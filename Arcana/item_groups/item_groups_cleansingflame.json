@@ -190,7 +190,7 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "cleansing_flame_corpse_gear", "prob": 15, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_corpse_gear", "prob": 90, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
       { "group": "cleansing_flame_crafting", "prob": 25 }
