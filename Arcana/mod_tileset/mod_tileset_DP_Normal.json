@@ -444,7 +444,13 @@
           { "id": "mon_feral_keeper", "fg": 238 },
           { "id": "mon_feral_sanguinist", "fg": 239 },
           {
-            "id": [ "corpse_mon_feral_summoner", "corpse_mon_feral_magehunter", "corpse_mon_feral_keeper", "corpse_mon_feral_sanguinist" ],
+            "id": [
+              "corpse_mon_feral_summoner",
+              "corpse_mon_feral_magehunter",
+              "corpse_mon_feral_keeper",
+              "corpse_mon_feral_sanguinist",
+              "corpse_mon_feral_swamp_witch"
+            ],
             "fg": 240
           },
           {
