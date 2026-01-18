@@ -5,7 +5,7 @@
     "oter_ids": {
       "island_temple_b_1_north": "island_temple_subbasement_1",
       "island_temple_b_1_west": "island_temple_subbasement_1",
-      "island_temple_b_1"_east: "island_temple_subbasement_1",
+      "island_temple_b_1_east": "island_temple_subbasement_1",
       "island_temple_b_1_south": "island_temple_subbasement_1",
       "island_temple_b_2_north": "island_temple_subbasement_2",
       "island_temple_b_2_west": "island_temple_subbasement_2",
@@ -18,7 +18,7 @@
       "island_temple_b_4_north": "island_temple_subbasement_4",
       "island_temple_b_4_west": "island_temple_subbasement_4",
       "island_temple_b_4_east": "island_temple_subbasement_4",
-      "island_temple_b_4_south": "island_temple_subbasement_4",
+      "island_temple_b_4_south": "island_temple_subbasement_4"
     }
   }
 ]
