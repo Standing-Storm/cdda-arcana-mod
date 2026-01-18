@@ -414,11 +414,12 @@
             "id": [
               "overlay_mutation_ARCANA_SCALYWINGS",
               "overlay_mutation_ARCANA_DRAGONWINGS",
-              "overlay_mutation_ARCANA_DRAGONWINGS_FLIGHT"
+              "overlay_mutation_ARCANA_DRAGONWINGS_FLIGHT",
+              "overlay_mutation_ARCANA_DRAGON_WINGS_APPEARANCE"
             ],
             "fg": 214
           },
-          { "id": "overlay_mutation_ARCANA_DRAGONCLAWS", "fg": 215 },
+          { "id": [ "overlay_mutation_ARCANA_DRAGONCLAWS", "ARCANA_DRAGON_CLAWS_APPEARANCE" ], "fg": 215 },
           { "id": "overlay_mutation_ARCANA_DRAGONMUZZLE", "fg": 216 },
           { "id": [ "overlay_mutation_ARCANA_SCALYLEGS", "overlay_mutation_ARCANA_DRAGONLEGS" ], "fg": 217 },
           { "id": "overlay_mutation_ARCANA_SCALYTAIL", "fg": 218 },

@@ -1,0 +1,20 @@
+[
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGON_WINGS_APPEARANCE",
+    "name": { "str": "Wings Sprite", "//~": "NO_I18N" },
+    "points": 0,
+    "description": { "str": "This is set up for enchantments to let you have wings, it does nothing by itself.", "//~": "NO_I18N" },
+    "valid": false,
+    "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_DRAGON_CLAWS_APPEARANCE",
+    "name": { "str": "Claws Sprite", "//~": "NO_I18N" },
+    "points": 0,
+    "description": { "str": "This is set up for enchantments to let you have claws, it does nothing by itself.", "//~": "NO_I18N" },
+    "valid": false,
+    "player_display": false
+  }
+]
