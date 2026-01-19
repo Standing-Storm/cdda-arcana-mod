@@ -16,20 +16,6 @@
   },
   {
     "type": "effect_type",
-    "id": "effect_arcana_blood_magic_killed_human",
-    "//": "Hidden effect, lets you cast blood magic with huge benefits",
-    "name": [ "" ],
-    "desc": [ "" ]
-  },
-  {
-    "type": "effect_type",
-    "id": "effect_arcana_blood_magic_killed",
-    "//": "Hidden effect, lets you cast blood magic with benefits",
-    "name": [ "" ],
-    "desc": [ "" ]
-  },
-  {
-    "type": "effect_type",
     "id": "effect_arcana_sanguine_mark_not_enough_blood",
     "//": "Hidden effect, stops you from killing yourself with sanguine marks",
     "name": [ "" ],
@@ -687,19 +673,6 @@
     "type": "effect_type",
     "id": "food_protect_dragonblood",
     "blocks_effects": [ "tapeworm", "bloodworms", "brainworms", "paincysts", "foodpoison" ]
-  },
-  {
-    "type": "effect_type",
-    "id": "effect_arcana_blood_magic_corrupted_flesh",
-    "name": [ "Corrupted Flesh" ],
-    "desc": [ "Your flesh twitches and wriggles unnaturally." ],
-    "apply_message": "",
-    "remove_message": "Your flesh finally settles down.",
-    "rating": "bad",
-    "max_duration": "7 days",
-    "show_in_info": true,
-    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": -0.75 } ] } ],
-    "flags": [ "BLOCK_SUPERNATURAL_HEALING" ]
   },
   {
     "type": "effect_type",

@@ -245,5 +245,40 @@
     "down_dur": 2,
     "messages": [ "Your blade flickers and sunders through %s", "<npcname>'s blade flickers and sunders through %s" ],
     "attack_vectors": [ "vector_null" ]
+  },
+  {
+    "type": "technique",
+    "id": "ARCANA_BLOOD_KNIFE_ARMOR_PENETRATION",
+    "name": "Crimson Talon Rending",
+    "melee_allowed": false,
+    "messages": [ "You rend %s with your crimson talons", "<npcname> rends %s with their crimson talons" ],
+    "unarmed_allowed": true,
+    "weighting": -4,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_punch" ],
+    "tech_effects": [
+      {
+        "id": "bleed",
+        "chance": 25,
+        "duration": 60,
+        "on_damage": true,
+        "message": "Your slash opens up bleeding gashes on %s!"
+      }
+    ],
+    "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scaling-stat": "magic", "scale": 1 } ]
+  },
+  {
+    "type": "technique",
+    "id": "ARCANA_BLOOD_KNIFE_QUICK_SLASH",
+    "name": "Crimson Talon Quick Strike",
+    "melee_allowed": false,
+    "messages": [ "You quickly slash %s with your crimson talons", "<npcname> quickly slashes %s with their crimson talons" ],
+    "unarmed_allowed": true,
+    "weighting": -4,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_punch" ],
+    "flat_bonuses": [ { "stat": "movecost", "scaling-stat": "magic", "scale": -2.5 } ]
   }
 ]

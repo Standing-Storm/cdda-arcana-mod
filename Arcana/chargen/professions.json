@@ -240,7 +240,7 @@
     "description": "You have beheld true power, as a member of the Sanguine Order.  You were a frequent participant in rituals and had mastered some of the early steps in the path of blood magic when the Cataclysm struck.  Now you've seen enough blood to last a lifetime.",
     "proficiencies": [ "prof_arcana_thaumatology" ],
     "spells": [
-      { "id": "arcana_mark_malevolent_gaze", "level": 2 },
+      { "id": "arcana_blood_magic_call_bloodwalker", "level": 2 },
       { "id": "arcana_blood_magic_corrupted_flesh", "level": 3 },
       { "id": "arcana_blood_magic_drain_energy", "level": 3 },
       { "id": "arcana_blood_magic_rite_of_sacrifice", "level": 3 }
