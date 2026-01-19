@@ -64,26 +64,24 @@
     "condition": {
       "and": [
         { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
-        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] },
-        { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
+        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
       ]
     },
     "effect": [
       {
         "if": { "u_has_effect": "effect_arcana_blood_magic_killed_human" },
         "then": [
-          { "math": [ "u_spellcasting_adjustment('cost', 'school': 'ARCANA_BLOOD_MAGIC' ) = 0" ] },
+          { "math": [ "u_spellcasting_adjustment('cost', 'school': 'ARCANA_BLOOD_MAGIC' ) = -1" ] },
           { "math": [ "u_spellcasting_adjustment('aoe', 'school': 'ARCANA_BLOOD_MAGIC' ) = 1" ] },
           { "math": [ "u_spellcasting_adjustment('damage', 'school': 'ARCANA_BLOOD_MAGIC' ) = 2" ] },
           { "math": [ "u_spellcasting_adjustment('duration', 'school': 'ARCANA_BLOOD_MAGIC' ) = 9" ] }
         ],
         "else": [
-          { "math": [ "u_spellcasting_adjustment('cost', 'school': 'ARCANA_BLOOD_MAGIC' ) = 0" ] },
+          { "math": [ "u_spellcasting_adjustment('cost', 'school': 'ARCANA_BLOOD_MAGIC' ) = -1" ] },
           { "math": [ "u_spellcasting_adjustment('duration', 'school': 'ARCANA_BLOOD_MAGIC' ) = 4" ] }
         ]
       }
-    ],
-    "false_effect": { "u_message": "You do not have a blood magic bonus", "type": "debug" }
+    ]
   },
   {
     "type": "effect_on_condition",
@@ -93,7 +91,8 @@
     "condition": {
       "and": [
         { "u_has_trait": "ARCANA_BLOOD_MAGIC" },
-        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
+        { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] },
+        { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
       ]
     },
     "effect": [
