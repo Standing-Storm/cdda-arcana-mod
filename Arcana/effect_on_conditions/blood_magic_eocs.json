@@ -82,7 +82,8 @@
           { "math": [ "u_spellcasting_adjustment('duration ', 'school': 'ARCANA_BLOOD_MAGIC' ) = 4" ] }
         ]
       }
-    ]
+    ],
+    "false_effect": { "u_message": "You do not have a blood magic bonus", "type": "debug" }
   },
   {
     "type": "effect_on_condition",

@@ -128,8 +128,8 @@
     "symbol": ",",
     "color": "red",
     "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 4 ], [ "PRY", 1 ] ],
-    "techniques": [ "ARCANA_BLOOD_KNIFE_ARMOR_PENETRATION", "ARCANA_BLOOD_KNIFE_QUICK_SLASH" ],
-    "flags": [ "INTEGRATED", "ALLOWS_NATURAL_ATTACKS", "UNBREAKABLE", "OUTER", "PADDED", "PROVIDES_TECHNIQUES", "MAGIC_PINK" ],
+    "techniques": [ "ARCANA_BLOOD_KNIFE_ARMOR_PENETRATION", "ARCANA_BLOOD_KNIFE_QUICK_SLASH", "ARCANA_BLOOD_KNIFE_BLOOD_DRINKER" ],
+    "flags": [ "INTEGRATED", "ALLOWS_NATURAL_ATTACKS", "UNBREAKABLE", "OUTER", "PADDED", "PROVIDES_TECHNIQUES", "RELIC_PINK" ],
     "armor": [
       {
         "material": [ { "type": "blood", "covered_by_mat": 100, "thickness": 3.2 } ],
