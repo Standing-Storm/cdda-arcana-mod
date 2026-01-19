@@ -256,7 +256,7 @@
     "weighting": -4,
     "reach_ok": false,
     "crit_ok": true,
-    "attack_vectors": [ "vector_punch" ],
+    "attack_vectors": [ "vector_punch", "vector_palm", "vector_grasp" ],
     "tech_effects": [
       {
         "id": "bleed",
@@ -278,7 +278,7 @@
     "weighting": -4,
     "reach_ok": false,
     "crit_ok": true,
-    "attack_vectors": [ "vector_punch" ],
+    "attack_vectors": [ "vector_punch", "vector_palm", "vector_grasp" ],
     "flat_bonuses": [ { "stat": "movecost", "scaling-stat": "magic", "scale": -2.5 } ]
   }
 ]
