@@ -74,10 +74,10 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze",
-    "name": { "str": "Sanguine Grimoire: Malevolent Gaze", "str_pl": "Sanguine Grimoires: Malevolent Gaze" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual concentrates all of your hatred and anger into a single searing glare, freezing your target in place as though they were a rabbit and you are a snake..",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_malevolent_gaze" ] }
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_blood_knives",
+    "name": { "str": "Sanguine Grimoire: Crimson Talons", "str_pl": "Sanguine Grimoires: Crimson Talons" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual transforms spilled blood into deadly weapons, eldritch claws with which you can rend your enemies.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_blood_knives" ] }
   },
   {
     "type": "ITEM",

@@ -112,5 +112,33 @@
         "breathability": "AVERAGE"
       }
     ]
+  },
+  {
+    "id": "integrated_blood_knives",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str_sp": "crimson talons" },
+    "description": "Talons made of blood, ready to rend flesh.",
+    "weight": "450 g",
+    "volume": "500 ml",
+    "price": "0 cent",
+    "price_postapoc": "0 cent",
+    "material": [ "blood" ],
+    "symbol": ",",
+    "color": "red",
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 4 ], [ "PRY", 1 ] ],
+    "techniques": [ "ARCANA_BLOOD_KNIFE_ARMOR_PENETRATION", "ARCANA_BLOOD_KNIFE_QUICK_SLASH", "ARCANA_BLOOD_KNIFE_BLOOD_DRINKER" ],
+    "flags": [ "INTEGRATED", "ALLOWS_NATURAL_ATTACKS", "UNBREAKABLE", "OUTER", "PADDED", "PROVIDES_TECHNIQUES", "RELIC_PINK" ],
+    "armor": [
+      {
+        "material": [ { "type": "blood", "covered_by_mat": 100, "thickness": 3.2 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_fingers_l", "hand_fingers_r" ],
+        "coverage": 80,
+        "encumbrance": 3
+      }
+    ],
+    "melee_damage": { "cut": 10 }
   }
 ]

@@ -16,5 +16,17 @@
     "description": { "str": "This is set up for enchantments to let you have claws, it does nothing by itself.", "//~": "NO_I18N" },
     "valid": false,
     "player_display": false
+  },
+  {
+    "type": "mutation",
+    "id": "ARCANA_BLOOD_KNIVES_APPEARANCE",
+    "name": { "str": "Blood Knives Sprite", "//~": "NO_I18N" },
+    "points": 0,
+    "description": {
+      "str": "This is set up for enchantments to let you have claws made of blood, it does nothing by itself.",
+      "//~": "NO_I18N"
+    },
+    "valid": false,
+    "player_display": false
   }
 ]

@@ -74,7 +74,7 @@
       },
       {
         "distribution": [
-          { "item": "blood_magic_spell_scroll_arcana_mark_malevolent_gaze", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_blood_knives", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_drain_energy", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_increased_healing", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_call_bloodwalker", "prob": 1 }

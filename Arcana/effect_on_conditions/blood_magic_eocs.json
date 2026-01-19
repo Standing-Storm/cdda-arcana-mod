@@ -75,14 +75,15 @@
           { "math": [ "u_spellcasting_adjustment('cost', 'school': 'ARCANA_BLOOD_MAGIC' ) = 0" ] },
           { "math": [ "u_spellcasting_adjustment('aoe', 'school': 'ARCANA_BLOOD_MAGIC' ) = 1" ] },
           { "math": [ "u_spellcasting_adjustment('damage', 'school': 'ARCANA_BLOOD_MAGIC' ) = 2" ] },
-          { "math": [ "u_spellcasting_adjustment('duration ', 'school': 'ARCANA_BLOOD_MAGIC' ) = 9" ] }
+          { "math": [ "u_spellcasting_adjustment('duration', 'school': 'ARCANA_BLOOD_MAGIC' ) = 9" ] }
         ],
         "else": [
           { "math": [ "u_spellcasting_adjustment('cost', 'school': 'ARCANA_BLOOD_MAGIC' ) = 0" ] },
-          { "math": [ "u_spellcasting_adjustment('duration ', 'school': 'ARCANA_BLOOD_MAGIC' ) = 4" ] }
+          { "math": [ "u_spellcasting_adjustment('duration', 'school': 'ARCANA_BLOOD_MAGIC' ) = 4" ] }
         ]
       }
-    ]
+    ],
+    "false_effect": { "u_message": "You do not have a blood magic bonus", "type": "debug" }
   },
   {
     "type": "effect_on_condition",

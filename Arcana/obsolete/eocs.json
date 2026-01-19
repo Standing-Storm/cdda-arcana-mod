@@ -34,7 +34,8 @@
     "condition": { "not": { "u_has_trait": "ARCANA_SANGUINE_MARKS" } },
     "effect": [
       { "math": [ "u_spell_level('arcana_mark_revenant_blood') = -1" ] },
-      { "math": [ "u_spell_level('arcana_mark_elemental_sign') = -1" ] }
+      { "math": [ "u_spell_level('arcana_mark_elemental_sign') = -1" ] },
+      { "math": [ "u_spell_level('arcana_mark_malevolent_gaze') = -1" ] }
     ]
   }
 ]

@@ -245,5 +245,99 @@
     "down_dur": 2,
     "messages": [ "Your blade flickers and sunders through %s", "<npcname>'s blade flickers and sunders through %s" ],
     "attack_vectors": [ "vector_null" ]
+  },
+  {
+    "type": "technique",
+    "id": "ARCANA_BLOOD_KNIFE_ARMOR_PENETRATION",
+    "name": "Crimson Talon Rending",
+    "melee_allowed": false,
+    "messages": [ "You rend %s with your crimson talons", "<npcname> rends %s with their crimson talons" ],
+    "unarmed_allowed": true,
+    "weighting": -4,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_punch", "vector_palm", "vector_grasp" ],
+    "tech_effects": [
+      {
+        "id": "bleed",
+        "chance": 25,
+        "duration": 60,
+        "on_damage": true,
+        "message": "Your slash opens up bleeding gashes on %s!"
+      }
+    ],
+    "flat_bonuses": [
+      { "stat": "damage", "type": "cut", "scaling-stat": "unarmed", "scale": 1.0 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 0.06 },
+      { "stat": "arpen", "type": "cut", "scaling-stat": "magic", "scale": -1.5 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "ARCANA_BLOOD_KNIFE_QUICK_SLASH",
+    "name": "Crimson Talon Quick Strike",
+    "melee_allowed": false,
+    "messages": [ "You quickly slash %s with your crimson talons", "<npcname> quickly slashes %s with their crimson talons" ],
+    "unarmed_allowed": true,
+    "weighting": -4,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_punch", "vector_palm", "vector_grasp" ],
+    "flat_bonuses": [
+      { "stat": "damage", "type": "cut", "scaling-stat": "unarmed", "scale": 1.0 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 0.06 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "magic", "scale": -2.5 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "ARCANA_BLOOD_KNIFE_BLOOD_DRINKER",
+    "name": "Crimson Talon Blood Drinker",
+    "melee_allowed": false,
+    "messages": [
+      "Your crimson talons absorb some blood from %s, empowering your blood sorcery!",
+      "<npcname> slashes %s with their crimson talons"
+    ],
+    "unarmed_allowed": true,
+    "weighting": -4,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_punch", "vector_palm", "vector_grasp" ],
+    "condition": {
+      "or": [
+        {
+          "and": [
+            "npc_is_character",
+            {
+              "or": [
+                { "u_has_effect": "bleed", "bodypart": "head" },
+                { "u_has_effect": "bleed", "bodypart": "torso" },
+                { "u_has_effect": "bleed", "bodypart": "arm_r" },
+                { "u_has_effect": "bleed", "bodypart": "arm_l" },
+                { "u_has_effect": "bleed", "bodypart": "leg_r" },
+                { "u_has_effect": "bleed", "bodypart": "leg_l" }
+              ]
+            }
+          ]
+        },
+        { "and": [ "npc_is_monster", { "npc_has_effect": "bleed" } ] }
+      ]
+    },
+    "eocs": [
+      {
+        "id": "EOC_ARCANA_BLOOD_KNIFE_BLOOD_DRINKER_GAIN_BLOOD_EMPOWERMENT",
+        "effect": [ { "u_add_effect": "effect_arcana_blood_magic_killed", "duration": 15 } ]
+      }
+    ],
+    "flat_bonuses": [
+      { "stat": "damage", "type": "cut", "scaling-stat": "unarmed", "scale": 1.0 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 0.06 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
   }
 ]

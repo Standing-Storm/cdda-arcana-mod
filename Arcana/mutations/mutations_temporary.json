@@ -1,0 +1,16 @@
+[
+  {
+    "type": "mutation",
+    "id": "ARCANA_BLOOD_KNIVES_SPELL_TECHNIQUES",
+    "name": { "str": "Blood Knife techniques", "//~": "NO_I18N" },
+    "valid": false,
+    "starting_trait": false,
+    "purifiable": false,
+    "player_display": false,
+    "points": 2,
+    "visibility": 0,
+    "ugliness": 0,
+    "description": { "str": "Gives the integrated blood knives.  Should not be player visible.", "//~": "NO_I18N" },
+    "integrated_armor": [ "integrated_blood_knives" ]
+  }
+]
