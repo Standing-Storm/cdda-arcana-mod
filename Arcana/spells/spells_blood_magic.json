@@ -607,7 +607,7 @@
     "flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "SILENT" ],
     "effect": "attack",
     "shape": "blast",
-    "condition": {
+    "caster_condition": {
       "or": [ { "u_has_effect": "effect_arcana_blood_magic_killed_human" }, { "u_has_effect": "effect_arcana_blood_magic_killed" } ]
     },
     "difficulty": 90,
@@ -638,7 +638,7 @@
     "effect": "effect_on_condition",
     "shape": "blast",
     "effect_str": "EOC_ARCANA_BLOOD_MAGIC_BLOOD_TELEPORT",
-    "condition": { "u_is_in_field": "fd_blood" },
+    "caster_condition": { "u_is_in_field": "fd_blood" },
     "difficulty": 40,
     "skill": "magic",
     "max_level": 5,
