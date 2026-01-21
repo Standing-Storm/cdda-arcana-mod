@@ -1,14 +1,15 @@
 [
   {
     "id": "gauntlets_necro",
+    "looks_like": "art_gloves",
     "copy-from": "gauntlets_larmor",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR" ],
     "name": { "str": "pair of thunder gauntlets", "str_pl": "pairs of thunder gauntlets" },
-    "description": "A heavy set of leather gauntlets, decorated with silver.  Touching the silver lines sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
+    "description": "A heavy set of leather gauntlets, decorated with gold.  Touching the golden lines sends a faint electric tingle through you.  Use them to give a nearby enemy a powerful stunning jolt, draining health from your target.",
     "price": "600 USD",
     "price_postapoc": "50 USD",
-    "material": [ "leather", "silver" ],
+    "material": [ "leather", "gold" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 8 } } ],
     "charges_per_use": 1,
     "tool_ammo": "essence_type",
