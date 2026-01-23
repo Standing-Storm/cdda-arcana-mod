@@ -1,0 +1,11 @@
+[
+  {
+    "type": "monstergroup",
+    "id": "GROUP_FOREST",
+    "monsters": [
+      { "monster": "mon_thornwight", "weight": 4, "cost_multiplier": 6 },
+      { "monster": "mon_thornwight", "weight": 2, "cost_multiplier": 6, "pack_size": [ 2, 5 ] },
+      { "monster": "mon_thornbear", "weight": 1, "cost_multiplier": 15 }
+    ]
+  }
+]

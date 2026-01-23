@@ -92,38 +92,34 @@
     ]
   },
   {
-    "id": "cleansing_flame_gear",
+    "id": "cleansing_flame_corpse_gear",
     "type": "item_group",
-    "items": [
-      [ "warhammer", 8 ],
-      [ "lucern_hammer", 2 ],
-      [ "qt_broadsword", 4 ],
-      [ "qt_arming_sword", 4 ],
-      [ "qt_jian", 3 ],
-      [ "crossbow", 10 ],
-      [ "hand_crossbow", 3 ],
-      [ "huge_crossbow", 2 ],
-      [ "shotgun_d", 5 ],
-      [ "bolt_steel", 10 ],
-      [ "helmet_galea", 5 ],
-      [ "helmet_nasal", 5 ],
-      [ "cloak_leather", 5 ],
-      [ "qt_chainmail_hauberk", 2 ],
-      [ "armor_qt_lightplate", 2 ],
-      [ "armor_qt_plate", 1 ],
-      [ "boots_larmor", 5 ],
-      [ "boots_plate", 5 ],
-      [ "gauntlets_larmor", 5 ],
-      [ "qt_mitten_gaunt", 5 ],
-      [ "holy_symbol", 10 ]
+    "subtype": "distribution",
+    "entries": [
+      { "group": "mon_zombie_cop_death_drops", "prob": 5 },
+      { "group": "mon_zombie_survivor_death_drops", "prob": 15 },
+      { "group": "mon_feral_survivalist_death_drops", "prob": 5 },
+      { "group": "mon_zombie_survivor_elite_death_drops", "prob": 2 },
+      {
+        "collection": [ { "group": "NC_CF_PURIFIER_worn", "prob": 100 }, { "group": "NC_MAGE_HUNTER_weapon", "prob": 100 } ],
+        "prob": 20
+      },
+      {
+        "collection": [
+          { "group": "NC_MAGE_HUNTER_worn", "prob": 100 },
+          { "group": "NC_MAGE_HUNTER_misc", "prob": 25 },
+          { "group": "NC_MAGE_HUNTER_weapon", "prob": 100 }
+        ],
+        "prob": 10
+      }
     ]
   },
   {
     "id": "cleansing_flame_spells",
     "type": "item_group",
     "items": [
-      [ "scroll_spell_plants", 1 ],
-      [ "scroll_spell_heal", 1 ],
+      [ "scroll_spell_might", 1 ],
+      [ "scroll_spell_insight", 1 ],
       [ "scroll_spell_flame_armor", 1 ],
       [ "scroll_spell_clairvoyance", 1 ],
       [ "scroll_spell_cleric", 1 ]
@@ -190,16 +186,23 @@
     ]
   },
   {
+    "id": "cleansing_flame_casualties_items",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      { "group": "cleansing_flame_corpse_gear", "prob": 90, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
+      { "group": "cleansing_flame_crafting", "prob": 25 }
+    ]
+  },
+  {
     "id": "cleansing_flame_casualties",
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 15, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "cleansing_flame_crafting", "prob": 25 },
-      { "group": "cf_corpse_combatants", "damage": 4 }
+      { "group": "cleansing_flame_casualties_items", "prob": 100 },
+      { "group": "cf_corpse_combatants", "prob": 100, "damage": 4 }
     ]
   },
   {
@@ -207,11 +210,7 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 15, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "cleansing_flame_crafting", "prob": 25 },
+      { "group": "cleansing_flame_casualties_items", "prob": 100 },
       { "item": "bone_human", "prob": 100, "count": [ 3, 9 ] }
     ]
   },
@@ -219,14 +218,7 @@
     "id": "cleansing_flame_casualty_specific",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear_consumables", "prob": 25 },
-      { "group": "cleansing_flame_crafting", "prob": 25 },
-      { "item": "corpse_gunned", "damage": 4 }
-    ]
+    "entries": [ { "group": "cleansing_flame_casualties_items", "prob": 100 }, { "item": "corpse_gunned", "prob": 100, "damage": 4 } ]
   },
   {
     "id": "cf_corpse_combatants",
@@ -261,8 +253,7 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_corpse_gear", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
       { "item": "corpse_scorched", "damage": 4 }
@@ -273,8 +264,7 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "group": "clothing_outdoor_set", "damage": [ 1, 4 ] },
-      { "group": "cleansing_flame_gear", "prob": 10, "damage": [ 1, 4 ] },
+      { "group": "cleansing_flame_corpse_gear", "prob": 10, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_magic", "prob": 15, "damage": [ 1, 4 ] },
       { "group": "cleansing_flame_gear_consumables", "prob": 25 },
       { "group": "arcanist_corpses_adult_random", "damage": 4 }

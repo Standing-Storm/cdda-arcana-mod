@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_roof" ],
     "weight": 300,
     "object": {
@@ -37,7 +36,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_roof_2" ],
     "weight": 300,
     "object": {
@@ -73,7 +71,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure" ],
     "weight": 300,
     "object": {
@@ -125,7 +122,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_2" ],
     "weight": 300,
     "object": {
@@ -174,7 +170,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_b" ],
     "weight": 300,
     "object": {
@@ -216,8 +211,6 @@
         { "item": "CF_golden_scale", "x": 9, "y": [ 17, 19 ], "chance": 30, "repeat": 3 },
         { "group": "cleansing_flame_crafting", "x": 15, "y": [ 17, 19 ], "chance": 75, "repeat": 5 },
         { "item": "CF_golden_scale", "x": 15, "y": [ 17, 19 ], "chance": 30, "repeat": 3 },
-        { "group": "cleansing_flame_gear", "x": 9, "y": [ 21, 23 ], "chance": 40, "repeat": 3 },
-        { "group": "cleansing_flame_gear", "x": 15, "y": [ 21, 23 ], "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear_consumables", "x": 4, "y": [ 17, 19 ], "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear_consumables", "x": 20, "y": [ 17, 19 ], "chance": 40, "repeat": 3 },
         { "group": "cleansing_flame_gear_magic", "x": 4, "y": [ 21, 23 ], "chance": 25, "repeat": 3 },
@@ -229,7 +222,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_b_2" ],
     "weight": 300,
     "object": {
@@ -272,7 +264,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_b2" ],
     "weight": 300,
     "object": {
@@ -316,7 +307,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "curious_structure_b2_2" ],
     "weight": 300,
     "object": {

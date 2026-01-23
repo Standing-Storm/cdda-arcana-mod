@@ -10,5 +10,53 @@
     "id": "biome_forest_thick_default",
     "copy-from": "biome_forest_thick_default",
     "extend": { "terrains": [ "arcana_grove_lodge_ground1", "arcana_grove_lodge_ground2" ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "forest_water",
+    "copy-from": "forest_water",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 4 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "forest_thick",
+    "copy-from": "forest_thick",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 1 ], [ "mx_tanglevine_patch", 2 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "forest",
+    "copy-from": "forest",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 4 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "field",
+    "copy-from": "field",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 6 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "agricultural",
+    "copy-from": "agricultural",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 2 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "road",
+    "copy-from": "road",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 1 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "build",
+    "copy-from": "build",
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 3 ], [ "mx_loose_summons", 1 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "subway",
+    "copy-from": "subway",
+    "extend": { "extras": [ [ "mx_loose_summons", 2 ] ] }
   }
 ]

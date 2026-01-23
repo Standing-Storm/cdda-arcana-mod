@@ -1064,7 +1064,6 @@
     "id": "mon_feral_prepper_mace_death_drops",
     "copy-from": "mon_feral_prepper_mace_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
       "entries": [
@@ -1084,7 +1083,6 @@
     "id": "mon_feral_prepper_knife_death_drops",
     "copy-from": "mon_feral_prepper_knife_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
       "entries": [
@@ -1104,7 +1102,6 @@
     "id": "mon_feral_survivalist_death_drops",
     "copy-from": "mon_feral_survivalist_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": {
       "entries": [
@@ -1124,7 +1121,6 @@
     "id": "mon_feral_militia_death_drops",
     "copy-from": "mon_feral_militia_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 } ] }
   },
@@ -1132,7 +1128,6 @@
     "id": "mon_feral_soldier_death_drops",
     "copy-from": "mon_feral_soldier_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 } ] }
   },
@@ -1140,7 +1135,6 @@
     "id": "mon_feral_jackboot_death_drops",
     "copy-from": "mon_feral_jackboot_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": { "entries": [ { "group": "arcana_hunt_random", "prob": 3 } ] }
   },
@@ -1169,7 +1163,6 @@
     "id": "mon_zombie_survivor_elite_death_drops",
     "copy-from": "mon_zombie_survivor_elite_death_drops",
     "type": "item_group",
-    "//": "Only need to add items since we're referencing an existing itemgroup.",
     "subtype": "collection",
     "extend": { "entries": [ { "group": "strange_zombie_death_drops", "prob": 90 } ] }
   },
