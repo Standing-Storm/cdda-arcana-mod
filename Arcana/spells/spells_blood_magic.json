@@ -677,5 +677,10 @@
         "else": { "u_message": "You cancel the ritual." }
       }
     ]
+  },
+  {
+    "id": "arcana_blood_magic_drink_blood",
+    "type": "SPELL",
+    "name": { "str": "Vampiric Thirst" }
   }
 ]
