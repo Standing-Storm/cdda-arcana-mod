@@ -1,0 +1,43 @@
+[
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "mx_loose_summons",
+    "object": {
+      "rows": [
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        ",
+        "                        "
+      ],
+      "place_monster": [
+        {
+          "group": "GROUP_ARCANA_SUMMONING_PRACTICE_NO_DIGGABLE",
+          "x": [ 3, 21 ],
+          "y": [ 3, 21 ],
+          "chance": 100,
+          "repeat": [ 1, 4 ]
+        }
+      ]
+    }
+  }
+]

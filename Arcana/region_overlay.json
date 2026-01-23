@@ -21,7 +21,7 @@
     "type": "map_extra_collection",
     "id": "forest_thick",
     "copy-from": "forest_thick",
-    "extend": { "extras": [ [ "", 1 ], [ "mx_tanglevine_patch", 2 ] ] }
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 1 ], [ "mx_tanglevine_patch", 2 ] ] }
   },
   {
     "type": "map_extra_collection",
@@ -51,6 +51,12 @@
     "type": "map_extra_collection",
     "id": "build",
     "copy-from": "build",
-    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 3 ] ] }
+    "extend": { "extras": [ [ "mx_cleansing_flame_vs_monsters", 3 ], [ "mx_loose_summons", 1 ] ] }
+  },
+  {
+    "type": "map_extra_collection",
+    "id": "subway",
+    "copy-from": "subway",
+    "extend": { "extras": [ [ "mx_loose_summons", 2 ] ] }
   }
 ]
