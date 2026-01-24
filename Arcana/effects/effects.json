@@ -991,7 +991,7 @@
     "max_duration": "120 m",
     "max_intensity": 120,
     "int_dur_factor": "1 m",
-    "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
+    "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 3 } ] } ]
   },
   {
     "type": "effect_type",
@@ -1004,7 +1004,7 @@
     "max_duration": "1200 m",
     "max_intensity": 1200,
     "int_dur_factor": "1 m",
-    "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life" } ] } ]
+    "enchantments": [ { "condition": "ALWAYS", "hit_you_effect": [ { "id": "arcana_react_drain_life", "once_in": 2 } ] } ]
   },
   {
     "type": "effect_type",
@@ -1293,10 +1293,9 @@
   {
     "type": "effect_type",
     "id": "drain_life_mending",
-    "removes_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": { "pain_min": [ -3 ], "stamina_min": [ 30 ] }
+    "base_mods": { "pain_min": [ -2 ], "stamina_min": [ 30 ] }
   },
   {
     "type": "effect_type",

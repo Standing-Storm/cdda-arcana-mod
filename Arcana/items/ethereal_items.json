@@ -36,5 +36,30 @@
         "melee_damage_bonus": [ { "type": "bash", "add": 5 } ]
       }
     ]
+  },
+  {
+    "id": "item_arcana_summon_blood_sword",
+    "copy-from": "mc_longsword",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARTIFACT" ],
+    "name": { "str": "bloody blade" },
+    "description": "A sword made of blood, still visibly flowing and warm in your hand.",
+    "material": [ { "type": "blood", "portion": 1 } ],
+    "extend": { "flags": [ "NO_DROP", "NO_REPAIR", "UNBREAKABLE_MELEE", "RELIC_PINK" ] },
+    "techniques": [ "WBLOCK_2", "BRUTAL", "RAPID", "tec_weapon_blood_sword_bleeding" ],
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "hit_me_effect": [
+          {
+            "id": "arcana_react_drain_life",
+            "once_in": 15,
+            "message": "A red mist rises from %2$s's wounds and flows into you!",
+            "npc_message": "A red mist rises from %2$s's wounds and flows into %1$s!"
+          }
+        ]
+      }
+    ]
   }
 ]

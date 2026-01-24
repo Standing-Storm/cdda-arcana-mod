@@ -339,5 +339,25 @@
       { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
       { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
     ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_weapon_blood_sword_bleeding",
+    "name": "Bloody Blade Rending",
+    "melee_allowed": true,
+    "messages": [ "You rend %s with your bloody blade", "<npcname> rends %s with their bloody blade" ],
+    "unarmed_allowed": false,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_null" ],
+    "tech_effects": [
+      {
+        "id": "bleed",
+        "chance": 75,
+        "duration": 120,
+        "on_damage": true,
+        "message": "Your slash opens up bleeding gashes on %s!"
+      }
+    ]
   }
 ]
