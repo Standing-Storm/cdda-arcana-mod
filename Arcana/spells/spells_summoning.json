@@ -134,7 +134,7 @@
     "message": "\"Neherit, otira atvess…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
-    "condition": { "or": [ { "not": "is_day" }, { "not": "u_is_outside" } ] },
+    "caster_condition": { "or": [ { "not": "is_day" }, { "not": "u_is_outside" } ] },
     "effect": "effect_on_condition",
     "shape": "blast",
     "effect_str": "EOC_ARCANA_SUMMON_SHADOW",
