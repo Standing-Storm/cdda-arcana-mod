@@ -281,7 +281,8 @@
     "id": [
       "blood_magic_spell_scroll_arcana_mark_revenant_blood",
       "blood_magic_spell_scroll_arcana_mark_elemental_sign",
-      "blood_magic_spell_scroll_arcana_mark_malevolent_gaze"
+      "blood_magic_spell_scroll_arcana_mark_malevolent_gaze",
+      "blood_magic_spell_scroll_arcana_mark_might"
     ],
     "replace": "manual_swimming"
   }

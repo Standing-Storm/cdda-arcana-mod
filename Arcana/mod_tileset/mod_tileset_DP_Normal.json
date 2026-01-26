@@ -379,7 +379,7 @@
           { "id": [ "draconic_heart_mutator", "overlay_wielded_draconic_heart_mutator" ], "fg": 187 },
           { "id": "stormbringer", "fg": 188 },
           { "id": "overlay_wielded_stormbringer", "fg": 189 },
-          { "id": "overlay_wielded_stormbringer_on", "fg": 190 },
+          { "id": [ "overlay_wielded_stormbringer_on", "overlay_wielded_item_arcana_summon_blood_sword" ], "fg": 190 },
           { "id": [ "distortion_amp_motor_item", "overlay_wielded_distortion_amp_motor_item" ], "fg": 191 },
           { "id": [ "essence_surge_generator_item", "overlay_wielded_essence_surge_generator_item" ], "fg": 192 },
           { "id": "mon_archon", "fg": 193 },

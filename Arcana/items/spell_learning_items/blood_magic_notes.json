@@ -53,15 +53,6 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_might",
-    "name": { "str": "Sanguine Grimoire: Manifestation of Strength", "str_pl": "Sanguine Grimoires: Manifestation of Strength" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual provides supernatural strength and resilience akin to that of the legendary dragon, though with a correspondingly increased appetite.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_might" ] }
-  },
-  {
-    "type": "ITEM",
-    "subtypes": [ "BOOK" ],
-    "copy-from": "blood_magic_spell_scroll",
     "id": "blood_magic_spell_scroll_arcana_blood_magic_call_bloodwalker",
     "name": {
       "str": "Sanguine Grimoire: Calling the Bloody-Handed Walker",
@@ -129,5 +120,32 @@
     "name": { "str": "Sanguine Grimoire: Traveling the Sanguine Road", "str_pl": "Sanguine Grimoires: Traveling the Sanguine Road" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to sink into a bloodstain on the ground and emerge from any other nearby bloodstain.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_blood_teleport" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_summon_blood_sword",
+    "name": { "str": "Sanguine Grimoire: Wielding the Bloody Blade", "str_pl": "Sanguine Grimoires: Wielding the Bloody Blade" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to create a sword made of flowing blood that can pull the blood from your enemies' wounds and occasionally transfer some of their life force to you.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_summon_blood_sword" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_drink_blood",
+    "name": { "str": "Sanguine Grimoire: Vampiric Thirst", "str_pl": "Sanguine Grimoires: Vampiric Thirst" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to drink blood and gain even more satisfaction and nourishment than from a gourmet meal, though normal food will seem tasteless while it is active.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_drink_blood" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_increase_health",
+    "name": { "str": "Sanguine Grimoire: Bestow Vitality", "str_pl": "Sanguine Grimoires: Bestow Vitality" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to fill a targe with health and vigor.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_increase_health" ] }
   }
 ]
