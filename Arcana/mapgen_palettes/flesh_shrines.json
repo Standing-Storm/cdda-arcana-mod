@@ -1,0 +1,12 @@
+[
+  {
+    "type": "palette",
+    "id": "arcana_flesh_shrine_palette",
+    "nested": {
+      "=": { "chunks": [ "nest_nm_floor_flesh_roof" ] },
+      "<": { "chunks": [ "nest_nm_slope_down_flesh_roof" ] },
+      "@": { "chunks": [ "nest_nm_wall_bone_roof" ] }
+    },
+    "terrain": { "#": "t_organic_wall", "O": "t_organic_pools", "_": "t_organic_roof" }
+  }
+]

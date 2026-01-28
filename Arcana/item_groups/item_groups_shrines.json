@@ -1,6 +1,26 @@
 [
   {
-    "id": "arcana_wilderness_shrine_loot",
+    "id": "arcana_wilderness_stone_shrine_loot",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jade_wreath", "prob": 20 },
+      { "item": "moonstone_fang", "prob": 20 },
+      { "item": "meteoric_talisman", "prob": 20 }
+    ]
+  },
+  {
+    "id": "arcana_wilderness_nature_shrine_loot",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "jade_wreath", "prob": 20 },
+      { "item": "moonstone_fang", "prob": 20 },
+      { "item": "meteoric_talisman", "prob": 20 }
+    ]
+  },
+  {
+    "id": "arcana_wilderness_flesh_shrine_loot",
     "type": "item_group",
     "subtype": "distribution",
     "entries": [

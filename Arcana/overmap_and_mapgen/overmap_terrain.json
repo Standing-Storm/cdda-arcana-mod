@@ -264,7 +264,7 @@
     "see_cost": "high"
   },
   {
-    "id": "shrine_anomaly",
+    "id": [ "shrine_anomaly", "shrine_anomaly_2", "shrine_anomaly_3" ],
     "type": "overmap_terrain",
     "name": "ruined shrine",
     "sym": "S",
@@ -276,28 +276,28 @@
     "flags": [ "RISK_HIGH" ]
   },
   {
-    "id": "shrine_anomaly_2",
+    "id": "shrine_anomaly_flesh_1",
     "type": "overmap_terrain",
-    "name": "ruined shrine",
+    "name": "organic shrine",
     "sym": "F",
     "color": "i_light_gray",
     "looks_like": "standing_stones",
-    "vision_levels": "isolated_building",
+    "vision_levels": "unusual_structure",
     "see_cost": "high",
     "travel_cost_type": "structure",
     "flags": [ "RISK_HIGH" ]
   },
   {
-    "id": "shrine_anomaly_3",
     "type": "overmap_terrain",
-    "name": "ruined shrine",
-    "sym": "@",
-    "color": "i_light_gray",
-    "looks_like": "standing_stones",
-    "vision_levels": "isolated_building",
-    "see_cost": "high",
-    "travel_cost_type": "structure",
-    "flags": [ "RISK_HIGH" ]
+    "id": "shrine_anomaly_flesh_1_roof",
+    "name": "shrine roof",
+    "sym": ".",
+    "color": "blue",
+    "vision_levels": "roof_or_air",
+    "looks_like": "open_air",
+    "see_cost": "none",
+    "travel_cost_type": "roof",
+    "flags": [ "NO_ROTATE" ]
   },
   {
     "type": "overmap_terrain",
