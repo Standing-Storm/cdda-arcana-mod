@@ -118,6 +118,18 @@
   },
   {
     "type": "overmap_special",
+    "id": "flesh_shrine_1",
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_flesh_1_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "shrine_anomaly_flesh_1_roof_north" }
+    ],
+    "locations": [ "wilderness", "swamp" ],
+    "city_distance": [ 20, -1 ],
+    "occurrences": [ 25, 100 ],
+    "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
+  },
+  {
+    "type": "overmap_special",
     "id": "Hermit Cabin",
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "arcana_hermitage_1_north" },
