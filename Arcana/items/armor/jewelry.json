@@ -135,5 +135,65 @@
       }
     ],
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "DIMENSIONAL_ANCHOR", "PSYSHIELD_PARTIAL", "PORTAL_PROOF" ]
+  },
+  {
+    "id": "necklace_ivory_teeth",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "category": "clothing",
+    "name": { "str": "necklace of ivory", "str_pl": "necklaces of ivory" },
+    "description": "A necklace of teeth strung together bands of silver, the teeth reflect the light with a soft opalescent sheen.  Using it to grow your own teeth and nails out into vicious claws and fangs, as well as strengthen your bones, but you will only be able to eat meat while it is active and your thoughts will be filled with blood and the hunt.",
+    "weight": "30 g",
+    "volume": "25 ml",
+    "price": "150 USD",
+    "price_postapoc": "40 USD",
+    "material": [ "silver", "bone" ],
+    "symbol": "[",
+    "looks_like": "silver_necklace",
+    "color": "light_gray",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 10 } } ],
+    "charges_per_use": 1,
+    "tool_ammo": "essence_blood_type",
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "mutations": [ "FANGS_VAMPIRE", "BLOODLETTER", "CLAWS_ST", "DENSE_BONES", "CARNIVORE", "PRED4" ]
+      }
+    ],
+    "use_action": [
+      {
+        "target": "necklace_ivory_teeth_on",
+        "msg": "The necklace rattles together softly as you feel your fingernails and teeth lengthen.",
+        "need_worn": true,
+        "need_charges": 1,
+        "need_charges_msg": "Feed the necklace with vitae.",
+        "menu_text": "Activate necklace",
+        "type": "transform",
+        "ammo_scale": 0
+      }
+    ],
+    "flags": [ "NO_SALVAGE", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED" ]
+  },
+  {
+    "id": "necklace_ivory_teeth_on",
+    "copy-from": "necklace_ivory_teeth",
+    "repairs_like": "necklace_ivory_teeth",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "name": { "str": "necklace of ivory (on)", "str_pl": "necklaces of ivory (on)" },
+    "description": "A necklace of teeth strung together bands of silver, the teeth reflect the light with a soft opalescent sheen.  Using it to grow your own teeth and nails out into vicious claws and fangs, as well as strengthen your bones, but you will only be able to eat meat while it is active and your thoughts will be filled with blood and the hunt. It is currently active.",
+    "turns_per_charge": 1800,
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "revert_to": "necklace_ivory_teeth",
+    "revert_msg": "The necklace rattles once more as your teeth and fingers return to normal.",
+    "use_action": [
+      {
+        "target": "necklace_ivory_teeth",
+        "msg": "The necklace rattles once more as your teeth and fingers return to normal.",
+        "menu_text": "Turn off",
+        "type": "transform"
+      }
+    ]
   }
 ]

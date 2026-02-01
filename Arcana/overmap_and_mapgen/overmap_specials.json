@@ -95,7 +95,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
+    "occurrences": [ 20, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
   },
   {
@@ -104,7 +104,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_2_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
+    "occurrences": [ 20, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
   },
   {
@@ -113,7 +113,7 @@
     "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_3_north" } ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
+    "occurrences": [ 20, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
   },
   {
@@ -125,7 +125,7 @@
     ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 25, 100 ],
+    "occurrences": [ 20, 100 ],
     "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
   },
   {

@@ -72,5 +72,32 @@
     "connect_groups": "WALL",
     "connects_to": "WALL",
     "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_wall_bone",
+    "name": "bone wall",
+    "description": "An amazingly durable, impregnable wall of bone stands before you, forming an outer shell.",
+    "symbol": "#",
+    "color": "magenta_white",
+    "move_cost": 0,
+    "coverage": 100,
+    "looks_like": "t_nm_wall_bone",
+    "roof": "t_nm_floor_bone",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_floor_bone",
+    "name": "bone floor",
+    "description": "An impossibly hard, impregnable bone structure covers the internals of the beast.",
+    "symbol": ".",
+    "color": "magenta_white",
+    "move_cost": 1,
+    "connect_groups": "INDOORFLOOR",
+    "looks_like": "t_nm_floor_bone",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "INDOORS", "FLAT" ]
   }
 ]

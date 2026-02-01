@@ -188,10 +188,10 @@
         "   ##.T..........T.##   ",
         "    ##..T......T..##    ",
         "     #....T..T....#     ",
-        "     #...T....T...#     ",
-        "     #.....OO.....#     ",
-        "     #.....OO.....#     ",
-        "     #...T....T...#     ",
+        "     #...T,,,,T...#     ",
+        "     #....,OO,....#     ",
+        "     #....,OO,....#     ",
+        "     #...T,,,,T...#     ",
         "     #....T..T....#     ",
         "    ##..T......T..##    ",
         "   ##.T..........T.##   ",
@@ -203,13 +203,8 @@
         "                        ",
         "                        "
       ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "palettes": [ "arcana_flesh_shrine_palette" ],
-      "furniture": { "i": "f_candle_barrier" },
-      "mapping": {
-        "a": { "furniture": "f_slab", "items": { "item": "magic_books_postapoc", "chance": 40, "repeat": 2 } },
-        "b": { "furniture": "f_brazier", "items": { "item": "cult_sacrifice", "chance": 100 } }
-      },
+      "terrain": { " ": "t_region_groundcover" },
       "set": [
         { "point": "trap", "id": "tr_glow", "x": [ 8, 15 ], "y": [ 1, 2 ], "repeat": [ 1, 2 ] },
         { "point": "trap", "id": "tr_hum", "x": [ 8, 15 ], "y": [ 1, 2 ], "repeat": [ 1, 2 ] },
@@ -221,15 +216,15 @@
         { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 4, 6 ], "chance": 90 },
         { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 4, 6 ], "chance": 90 },
         { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 17, 19 ], "chance": 90 },
-        { "group": "arcana_wilderness_stone_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
+        { "group": "arcana_wilderness_flesh_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
       ],
       "place_monster": [
-        { "monster": "mon_crawler", "x": [ 4, 6 ], "y": [ 1, 3 ], "repeat": [ 2, 3 ] },
-        { "monster": "mon_twisted_body", "x": [ 20, 22 ], "y": [ 17, 19 ] },
-        { "monster": "mon_crawler", "x": [ 1, 3 ], "y": [ 17, 19 ] },
-        { "monster": "mon_twisted_body", "x": [ 17, 19 ], "y": [ 1, 3 ], "chance": 50 }
+        { "monster": "mon_crawler_sanguine", "x": [ 4, 6 ], "y": [ 1, 3 ], "repeat": [ 2, 3 ] },
+        { "monster": "mon_twisted_body_sanguine", "x": [ 20, 22 ], "y": [ 17, 19 ] },
+        { "monster": "mon_crawler_sanguine", "x": [ 1, 3 ], "y": [ 17, 19 ] },
+        { "monster": "mon_twisted_body_sanguine", "x": [ 17, 19 ], "y": [ 1, 3 ], "chance": 50 }
       ],
-      "place_monsters": [ { "monster": "GROUP_SHRINE_CHALICE", "x": [ 7, 16 ], "y": [ 7, 16 ], "density": 0.1 } ]
+      "place_monsters": [ { "monster": "GROUP_SHRINE_FLESH", "x": [ 7, 16 ], "y": [ 7, 16 ], "density": 0.2 } ]
     }
   },
   {
@@ -264,7 +259,7 @@
         "                        ",
         "                        "
       ],
-      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+      "palettes": [ "arcana_flesh_shrine_palette" ]
     }
   }
 ]
