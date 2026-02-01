@@ -1,0 +1,15 @@
+[
+  {
+    "type": "construction",
+    "id": "constr_extract_arcana_teeth",
+    "group": "remove_wall",
+    "//": "Extract some impossibly-sharp teeth for later use.",
+    "category": "DECONSTRUCT",
+    "required_skills": [ [ "survival", 4 ] ],
+    "time": "90 m",
+    "using": [ [ "nm_teeth_removal", 1 ] ],
+    "byproducts": "teeth_deconstruction_result",
+    "pre_terrain": "t_organic_teeth",
+    "post_terrain": "t_organic_wall"
+  }
+]

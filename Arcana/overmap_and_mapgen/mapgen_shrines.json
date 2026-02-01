@@ -205,7 +205,6 @@
       ],
       "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
       "palettes": [ "arcana_flesh_shrine_palette" ],
-      "terrain": { "#": "t_rock", "b": "t_rock_floor_no_roof", "i": "t_dirt" },
       "furniture": { "i": "f_candle_barrier" },
       "mapping": {
         "a": { "furniture": "f_slab", "items": { "item": "magic_books_postapoc", "chance": 40, "repeat": 2 } },

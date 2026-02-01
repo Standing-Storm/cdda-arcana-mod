@@ -44,5 +44,21 @@
       "ter_set": "t_nm_floor_flesh",
       "items": [ { "item": "meat_tainted", "count": [ 2, 10 ] } ]
     }
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_teeth",
+    "name": "outgrowth of teeth",
+    "//": "TODO: perhaps make player unable to bash these",
+    "description": "A fractal array of uncountable, bristling teeth that seem impossibly sharp.  An iridescent haze surrounds it, as if light itself cannot help but be separated in their presence.  You surmise you could extract some for your own use, if you had an appropriate tool to remove them from the wall they're imbedded in.",
+    "symbol": "^",
+    "color": "white",
+    "move_cost": 0,
+    "coverage": 100,
+    "looks_like": "t_nm_wall_teeth",
+    "roof": "t_nm_floor_bone",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
   }
 ]
