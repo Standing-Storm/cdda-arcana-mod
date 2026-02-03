@@ -247,5 +247,80 @@
       "ammo_scale": 0
     },
     "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "SPAWN_ACTIVE" ] }
+  },
+  {
+    "id": "helmet_skull_of_sacrifice",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "name": { "str": "skull of sacrifice" },
+    "description": "The top part of a large skull of some unknown creature, that either had three horns or an eye in the center of its forehead in life, equipped with leather straps to secure it on your head.  Every inch of the skull has been carved with a maze of fine, intertwined symbols, and the eye sockets are filled with dark red gems.  Activate it to greatly reduce the effects of pain on your abilities and focus, while increasing the effects of pain you will feel when the enchantment wears off.",
+    "weight": "1 kg",
+    "volume": "4 L",
+    "price": "14 USD",
+    "price_postapoc": "25 USD",
+    "material": [ "leather", "bone" ],
+    "symbol": "[",
+    "color": "dark_gray",
+    "material_thickness": 3,
+    "looks_like": "helmet_skull",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 40 } } ],
+    "tool_ammo": "essence_blood_type",
+    "flags": [ "WATER_FRIENDLY" ],
+    "armor": [
+      {
+        "encumbrance_modifiers": [ "IMBALANCED" ],
+        "coverage": 100,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown" ]
+      },
+      {
+        "encumbrance_modifiers": [ "IMBALANCED" ],
+        "coverage": 60,
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_forehead" ]
+      }
+    ],
+    "use_action": {
+      "target": "helmet_skull_of_sacrifice_on",
+      "msg": "As you activate the helm, it grows warm on your head.",
+      "need_worn": true,
+      "need_charges": 1,
+      "need_charges_msg": "The talisman requires vitae.",
+      "menu_text": "Activate skull of sacrifice",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "values": [
+          { "value": "PAIN_PENALTY_MOD_STR", "multiply": -0.8 },
+          { "value": "PAIN_PENALTY_MOD_DEX", "multiply": -0.8 },
+          { "value": "PAIN_PENALTY_MOD_INT", "multiply": -0.8 },
+          { "value": "PAIN_PENALTY_MOD_PER", "multiply": -0.8 },
+          { "value": "PAIN_PENALTY_MOD_SPEED", "multiply": -0.8 },
+          { "value": "PAIN", "multiply": 0.25 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "helmet_skull_of_sacrifice_on",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "copy-from": "helmet_skull_of_sacrifice",
+    "repairs_like": "helmet_skull_of_sacrifice",
+    "name": { "str": "skull of sacrifice (on)", "str_pl": "skulls of sacrifice (on)" },
+    "description": "The top part of a large skull of some unknown creature, that either had three horns or an eye in the center of its forehead in life, equipped with leather straps to secure it on your head.  Every inch of the skull has been carved with a maze of fine, intertwined symbols, and the eye sockets are filled with dark red gems.  It is currently activate, reducing the effects of pain.",
+    "turns_per_charge": 900,
+    "revert_to": "helmet_skull_of_sacrifice",
+    "use_action": {
+      "target": "helmet_skull_of_sacrifice",
+      "msg": "The warmth of the helm fades as it deactivates.",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "SPAWN_ACTIVE" ] }
   }
 ]

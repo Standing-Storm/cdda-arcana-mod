@@ -23,6 +23,6 @@
     "id": "arcana_wilderness_flesh_shrine_loot",
     "type": "item_group",
     "subtype": "distribution",
-    "entries": [ { "item": "necklace_ivory_teeth", "prob": 20 } ]
+    "entries": [ { "item": "necklace_ivory_teeth", "prob": 20 }, { "item": "helmet_skull_of_sacrifice", "prob": 20 } ]
   }
 ]
