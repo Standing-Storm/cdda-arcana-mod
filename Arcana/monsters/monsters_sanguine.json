@@ -142,5 +142,43 @@
     "death_function": { "eoc": "EOC_ARCANA_BLOOD_GOLEM_DEATH", "corpse_type": "NO_CORPSE", "message": "The %s melts away." },
     "flags": [ "SEES", "HEARS", "NO_BREATHE", "NOHEAD", "STUN_IMMUNE", "NO_FUNG_DMG", "WARM", "QUIETMOVES", "BULLETPROOF" ],
     "armor": { "cut": 15, "stab": 45, "heat": 5, "cold": -15 }
+  },
+  {
+    "id": "mon_fleshy_shambler_sanguine",
+    "copy-from": "mon_fleshy_shambler",
+    "type": "MONSTER",
+    "default_faction": "cult",
+    "upgrades": { "half_life": 168, "into": "mon_flesh_golem_sanguine" }
+  },
+  {
+    "id": "mon_flesh_golem_sanguine",
+    "copy-from": "mon_flesh_golem",
+    "type": "MONSTER",
+    "default_faction": "cult",
+    "upgrades": { "half_life": 168, "into": "mon_jabberwock_sanguine" }
+  },
+  {
+    "id": "mon_jabberwock_sanguine",
+    "copy-from": "mon_jabberwock",
+    "type": "MONSTER",
+    "default_faction": "cult"
+  },
+  {
+    "id": "mon_crawler_sanguine",
+    "copy-from": "mon_crawler",
+    "type": "MONSTER",
+    "default_faction": "cult"
+  },
+  {
+    "id": "mon_twisted_body_sanguine",
+    "copy-from": "mon_twisted_body",
+    "type": "MONSTER",
+    "default_faction": "cult"
+  },
+  {
+    "id": "mon_bonewalker_sanguine",
+    "copy-from": "mon_bonewalker",
+    "type": "MONSTER",
+    "default_faction": "cult"
   }
 ]
