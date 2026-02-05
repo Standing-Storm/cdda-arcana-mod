@@ -2,7 +2,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly" ],
-    "weight": 300,
     "object": {
       "rows": [
         ",,,,,,,,,,,,,,,,,,,,,,,,",
@@ -52,7 +51,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_2" ],
-    "weight": 300,
     "object": {
       "rows": [
         "                        ",
@@ -115,7 +113,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_3" ],
-    "weight": 300,
     "object": {
       "rows": [
         ",,====================,,",
@@ -175,7 +172,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_flesh_1" ],
-    "weight": 300,
     "object": {
       "rows": [
         "                        ",
@@ -230,7 +226,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_flesh_1_roof" ],
-    "weight": 300,
     "object": {
       "fill_ter": "t_open_air",
       "rows": [
@@ -265,7 +260,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_flesh_2" ],
-    "weight": 300,
     "object": {
       "rows": [
         "       ||||  ||||       ",
@@ -310,6 +304,41 @@
       ],
       "place_monster": [ { "monster": "mon_bonewalker_sanguine", "x": [ 8, 15 ], "y": [ 8, 15 ], "repeat": [ 2, 3 ] } ],
       "place_monsters": [ { "monster": "GROUP_SHRINE_FLESH", "x": [ 7, 16 ], "y": [ 7, 16 ], "density": 0.25 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "shrine_anomaly_flesh_2_roof" ],
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "       T|||  |||T       ",
+        "     |||        |||     ",
+        "    ||            ||    ",
+        "   ||              ||   ",
+        "  ||                ||  ",
+        " ||     T||||||T     || ",
+        " |     ||||||||||     | ",
+        "T|    ||||||||||||    |T",
+        "|    T||||||||||||T    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    T||||||||||||T    |",
+        "T|    ||||||||||||    |T",
+        " |     ||||||||||     | ",
+        " ||     T||||||T     || ",
+        "  ||                ||  ",
+        "   ||              ||   ",
+        "    ||            ||    ",
+        "     |||        |||     ",
+        "       T||||||||T       "
+      ],
+      "palettes": [ "arcana_flesh_shrine_palette" ],
+      "terrain": { "|": "t_organic_floor_bone" }
     }
   }
 ]

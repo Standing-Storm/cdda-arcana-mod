@@ -289,7 +289,7 @@
   },
   {
     "type": "overmap_terrain",
-    "id": [ "shrine_anomaly_flesh_1_roof", "shrine_anomaly_flesh_2" ],
+    "id": [ "shrine_anomaly_flesh_1_roof", "shrine_anomaly_flesh_2_roof" ],
     "name": "shrine roof",
     "sym": ".",
     "color": "blue",

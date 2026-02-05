@@ -4,7 +4,7 @@
     "id": "mon_bonewalker",
     "name": { "str": "bonewalker" },
     "description": "A collection of animated human bones, more than could have come from any single person.  A fell red light burns in the eyes of multiple skulls and several arms wave in the air, looking for living flesh.",
-    "default_faction": "undead",
+    "default_faction": "zombie",
     "bodytype": "human",
     "species": [ "ZOMBIE" ],
     "volume": "62500 ml",
@@ -26,7 +26,7 @@
       {
         "id": "mon_bloodwalker_self_buff",
         "type": "spell",
-        "spell_data": { "id": "bonewalker_armor_buff_spell", "hit_self": true, "min_level": 20 },
+        "spell_data": { "id": "bonewalker_armor_buff_spell", "hit_self": true },
         "cooldown": 1,
         "condition": { "not": { "u_has_effect": "effect_bonewalker_armor_buff" } },
         "monster_message": ""

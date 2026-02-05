@@ -412,7 +412,7 @@
     "name": { "str": "Bonewalker Armor Buff", "//~": "NO_I18N" },
     "description": { "str": "Bonewalker take little damage from bullets and stabbing weapons.", "//~": "NO_I18N" },
     "valid_targets": [ "self" ],
-    "max_level": 8,
+    "max_level": 20,
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "RANDOM_DURATION", "RANDOM_AOE" ],
     "extra_effects": [ { "id": "triffid_pollen_emit" } ],
     "effect": "attack",
