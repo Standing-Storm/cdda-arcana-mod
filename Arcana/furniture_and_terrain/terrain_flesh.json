@@ -1,0 +1,103 @@
+[
+  {
+    "type": "terrain",
+    "id": "t_organic_roof",
+    "name": "flesh roof",
+    "description": "The meat of the roof here almost pulses as if in time with some gigantic heartbeat.",
+    "symbol": ".",
+    "color": "red",
+    "move_cost": 1,
+    "flags": [ "TRANSPARENT", "COLLAPSES", "FLAT" ],
+    "looks_like": "t_nm_floor_flesh"
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_pools",
+    "name": "glowing liquid",
+    "description": "A shallow stream of glowing yellow ichor pools on the floor here.  Peering into it, you can see dark shadows moving under the surface.",
+    "symbol": "~",
+    "color": "yellow",
+    "looks_like": "t_nm_ichor_sh",
+    "light_emitted": 15,
+    "move_cost": 8,
+    "flags": [ "TRANSPARENT", "LIQUID", "NO_SCENT", "SWIMMABLE", "SHALLOW_WATER" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_floor_flesh",
+    "name": "flesh floor",
+    "description": "Walking over this living surface, you can feel movement underneath your feet.",
+    "symbol": ".",
+    "color": "magenta_white",
+    "move_cost": 1,
+    "connect_groups": "INDOORFLOOR",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "COLLAPSES", "INDOORS", "FLAT" ],
+    "looks_like": "t_nm_floor_flesh"
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_wall",
+    "name": "flesh wall",
+    "description": "Warm to the touch, the tainted flesh still twitches.",
+    "symbol": "#",
+    "color": "magenta_red",
+    "move_cost": 0,
+    "coverage": 100,
+    "roof": "t_organic_roof",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "MINEABLE", "BLOCK_WIND" ],
+    "looks_like": "t_nm_wall_flesh",
+    "bash": {
+      "str_min": 20,
+      "str_max": 30,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_nm_floor_flesh",
+      "items": [ { "item": "meat_tainted", "count": [ 2, 10 ] } ]
+    }
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_teeth",
+    "name": "outgrowth of teeth",
+    "//": "TODO: perhaps make player unable to bash these",
+    "description": "A fractal array of uncountable, bristling teeth that seem impossibly sharp.  An iridescent haze surrounds it, as if light itself cannot help but be separated in their presence.  You surmise you could extract some for your own use, if you had an appropriate tool to remove them from the wall they're imbedded in.",
+    "symbol": "^",
+    "color": "white",
+    "move_cost": 0,
+    "coverage": 100,
+    "looks_like": "t_nm_wall_teeth",
+    "roof": "t_nm_floor_bone",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_wall_bone",
+    "name": "bone wall",
+    "description": "An amazingly durable, impregnable wall of bone stands before you, forming an outer shell.",
+    "symbol": "#",
+    "color": "magenta_white",
+    "move_cost": 0,
+    "coverage": 100,
+    "looks_like": "t_nm_wall_bone",
+    "roof": "t_nm_floor_bone",
+    "connect_groups": "WALL",
+    "connects_to": "WALL",
+    "flags": [ "NOITEM", "SUPPORTS_ROOF", "WALL", "NO_SCENT", "AUTO_WALL_SYMBOL", "BLOCK_WIND" ]
+  },
+  {
+    "type": "terrain",
+    "id": "t_organic_floor_bone",
+    "name": "bone floor",
+    "description": "An impossibly hard, impregnable bone structure covers the internals of the beast.",
+    "symbol": ".",
+    "color": "magenta_white",
+    "move_cost": 1,
+    "connect_groups": "INDOORFLOOR",
+    "looks_like": "t_nm_floor_bone",
+    "flags": [ "TRANSPARENT", "SUPPORTS_ROOF", "INDOORS", "FLAT" ]
+  }
+]

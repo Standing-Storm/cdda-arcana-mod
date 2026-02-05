@@ -2,7 +2,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly" ],
-    "weight": 300,
     "object": {
       "rows": [
         ",,,,,,,,,,,,,,,,,,,,,,,,",
@@ -39,7 +38,7 @@
         { "group": "unaligned_arcanist_books_postapoc", "x": 4, "y": [ 6, 10 ], "chance": 40, "repeat": 10 },
         { "group": "unaligned_arcanist_books_postapoc", "x": 19, "y": [ 6, 10 ], "chance": 40, "repeat": 10 },
         { "item": "essence_blood", "x": [ 11, 12 ], "y": 16, "chance": 50, "repeat": [ 5, 10 ] },
-        { "group": "arcana_wilderness_shrine_loot", "x": [ 11, 12 ], "y": 16 }
+        { "group": "arcana_wilderness_stone_shrine_loot", "x": [ 11, 12 ], "y": 16 }
       ],
       "place_monster": [
         { "monster": "mon_blood_sacrifice", "x": 10, "y": 10 },
@@ -52,7 +51,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_2" ],
-    "weight": 300,
     "object": {
       "rows": [
         "                        ",
@@ -101,7 +99,7 @@
         { "group": "magic_consumables", "x": [ 15, 17 ], "y": 6, "chance": 40, "repeat": 4 },
         { "group": "unaligned_arcanist_books_postapoc", "x": [ 6, 8 ], "y": 17, "chance": 50, "repeat": 6 },
         { "group": "magic_consumables", "x": [ 15, 17 ], "y": 17, "chance": 40, "repeat": 4 },
-        { "group": "arcana_wilderness_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
+        { "group": "arcana_wilderness_stone_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
       ],
       "place_monster": [
         { "monster": "mon_rattlesnake", "x": [ 0, 23 ], "y": [ 0, 4 ], "repeat": [ 2, 4 ] },
@@ -115,7 +113,6 @@
   {
     "type": "mapgen",
     "om_terrain": [ "shrine_anomaly_3" ],
-    "weight": 300,
     "object": {
       "rows": [
         ",,====================,,",
@@ -161,7 +158,7 @@
         { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 4, 6 ], "chance": 90 },
         { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 4, 6 ], "chance": 90 },
         { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 17, 19 ], "chance": 90 },
-        { "group": "arcana_wilderness_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
+        { "group": "arcana_wilderness_stone_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
       ],
       "place_monster": [
         { "monster": "mon_crawler", "x": [ 4, 6 ], "y": [ 1, 3 ], "repeat": [ 2, 3 ] },
@@ -170,6 +167,178 @@
         { "monster": "mon_twisted_body", "x": [ 17, 19 ], "y": [ 1, 3 ], "chance": 50 }
       ],
       "place_monsters": [ { "monster": "GROUP_SHRINE_CHALICE", "x": [ 7, 16 ], "y": [ 7, 16 ], "density": 0.1 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "shrine_anomaly_flesh_1" ],
+    "object": {
+      "rows": [
+        "                        ",
+        "                        ",
+        "     ##          ##     ",
+        "     .##        ##.     ",
+        "    ...##      ##...    ",
+        "  #.....########.....#  ",
+        "  ##...T........T...##  ",
+        "   ##.T..........T.##   ",
+        "    ##..T......T..##    ",
+        "     #....T..T....#     ",
+        "     #...T,,,,T...#     ",
+        "     #....,OO,....#     ",
+        "     #....,OO,....#     ",
+        "     #...T,,,,T...#     ",
+        "     #....T..T....#     ",
+        "    ##..T......T..##    ",
+        "   ##.T..........T.##   ",
+        "  ##...T........T...##  ",
+        "  #.....########.....#  ",
+        "    ...##      ##...    ",
+        "     .##        ##.     ",
+        "     ##          ##     ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [ "arcana_flesh_shrine_palette" ],
+      "terrain": { " ": "t_region_groundcover" },
+      "set": [
+        { "point": "trap", "id": "tr_glow", "x": [ 8, 15 ], "y": [ 1, 2 ], "repeat": [ 1, 2 ] },
+        { "point": "trap", "id": "tr_hum", "x": [ 8, 15 ], "y": [ 1, 2 ], "repeat": [ 1, 2 ] },
+        { "point": "trap", "id": "tr_drain", "x": [ 10, 12 ], "y": [ 21, 22 ], "repeat": 2 },
+        { "point": "trap", "id": "tr_portal", "x": [ 3, 12 ], "y": [ 21, 22 ], "repeat": [ 0, 1 ] }
+      ],
+      "place_loot": [
+        { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 17, 19 ], "chance": 90 },
+        { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 4, 6 ], "chance": 90 },
+        { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 4, 6 ], "chance": 90 },
+        { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 17, 19 ], "chance": 90 },
+        { "group": "arcana_wilderness_flesh_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
+      ],
+      "place_monster": [
+        { "monster": "mon_crawler_sanguine", "x": [ 4, 6 ], "y": [ 1, 3 ], "repeat": [ 2, 3 ] },
+        { "monster": "mon_twisted_body_sanguine", "x": [ 20, 22 ], "y": [ 17, 19 ] },
+        { "monster": "mon_crawler_sanguine", "x": [ 1, 3 ], "y": [ 17, 19 ] },
+        { "monster": "mon_twisted_body_sanguine", "x": [ 17, 19 ], "y": [ 1, 3 ], "chance": 50 }
+      ],
+      "place_monsters": [ { "monster": "GROUP_SHRINE_FLESH", "x": [ 7, 16 ], "y": [ 7, 16 ], "density": 0.2 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "shrine_anomaly_flesh_1_roof" ],
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "                        ",
+        "                        ",
+        "     __          __     ",
+        "     ___        ___     ",
+        "    _____      _____    ",
+        "  ____________________  ",
+        "  ____________________  ",
+        "   __________________   ",
+        "    ________________    ",
+        "     ______________     ",
+        "     ______________     ",
+        "     ______  ______     ",
+        "     ______  ______     ",
+        "     ______________     ",
+        "     ______________     ",
+        "    ________________    ",
+        "   __________________   ",
+        "  ____________________  ",
+        "  ____________________  ",
+        "    _____      _____    ",
+        "     ___        ___     ",
+        "     __          __     ",
+        "                        ",
+        "                        "
+      ],
+      "palettes": [ "arcana_flesh_shrine_palette" ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "shrine_anomaly_flesh_2" ],
+    "object": {
+      "rows": [
+        "       ||||  ||||       ",
+        "     |||,,,,,,,,|||     ",
+        "    ||,,,______,,,||    ",
+        "   ||,,__________,,||   ",
+        "  ||,,_,,,,,,,,,,_,,||  ",
+        " ||,,_,,||||||||,,_,,|| ",
+        " |,,_,,||,,,,,,||,,_,,| ",
+        "||,_,,||,,,,,,,,||,,_,||",
+        "|,,_,||,,||,,||,,||,_,,|",
+        "|,__,|,,,|,,,,|,,,|,__,|",
+        "|,__,|,,,,,,,,,,,,|,__,|",
+        "|,__,|,,,,,..,,,,,|,__,|",
+        "|,__,|,,,,,..,,,,,|,__,|",
+        "|,__,|,,,,,,,,,,,,|,__,|",
+        "|,__,|,,,|,,,,|,,,|,__,|",
+        "|,,_,||,,||,,||,,||,_,,|",
+        "||,_,,||,,,,,,,,||,,_,||",
+        " |,,_,,||,,,,,,||,,_,,| ",
+        " ||,,_,,|||,,|||,,_,,|| ",
+        "  ||,,_,,,T,,T,,,_,,||  ",
+        "   ||,,__________,,||   ",
+        "    ||,,,______,,,||    ",
+        "     |||,,,,,,,,|||     ",
+        "       ||||||||||       "
+      ],
+      "palettes": [ "arcana_flesh_shrine_palette" ],
+      "terrain": { " ": "t_region_groundcover", "_": [ [ "t_tree_very_dead", 1 ], [ "t_dirt", 20 ] ] },
+      "set": [
+        { "point": "trap", "id": "tr_glow", "x": [ 8, 15 ], "y": [ 1, 2 ], "repeat": [ 1, 2 ] },
+        { "point": "trap", "id": "tr_hum", "x": [ 8, 15 ], "y": [ 1, 2 ], "repeat": [ 1, 2 ] },
+        { "point": "trap", "id": "tr_drain", "x": [ 10, 12 ], "y": [ 21, 22 ], "repeat": 2 },
+        { "point": "trap", "id": "tr_portal", "x": [ 3, 12 ], "y": [ 21, 22 ], "repeat": [ 0, 1 ] }
+      ],
+      "place_loot": [
+        { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 17, 19 ], "chance": 90 },
+        { "group": "summoner_casualties", "x": [ 20, 22 ], "y": [ 4, 6 ], "chance": 90 },
+        { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 4, 6 ], "chance": 90 },
+        { "group": "summoner_casualties", "x": [ 1, 3 ], "y": [ 17, 19 ], "chance": 90 },
+        { "group": "arcana_wilderness_flesh_shrine_loot", "x": [ 11, 12 ], "y": [ 11, 12 ] }
+      ],
+      "place_monster": [ { "monster": "mon_bonewalker_sanguine", "x": [ 8, 15 ], "y": [ 8, 15 ], "repeat": [ 2, 3 ] } ],
+      "place_monsters": [ { "monster": "GROUP_SHRINE_FLESH", "x": [ 7, 16 ], "y": [ 7, 16 ], "density": 0.25 } ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "om_terrain": [ "shrine_anomaly_flesh_2_roof" ],
+    "object": {
+      "fill_ter": "t_open_air",
+      "rows": [
+        "       T|||  |||T       ",
+        "     |||        |||     ",
+        "    ||            ||    ",
+        "   ||              ||   ",
+        "  ||                ||  ",
+        " ||     T||||||T     || ",
+        " |     ||||||||||     | ",
+        "T|    ||||||||||||    |T",
+        "|    T||||||||||||T    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    ||||||||||||||    |",
+        "|    T||||||||||||T    |",
+        "T|    ||||||||||||    |T",
+        " |     ||||||||||     | ",
+        " ||     T||||||T     || ",
+        "  ||                ||  ",
+        "   ||              ||   ",
+        "    ||            ||    ",
+        "     |||        |||     ",
+        "       T||||||||T       "
+      ],
+      "palettes": [ "arcana_flesh_shrine_palette" ],
+      "terrain": { "|": "t_organic_floor_bone" }
     }
   }
 ]

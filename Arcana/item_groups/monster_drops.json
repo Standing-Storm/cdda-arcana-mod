@@ -1899,5 +1899,11 @@
       { "item": "veggy", "prob": 75, "count": [ 10, 40 ] },
       { "item": "living_bramble", "prob": 50 }
     ]
+  },
+  {
+    "type": "item_group",
+    "subtype": "collection",
+    "id": "bonewalker_death_drops",
+    "entries": [ { "item": "skull_human", "prob": 80, "count": [ 1, 3 ] }, { "item": "bone_human", "count": [ 10, 25 ] } ]
   }
 ]

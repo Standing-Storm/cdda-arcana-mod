@@ -151,6 +151,13 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
+    "id": "mon_fleshy_shambler_sanguine",
+    "copy-from": "mon_fleshy_shambler",
+    "type": "MONSTER",
+    "default_faction": "cult",
+    "upgrades": { "half_life": 168, "into": "mon_flesh_golem_sanguine" }
+  },
+  {
     "id": "mon_flesh_golem",
     "copy-from": "mon_flesh_golem",
     "type": "MONSTER",
@@ -158,11 +165,24 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
+    "id": "mon_flesh_golem_sanguine",
+    "copy-from": "mon_flesh_golem",
+    "type": "MONSTER",
+    "default_faction": "cult",
+    "upgrades": { "half_life": 168, "into": "mon_jabberwock_sanguine" }
+  },
+  {
     "id": "mon_jabberwock",
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
     "death_drops": "mon_jabberwock_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_jabberwock_sanguine",
+    "copy-from": "mon_jabberwock",
+    "type": "MONSTER",
+    "default_faction": "cult"
   },
   {
     "id": "mon_triffid",
@@ -272,6 +292,12 @@
     "type": "MONSTER",
     "death_drops": "mon_crawler_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_crawler_sanguine",
+    "copy-from": "mon_crawler",
+    "type": "MONSTER",
+    "default_faction": "cult"
   },
   {
     "id": "mon_bee",
@@ -392,6 +418,12 @@
     "type": "MONSTER",
     "death_drops": "mon_twisted_body_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
+    "id": "mon_twisted_body_sanguine",
+    "copy-from": "mon_twisted_body",
+    "type": "MONSTER",
+    "default_faction": "cult"
   },
   {
     "id": "mon_vortex",
@@ -518,10 +550,6 @@
     "id": "mon_shadow",
     "copy-from": "mon_shadow",
     "type": "MONSTER",
-    "melee_dice_sides": 3,
-    "vision_day": 5,
-    "vision_night": 50,
-    "melee_damage": [ { "damage_type": "cold", "amount": 3 } ],
     "death_drops": "mon_shadow_death_drops",
     "extend": { "flags": [ "COLDPROOF", "NIGHT_INVISIBILITY" ], "categories": [ "CLASSIC" ] }
   },
@@ -529,8 +557,6 @@
     "id": "mon_darkman",
     "copy-from": "mon_darkman",
     "type": "MONSTER",
-    "melee_dice_sides": 3,
-    "melee_damage": [ { "damage_type": "cold", "amount": 9 } ],
     "death_drops": "mon_darkman_death_drops",
     "extend": { "flags": [ "COLDPROOF", "NIGHT_INVISIBILITY" ], "categories": [ "CLASSIC" ] }
   },
