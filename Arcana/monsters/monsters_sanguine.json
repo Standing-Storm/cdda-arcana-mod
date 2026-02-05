@@ -174,5 +174,11 @@
     "copy-from": "mon_twisted_body",
     "type": "MONSTER",
     "default_faction": "cult"
+  },
+  {
+    "id": "mon_bonewalker_sanguine",
+    "copy-from": "mon_bonewalker",
+    "type": "MONSTER",
+    "default_faction": "cult"
   }
 ]

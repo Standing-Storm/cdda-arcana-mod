@@ -388,7 +388,7 @@
           { "id": "mon_homunculus", "fg": 196 },
           { "id": "mon_homunculus_summoned", "fg": 196 },
           { "id": "mon_dog_skeleton_summoned", "fg": 197 },
-          { "id": "mon_skeleton_summoned", "fg": 198 },
+          { "id": [ "mon_skeleton_summoned", "mon_bonewalker" ], "fg": 198 },
           { "id": "mon_vortex_summoned", "fg": 199 },
           { "id": "mon_kreck_summoned", "fg": 200 },
           { "id": "mon_triffid_summoned", "fg": 201 },
