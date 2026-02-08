@@ -144,7 +144,7 @@
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
     "id": "blood_magic_spell_scroll_arcana_blood_magic_increase_health",
-    "name": { "str": "Sanguine Grimoire: Bestow Vitality", "str_pl": "Sanguine Grimoires: Bestow Vitality" },
+    "name": { "str": "Sanguine Grimoire: Bestow Vigor", "str_pl": "Sanguine Grimoires: Bestow Vigor" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to fill a targe with health and vigor.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_increase_health" ] }
   },

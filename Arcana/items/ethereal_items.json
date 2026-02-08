@@ -45,7 +45,7 @@
     "name": { "str": "bloody blade" },
     "description": "A sword made of blood, still visibly flowing and warm in your hand.",
     "material": [ { "type": "blood", "portion": 1 } ],
-    "extend": { "flags": [ "NO_DROP", "NO_REPAIR", "UNBREAKABLE_MELEE", "RELIC_PINK" ] },
+    "extend": { "flags": [ "NO_DROP", "NO_REPAIR", "UNBREAKABLE_MELEE", "RELIC_PINK", "TRADER_AVOID" ] },
     "techniques": [ "WBLOCK_2", "BRUTAL", "RAPID", "tec_weapon_blood_sword_bleeding" ],
     "passive_effects": [
       {

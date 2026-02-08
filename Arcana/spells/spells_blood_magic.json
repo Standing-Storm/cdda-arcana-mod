@@ -683,7 +683,7 @@
     "name": { "str": "Wielding the Bloody Blade" },
     "description": "This spell allows you to conjure up a blade made of flowing blood, capable of causing rending wounds and draining the life from any enemies with red (or formerly red) blood in their veins.  It will dissapate if it leaves your possession.",
     "message": "The blood coalesces into a still-flowing blade, and you reach out and grasp the hilt.  %s!",
-    "effect": "summon",
+    "effect": "spawn_item",
     "shape": "blast",
     "effect_str": "item_arcana_summon_blood_sword",
     "valid_targets": [ "self" ],
@@ -707,7 +707,7 @@
     "id": "arcana_blood_magic_increase_health",
     "type": "SPELL",
     "name": { "str": "Bestow Vigor" },
-    "description": "This spell fills the target with health and vitality, increasing their overall well-being.",
+    "description": "This spell fills the target with health and vitality, increasing their overall well-being.  It may be used on yourself or an ally.",
     "message": "Red tendrils surround you and float toward your target.  %s!",
     "effect": "effect_on_condition",
     "shape": "blast",
@@ -717,6 +717,8 @@
     "max_level": 5,
     "difficulty": 30,
     "skill": "magic",
+    "min_range": 1,
+    "max_range": 1,
     "base_casting_time": 1200,
     "final_casting_time": 600,
     "casting_time_increment": -120,
@@ -792,7 +794,7 @@
     "description": "This spell causes the target's blood to heat in their veins until a portion of it literally boils, doing tremendous damage.  It may only be used on targets that have, or had, recognizable blood.",
     "message": "The blood is the life.  %s!",
     "valid_targets": [ "hostile" ],
-    "flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "SILENT", "SPLIT_DAMAGE" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "SILENT", "RANDOM_DAMAGE", "SPLIT_DAMAGE" ],
     "effect": "attack",
     "shape": "blast",
     "target_condition": {
@@ -857,7 +859,7 @@
     "effect": [
       {
         "u_add_effect": "effect_arcana_blood_magic_boil_target_blood_character",
-        "duration": { "math": [ "1080000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 540000)" ] }
+        "duration": { "math": [ "(1080000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 540000)) * rng(0.66,1.33)" ] }
       },
       { "math": [ "u_vitamin('blood') -= (3500 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 1200))" ] },
       {
@@ -867,7 +869,7 @@
     "false_effect": [
       {
         "u_add_effect": "effect_arcana_blood_magic_boil_target_blood_monster",
-        "duration": { "math": [ "1080000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 540000)" ] }
+        "duration": { "math": [ "(1080000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 540000)) * rng(0.66,1.33)" ] }
       }
     ]
   }
