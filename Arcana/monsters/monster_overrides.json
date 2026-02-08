@@ -274,12 +274,6 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
-    "id": "mon_crawler_sanguine",
-    "copy-from": "mon_crawler",
-    "type": "MONSTER",
-    "default_faction": "cult"
-  },
-  {
     "id": "mon_bee",
     "copy-from": "mon_bee",
     "type": "MONSTER",
@@ -398,12 +392,6 @@
     "type": "MONSTER",
     "death_drops": "mon_twisted_body_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
-  },
-  {
-    "id": "mon_twisted_body_sanguine",
-    "copy-from": "mon_twisted_body",
-    "type": "MONSTER",
-    "default_faction": "cult"
   },
   {
     "id": "mon_vortex",
