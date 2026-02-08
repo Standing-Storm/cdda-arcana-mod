@@ -281,8 +281,15 @@
     "id": [
       "blood_magic_spell_scroll_arcana_mark_revenant_blood",
       "blood_magic_spell_scroll_arcana_mark_elemental_sign",
-      "blood_magic_spell_scroll_arcana_mark_malevolent_gaze"
+      "blood_magic_spell_scroll_arcana_mark_malevolent_gaze",
+      "blood_magic_spell_scroll_arcana_mark_might"
     ],
     "replace": "manual_swimming"
+  },
+  {
+    "type": "MIGRATION",
+    "//": "remove after 0.J",
+    "id": [ "blood_magic_spell_scroll_arcana_mark_surge_adrenaline" ],
+    "replace": "blood_magic_spell_scroll_arcana_blood_magic_surge_adrenaline"
   }
 ]

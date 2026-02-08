@@ -4,5 +4,20 @@
     "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
     "condition": { "or": [ { "math": [ "u_sum_traits_of_category_char_has('MANATOUCHED') >= 3" ] } ] },
     "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_ARCANA_BOIL_TARGET_BLOOD_XE",
+    "condition": {
+      "or": [
+        { "npc_has_species": "VAMPIRE" },
+        { "npc_has_species": "RENFIELD" },
+        { "npc_has_species": "CHANGELING" },
+        { "npc_has_species": "CHANGELING_NOBLE" },
+        { "npc_has_species": "VAMPIRE_ANATHEMA" },
+        { "npc_has_species": "SHAPESHIFTER" }
+      ]
+    },
+    "effect": [  ]
   }
 ]

@@ -35,7 +35,9 @@
     "effect": [
       { "math": [ "u_spell_level('arcana_mark_revenant_blood') = -1" ] },
       { "math": [ "u_spell_level('arcana_mark_elemental_sign') = -1" ] },
-      { "math": [ "u_spell_level('arcana_mark_malevolent_gaze') = -1" ] }
+      { "math": [ "u_spell_level('arcana_mark_malevolent_gaze') = -1" ] },
+      { "math": [ "u_spell_level('arcana_mark_might') = -1" ] },
+      { "math": [ "u_spell_level('arcana_mark_surge_adrenaline') = -1" ] }
     ]
   }
 ]

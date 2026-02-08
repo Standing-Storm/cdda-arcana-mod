@@ -76,6 +76,39 @@
     "extra_effects": [ { "id": "arcana_react_drain_life_2", "hit_self": true } ]
   },
   {
+    "type": "SPELL",
+    "id": "arcana_react_drain_life_blood",
+    "name": { "str": "React: Drain Life Blood" },
+    "description": "This exists only to trigger on-self effects from an on-hit action, and only from monsters with red blood.",
+    "valid_targets": [ "hostile" ],
+    "message": "",
+    "min_range": 3,
+    "max_range": 3,
+    "effect": "attack",
+    "shape": "blast",
+    "flags": [ "NO_EXPLOSION_SFX", "SILENT" ],
+    "extra_effects": [ { "id": "arcana_react_drain_life_2", "hit_self": true } ],
+    "ignored_monster_species": [
+      "NETHER",
+      "NETHER_EMANATION",
+      "NETHER_BURROWING",
+      "ROBOT",
+      "ROBOT_FLYING",
+      "LEECH_PLANT",
+      "WORM",
+      "FUNGUS",
+      "SLIME",
+      "INSECT",
+      "CENTIPEDE",
+      "INSECT_FLYING",
+      "SPIDER",
+      "FISH",
+      "KRAKEN",
+      "MIGO",
+      "PLANT"
+    ]
+  },
+  {
     "id": "arcana_react_drain_life_2",
     "type": "SPELL",
     "name": { "str": "React: Drain Life Effect" },
@@ -86,7 +119,7 @@
     "shape": "blast",
     "effect_str": "drain_life_mending",
     "min_damage": -1,
-    "max_damage": -3,
+    "max_damage": -2,
     "flags": [ "NO_EXPLOSION_SFX", "RANDOM_DURATION", "RANDOM_DAMAGE", "SILENT" ],
     "min_duration": 500,
     "max_duration": 1000

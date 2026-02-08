@@ -4,5 +4,11 @@
     "id": "EOC_CONDITION_BRIARWITCHERY_IS_EFFECTIVE",
     "condition": { "math": [ "0 == 0" ] },
     "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_ARCANA_BOIL_TARGET_BLOOD_XE",
+    "condition": { "math": [ "0 == 1" ] },
+    "effect": [  ]
   }
 ]

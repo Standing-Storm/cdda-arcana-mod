@@ -35,10 +35,10 @@
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
     "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_surge_adrenaline",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_surge_adrenaline",
     "name": { "str": "Sanguine Grimoire: Surge of Fury", "str_pl": "Sanguine Grimoires: Surge of Fury" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual causes a surge of bloodlust that enhances your combat prowess but makes it hard to concentrate on anything but violence.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_surge_adrenaline" ] }
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_surge_adrenaline" ] }
   },
   {
     "type": "ITEM",
@@ -48,15 +48,6 @@
     "name": { "str": "Sanguine Grimoire: Heartblood Revitalization", "str_pl": "Sanguine Grimoires: Heartblood Revitalization" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to heal your own or another's wounds, after performing the proper sacrifice.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_sacrifice_healing" ] }
-  },
-  {
-    "type": "ITEM",
-    "subtypes": [ "BOOK" ],
-    "copy-from": "blood_magic_spell_scroll",
-    "id": "blood_magic_spell_scroll_arcana_mark_might",
-    "name": { "str": "Sanguine Grimoire: Manifestation of Strength", "str_pl": "Sanguine Grimoires: Manifestation of Strength" },
-    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual provides supernatural strength and resilience akin to that of the legendary dragon, though with a correspondingly increased appetite.",
-    "use_action": { "type": "learn_spell", "spells": [ "arcana_mark_might" ] }
   },
   {
     "type": "ITEM",
@@ -129,5 +120,50 @@
     "name": { "str": "Sanguine Grimoire: Traveling the Sanguine Road", "str_pl": "Sanguine Grimoires: Traveling the Sanguine Road" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to sink into a bloodstain on the ground and emerge from any other nearby bloodstain.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_blood_teleport" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_summon_blood_sword",
+    "name": { "str": "Sanguine Grimoire: Wielding the Bloody Blade", "str_pl": "Sanguine Grimoires: Wielding the Bloody Blade" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to create a sword made of flowing blood that can pull the blood from your enemies' wounds and occasionally transfer some of their life force to you.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_summon_blood_sword" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_drink_blood",
+    "name": { "str": "Sanguine Grimoire: Vampiric Thirst", "str_pl": "Sanguine Grimoires: Vampiric Thirst" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to drink blood and gain even more satisfaction and nourishment than from a gourmet meal, though normal food will seem tasteless while it is active.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_drink_blood" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_increase_health",
+    "name": { "str": "Sanguine Grimoire: Bestow Vigor", "str_pl": "Sanguine Grimoires: Bestow Vigor" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to fill a targe with health and vigor.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_increase_health" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_vitae_to_blood_magic_empowerment",
+    "name": { "str": "Sanguine Grimoire: Every Drop a Jewel", "str_pl": "Sanguine Grimoires: Every Drop a Jewel" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to draw on the power inherent in vitae to fuel your blood magic.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_vitae_to_blood_magic_empowerment" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_increased_focus",
+    "name": { "str": "Sanguine Grimoire: Serenity Through Suffering", "str_pl": "Sanguine Grimoires: Serenity Through Suffering" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to focus yourself, gaining clarity of thought even, or especially, in the midst of great pain.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_increased_focus" ] }
   }
 ]
