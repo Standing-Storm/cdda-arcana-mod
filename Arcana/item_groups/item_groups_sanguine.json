@@ -79,7 +79,8 @@
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_drain_energy", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_increased_healing", "prob": 1 },
           { "item": "blood_magic_spell_scroll_arcana_blood_magic_call_bloodwalker", "prob": 1 },
-          { "item": "blood_magic_spell_scroll_arcana_blood_magic_summon_blood_sword", "prob": 1 }
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_summon_blood_sword", "prob": 1 },
+          { "item": "blood_magic_spell_scroll_arcana_blood_magic_vitae_to_blood_magic_empowerment", "prob": 1 }
         ],
         "prob": 30
       },

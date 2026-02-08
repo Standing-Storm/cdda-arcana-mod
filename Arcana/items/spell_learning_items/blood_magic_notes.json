@@ -147,5 +147,14 @@
     "name": { "str": "Sanguine Grimoire: Bestow Vitality", "str_pl": "Sanguine Grimoires: Bestow Vitality" },
     "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to fill a targe with health and vigor.",
     "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_increase_health" ] }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "copy-from": "blood_magic_spell_scroll",
+    "id": "blood_magic_spell_scroll_arcana_blood_magic_vitae_to_blood_magic_empowerment",
+    "name": { "str": "Sanguine Grimoire: Every Drop a Jewel", "str_pl": "Sanguine Grimoires: Every Drop a Jewel" },
+    "description": "A grimoire containing the steps and rituals necessary to learn a ritual of blood magic.  This ritual allows you to draw on the power inherent in vitae to fuel your blood magic.",
+    "use_action": { "type": "learn_spell", "spells": [ "arcana_blood_magic_vitae_to_blood_magic_empowerment" ] }
   }
 ]

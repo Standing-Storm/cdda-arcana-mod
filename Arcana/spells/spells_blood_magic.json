@@ -736,5 +736,30 @@
         ]
       }
     ]
+  },
+  {
+    "id": "arcana_blood_magic_vitae_to_blood_magic_empowerment",
+    "type": "SPELL",
+    "name": { "str": "Every Drop a Jewel" },
+    "description": "Using this spell allows you to draw on the energy hidden in vitae to fuel a ritual of blood magic.  While the vitae will dissapate in the process, it is equivalent to conducting a sacrifice and obviates the need to use any other blood to power the sorcery.",
+    "message": "You grasp the vitae and draw out the energy within and a warmth fills your entire body.  %s!",
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "effect_arcana_blood_magic_killed",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_HANDS" ],
+    "components": "spell_components_arcana_blood_magic_vitae_to_blood_magic_empowerment",
+    "min_duration": 3000,
+    "max_duration": 10500,
+    "duration_increment": 1500,
+    "max_level": 5,
+    "difficulty": 50,
+    "skill": "magic",
+    "energy_source": "NONE",
+    "base_casting_time": 360,
+    "final_casting_time": 180,
+    "casting_time_increment": -36,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
   }
 ]
