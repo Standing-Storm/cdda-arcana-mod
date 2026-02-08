@@ -3,6 +3,6 @@
     "id": "spell_components_arcana_blood_magic_vitae_to_blood_magic_empowerment",
     "type": "requirement",
     "//": "Vitae for the Every Drop a Jewel spell",
-    "components": [ [ [ "essence_blood_type", 3 ] ] ]
+    "components": [ [ [ "essence_blood", 3 ] ] ]
   }
 ]
