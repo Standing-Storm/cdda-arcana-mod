@@ -1008,42 +1008,6 @@
   },
   {
     "type": "effect_type",
-    "id": "effect_arcana_blood_magic_increased_healing",
-    "name": [ "Carmine Vitality" ],
-    "desc": [ "You are healing extremely quickly." ],
-    "rating": "good",
-    "max_intensity": 5,
-    "enchantments": [
-      {
-        "values": [
-          {
-            "value": "REGEN_HP_AWAKE",
-            "multiply": { "math": [ " 1 + (u_effect_intensity('effect_arcana_blood_magic_increased_healing') * 0.25)" ] }
-          },
-          {
-            "value": "REGEN_HP",
-            "multiply": { "math": [ " 1 + (u_effect_intensity('effect_arcana_blood_magic_increased_healing') * 0.75)" ] }
-          },
-          {
-            "value": "MENDING_MODIFIER",
-            "multiply": { "math": [ " 1 + (u_effect_intensity('effect_arcana_blood_magic_increased_healing') * 1.5)" ] }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "effect_type",
-    "id": "effect_arcana_blood_magic_drain_energy",
-    "name": [ "Enervated" ],
-    "desc": [ "Your energy was drained by blood magic." ],
-    "rating": "bad",
-    "show_in_info": true,
-    "base_mods": { "hit_mod": [ -1 ], "dodge_mod": [ -1 ] },
-    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.15 } ] } ]
-  },
-  {
-    "type": "effect_type",
     "id": "talisman_warding",
     "name": [ "Alchemical Ward" ],
     "desc": [ "Temporary resistance to the side effects of certain potion effects." ],
@@ -1693,22 +1657,6 @@
     "int_dur_factor": "1 m",
     "removes_effects": [ "winded" ],
     "base_mods": { "speed_mod": [ 25 ], "str_mod": [ 2 ], "dex_mod": [ 2 ], "per_mod": [ 1 ], "stamina_min": [ 5 ] }
-  },
-  {
-    "type": "effect_type",
-    "id": "adrenaline_arcana_blood_magic",
-    "name": [ "Killing Surge" ],
-    "desc": [ "You feel a rush of otherworldly adrenaline and a killing lust in your heart." ],
-    "remove_message": "The otherworldly adrenaline running through you fades.",
-    "decay_messages": [ [ "You can feel the unnatural surge of adrenaline waning.", "bad" ] ],
-    "rating": "good",
-    "max_duration": "1200 m",
-    "max_intensity": 1200,
-    "int_dur_factor": "1 m",
-    "removes_effects": [ "winded" ],
-    "base_mods": { "speed_mod": [ 25 ], "str_mod": [ 2 ], "dex_mod": [ 2 ], "per_mod": [ 1 ], "stamina_min": [ 5 ] },
-    "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "add": -20 } ] } ],
-    "flags": [ "PSYCHOPATH", "PRED3" ]
   },
   {
     "type": "effect_type",

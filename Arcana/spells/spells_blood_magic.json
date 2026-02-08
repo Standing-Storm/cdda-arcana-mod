@@ -226,15 +226,15 @@
     "effect": "effect_on_condition",
     "effect_str": "EOC_ARCANA_BLOOD_MAGIC_SUMMON_JABBERWOCK",
     "shape": "blast",
-    "difficulty": 80,
+    "difficulty": 100,
     "skill": "magic",
     "max_level": 5,
-    "base_casting_time": 270,
-    "final_casting_time": 135,
-    "casting_time_increment": -27,
-    "base_energy_cost": 36,
-    "final_energy_cost": 18,
-    "energy_increment": -3.6,
+    "base_casting_time": 330,
+    "final_casting_time": 165,
+    "casting_time_increment": -33,
+    "base_energy_cost": 42,
+    "final_energy_cost": 24,
+    "energy_increment": -4.2,
     "min_duration": 1080000,
     "max_duration": 2700000,
     "duration_increment": 324000,
@@ -410,7 +410,7 @@
     "duration_increment": 324000
   },
   {
-    "id": "arcana_mark_surge_adrenaline",
+    "id": "arcana_blood_magic_surge_adrenaline",
     "type": "SPELL",
     "name": { "str": "Surge of Fury" },
     "description": "Using this spell will provoke a rush of adrenaline for urgent situations, with none of the normal drawbacks.  That is not to say it has no drawbacks, as your mind will be filled with thoughts of violence.  It can only be used on yourself.",
@@ -761,5 +761,114 @@
     "casting_time_increment": -36,
     "spell_class": "ARCANA_BLOOD_MAGIC",
     "magic_type": "arcana_blood_magic"
+  },
+  {
+    "id": "arcana_blood_magic_increased_focus",
+    "type": "SPELL",
+    "name": { "str": "Serenity Through Suffering" },
+    "description": "This spell allows you to focus your mind even through pain, or especially through pain.  You gain a bonus to focus and an additional bonus based on how much pain you're currently feeling.",
+    "message": "As the blood flows, you focus on the crimson drops, slowly falling, filling your vision entire vision.  %s!",
+    "effect": "attack",
+    "shape": "blast",
+    "effect_str": "effect_arcana_blood_magic_increased_focus",
+    "valid_targets": [ "self" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_HANDS" ],
+    "max_level": 5,
+    "difficulty": 40,
+    "skill": "magic",
+    "min_duration": 480000,
+    "max_duration": 1200000,
+    "duration_increment": 144000,
+    "base_casting_time": 1440,
+    "final_casting_time": 720,
+    "casting_time_increment": -72,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
+  },
+  {
+    "id": "arcana_blood_magic_boil_target_blood",
+    "type": "SPELL",
+    "name": { "str": "Cauldron of Blood" },
+    "description": "This spell causes the target's blood to heat in their veins until a portion of it literally boils, doing tremendous damage.  It may only be used on targets that have, or had, recognizable blood.",
+    "message": "The blood is the life.  %s!",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "VERBAL", "SOMATIC", "NO_HANDS", "SILENT", "SPLIT_DAMAGE" ],
+    "effect": "attack",
+    "shape": "blast",
+    "target_condition": {
+      "or": [
+        "npc_is_character",
+        { "npc_has_species": "BIRD" },
+        { "npc_has_species": "FERAL" },
+        { "npc_has_species": "ZOMBIE" },
+        { "npc_has_species": "MAMMAL" },
+        { "npc_has_species": "BIRD" },
+        { "npc_has_species": "REPTILE" },
+        { "npc_has_species": "AMPHIBIAN" },
+        { "npc_has_species": "MUTANT" },
+        { "npc_has_species": "CYBORG" },
+        { "npc_has_species": "ABERRATION" },
+        { "npc_has_flag": "HUMAN" },
+        { "test_eoc": "EOC_CONDITION_ARCANA_BOIL_TARGET_BLOOD_XE" }
+      ]
+    },
+    "target_condition_fail_message": "Cannot be used against targets without blood.",
+    "extra_effects": [ { "id": "arcana_blood_magic_boil_target_blood_debuffs" } ],
+    "difficulty": 90,
+    "skill": "magic",
+    "max_level": 5,
+    "min_damage": { "math": [ "(u_spell_level('arcana_blood_magic_boil_target_blood') * 5.5) + 21" ] },
+    "max_damage": { "math": [ "(u_spell_level('arcana_blood_magic_boil_target_blood') * 12.4) + 53" ] },
+    "damage_type": "heat",
+    "min_range": 5,
+    "max_range": 15,
+    "range_increment": 2,
+    "base_casting_time": 300,
+    "final_casting_time": 150,
+    "casting_time_increment": -30,
+    "base_energy_cost": 39,
+    "final_energy_cost": 19.5,
+    "energy_increment": -3.9,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
+  },
+  {
+    "id": "arcana_blood_magic_boil_target_blood_debuffs",
+    "type": "SPELL",
+    "name": { "str": "Cauldron of Blood Debuffs", "//~": "NO_I18N" },
+    "description": { "str": "This applies the ongoing debuffs to the target of Cauldron of Blood.", "//~": "NO_I18N" },
+    "message": "",
+    "effect": "effect_on_condition",
+    "shape": "blast",
+    "effect_str": "EOC_ARCANA_BLOOD_MAGIC_BOIL_TARGET_BLOOD",
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "NO_EXPLOSION_SFX", "NO_HANDS" ],
+    "max_level": 5,
+    "skill": "magic",
+    "min_range": 30,
+    "max_range": 30,
+    "spell_class": "ARCANA_BLOOD_MAGIC",
+    "magic_type": "arcana_blood_magic"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_BLOOD_MAGIC_BOIL_TARGET_BLOOD",
+    "condition": "u_is_character",
+    "effect": [
+      {
+        "u_add_effect": "effect_arcana_blood_magic_boil_target_blood_character",
+        "duration": { "math": [ "1080000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 540000)" ] }
+      },
+      { "math": [ "u_vitamin('blood') -= (3500 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 1200))" ] },
+      {
+        "math": [ "u_vitamin('redcells') -= (5000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 1750))" ]
+      }
+    ],
+    "false_effect": [
+      {
+        "u_add_effect": "effect_arcana_blood_magic_boil_target_blood_monster",
+        "duration": { "math": [ "1080000 + (n_spell_level('arcana_blood_magic_boil_target_blood') * 540000)" ] }
+      }
+    ]
   }
 ]

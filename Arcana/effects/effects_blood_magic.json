@@ -59,6 +59,58 @@
   },
   {
     "type": "effect_type",
+    "id": "adrenaline_arcana_blood_magic",
+    "name": [ "Killing Surge" ],
+    "desc": [ "You feel a rush of otherworldly adrenaline and a killing lust in your heart." ],
+    "remove_message": "The otherworldly adrenaline running through you fades.",
+    "decay_messages": [ [ "You can feel the unnatural surge of adrenaline waning.", "bad" ] ],
+    "rating": "good",
+    "max_duration": "1200 m",
+    "max_intensity": 1200,
+    "int_dur_factor": "1 m",
+    "removes_effects": [ "winded" ],
+    "base_mods": { "speed_mod": [ 25 ], "str_mod": [ 2 ], "dex_mod": [ 2 ], "per_mod": [ 1 ], "stamina_min": [ 5 ] },
+    "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "add": -20 } ] } ],
+    "flags": [ "PSYCHOPATH", "PRED3" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blood_magic_increased_healing",
+    "name": [ "Carmine Vitality" ],
+    "desc": [ "You are healing extremely quickly." ],
+    "rating": "good",
+    "max_intensity": 5,
+    "enchantments": [
+      {
+        "values": [
+          {
+            "value": "REGEN_HP_AWAKE",
+            "multiply": { "math": [ " 1 + (u_effect_intensity('effect_arcana_blood_magic_increased_healing') * 0.25)" ] }
+          },
+          {
+            "value": "REGEN_HP",
+            "multiply": { "math": [ " 1 + (u_effect_intensity('effect_arcana_blood_magic_increased_healing') * 0.75)" ] }
+          },
+          {
+            "value": "MENDING_MODIFIER",
+            "multiply": { "math": [ " 1 + (u_effect_intensity('effect_arcana_blood_magic_increased_healing') * 1.5)" ] }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blood_magic_drain_energy",
+    "name": [ "Enervated" ],
+    "desc": [ "Your energy was drained by blood magic." ],
+    "rating": "bad",
+    "show_in_info": true,
+    "base_mods": { "hit_mod": [ -1 ], "dodge_mod": [ -1 ] },
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.15 } ] } ]
+  },
+  {
+    "type": "effect_type",
     "id": "effect_arcana_blood_magic_drink_blood",
     "name": [ "Vampiric Thirst" ],
     "desc": [ "You can gain all the nutrition you need from drinking blood, but other food pales in comparison." ],
@@ -66,5 +118,43 @@
     "remove_message": "Your urge to drink blood fades away.",
     "rating": "good",
     "flags": [ "HEMOVORE", "BLOODFEEDER" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blood_magic_increased_focus",
+    "name": [ "Serenity Through Suffering" ],
+    "desc": [ "Through blood, your mind is clear." ],
+    "rating": "good",
+    "show_in_info": true,
+    "enchantments": [
+      {
+        "values": [ { "value": "LEARNING_FOCUS", "add": { "math": [ "10 + min( (u_pain('type': 'perceived') / 5), 25)" ] } } ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blood_magic_boil_target_blood_character",
+    "name": [ "Blood Boiled" ],
+    "desc": [ "Part of your blood has been boiled away." ],
+    "rating": "bad",
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.2 } ] } ],
+    "limb_score_mods": [
+      { "limb_score": "block", "modifier": 0.9 },
+      { "limb_score": "swim", "modifier": 0.7 },
+      { "limb_score": "move_speed", "modifier": 0.8 },
+      { "limb_score": "footing", "modifier": 0.8 },
+      { "limb_score": "balance", "modifier": 0.8 }
+    ],
+    "flags": [ "EFFECT_LIMB_SCORE_MOD" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_blood_magic_boil_target_blood_monster",
+    "name": [ "Blood Boiled" ],
+    "desc": [ "Part of your blood has been boiled away." ],
+    "rating": "bad",
+    "base_mods": { "hit_mod": [ -3 ], "dodge_mod": [ -3 ] },
+    "enchantments": [ { "values": [ { "value": "SPEED", "multiply": -0.2 } ] } ]
   }
 ]
