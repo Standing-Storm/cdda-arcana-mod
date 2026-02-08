@@ -15,6 +15,13 @@
   },
   {
     "type": "effect_type",
+    "id": "effect_arcana_blood_magic_killed_secondary",
+    "//": "Hidden effect, lets you cast blood magic with benefits",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "type": "effect_type",
     "id": "effect_arcana_blood_magic_corrupted_flesh",
     "name": [ "Corrupted Flesh" ],
     "desc": [ "Your flesh twitches and wriggles unnaturally." ],

@@ -747,7 +747,7 @@
     "message": "You grasp the vitae and draw out the energy within and a warmth fills your entire body.  %s!",
     "effect": "attack",
     "shape": "blast",
-    "effect_str": "effect_arcana_blood_magic_killed",
+    "effect_str": "effect_arcana_blood_magic_killed_secondary",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_HANDS" ],
     "components": "spell_components_arcana_blood_magic_vitae_to_blood_magic_empowerment",
