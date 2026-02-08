@@ -151,13 +151,6 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
-    "id": "mon_fleshy_shambler_sanguine",
-    "copy-from": "mon_fleshy_shambler",
-    "type": "MONSTER",
-    "default_faction": "cult",
-    "upgrades": { "half_life": 168, "into": "mon_flesh_golem_sanguine" }
-  },
-  {
     "id": "mon_flesh_golem",
     "copy-from": "mon_flesh_golem",
     "type": "MONSTER",
@@ -165,24 +158,11 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
-    "id": "mon_flesh_golem_sanguine",
-    "copy-from": "mon_flesh_golem",
-    "type": "MONSTER",
-    "default_faction": "cult",
-    "upgrades": { "half_life": 168, "into": "mon_jabberwock_sanguine" }
-  },
-  {
     "id": "mon_jabberwock",
     "copy-from": "mon_jabberwock",
     "type": "MONSTER",
     "death_drops": "mon_jabberwock_death_drops",
     "extend": { "categories": [ "CLASSIC" ] }
-  },
-  {
-    "id": "mon_jabberwock_sanguine",
-    "copy-from": "mon_jabberwock",
-    "type": "MONSTER",
-    "default_faction": "cult"
   },
   {
     "id": "mon_triffid",
