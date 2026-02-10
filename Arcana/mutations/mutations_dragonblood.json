@@ -442,9 +442,9 @@
     "allowed_items": [ "BELTED" ],
     "active": true,
     "activated_is_setup": true,
-    "cost": 3,
+    "cost": 100,
     "time": 1,
-    "mana": true,
+    "stamina": true,
     "enchantments": [
       "ENCH_DRAGONBLOOD_DRACONIC_WINGS",
       {
