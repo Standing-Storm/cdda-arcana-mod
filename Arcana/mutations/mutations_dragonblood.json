@@ -471,8 +471,7 @@
     "types": [ "CLAWS" ],
     "category": [ "DRAGONBLOOD" ],
     "encumbrance_covered": [ [ "hand_l", 5 ], [ "hand_r", 5 ] ],
-    "flags": [ "UNARMED_BONUS" ],
-    "enchantments": [ { "condition": { "not": "u_has_weapon" }, "melee_damage_bonus": [ { "type": "cut", "add": 7 } ] } ]
+    "integrated_armor": [ "integrated_draconic_claws" ]
   },
   {
     "type": "mutation",
@@ -481,18 +480,12 @@
     "points": 1,
     "visibility": 2,
     "ugliness": 2,
-    "description": "Your teeth have changed into an assortment of pointed mimicries of human teeth, allowing you to make an extra attack when conditions favor it.",
+    "description": "Your teeth have changed into an assortment of pointed mimicries of human teeth, allowing you to make stronger bite attack when conditions favor it.",
     "valid": false,
     "category": [ "DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_DRAGONMUZZLE" ],
     "types": [ "TEETH" ],
-    "attacks": {
-      "attack_text_u": "You sink your teeth into %s",
-      "attack_text_npc": "%1$s sinks their teeth into %2$s",
-      "body_part": "mouth",
-      "chance": 18,
-      "base_damage": { "damage_type": "stab", "amount": 4 }
-    }
+    "integrated_armor": [ "integrated_fangs" ]
   },
   {
     "type": "mutation",
@@ -512,13 +505,7 @@
     "types": [ "TEETH", "MUZZLE" ],
     "restricts_gear": [ "mouth" ],
     "social_modifiers": { "intimidate": 20 },
-    "attacks": {
-      "attack_text_u": "You savagely tear into %s with your jaws",
-      "attack_text_npc": "%1$s savagely tear into %2$s with their jaws",
-      "body_part": "mouth",
-      "chance": 20,
-      "base_damage": { "damage_type": "stab", "amount": 25 }
-    }
+    "enchantments": [ { "condition": "ALWAYS", "modified_bodyparts": [ { "lose": "mouth" }, { "gain": "muzzle_draconic" } ] } ]
   },
   {
     "type": "mutation",
@@ -539,14 +526,6 @@
     "encumbrance_always": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
-    "attacks": [
-      {
-        "attack_text_u": "You rake %s with your toe claws",
-        "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 20,
-        "strength_damage": { "damage_type": "cut", "amount": 2 }
-      }
-    ],
     "allowed_items": [ "ALLOWS_TALONS" ],
     "enchantments": [
       {
@@ -575,14 +554,6 @@
     "types": [ "LEGS", "FEET" ],
     "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
-    "attacks": [
-      {
-        "attack_text_u": "You rake %s with your toe claws",
-        "attack_text_npc": "%1$s rakes %2$s with their toe claws",
-        "chance": 20,
-        "strength_damage": { "damage_type": "cut", "amount": 4 }
-      }
-    ],
     "allowed_items": [ "ALLOWS_TALONS" ],
     "enchantments": [
       {
@@ -609,14 +580,8 @@
     "types": [ "TAIL" ],
     "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
     "allow_soft_gear": true,
-    "attacks": {
-      "attack_text_u": "You whip %s with your tail",
-      "attack_text_npc": "%1$s whips %2$s with their tail",
-      "chance": 20,
-      "base_damage": { "damage_type": "bash", "amount": 1 }
-    },
-    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "add": 2 } ] } ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_TAIL" ],
+    "enchantments": [ { "condition": "ALWAYS", "modified_bodyparts": [ { "gain": "tail_draconic" } ] } ],
     "allowed_items": [ "ALLOWS_TAIL" ]
   },
   {
@@ -633,14 +598,7 @@
     "types": [ "TAIL" ],
     "restricts_gear": [ "leg_hip_l", "leg_hip_r" ],
     "allow_soft_gear": true,
-    "attacks": {
-      "attack_text_u": "You lash %s with your tail",
-      "attack_text_npc": "%1$s lashes %2$s with their tail",
-      "chance": 20,
-      "base_damage": { "damage_type": "bash", "amount": 8 }
-    },
-    "//": "Becoming less effective at balancing is intentional, spikes aren't as substantial as Spiked Tail but still impedes dodge bonus.",
-    "enchantments": [ { "values": [ { "value": "BONUS_DODGE", "add": 1 } ] } ],
+    "enchantments": [ { "condition": "ALWAYS", "modified_bodyparts": [ { "gain": "tail_draconic" } ] } ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_TAIL" ],
     "allowed_items": [ "ALLOWS_TAIL" ]
   },
@@ -658,12 +616,7 @@
     "types": [ "HORNS" ],
     "restricts_gear": [ "head_crown" ],
     "allow_soft_gear": true,
-    "attacks": {
-      "attack_text_u": "You headbutt %s",
-      "attack_text_npc": "%1$s headbutts %2$s",
-      "chance": 20,
-      "base_damage": { "damage_type": "bash", "amount": 10 }
-    }
+    "integrated_armor": [ "integrated_horns_draconic" ]
   },
   {
     "type": "mutation",

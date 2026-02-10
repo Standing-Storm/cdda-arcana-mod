@@ -1,0 +1,32 @@
+[
+  {
+    "id": "tail_draconic_base",
+    "type": "sub_body_part",
+    "name": "draconic tail base",
+    "name_multiple": "draconic tail bases",
+    "max_coverage": 10,
+    "parent": "tail_draconic",
+    "side": "both",
+    "opposite": "tail_draconic_tip"
+  },
+  {
+    "id": "tail_draconic_center",
+    "type": "sub_body_part",
+    "name": "draconic tail center",
+    "name_multiple": "draconic tail centers",
+    "max_coverage": 60,
+    "parent": "tail_draconic",
+    "side": "both",
+    "opposite": "tail_draconic_center"
+  },
+  {
+    "id": "tail_draconic_tip",
+    "type": "sub_body_part",
+    "name": "draconic tail tip",
+    "name_multiple": "draconic tail tips",
+    "max_coverage": 30,
+    "parent": "tail_draconic",
+    "side": "both",
+    "opposite": "tail_draconic_base"
+  }
+]
