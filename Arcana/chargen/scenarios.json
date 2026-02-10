@@ -84,12 +84,6 @@
   },
   {
     "type": "scenario",
-    "id": "lab_chal",
-    "copy-from": "lab_chal",
-    "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "ARCANA_DRAGONCLAWS", "ARCANA_DRAGONTEETH", "ARCANA_DRAGONHORNS" ]
-  },
-  {
-    "type": "scenario",
     "id": "mutant",
     "copy-from": "mutant",
     "extend": {
