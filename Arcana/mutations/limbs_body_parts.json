@@ -17,7 +17,7 @@
     "bionic_slots": 4,
     "flags": [ "LIMB_UPPER" ],
     "sub_parts": [ "mouth_lips", "mouth_nose", "mouth_cheeks", "mouth_chin" ],
-    "//": "We'll assume that if you've mutated far enough to have a bear mouth, biting is a primary attack for you",
+    "//": "We'll assume that if you've mutated far enough to have a dragon mouth, biting is a primary attack for you",
     "techniques": [ "TECH_DRAGONBLOOD_BITE" ],
     "unarmed_damage": [ { "damage_type": "bash", "amount": 3 }, { "damage_type": "stab", "amount": 18 } ]
   },
