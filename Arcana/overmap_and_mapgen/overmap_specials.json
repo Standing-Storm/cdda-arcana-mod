@@ -126,7 +126,7 @@
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 20, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
@@ -138,7 +138,7 @@
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 20, 100 ],
-    "flags": [ "CLASSIC", "WILDERNESS", "MAN_MADE", "OVERMAP_UNIQUE" ]
+    "flags": [ "CLASSIC", "WILDERNESS", "OVERMAP_UNIQUE" ]
   },
   {
     "type": "overmap_special",
