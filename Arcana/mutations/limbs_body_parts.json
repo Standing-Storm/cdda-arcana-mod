@@ -1,0 +1,92 @@
+[
+  {
+    "id": "muzzle_draconic",
+    "copy-from": "mouth",
+    "type": "body_part",
+    "name": "muzzle",
+    "accusative": { "ctxt": "bodypart_accusative", "str": "muzzle" },
+    "heading": "muzzle",
+    "heading_multiple": "muzzle",
+    "opposite_part": "muzzle_draconic",
+    "hit_size": 0.65,
+    "limb_type": "mouth",
+    "limb_scores": [ [ "breathing", 0.9 ], [ "manip", 0.05, 0.2 ], [ "consume_liquid", 1.0 ], [ "consume_solid", 1.5 ] ],
+    "side": "both",
+    "similar_bodypart": "muzzle",
+    "base_hp": 75,
+    "bionic_slots": 4,
+    "flags": [ "LIMB_UPPER" ],
+    "sub_parts": [ "mouth_lips", "mouth_nose", "mouth_cheeks", "mouth_chin" ],
+    "//": "We'll assume that if you've mutated far enough to have a bear mouth, biting is a primary attack for you",
+    "techniques": [ "TECH_DRAGONBLOOD_BITE" ],
+    "unarmed_damage": [ { "damage_type": "bash", "amount": 3 }, { "damage_type": "stab", "amount": 18 } ]
+  },
+  {
+    "id": "tail_draconic",
+    "type": "body_part",
+    "name": "draconic tail",
+    "accusative": { "ctxt": "bodypart_accusative", "str": "draconic tail" },
+    "heading": "tail",
+    "heading_multiple": "tails, draconic",
+    "encumbrance_text": "Balance is hampered.",
+    "encumbrance_limit": 25,
+    "hp_bar_ui_text": "Dr TAIL",
+    "limb_type": "tail",
+    "main_part": "torso",
+    "opposite_part": "tail_draconic",
+    "side": "both",
+    "hit_size": 8,
+    "hit_difficulty": 0.5,
+    "hot_morale_mod": 2,
+    "cold_morale_mod": 2,
+    "wet_morale": 0,
+    "fire_warmth_bonus": 150,
+    "squeamish_penalty": 3,
+    "limb_scores": [ [ "balance", 0.05 ], [ "reaction", 0.05 ] ],
+    "base_hp": 65,
+    "health_limit": 15,
+    "similar_bodypart": "tail",
+    "techniques": [
+      "TAIL_THICK_BASH",
+      "TAIL_THICK_BASH_NATURAL",
+      "TAIL_THICK_BASH_CRIT_VS_LARGE",
+      "TAIL_THICK_BASH_CRIT",
+      "TAIL_THICK_BASH_CRIT_VS_STUMBLE"
+    ],
+    "technique_encumbrance_limit": 5,
+    "effects_on_hit": [
+      {
+        "id": "bleed",
+        "dmg_type": "cut",
+        "dmg_threshold": 5,
+        "dmg_scale_increment": 2,
+        "duration": 60,
+        "duration_dmg_scaling": 30,
+        "max_duration": 960
+      },
+      {
+        "id": "bleed",
+        "dmg_type": "stab",
+        "dmg_threshold": 1,
+        "dmg_scale_increment": 1.5,
+        "duration": 60,
+        "duration_dmg_scaling": 60,
+        "max_duration": 1200
+      },
+      {
+        "id": "bleed",
+        "dmg_type": "bullet",
+        "dmg_threshold": 1,
+        "dmg_scale_increment": 1,
+        "duration": 60,
+        "duration_dmg_scaling": 60
+      }
+    ],
+    "drench_capacity": 700,
+    "bionic_slots": 0,
+    "is_limb": true,
+    "sub_parts": [ "tail_draconic_base", "tail_draconic_center", "tail_draconic_tip" ],
+    "smash_message": "You thwap %s with your tail.",
+    "smash_efficiency": 0.45
+  }
+]

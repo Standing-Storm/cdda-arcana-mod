@@ -1,0 +1,86 @@
+[
+  {
+    "type": "technique",
+    "id": "TECH_DRAGONBLOOD_BITE",
+    "name": "Bite",
+    "crit_ok": true,
+    "unarmed_allowed": true,
+    "melee_allowed": true,
+    "messages": [ "You bite %s", "<npcname> bites %s" ],
+    "description": "A dragonblood bite.",
+    "attack_vectors": [ "vector_dragonblood_bite" ],
+    "flat_bonuses": [
+      { "stat": "damage", "type": "stab", "scaling-stat": "unarmed", "scale": 1.0 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "str", "scale": 0.75 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 0.06 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "DRACONIC_HORNS_BASH",
+    "name": "Draconic Horns Bash",
+    "melee_allowed": true,
+    "messages": [ "You ram %s with your horns", "<npcname> rams %s with their horns" ],
+    "unarmed_allowed": true,
+    "weighting": -4,
+    "reach_ok": false,
+    "attack_vectors": [ "vector_headbutt" ],
+    "condition": {
+      "and": [
+        { "not": { "u_has_effect": "natural_stance" } },
+        { "and": [ { "not": { "npc_has_flag": "GRAB_FILTER" } }, { "not": { "u_has_effect": "GRAB" } } ] }
+      ]
+    },
+    "flat_bonuses": [
+      { "stat": "damage", "type": "bash", "scaling-stat": "str", "scale": 0.5 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 1.0 },
+      { "stat": "arpen", "type": "bash", "scaling-stat": "unarmed", "scale": 0.33 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "DRACONIC_HORNS_BASH_NATURAL",
+    "name": "Draconic Horns Bash",
+    "melee_allowed": true,
+    "messages": [ "You ram %s with your horns", "<npcname> rams %s with their horns" ],
+    "unarmed_allowed": true,
+    "weighting": 0,
+    "reach_ok": false,
+    "attack_vectors": [ "vector_headbutt" ],
+    "condition": {
+      "and": [
+        { "u_has_effect": "natural_stance" },
+        { "and": [ { "not": { "npc_has_flag": "GRAB_FILTER" } }, { "not": { "u_has_effect": "GRAB" } } ] }
+      ]
+    },
+    "flat_bonuses": [
+      { "stat": "damage", "type": "bash", "scaling-stat": "str", "scale": 0.5 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 1.0 },
+      { "stat": "arpen", "type": "bash", "scaling-stat": "unarmed", "scale": 0.33 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
+  },
+  {
+    "type": "technique",
+    "id": "DRACONIC_HORNS_BASH_CRIT",
+    "name": "Draconic Horns Bash Crit",
+    "melee_allowed": true,
+    "messages": [ "You slam into %s with your horns", "<npcname> slams into %s with their horns" ],
+    "unarmed_allowed": true,
+    "reach_ok": false,
+    "crit_tec": true,
+    "attack_vectors": [ "vector_headbutt" ],
+    "flat_bonuses": [
+      { "stat": "damage", "type": "bash", "scaling-stat": "str", "scale": 0.75 },
+      { "stat": "damage", "type": "bash", "scaling-stat": "unarmed", "scale": 4.4 },
+      { "stat": "arpen", "type": "bash", "scaling-stat": "unarmed", "scale": 1 },
+      { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
+      { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
+    ]
+  }
+]
