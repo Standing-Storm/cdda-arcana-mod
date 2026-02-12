@@ -1,0 +1,14 @@
+[
+  {
+    "type": "palette",
+    "id": "arcana_wild_shrine_palette",
+    "terrain": {
+      "T": "t_region_tree",
+      ",": [ [ "t_region_tree", 1 ], [ "t_region_groundcover_forest", 1 ] ],
+      "_": [ [ "t_region_tree", 2 ], [ "t_region_groundcover_forest", 1 ] ],
+      "`": [ [ "t_region_tree", 1 ], [ "t_region_groundcover_forest", 4 ] ],
+      ".": "t_region_groundcover_forest",
+      "#": "t_soil"
+    }
+  }
+]
