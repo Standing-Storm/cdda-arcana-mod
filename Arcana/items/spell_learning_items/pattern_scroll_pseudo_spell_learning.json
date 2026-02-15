@@ -235,7 +235,7 @@
     "subtypes": [ "BOOK" ],
     "category": "manuals",
     "copy-from": "scroll_magic_base",
-    "name": { "str_sp": "The Real Actual Pattern Scroll (Abjuration of the Darkness)", "//~": "NO_I18N" },
+    "name": { "str_sp": "The Real Actual Pattern Scroll (The Pneuma Inviolate)", "//~": "NO_I18N" },
     "description": { "str": "The temporary item that teaches you spells.", "//~": "NO_I18N" },
     "use_action": { "type": "learn_spell", "spells": [ "arcana_magic_ward_against_evil" ] }
   },
