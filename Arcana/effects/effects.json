@@ -780,7 +780,7 @@
   {
     "type": "effect_type",
     "id": "cleric_warding",
-    "name": [ "Abjuration of the Darkness" ],
+    "name": [ "The Pneuma Inviolate" ],
     "desc": [ "Protects against various anomalous effects." ],
     "remove_message": "The magical protection fades.",
     "removes_effects": [ "darkness", "rat", "evil", "arcana_evil_mimic", "attention", "teleglow", "amigara", "taint", "tindrift" ],
