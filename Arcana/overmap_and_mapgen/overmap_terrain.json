@@ -288,6 +288,18 @@
     "flags": [ "RISK_HIGH" ]
   },
   {
+    "id": [ "shrine_anomaly_wild_1" ],
+    "type": "overmap_terrain",
+    "name": "natural structure",
+    "sym": "S",
+    "color": "i_light_gray",
+    "looks_like": "forest_thick",
+    "vision_levels": "unusual_structure",
+    "see_cost": "high",
+    "travel_cost_type": "structure",
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
     "type": "overmap_terrain",
     "id": [ "shrine_anomaly_flesh_1_roof", "shrine_anomaly_flesh_2_roof" ],
     "name": "shrine roof",

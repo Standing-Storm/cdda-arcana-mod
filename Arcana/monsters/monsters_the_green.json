@@ -1,5 +1,14 @@
 [
   {
+    "id": "mon_dementia_green",
+    "copy-from": "mon_dementia",
+    "type": "MONSTER",
+    "death_drops": "mon_dementia_death_drops",
+    "default_faction": "the_green",
+    "name": { "str": "undead witch" },
+    "extend": { "categories": [ "CLASSIC" ] }
+  },
+  {
     "//": "None of these monsters are actually animals but all have the ANIMAL flag, because those closer to the natural world are less antagonistic to the Green",
     "id": "mon_arcana_tanglevine",
     "looks_like": "mon_tanglevine",
@@ -7,6 +16,7 @@
     "name": { "str": "tanglevine" },
     "description": "A thick mass of animated vine, lashing back and forth at anything that comes within reach.  Long thorns grow from its sides.",
     "species": [ "PLANT" ],
+    "categories": [ "CLASSIC" ],
     "default_faction": "the_green",
     "volume": "92500 ml",
     "weight": "120 kg",
@@ -69,6 +79,7 @@
     "volume": "62500 ml",
     "weight": "81500 g",
     "default_faction": "the_green",
+    "categories": [ "CLASSIC" ],
     "species": [ "FOREST_ELEMENTAL" ],
     "hp": 130,
     "speed": 100,
@@ -113,6 +124,7 @@
     "name": "thorn-bear",
     "description": "A creature of moss and thorns in the shape of a bear.  Its eyes are a faintly-glowing brilliant green.",
     "default_faction": "the_green",
+    "categories": [ "CLASSIC" ],
     "species": [ "FOREST_ELEMENTAL" ],
     "color": "green",
     "material": [ "wood", "veggy" ],
