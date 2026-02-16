@@ -573,7 +573,7 @@
     "copy-from": "totem_base",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
-    "name": { "str": "Magic Seal (Abjuration of the Darkness)", "str_pl": "Magic Seals (Abjuration of the Darkness)" },
+    "name": { "str": "Magic Seal (The Pneuma Inviolate)", "str_pl": "Magic Seals (The Pneuma Inviolate)" },
     "description": "An small winged figurine, carved from a strange iridescent stone.  Activate it to focus your mind and create a magic sign, expending the item entirely.\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "price_postapoc": "50 USD",
     "color": "light_green",

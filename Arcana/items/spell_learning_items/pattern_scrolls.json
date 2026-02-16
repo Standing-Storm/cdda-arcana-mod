@@ -1208,7 +1208,7 @@
     "id": "scroll_spell_cleric",
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
-    "name": { "str": "Pattern Scroll (Abjuration of the Darkness)", "str_pl": "Pattern Scrolls (Abjuration of the Darkness)" },
+    "name": { "str": "Pattern Scroll (The Pneuma Inviolate)", "str_pl": "Pattern Scrolls (The Pneuma Inviolate)" },
     "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will grant a blessing that protects against certain anomalous threats.\"",
     "price": "3000 USD",
     "price_postapoc": "100 USD",

@@ -30,9 +30,6 @@
     "cancels": [
       "ILLITERATE",
       "PACIFIST",
-      "SPELL_CLARITY",
-      "SPELL_SHADOWSNAKES",
-      "SPELL_SUMMONDOG",
       "MARTIAL_ARTS_SANGUINE",
       "ARCANA_BLOOD_MAGIC",
       "ARCANA_SCALYPATCHES",
@@ -55,9 +52,6 @@
     "cancels": [
       "ILLITERATE",
       "PACIFIST",
-      "SPELL_CLARITY",
-      "SPELL_SHADOWSNAKES",
-      "SPELL_SUMMONDOG",
       "MARTIAL_ARTS_SANGUINE",
       "ARCANA_BLOOD_MAGIC",
       "ARCANA_SCALYPATCHES",
@@ -76,10 +70,7 @@
     "valid": false,
     "purifiable": false,
     "profession": true,
-    "//": "This prevents blood mages from picking spells considered potentially too altruistic in nature, or from choosing a faction-specific martial art.  Non-faction arcanists are still allowed to pick it.",
-    "cancels": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "SPELL_HEAL", "SPELL_PLANTS", "SPELL_CLERIC", "MARTIAL_ARTS_CF" ],
-    "//2": "This allows you to be able to butcher human corpses for vitae regardless of other traits.",
-    "flags": [ "PSYCHOPATH" ]
+    "cancels": [ "ILLITERATE", "SPIRITUAL", "PACIFIST", "MARTIAL_ARTS_CF" ]
   },
   {
     "type": "mutation",

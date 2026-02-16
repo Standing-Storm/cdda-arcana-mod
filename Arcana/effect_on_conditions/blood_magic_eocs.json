@@ -12,7 +12,7 @@
             { "npc_has_species": "MAMMAL" },
             { "npc_has_species": "BIRD" },
             { "npc_has_species": "MUTANT" },
-            { "npc_has_species": "HUMAN" },
+            { "and": [ { "not": { "npc_has_species": "ZOMBIE" } }, { "npc_has_species": "HUMAN" } ] },
             { "npc_has_species": "FERAL" }
           ]
         },

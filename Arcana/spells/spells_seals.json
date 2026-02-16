@@ -361,7 +361,7 @@
   {
     "id": "arcana_seal_ward_against_evil",
     "type": "SPELL",
-    "name": { "str": "Seal: Abjuration of the Darkness" },
+    "name": { "str": "Seal: The Pneuma Inviolate" },
     "description": "Magic Seal\nUsing this spell will grant a blessing that protects against certain anomalous threats.  It can be used on yourself or an ally.",
     "message": "\"The wicked falter before the vigilant…\"  You cast %s!",
     "valid_targets": [ "self", "ally" ],
