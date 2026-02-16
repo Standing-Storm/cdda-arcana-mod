@@ -197,7 +197,7 @@
     "id": "arcanist_bloodmage_apprentice",
     "name": "Blood Mage Apprentice",
     "description": "You have beheld true power, as a member of the Sanguine Order.  Power from within, as well as power from beyond.  But at what cost?",
-    "proficiencies": [ "prof_arcana_thaumatology" ],
+    "proficiencies": [ "prof_arcana_thaumatology", "prof_dissect_humans" ],
     "spells": [ { "id": "arcana_blood_magic_rite_of_sacrifice", "level": 3 } ],
     "points": 4,
     "skills": [
@@ -238,7 +238,7 @@
     "id": "arcanist_bloodmage_journeyman",
     "name": "Blood Mage Journeyman",
     "description": "You have beheld true power, as a member of the Sanguine Order.  You were a frequent participant in rituals and had mastered some of the early steps in the path of blood magic when the Cataclysm struck.  Now you've seen enough blood to last a lifetime.",
-    "proficiencies": [ "prof_arcana_thaumatology" ],
+    "proficiencies": [ "prof_arcana_thaumatology", "prof_dissect_humans" ],
     "spells": [
       { "id": "arcana_blood_magic_call_bloodwalker", "level": 2 },
       { "id": "arcana_blood_magic_corrupted_flesh", "level": 3 },
@@ -485,7 +485,7 @@
       { "level": 1, "name": "firstaid" },
       { "level": 1, "name": "survival" }
     ],
-    "proficiencies": [ "prof_arcana_thaumatology" ],
+    "proficiencies": [ "prof_arcana_thaumatology", "prof_dissect_humans" ],
     "items": {
       "both": {
         "items": [
@@ -539,7 +539,7 @@
       { "level": 1, "name": "survival" },
       { "level": 1, "name": "firstaid" }
     ],
-    "proficiencies": [ "prof_leatherworking_basic", "prof_metalworking", "prof_tanning_basic", "prof_handloading" ],
+    "proficiencies": [ "prof_leatherworking_basic", "prof_metalworking", "prof_tanning_basic", "prof_handloading", "prof_dissect_humans" ],
     "items": {
       "both": {
         "items": [
