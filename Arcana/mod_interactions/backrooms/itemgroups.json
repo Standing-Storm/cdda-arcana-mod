@@ -1,0 +1,58 @@
+[
+  {
+    "type": "item_group",
+    "id": "vending_drink_items",
+    "copy-from": "vending_drink_items",
+    "extend": {
+      "items": [
+        { "item": "numbness_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "strength_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "speed_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "arcana_health_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "healing_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "arcana_mana_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "arcana_cold_hot_resist_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "arcana_poison_disease_infection_resist_potion", "container-item": "bottle_glass", "prob": 2 },
+        { "item": "arcana_need_no_sleep_potion", "container-item": "bottle_glass", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "id": "backrooms_crate_rare",
+    "type": "item_group",
+    "copy-from": "backrooms_crate_rare",
+    "extend": {
+      "items": [
+        { "group": "magic_crafting", "prob": 20 },
+        { "group": "magic_consumables", "prob": 15 },
+        { "group": "arcana_totem_random", "prob": 10 },
+        { "group": "magic_items", "prob": 1 }
+      ]
+    }
+  },
+  {
+    "id": "backrooms_treasure_rare",
+    "type": "item_group",
+    "copy-from": "backrooms_treasure_rare",
+    "extend": { "items": [ { "group": "unaligned_arcanist_spells", "prob": 50 } ] }
+  },
+  {
+    "id": "backrooms_master_bookshelf",
+    "type": "item_group",
+    "copy-from": "backrooms_master_bookshelf",
+    "extend": {
+      "items": [
+        { "group": "magic_books", "prob": 2, "count": [ 2, 6 ] },
+        { "group": "summoning_spellbooks", "prob": 2, "count": [ 2, 6 ] },
+        { "group": "sanguine_cult_spells", "prob": 2, "count": [ 2, 6 ] }
+      ]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "backrooms_master_vending",
+    "copy-from": "backrooms_master_vending",
+    "subtype": "distribution",
+    "extend": { "entries": [ { "group": "magic_books", "prob": 1 }, { "group": "magic_items", "prob": 1 } ] }
+  }
+]
