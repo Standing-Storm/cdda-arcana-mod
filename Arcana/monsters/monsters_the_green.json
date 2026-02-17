@@ -9,6 +9,34 @@
     "extend": { "categories": [ "CLASSIC" ] }
   },
   {
+    "id": "mon_feral_briarwitch",
+    "copy-from": "mon_arcana_feral_sorcerer",
+    "type": "MONSTER",
+    "name": { "str": "maddened briarwitch" },
+    "description": "Skin so covered in dirt you can't tell the original color and leaves in their hair, this madman seems to have taken a few steps down the great chain of being.  Despite their ",
+    "default_faction": "the_green",
+    "aggression": 10,
+    "melee_skill": 4,
+    "melee_dice_sides": 6,
+    "dodge": 3,
+    "diff": 3,
+    "extend": {
+      "special_attacks": [
+        { "id": "feral_weapon_monster_knife", "accuracy": 3 },
+        {
+          "id": "feral_briarwitch_druid_veggrasp",
+          "type": "spell",
+          "spell_data": { "id": "druid_veggrasp_monster", "min_level": 2 },
+          "cooldown": { "math": [ "10 + rand(20)" ] },
+          "condition": { "and": [ { "npc_is_on_terrain_with_flag": "DIGGABLE" }, { "not": { "u_has_flag": "NO_SPELLCASTING" } } ] },
+          "monster_message": "%1$s makes a complicated gesture and roots burst from the ground around %3$s."
+        }
+      ]
+    },
+    "death_drops": "mon_feral_briarwitch_death_drops",
+    "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ]
+  },
+  {
     "//": "None of these monsters are actually animals but all have the ANIMAL flag, because those closer to the natural world are less antagonistic to the Green",
     "id": "mon_arcana_tanglevine",
     "looks_like": "mon_tanglevine",
