@@ -1,0 +1,29 @@
+[
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_briarwitchery_hide_from_unnatural",
+    "name": [ "Submersion into Nature" ],
+    "desc": [
+      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to natural creatures."
+    ],
+    "remove_message": "Your otherworldly guise drops.",
+    "decay_messages": [ [ "Your otherworldly guise is beginning to fade.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      { "condition": { "test_eoc": "EOC_CONDITION_BRIARWITCHERY_IS_EFFECTIVE" }, "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_briarwitchery_communion_with_nature",
+    "name": [ "Communion with the Wild" ],
+    "desc": [ "The Green surrounds you and welcomes you home." ],
+    "remove_message": "Your communion with the Green fades.",
+    "rating": "good",
+    "max_duration": 42400,
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 40 ], "h_mod_min": [ 1 ], "h_mod_chance": [ 80 ], "health_tick": [ 30 ] },
+    "flags": [ "ANIMALEMPATH" ]
+  }
+]

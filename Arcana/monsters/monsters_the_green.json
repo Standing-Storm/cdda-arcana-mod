@@ -13,7 +13,7 @@
     "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened briarwitch" },
-    "description": "Skin so covered in dirt you can't tell the original color and leaves in their hair, this madman seems to have taken a few steps down the great chain of being.  Despite their ",
+    "description": "Skin so covered in dirt you can't tell the original color and leaves in their hair, this madman seems to have taken a few steps down the great chain of being.  As they walk the occasionally make a strange gesture and nearby plants bend out of their way.",
     "default_faction": "the_green",
     "aggression": 10,
     "melee_skill": 4,
