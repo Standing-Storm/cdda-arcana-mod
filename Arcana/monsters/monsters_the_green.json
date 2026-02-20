@@ -13,7 +13,7 @@
     "copy-from": "mon_arcana_feral_sorcerer",
     "type": "MONSTER",
     "name": { "str": "maddened briarwitch" },
-    "description": "Skin so covered in dirt you can't tell the original color and leaves in their hair, this madman seems to have taken a few steps down the great chain of being.  As they walk the occasionally make a strange gesture and nearby plants bend out of their way.",
+    "description": "Skin so covered in dirt you can't tell the original color and leaves in their hair, this madman seems to have taken a few steps down the great chain of being.  As they walk, they occasionally make a strange gesture and nearby plants bend out of their way.",
     "default_faction": "the_green",
     "aggression": 10,
     "melee_skill": 4,
@@ -21,6 +21,7 @@
     "dodge": 3,
     "diff": 3,
     "extend": {
+      "flags": [ "PLANT_BLOOD" ],
       "special_attacks": [
         { "id": "feral_weapon_monster_knife", "accuracy": 3 },
         {
@@ -33,6 +34,7 @@
         }
       ]
     },
+    "bleed_rate": 33,
     "death_drops": "mon_feral_briarwitch_death_drops",
     "anger_triggers": [ "FRIEND_ATTACKED", "PLAYER_CLOSE", "PLAYER_WEAK", "STALK" ]
   },

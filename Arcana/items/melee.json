@@ -536,7 +536,6 @@
     "subtypes": [ "TOOL", "ARTIFACT" ],
     "category": "weapons",
     "name": { "str": "cursed blade (on)", "str_pl": "cursed blades (on)" },
-    "//": "Funny as it'd be to add the bad weather effect too, that would be a tad silly.  Also still can't use copy-from.",
     "description": "A two-handed sword, blade made of a dark metal, engraved with unfamiliar symbols.  You feel as if the blade thirsts for blood, refusing to leave your grasp until it is sated.",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_blood_type": 9 } } ],
     "turns_per_charge": 200,
@@ -753,5 +752,15 @@
     "name": { "str": "teeth-bladed macuahuitl" },
     "copy-from": "teeth_macuahuitl",
     "melee_damage": { "bash": 16, "cut": 30 }
+  },
+  {
+    "type": "ITEM",
+    "id": "briarwitch_flint_knife",
+    "name": { "str": "flint knife" },
+    "copy-from": "primitive_knife",
+    "description": "A sharpened stone set into a hollowed handle.  It looks primitive at first, but on closer inspection you see that some sort of sap has been used to help to affix the blade to the handle and the blade is much sharper than its stone construction would indicate.  While wielding it your blood also flows like sap, slowing any bleeding you suffer from, and ",
+    "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 15 ] ],
+    "techniques": [ "WBLOCK_1", "RAPID" ],
+    "melee_damage": { "bash": 2, "stab": 15 }
   }
 ]

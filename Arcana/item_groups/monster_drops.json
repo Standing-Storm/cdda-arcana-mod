@@ -1732,6 +1732,54 @@
     ]
   },
   {
+    "id": "mon_feral_briarwitch_death_drops",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries": [
+      {
+        "distribution": [
+          { "item": "primitive_knife", "prob": 100, "damage": [ 1, 4 ] },
+          { "item": "briarwitch_flint_knife", "prob": 10, "damage": [ 1, 4 ] }
+        ],
+        "prob": 100
+      },
+      {
+        "distribution": [
+          { "item": "pants_leather", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "pants_fur", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "hot_pants_leather", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "skirt_leather", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "skirt_grass", "prob": 5, "damage": [ 1, 4 ] }
+        ],
+        "prob": 100
+      },
+      {
+        "distribution": [
+          { "item": "chestwrap_leather", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "chestwrap_fur", "prob": 25, "damage": [ 1, 4 ] }
+        ],
+        "prob": 25
+      },
+      {
+        "distribution": [
+          { "item": "footrags_fur", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "footrags_leather", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "straw_sandals", "prob": 25, "damage": [ 1, 4 ] },
+          { "item": "bastsandals", "prob": 30, "damage": [ 1, 4 ] },
+          { "item": "leathersandals", "prob": 50, "damage": [ 1, 4 ] }
+        ],
+        "prob": 75
+      },
+      {
+        "item": "wild_herbs",
+        "prob": 15,
+        "container-item": "null",
+        "entry-wrapper": "bag_canvas_small",
+        "count": [ 3, 12 ]
+      }
+    ]
+  },
+  {
     "id": "mon_archunk_weak_death_drops",
     "type": "item_group",
     "subtype": "collection",
