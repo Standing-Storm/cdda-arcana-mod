@@ -362,22 +362,29 @@
   },
   {
     "type": "technique",
-    "id": "tec_weapon_briarwitch_knife_cut",
-    "name": "Bloody Blade Rending",
+    "id": "tec_weapon_briarwitch_knife_entangling",
+    "name": "Blade entangling",
     "melee_allowed": true,
-    "messages": [ "You rend %s with your bloody blade", "<npcname> rends %s with their bloody blade" ],
+    "weighting": -3,
+    "messages": [ "Vines burst from the cut and entangle %s", "Vines burst from the cut and entangle %s" ],
     "unarmed_allowed": false,
     "reach_ok": false,
     "crit_ok": true,
     "attack_vectors": [ "vector_null" ],
-    "tech_effects": [
-      {
-        "id": "bleed",
-        "chance": 75,
-        "duration": 120,
-        "on_damage": true,
-        "message": "Your slash opens up bleeding gashes on %s!"
-      }
-    ]
+    "condition": { "and": [ { "npc_has_species": "ZOMBIE" }, { "npc_is_on_terrain_with_flag": "DIGGABLE" } ] },
+    "tech_effects": [ { "id": "effect_arcana_briarwitchery_entangled", "chance": 100, "duration": 120, "on_damage": true } ]
+  },
+  {
+    "type": "technique",
+    "id": "tec_weapon_briarwitch_knife_sap",
+    "name": "Blade sapped",
+    "melee_allowed": true,
+    "messages": [ "As you cut %s, sap spreads from the wound!", "As <npcname> cuts %s, sap spreads from the wound!" ],
+    "unarmed_allowed": false,
+    "reach_ok": false,
+    "crit_ok": true,
+    "attack_vectors": [ "vector_null" ],
+    "condition": { "or": [ { "npc_has_species": "ZOMBIE" }, { "npc_has_flag": "WARM" }, "npc_is_character" ] },
+    "tech_effects": [ { "id": "sap", "chance": 100, "duration": 120, "on_damage": true } ]
   }
 ]

@@ -86,7 +86,6 @@
     "type": "item_group",
     "items": [
       [ "offering_chalice", 30 ],
-      [ "spear_pestilence", 20 ],
       [ "thunder_sigil", 25 ],
       [ "robe_shadow", 10 ],
       [ "gauntlets_necro", 15 ],

@@ -1,6 +1,42 @@
 [
   {
     "type": "effect_type",
+    "id": "effect_briarwitch_slow_bleeding",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "BLEEDSLOW2" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_briarwitchery_entangled",
+    "name": [ "Entangled" ],
+    "desc": [ "Roots and vines entangle your foes." ],
+    "show_in_info": true,
+    "rating": "bad",
+    "max_duration": 400,
+    "apply_message": "Roots and vines burst from the ground and entangle you!",
+    "remove_message": "The roots and vines wither up and die.",
+    "enchantments": [
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 1" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -40 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 2" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -30 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 3" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -20 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 4" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -10 } ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
     "id": "effect_arcana_briarwitchery_hide_from_unnatural",
     "name": [ "Submersion into Nature" ],
     "desc": [

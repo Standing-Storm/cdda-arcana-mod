@@ -600,7 +600,6 @@
   {
     "type": "item_group",
     "id": "mon_mi_go_death_drops",
-    "//": "All advanced variants drop plates at higher rate, versions with slaver beam additionally drop essence at higher rate.",
     "subtype": "collection",
     "entries": [ { "item": "iridescent_plate", "prob": 40 } ]
   },
@@ -1776,6 +1775,10 @@
         "container-item": "null",
         "entry-wrapper": "bag_canvas_small",
         "count": [ 3, 12 ]
+      },
+      {
+        "distribution": [ { "item": "essence", "prob": 25 }, { "item": "essence_natural", "prob": 50, "count": [ 2, 4 ] } ],
+        "prob": 50
       }
     ]
   },

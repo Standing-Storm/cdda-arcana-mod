@@ -94,6 +94,58 @@
     "flags": [ "BLIND_HARD" ]
   },
   {
+    "id": "arcana_meditate_in_wild_for_essence",
+    "type": "recipe",
+    "name": "distill gramina from the wild",
+    "description": "Using simple rituals while in the wilderness, distill some gramina from the surrounding wild.  This recipe cannot be used if you have any bionics.",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ESSENTIA",
+    "skill_used": "magic",
+    "difficulty": 2,
+    "time": "0 s",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_naturemagic", 2 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
+    "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ],
+    "result_eocs": [
+      {
+        "id": "EOC_ARCANA_MEDITATE_IN_WILD_FOR_ESSENCE",
+        "effect": [
+          { "u_lose_trait": "ARCANA_NO_BLOOD_MAGIC" },
+          { "u_add_trait": "ARCANA_BLOOD_MAGIC" },
+          {
+            "u_message": "You've done it.  In the diagrams and the patterns you've drawn, in the research you've conducted, you see the truth.  There is no inborn gift necessary, no quirk of genetics, no lofty heritage.  Just power and those willing to reach out and take it.  The power of blood.",
+            "type": "good"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "recipe",
+    "result": "essence_natural",
+    "id_suffix": "from_natural_materials",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ESSENTIA",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "time": "4 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_naturemagic", 5 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [
+      [ [ "arcana_flora_forage", 10, "LIST" ], [ "arcana_flora_flowers", 5, "LIST" ] ],
+      [
+        [ "iron_thorn", 2 ],
+        [ "inflorescent_root", 2 ],
+        [ "triffid_queen_flower", 2 ],
+        [ "living_bramble", 2 ],
+        [ "essence", 2 ]
+      ]
+    ],
+    "flags": [ "BLIND_HARD", "ALLOW_ROTTEN" ]
+  },
+  {
     "result": "essence_pure",
     "type": "recipe",
     "category": "CC_ARCANA",

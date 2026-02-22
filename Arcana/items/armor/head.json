@@ -327,8 +327,8 @@
     "id": "crown_of_ivy",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
-    "name": { "str": "crown of ivy" },
-    "description": "A circlet of intertwined strands of ivy, the leaves still green and flourishing.",
+    "name": { "str": "crown of ivy", "str_pl": "crowns of ivy" },
+    "description": "A circlet of intertwined strands of ivy, the leaves still green and flourishing.  When active, it protects you from pollen and fungal infection, as well as venomous attacks.  It will not cure existing ailments, only prevent them.  It can only recharge in wooded areas.",
     "weight": "130 g",
     "volume": "100 ml",
     "price": "10 USD",
@@ -343,15 +343,39 @@
     "charge_info": { "recharge_type": "forest", "time": "15 m", "regenerate_ammo": true },
     "use_action": {
       "target": "crown_of_ivy_on",
-      "msg": "As you activate the talisman, you feel insulated in a strange manner.",
+      "msg": "Its leaves rustle as you activate the crown of ivy.",
       "need_worn": true,
       "need_charges": 1,
       "need_charges_msg": "The crown needs time in the wild.",
-      "menu_text": "Activate lightning ward",
+      "menu_text": "Activate crown",
       "type": "transform",
       "ammo_scale": 0
     },
-    "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "ench_effects": [ { "effect": "lightning_ward", "intensity": 1 } ] } ],
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [ { "effect": "effect_crown_of_ivy_immunities", "intensity": 1 } ]
+      }
+    ],
     "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED", "NO_RELOAD", "NO_UNLOAD" ]
+  },
+  {
+    "id": "crown_of_ivy_on",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "copy-from": "crown_of_ivy",
+    "repairs_like": "crown_of_ivy",
+    "name": { "str": "crown of ivy (on)", "str_pl": "crowns of ivy (on)" },
+    "description": "A circlet of intertwined strands of ivy, the leaves still green and flourishing.  When active, it protects you from pollen and fungal infection, as well as venomous attacks.  It is currently active.",
+    "turns_per_charge": 300,
+    "revert_to": "crown_of_ivy",
+    "use_action": {
+      "target": "crown_of_ivy",
+      "msg": "The leaves rustle as the crown of ivy fades into quiescence.",
+      "type": "transform",
+      "ammo_scale": 0
+    },
+    "extend": { "flags": [ "TRADER_AVOID", "NO_TAKEOFF", "SPAWN_ACTIVE" ] }
   }
 ]

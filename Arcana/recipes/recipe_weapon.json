@@ -436,10 +436,10 @@
     "skills_required": [ "fabrication", 5 ],
     "time": "3 h",
     "activity_level": "BRISK_EXERCISE",
-    "book_learn": [ [ "book_sacrifice", 7 ] ],
+    "book_learn": [ [ "book_naturemagic", 7 ] ],
     "using": [ [ "arcana_essence_exclude_dull", 4 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
-    "tools": [ [ [ "book_sacrifice", -1 ] ] ],
+    "tools": [ [ [ "book_naturemagic", -1 ] ] ],
     "proficiencies": [
       { "proficiency": "prof_chitinworking" },
       { "proficiency": "prof_carving" },
@@ -447,7 +447,7 @@
       { "proficiency": "prof_arcana_enchantment" }
     ],
     "components": [
-      [ [ "spear_steel", 1 ], [ "qiang", 1 ] ],
+      [ [ "spear_wood", 1 ] ],
       [ [ "bee_sting", 1 ], [ "wasp_sting", 1 ], [ "dermatik_sting", 1 ], [ "iron_thorn", 1 ] ],
       [ [ "chitin_piece", 2 ] ]
     ],

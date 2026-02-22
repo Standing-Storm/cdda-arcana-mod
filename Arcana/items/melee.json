@@ -685,21 +685,20 @@
     "id": "spear_pestilence",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARTIFACT" ],
-    "copy-from": "spear_steel",
+    "copy-from": "spear_wood",
     "category": "weapons",
     "name": { "str": "spear of pestilence", "str_pl": "spears of pestilence" },
-    "description": "A stout steel spear with a wicked sting, decorated with elaborate patterns carved from chitin.  Using it will blast nearby enemies with frost and temporarily summon mutant vermin to aid you, while wielding it makes movement easier.",
+    "description": "A stout wooden spear with a wickedly-sharped point, decorated with elaborate patterns of rune-carved chitin.  Using it will poison nearby enemies and temporarily summon mutant vermin to aid you, as well as making movement over natural terrain easier.",
     "price": "1200 USD",
     "price_postapoc": "35 USD",
-    "material": [ "steel", "wood", "chitin" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_type": 9 } } ],
+    "material": [ "wood", "chitin" ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_natural_type": 9 } } ],
     "charges_per_use": 1,
-    "tool_ammo": "essence_type",
+    "tool_ammo": "essence_natural_type",
     "passive_effects": [
       {
         "has": "WIELD",
         "condition": "ALWAYS",
-        "values": [ { "value": "MOVE_COST", "add": -25 } ],
         "hit_you_effect": [
           {
             "id": "arcana_react_spear_pestilence_poison",
@@ -708,11 +707,22 @@
             "npc_message": "The air around %1$s wavers with ethereal force."
           }
         ]
+      },
+      {
+        "has": "WIELD",
+        "condition": {
+          "or": [
+            { "u_is_on_terrain_with_flag": "PLOWABLE" },
+            { "u_is_on_terrain_with_flag": "YOUNG" },
+            { "u_is_on_terrain_with_flag": "SHRUB" }
+          ]
+        },
+        "values": [ { "value": "MOVE_COST", "multiply": -0.1 } ]
       }
     ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "relative": { "weight": "540g", "melee_damage": { "bash": 2 } },
-    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED" ] }
+    "relative": { "melee_damage": { "bash": 2 } },
+    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ] }
   },
   {
     "id": "blood_athame",
@@ -755,12 +765,62 @@
   },
   {
     "type": "ITEM",
+    "subtypes": [ "TOOL", "ARTIFACT" ],
     "id": "briarwitch_flint_knife",
-    "name": { "str": "flint knife" },
+    "name": { "str": "sapwood knife", "str_pl": "sapwood knives" },
     "copy-from": "primitive_knife",
-    "description": "A sharpened stone set into a hollowed handle.  It looks primitive at first, but on closer inspection you see that some sort of sap has been used to help to affix the blade to the handle and the blade is much sharper than its stone construction would indicate.  While wielding it your blood also flows like sap, slowing any bleeding you suffer from, and ",
+    "description": "A sharpened stone set into a hollowed handle.  It looks primitive at first, but on closer inspection you see that some sort of sap has been used to help to affix the blade to the handle and the blade is much sharper than its stone construction would indicate.  While wielding it your blood also flows like sap, slowing any bleeding you suffer from, and when activated, strikes can cause sticky sap to spread from your enemies wounds or, if they are one of the walking dead and on natural ground, entangle them.",
     "qualities": [ [ "CUT", 2 ], [ "BUTCHER", 15 ] ],
-    "techniques": [ "WBLOCK_1", "RAPID" ],
-    "melee_damage": { "bash": 2, "stab": 15 }
+    "melee_damage": { "bash": 2, "stab": 8 },
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_natural_type": 25 } } ],
+    "passive_effects": [
+      {
+        "has": "WIELD",
+        "condition": "ALWAYS",
+        "ench_effects": [ { "effect": "effect_briarwitch_slow_bleeding", "intensity": 1 } ]
+      },
+      {
+        "has": "WIELD",
+        "condition": "ACTIVE",
+        "incoming_damage_mod": [ { "type": "cold", "multiply": -0.5 } ],
+        "ench_effects": [ { "effect": "cold_ward", "intensity": 1 } ]
+      }
+    ],
+    "use_action": [
+      {
+        "target": "briarwitch_flint_knife_on",
+        "msg": "The sap flows over the stone blade.",
+        "need_charges": 1,
+        "need_charges_msg": "The blade is inert.",
+        "menu_text": "Awaken the sapwood blade",
+        "type": "transform",
+        "ammo_scale": 0
+      }
+    ],
+    "extend": { "flags": [ "DURABLE_MELEE", "MAGIC_FOCUS" ] }
+  },
+  {
+    "id": "briarwitch_flint_knife_on",
+    "type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "copy-from": "briarwitch_flint_knife",
+    "repairs_like": "briarwitch_flint_knife",
+    "category": "weapons",
+    "name": { "str": "sapwood knife (on)", "str_pl": "sapwood knives (on)" },
+    "description": "A sharpened stone set into a hollowed handle.  It looks primitive at first, but on closer inspection you see that some sort of sap has been used to help to affix the blade to the handle and the blade is much sharper than its stone construction would indicate.  While wielding it your blood also flows like sap, slowing any bleeding you suffer from, and now that it's activated, strikes can cause sticky sap to spread from your enemies wounds or, if they are one of the walking dead and on natural ground, entangle them.",
+    "turns_per_charge": 150,
+    "revert_to": "briarwitch_flint_knife",
+    "melee_damage": { "bash": 2, "stab": 15 },
+    "techniques": [ "tec_weapon_briarwitch_knife_entangling", "tec_weapon_briarwitch_knife_sap" ],
+    "use_action": [
+      {
+        "menu_text": "Quiet the sapwood blade",
+        "type": "transform",
+        "msg": "The sap evaporates from the blade.",
+        "target": "briarwitch_flint_knife",
+        "ammo_scale": 0
+      }
+    ],
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] }
   }
 ]

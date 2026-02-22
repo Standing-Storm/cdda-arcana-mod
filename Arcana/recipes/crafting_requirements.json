@@ -25,19 +25,25 @@
     "id": "arcana_essence_any",
     "type": "requirement",
     "//": "Any type of magical essence.",
-    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ]
+    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_natural", 6 ], [ "essence_dull", 30 ] ] ]
   },
   {
     "id": "arcana_essence_exclude_dull",
     "type": "requirement",
-    "//": "Essentia or vitae only",
-    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ] ] ]
+    "//": "Essentia, gramina, or vitae only",
+    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_natural", 6 ] ] ]
   },
   {
     "id": "arcana_essence_exclude_blood",
     "type": "requirement",
-    "//": "Essentia or residuum only, for things the local sanguinists would turn their noses at.",
-    "components": [ [ [ "essence", 1 ], [ "essence_dull", 30 ] ] ]
+    "//": "Essentia, gramina, or residuum only, for things the local sanguinists would turn their noses at.",
+    "components": [ [ [ "essence", 1 ], [ "essence_dull", 30 ], [ "essence_natural", 6 ] ] ]
+  },
+  {
+    "id": "arcana_essence_exclude_natural",
+    "type": "requirement",
+    "//": "Essentia, vitae, residuum only, for things briarwitches would sic the hounds on you for.",
+    "components": [ [ [ "essence", 1 ], [ "essence_blood", 3 ], [ "essence_dull", 30 ] ] ]
   },
   {
     "id": "arcana_flesh_standard",
@@ -48,7 +54,7 @@
   {
     "id": "arcana_flora_forage",
     "type": "requirement",
-    "//": "Used for forest talismans to equal one bitae.",
+    "//": "Used for forest talismans to equal one vitae.",
     "components": [
       [
         [ "veggy_wild", 10 ],
