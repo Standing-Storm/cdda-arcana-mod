@@ -7,6 +7,18 @@
       { "math": [ "_failure_odds = 0" ] },
       { "if": { "u_has_bionics": "ANY" }, "then": { "math": [ "_failure_odds += 1000" ] } },
       {
+        "if": {
+          "or": [
+            { "u_near_om_location": "road", "range": 2 },
+            { "not": "u_is_outside" },
+            {
+              "not": { "or": [ { "u_near_om_location": "forest", "range": 2 }, { "u_near_om_location": "forest_thick", "range": 2 } ] }
+            }
+          ]
+        },
+        "then": { "math": [ "_failure_odds += 1000" ] }
+      },
+      {
         "if": { "not": { "u_has_proficiency": "prof_arcana_thaumatology" } },
         "then": { "math": [ "_failure_odds += 5" ] }
       },

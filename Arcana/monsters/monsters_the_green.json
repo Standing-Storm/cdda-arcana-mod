@@ -21,7 +21,7 @@
     "dodge": 3,
     "diff": 3,
     "extend": {
-      "flags": [ "QUIETMOVES" ],
+      "flags": [ "PLANT_BLOOD", "QUIETMOVES" ],
       "special_attacks": [
         { "id": "feral_weapon_monster_knife", "accuracy": 3 },
         {
