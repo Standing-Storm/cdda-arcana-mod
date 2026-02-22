@@ -1,0 +1,12 @@
+[
+  {
+    "id": "ACT_ARCANA_MEDITATE_IN_WILD_FOR_ESSENCE",
+    "type": "activity_type",
+    "activity_level": "LIGHT_EXERCISE",
+    "verb": "communing with the wilds",
+    "based_on": "time",
+    "can_resume": false,
+    "do_turn_eoc": "EOC_ARCANA_MEDITATE_IN_WILD_FOR_ESSENCE_FAILURE_CHECKER",
+    "completion_eoc": "EOC_ARCANA_MEDITATE_IN_WILD_FOR_ESSENCE_SUCCESS"
+  }
+]

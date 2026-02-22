@@ -41,7 +41,7 @@
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
     "name": { "str_sp": "gramina" },
-    "description": "A strange glowing mote of wispy vapor, found in the wilderness.",
+    "description": "A strange glowing mote of wispy vapor, formed in the wilderness.",
     "volume": "5 ml",
     "weight": "1 mg",
     "price": "5 USD",
