@@ -184,7 +184,7 @@
         "type": "spell",
         "spell_data": { "id": "triffid_summon_tanglevine", "min_level": 6 },
         "cooldown": { "math": [ "25 + rand(50)" ] },
-        "condition": { "not": { "u_has_flag": "NO_SPELLCASTING" } },
+        "condition": { "and": [ { "npc_is_on_terrain_with_flag": "DIGGABLE" }, { "not": { "u_has_flag": "NO_SPELLCASTING" } } ] },
         "monster_message": "%1$s waves its fronds toward the ground."
       },
       {

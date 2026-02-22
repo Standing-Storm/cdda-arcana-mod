@@ -37,6 +37,24 @@
     "flags": [ "ZERO_WEIGHT" ]
   },
   {
+    "id": "essence_natural",
+    "type": "ITEM",
+    "subtypes": [ "AMMO" ],
+    "name": { "str_sp": "gramina" },
+    "description": "A strange glowing mote of wispy vapor, formed in the wilderness.",
+    "volume": "5 ml",
+    "weight": "1 mg",
+    "price": "5 USD",
+    "price_postapoc": "125 cent",
+    "material": [ "arcana_fuel_essence_natural" ],
+    "symbol": "=",
+    "color": "red",
+    "count": 1,
+    "ammo_type": "essence_natural_type",
+    "effects": [ "NEVER_MISFIRES", "NON_FOULING" ],
+    "flags": [ "ZERO_WEIGHT" ]
+  },
+  {
     "id": "essence_dull",
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
@@ -250,7 +268,7 @@
     "type": "ITEM",
     "subtypes": [ "AMMO" ],
     "id": "primitive_magic_item_ammo",
-    "name": { "str_sp": "recharge" },
+    "name": { "str_sp": "essentia" },
     "symbol": "=",
     "color": "white",
     "description": "Residual energy flowing through a primitive magic item.",

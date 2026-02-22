@@ -1,0 +1,65 @@
+[
+  {
+    "type": "effect_type",
+    "id": "effect_briarwitch_slow_bleeding",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "BLEEDSLOW2" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_briarwitchery_entangled",
+    "name": [ "Entangled" ],
+    "desc": [ "Roots and vines entangle your foes." ],
+    "show_in_info": true,
+    "rating": "bad",
+    "max_duration": 400,
+    "apply_message": "Roots and vines burst from the ground and entangle you!",
+    "remove_message": "The roots and vines wither up and die.",
+    "enchantments": [
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 1" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -40 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 2" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -30 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 3" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -20 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 4" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -10 } ]
+      }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_briarwitchery_hide_from_unnatural",
+    "name": [ "Submersion into Nature" ],
+    "desc": [
+      "You are hidden from the sight of the Beyond and other creatures from Outside, but are more visible to natural creatures."
+    ],
+    "remove_message": "Your otherworldly guise drops.",
+    "decay_messages": [ [ "Your otherworldly guise is beginning to fade.", "bad" ] ],
+    "max_duration": "120 m",
+    "max_intensity": 120,
+    "int_dur_factor": "1 m",
+    "enchantments": [
+      { "condition": { "test_eoc": "EOC_CONDITION_BRIARWITCHERY_IS_EFFECTIVE" }, "mutations": [ "ARCANA_TRANSCENDANT_AURA" ] }
+    ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_briarwitchery_communion_with_nature",
+    "name": [ "Communion with the Wild" ],
+    "desc": [ "The Green surrounds you and welcomes you home." ],
+    "remove_message": "Your communion with the Green fades.",
+    "rating": "good",
+    "max_duration": 42400,
+    "base_mods": { "health_min": [ 1 ], "health_chance": [ 40 ], "h_mod_min": [ 1 ], "h_mod_chance": [ 80 ], "health_tick": [ 30 ] },
+    "flags": [ "ANIMALEMPATH" ]
+  }
+]

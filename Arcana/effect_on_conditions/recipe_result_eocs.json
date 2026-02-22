@@ -1,0 +1,35 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_MEDITATE_IN_WILD_FOR_ESSENCE_FAILURE_CHECKER",
+    "condition": { "not": { "u_has_effect": "effect_arcana_meditate_in_wild_for_essence" } },
+    "effect": [
+      { "math": [ "_failure_odds = 0" ] },
+      { "if": { "u_has_bionics": "ANY" }, "then": { "math": [ "_failure_odds += 1000" ] } },
+      {
+        "if": { "not": { "u_has_proficiency": "prof_arcana_thaumatology" } },
+        "then": { "math": [ "_failure_odds += 5" ] }
+      },
+      {
+        "if": { "x_in_y_chance": { "x": { "math": [ "_failure_odds" ] }, "y": 1000 } },
+        "then": [
+          "u_cancel_activity",
+          {
+            "u_message": "You lose the threads of the wilderness and the gathering essentia fades into vapor.",
+            "type": "bad"
+          }
+        ],
+        "else": [ { "u_add_effect": "effect_arcana_meditate_in_wild_for_essence", "duration": "5 minutes" } ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_MEDITATE_IN_WILD_FOR_ESSENCE_SUCCESS",
+    "condition": { "u_has_effect": "effect_arcana_meditate_in_wild_for_essence" },
+    "effect": [
+      { "u_message": "The vapor coalesces into shards of gramina.", "type": "good" },
+      { "u_spawn_item": "essence_natural", "count": 1, "suppress_message": true }
+    ]
+  }
+]

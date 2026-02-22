@@ -27,5 +27,11 @@
       [ "totem_elecresist", 3 ],
       [ "totem_heal", 3 ]
     ]
+  },
+  {
+    "id": "briarwitch_cult_gear_magic",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "spear_pestilence", "prob": 20 }, { "item": "briarwitch_flint_knife", "prob": 30 } ]
   }
 ]

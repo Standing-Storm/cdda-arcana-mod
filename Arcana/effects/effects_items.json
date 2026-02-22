@@ -1,10 +1,18 @@
 [
   {
-    "id": "effect_monster_no_double_cast",
+    "id": "effect_arcana_wyrmskin_armor",
     "type": "effect_type",
     "//": "Hidden effect, applied by wyrmskin armor",
     "name": [ "" ],
     "desc": [ "" ],
     "removes_effects": [ "onfire", "corroding" ]
+  },
+  {
+    "id": "effect_crown_of_ivy_immunities",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by the crown of ivy",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "blocks_effects": [ "tpollen", "fungus", "poison", "badpoison", "venom_weaken", "venom_pain", "venom_dmg" ]
   }
 ]

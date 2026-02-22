@@ -30,6 +30,13 @@
   },
   {
     "type": "material",
+    "id": "arcana_fuel_essence_natural",
+    "copy-from": "essencemat",
+    "name": "Gramina",
+    "fuel_data": { "energy": "7500 kJ" }
+  },
+  {
+    "type": "material",
     "id": "arcana_fuel_essence_dull",
     "copy-from": "essencemat",
     "name": "Residuum",

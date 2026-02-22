@@ -1,0 +1,9 @@
+[
+  {
+    "id": "effect_arcana_meditate_in_wild_for_essence",
+    "type": "effect_type",
+    "//": "Hidden effect, used as a tracker",
+    "name": [ "" ],
+    "desc": [ "" ]
+  }
+]

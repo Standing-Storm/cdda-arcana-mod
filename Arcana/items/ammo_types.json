@@ -12,6 +12,12 @@
     "type": "ammunition_type"
   },
   {
+    "id": "essence_natural_type",
+    "name": "gramina",
+    "default": "essence_natural",
+    "type": "ammunition_type"
+  },
+  {
     "id": "essence_dull_type",
     "name": "residuum",
     "default": "essence_dull",
@@ -31,7 +37,7 @@
   },
   {
     "id": "primitive_magic_item_ammo_type",
-    "name": "recharge",
+    "name": "essentia",
     "default": "primitive_magic_item_ammo",
     "type": "ammunition_type"
   },

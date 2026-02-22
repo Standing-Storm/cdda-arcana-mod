@@ -63,5 +63,59 @@
     "energy_increment": -5,
     "spell_class": "ARCANA_BRIARWITCH",
     "magic_type": "arcana_briar_witchery"
+  },
+  {
+    "id": "arcana_briarwitchery_commune_nature",
+    "type": "SPELL",
+    "name": "Communion with the Wild",
+    "description": "In the wild, away from the clamor and .",
+    "message": "\"In the wild, I am one with the Green…\"  You cast %s!",
+    "valid_targets": [ "self" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_BRIARWITCH_NATURE_COMMUNE",
+    "shape": "blast",
+    "flags": [ "SOMATIC", "VERBAL", "NO_LEGS" ],
+    "caster_condition": {
+      "and": [
+        "u_is_outside",
+        {
+          "or": [
+            { "u_is_on_terrain_with_flag": "SHRUB" },
+            { "u_is_on_terrain_with_flag": "DIGGABLE" },
+            { "u_is_on_terrain_with_flag": "YOUNG" }
+          ]
+        },
+        { "not": { "u_near_om_location": "road", "range": 2 } }
+      ]
+    },
+    "caster_condition_fail_message": "You must be amidst the wild to commune with the wild.",
+    "max_level": 10,
+    "difficulty": 30,
+    "skill": "magic",
+    "base_casting_time": 12000,
+    "base_energy_cost": 50,
+    "min_duration": 30000,
+    "max_duration": 360000,
+    "duration_increment": 16500,
+    "spell_class": "ARCANA_BRIARWITCH",
+    "magic_type": "arcana_briar_witchery"
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_BRIARWITCH_NATURE_COMMUNE",
+    "effect": [
+      {
+        "u_add_effect": "effect_arcana_briarwitchery_communion_with_nature",
+        "duration": { "math": [ "300 + (u_spell_level('arcana_briarwitchery_commune_nature') * 165)" ] }
+      },
+      { "u_lose_morale": "morale_arcana_forest_unity" },
+      {
+        "u_add_morale": "morale_arcana_forest_unity",
+        "bonus": { "math": [ "5 + (u_spell_level('arcana_briarwitchery_commune_nature') * 3)" ] },
+        "max_bonus": 50,
+        "duration": { "math": [ "300 + (u_spell_level('arcana_briarwitchery_commune_nature') * 165)" ] },
+        "decay_start": { "math": [ "300 + ( (u_spell_level('arcana_briarwitchery_commune_nature') * 165) / 2)" ] }
+      }
+    ]
   }
 ]

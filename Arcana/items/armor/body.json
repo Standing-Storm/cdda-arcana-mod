@@ -228,7 +228,7 @@
     "passive_effects": [
       {
         "has": "WORN",
-        "condition": "ACTIVE",
+        "condition": "ALWAYS",
         "ench_effects": [ { "effect": "effect_arcana_wyrmskin_armor", "intensity": 1 } ]
       }
     ],

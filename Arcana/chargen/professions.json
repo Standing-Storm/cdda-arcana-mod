@@ -576,7 +576,11 @@
     "name": "Keeper Mendicant",
     "description": "When your order crumbled, and the world fell into darkness soon thereafter, you were driven to wander in your struggle to survive.  But your oath is immortal, and when the stars are right you will find a way to serve the Shrouded King once more.",
     "points": 10,
-    "spells": [ { "id": "arcana_magic_clairvoyance", "level": 1 } ],
+    "spells": [
+      { "id": "arcana_magic_clairvoyance", "level": 2 },
+      { "id": "arcana_magic_harden_senses", "level": 3 },
+      { "id": "arcana_magic_ward_against_evil", "level": 3 }
+    ],
     "skills": [
       { "level": 2, "name": "fabrication" },
       { "level": 3, "name": "tailor" },
@@ -617,7 +621,6 @@
           "book_sacrifice"
         ],
         "entries": [
-          { "item": "spear_pestilence", "ammo-item": "essence", "charges": 9, "container-item": "spearsling" },
           { "item": "mana_gem", "contents-group": "starting_mana_gem_11_essence" },
           { "item": "salt", "container-item": "bag_canvas_small", "count": 100 },
           { "group": "charged_candle" },

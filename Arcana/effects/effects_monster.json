@@ -60,5 +60,36 @@
         "incoming_damage_mod": [ { "type": "cut", "multiply": -0.2 }, { "type": "stab", "multiply": -0.8 }, { "type": "bullet", "multiply": -0.95 } ]
       }
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "entangled_monster",
+    "name": [ "Entangled" ],
+    "desc": [ "Roots and vines grasp your limbs!" ],
+    "max_intensity": 4,
+    "int_add_val": 1,
+    "show_in_info": true,
+    "rating": "bad",
+    "max_duration": 400,
+    "apply_message": "Roots and vines burst from the ground and entangle you!",
+    "remove_message": "The roots and vines wither up and die.",
+    "enchantments": [
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 1" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -40 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 2" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -30 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 3" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -20 } ]
+      },
+      {
+        "condition": { "and": [ { "math": [ "u_val('size')== 4" ] }, { "u_is_on_terrain_with_flag": "DIGGABLE" } ] },
+        "values": [ { "value": "SPEED", "add": -10 } ]
+      }
+    ]
   }
 ]
