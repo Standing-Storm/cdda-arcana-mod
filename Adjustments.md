@@ -18,6 +18,7 @@
 - Writing/rewriting scrolls now takes ink infused with magical energy. Craft this ink or find it!
 - Essence is no longer fungible! Each type is its own type and cannot be converted into any others.
   - Types have been renamed Essentia, Vitae, and Residuum
+  - A new essence type, Gramina, the essence of the wild places
 - New locations making use of weights and nests--rare variants of existing places might have housed an occultist or researcher into the Beyond. Peer into those nooks and crannies!
 - Many more recipes make use of proficiencies, and some now require them. Lack of Arcana proficiencies generally does not increase the time taken to create a recipe, but it does increase the odds of failure.  Pattern sorcery requires mastery of the occult to learn, but blood magic is much quicker and easier...
 - Added map extras! Poke around and see what you can find.
