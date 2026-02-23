@@ -1,0 +1,52 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "dda_simplified_nutrition",
+    "name": "Simplified Nutrition and Weariness",
+    "authors": [ "StandingStorm" ],
+    "maintainers": [ "StandingStorm" ],
+    "description": "Allows you to eat whatever you want, when you want, and makes weariness a non-factor.",
+    "category": "balance",
+    "dependencies": [ "dda" ]
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "WEARY_THRESH_SCALING",
+    "//": "What the weariness threshold is multiplied by to gain each successive level.",
+    "stype": "float",
+    "value": 6
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "WEARY_INITIAL_STEP",
+    "//": "What the weariness threshold is multiplied by for the first level of weariness.",
+    "stype": "float",
+    "value": 100.0
+  },
+  {
+    "type": "EXTERNAL_OPTION",
+    "name": "WEARY_RECOVERY_MULT",
+    "//": "What percentage of calorie intake and expenditure is reduced during each reduction tick.",
+    "stype": "float",
+    "value": 100
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_WEARINESS_NUTRITION_MOD_GO",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "effect": [ { "if": "u_is_avatar", "then": { "u_add_trait": "TRAIT_dda_simplified_nutrition" } } ]
+  },
+  {
+    "type": "mutation",
+    "id": "TRAIT_dda_simplified_nutrition",
+    "points": 8,
+    "starting_trait": false,
+    "purifiable": false,
+    "player_display": false,
+    "valid": false,
+    "name": { "str": "Simplified Nutrition" },
+    "description": "You don't really have to worry about food or weariness.",
+    "enchantments": [ { "values": [ { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1000 } ] } ]
+  }
+]
