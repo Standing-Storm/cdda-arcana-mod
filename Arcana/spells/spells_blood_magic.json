@@ -655,7 +655,7 @@
     "id": "arcana_blood_magic_drink_blood",
     "type": "SPELL",
     "name": { "str": "Vampiric Thirst" },
-    "description": "Using this spell will provoke a rush of adrenaline for urgent situations, with none of the normal drawbacks.  That is not to say it has no drawbacks, as your mind will be filled with thoughts of violence.  It can only be used on yourself.",
+    "description": "Using this spell will allow to subsist on blood, with none of the usual drawbacks drinking it might cause.  Due to the effects of the spell, the flavors of normal food become dull and unappetizing, however.  It can only be used on yourself.",
     "message": "You lick your lips as images of gore arise unbidden to your thoughts.  %s!",
     "valid_targets": [ "self" ],
     "flags": [ "SOMATIC", "NO_HANDS" ],
