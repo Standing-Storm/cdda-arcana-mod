@@ -6,7 +6,7 @@
     "authors": [ "StandingStorm" ],
     "maintainers": [ "StandingStorm" ],
     "description": "Allows you to eat whatever you want, when you want, and makes weariness a non-factor.",
-    "category": "balance",
+    "category": "rebalance",
     "dependencies": [ "dda" ]
   },
   {
