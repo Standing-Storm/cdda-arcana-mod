@@ -3,7 +3,7 @@
     "type": "attack_vector",
     "id": "vector_dragonblood_bite",
     "limbs": [ "muzzle_draconic" ],
-    "contact_area": [ "mouth_lips" ],
+    "contact_area": [ "muzzle_draconic_lips" ],
     "encumbrance_limit": 1
   }
 ]
