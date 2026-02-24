@@ -1,5 +1,45 @@
 [
   {
+    "id": "muzzle_draconic_lips",
+    "type": "sub_body_part",
+    "max_coverage": 20,
+    "parent": "muzzle_draconic",
+    "opposite": "sub_limb_debug",
+    "side": "both",
+    "name": "lips",
+    "similar_bodypart": "muzzle_lips"
+  },
+  {
+    "id": "muzzle_draconic_nostrils",
+    "type": "sub_body_part",
+    "max_coverage": 5,
+    "parent": "muzzle_draconic",
+    "opposite": "sub_limb_debug",
+    "side": "both",
+    "name": "nostrils",
+    "similar_bodypart": "muzzle_nose"
+  },
+  {
+    "id": "muzzle_draconic_cheeks",
+    "type": "sub_body_part",
+    "max_coverage": 35,
+    "parent": "muzzle_draconic",
+    "opposite": "sub_limb_debug",
+    "side": "both",
+    "name": "cheeks",
+    "similar_bodypart": "muzzle_cheeks"
+  },
+  {
+    "id": "muzzle_draconic_chin",
+    "type": "sub_body_part",
+    "max_coverage": 40,
+    "parent": "muzzle_draconic",
+    "opposite": "sub_limb_debug",
+    "side": "both",
+    "name": "chin",
+    "similar_bodypart": "muzzle_chin"
+  },
+  {
     "id": "tail_draconic_base",
     "type": "sub_body_part",
     "name": "draconic tail base",
