@@ -20,7 +20,8 @@
       "items": {
         "B": [
           { "item": "esoteric_books", "chance": 80, "repeat": [ 1, 2 ] },
-          { "item": "magic_books", "chance": 50, "repeat": [ 1, 2 ] }
+          { "item": "magic_books", "chance": 50, "repeat": [ 1, 2 ] },
+          { "item": "summoning_spellbooks", "chance": 10, "repeat": [ 1, 2 ] }
         ],
         "t": [
           { "item": "magic_crafting", "chance": 85, "repeat": [ 2, 5 ] },
