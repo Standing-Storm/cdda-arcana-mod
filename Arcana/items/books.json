@@ -116,7 +116,7 @@
     "subtypes": [ "BOOK" ],
     "category": "manuals",
     "name": { "str": "Scholar's Notes: Foci", "str_pl": "copies of Scholar's Notes: Foci" },
-    "description": "A typed manuscript by a scholar of esoterica.  While the title leads you to expect something prurient, you are relieved to discover it is instead a treatise on the anthropological definition of fetishes and local esoteric orders' usage of them.\n\"…\"",
+    "description": "A typed manuscript by a scholar of esoterica.  The occult paraphernalia described within seem very simple to make, though you're not sure where to find some of these ingredients.\n\"Take of you the bark of birch or willow, and upon it write \"manus quoque mea fundavit terram et dextera mea mensa est caelos ego vocabo eos et stabunt simul\".  Mix together the sand and ash and coat the bark evenly so that no part is exposed to the outer air…\"",
     "weight": "454 g",
     "volume": "500 ml",
     "price": "100 USD",
