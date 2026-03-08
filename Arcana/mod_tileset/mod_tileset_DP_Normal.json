@@ -103,14 +103,17 @@
             ],
             "fg": 40
           },
-          { "id": "book_magicfordummies", "fg": 41 },
+          {
+            "id": [ "book_magicfordummies", "book_scholarsnotes_essence", "book_scholarsnotes_totems", "book_scholarsnotes_talismans" ],
+            "fg": 41
+          },
           { "id": [ "book_potioncraft", "book_alternate_potions" ], "fg": 42 },
           { "id": "book_scrollcraft", "fg": 43 },
           { "id": "book_bloodmagic", "fg": 44 },
           { "id": "book_hexenhammer", "fg": 45 },
           { "id": "book_sacrifice", "fg": 46 },
           { "id": "book_syncretism", "fg": 47 },
-          { "id": "book_summoning", "fg": 48 },
+          { "id": [ "book_summoning", "book_easyevocation" ], "fg": 48 },
           { "id": "recipe_lab_arcana", "fg": 49 },
           { "id": "arcanemap", "fg": 50 },
           { "id": "index_potioncraft", "fg": 51 },

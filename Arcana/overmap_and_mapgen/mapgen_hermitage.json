@@ -1,7 +1,6 @@
 [
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_hermitage_1" ],
     "weight": 300,
     "object": {
@@ -69,7 +68,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_hermitage_2" ],
     "weight": 300,
     "object": {
@@ -148,7 +146,6 @@
   },
   {
     "type": "mapgen",
-    
     "om_terrain": [ "arcana_hermitage_roof" ],
     "weight": 300,
     "object": {
@@ -163,7 +160,7 @@
         "   -................-   ",
         "   -................-   ",
         "   -................-   ",
-        "   -..9.............-   ",
+        "   -................-   ",
         "   -................-   ",
         "   -................-   ",
         "   -................-   ",
@@ -178,9 +175,7 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "roof_palette" ],
-      "terrain": { "9": "t_flat_roof" },
-      "furniture": { "9": "f_solar_unit" }
+      "palettes": [ "roof_palette" ]
     }
   }
 ]
