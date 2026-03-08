@@ -83,7 +83,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
-    "book_learn": [ [ "book_bloodmagic", 0 ] ],
+    "book_learn": [ [ "book_bloodmagic", 0 ], [ "book_scholarsnotes_talismans", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -104,7 +104,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
-    "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_naturemagic", 1 ] ],
+    "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_scholarsnotes_talismans", 1 ], [ "book_naturemagic", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -126,7 +126,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_scholarsnotes_talismans", 1 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -147,7 +147,7 @@
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_scholarsnotes_talismans", 2 ], [ "book_sacrifice", 2 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -241,7 +241,7 @@
     "time": "2 h",
     "activity_level": "LIGHT_EXERCISE",
     "autolearn": true,
-    "book_learn": [ [ "book_hexenhammer", 3 ] ],
+    "book_learn": [ [ "book_hexenhammer", 3 ], [ "book_scholarsnotes_talismans", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -263,7 +263,7 @@
     "time": "2 h 30m",
     "activity_level": "NO_EXERCISE",
     "autolearn": true,
-    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_scholarsnotes_talismans", 0 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "charm_bone", 1 ] ], [ [ "flame_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],

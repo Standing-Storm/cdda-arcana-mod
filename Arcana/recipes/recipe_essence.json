@@ -10,7 +10,7 @@
     "time": "2 h",
     "activity_level": "NO_EXERCISE",
     "batch_time_factors": [ 95, 5 ],
-    "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_elementalism", 1 ] ],
+    "book_learn": [ [ "book_magicfordummies", 1 ], [ "book_scholarsnotes_essence", 1 ], [ "book_elementalism", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_purification" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "result_mult": 20,
     "using": [ [ "arcana_purification_standard", 1 ] ],
@@ -49,7 +49,7 @@
     "//": "Yes, it's intended the generic 'rend down monsters into essentia' recipes take absolutely forever.  That way it's an improvement later on when you have better ways to do it.",
     "//2": "Conversion rate is also lossy, which is intended.  This was the first crude techniques the cults used.",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_scholarsnotes_essence", 1 ], [ "book_sacrifice", 2 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_purification" }, { "proficiency": "prof_arcana_thaumatology" } ],
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "components": [
@@ -104,7 +104,7 @@
     "difficulty": 2,
     "time": "0 s",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_naturemagic", 2 ] ],
+    "book_learn": [ [ "book_naturemagic", 1 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "flags": [ "BLIND_EASY", "ALLOW_ROTTEN" ],
     "result_eocs": [
@@ -127,7 +127,7 @@
     "difficulty": 5,
     "time": "4 h",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_naturemagic", 5 ] ],
+    "book_learn": [ [ "book_naturemagic", 3 ], [ "book_scholarsnotes_essence", 3 ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "arcana_flora_forage", 10, "LIST" ], [ "arcana_flora_flowers", 5, "LIST" ] ],

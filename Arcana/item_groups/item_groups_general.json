@@ -295,7 +295,18 @@
     "entries": [
       { "item": "book_easyalchemy", "prob": 1 },
       { "item": "book_magicfordummies", "prob": 1 },
+      { "group": "magic_books_scholars_notes", "prob": 1 },
       { "item": "book_easyevocation", "prob": 1 }
+    ]
+  },
+  {
+    "id": "magic_books_scholars_notes",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "book_scholarsnotes_essence", "prob": 1 },
+      { "item": "book_scholarsnotes_totems", "prob": 1 },
+      { "item": "book_scholarsnotes_talismans", "prob": 1 }
     ]
   },
   {
@@ -310,6 +321,7 @@
       { "group": "esoteric_books", "prob": 45 },
       {
         "distribution": [
+          { "group": "magic_books_scholars_notes", "prob": 5 },
           {
             "distribution": [ { "item": "book_alternate_potions", "prob": 2 }, { "group": "magic_books_beginner", "prob": 5 } ],
             "prob": 25
@@ -339,6 +351,7 @@
       { "group": "esoteric_books", "prob": 45 },
       {
         "distribution": [
+          { "group": "magic_books_scholars_notes", "prob": 10 },
           {
             "distribution": [ { "item": "book_alternate_potions", "prob": 2 }, { "group": "magic_books_beginner", "prob": 5 } ],
             "prob": 25
