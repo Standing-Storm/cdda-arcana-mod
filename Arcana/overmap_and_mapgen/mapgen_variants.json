@@ -242,7 +242,6 @@
         "                        ",
         "                        "
       ],
-      "palettes": [ "roof_palette" ],
       "terrain": {
         ".": "t_floor",
         "x": "t_rock_wall_half",
@@ -262,6 +261,8 @@
         "j": "f_bed",
         "h": "f_chair",
         "f": "f_filing_cabinet",
+        "s": "f_sofa",
+        "y": [ "f_indoor_plant_y", "f_indoor_plant" ],
         "1": "f_cupboard",
         "6": "f_cupboard",
         "7": "f_cupboard"
