@@ -20,7 +20,7 @@
         "weapon_damage_requirements": [ { "type": "bash", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 1,
-        "bonus_dodges": 2,
+        "bonus_dodges": 1,
         "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
       },
       {
@@ -32,7 +32,7 @@
         "weapon_damage_requirements": [ { "type": "cut", "min": 20 } ],
         "buff_duration": 3,
         "max_stacks": 1,
-        "bonus_blocks": 2,
+        "bonus_blocks": 1,
         "flat_bonuses": [ { "stat": "block", "scale": 5 } ]
       },
       {
@@ -43,7 +43,7 @@
         "skill_requirements": [ { "name": "unarmed", "level": 2 }, { "name": "magic", "level": 4 } ],
         "buff_duration": 3,
         "max_stacks": 1,
-        "bonus_dodges": 2,
+        "bonus_dodges": 1,
         "flat_bonuses": [ { "stat": "dodge", "scale": 1.0 } ]
       }
     ],
