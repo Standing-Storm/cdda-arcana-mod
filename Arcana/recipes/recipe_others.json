@@ -82,7 +82,7 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_bloodmagic", 0 ], [ "book_elementalism", 1 ] ],
+    "book_learn": [ [ "book_bloodmagic", 0 ], [ "book_elementalism", 1 ], [ "book_scholarsnotes_talismans", 1 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -108,7 +108,12 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_hexenhammer", 1 ], [ "book_elementalism", 1 ], [ "book_naturemagic", 1 ] ],
+    "book_learn": [
+      [ "book_hexenhammer", 1 ],
+      [ "book_elementalism", 1 ],
+      [ "book_naturemagic", 1 ],
+      [ "book_scholarsnotes_talismans", 1 ]
+    ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -135,7 +140,12 @@
     "difficulty": 2,
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_elementalism", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [
+      [ "book_magicfordummies", 2 ],
+      [ "book_elementalism", 2 ],
+      [ "book_sacrifice", 2 ],
+      [ "book_scholarsnotes_talismans", 2 ]
+    ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -155,7 +165,12 @@
     "difficulty": 3,
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 2 ], [ "book_elementalism", 2 ], [ "book_sacrifice", 2 ] ],
+    "book_learn": [
+      [ "book_magicfordummies", 2 ],
+      [ "book_elementalism", 2 ],
+      [ "book_sacrifice", 2 ],
+      [ "book_scholarsnotes_talismans", 2 ]
+    ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -257,7 +272,7 @@
     "difficulty": 4,
     "time": "2 h",
     "activity_level": "LIGHT_EXERCISE",
-    "book_learn": [ [ "book_hexenhammer", 3 ], [ "book_elementalism", 2 ] ],
+    "book_learn": [ [ "book_hexenhammer", 3 ], [ "book_elementalism", 2 ], [ "book_scholarsnotes_talismans", 3 ] ],
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
@@ -278,7 +293,7 @@
     "skills_required": [ "survival", 3 ],
     "time": "2 h 30m",
     "activity_level": "NO_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_scholarsnotes_talismans", 2 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "charm_bone", 1 ] ], [ [ "flame_talisman", 1 ] ], [ [ "earth_talisman", 1 ] ] ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
@@ -294,7 +309,7 @@
     "skills_required": [ "survival", 3 ],
     "time": "2 h 30m",
     "activity_level": "NO_EXERCISE",
-    "book_learn": [ [ "book_magicfordummies", 0 ] ],
+    "book_learn": [ [ "book_magicfordummies", 0 ], [ "book_scholarsnotes_talismans", 2 ] ],
     "using": [ [ "arcana_scrollwriting_rewrite", 1 ] ],
     "components": [ [ [ "stinger_flute", 1 ] ], [ [ "water_talisman", 1 ] ], [ [ "air_talisman", 1 ] ] ],
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],

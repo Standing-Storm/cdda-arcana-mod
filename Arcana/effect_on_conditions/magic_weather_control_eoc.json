@@ -1,6 +1,11 @@
 [
   {
     "type": "effect_on_condition",
+    "id": "EOC_CALL_NEXT_WEATHER",
+    "effect": [ "next_weather" ]
+  },
+  {
+    "type": "effect_on_condition",
     "//": "When calling this EoC, set u_weather_change_limit: 1) Light Drizzle, 2) Drizzle, 3) Rain, 4) Rainstorm, 5) Thunderstorm",
     "//2": "This is designed for gradual weather change that steps up, to simulate clouds rolling in, rain beginning to fall, etc.",
     "id": "EOC_WEATHER_CONTROL_INITIATE",
