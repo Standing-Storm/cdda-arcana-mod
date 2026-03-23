@@ -386,7 +386,8 @@
           { "value": "DEXTERITY", "add": -1 },
           { "value": "STRENGTH", "add": 2 },
           { "value": "CARDIO_MULTIPLIER", "multiply": 0.1 }
-        ]
+        ],
+        "modified_bodyparts": [ { "gain": "wing_draconic_l" }, { "gain": "wing_draconic_r" } ]
       }
     ],
     "flags": [ "ARCANA_DRAGONBLOOD_MARKER_WINGS" ]
@@ -418,7 +419,8 @@
           { "value": "STRENGTH", "add": 5 },
           { "value": "DEXTERITY", "add": -2 },
           { "value": "CARDIO_MULTIPLIER", "multiply": 0.2 }
-        ]
+        ],
+        "modified_bodyparts": [ { "gain": "wing_draconic_l" }, { "gain": "wing_draconic_r" } ]
       }
     ]
   },
@@ -430,7 +432,7 @@
     "mixed_effect": true,
     "visibility": 4,
     "ugliness": 2,
-    "description": "You have a pair of large, scale-covered wings.  You are immune to falling damage, and with the expenditure of mana, you can use them to fly.  Your muscles have adapted to support their movements, improving your strength and stamina further.  Still prevents wearing non-fabric gear on the torso, and a bit more taxing on your dexterity, but they're now less encumbering and don't hinder dodging.",
+    "description": "You have a pair of large, scale-covered wings.  You are immune to falling damage, and with the expenditure of stamina, you can use them to fly.  Your muscles have adapted to support their movements, improving your strength and stamina further.  Still prevents wearing non-fabric gear on the torso, and a bit more taxing on your dexterity, but they're now less encumbering and don't hinder dodging.",
     "valid": false,
     "purifiable": false,
     "prereqs": [ "ARCANA_DRAGONWINGS" ],
@@ -452,7 +454,8 @@
           { "value": "STRENGTH", "add": 5 },
           { "value": "DEXTERITY", "add": -2 },
           { "value": "CARDIO_MULTIPLIER", "multiply": 0.2 }
-        ]
+        ],
+        "modified_bodyparts": [ { "gain": "wing_draconic_l" }, { "gain": "wing_draconic_r" } ]
       }
     ],
     "activated_eocs": [ "EOC_ARCANA_DRAGONWINGS_FLIGHT_activated" ],
