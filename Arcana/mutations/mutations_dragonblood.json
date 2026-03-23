@@ -507,7 +507,7 @@
     "category": [ "DRAGONBLOOD" ],
     "types": [ "TEETH", "MUZZLE" ],
     "restricts_gear": [ "mouth" ],
-    "social_modifiers": { "intimidate": 20 },
+    "social_modifiers": { "intimidate": 5 },
     "enchantments": [ { "condition": "ALWAYS", "modified_bodyparts": [ { "lose": "mouth" }, { "gain": "muzzle_draconic" } ] } ]
   },
   {
