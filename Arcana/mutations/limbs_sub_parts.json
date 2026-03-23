@@ -45,7 +45,7 @@
     "parent": "wing_draconic_l",
     "name": "left wing shoulder",
     "name_multiple": "wing shoulders",
-    "side": 1,
+    "side": "left",
     "opposite": "wing_draconic_shoulder_r",
     "max_coverage": 15
   },
@@ -55,7 +55,7 @@
     "parent": "wing_draconic_r",
     "name": "right wing shoulder",
     "name_multiple": "wing shoulders",
-    "side": 2,
+    "side": "right",
     "opposite": "wing_draconic_shoulder_l",
     "max_coverage": 15
   },
@@ -65,7 +65,7 @@
     "parent": "wing_draconic_l",
     "name": "left upper wing",
     "name_multiple": "upper wings",
-    "side": 1,
+    "side": "left",
     "opposite": "wing_draconic_upper_r",
     "max_coverage": 30
   },
@@ -75,7 +75,7 @@
     "parent": "wing_draconic_r",
     "name": "right upper wing",
     "name_multiple": "upper wings",
-    "side": 2,
+    "side": "right",
     "opposite": "wing_draconic_upper_l",
     "max_coverage": 30
   },
@@ -85,7 +85,7 @@
     "parent": "wing_draconic_l",
     "name": "left wing joint",
     "name_multiple": "wing joints",
-    "side": 1,
+    "side": "left",
     "opposite": "wing_draconic_joint_r",
     "max_coverage": 5
   },
@@ -95,7 +95,7 @@
     "parent": "wing_draconic_r",
     "name": "right wing joint",
     "name_multiple": "wing joints",
-    "side": 2,
+    "side": "right",
     "opposite": "wing_draconic_joint_l",
     "max_coverage": 5
   },
@@ -105,7 +105,7 @@
     "parent": "wing_draconic_l",
     "name": "lower left wings",
     "name_multiple": "lower wing",
-    "side": 1,
+    "side": "left",
     "opposite": "wing_draconic_lower_r",
     "max_coverage": 45
   },
@@ -115,7 +115,7 @@
     "parent": "wing_draconic_r",
     "name": "lower right wing",
     "name_multiple": "lower wings",
-    "side": 2,
+    "side": "right",
     "opposite": "wing_draconic_lower_l",
     "max_coverage": 45
   },
