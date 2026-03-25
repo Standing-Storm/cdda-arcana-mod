@@ -625,7 +625,7 @@
       { "math": [ "u_pain() -= 5" ] },
       {
         "u_add_effect": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding_display",
-        "duration": { "math": [ "(u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding') * 12000) + 60000" ] }
+        "duration": { "math": [ "(u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding') * 120.00) + 600.00" ] }
       },
       {
         "foreach": "array",
@@ -636,7 +636,7 @@
             "if": { "not": { "u_has_effect": "disabled", "bodypart": { "context_val": "id" } } },
             "then": {
               "u_add_effect": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding",
-              "duration": { "math": [ "(u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding') * 12000) + 60000" ] },
+              "duration": { "math": [ "(u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding') * 120.00) + 600.00" ] },
               "target_part": { "context_val": "id" }
             }
           }
