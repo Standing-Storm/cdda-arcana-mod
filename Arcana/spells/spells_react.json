@@ -433,6 +433,7 @@
       "or": [
         { "test_eoc": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT" },
         { "test_eoc": "EOC_CONDITION_MAGICLYSM_ARCANA_VEILBLADE_MUTANT" },
+        { "test_eoc": "EOC_CONDITION_MOM_ARCANA_VEILBLADE_TELEPORTER" },
         { "and": [ { "u_has_flag": "MUTATION_THRESHOLD" }, { "not": { "u_has_trait": "THRESH_VEIL" } } ] },
         { "math": [ "u_sum_traits_of_category_char_has('ALPHA') >= 5" ] },
         { "math": [ "u_sum_traits_of_category_char_has('BATRACHIAN') >= 5" ] },
@@ -479,6 +480,12 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
+    "condition": { "math": [ "0 == 1" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_MOM_ARCANA_VEILBLADE_TELEPORTER",
     "condition": { "math": [ "0 == 1" ] },
     "effect": [  ]
   },
