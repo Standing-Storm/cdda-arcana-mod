@@ -422,6 +422,7 @@
     "description": "This punishes you if you're a mutant and try to use the veilblade.",
     "valid_targets": [ "self" ],
     "flags": [ "SILENT" ],
+    "skill": "magic",
     "effect": "effect_on_condition",
     "effect_str": "EOC_ARCANA_VEILBLADE_MUTANT",
     "shape": "blast"
