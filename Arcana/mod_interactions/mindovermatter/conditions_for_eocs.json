@@ -1,0 +1,8 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_CONDITION_MOM_ARCANA_VEILBLADE_TELEPORTER",
+    "condition": { "u_has_trait": "TELEPORTER" },
+    "effect": [  ]
+  }
+]

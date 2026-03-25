@@ -2,7 +2,11 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
-    "condition": { "or": [ { "math": [ "u_sum_traits_of_category_char_has('MANATOUCHED') >= 3" ] } ] },
+    "condition": {
+      "or": [
+        { "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "HOMULLUS", "IERDE", "SALAMANDER", "SYLPH", "UNDINE", "GRACKEN" ] }
+      ]
+    },
     "effect": [  ]
   },
   {

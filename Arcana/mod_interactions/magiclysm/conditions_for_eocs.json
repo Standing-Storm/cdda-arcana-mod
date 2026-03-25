@@ -1,7 +1,7 @@
 [
   {
     "type": "effect_on_condition",
-    "id": "EOC_CONDITION_XE_ARCANA_VEILBLADE_MUTANT",
+    "id": "EOC_CONDITION_MAGICLYSM_ARCANA_VEILBLADE_MUTANT",
     "condition": {
       "or": [
         {
@@ -21,7 +21,9 @@
             { "u_has_trait": "LIZARDFOLK_BUILD" },
             { "math": [ "u_sum_traits_of_category_char_has('SPECIES_LIZARDFOLK') <= 12" ] }
           ]
-        }
+        },
+        { "math": [ "(u_sum_traits_of_category_char_has('DRAGON_BLACK') - mana_mutations_exemption() ) >= 5" ] },
+        { "math": [ "(u_sum_traits_of_category_char_has('MANATOUCHED') - mana_mutations_exemption() ) >= 5" ] }
       ]
     },
     "effect": [  ]
