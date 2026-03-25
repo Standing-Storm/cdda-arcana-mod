@@ -1,0 +1,8 @@
+[
+  {
+    "id": "mana_mutations_exemption",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "u_has_trait('MANA_ADD1') + u_has_trait('MANA_ADD2') + u_has_trait('MANA_REGEN1') + u_has_trait('MANA_REGEN2') + u_has_trait('BAD_MANA_REGEN1') + u_has_trait('MANA_MULT1') + u_has_trait('MANA_MULT2') + u_has_trait('BAD_MANA_MULT1')"
+  }
+]
