@@ -1041,7 +1041,7 @@
     "id": "arcana_magic_create_rift_in_ground",
     "type": "SPELL",
     "name": { "str": "Yawn Wide the Rift" },
-    "description": "Using this spell will open a rift in the ground, damaging any structures and .",
+    "description": "Using this spell will open a rift in the ground, damaging any structures and causing any creatures to fall into the chasm.",
     "message": "\"At my word, the earth trembles and the ground splits asunder…\"  You cast %s!",
     "valid_targets": [ "ground", "ally", "hostile" ],
     "flags": [ "VERBAL", "SOMATIC", "LOUD", "NO_LEGS", "IGNORE_WALLS" ],
