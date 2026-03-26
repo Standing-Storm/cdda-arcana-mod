@@ -190,7 +190,7 @@
     "bgcolor": [ "blue" ],
     "move_cost_mod": -2,
     "light_emitted": 1,
-    "light_color": [ 169, 250, 255 ],
+    "light_color": [ 70, 152, 227 ],
     "required_str": -1,
     "flags": [ "NOITEM", "TRANSPARENT" ],
     "deployed_item": "candle_barrier_aftermath",
