@@ -70,7 +70,8 @@
       { "item": "flashlight", "prob": 15 },
       { "item": "wearable_light", "prob": 15 },
       { "item": "electric_lantern", "prob": 10 },
-      { "item": "gasoline_lantern", "prob": 10 }
+      { "item": "gasoline_lantern", "prob": 10 },
+      { "item": "atomic_lamp", "prob": 1 }
     ]
   },
   {
