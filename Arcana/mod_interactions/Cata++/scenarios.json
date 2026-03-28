@@ -30,7 +30,7 @@
     "type": "scenario",
     "id": "house_fight_scenario",
     "copy-from": "house_fight_scenario",
-    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT", "SPELL_SHADOWSNAKES", "SPELL_AGILE", "SPELL_DAYLIGHT" ] }
+    "extend": { "traits": [ "ARCANA_SCALYPATCHES", "ARCANA_INNERHEAT" ] }
   },
   {
     "type": "scenario",
