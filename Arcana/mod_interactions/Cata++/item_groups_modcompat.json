@@ -69,8 +69,8 @@
     "extend": { "items": [ [ "bio_temporal_stimulation", 1 ] ] }
   },
   {
-    "id": "bionics_apophis",
-    "copy-from": "bionics_apophis",
+    "id": "bionics_apophis_util",
+    "copy-from": "bionics_apophis_util",
     "//": "Weights follow the same conventions as defined in Cata++ for this itemgroup.",
     "type": "item_group",
     "extend": { "items": [ [ "bio_temporal_stimulation", 1 ], [ "bio_life_sign_suppression", 1 ], [ "bio_kinetic_amplifier", 1 ] ] }
