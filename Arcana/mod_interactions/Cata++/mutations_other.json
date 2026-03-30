@@ -29,6 +29,7 @@
     "valid": false,
     "purifiable": false,
     "profession": true,
-    "flags": [ "BIO_WEAPON_SCEN", "BIO_WEAPON_SERIES_1", "BIO_WEAPON_ANY" ]
+    "flags": [ "BIO_WEAPON_SCEN", "BIO_WEAPON_SERIES_1", "BIO_WEAPON_ANY" ],
+    "cancels": [ "NO_CBM_INSTALLATION" ]
   }
 ]
