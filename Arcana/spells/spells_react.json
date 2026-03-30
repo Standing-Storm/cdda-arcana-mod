@@ -436,35 +436,89 @@
         { "test_eoc": "EOC_CONDITION_MAGICLYSM_ARCANA_VEILBLADE_MUTANT" },
         { "test_eoc": "EOC_CONDITION_MOM_ARCANA_VEILBLADE_TELEPORTER" },
         { "and": [ { "u_has_flag": "MUTATION_THRESHOLD" }, { "not": { "u_has_trait": "THRESH_VEIL" } } ] },
-        { "math": [ "u_sum_traits_of_category_char_has('ALPHA') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('BATRACHIAN') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('BEAST') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('BIRD') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('CATTLE') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('CEPHALOPOD') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('CHIMERA') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('CHIROPTERAN') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('CRUSTACEAN') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('DRAGONBLOOD') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('ELFA') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('FELINE') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('FISH') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('GASTROPOD') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('INSECT') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('LIZARD') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('LUPINE') >= 5" ] },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('ALPHA') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('BATRACHIAN') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('BEAST') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('BIRD') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('CATTLE') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('CEPHALOPOD') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('CHIMERA') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('CHIROPTERAN') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('CRUSTACEAN') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('DRAGONBLOOD') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('ELFA') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('FELINE') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('FISH') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('GASTROPOD') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('INSECT') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('LIZARD') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('LUPINE') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
         { "math": [ "u_sum_traits_of_category_char_has('MARLOSS') >= 1" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('MEDICAL') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('MOUSE') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('MYCUS') >= 1" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('PLANT') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('RABBIT') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('RAPTOR') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('RAT') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('SLIME') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('SPIDER') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('TROGLOBITE') >= 5" ] },
-        { "math": [ "u_sum_traits_of_category_char_has('URSINE') >= 5" ] }
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('MEDICAL') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('MOUSE') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('MYCUS') - arcana_starting_trait_keeper_exemptions() ) >= 1" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('PLANT') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('RABBIT') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('RAPTOR') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        { "math": [ "(u_sum_traits_of_category_char_has('RAT') - arcana_starting_trait_keeper_exemptions() ) >= 5" ] },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('SLIME') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('SPIDER') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('TROGLOBITE') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        },
+        {
+          "math": [ "(u_sum_traits_of_category_char_has('URSINE') - arcana_starting_trait_keeper_exemptions() ) >= 5" ]
+        }
       ]
     },
     "effect": [
