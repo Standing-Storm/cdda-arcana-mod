@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mjolnir",
+    "copy-from": "mjolnir",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "MAGICLYSM_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "gungnir",
+    "copy-from": "gungnir",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "MAGICLYSM_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "gram",
+    "copy-from": "gram",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "MAGICLYSM_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "laevateinn",
+    "copy-from": "laevateinn",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "MAGICLYSM_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "wolfsbane",
+    "copy-from": "wolfsbane",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "MAGICLYSM_ENCHANTED_WEAPONRY" ] }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "type": "weapon_category",
+    "id": "SHRIKE_WEAPONRY",
+    "//": "Enchanted weapons used by the Shrike's Talons martial art",
+    "name": "SHRIKE WEAPONRY"
+  },
+  {
+    "type": "weapon_category",
+    "id": "ARCANA_ENCHANTED_WEAPONRY",
+    "//": "Enchanted weapons for the Ritual Art",
+    "name": "ENCHANTED WEAPONRY"
+  },
+  {
+    "type": "weapon_category",
+    "id": "MAGICLYSM_ENCHANTED_WEAPONRY",
+    "//": "Enchanted weapons for the Ritual Art",
+    "name": "ENCHANTED WEAPONRY"
+  },
+  {
+    "type": "weapon_category",
+    "id": "XEDRA_EVOLVED_ENCHANTED_WEAPONRY",
+    "//": "Enchanted weapons for the Ritual Art",
+    "name": "ENCHANTED WEAPONRY"
+  }
+]
