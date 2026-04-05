@@ -45,6 +45,7 @@
     "category": "weapons",
     "id": "bio_kinetic_amplifier_weapon",
     "name": { "str_sp": "kinetic amplifier" },
+    "weapon_category": [ "ARCANA_ENCHANTED_WEAPONRY" ],
     "description": "A band of steel slid into place over your knuckles, etched with strange markings.  When used as an unarmed weapon, it can give your strikes the ability to send victims flying, with amplified damage and armor penetration.  Its impacts have a chance of letting loose a blinding flashbang effect, making this weapon a double-edged sword without protection.",
     "color": "light_gray",
     "symbol": "{",
@@ -76,7 +77,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "category": "weapons",
-    "weapon_category": [ "HAND_AXES" ],
+    "weapon_category": [ "HAND_AXES", "SHRIKE_WEAPONRY", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "veinreaver" },
     "description": "A hatchet with its axehead lightened a bit, stained the dull color of dried blood.  Using it will channel vitae into a nasty explosion, with a considerable blast radius.",
     "price": "400 USD",
@@ -109,7 +110,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "category": "weapons",
-    "weapon_category": [ "HAND_AXES" ],
+    "weapon_category": [ "HAND_AXES", "SHRIKE_WEAPONRY", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "glowing veinreaver" },
     "description": "A modified hatchet, the axehead giving off a wicked red glow.  Throwing it might be a smart idea, as you'll have little time to evade its blast.",
     "weight": "707 g",
@@ -149,7 +150,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARTIFACT" ],
     "category": "weapons",
-    "weapon_category": [ "FENCING_WEAPONRY" ],
+    "weapon_category": [ "FENCING_WEAPONRY", "SHRIKE_WEAPONRY", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "shrike's misericorde" },
     "description": "An ornate silver weapon featuring a thin blade and two flintlock barrels built into the guard.  Its strikes inflict victims with a deathly chill.  Activating it will transform it into a more compact form, allowing its user to load and fire it.  Its pistol form will impart a freezing effect on shots fired from it, including otherworldly damage that can bypass mundane armor, though robots and certain supernatural monsters will only suffer the bullet's normal damage.",
     "weight": "2 kg",
@@ -207,14 +208,14 @@
     "tool_ammo": "essence_blood_type",
     "relative": { "weight": "230g" },
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_lichhook", "no_fail": true, "need_wielding": true, "level": 0 } ],
-    "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ] }
+    "extend": { "flags": [ "NO_SALVAGE", "SHEATH_SWORD" ], "weapon_category": [ "ARCANA_ENCHANTED_WEAPONRY" ] }
   },
   {
     "id": "verge_meteoric",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARTIFACT" ],
     "category": "weapons",
-    "weapon_category": [ "BATONS" ],
+    "weapon_category": [ "BATONS", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "meteoric verge" },
     "description": "A short wooden staff, entirely covered in decorative motifs worked from a symbol of judgment.  The symbol's otherworldly presence is still evident in the twisted, flame-like prongs now entwined around a charm of dark, iridescent metal.  Using it will allow you to smite enemies with lightning, protecting you from electrical harm briefly as well.",
     "weight": "1585 g",
@@ -266,6 +267,7 @@
     "color": "dark_gray",
     "name": { "str": "moonstone scourge" },
     "description": "A lash modified with razor-sharp slivers of opalescent stone, and silver decoration along the handle.  While relatively effective as a weapon, fueling it with vitae will restore its life-draining properties, and make it a much more deadly weapon.",
+    "weapon_category": [ "WHIPS", "ARCANA_ENCHANTED_WEAPONRY" ],
     "weight": "3500 g",
     "volume": "2 L",
     "price_postapoc": "150 USD",
@@ -322,7 +324,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARTIFACT" ],
     "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
+    "weapon_category": [ "KNIVES", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "moonstone fang" },
     "description": "A short, curved spike made of a white opalescent gemstone, richly engraved with swirling serpentine imagery.  Wielding it grant a minor life-draining touch and potentially blind attackers with magic, but it can sicken body and mind.  Activating it will additionally harden the body against cold, draining essence over time.",
     "weight": "160 g",
@@ -443,14 +445,15 @@
       }
     ],
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP" ],
-    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "SHEATH_SWORD", "TRADER_KEEP_EQUIPPED" ]
+    "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "MAGIC_FOCUS", "NONCONDUCTIVE", "SHEATH_SWORD", "TRADER_KEEP_EQUIPPED" ],
+    "extend": { "weapon_category": [ "ARCANA_ENCHANTED_WEAPONRY" ] }
   },
   {
     "id": "sanguine_staff_lifesbane",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARTIFACT" ],
     "category": "weapons",
-    "weapon_category": [ "QUARTERSTAVES" ],
+    "weapon_category": [ "QUARTERSTAVES", "SHRIKE_WEAPONRY", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "horned staff of life's bane", "str_pl": "horned staves of life's bane" },
     "description": "A wooden staff topped with a golden cage, enveloping a mass of petrified flesh from which sharp horns have grown.  The counter-argument to the Dragonblood Sacrament.  It draws energy from whatever you strike with it, fueling a protective effect that synergizes with the rituals of the silver athame.  Activating it channels a powerful life-draining beam of energy that blights the land around you.",
     "weight": "2800 g",
@@ -527,7 +530,10 @@
         "ammo_scale": 0
       }
     ],
-    "extend": { "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
+    "extend": {
+      "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ],
+      "weapon_category": [ "ARCANA_ENCHANTED_WEAPONRY" ]
+    },
     "delete": { "flags": [ "DURABLE_MELEE", "ALWAYS_TWOHAND" ] }
   },
   {
@@ -567,7 +573,7 @@
     ],
     "techniques": [ "WBLOCK_1", "WIDE", "BRUTAL", "SWEEP", "tec_weapon_stormbringer_slash" ],
     "flags": [ "UNBREAKABLE_MELEE", "NO_SALVAGE", "NO_UNWIELD", "NO_UNLOAD", "NO_RELOAD", "TRADER_KEEP_EQUIPPED", "SPAWN_ACTIVE" ],
-    "weapon_category": [ "GREAT_SWORDS" ]
+    "weapon_category": [ "GREAT_SWORDS", "ARCANA_ENCHANTED_WEAPONRY" ]
   },
   {
     "id": "sun_sword",
@@ -575,7 +581,7 @@
     "subtypes": [ "TOOL" ],
     "category": "weapons",
     "copy-from": "qt_arming_sword",
-    "weapon_category": [ "MEDIUM_SWORDS" ],
+    "weapon_category": [ "MEDIUM_SWORDS", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "incorruptible sword" },
     "//": "Stats are a blend of the available swords you can use to make it, same deal as the mantle of shadows.",
     "description": "This is some manner of sword, decorated with a golden cross motif worked into the blade.  When powered by consecrated magical essence, it has the power to cut through darkness itself.",
@@ -650,7 +656,7 @@
     "tool_ammo": "essence_dull_type",
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_hammerzeit", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "weight": "360 g", "melee_damage": { "bash": 2 } },
-    "extend": { "flags": [ "NO_SALVAGE" ] }
+    "extend": { "flags": [ "NO_SALVAGE" ], "weapon_category": [ "ARCANA_ENCHANTED_WEAPONRY" ] }
   },
   {
     "id": "lucern_hexenhammer",
@@ -678,8 +684,8 @@
     ],
     "//": "Designed to be compatible with Via Gladium et Malleo, so the silver decoration is on the other end to shift the center of balance.  No damage bonus from the extra weight, but also no 0.7x melee damage from POLEARM flag.",
     "relative": { "weight": "450 g" },
-    "extend": { "flags": [ "NO_SALVAGE" ] },
-    "delete": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ], "weapon_category": [ "POLEARMS" ] }
+    "extend": { "flags": [ "NO_SALVAGE" ], "weapon_category": [ "POLEARMS", "ARCANA_ENCHANTED_WEAPONRY" ] },
+    "delete": { "flags": [ "ALWAYS_TWOHAND", "POLEARM" ] }
   },
   {
     "id": "spear_pestilence",
@@ -722,14 +728,17 @@
     ],
     "use_action": [ { "type": "cast_spell", "spell_id": "arcana_item_pestilence", "no_fail": true, "need_wielding": true, "level": 0 } ],
     "relative": { "melee_damage": { "bash": 2 } },
-    "extend": { "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ] }
+    "extend": {
+      "flags": [ "NO_SALVAGE", "MAGIC_FOCUS", "TRADER_KEEP_EQUIPPED", "DURABLE_MELEE" ],
+      "weapon_category": [ "ARCANA_ENCHANTED_WEAPONRY" ]
+    }
   },
   {
     "id": "blood_athame",
     "type": "ITEM",
     "subtypes": [ "TOOL" ],
     "category": "weapons",
-    "weapon_category": [ "KNIVES" ],
+    "weapon_category": [ "KNIVES", "ARCANA_ENCHANTED_WEAPONRY" ],
     "name": { "str": "silver athame" },
     "description": "An ornate silver dagger, seemingly made for ritual purposes.  It seems sharper than silver has any right to be.  It can be used to perform a ritual converting your life force into vitae.  Doing so will take 5 minutes, inflicting blood loss and damage at the end, as well as potential consequences if overused…",
     "weight": "1302 g",

@@ -72,7 +72,7 @@
     "crit_ok": true,
     "stun_dur": 2,
     "flat_bonuses": [ { "stat": "arpen", "type": "bash", "scale": 5 } ],
-    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.6 } ],
     "attack_vectors": [ "vector_null" ]
   },
   {
@@ -87,7 +87,7 @@
     "crit_ok": true,
     "stun_dur": 2,
     "flat_bonuses": [ { "stat": "arpen", "type": "cut", "scale": 5 } ],
-    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ],
     "attack_vectors": [ "vector_null" ]
   },
   {
@@ -102,7 +102,7 @@
     "stun_dur": 2,
     "down_dur": 2,
     "flat_bonuses": [ { "stat": "arpen", "type": "bash", "scale": 5 } ],
-    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.6 } ],
     "attack_vectors": [ "vector_grasp" ]
   },
   {
@@ -130,7 +130,7 @@
     "crit_ok": true,
     "down_dur": 2,
     "stun_dur": 2,
-    "mult_bonuses": [ { "stat": "movecost", "scale": 0.0 } ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.8 } ],
     "attack_vectors": [ "vector_null", "vector_punch" ]
   },
   {
@@ -217,16 +217,16 @@
     "name": "Enervation",
     "melee_allowed": true,
     "required_buffs_all": [ "buff_veil_chosen_onpause" ],
-    "flat_bonuses": [
-      { "stat": "arpen", "type": "bash", "scaling-stat": "per", "scale": 0.5 },
-      { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 0.5 },
-      { "stat": "arpen", "type": "stab", "scaling-stat": "per", "scale": 0.5 }
-    ],
     "crit_ok": true,
     "weighting": -10,
     "stun_dur": 2,
     "messages": [ "Your strike resonates through %s", "<npcname>'s strike resonates through %s" ],
-    "attack_vectors": [ "vector_null" ]
+    "attack_vectors": [ "vector_null" ],
+    "flat_bonuses": [
+      { "stat": "arpen", "type": "bash", "scaling-stat": "per", "scale": 0.5 },
+      { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 0.5 },
+      { "stat": "arpen", "type": "stab", "scaling-stat": "per", "scale": 0.5 }
+    ]
   },
   {
     "type": "technique",
@@ -235,16 +235,16 @@
     "weapon_damage_requirements": [ { "type": "bash", "min": 15 }, { "type": "cut", "min": 35 } ],
     "melee_allowed": true,
     "required_buffs_all": [ "buff_veil_chosen_ondodge" ],
-    "mult_bonuses": [ { "stat": "movecost", "scale": 0.75 } ],
-    "flat_bonuses": [
-      { "stat": "damage", "type": "cut", "scaling-stat": "per", "scale": 1.0 },
-      { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 0.75 }
-    ],
     "crit_tec": true,
     "weighting": 2,
     "down_dur": 2,
     "messages": [ "Your blade flickers and sunders through %s", "<npcname>'s blade flickers and sunders through %s" ],
-    "attack_vectors": [ "vector_null" ]
+    "attack_vectors": [ "vector_null" ],
+    "flat_bonuses": [
+      { "stat": "damage", "type": "cut", "scaling-stat": "per", "scale": 1.0 },
+      { "stat": "arpen", "type": "cut", "scaling-stat": "per", "scale": 0.75 }
+    ],
+    "mult_bonuses": [ { "stat": "movecost", "scale": 0.75 } ]
   },
   {
     "type": "technique",

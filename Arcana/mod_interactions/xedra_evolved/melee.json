@@ -1,0 +1,56 @@
+[
+  {
+    "id": "mirror_march_estoc",
+    "copy-from": "mirror_march_estoc",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "winter_lord_estoc",
+    "copy-from": "winter_lord_estoc",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "wild_huntsman_hunting_blade",
+    "copy-from": "wild_huntsman_hunting_blade",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "redcap_club",
+    "copy-from": "redcap_club",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "salamagman_battleaxe",
+    "copy-from": "salamagman_battleaxe",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "dreamforged_glaive_healing",
+    "copy-from": "dreamforged_glaive_healing",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "dreamforged_tsurugi_speed",
+    "copy-from": "dreamforged_tsurugi_speed",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "dreamforged_q_staff_exp",
+    "copy-from": "dreamforged_q_staff_exp",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  },
+  {
+    "id": "xedra_chrono_knife",
+    "copy-from": "xedra_chrono_knife",
+    "type": "ITEM",
+    "extend": { "weapon_category": [ "XEDRA_EVOLVED_ENCHANTED_WEAPONRY" ] }
+  }
+]
