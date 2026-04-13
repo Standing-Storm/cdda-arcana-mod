@@ -1,0 +1,10 @@
+[
+  {
+    "id": "effect_arcana_hands_not_suitable_for_guns",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by Monstrous Form",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "flags": [ "HANDS_CANNOT_USE_FIREARMS" ]
+  }
+]

@@ -683,6 +683,10 @@
           { "value": "CARRY_WEIGHT", "multiply": 0.05 },
           { "value": "READING_SPEED_MULTIPLIER", "multiply": 0.25 }
         ]
+      },
+      {
+        "condition": { "u_has_trait": "ARCANA_DRAGONCLAWS" },
+        "ench_effects": [ { "effect": "effect_arcana_hands_not_suitable_for_guns", "intensity": 1 } ]
       }
     ],
     "flags": [ "PRED4", "LARGE", "PSYCHOPATH" ]
