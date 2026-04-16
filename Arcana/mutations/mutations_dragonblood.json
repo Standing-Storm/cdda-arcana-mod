@@ -526,12 +526,11 @@
     "threshreq": [ "THRESH_DRAGONBLOOD" ],
     "changes_to": [ "ARCANA_DRAGONLEGS" ],
     "types": [ "LEGS", "FEET" ],
-    "encumbrance_always": [ [ "leg_l", 5 ], [ "leg_r", 5 ], [ "foot_l", 5 ], [ "foot_r", 5 ] ],
-    "encumbrance_covered": [ [ "leg_l", 5 ], [ "leg_r", 5 ] ],
     "restricts_gear": [ "foot_l", "foot_r" ],
     "allowed_items": [ "ALLOWS_TALONS" ],
     "enchantments": [
       {
+        "modified_bodyparts": [ { "lose": "foot_l" }, { "lose": "foot_r" }, { "gain": "talon_draconic_l" }, { "gain": "talon_draconic_r" } ],
         "values": [
           { "value": "MOVECOST_FLATGROUND_MOD", "multiply": -0.125 },
           { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.375 },
@@ -560,6 +559,7 @@
     "allowed_items": [ "ALLOWS_TALONS" ],
     "enchantments": [
       {
+        "modified_bodyparts": [ { "lose": "foot_l" }, { "lose": "foot_r" }, { "gain": "talon_draconic_l" }, { "gain": "talon_draconic_r" } ],
         "values": [
           { "value": "MOVECOST_FLATGROUND_MOD", "multiply": -0.25 },
           { "value": "MOVECOST_OBSTACLE_MOD", "multiply": 0.25 },
