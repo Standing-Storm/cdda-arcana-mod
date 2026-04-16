@@ -5,5 +5,11 @@
     "limbs": [ "muzzle_draconic" ],
     "contact_area": [ "muzzle_draconic_lips" ],
     "encumbrance_limit": 1
+  },
+  {
+    "type": "attack_vector",
+    "id": "vector_draconic_foot_talons",
+    "limbs": [ "talon_draconic_l", "talon_draconic_r" ],
+    "contact_area": [ "talon_draconic_claws_l", "talon_draconic_claws_r" ]
   }
 ]

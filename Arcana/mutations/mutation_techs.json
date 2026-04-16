@@ -82,5 +82,15 @@
       { "stat": "movecost", "scaling-stat": "melee", "scale": -1.25 },
       { "stat": "movecost", "scaling-stat": "dex", "scale": -0.5 }
     ]
+  },
+  {
+    "type": "technique",
+    "id": "TECH_DRACONIC_TALON_KICK",
+    "name": "Kick",
+    "crit_ok": true,
+    "unarmed_allowed": true,
+    "messages": [ "You kick %s", "<npcname> kicks %s" ],
+    "description": "A basic kick",
+    "attack_vectors": [ "vector_draconic_foot_talons", "vector_knee", "vector_shin" ]
   }
 ]
