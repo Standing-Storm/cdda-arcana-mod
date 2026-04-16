@@ -43,6 +43,17 @@
   },
   {
     "type": "technique",
+    "id": "TECH_DRACONIC_WING_SLAP",
+    "name": "Wing Slap",
+    "crit_ok": true,
+    "unarmed_allowed": true,
+    "messages": [ "You slap %s with your wings", "<npcname> slaps %s with their wings" ],
+    "description": "A slap of the wings.",
+    "attack_vectors": [ "vector_draconic_wing_slap" ],
+    "flat_bonuses": [ { "stat": "movecost", "scale": 20 } ]
+  },
+  {
+    "type": "technique",
     "id": "DRACONIC_HORNS_BASH_NATURAL",
     "name": "Draconic Horns Bash",
     "melee_allowed": true,

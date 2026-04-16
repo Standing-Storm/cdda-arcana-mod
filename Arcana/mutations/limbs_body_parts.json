@@ -52,7 +52,7 @@
     "bionic_slots": 0,
     "limb_scores": [ [ "reaction", 0.1 ] ],
     "smash_message": "You buffet the %s with your wing.",
-    "techniques": [ "tech_wing_slap" ],
+    "techniques": [ "TECH_DRACONIC_WING_SLAP" ],
     "side": "left",
     "sub_parts": [ "wing_draconic_shoulder_l", "wing_draconic_upper_l", "wing_draconic_joint_l", "wing_draconic_lower_l" ],
     "unarmed_damage": [ { "damage_type": "bash", "amount": 0 } ]
