@@ -276,6 +276,17 @@
     "flags": [ "RISK_HIGH" ]
   },
   {
+    "id": [ "shrine_anomaly_roof", "shrine_anomaly_2_roof", "shrine_anomaly_3_roof" ],
+    "type": "overmap_terrain",
+    "name": "shrine roof",
+    "sym": ".",
+    "color": "blue",
+    "vision_levels": "roof_or_air",
+    "looks_like": "open_air",
+    "see_cost": "none",
+    "travel_cost_type": "roof"
+  },
+  {
     "id": [ "shrine_anomaly_flesh_1", "shrine_anomaly_flesh_2" ],
     "type": "overmap_terrain",
     "name": "organic structure",
