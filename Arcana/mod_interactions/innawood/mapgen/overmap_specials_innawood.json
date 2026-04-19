@@ -2,7 +2,10 @@
   {
     "type": "overmap_special",
     "id": "ruined_shrine_innawood_1",
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_north" } ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "shrine_anomaly_roof_north" }
+    ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 10, 100 ],
@@ -11,7 +14,10 @@
   {
     "type": "overmap_special",
     "id": "ruined_shrine_innawood_2",
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_2_north" } ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_2_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "shrine_anomaly_2_roof_north" }
+    ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 10, 100 ],
@@ -20,7 +26,10 @@
   {
     "type": "overmap_special",
     "id": "ruined_shrine_innawood_3",
-    "overmaps": [ { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_3_north" } ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "shrine_anomaly_innawood_3_north" },
+      { "point": [ 0, 0, 1 ], "overmap": "shrine_anomaly_3_roof_north" }
+    ],
     "locations": [ "wilderness", "swamp" ],
     "city_distance": [ 20, -1 ],
     "occurrences": [ 10, 100 ],
