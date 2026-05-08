@@ -81,8 +81,7 @@
     ],
     "relative": { "weight": "616g", "volume": "-1ml" },
     "extend": { "flags": [ "NO_SALVAGE", "TRADER_KEEP_EQUIPPED" ] },
-    "material_thickness": 6,
-    "armor": [ { "covers": [ "torso", "leg_l", "leg_r", "arm_l", "arm_r" ], "coverage": 100, "encumbrance": [ 7, 7 ] } ]
+    "material_thickness": 6
   },
   {
     "id": "robe_shadow_on",
@@ -142,8 +141,7 @@
       }
     ],
     "flags": [ "OVERSIZE", "OUTER", "NO_SALVAGE" ],
-    "material_thickness": 6,
-    "armor": [ { "encumbrance": 7, "coverage": 100, "covers": [ "torso" ] } ]
+    "material_thickness": 6
   },
   {
     "id": "robe_shadow_xl_on",
@@ -252,7 +250,20 @@
         "incoming_damage_mod": [ { "type": "stab", "multiply": -0.33 }, { "type": "bullet", "multiply": -0.5 } ],
         "ench_effects": [ { "effect": "effect_arcana_gilded_aegis_active", "intensity": 1 } ]
       },
-      { "has": "WORN", "incoming_damage_mod": [ { "type": "electric", "multiply": -0.8 } ] }
+      { "has": "WORN", "incoming_damage_mod": [ { "type": "electric", "multiply": -0.8 } ] },
+      {
+        "has": "WORN",
+        "encumbrance_modifier": [
+          { "part": "head", "add": 6 },
+          { "part": "torso", "add": 6 },
+          { "part": "arm_l", "add": 6 },
+          { "part": "arm_r", "add": 6 },
+          { "part": "leg_l", "add": 6 },
+          { "part": "leg_r", "add": 6 },
+          { "part": "gastropod_foot", "add": 6 },
+          { "part": "tail", "add": 6 }
+        ]
+      }
     ],
     "tool_ammo": "essence_dull_type",
     "use_action": [
@@ -270,8 +281,7 @@
     "relative": { "weight": "3020 g", "price": "550 USD" },
     "extend": { "flags": [ "NO_SALVAGE", "RAINPROOF", "TRADER_KEEP_EQUIPPED" ] },
     "material_thickness": 7,
-    "environmental_protection": 1,
-    "armor": [ { "encumbrance": 20, "coverage": 100, "covers": [ "torso", "arm_l", "arm_r", "leg_l", "leg_r" ] } ]
+    "environmental_protection": 1
   },
   {
     "id": "hauberk_jade_on",
