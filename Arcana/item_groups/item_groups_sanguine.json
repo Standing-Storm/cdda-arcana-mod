@@ -112,13 +112,13 @@
       [ "flintlock_ammo", 10 ],
       [ "robe", 10 ],
       [ "armor_larmor", 5 ],
-      [ "armor_cuirass", 5 ],
+      [ "armor_cuirass", 2 ],
       [ "armguard_larmor", 5 ],
-      [ "legguard_bronze", 5 ],
+      [ "legguard_bronze", 3 ],
       [ "gauntlets_larmor", 5 ],
-      [ "qt_mitten_gaunt", 5 ],
+      [ "qt_mitten_gaunt", 2 ],
       [ "boots_larmor", 5 ],
-      [ "boots_plate", 5 ]
+      [ "boots_plate", 2 ]
     ]
   },
   {
