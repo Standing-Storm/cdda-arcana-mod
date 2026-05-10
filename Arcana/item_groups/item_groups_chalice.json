@@ -72,13 +72,13 @@
       [ "qt_zweihander", 2 ],
       [ "robe", 15 ],
       [ "cloak", 5 ],
-      [ "armor_plarmor", 10 ],
+      [ "armor_plarmor", 3 ],
       [ "helmet_larmor", 10 ],
-      [ "gauntlets_larmor", 5 ],
-      [ "qt_mitten_gaunt", 10 ],
-      [ "qt_demi_gaunt", 5 ],
-      [ "boots_larmor", 5 ],
-      [ "boots_plate", 5 ]
+      [ "gauntlets_larmor", 10 ],
+      [ "qt_mitten_gaunt", 3 ],
+      [ "qt_demi_gaunt", 3 ],
+      [ "boots_larmor", 10 ],
+      [ "boots_plate", 3 ]
     ]
   },
   {
