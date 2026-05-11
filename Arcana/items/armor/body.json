@@ -51,13 +51,72 @@
     }
   },
   {
+    "id": "cloak_nature_hide",
+    "copy-from": "cloak",
+    "looks_like": "grass_cloak",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+    "name": { "str": "cloak of undergrowth", "str_pl": "cloaks of undergrowth" },
+    "description": "A cloak of leaves, somehow still fresh and green despite being woven into a garment.  Activate it to subsume your presence into the wilds, making you harder to spot while out in nature.",
+    "weight": "1175 g",
+    "volume": "3 L",
+    "price": "5000 USD",
+    "price_postapoc": "50 USD",
+    "material": [ "veggy" ],
+    "charges_per_use": 1,
+    "tool_ammo": "essence_natural_type",
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "essence_natural_type": 30 } } ],
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ACTIVE",
+        "ench_effects": [ { "effect": "effect_arcana_cloak_nature_hide", "intensity": 1 } ]
+      }
+    ],
+    "use_action": [
+      {
+        "target": "cloak_nature_hide_on",
+        "msg": "The leaves on the cloak rustle soundlessly.",
+        "need_worn": true,
+        "need_charges": 1,
+        "need_charges_msg": "The cloak requires essence to conceal you.",
+        "menu_text": "Hide in the wilds",
+        "type": "transform",
+        "ammo_scale": 0
+      }
+    ]
+  },
+  {
+    "id": "cloak_nature_hide_on",
+    "copy-from": "cloak_nature_hide",
+    "repairs_like": "cloak_nature_hide",
+    "looks_like": "grass_cloak",
+    "type": "ITEM",
+    "subtypes": [ "TOOL", "ARMOR" ],
+    "category": "armor",
+    "name": { "str": "cloak of undergrowth (on)", "str_pl": "cloaks of undergrowth (on)" },
+    "description": "A cloak of leaves, somehow still fresh and green despite being woven into a garment.  Activate it to subsume your presence into the wilds, making you harder to spot while out in nature.  It is currently hiding you.",
+    "turns_per_charge": 180,
+    "extend": { "flags": [ "SPAWN_ACTIVE" ] },
+    "revert_to": "cloak_nature_hide",
+    "revert_msg": "The cloak leaves rustle with a soft sound.",
+    "use_action": [
+      {
+        "target": "cloak_nature_hide",
+        "msg": "The leaves on the cloak rustle.",
+        "menu_text": "Turn off",
+        "type": "transform",
+        "ammo_scale": 0
+      }
+    ]
+  },
+  {
     "id": "robe_shadow",
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "copy-from": "robe",
     "category": "armor",
     "name": { "str": "mantle of shadows", "str_pl": "mantles of shadows" },
-    "//": "misc properties were mostly made by averaging the values of all possible types of robe usable to make it, but no storage due to nested containers being buggy",
     "description": "A loose-fitting robe of some sort, heavily altered with decorations resting on the shoulders, dyed in a simple dark gray.  Activating it will grant invisibility, constantly draining essence while in use.",
     "price": "900 USD",
     "price_postapoc": "70 USD",
