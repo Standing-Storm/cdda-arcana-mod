@@ -226,58 +226,41 @@
     ]
   },
   {
-    "id": "armor_wyrm",
+    "id": "armor_wyrmskin_gauntlets",
     "type": "ITEM",
     "subtypes": [ "ARMOR", "ARTIFACT" ],
-    "name": { "str": "wyrmskin armor", "str_pl": "sets of wyrmskin armor" },
-    "description": "A full set of well-decorated leather armor, with serpentine patterns sewn into it and various adjustable straps added.  It provides protection from acid when worn, and to a lesser extent, from fire and heat.",
-    "weight": "4400 g",
-    "volume": "9 L",
+    "name": { "str": "wyrmskin gauntlets (pair)", "str_pl": "pairs of wyrmskin gauntlets" },
+    "description": "A set of well-decorated leather gauntlets, with serpentine patterns sewn into it and various adjustable straps added.  It provides protection from acid when worn, and to a lesser extent, from fire.  A full set will make you immune to being set on fire, reduce the effects of heat on you, and prevent acid ",
+    "weight": "550 g",
+    "volume": "1250 ml",
     "material": [ "wyrmskin", "leather" ],
-    "price": "450 USD",
-    "price_postapoc": "30 USD",
+    "price": "200 USD",
+    "price_postapoc": "10 USD",
     "to_hit": { "grip": "none", "length": "hand", "surface": "any", "balance": "clumsy" },
     "melee_damage": { "bash": 2 },
     "symbol": "[",
-    "looks_like": "armor_larmor",
+    "looks_like": "gauntlets_larmor",
     "color": "green",
     "material_thickness": 4,
     "environmental_protection": 10,
     "armor": [
       {
-        "covers": [ "torso" ],
-        "coverage": 95,
-        "encumbrance": 8,
-        "material": [
-          { "type": "leather", "covered_by_mat": 100, "thickness": 2.5 },
-          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2.5 }
-        ]
-      },
-      {
-        "covers": [ "arm_l", "arm_r" ],
-        "coverage": 90,
+        "coverage": 100,
         "encumbrance": 7,
+        "covers": [ "hand_l", "hand_r" ],
         "material": [
           { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 },
           { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1 }
         ]
       },
       {
-        "covers": [ "leg_l", "leg_r" ],
-        "coverage": 85,
-        "encumbrance": 7,
-        "material": [
-          { "type": "leather", "covered_by_mat": 100, "thickness": 2.5 },
-          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1.5 }
-        ]
-      },
-      {
-        "covers": [ "foot_l", "foot_r" ],
         "coverage": 100,
-        "encumbrance": 9,
+        "encumbrance": 7,
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_lower_l", "arm_lower_r" ],
         "material": [
-          { "type": "leather", "covered_by_mat": 100, "thickness": 2 },
-          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 2 }
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "wyrmskin", "covered_by_mat": 100, "thickness": 1 }
         ]
       }
     ],
@@ -286,7 +269,19 @@
       {
         "has": "WORN",
         "condition": "ALWAYS",
-        "ench_effects": [ { "effect": "effect_arcana_wyrmskin_armor", "intensity": 1 } ]
+        "ench_effects": [ { "effect": "effect_arcana_wyrmskin_armor_gauntlets", "intensity": 1 } ]
+      },
+      {
+        "has": "WORN",
+        "condition": {
+          "and": [
+            { "u_has_effect": "effect_arcana_wyrmskin_armor_gauntlets" },
+            { "u_has_effect": "effect_arcana_wyrmskin_armor_cuirass" },
+            { "u_has_effect": "effect_arcana_wyrmskin_armor_chausses" },
+            { "u_has_effect": "effect_arcana_wyrmskin_armor_boots" }
+          ]
+        },
+        "ench_effects": [ { "effect": "effect_arcana_wyrmskin_armor_full", "intensity": 1 } ]
       }
     ],
     "flags": [ "NO_SALVAGE", "OUTER", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "STURDY", "RELIC_PINK" ]

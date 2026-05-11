@@ -926,7 +926,7 @@
             "collection": [ { "item": "duster" }, { "item": "dress_shirt" }, { "item": "pants" }, { "item": "boots" } ],
             "prob": 25
           },
-          { "item": "armor_wyrm", "prob": 50 }
+          { "item": "armor_wyrm_equipped", "prob": 50 }
         ]
       },
       {
@@ -1010,7 +1010,7 @@
     "entries": [
       { "item": "boxer_shorts" },
       { "item": "socks" },
-      { "item": "armor_wyrm" },
+      { "item": "armor_wyrm_equipped" },
       { "item": "cloak" },
       { "item": "gloves_plate" },
       { "item": "helmet_nasal" },

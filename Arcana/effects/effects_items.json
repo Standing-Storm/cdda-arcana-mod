@@ -1,6 +1,34 @@
 [
   {
-    "id": "effect_arcana_wyrmskin_armor",
+    "id": "effect_arcana_wyrmskin_armor_gauntlets",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_cuirass",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_chausses",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_boots",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_full",
     "type": "effect_type",
     "//": "Hidden effect, applied by wyrmskin armor",
     "name": [ "" ],
