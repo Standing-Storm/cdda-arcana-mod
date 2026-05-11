@@ -14,5 +14,40 @@
     "name": [ "" ],
     "desc": [ "" ],
     "blocks_effects": [ "tpollen", "fungus", "poison", "badpoison", "venom_weaken", "venom_pain", "venom_dmg" ]
+  },
+  {
+    "id": "effect_arcana_cloak_nature_hide",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by the cloak of the undergrowth",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "enchantments": [
+      {
+        "condition": {
+          "and": [
+            {
+              "or": [
+                { "not": { "u_near_om_location": "road", "range": 2 } },
+                {
+                  "and": [
+                    { "u_near_om_location": "road", "range": 2 },
+                    { "or": [ { "u_at_om_location": "forest" }, { "u_at_om_location": "forest_thick" } ] }
+                  ]
+                }
+              ]
+            },
+            {
+              "or": [
+                { "u_is_on_terrain_with_flag": "SHRUB" },
+                { "u_is_on_terrain_with_flag": "YOUNG" },
+                { "u_is_on_terrain_with_flag": "DIGGABLE" },
+                { "u_is_on_terrain_with_flag": "GRAZABLE" }
+              ]
+            }
+          ]
+        },
+        "values": [ { "value": "STEALTH_MODIFIER", "add": 50 } ]
+      }
+    ]
   }
 ]
