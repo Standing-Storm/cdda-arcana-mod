@@ -504,7 +504,10 @@
     ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
-      [ [ "armor_wyrm", 1 ] ],
+      [ [ "armor_wyrmskin_gauntlets", 1 ] ],
+      [ [ "armor_wyrmskin_cuirass", 1 ] ],
+      [ [ "armor_wyrmskin_chausses", 1 ] ],
+      [ [ "armor_wyrmskin_boots", 1 ] ],
       [ [ "arcana_holy_relic_any", 1, "LIST" ] ],
       [ [ "dragonblood_mutagen", 1 ] ],
       [ [ "material_shrd_limestone", 3 ], [ "material_limestone", 30 ] ],
