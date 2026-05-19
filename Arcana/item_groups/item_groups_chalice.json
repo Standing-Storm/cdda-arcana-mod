@@ -123,7 +123,7 @@
       { "item": "silver_small", "prob": 10, "charges": [ 25, 100 ] },
       { "item": "gold_small", "prob": 40, "charges": [ 25, 100 ] },
       { "item": "scrap", "prob": 15, "count": [ 1, 10 ] },
-      { "item": "feather", "prob": 5, "charges": [ 10, 20 ] },
+      { "item": "feather", "prob": 5, "count": [ 10, 20 ] },
       { "item": "chitin_piece", "prob": 5, "count": [ 1, 5 ] },
       { "item": "fur", "prob": 10, "count": [ 1, 5 ] },
       { "item": "paper", "prob": 5, "charges": [ 20, 50 ] },
