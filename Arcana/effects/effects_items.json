@@ -30,10 +30,12 @@
   {
     "id": "effect_arcana_wyrmskin_armor_full",
     "type": "effect_type",
-    "//": "Hidden effect, applied by wyrmskin armor",
+    "//": "Hidden effect, applied by a full set of wyrmskin armor",
     "name": [ "" ],
     "desc": [ "" ],
-    "removes_effects": [ "onfire", "corroding" ]
+    "removes_effects": [ "onfire", "corroding" ],
+    "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 40 } ],
+    "incoming_damage_mod": [ { "type": "heat", "multiply": -0.25 } ]
   },
   {
     "id": "effect_crown_of_ivy_immunities",
