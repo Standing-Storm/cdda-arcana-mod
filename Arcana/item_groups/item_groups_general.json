@@ -90,7 +90,7 @@
       { "item": "gold_small", "prob": 20, "charges": [ 25, 100 ] },
       { "group": "gemstones", "prob": 5 },
       { "item": "scrap", "prob": 10, "count": [ 1, 10 ] },
-      { "item": "feather", "prob": 5, "charges": [ 10, 20 ] },
+      { "item": "feather", "prob": 5, "count": [ 10, 20 ] },
       { "item": "thread", "prob": 5, "charges": [ 30, 90 ] },
       { "item": "bone", "prob": 5, "count": [ 1, 5 ] },
       { "item": "paper", "prob": 5, "charges": [ 20, 50 ] },
