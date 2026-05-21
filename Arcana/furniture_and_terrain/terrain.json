@@ -57,7 +57,7 @@
       "ter_set": "t_strconc_floor",
       "items": [
         { "item": "dimensional_focus_lens", "count": 1 },
-        { "item": "cable", "charges": [ 8, 16 ] },
+        { "item": "cable", "count": [ 8, 16 ] },
         { "item": "scrap", "count": [ 8, 16 ] },
         { "item": "sheet_metal", "count": [ 5, 10 ] },
         { "item": "alloy_sheet", "count": [ 12, 18 ] },
