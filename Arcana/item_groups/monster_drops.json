@@ -1694,7 +1694,7 @@
             ],
             "prob": 50
           },
-          { "item": "armor_wyrm", "prob": 50, "damage": [ 1, 4 ] }
+          { "group": "armor_wyrm_equipped", "prob": 50, "damage": [ 1, 4 ] }
         ]
       },
       { "item": "revenant_crown", "prob": 25, "damage": [ 1, 4 ] },

@@ -732,7 +732,29 @@
     "components": [ [ [ "silver_small", 400 ] ], [ [ "essence_dull", 30 ] ] ]
   },
   {
-    "result": "armor_wyrm",
+    "result": "armor_wyrmskin_cuirass",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "45 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "leather", 18 ] ], [ [ "essence_dull", 15 ] ] ]
+  },
+  {
+    "result": "armor_wyrmskin_chausses",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "time": "45 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "leather", 18 ] ], [ [ "essence_dull", 15 ] ] ]
+  },
+  {
+    "result": "armor_wyrmskin_gauntlets",
     "type": "uncraft",
     "skill_used": "magic",
     "difficulty": 3,
@@ -740,7 +762,18 @@
     "activity_level": "LIGHT_EXERCISE",
     "qualities": [ { "id": "CUT", "level": 1 } ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "leather", 42 ] ], [ [ "essence_dull", 40 ] ] ]
+    "components": [ [ [ "leather", 6 ] ], [ [ "essence_dull", 4 ] ] ]
+  },
+  {
+    "result": "armor_wyrmskin_boots",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "leather", 5 ] ], [ [ "essence_dull", 3 ] ] ]
   },
   {
     "result": "revenant_crown",

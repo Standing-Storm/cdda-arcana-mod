@@ -34,8 +34,12 @@
     "name": [ "" ],
     "desc": [ "" ],
     "removes_effects": [ "onfire", "corroding" ],
-    "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 40 } ],
-    "incoming_damage_mod": [ { "type": "heat", "multiply": -0.25 } ]
+    "enchantments": [
+      {
+        "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 40 } ],
+        "incoming_damage_mod": [ { "type": "heat", "multiply": -0.25 } ]
+      }
+    ]
   },
   {
     "id": "effect_crown_of_ivy_immunities",
