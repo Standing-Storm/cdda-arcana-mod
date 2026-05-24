@@ -250,29 +250,60 @@
     "flags": [ "SECRET" ]
   },
   {
-    "result": "armor_wyrm",
+    "result": "armor_wyrmskin_chausses",
     "type": "recipe",
     "category": "CC_ARCANA",
     "subcategory": "CSC_ARCANA_ARMOR",
     "skill_used": "magic",
-    "difficulty": 4,
-    "skills_required": [ "tailor", 3 ],
+    "difficulty": 5,
+    "skills_required": [ "tailor", 5 ],
     "time": "8 h",
     "activity_level": "MODERATE_EXERCISE",
-    "book_learn": [ [ "book_bloodmagic", 4 ] ],
-    "using": [ [ "filament", 22 ] ],
-    "qualities": [ { "id": "SEW", "level": 1 } ],
+    "book_learn": [ [ "book_bloodmagic", 5 ] ],
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "LEATHER_AWL", "level": 1 } ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "blood_athame", -1 ] ] ],
     "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
       { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_articulation" },
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_enchantment" }
+    ],
+    "components": [
+      [ [ "legguard_larmor", 1 ] ],
+      [ [ "leather", 4 ], [ "fur", 4 ] ],
+      [ [ "wyrmskin_piece", 2 ] ],
+      [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2, "LIST" ] ],
+      [ [ "essence_blood", 5 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "armor_wyrmskin_cuirass",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 5,
+    "skills_required": [ "tailor", 5 ],
+    "time": "8 h",
+    "activity_level": "MODERATE_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 5 ] ],
+    "using": [ [ "filament", 10 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "LEATHER_AWL", "level": 1 } ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "blood_athame", -1 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_articulation" },
       { "proficiency": "prof_arcana_thaumatology", "required": true },
       { "proficiency": "prof_gem_setting", "required": true },
       { "proficiency": "prof_arcana_enchantment" }
     ],
     "components": [
       [ [ "armor_larmor", 1 ] ],
-      [ [ "boots_larmor", 1 ] ],
-      [ [ "leather", 4 ], [ "fur", 4 ] ],
+      [ [ "leather", 3 ], [ "fur", 3 ] ],
       [
         [ "brooch_iridescent", 1 ],
         [ "jade_brooch", 1 ],
@@ -281,8 +312,68 @@
         [ "citrine", 1 ],
         [ "emerald", 1 ]
       ],
-      [ [ "wyrmskin_piece", 1 ], [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2, "LIST" ] ],
-      [ [ "essence_blood", 4 ] ]
+      [ [ "wyrmskin_piece", 3 ] ],
+      [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2, "LIST" ] ],
+      [ [ "essence_blood", 5 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "armor_wyrmskin_gauntlets",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "tailor", 3 ],
+    "time": "6 h",
+    "activity_level": "MODERATE_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 4 ] ],
+    "using": [ [ "filament", 4 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "LEATHER_AWL", "level": 1 } ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "blood_athame", -1 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_articulation" },
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_enchantment" }
+    ],
+    "components": [
+      [ [ "gauntlets_larmor", 1 ] ],
+      [ [ "leather", 2 ] ],
+      [ [ "wyrmskin_piece", 1 ] ],
+      [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2, "LIST" ] ],
+      [ [ "essence_blood", 3 ] ]
+    ],
+    "flags": [ "SECRET" ]
+  },
+  {
+    "result": "armor_wyrmskin_boots",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_ARMOR",
+    "skill_used": "magic",
+    "difficulty": 4,
+    "skills_required": [ "tailor", 3 ],
+    "time": "5 h",
+    "activity_level": "MODERATE_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 4 ] ],
+    "using": [ [ "filament", 4 ] ],
+    "qualities": [ { "id": "SEW", "level": 1 }, { "id": "LEATHER_AWL", "level": 1 } ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ], [ [ "blood_athame", -1 ] ] ],
+    "proficiencies": [
+      { "proficiency": "prof_leatherworking_basic" },
+      { "proficiency": "prof_leatherworking" },
+      { "proficiency": "prof_arcana_thaumatology", "required": true },
+      { "proficiency": "prof_arcana_enchantment" }
+    ],
+    "components": [
+      [ [ "boots_larmor", 1 ] ],
+      [ [ "leather", 2 ] ],
+      [ [ "wyrmskin_piece", 1 ] ],
+      [ [ "chem_acetic_acid", 1 ], [ "any_strong_acid", 2, "LIST" ] ],
+      [ [ "essence_blood", 3 ] ]
     ],
     "flags": [ "SECRET" ]
   },
@@ -504,7 +595,10 @@
     ],
     "tools": [ [ [ "book_bloodmagic", -1 ], [ "book_syncretism", -1 ] ] ],
     "components": [
-      [ [ "armor_wyrm", 1 ] ],
+      [ [ "armor_wyrmskin_gauntlets", 1 ] ],
+      [ [ "armor_wyrmskin_cuirass", 1 ] ],
+      [ [ "armor_wyrmskin_chausses", 1 ] ],
+      [ [ "armor_wyrmskin_boots", 1 ] ],
       [ [ "arcana_holy_relic_any", 1, "LIST" ] ],
       [ [ "dragonblood_mutagen", 1 ] ],
       [ [ "material_shrd_limestone", 3 ], [ "material_limestone", 30 ] ],

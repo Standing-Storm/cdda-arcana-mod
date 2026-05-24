@@ -543,7 +543,10 @@
     "items": {
       "both": {
         "items": [
-          "armor_wyrm",
+          "armor_wyrmskin_gauntlets",
+          "armor_wyrmskin_cuirass",
+          "armor_wyrmskin_chausses",
+          "armor_wyrmskin_boots",
           "duster",
           "tricorne",
           "keffiyeh",

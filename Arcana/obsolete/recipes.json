@@ -251,6 +251,22 @@
     "obsolete": true
   },
   {
+    "result": "armor_wyrm",
+    "type": "recipe",
+    "obsolete": true
+  },
+  {
+    "result": "armor_wyrm",
+    "type": "uncraft",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "30 m",
+    "activity_level": "LIGHT_EXERCISE",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "tools": [ [ [ "hexenhammer", -1 ] ] ],
+    "components": [ [ [ "leather", 42 ] ], [ [ "essence_dull", 40 ] ] ]
+  },
+  {
     "result": "armor_qt_lightplate",
     "type": "recipe",
     "id_suffix": "arcana",

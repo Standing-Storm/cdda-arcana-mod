@@ -130,7 +130,7 @@
       [ "lichhook", 5 ],
       [ "bloodscourge", 20 ],
       [ "shrike_misericorde", 5 ],
-      [ "armor_wyrm", 15 ],
+      { "group": "armor_wyrm_loot", "prob": 15 },
       [ "revenant_crown", 10 ]
     ]
   },

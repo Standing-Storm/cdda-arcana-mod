@@ -10,5 +10,13 @@
   {
     "type": "effect_migration",
     "from": "arcane_healing_staunch"
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ],
+    "removes_effects": [ "onfire", "corroding" ]
   }
 ]

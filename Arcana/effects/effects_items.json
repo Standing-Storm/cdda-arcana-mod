@@ -1,11 +1,45 @@
 [
   {
-    "id": "effect_arcana_wyrmskin_armor",
+    "id": "effect_arcana_wyrmskin_armor_gauntlets",
     "type": "effect_type",
     "//": "Hidden effect, applied by wyrmskin armor",
     "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_cuirass",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_chausses",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_boots",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by wyrmskin armor",
+    "name": [ "" ],
+    "desc": [ "" ]
+  },
+  {
+    "id": "effect_arcana_wyrmskin_armor_full",
+    "type": "effect_type",
+    "//": "Hidden effect, applied by a full set of wyrmskin armor",
+    "name": [ "" ],
     "desc": [ "" ],
-    "removes_effects": [ "onfire", "corroding" ]
+    "removes_effects": [ "onfire", "corroding" ],
+    "enchantments": [
+      {
+        "values": [ { "value": "CLIMATE_CONTROL_CHILL", "add": 40 } ],
+        "incoming_damage_mod": [ { "type": "heat", "multiply": -0.25 } ]
+      }
+    ]
   },
   {
     "id": "effect_crown_of_ivy_immunities",

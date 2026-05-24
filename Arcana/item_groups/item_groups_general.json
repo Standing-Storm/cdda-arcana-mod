@@ -120,7 +120,7 @@
       [ "sun_sword", 10 ],
       [ "ethereal_crossbow", 5 ],
       [ "gilded_aegis", 5 ],
-      [ "armor_wyrm", 10 ],
+      { "group": "armor_wyrm_loot", "prob": 10 },
       [ "robe_shadow", 5 ],
       [ "somen_clairvoyance", 10 ],
       [ "revenant_crown", 10 ],
@@ -619,6 +619,30 @@
       },
       { "item": "scroll_blank", "prob": 35 },
       { "item": "feather", "prob": 50 }
+    ]
+  },
+  {
+    "id": "armor_wyrm_loot",
+    "type": "item_group",
+    "subtype": "collection",
+    "//": "This is for wyrmskin armor found as loot",
+    "entries": [
+      { "item": "armor_wyrmskin_gauntlets", "prob": 80 },
+      { "item": "armor_wyrmskin_cuirass", "prob": 80 },
+      { "item": "armor_wyrmskin_chausses", "prob": 80 },
+      { "item": "armor_wyrmskin_boots", "prob": 80 }
+    ]
+  },
+  {
+    "id": "armor_wyrm_equipped",
+    "type": "item_group",
+    "subtype": "collection",
+    "//": "This is for wyrmskin armor looted from people wearing it",
+    "entries": [
+      { "item": "armor_wyrmskin_gauntlets", "prob": 95 },
+      { "item": "armor_wyrmskin_cuirass", "prob": 95 },
+      { "item": "armor_wyrmskin_chausses", "prob": 95 },
+      { "item": "armor_wyrmskin_boots", "prob": 95 }
     ]
   }
 ]
