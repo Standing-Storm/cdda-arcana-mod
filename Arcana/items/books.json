@@ -133,6 +133,28 @@
     "read_fun": -1
   },
   {
+    "id": "book_canister_recipes",
+    "type": "ITEM",
+    "subtypes": [ "BOOK" ],
+    "category": "manuals",
+    "name": { "str": "talisman canister specifications", "str_pl": "copies of talisman canister specifications" },
+    "description": "An obviously homemade set of schematics for making some sort of weapon, the myriad diagrams drawn for ease of understanding somewhat undermined by the frequent use of alchemical symbols.  Judging by the warning symbols, text that indicates you should not store them near flame or anything explosive, and instructions for use, the end product is some sort of grenade.",
+    "weight": "454 g",
+    "volume": "1 L",
+    "price": "400 USD",
+    "price_postapoc": "10 USD",
+    "material": [ "paper" ],
+    "symbol": "?",
+    "looks_like": "textbook_anarch",
+    "color": "blue",
+    "read_skill": "magic",
+    "required_level": 3,
+    "max_level": 3,
+    "intelligence": 10,
+    "time": "30 m",
+    "read_fun": -3
+  },
+  {
     "id": "book_alternate_potions",
     "type": "ITEM",
     "subtypes": [ "BOOK" ],
