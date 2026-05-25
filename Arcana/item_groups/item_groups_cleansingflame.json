@@ -25,6 +25,7 @@
         "distribution": [
           { "item": "book_hexenhammer", "prob": 10 },
           { "item": "book_scrollcraft", "prob": 3 },
+          { "item": "book_canister_recipes", "prob": 2 },
           { "item": "book_alternate_potions", "prob": 1 },
           { "item": "book_easyalchemy", "prob": 3 },
           { "item": "book_magicfordummies", "prob": 3 }
@@ -67,6 +68,7 @@
         "distribution": [
           { "item": "book_hexenhammer", "prob": 10 },
           { "item": "book_scrollcraft", "prob": 3 },
+          { "item": "book_canister_recipes", "prob": 2 },
           {
             "distribution": [
               { "item": "book_alternate_potions", "prob": 2 },
@@ -153,7 +155,19 @@
       [ "scroll_artiface", 5 ],
       [ "scroll_nature", 3 ],
       [ "scroll_destruction", 2 ],
-      [ "scroll_subversion", 1 ]
+      [ "scroll_subversion", 1 ],
+      { "group": "cleansing_flame_gear_blast_canisters", "prob": 5, "count": [ 3, 6 ] }
+    ]
+  },
+  {
+    "id": "cleansing_flame_gear_blast_canisters",
+    "type": "item_group",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "blast_canister_arcana_flame", "prob": 3 },
+      { "item": "blast_canister_arcana_water", "prob": 3 },
+      { "item": "blast_canister_arcana_earth", "prob": 3 },
+      { "item": "blast_canister_arcana_air", "prob": 3 }
     ]
   },
   {

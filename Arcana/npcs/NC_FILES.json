@@ -1270,8 +1270,8 @@
     "subtype": "collection",
     "extend": {
       "items": [
-        { "item": "CF_golden_scale", "count": [ 10, 60 ], "prob": 30 },
-        { "group": "cleansing_flame_gear_consumables", "count": [ 1, 3 ], "prob": 10 }
+        { "item": "CF_golden_scale", "count": [ 5, 10 ], "prob": 5 },
+        { "group": "cleansing_flame_gear_consumables", "count": [ 1, 3 ], "prob": 2 }
       ]
     }
   }
