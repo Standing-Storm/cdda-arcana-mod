@@ -203,9 +203,6 @@
     "name": { "str": "active searing blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with flames.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "light": 50,
     "use_action": {
       "type": "message",
@@ -221,6 +218,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 500, "distance_factor": 0.2 }
     },
+    "countdown_interval": "5 seconds",
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
@@ -264,9 +262,6 @@
     "name": { "str": "active wintry blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with supernatural cold.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "light": 50,
     "use_action": {
       "type": "message",
@@ -282,6 +277,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 625, "distance_factor": 0.2 }
     },
+    "countdown_interval": "5 seconds",
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
@@ -325,9 +321,6 @@
     "name": { "str": "active earthen blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with acid.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "light": 50,
     "use_action": {
       "type": "message",
@@ -343,6 +336,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 750, "distance_factor": 0.2 }
     },
+    "countdown_interval": "5 seconds",
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
@@ -386,9 +380,6 @@
     "name": { "str": "active thunderous blast canister" },
     "description": "This is a small canister with elemental energy bound to it.  It will go off in a few seconds, blasting the area around it with lightning.",
     "price_postapoc": "0 cent",
-    "initial_charges": 3,
-    "max_charges": 3,
-    "turns_per_charge": 1,
     "light": 50,
     "use_action": {
       "type": "message",
@@ -404,6 +395,7 @@
       "fields_max_intensity": 2,
       "explosion": { "power": 1125, "distance_factor": 0.2 }
     },
+    "countdown_interval": "5 seconds",
     "flags": [ "BOMB", "TRADER_AVOID", "NO_REPAIR", "SPAWN_ACTIVE" ]
   },
   {
