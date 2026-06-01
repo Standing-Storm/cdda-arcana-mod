@@ -1261,7 +1261,7 @@
     "id": "mon_spirit_of_fire_death_drops",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "ash", "charges": [ 500, 1000 ] } ]
+    "entries": [ { "item": "ash", "count": [ 500, 1000 ] } ]
   },
   {
     "id": "mon_moruboru_death_drops",
@@ -1542,7 +1542,7 @@
     "subtype": "collection",
     "entries": [
       { "item": "arcana_mech_shem" },
-      { "item": "scrap", "charges": [ 0, 35 ] },
+      { "item": "scrap", "count": [ 0, 35 ] },
       { "item": "e_scrap", "count": [ 0, 2 ] },
       { "item": "copper", "count": [ 0, 350 ] },
       { "item": "wire", "count": [ 0, 2 ] },
