@@ -165,7 +165,7 @@
       [ "bowl_clay", 10 ],
       { "item": "candle", "prob": 5, "charges": [ 75, 100 ] },
       { "item": "matches", "prob": 5, "charges": [ 15, 20 ] },
-      { "item": "silver_small", "prob": 20, "charges": [ 25, 100 ] },
+      { "item": "silver_small", "prob": 20, "count": [ 25, 100 ] },
       [ "peridot", 2 ],
       [ "emerald", 2 ],
       [ "jade_brooch", 1 ],
