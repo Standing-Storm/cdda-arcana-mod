@@ -251,7 +251,6 @@
         "id": "scratch",
         "cooldown": 30,
         "damage_max_instance": [ { "damage_type": "cut", "amount": 25, "armor_multiplier": 0.75 } ],
-        "body_part_types": [ [ "leg", 5 ], [ "tail", 1 ], [ "wing", 2 ], [ "head", 3 ], [ "arm", 5 ], [ "torso", 7 ] ],
         "effects": [ { "id": "downed", "duration": 3 } ],
         "hit_dmg_u": "The %1$s slashes at you with a wicked claw!",
         "hit_dmg_npc": "The %1$s slashes at <npcname> with a wicked claw!",
