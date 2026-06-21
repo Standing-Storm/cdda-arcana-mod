@@ -26,7 +26,8 @@
             "u_message": "That was simpler than you could have dreamed.  You already have mastery over your own blood, and controlling the blood of others is child's play.",
             "type": "good"
           }
-        ]
+        ],
+        "false_effect": [ { "u_message": "Not being a vampire, all you've done is wasted your time.", "type": "bad" } ]
       }
     ]
   },
