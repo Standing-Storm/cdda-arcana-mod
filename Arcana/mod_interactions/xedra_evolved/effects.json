@@ -12,5 +12,14 @@
     "max_intensity": 120,
     "int_dur_factor": "1 m",
     "flags": [ "EVIL_EYE_IMMUNE" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_changeling_stop_nether_conditions",
+    "name": [ "Dancer in the Endless Dark" ],
+    "desc": [ "You are immune to several deleterious otherworldly conditions." ],
+    "rating": "good",
+    "remove_message": "Your protection against the unnatural fades away.",
+    "blocks_effects": [ "taint", "tindrift", "arcana_evil_mimic", "rat", "teleglow", "attention", "evil" ]
   }
 ]

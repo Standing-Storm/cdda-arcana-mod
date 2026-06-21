@@ -1,5 +1,36 @@
 [
   {
+    "id": "arcana_learn_blood_magic_vampire_recipe",
+    "name": "adapt blood magic to vampirism",
+    "description": "Reading this book, you realize now that it's simple enough to adapt these practices to a vampire's unique condition, and a vampire would undoubtedly master blood magic to a degree that a mortal practitioner could only dream of.",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "deduction",
+    "difficulty": 4,
+    "time": "12 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 4 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
+    "flags": [ "SECRET", "NO_BENCH", "NO_ENCHANTMENT" ],
+    "result_eocs": [
+      {
+        "id": "EOC_ARCANA_LEARN_BLOOD_MAGIC_VAMPIRE_FINALIZATION",
+        "condition": { "u_has_trait": "VAMPIRE" },
+        "effect": [
+          { "u_lose_trait": "ARCANA_NO_BLOOD_MAGIC" },
+          { "u_add_trait": "ARCANA_BLOOD_MAGIC" },
+          {
+            "u_message": "That was simpler than you could have dreamed.  You already have mastery over your own blood, and controlling the blood of others is child's play.",
+            "type": "good"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_XE_VAMPIRE_MAGICFORBLOOD_POWERS_BLOOD_SORCERY",
     "recurrence": [ "1 s", "1 s" ],
