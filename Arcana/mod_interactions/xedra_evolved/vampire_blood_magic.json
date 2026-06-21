@@ -13,7 +13,6 @@
     "book_learn": [ [ "book_bloodmagic", 4 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
-    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "flags": [ "SECRET", "NO_BENCH", "NO_ENCHANTMENT" ],
     "result_eocs": [
       {
