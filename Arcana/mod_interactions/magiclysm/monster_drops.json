@@ -251,7 +251,7 @@
     "id": "mon_balrog_death_drops",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "ash", "count": [ 250, 500 ] }, { "item": "essence", "count": [ 1, 3 ] } ]
+    "entries": [ { "item": "ash", "count": [ 25, 50 ] }, { "item": "essence", "count": [ 1, 3 ] } ]
   },
   {
     "type": "item_group",

@@ -1261,7 +1261,7 @@
     "id": "mon_spirit_of_fire_death_drops",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "ash", "count": [ 500, 1000 ] } ]
+    "entries": [ { "item": "ash", "count": [ 50, 100 ] } ]
   },
   {
     "id": "mon_moruboru_death_drops",

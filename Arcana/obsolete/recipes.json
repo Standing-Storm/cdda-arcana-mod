@@ -518,7 +518,7 @@
     "tools": [ [ [ "book_potioncraft", -1 ] ], [ [ "crucible", -1 ], [ "crucible_clay", -1 ] ] ],
     "components": [
       [ [ "salt", 75 ] ],
-      [ [ "ash", 50 ] ],
+      [ [ "ash", 5 ] ],
       [ [ "material_sand", 5 ] ],
       [ [ "flame_talisman", 1 ] ],
       [ [ "healing_potion", 1 ] ]

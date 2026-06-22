@@ -150,7 +150,7 @@
     "time": "10 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 20 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 2 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -161,7 +161,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -172,7 +172,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -183,7 +183,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -194,7 +194,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -205,7 +205,7 @@
     "time": "80 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -216,7 +216,7 @@
     "time": "80 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -227,7 +227,7 @@
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 40 ] ] ],
+    "components": [ [ [ "essence_dull", 120 ] ], [ [ "ash", 4 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -238,7 +238,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -249,7 +249,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -260,7 +260,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -271,7 +271,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -282,7 +282,7 @@
     "time": "80 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -293,7 +293,7 @@
     "time": "80 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -304,7 +304,7 @@
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 4 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1063,7 +1063,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1074,7 +1074,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 30 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1086,7 +1086,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1098,7 +1098,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1110,7 +1110,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1122,7 +1122,7 @@
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1309,7 +1309,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1320,7 +1320,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1331,7 +1331,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1342,7 +1342,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 60 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1353,7 +1353,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1364,7 +1364,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1375,7 +1375,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1386,7 +1386,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 100 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1397,7 +1397,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1408,7 +1408,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1419,7 +1419,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1430,7 +1430,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 110 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1441,7 +1441,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1452,7 +1452,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1463,7 +1463,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 80 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 80 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1485,7 +1485,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1496,7 +1496,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1507,7 +1507,7 @@
     "time": "60 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1518,7 +1518,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 140 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1529,7 +1529,7 @@
     "time": "80 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 170 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1540,7 +1540,7 @@
     "time": "90 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 200 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 200 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1551,7 +1551,7 @@
     "time": "40 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 150 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 150 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1562,7 +1562,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1573,7 +1573,7 @@
     "time": "50 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 210 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
@@ -1584,7 +1584,7 @@
     "time": "70 m",
     "activity_level": "LIGHT_EXERCISE",
     "using": [ [ "arcana_purification_standard", 1 ] ],
-    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 10 ] ] ],
+    "components": [ [ [ "essence_dull", 90 ] ], [ [ "ash", 1 ] ] ],
     "flags": [ "10" ]
   },
   {
