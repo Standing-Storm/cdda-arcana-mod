@@ -24,7 +24,7 @@
     "result_eocs": [
       {
         "id": "EOC_ARCANA_LEARN_BLOOD_MAGIC_FINALIZATION",
-        "condition": { "not": { "u_as_any_trait": [ "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "SYLPH", "UNDINE", "CHANGELING_MAGIC" ] } },
+        "condition": { "not": { "u_has_any_trait": [ "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "SYLPH", "UNDINE", "CHANGELING_MAGIC" ] } },
         "effect": [
           { "u_lose_trait": "ARCANA_NO_BLOOD_MAGIC" },
           { "u_add_trait": "ARCANA_BLOOD_MAGIC" },
