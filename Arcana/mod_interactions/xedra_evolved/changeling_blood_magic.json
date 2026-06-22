@@ -1,0 +1,46 @@
+[
+  {
+    "id": "arcana_learn_blood_magic_recipe",
+    "name": "collate blood magic research",
+    "description": "Combine various different elements of blood magic research and unlock the secret of blood magic.",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_RESEARCH",
+    "skill_used": "magic",
+    "difficulty": 3,
+    "time": "24 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_bloodmagic", 3 ] ],
+    "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
+    "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
+    "components": [
+      [ [ "item_blood_magic_research_animal_blood", 2 ] ],
+      [ [ "item_blood_magic_research_human_blood", 1 ] ],
+      [ [ "item_blood_magic_research_meat", 1 ] ],
+      [ [ "item_blood_magic_research_materials", 6 ] ]
+    ],
+    "flags": [ "SECRET", "NO_BENCH", "NO_ENCHANTMENT" ],
+    "result_eocs": [
+      {
+        "id": "EOC_ARCANA_LEARN_BLOOD_MAGIC_FINALIZATION",
+        "condition": { "not": { "u_as_any_trait": [ "ARVORE", "IERDE", "HOMULLUS", "SALAMANDER", "SYLPH", "UNDINE", "CHANGELING_MAGIC" ] } },
+        "effect": [
+          { "u_lose_trait": "ARCANA_NO_BLOOD_MAGIC" },
+          { "u_add_trait": "ARCANA_BLOOD_MAGIC" },
+          {
+            "u_message": "You've done it.  In the diagrams and the patterns you've drawn, in the research you've conducted, you see the truth.  There is no inborn gift necessary, no quirk of genetics, no lofty heritage.  Just power and those willing to reach out and take it.  The power of blood.",
+            "type": "good"
+          }
+        ],
+        "false_effect": [
+          {
+            "u_message": "You performed all the steps of the rituals properly but when it ends there is no understanding, no moment of enlightenment and initiation into an esoteric mystery.  Only an explosion of blinding pain.",
+            "type": "bad"
+          },
+          { "math": [ "u_pain() += 75" ] }
+        ]
+      }
+    ]
+  }
+]
