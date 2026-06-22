@@ -88,7 +88,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
-      [ [ "ash", 25 ], [ "corpse_ash", 25 ] ],
+      [ [ "ash", 3 ], [ "corpse_ash", 3 ] ],
       [ [ "essence_blood", 1 ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],
@@ -153,7 +153,7 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
-      [ [ "ash", 25 ], [ "withered", 5 ] ],
+      [ [ "ash", 3 ], [ "withered", 5 ] ],
       [ [ "essence", 1 ], [ "arcana_bone_standard", 5, "LIST" ] ]
     ],
     "delete_flags": [ "HIDDEN_HALLU", "HIDDEN_POISON", "BAD_TASTE", "CANNIBALISM" ],

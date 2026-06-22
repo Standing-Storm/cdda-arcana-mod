@@ -87,7 +87,7 @@
     "proficiencies": [ { "proficiency": "prof_arcana_thaumatology" } ],
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
-      [ [ "ash", 25 ], [ "corpse_ash", 25 ] ],
+      [ [ "ash", 3 ], [ "corpse_ash", 3 ] ],
       [
         [ "iron_thorn", 1 ],
         [ "monster_tear", 1 ],
@@ -176,7 +176,7 @@
     "components": [
       [ [ "paper", 20 ], [ "tanbark", 1 ], [ "birchbark", 1 ], [ "willowbark", 1 ] ],
       [ [ "material_sand", 50 ], [ "clay_lump", 5 ], [ "rock", 5 ] ],
-      [ [ "ash", 25 ], [ "withered", 5 ] ],
+      [ [ "ash", 3 ], [ "withered", 5 ] ],
       [
         [ "inflorescent_root", 1 ],
         [ "graboid_fang", 1 ],

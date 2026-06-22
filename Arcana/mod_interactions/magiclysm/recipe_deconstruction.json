@@ -118,7 +118,7 @@
     "time": "20 m",
     "activity_level": "LIGHT_EXERCISE",
     "tools": [ [ [ "hexenhammer", -1 ] ] ],
-    "components": [ [ [ "ash", 10 ] ], [ [ "essence_dull", 10 ] ] ],
+    "components": [ [ [ "ash", 1 ] ], [ [ "essence_dull", 10 ] ] ],
     "charges": 1
   },
   {
