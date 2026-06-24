@@ -38,5 +38,14 @@
       { "math": [ "u_spell_level('arcana_mark_might') = -1" ] },
       { "math": [ "u_spell_level('arcana_mark_surge_adrenaline') = -1" ] }
     ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Arcana_RandEnc_RandEnc_Time_Catchup",
+    "//": "Remove in 0.J",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "condition": { "and": [ "u_is_avatar", { "not": { "math": [ "has_var(u_timer_Arcana_RandEnc)" ] } } ] },
+    "effect": { "math": [ "u_timer_Arcana_RandEnc = time('now')" ] }
   }
 ]
