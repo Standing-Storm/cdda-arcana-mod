@@ -10,5 +10,16 @@
     "display_category": "display_interaction",
     "sort_rank": 26400,
     "companion_skill_practice": [ { "skill": "hunting", "weight": 1 }, { "skill": "combat", "weight": 1 } ]
+  },
+  {
+    "type": "skill",
+    "id": "arcana_casting_skill",
+    "name": { "str": "incantation" },
+    "description": "Your ability to directly draw on otherworldly forces and weave them together to invoke their power.",
+    "tags": [ "combat_skill" ],
+    "time_to_attack": { "min_time": 60, "base_time": 200, "time_reduction_per_level": 14 },
+    "display_category": "display_ranged",
+    "sort_rank": 14750,
+    "requires_any_traits": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY", "ARCANA_SANGUINE_MARKS", "ARCANA_BLOOD_MAGIC", "ARCANA_SUMMONING" ]
   }
 ]
