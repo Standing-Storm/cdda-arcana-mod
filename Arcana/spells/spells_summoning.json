@@ -24,7 +24,7 @@
     "energy_source": "STAMINA",
     "max_level": 15,
     "difficulty": 60,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "min_aoe": 3,
     "max_aoe": 3,
     "min_damage": 10000,
@@ -72,7 +72,7 @@
     "effect_str": "EOC_ARCANA_SUMMON_SKELETAL_DOG",
     "energy_source": "STAMINA",
     "difficulty": 30,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 320,
     "final_casting_time": 160,
@@ -118,7 +118,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -140,7 +140,7 @@
     "effect_str": "EOC_ARCANA_SUMMON_SHADOW",
     "energy_source": "STAMINA",
     "difficulty": 30,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 320,
     "final_casting_time": 160,
@@ -181,7 +181,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 9 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -201,7 +201,7 @@
     "shape": "blast",
     "effect_str": "EOC_ARCANA_SUMMON_KRECK_GROUP",
     "difficulty": 50,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 480,
     "final_casting_time": 240,
@@ -242,7 +242,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_kreck_group') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_kreck_group') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -262,7 +262,7 @@
     "shape": "blast",
     "effect_str": "EOC_ARCANA_SUMMON_DARK_WYRM",
     "difficulty": 50,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 480,
     "final_casting_time": 240,
@@ -308,7 +308,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_dark_wyrm') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_dark_wyrm') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 11 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -330,7 +330,7 @@
     "energy_source": "STAMINA",
     "max_level": 10,
     "difficulty": 60,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "base_casting_time": 560,
     "final_casting_time": 280,
     "casting_time_increment": -28,
@@ -371,7 +371,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_crawling_things') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -392,7 +392,7 @@
     "effect_str": "EOC_ARCANA_SUMMON_LIVING_VORTEX",
     "energy_source": "STAMINA",
     "difficulty": 60,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 560,
     "final_casting_time": 280,
@@ -433,7 +433,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_living_vortex') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_living_vortex') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 12 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -454,7 +454,7 @@
     "effect_str": "EOC_ARCANA_SUMMON_SHAPESHIFTING_THING",
     "energy_source": "STAMINA",
     "difficulty": 80,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 720,
     "final_casting_time": 360,
@@ -495,7 +495,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_shapeshifting_thing') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 14 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_shapeshifting_thing') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 14 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -516,7 +516,7 @@
     "effect_str": "EOC_ARCANA_SUMMON_NETHER_HUNTSMAN",
     "energy_source": "STAMINA",
     "difficulty": 90,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 760,
     "final_casting_time": 380,
@@ -557,7 +557,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_nether_huntsman') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 15 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_nether_huntsman') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 15 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],
@@ -578,7 +578,7 @@
     "effect_str": "EOC_ARCANA_SUMMON_SERAPHIC_SHADE",
     "energy_source": "STAMINA",
     "difficulty": 140,
-    "skill": "magic",
+    "skill": "arcana_casting_skill",
     "max_level": 15,
     "base_casting_time": 1080,
     "final_casting_time": 540,
@@ -619,7 +619,7 @@
       {
         "if": {
           "math": [
-            "( rand(u_skill('magic') ) + rand(u_spell_level('arcana_summoning_seraphic_shade') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 23 "
+            "( rand(u_skill('arcana_casting_skill') ) + rand(u_spell_level('arcana_summoning_seraphic_shade') ) + rand(8) + rand(8) + (u_effect_intensity('effect_arcana_summoning_bonus_chance') * 5) ) > 23 "
           ]
         },
         "then": [ { "u_cast_spell": { "id": "arcana_summoning_successful_control" }, "loc": { "context_val": "summoning_loc" } } ],

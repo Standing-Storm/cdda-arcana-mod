@@ -1,6 +1,7 @@
 # Changes
 
 - Renamed spells for a more eldritch vibe
+- A new skill: Incantation! Arcana is used for crafting enchanted items and studying the basis of the occult, and incantation is used for actually performing magical rituals. 
 - Rebalancing of some effects (mostly to make them weaker)
 - Added magic_type and class traits for Arcane Blessings and Magic Signs, so they'll be categorized properly in the powers menu.
 - Learning sorcery is hard! Using a pattern scroll has a chance to fail, affected by your Arcana skill, so the choice is to keep the Magic Seals (which always work) or process them into a Pattern Scroll, which might teach you the magic but you could fail to learn it.

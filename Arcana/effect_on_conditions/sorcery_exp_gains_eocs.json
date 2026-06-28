@@ -1,0 +1,31 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_SORCERY_GAIN_EXP_ON_CAST",
+    "eoc_type": "EVENT",
+    "required_event": "spellcasting_finish",
+    "condition": {
+      "and": [
+        {
+          "u_has_any_trait": [ "VEIL_PARAGON_SORCERY", "PATTERN_SORCERY", "ARCANA_BLOOD_MAGIC", "ARCANA_SANGUINE_MARKS", "ARCANA_SUMMONING" ]
+        },
+        {
+          "or": [
+            { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
+            { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
+            { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
+            { "compare_string": [ "ARCANA_SANGUINE_MARKS", { "context_val": "school" } ] },
+            { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] }
+          ]
+        }
+      ]
+    },
+    "effect": [
+      {
+        "math": [
+          "u_skill_exp('arcana_casting_skill', 'format': 'raw') += 250 * (_difficulty / 10) * game_option('SKILL_TRAINING_SPEED')"
+        ]
+      }
+    ]
+  }
+]
