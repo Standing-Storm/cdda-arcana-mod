@@ -3,13 +3,13 @@
     "id": "arcana_pattern_sorcery_failure_chance",
     "type": "jmath_function",
     "num_args": 0,
-    "return": "clamp( ( ( (u_pain('type': 'perceived') / 200 ) + ( u_spell_difficulty(_spell_id) / 82 ) + ( ( u_spell_level(_spell_id) / 30 ) * -1) ) + ( ( u_skill('magic') / 25 ) * -1) + weariness_calcs() ), 0.005, 1)"
+    "return": "clamp( ( ( (u_pain('type': 'perceived') / 200 ) + ( u_spell_difficulty(_spell_id) / 82 ) + ( ( u_spell_level(_spell_id) / 30 ) * -1) ) + ( ( u_skill('arcana_casting_skill') / 25 ) * -1) + weariness_calcs() ), 0.005, 1)"
   },
   {
     "id": "arcana_magic_blessings_failure_chance",
     "type": "jmath_function",
     "num_args": 0,
-    "return": "clamp( ( (u_pain('type': 'perceived') / 150 ) + ( u_spell_difficulty(_spell_id) / 65 ) + ( ( u_spell_level(_spell_id) / 25 ) * -1) + ( ( u_skill('magic') / 20 ) * -1) + (u_effect_intensity('effect_veil_paragon_summoning_displeasure') > -1 ? ( u_effect_intensity('effect_veil_paragon_summoning_displeasure') * 0.04 ) : 0 ) + (u_effect_intensity('effect_arcana_wielding_veilblade') > -1 ? -5 : 0 ) ), 0, 1)"
+    "return": "clamp( ( (u_pain('type': 'perceived') / 150 ) + ( u_spell_difficulty(_spell_id) / 65 ) + ( ( u_spell_level(_spell_id) / 25 ) * -1) + ( ( u_skill('arcana_casting_skill') / 20 ) * -1) + (u_effect_intensity('effect_veil_paragon_summoning_displeasure') > -1 ? ( u_effect_intensity('effect_veil_paragon_summoning_displeasure') * 0.04 ) : 0 ) + (u_effect_intensity('effect_arcana_wielding_veilblade') > -1 ? -5 : 0 ) ), 0, 1)"
   },
   {
     "id": "arcana_blood_magic_failure_chance",
@@ -39,7 +39,7 @@
     "id": "arcana_pattern_scroll_learning_equation",
     "type": "jmath_function",
     "num_args": 0,
-    "return": "u_skill('magic') + ( rng(-5,5) + rng(-5,5) ) + min( ( ( u_val('intelligence') - 10) / 4 ), 0) + u_has_proficiency('prof_arcana_pattern_sorcery') + (u_has_proficiency('prof_arcana_pattern_sorcery_master') * 2)"
+    "return": "u_skill('arcana_casting_skill') + ( rng(-5,5) + rng(-5,5) ) + min( ( ( u_val('intelligence') - 10) / 4 ), 0) + u_has_proficiency('prof_arcana_pattern_sorcery') + (u_has_proficiency('prof_arcana_pattern_sorcery_master') * 2)"
   },
   {
     "id": "arcana_starting_trait_keeper_exemptions",
