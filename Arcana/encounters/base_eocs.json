@@ -44,11 +44,11 @@
         "then": { "u_message": "<global_val:Arcana_RandEnc_Trigger_Message>", "type": "info" }
       }
     ],
-    "false_effect": { "u_message": " Arcana random encounter has not met its conditions.", "type": "debug" }
+    "false_effect": { "u_message": "Arcana random encounter has not met its conditions.", "type": "debug" }
   },
   {
     "type": "effect_on_condition",
-    "id": "EOC_RandEnc_remove",
+    "id": "EOC_Arcana_RandEnc_remove",
     "recurrence": 200,
     "global": true,
     "condition": {
@@ -66,6 +66,17 @@
         "target_var": { "global_val": "Arcana_randenc_loc" }
       },
       { "math": [ "Arcana_RandEnc = 0" ] }
+    ],
+    "false_effect": [
+      { "u_message": "Current Arcana random encounter continues.", "type": "debug" },
+      {
+        "if": { "not": { "math": [ "time_since(u_timer_Arcana_RandEnc) > time('2 h')" ] } },
+        "then": [ { "u_message": "Random Encounter timer has not expired.", "type": "debug " } ]
+      },
+      {
+        "if": { "u_near_om_location": { "global_val": "Arcana_random_encounter_omt" }, "range": 2 },
+        "then": { "u_message": "You are too close to the Arcana Random Encounter timer OMT.", "type": "debug " }
+      }
     ]
   }
 ]
