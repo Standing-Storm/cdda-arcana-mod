@@ -15,7 +15,8 @@
             { "compare_string": [ "PATTERN_SORCERY", { "context_val": "school" } ] },
             { "compare_string": [ "VEIL_PARAGON_SORCERY", { "context_val": "school" } ] },
             { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
-            { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] }
+            { "compare_string": [ "ARCANA_SUMMONING", { "context_val": "school" } ] },
+            { "compare_string": [ "ARCANA_SANGUINE_MARKS", { "context_val": "school" } ] }
           ]
         }
       ]
@@ -48,7 +49,12 @@
             "else": {
               "if": {
                 "and": [
-                  { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] },
+                  {
+                    "or": [
+                      { "compare_string": [ "ARCANA_SANGUINE_MARKS", { "context_val": "school" } ] },
+                      { "compare_string": [ "ARCANA_BLOOD_MAGIC", { "context_val": "school" } ] }
+                    ]
+                  },
                   {
                     "not": { "u_has_any_effect": [ "effect_arcana_blood_magic_killed_human", "effect_arcana_blood_magic_killed" ] }
                   }

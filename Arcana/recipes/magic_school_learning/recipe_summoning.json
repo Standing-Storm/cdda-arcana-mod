@@ -47,7 +47,9 @@
           {
             "if": { "math": [ "has_var(_summoning_loc)" ] },
             "then": {
-              "if": { "math": [ "( rand(u_skill('magic') ) + u_arcana_summoning_counter_tracker + rand(8) + rand(8) ) > 14 " ] },
+              "if": {
+                "math": [ "( rand(u_skill('arcana_casting_skill') ) + u_arcana_summoning_counter_tracker + rand(8) + rand(8) ) > 14 " ]
+              },
               "then": [
                 {
                   "if": { "map_terrain_with_flag": "DIGGABLE", "loc": { "context_val": "summoning_loc" } },
@@ -76,7 +78,9 @@
                 },
                 { "math": [ "u_arcana_summoning_counter_tracker += 3" ] },
                 {
-                  "if": { "math": [ "( rand(u_skill('magic') ) + rand(u_arcana_summoning_counter_tracker) + rand(8) + rand(8) ) > 35 " ] },
+                  "if": {
+                    "math": [ "( rand(u_skill('arcana_casting_skill') ) + rand(u_arcana_summoning_counter_tracker) + rand(8) + rand(8) ) > 35 " ]
+                  },
                   "then": [
                     { "u_lose_trait": "ARCANA_NO_SUMMONING" },
                     { "u_add_trait": "ARCANA_SUMMONING" },

@@ -1,14 +1,6 @@
 [
   {
     "type": "effect_on_condition",
-    "id": "EOC_ARCANA_DRAGONBLOOD_LOAD_GIVE_MAGIC_TYPE",
-    "eoc_type": "EVENT",
-    "required_event": "game_load",
-    "condition": { "math": [ "u_spell_count('school': 'ARCANA_SANGUINE_MARKS') >= 1" ] },
-    "effect": [ { "u_add_trait": "ARCANA_SANGUINE_MARKS" } ]
-  },
-  {
-    "type": "effect_on_condition",
     "id": "EOC_ARCANA_SPELL_OBSOLETER",
     "eoc_type": "EVENT",
     "required_event": "game_load",
@@ -41,6 +33,34 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "EOC_ARCANA_DRAGONBLOOD_LOAD_GIVE_MAGIC_TYPE",
+    "eoc_type": "EVENT",
+    "required_event": "game_load",
+    "//": "Remove after 0.J",
+    "condition": { "math": [ "u_spell_count('school': 'ARCANA_SANGUINE_MARKS') >= 1" ] },
+    "effect": [ { "u_add_trait": "ARCANA_SANGUINE_MARKS" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_UPDATE_MAGIC_SKILL",
+    "eoc_type": "EVENT",
+    "required_event": "game_load",
+    "//": "Remove after 0.J",
+    "condition": { "math": [ "u_arcana_magic_skills_updated != 1" ] },
+    "effect": [
+      { "math": [ "u_arcana_magic_skills_updated = 1" ] },
+      { "math": [ "u_skill('arcana_casting_skill') = u_skill('magic')" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_UPDATE_MAGIC_SKILL_GAME_BEGIN",
+    "eoc_type": "EVENT",
+    "required_event": "game_start",
+    "//": "Remove after 0.J",
+    "effect": [ { "math": [ "u_arcana_magic_skills_updated = 1" ] } ]
+  },
+  {
     "id": "EOC_Arcana_RandEnc_RandEnc_Time_Catchup",
     "//": "Remove in 0.J",
     "eoc_type": "EVENT",

@@ -1,6 +1,7 @@
 # Changes
 
 - Renamed spells for a more eldritch vibe
+- A new skill: Incantation! Arcana is used for crafting enchanted items and studying the basis of the occult, and incantation is used for actually performing magical rituals. 
 - Rebalancing of some effects (mostly to make them weaker)
 - Added magic_type and class traits for Arcane Blessings and Magic Signs, so they'll be categorized properly in the powers menu.
 - Learning sorcery is hard! Using a pattern scroll has a chance to fail, affected by your Arcana skill, so the choice is to keep the Magic Seals (which always work) or process them into a Pattern Scroll, which might teach you the magic but you could fail to learn it.
@@ -9,7 +10,7 @@
   - Autolearning remains possible Innawood
 - Blood magic is now learnable by anyone! If you complete the recipes and unlock understanding of blood magic, then you can learn the spells from spellbooks. This has no chance to fail. 
 - You can pay the cost of Blood mage with sacrifice. Kill a chicken or a cow, use the blood to cast your spells without an HP cost. What's more, this makes your spells last even longer. And if you sacrifice a human...well, well, well...
-- Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Magic Signs (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed). Blood magic has no chance to fail--the HP cost is enough. Summoning also has no chance to fail but there *is* a chance you fail to control the summon when it arrives.
+- Similarly, chance for spells to fail when used.  This is primarily based on Difficulty vs spell level and on perceived pain, modified by your Arcana skill.  Arcane Blessings are harder to use than Patttern Sorcery (unless you're wielding the Veilblade, in which case Arcane Blessings always succeed). Blood magic has no chance to fail--the HP cost is enough. Summoning also has no chance to fail but there *is* a chance you fail to control the summon when it arrives.
 - Summoning is now its own magic type! You can play just a summoner if you want...but remember that summons can be difficult to control.  Do not call up what you can not put down. 
   - Summoning is now learnable! Learning summoning from first principles, by summoning random creatures until you get the hang of it, is perilous, however--take appropriate precautions. 
 - He From Beyond the Veil enforces his tenets--using summoning magic if you have sworn yourself to HFBTV will incur his displeasure, making using Arcane Blessings harder. This effect is greatly increased if you're post-threshold.
