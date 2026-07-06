@@ -105,6 +105,16 @@
   },
   {
     "type": "npc",
+    "id": "cleansing_flame_purifier_random_hunter",
+    "name_suffix": "Mage Hunter",
+    "class": "NC_MAGE_HUNTER",
+    "attitude": 0,
+    "mission": "GUARD_PATROL",
+    "chat": "TALK_CF_PURIFIER_PATROL",
+    "faction": "cleansing_flame"
+  },
+  {
+    "type": "npc",
     "id": "sanguine_order_apprentice_generic",
     "//": "Sanguine Order cannon fodder, in an area you're not supposed to be in.",
     "name_suffix": "Apprentice",

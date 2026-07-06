@@ -211,6 +211,9 @@
     "name": { "str": "Mage Hunter" },
     "job_description": "I am a hunter of otherworldly monsters and dangerous magic.",
     "common": false,
+    "bonus_str": { "rng": [ 0, 2 ] },
+    "bonus_dex": { "rng": [ 0, 2 ] },
+    "bonus_bravery": 10,
     "skills": [
       { "skill": "magic", "level": { "rng": [ 3, 7 ] } },
       { "skill": "cooking", "level": { "rng": [ 1, 5 ] } },

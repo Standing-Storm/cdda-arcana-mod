@@ -1,0 +1,23 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_PURIFIER_PATROL",
+    "dynamic_line": {
+      "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
+      "yes": { "u_male": "Greetings, Brother.  Our mission here is done.", "no": "Greeings, Sister.  Our mission here is done." },
+      "no": "Move along, wanderer.  Our mission here is done."
+    },
+    "responses": [
+      {
+        "text": "Keep the Flame.",
+        "topic": "TALK_DONE",
+        "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] }
+      },
+      {
+        "text": "Uh, sure, okay then.",
+        "topic": "TALK_DONE",
+        "condition": { "not": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] } }
+      }
+    ]
+  }
+]

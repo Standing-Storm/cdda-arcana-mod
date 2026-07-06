@@ -1,0 +1,43 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RandEnc_Arcana_Briarwitch_Wood_Ritual",
+    "recurrence": 79461,
+    "global": true,
+    "run_for_npcs": false,
+    "condition": { "math": [ "Arcana_RandEnc == 0" ] },
+    "effect": [
+      { "set_condition": "random_enc_condition", "condition": "is_day" },
+      { "u_message": "Arcana Briarwitch Wood Ritual encounter has triggered!", "type": "debug" },
+      { "set_string_var": "", "target_var": { "global_val": "Arcana_RandEnc_Trigger_Message" }, "i18n": true },
+      { "set_condition": "Arcana_random_enc_trigger_message_condition", "condition": { "math": [ " 0 == 1" ] } },
+      {
+        "run_eocs": "EOC_Arcana_RandEnc",
+        "variables": {
+          "omt": "forest_thick",
+          "map_update": "nest_RandEnc_Arcana_Briarwitch_Wood_Ritual",
+          "map_removal": "nest_RandEnc_Arcana_Briarwitch_Wood_Ritual_remove",
+          "chance": 25,
+          "days_till_spawn": 0
+        }
+      }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "nest_RandEnc_Arcana_Briarwitch_Wood_Ritual",
+    "//": "Adds a random encounter at this forest",
+    "object": {
+      "place_monster": [
+        { "monster": "mon_feral_briarwitch", "x": [ 6, 14 ], "y": [ 6, 14 ], "repeat": 4 },
+        { "monster": "mon_thornbear", "x": [ 6, 14 ], "y": [ 6, 14 ], "chance": 25 }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "nest_RandEnc_Arcana_Briarwitch_Wood_Ritual_remove",
+    "//": "removes a random encounter at the forest",
+    "object": { "set": [ { "square": "creature_remove", "x": 0, "y": 0, "x2": 23, "y2": 23 } ] }
+  }
+]
