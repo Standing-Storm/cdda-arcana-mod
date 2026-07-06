@@ -61,6 +61,7 @@
     "effect": [ { "math": [ "u_arcana_magic_skills_updated = 1" ] } ]
   },
   {
+    "type": "effect_on_condition",
     "id": "EOC_Arcana_RandEnc_RandEnc_Time_Catchup",
     "//": "Remove in 0.J",
     "eoc_type": "EVENT",
