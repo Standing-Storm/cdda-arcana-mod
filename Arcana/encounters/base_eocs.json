@@ -71,11 +71,11 @@
       { "u_message": "Current Arcana random encounter continues.", "type": "debug" },
       {
         "if": { "not": { "math": [ "time_since(u_timer_Arcana_RandEnc) > time('2 h')" ] } },
-        "then": [ { "u_message": "Random Encounter timer has not expired.", "type": "debug " } ]
+        "then": [ { "u_message": "Arcana Random Encounter timer has not expired.", "type": "debug" } ]
       },
       {
         "if": { "u_near_om_location": { "global_val": "Arcana_random_encounter_omt" }, "range": 2 },
-        "then": { "u_message": "You are too close to the Arcana Random Encounter timer OMT.", "type": "debug " }
+        "then": { "u_message": "You are too close to the Arcana Random Encounter timer OMT.", "type": "debug" }
       }
     ]
   }
