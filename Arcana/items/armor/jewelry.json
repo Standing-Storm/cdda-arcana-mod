@@ -31,7 +31,13 @@
     "flags": [ "NO_RELOAD", "NO_UNLOAD", "TARDIS" ],
     "charge_info": { "recharge_type": "periodic", "time": "1 h", "regenerate_ammo": true },
     "//": "Flame talisman and air talisman.  Each use has power equivalent to 350 mana.",
-    "use_action": { "type": "cast_spell", "spell_id": "arcana_item_amulet_exotic_empowered", "no_fail": true, "level": 0 }
+    "use_action": {
+      "type": "cast_spell",
+      "spell_id": "arcana_item_amulet_exotic_empowered",
+      "no_fail": true,
+      "level": 0,
+      "need_worn": true
+    }
   },
   {
     "id": "brooch_iridescent_empowered",
