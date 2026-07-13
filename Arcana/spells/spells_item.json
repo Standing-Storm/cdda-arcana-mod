@@ -61,7 +61,7 @@
     "message": "A burst of protective magic radiates from the brooch!",
     "effect": "spawn_item",
     "shape": "blast",
-    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
     "effect_str": "effect_arcana_iridescent_brooch",
     "extra_effects": [ { "id": "arcana_item_brooch_iridescent_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
