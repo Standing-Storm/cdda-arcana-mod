@@ -397,5 +397,17 @@
     ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
+  },
+  {
+    "id": "halo_brooch_effect",
+    "copy-from": "spell_base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "name": { "str": "guardian aura" },
+    "description": "A strange radiance permeating your body, adding to your defenses.",
+    "color": "white",
+    "passive_effects": [ { "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "ARMOR_ALL", "multiply": -0.2 } ] } ],
+    "max_worn": 1,
+    "extend": { "flags": [ "NO_TAKEOFF" ] }
   }
 ]

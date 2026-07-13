@@ -112,5 +112,14 @@
     "enchantments": [
       { "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "multiply": -0.2 }, { "value": "EVASION", "add": 0.15 } ] }
     ]
+  },
+  {
+    "id": "effect_arcana_iridescent_brooch",
+    "type": "effect_type",
+    "name": [ "Guardian Aura" ],
+    "desc": [ "A strange radiance permeating your body, adding to your defenses." ],
+    "apply_message": "You feel a momentary sense of security.",
+    "remove_message": "Your guardian aura dissipates.",
+    "enchantments": [ { "condition": "ALWAYS", "values": [ { "value": "ARMOR_ALL", "multiply": -0.15 } ] } ]
   }
 ]

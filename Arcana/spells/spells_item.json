@@ -62,12 +62,12 @@
     "effect": "spawn_item",
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "effect_str": "halo_brooch_effect",
+    "effect_str": "effect_arcana_iridescent_brooch",
     "extra_effects": [ { "id": "arcana_item_brooch_iridescent_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 198000,
-    "max_duration": 198000
+    "min_duration": 98000,
+    "max_duration": 168000
   },
   {
     "id": "arcana_item_brooch_iridescent_empowered_sleepiness",
@@ -77,8 +77,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -18,
-    "max_damage": -18,
+    "min_damage": -14,
+    "max_damage": -14,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "SLEEPINESS"
