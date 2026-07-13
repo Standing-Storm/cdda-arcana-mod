@@ -474,15 +474,15 @@
     "description": "Spawns the item needed to make the effects work.",
     "valid_targets": [ "self" ],
     "message": "A strange pulse from the amulet courses through your body!",
-    "effect": "spawn_item",
+    "effect": "attack",
     "shape": "blast",
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "effect_str": "halo_amulet_effect",
+    "effect_str": "effect_arcana_shrouded_amulet",
     "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 450000,
-    "max_duration": 450000
+    "min_duration": 180000,
+    "max_duration": 180000
   },
   {
     "id": "arcana_item_amulet_exotic_empowered_sleepiness",
@@ -492,8 +492,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -14,
-    "max_damage": -14,
+    "min_damage": -10,
+    "max_damage": -10,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "SLEEPINESS"

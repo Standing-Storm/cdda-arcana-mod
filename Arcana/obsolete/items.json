@@ -358,5 +358,25 @@
       }
     ],
     "flags": [ "NO_SALVAGE", "OUTER", "ALLOWS_NATURAL_ATTACKS", "TRADER_KEEP_EQUIPPED", "STURDY", "RELIC_PINK" ]
+  },
+  {
+    "id": "halo_amulet_effect",
+    "//": "remove after 0.J",
+    "copy-from": "spell_base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "name": { "str": "shrouded aura" },
+    "description": "A strange radiance permeating your body, obscuring your life force from the undead.  You will be invisible to them, but not to other creatures, and they will still be able to hear and smell you.",
+    "color": "white",
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
+        "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
+      }
+    ],
+    "max_worn": 1,
+    "extend": { "flags": [ "NO_TAKEOFF" ] }
   }
 ]
