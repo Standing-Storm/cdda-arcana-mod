@@ -378,5 +378,24 @@
     ],
     "max_worn": 1,
     "extend": { "flags": [ "NO_TAKEOFF" ] }
+  },
+  {
+    "id": "halo_flute_effect",
+    "copy-from": "spell_base",
+    "type": "ITEM",
+    "subtypes": [ "ARMOR", "ARTIFACT" ],
+    "name": { "str": "elusive aura" },
+    "description": "A strange radiance permeating your body, enhancing your movement and reflexes.",
+    "color": "white",
+    "passive_effects": [
+      {
+        "has": "WORN",
+        "condition": "ALWAYS",
+        "values": [ { "value": "MOVE_COST", "multiply": -0.4 }, { "value": "EVASION", "add": 0.25 } ],
+        "ench_effects": [ { "effect": "halo_flute_effect", "intensity": 1 } ]
+      }
+    ],
+    "max_worn": 1,
+    "extend": { "flags": [ "NO_TAKEOFF" ] }
   }
 ]

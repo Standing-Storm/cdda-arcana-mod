@@ -100,5 +100,17 @@
         "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
       }
     ]
+  },
+  {
+    "id": "effect_arcana_halo_quickened_stinger",
+    "type": "effect_type",
+    "name": [ "Elusive Aura" ],
+    "desc": [ "A strange radiance permeating your body, enhancing your movement and reflexes." ],
+    "apply_message": "A jolt of energy passes through your body.",
+    "remove_message": "Your elusive aura dissipates.",
+    "removes_effects": [ "downed", "bouldering", "grabbed", "lack_sleep", "sleep_deprived" ],
+    "enchantments": [
+      { "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "multiply": -0.2 }, { "value": "EVASION", "add": 0.15 } ] }
+    ]
   }
 ]

@@ -18,5 +18,10 @@
     "name": [ "" ],
     "desc": [ "" ],
     "removes_effects": [ "onfire", "corroding" ]
+  },
+  {
+    "type": "effect_type",
+    "id": "halo_flute_effect",
+    "//": "Effectively combines some of the perks of Free Action and yellow potion."
   }
 ]

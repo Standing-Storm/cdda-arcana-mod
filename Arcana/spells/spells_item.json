@@ -2260,15 +2260,15 @@
     "description": "Spawns the item needed to make the effects work.",
     "valid_targets": [ "self" ],
     "message": "A jolt of energy arcs through your body from the flute!",
-    "effect": "spawn_item",
+    "effect": "attack",
     "shape": "blast",
-    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "effect_str": "halo_flute_effect",
+    "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DURATION" ],
+    "effect_str": "effect_arcana_halo_quickened_stinger",
     "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_sleepiness", "hit_self": true } ],
     "min_damage": 1,
     "max_damage": 1,
-    "min_duration": 522000,
-    "max_duration": 522000
+    "min_duration": 45000,
+    "max_duration": 115000
   },
   {
     "id": "arcana_item_stinger_flute_empowered_sleepiness",
@@ -2278,8 +2278,8 @@
     "valid_targets": [ "self" ],
     "message": "",
     "flags": [ "SILENT", "NO_HANDS", "NO_LEGS" ],
-    "min_damage": -16,
-    "max_damage": -16,
+    "min_damage": -6,
+    "max_damage": -6,
     "effect": "recover_energy",
     "shape": "blast",
     "effect_str": "SLEEPINESS"
