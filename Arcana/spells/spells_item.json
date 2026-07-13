@@ -165,7 +165,7 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT", "RANDOM_DAMAGE" ],
     "min_damage": 25,
     "max_damage": 50,
-    "damage_type": "heat",
+    "damage_type": "biological",
     "min_aoe": 8,
     "max_aoe": 8
   },
