@@ -145,12 +145,6 @@
   },
   {
     "type": "effect_type",
-    "id": "halo_flute_effect",
-    "//": "Effectively combines some of the perks of Free Action and yellow potion.",
-    "removes_effects": [ "downed", "bouldering", "grabbed", "lack_sleep", "sleep_deprived" ]
-  },
-  {
-    "type": "effect_type",
     "id": "life_sign_suppression_debuff",
     "//": "This makes you health go down slowly while LSS is in use.",
     "base_mods": { "health_min": [ -1 ], "health_tick": [ 60 ], "h_mod_min": [ -1 ], "h_mod_tick": [ 60 ] }

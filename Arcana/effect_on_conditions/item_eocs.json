@@ -32,5 +32,18 @@
     "required_event": "character_loses_effect",
     "condition": { "and": [ { "compare_string": [ "arcana_potion_bonus_health", { "context_val": "effect" } ] } ] },
     "effect": [ { "u_add_effect": "arcana_potion_bonus_health_wearoff_penalty", "duration": "14 days" } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_LOSE_SHROUDED_AURA_WHEN_ATTACKING_ZOMBIE",
+    "eoc_type": "EVENT",
+    "required_event": "monster_takes_damage",
+    "condition": "has_beta",
+    "effect": [
+      {
+        "if": { "and": [ { "u_has_species": "ZOMBIE" }, { "npc_has_effect": "effect_arcana_shrouded_amulet" } ] },
+        "then": [ { "npc_lose_effect": "effect_arcana_shrouded_amulet" } ]
+      }
+    ]
   }
 ]
