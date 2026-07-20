@@ -4,7 +4,8 @@
     "id": "effect_briarwitch_slow_bleeding",
     "name": [ "" ],
     "desc": [ "" ],
-    "flags": [ "BLEEDSLOW2" ]
+    "remove_message": "The roots and vines wither up and die.",
+    "enchantments": [ { "values": [ { "value": "BLEEDING_RATE", "multiply": -0.5 } ] } ]
   },
   {
     "type": "effect_type",
