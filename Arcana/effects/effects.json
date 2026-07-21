@@ -1119,7 +1119,7 @@
     "id": "effect_arcana_magic_heal_gradually_over_time_reduce_bleeding_display",
     "name": [ "Balm of Nature" ],
     "desc": [ "You are healing slowly over time." ],
-    "flags": [ "BLEEDSLOW2" ]
+    "enchantments": [ { "values": [ { "value": "BLEEDING_RATE", "multiply": -0.5 } ] } ]
   },
   {
     "type": "effect_type",

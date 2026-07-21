@@ -310,6 +310,7 @@
       {
         "values": [
           { "value": "METABOLISM", "multiply": 0.5 },
+          { "value": "BLEEDING_RATE", "multiply": -0.333 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1.0 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.25 },
           { "value": "STAMINA_REGEN_MOD", "add": 0.666 },
@@ -322,7 +323,7 @@
     ],
     "social_modifiers": { "persuade": -25, "intimidate": 25 },
     "vitamin_rates": [ [ "blood", -20 ], [ "redcells", -20 ] ],
-    "flags": [ "PRED2", "BLEEDSLOW1" ]
+    "flags": [ "PRED2" ]
   },
   {
     "type": "mutation",
@@ -343,6 +344,7 @@
       {
         "values": [
           { "value": "METABOLISM", "multiply": 0.75 },
+          { "value": "BLEEDING_RATE", "multiply": -0.666 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 1.25 },
           { "value": "STOMACH_SIZE_MULTIPLIER", "multiply": 0.375 },
           { "value": "STAMINA_REGEN_MOD", "add": 0.75 },
@@ -359,7 +361,7 @@
     "kcal": true,
     "ranged_mutation": { "type": "mut_dragonfire", "message": "You loose a tongue of flame from your mouth." },
     "vitamin_rates": [ [ "blood", -20 ], [ "redcells", -20 ] ],
-    "flags": [ "ARCANE_FOG_IMMUNE", "PRED3", "BLEEDSLOW2" ]
+    "flags": [ "ARCANE_FOG_IMMUNE", "PRED3" ]
   },
   {
     "type": "mutation",
