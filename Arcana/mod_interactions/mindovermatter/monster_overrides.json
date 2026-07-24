@@ -1,0 +1,33 @@
+[
+  {
+    "id": "mon_spirit_of_fire",
+    "copy-from": "mon_spirit_of_fire",
+    "type": "MONSTER",
+    "extend": { "flags": [ "TELEKIN_PUSH_PULL_IMMUNE" ] }
+  },
+  {
+    "id": "mon_archon",
+    "copy-from": "mon_archon",
+    "type": "MONSTER",
+    "extend": { "flags": [ "TELEKIN_PUSH_PULL_IMMUNE" ] }
+  },
+  {
+    "id": "mon_seraphic_shade",
+    "copy-from": "mon_seraphic_shade",
+    "type": "MONSTER",
+    "extend": { "flags": [ "TELEKIN_PUSH_PULL_IMMUNE" ] }
+  },
+  {
+    "id": "mon_seraphic_shade_fake",
+    "copy-from": "mon_seraphic_shade_fake",
+    "type": "MONSTER",
+    "extend": { "flags": [ "TELEKIN_PUSH_PULL_IMMUNE" ] }
+  },
+  {
+    "id": "mon_mech_arcana_boss",
+    "copy-from": "mon_mech_arcana_boss",
+    "//": "Technically it weight 750 kg but in an anomalous way that a telekinetic would not be able to exploit",
+    "type": "MONSTER",
+    "extend": { "flags": [ "TELEKIN_PUSH_PULL_IMMUNE" ] }
+  }
+]
