@@ -530,6 +530,7 @@
     "symbol": ";",
     "looks_like": "survivormap",
     "color": "white",
+    "flags": [ "PRESERVE_SPAWN_LOC", "LOCATION_PRECISE_CLOSEST_CITY" ],
     "use_action": {
       "type": "reveal_map",
       "radius": 180,
