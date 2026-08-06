@@ -59,5 +59,14 @@
     "required_event": "game_start",
     "//": "Remove after 0.J",
     "effect": [ { "math": [ "u_arcana_magic_skills_updated = 1" ] } ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_Arcana_RandEnc_RandEnc_Time_Catchup",
+    "//": "Remove in 0.J",
+    "eoc_type": "EVENT",
+    "required_event": "game_begin",
+    "condition": { "and": [ "u_is_avatar", { "not": { "math": [ "has_var(u_timer_Arcana_RandEnc)" ] } } ] },
+    "effect": { "math": [ "u_timer_Arcana_RandEnc = time('now')" ] }
   }
 ]

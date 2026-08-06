@@ -1,0 +1,77 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_RandEnc_Arcana_Cleansing_Flame_Hunting_Party",
+    "recurrence": 66461,
+    "global": true,
+    "run_for_npcs": false,
+    "condition": { "math": [ "Arcana_RandEnc == 0" ] },
+    "effect": [
+      { "set_condition": "random_enc_condition", "condition": "is_day" },
+      { "u_message": "Arcana Cleansing Flame Hunt encounter has triggered!", "type": "debug" },
+      {
+        "set_string_var": "You see a bright flash of light in the distance.",
+        "target_var": { "global_val": "Arcana_RandEnc_Trigger_Message" },
+        "i18n": true
+      },
+      {
+        "set_condition": "Arcana_random_enc_trigger_message_condition",
+        "condition": { "and": [ "u_is_outside", { "math": [ "u_val('pos_z') >= 0" ] } ] }
+      },
+      {
+        "if": { "math": [ "rand(1) == 0" ] },
+        "then": {
+          "run_eocs": "EOC_Arcana_RandEnc",
+          "variables": {
+            "omt": "field",
+            "map_update": "nest_RandEnc_Arcana_Cleansing_Flame_Hunting_Party",
+            "map_removal": "nest_RandEnc_Arcana_Cleansing_Flame_Hunting_Party_remove",
+            "chance": 20,
+            "days_till_spawn": 0
+          }
+        },
+        "else": {
+          "run_eocs": "EOC_Arcana_RandEnc",
+          "variables": {
+            "omt": "forest",
+            "map_update": "nest_RandEnc_Arcana_Cleansing_Flame_Hunting_Party",
+            "map_removal": "nest_RandEnc_Arcana_Cleansing_Flame_Hunting_Party_remove",
+            "chance": 20,
+            "days_till_spawn": 0
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "nest_RandEnc_Arcana_Cleansing_Flame_Hunting_Party",
+    "//": "Adds a random encounter at this location",
+    "object": {
+      "place_monster": [ { "group": "GROUP_NETHER_REALITY_TEAR_FIELD", "x": [ 12, 23 ], "y": [ 12, 23 ], "repeat": [ 4, 6 ] } ],
+      "place_npcs": [
+        {
+          "class": "cleansing_flame_purifier_random_hunter",
+          "x": [ 2, 3 ],
+          "y": [ 2, 3 ],
+          "unique_id": "cleansing_flame_purifier_random_hunter_01"
+        },
+        {
+          "class": "cleansing_flame_purifier_random_hunter",
+          "x": [ 4, 5 ],
+          "y": [ 4, 5 ],
+          "unique_id": "cleansing_flame_purifier_random_hunter_02"
+        }
+      ]
+    }
+  },
+  {
+    "type": "mapgen",
+    "update_mapgen_id": "nest_RandEnc_Arcana_Cleansing_Flame_Hunting_Party_remove",
+    "//": "removes a random encounter at the location",
+    "object": {
+      "remove_npcs": [ { "class": "cleansing_flame_purifier_random_hunter", "x": [ 0, 23 ], "y": [ 0, 23 ] } ],
+      "set": [ { "square": "creature_remove", "x": 0, "y": 0, "x2": 23, "y2": 23 } ]
+    }
+  }
+]
