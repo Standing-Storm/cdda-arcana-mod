@@ -10,5 +10,11 @@
     "id": "EOC_CONDITION_ARCANA_BOIL_TARGET_BLOOD_XE",
     "condition": { "math": [ "0 == 1" ] },
     "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL",
+    "condition": { "math": [ "1 == 1" ] },
+    "effect": [  ]
   }
 ]

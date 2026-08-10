@@ -23,5 +23,17 @@
       ]
     },
     "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL",
+    "condition": {
+      "or": [
+        {
+          "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "HOMULLUS", "IERDE", "SALAMANDER", "SYLPH", "UNDINE", "GRACKEN", "VAMPIRE" ]
+        }
+      ]
+    },
+    "effect": [  ]
   }
 ]

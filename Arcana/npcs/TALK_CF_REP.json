@@ -588,7 +588,7 @@
       },
       {
         "text": "I'm not sure how it'd help protect this place.",
-        "condition": { "math": [ "u_skill('magic')", ">=", "2" ] },
+        "condition": { "math": [ "u_skill('magic')", ">=", "4" ] },
         "switch": true,
         "topic": "TALK_CF_REP_MISSION_1_HOW"
       },
@@ -740,21 +740,39 @@
       {
         "text": "Magic?  I'm still not sure I can believe that.",
         "condition": {
-          "not": {
-            "u_has_any_trait": [
-              "PROF_ARCANIST",
-              "PROF_ARCANIST2",
-              "PROF_CLEANSINGFLAME",
-              "PROF_CLEANSINGFLAME2",
-              "PROF_SANGUINE",
-              "PROF_CHALICE",
-              "PROF_CHALICE2",
-              "THRESH_VEIL",
-              "THRESH_DRAGONBLOOD"
-            ]
-          }
+          "and": [
+            {
+              "not": {
+                "u_has_any_trait": [
+                  "PROF_ARCANIST",
+                  "PROF_ARCANIST2",
+                  "PROF_CLEANSINGFLAME",
+                  "PROF_CLEANSINGFLAME2",
+                  "PROF_SANGUINE",
+                  "PROF_CHALICE",
+                  "PROF_CHALICE2",
+                  "THRESH_VEIL",
+                  "THRESH_DRAGONBLOOD"
+                ]
+              }
+            },
+            { "math": [ "u_skill('magic')", "<=", "2" ] },
+            { "not": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" } }
+          ]
         },
         "topic": "TALK_CF_REP_MAGIC"
+      },
+      {
+        "text": "Surely magic is not so dangerous if handled properly?",
+        "topic": "TALK_CF_REP_MAGIC_DANGER",
+        "condition": { "math": [ "u_skill('magic')", ">=", "3" ] }
+      },
+      {
+        "text": "What sort of magic, and what sort of monsters?",
+        "topic": "TALK_CF_REP_XE_SUPERNATURAL",
+        "condition": {
+          "and": [ { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" }, { "mod_is_loaded": "xedra_evolved" } ]
+        }
       },
       { "text": "I see.", "topic": "TALK_CF_REP" }
     ]
