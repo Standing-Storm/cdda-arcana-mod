@@ -588,7 +588,7 @@
       },
       {
         "text": "I'm not sure how it'd help protect this place.",
-        "condition": { "or": [ { "u_has_effect": "cf_sofia_notes_given" }, { "math": [ "u_skill('magic')", ">=", "1" ] } ] },
+        "condition": { "math": [ "u_skill('magic')", ">=", "2" ] },
         "switch": true,
         "topic": "TALK_CF_REP_MISSION_1_HOW"
       },
@@ -675,7 +675,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_WHERE",
-    "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of any church, hof, or other such place sympathetic to our cause.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of many of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place abandoned at some point during the chaos.",
+    "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of a church or other holy place sympathetic to our cause.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of many of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place abandoned at some point during the chaos.",
     "responses": [
       {
         "text": "What did you mean by heathen?",
@@ -719,36 +719,14 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_ARCANE_2",
-    "dynamic_line": {
-      "u_has_effect": "cf_sofia_notes_given",
-      "yes": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  The acolyte I took those notes from, the ones I gave you, learned the importance of caution the hard way, and did not live to benefit from that experience.  That is why we have resorted to extreme measures to deal with dangerous relics in the past.",
-      "no": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  If it means containment, or destruction, so be it.  I prefer instead to teach others how to handle such safely, for caution is a lesson many learn the hard way, and few survive such experiences."
-    },
+    "dynamic_line": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  If it means containment, or destruction, so be it.  I prefer instead to teach others how to handle such safely, for caution is a lesson many learn the hard way, and few survive such experiences.  There are many that we have to resort to extreme measures to deal with who would have considered themselves careful, had they lived to regret their mistakes.",
     "responses": [ { "text": "Alright…", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_ARCANE",
-    "dynamic_line": {
-      "u_has_effect": "cf_sofia_notes_given",
-      "yes": "Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  There is a logic to it, and I hope if you attempt to understand it yourself you'll be cautious in your efforts.",
-      "no": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.  Here.  This may help you make sense of what we've had to deal with, to some extent."
-    },
-    "responses": [
-      {
-        "text": "I see.  I think…",
-        "switch": true,
-        "topic": "TALK_CF_REP",
-        "condition": { "u_has_effect": "cf_sofia_notes_given" }
-      },
-      {
-        "text": "O …kay.  I see.  I think…",
-        "switch": true,
-        "default": true,
-        "topic": "TALK_CF_REP",
-        "effect": [ { "u_spawn_item": "book_magicfordummies" }, { "u_add_effect": "cf_sofia_notes_given", "duration": "PERMANENT" } ]
-      }
-    ]
+    "dynamic_line": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.",
+    "responses": [ { "text": "I see.  I think…", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -784,21 +762,8 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_MAGIC",
-    "dynamic_line": {
-      "u_has_effect": "cf_sofia_notes_given",
-      "yes": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  But it's useful to remind us to treat even the items we're familiar with cautiously, and never make the assumption that we understand enough to make a rash mistake.",
-      "no": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  Here.  This may prove better than trying to toy with the unknown unaided."
-    },
-    "responses": [
-      { "text": "…", "switch": true, "topic": "TALK_CF_REP", "condition": { "u_has_effect": "cf_sofia_notes_given" } },
-      {
-        "text": "Er.  Thanks, I think.",
-        "switch": true,
-        "default": true,
-        "topic": "TALK_CF_REP",
-        "effect": [ { "u_spawn_item": "book_magicfordummies" }, { "u_add_effect": "cf_sofia_notes_given", "duration": "PERMANENT" } ]
-      }
-    ]
+    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  I caution you, should you find any arcane materials, to avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.",
+    "responses": [ { "text": "…", "topic": "TALK_CF_REP" }, { "text": "Er.  Thanks, I think.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
