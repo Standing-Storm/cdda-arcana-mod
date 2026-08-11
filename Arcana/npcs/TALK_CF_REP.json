@@ -780,8 +780,17 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_MAGIC",
-    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane, when it's something effects we use with only enough comprehension to use safely.  Perhaps calling it such when there is an order to it, a logic of its own, may be incorrect as well.  I caution you, should you find any arcane materials, to avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.",
+    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane, when we make only minimal use of it ourselves.  Perhaps calling it such is an attempt to impose an order on something that is fundamentally beyond human comprehension.  I caution you, should you find any arcane materials, to avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.  Fire is a useful tool but it can never be completely controlled.",
     "responses": [ { "text": "…", "topic": "TALK_CF_REP" }, { "text": "Er.  Thanks, I think.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_MAGIC_DANGER",
+    "dynamic_line": "*gives you a long look. \"It is not so simple.  Magic has rules, but they are not the rigid rules of human law.  The malefactors of the Sanguine Order claimed that they knew the rules and could avoid any pitfalls and look where it got them?  Dead, as surely as any victim of <the_cataclysm>\"",
+    "responses": [
+      { "text": "Perhaps.  Anyway…", "topic": "TALK_CF_REP" },
+      { "text": "Er.  Thanks, I think.", "topic": "TALK_CF_REP" }
+    ]
   },
   {
     "type": "talk_topic",
