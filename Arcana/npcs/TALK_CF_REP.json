@@ -452,16 +452,16 @@
       { "text": "You are correct.  I'm not here for a fight.", "topic": "TALK_CF_REP_SANGUINE_MOTIVE_1" },
       { "text": "My reasons are my own.", "topic": "TALK_CF_REP_SANGUINE_MOTIVE_2" },
       {
-        "text": "[ATTACK] To finish what my fellows started.  I need no tricks to put your kind down.",
+        "text": "[ATTACK] To finish what my fellows started!  I need no tricks to put your kind down.",
         "topic": "TALK_DONE",
-        "effect": [ { "u_faction_rep": -30 }, "insult_combat" ]
+        "effect": [ { "u_faction_rep": -100 }, "insult_combat" ]
       }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_SANGUINE_MOTIVE_1",
-    "dynamic_line": "So I see.  If you are here with honest intent, I can guide you.  Let us set things right.",
+    "dynamic_line": "So I see.  I am willing to believe you, for now, but remember that we will not let our guard down.",
     "responses": [
       {
         "text": "We'll see what can be done.",
@@ -473,7 +473,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_SANGUINE_MOTIVE_2",
-    "dynamic_line": "I am willing to trust you, if you prove yourself.  Your reasons are your own, but remember that we will not let our guard down.",
+    "dynamic_line": "Your own?  A dangerous line to take, here, among us.  Still, there are precious few humans left and I won't kill one without reason.  I will give oyu the benefit of the doubt, for now.",
     "responses": [
       {
         "text": "Alright.",
