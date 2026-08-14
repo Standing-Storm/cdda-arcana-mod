@@ -54,7 +54,7 @@
   {
     "id": "TALK_CF_AUX_MAGE_WHO",
     "type": "talk_topic",
-    "dynamic_line": "A student, basically.  Of the same sort of phenomena that the people here have studied.  I would prefer such knowledge be shared rather than hoarded, though.",
+    "dynamic_line": "A student, basically.  Of the same sort of phenomena that the people here have studied.  Unlike them, I would prefer such knowledge be shared rather than hoarded, though.",
     "responses": [
       { "text": "What sorts of phenomena are you familiar with?", "topic": "TALK_CF_AUX_MAGE_PHENOMENA" },
       {
@@ -88,8 +88,8 @@
     "id": "TALK_CF_AUX_MAGE_HOARD",
     "dynamic_line": {
       "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
-      "yes": "I mean no offense by that.  The people here have been welcoming to an extent far beyond any other arcanist sect I have run into in the past.  It's only just, well, Jonathan and the others still seem rather reluctant to bring the others together, and help teach them.",
-      "no": "That is the reputation the Cleansing Flame has developed among some scholars.  Their approach towards the arcane was so variable, so unpredictable.  The community gathered here is the most welcoming I've seen in a long time, but even they keep their knowledge close to their heart.  It doesn't feel like the best way."
+      "yes": "I mean no offense by that.  The people here have been welcoming to an extent far beyond any other arcanist sect I have run into in the past.  It's only just, well, Jonathan and the others still seem rather reluctant to bring the others together, and help teach them.  We could do so much more if we could pool our knowledge and techniques.",
+      "no": "That is the reputation the Cleansing Flame has developed among some scholars.  Their approach towards the arcane was so variable, so unpredictable, you never knew if they were going to warn you or try to burn you at the stake.  The community gathered here is the most welcoming I've seen in a long time, but even they keep their knowledge close to their heart.  It doesn't feel like the best way."
     },
     "responses": [
       {

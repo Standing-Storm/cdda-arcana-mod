@@ -527,12 +527,15 @@
     "id": "TALK_CF_REP_MERCHANT_MOTIVE",
     "dynamic_line": {
       "u_has_trait": "PROF_SANGUINE",
-      "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  Perhaps that means you can be trusted.  If your intent remains honest, we need not be enemies.  But we shall see.",
+      "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  You walked willingly here like a lamb to the slaughter.  Well.  We are hunters, not murderers, and enough humans have died already.  You are alone against many.  But despite the crimes of your order, you came here alone.  Perhaps you're different.  We will see.",
       "no": "Then hopefully this means we need not be enemies.  The gods ensured that mortal means would lead us to meet.  Remind us of our shared humanity, perhaps.  We shall see if this holds true."
     },
     "responses": [
+      { "text": "Indeed we will.", "switch": true, "condition": { "u_has_trait": "PROF_SANGUINE" }, "topic": "TALK_CF_REP" },
       {
         "text": "We'll see.",
+        "switch": true,
+        "default": true,
         "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
         "topic": "TALK_CF_REP"
       }
@@ -675,7 +678,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_WHERE",
-    "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of a church or other holy place sympathetic to our cause.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of many of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place abandoned at some point during the chaos.",
+    "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of a holy place sympathetic to our cause, much like this church.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of some of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place had been abandoned at some point during the chaos.",
     "responses": [
       {
         "text": "What did you mean by heathen?",
@@ -692,6 +695,12 @@
     "dynamic_line": "Our order was composed of people from various religions.  Not only Abrahamic ones of various sorts, but those that would be considered pagan.  Asatruan, in my case.  Over time our practices mingled, a shared influence affecting our approach to the arcane.",
     "responses": [
       {
+        "text": "You have sorcerers among you?",
+        "topic": "TALK_CF_REP_XE_FAIR_FOLK_ASK_SORCERERS",
+        "switch": true,
+        "condition": { "and": [ { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK" }, { "mod_is_loaded": "xedra_evolved" } ] }
+      },
+      {
         "text": "And what approach is that?",
         "condition": {
           "or": [
@@ -706,26 +715,42 @@
                 "THRESH_DRAGONBLOOD"
               ]
             },
-            { "math": [ "u_skill('magic')", ">=", "1" ] }
+            { "math": [ "u_skill('magic')", ">=", "3" ] }
           ]
         },
         "switch": true,
         "topic": "TALK_CF_REP_ARCANE_2"
       },
-      { "text": "What do you mean, arcane?", "switch": true, "default": true, "topic": "TALK_CF_REP_ARCANE_2" },
+      { "text": "What do you mean, arcane?", "switch": true, "default": true, "topic": "TALK_CF_REP_ARCANE" },
       { "text": "…", "topic": "TALK_CF_REP" }
     ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_ARCANE_2",
-    "dynamic_line": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  If it means containment, or destruction, so be it.  I prefer instead to teach others how to handle such safely, for caution is a lesson many learn the hard way, and few survive such experiences.  There are many that we have to resort to extreme measures to deal with who would have considered themselves careful, had they lived to regret their mistakes.",
-    "responses": [ { "text": "Alright…", "topic": "TALK_CF_REP" } ]
+    "dynamic_line": "There are many approaches to handling these forces.  Some have chosen recklessness, as though it is a drug to be abused.  Others, superstitious faith and worship of powers that do not belong in our world.  We seek to study these anomalies cautiously, and keep others safe from more dangerous artifacts if we must.  If it means containment, or destruction, so be it.  I prefer instead to teach others how to handle such safely, for caution is a lesson many learn the hard way, and few survive such experiences.  There are many that we have had to resort to extreme measures to deal with who would have considered themselves careful, had they lived to regret their mistakes.",
+    "responses": [
+      {
+        "text": "Idiots, the lot of them.",
+        "topic": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
+        "condition": { "math": [ "u_skill('magic')", ">=", "7" ] }
+      },
+      { "text": "Alright…", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
+    "dynamic_line": "*narrows her eyes.  \"Perhaps.  And perhaps it's more dangerous than you believe.  Tools and trinkets are one thing, actually using the arcane is another.  The blood mages and the Keepers both thought they could control the power they wielded and both of their orders are shattered.  Their practitioners are dead and their are strongholds in ruins.  You think you can succeed where they failed?",
+    "responses": [
+      { "text": "Well, perhaps I should be more careful.", "topic": "TALK_CF_REP" },
+      { "text": "Yes, obviously.", "topic": "TALK_CF_REP_ATTACK_HOSTILE" }
+    ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_ARCANE",
-    "dynamic_line": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical, even if there is some manner of logic to it.",
+    "dynamic_line": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical.",
     "responses": [ { "text": "I see.  I think…", "topic": "TALK_CF_REP" } ]
   },
   {
@@ -769,7 +794,7 @@
       },
       {
         "text": "What sort of magic, and what sort of monsters?",
-        "topic": "TALK_CF_REP_XE_SUPERNATURAL",
+        "topic": "TALK_CF_REP_XE_WHAT_SUPERNATURAL",
         "condition": {
           "and": [ { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" }, { "mod_is_loaded": "xedra_evolved" } ]
         }
@@ -780,16 +805,25 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_MAGIC",
-    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane, when we make only minimal use of it ourselves.  Perhaps calling it such is an attempt to impose an order on something that is fundamentally beyond human comprehension.  I caution you, should you find any arcane materials, to avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.  Fire is a useful tool but it can never be completely controlled.",
+    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane when we make only minimal use of it ourselves.  Perhaps calling it such is an attempt to impose an order on something that is fundamentally beyond human comprehension, regardless of its laws we think we understand.  I warn you, should you find any arcane materials, avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.  Fire is a useful tool but it can never be completely controlled.",
     "responses": [ { "text": "…", "topic": "TALK_CF_REP" }, { "text": "Er.  Thanks, I think.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_MAGIC_DANGER",
-    "dynamic_line": "*gives you a long look. \"It is not so simple.  Magic has rules, but they are not the rigid rules of human law.  The malefactors of the Sanguine Order claimed that they knew the rules and could avoid any pitfalls and look where it got them?  Dead, as surely as any victim of <the_cataclysm>\"",
+    "dynamic_line": "*gives you a long look. \"It's not so simple.  Magic has rules, but they're not the rigid rules of human law.  The malefactors of the Sanguine Order claimed that they knew the rules and could avoid any pitfalls, and look where it got them?  Dead, as surely as any victim of <the_cataclysm>\"",
     "responses": [
       { "text": "Perhaps.  Anyway…", "topic": "TALK_CF_REP" },
-      { "text": "Er.  Thanks, I think.", "topic": "TALK_CF_REP" }
+      {
+        "text": "They were idiots.  I can handle myself.",
+        "topic": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
+        "condition": { "math": [ "u_skill('magic')", ">=", "7" ] }
+      },
+      {
+        "text": "They were idiots.  I can handle myself.",
+        "topic": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
+        "condition": { "not": { "u_has_any_trait": [ "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ] } }
+      }
     ]
   },
   {
@@ -905,5 +939,11 @@
       },
       { "text": "It's fine, never mind.", "topic": "TALK_CF_REP" }
     ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_ATTACK_HOSTILE",
+    "dynamic_line": "*shakes her head.  \"You are no better than the others.  This is a mercy.\"",
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "hostile" } ]
   }
 ]

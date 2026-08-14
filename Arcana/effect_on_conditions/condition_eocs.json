@@ -14,7 +14,13 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL",
-    "condition": { "math": [ "1 == 1" ] },
+    "condition": { "math": [ "0 == 1" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK",
+    "condition": { "math": [ "0 == 1" ] },
     "effect": [  ]
   }
 ]
