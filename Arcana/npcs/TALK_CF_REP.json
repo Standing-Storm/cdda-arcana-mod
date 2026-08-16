@@ -10,7 +10,7 @@
         "yes": {
           "u_has_effect": "sofia_motive_explained",
           "yes": "Greetings.  You are welcome here, so long as you cause no trouble.",
-          "no": "Greetings.  I know you are, or were, a follower of the Path to Power.  For what purpose have you come here?"
+          "no": "You.  I know you are, or were, a follower of the Path to Power.  Why are you here?"
         },
         "no": {
           "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
@@ -23,7 +23,7 @@
             "yes": {
               "u_has_effect": "sofia_motive_explained",
               "yes": "Greetings.  I hope that we can work together.",
-              "no": "Greetings, Keeper.  The others cannot see the mark of your god upon you, as I can.  We need not be enemies, if your intentions are peaceful."
+              "no": "Greetings, Keeper.  The others cannot see the mark of your god upon you, as I can.  You picked a strange place to find sanctuary."
             },
             "no": "Welcome, traveler.  You may rest here if in need, meager though our sanctum may be."
           }
@@ -486,12 +486,11 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_CHOSEN",
-    "dynamic_line": "I see.  However you accomplished that, I'm impressed.  I hope that you have learned caution and temperance regarding powers from the Beyond.  I can offer any guidance I can, if you accept it.",
+    "dynamic_line": "I see.  I hope you know what you're doing.  The things in the Beyond don't have human motivations, and their goals are not always what they seem to be.  You had best be careful",
     "responses": [
       {
-        "text": "We'll see.",
+        "text": "I will.",
         "effect": { "u_add_effect": "sofia_motive_explained", "duration": "PERMANENT" },
-        "opinion": { "value": 1 },
         "topic": "TALK_CF_REP"
       }
     ]
@@ -527,7 +526,7 @@
     "id": "TALK_CF_REP_MERCHANT_MOTIVE",
     "dynamic_line": {
       "u_has_trait": "PROF_SANGUINE",
-      "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  You walked willingly here like a lamb to the slaughter.  Well.  We are hunters, not murderers, and enough humans have died already.  You are alone against many.  But despite the crimes of your order, you came here alone.  Perhaps you're different.  We will see.",
+      "yes": "And yet you came here, knowing the potential danger.  Or did you think us extinct?  You walked willingly here like a lamb to the slaughter.  Well.  We are hunters, not murderers, and enough humans have died already.  You are alone against many.  But despite the crimes of your order, you came here alone.  Perhaps you're different.  We'll see.",
       "no": "Then hopefully this means we need not be enemies.  The gods ensured that mortal means would lead us to meet.  Remind us of our shared humanity, perhaps.  We shall see if this holds true."
     },
     "responses": [
@@ -546,7 +545,7 @@
     "id": "TALK_CF_REP_DEACON_MOTIVE",
     "dynamic_line": {
       "u_has_trait": "PROF_SANGUINE",
-      "yes": "That young man knows nothing of our history.  I fear he may be too trusting, to have asked for your assistance.  I will give you the benefit of the doubt for now, but if I find that you've harmed him, I will slay you myself.  Understood?",
+      "yes": "That young man knows nothing of our history.  I fear he may be too trusting, to have asked for your assistance.  I will give you the benefit of the doubt for now, but if I find that you've harmed him, I will kill you myself.  Understood?",
       "no": "The deacon of this church does not know of our nature, unlike the priest who would normally be attending this place.  If you get the opportunity to visit him again, I'm sure he'll be relieved to know that we're still holding on."
     },
     "responses": [
@@ -678,7 +677,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_WHERE",
-    "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of a holy place sympathetic to our cause, much like this church.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of some of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place had been abandoned at some point during the chaos.",
+    "dynamic_line": "Before all this started, an old parish church.  Many of our sanctums took the form of a holy place sympathetic to our cause, much like this one.  I'd known the priest here for years, and he sheltered us many times despite the heathen nature of some of us, including myself.  This was a natural choice on realizing how dire the situation was, though we found the place had been abandoned at some point during the chaos.",
     "responses": [
       {
         "text": "What did you mean by heathen?",
@@ -698,7 +697,7 @@
         "text": "You have sorcerers among you?",
         "topic": "TALK_CF_REP_XE_FAIR_FOLK_ASK_SORCERERS",
         "switch": true,
-        "condition": { "and": [ { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK" }, { "mod_is_loaded": "xedra_evolved" } ] }
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK" }
       },
       {
         "text": "And what approach is that?",
@@ -715,13 +714,20 @@
                 "THRESH_DRAGONBLOOD"
               ]
             },
-            { "math": [ "u_skill('magic')", ">=", "3" ] }
+            {
+              "or": [ { "math": [ "u_skill('magic')", ">=", "3" ] }, { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" } ]
+            }
           ]
         },
         "switch": true,
         "topic": "TALK_CF_REP_ARCANE_2"
       },
       { "text": "What do you mean, arcane?", "switch": true, "default": true, "topic": "TALK_CF_REP_ARCANE" },
+      { "text": "Asatruan?  Like, Norse paganism?  Are you serious?", "topic": "TALK_CF_REP_HEATHEN_ASATRUAN" },
+      {
+        "text": "How did you overcome all of your differences?",
+        "topic": "TALK_CF_REP_HEATHEN_ABRAHAMIC_COLLABORATION"
+      },
       { "text": "…", "topic": "TALK_CF_REP" }
     ]
   },
@@ -733,7 +739,14 @@
       {
         "text": "Idiots, the lot of them.",
         "topic": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
-        "condition": { "math": [ "u_skill('magic')", ">=", "7" ] }
+        "condition": {
+          "or": [ { "math": [ "u_skill('magic')", ">=", "7" ] }, { "math": [ "u_skill('arcana_casting_skill')", ">=", "4" ] } ]
+        }
+      },
+      {
+        "text": "There are no dream mages among you?",
+        "topic": "TALK_CF_REP_XE_MAGIC_NO_DREAMERS",
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" }
       },
       { "text": "Alright…", "topic": "TALK_CF_REP" }
     ]
@@ -752,6 +765,18 @@
     "id": "TALK_CF_REP_ARCANE",
     "dynamic_line": "We've taken to referring to certain supernatural events as such, and the methods some have found to exploit these effects.  Things may have reached their boiling point rather recently, but less-disruptive events have been happening here and there for a bit before all this.  Given things like strange monsters being called from gods-know-where, cultists fueling rituals with blood, and the like, it's hard not to refer to such as magical.",
     "responses": [ { "text": "I see.  I think…", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_HEATHEN_ASATRUAN",
+    "dynamic_line": "*sighs.  \"The dead have risen to plague the living and this is what you can't believe?",
+    "responses": [ { "text": "Ah.  Well, perhaps you have a point.", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_HEATHEN_ABRAHAMIC_COLLABORATION",
+    "dynamic_line": "We don't need to agree on what god to worship to understand the dangers of the Beyond.  We agree that we need to protect the innocant and eliminate arcane threats.  That's enough.",
+    "responses": [ { "text": "I see.  Anyway…", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
@@ -790,14 +815,18 @@
       {
         "text": "Surely magic is not so dangerous if handled properly?",
         "topic": "TALK_CF_REP_MAGIC_DANGER",
-        "condition": { "math": [ "u_skill('magic')", ">=", "3" ] }
+        "condition": {
+          "or": [
+            { "math": [ "u_skill('magic')", ">=", "3" ] },
+            { "math": [ "u_skill('arcana_casting_skill')", ">=", "2" ] },
+            { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" }
+          ]
+        }
       },
       {
         "text": "What sort of magic, and what sort of monsters?",
         "topic": "TALK_CF_REP_XE_WHAT_SUPERNATURAL",
-        "condition": {
-          "and": [ { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" }, { "mod_is_loaded": "xedra_evolved" } ]
-        }
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" }
       },
       { "text": "I see.", "topic": "TALK_CF_REP" }
     ]
@@ -805,19 +834,21 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_MAGIC",
-    "dynamic_line": "You have every right to consider it absurd.  We speak of magic and the arcane when we make only minimal use of it ourselves.  Perhaps calling it such is an attempt to impose an order on something that is fundamentally beyond human comprehension, regardless of its laws we think we understand.  I warn you, should you find any arcane materials, avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.  Fire is a useful tool but it can never be completely controlled.",
+    "dynamic_line": "I'm not surprised you're doubting.  We speak of magic and the arcane when we make only minimal use of it ourselves.  Perhaps calling it such is an attempt to impose an order on something that is fundamentally beyond human comprehension, regardless of its laws we think we understand.  I warn you, should you find any arcane materials, avoid trying to use them.  These things are a flame and will burn those who do not use the utmost caution in dealing with them.  Fire is a useful tool but it can never be completely controlled.",
     "responses": [ { "text": "…", "topic": "TALK_CF_REP" }, { "text": "Er.  Thanks, I think.", "topic": "TALK_CF_REP" } ]
   },
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_MAGIC_DANGER",
-    "dynamic_line": "*gives you a long look. \"It's not so simple.  Magic has rules, but they're not the rigid rules of human law.  The malefactors of the Sanguine Order claimed that they knew the rules and could avoid any pitfalls, and look where it got them?  Dead, as surely as any victim of <the_cataclysm>\"",
+    "dynamic_line": "*gives you a long look. \"It's not so simple.  Magic has rules, but they're not the rigid rules of human law.  The blood mages of the Sanguine Order claimed that they knew the rules and could avoid any pitfalls, and look where it got them?  Dead, as surely as any victim of <the_cataclysm>\"",
     "responses": [
       { "text": "Perhaps.  Anyway…", "topic": "TALK_CF_REP" },
       {
         "text": "They were idiots.  I can handle myself.",
         "topic": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
-        "condition": { "math": [ "u_skill('magic')", ">=", "7" ] }
+        "condition": {
+          "or": [ { "math": [ "u_skill('magic')", ">=", "7" ] }, { "math": [ "u_skill('arcana_casting_skill')", ">=", "4" ] } ]
+        }
       },
       {
         "text": "They were idiots.  I can handle myself.",
@@ -919,7 +950,32 @@
     "type": "talk_topic",
     "id": "TALK_CF_REP_THANE",
     "dynamic_line": "A reminder of our history.  Before our founding, when we were a few disparate groups of various religions.  Including followers of the old gods such as myself, who used titles and ranks where now we are merely Brothers and Sisters.",
-    "responses": [ { "text": "Oh, okay.", "topic": "TALK_CF_REP" } ]
+    "responses": [
+      {
+        "text": "[Spiritual] Wes þu hal, þeġn!  It's so good to find another follower of the old ways!",
+        "topic": "TALK_CF_REP_THANE_FELLOW_HEATHEN",
+        "condition": {
+          "and": [
+            { "not": { "compare_string": [ "yes", { "u_val": "cf_sofia_fellow_heathen" } ] } },
+            { "u_has_trait": "SPIRITUAL" },
+            { "not": { "tes_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" } }
+          ]
+        },
+        "effect": { "u_add_var": "cf_sofia_fellow_heathen", "value": "yes" }
+      },
+      { "text": "The \"old gods\"?  Really?", "topic": "TALK_CF_REP_HEATHEN_ASATRUAN" },
+      { "text": "Oh, okay.", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_THANE_FELLOW_HEATHEN",
+    "dynamic_line": {
+      "u_male": true,
+      "yes": "*smiles.  \"Ves heill, brother.  I'm glad the All-father brought to you us.",
+      "no": "*smiles.  \"Ves heill, sister.  I'm glad the All-father brought to you us."
+    },
+    "responses": [ { "text": "Hail the Hanged God, sister.", "topic": "TALK_CF_REP", "opinion": { "trust": 1 } } ]
   },
   {
     "id": "TALK_CF_REP_GM",
@@ -942,8 +998,14 @@
   },
   {
     "type": "talk_topic",
+    "id": "TALK_CF_REP_ASK_ABOUT_CELINE",
+    "dynamic_line": "She's been nothing but helpful and assists us when asked.  We have our disagreements, but there has been so much death.  We wouldn't exile her into danger without a reason.",
+    "responses": [ { "text": "Very generous of you.  Anyway…", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
     "id": "TALK_CF_REP_ATTACK_HOSTILE",
     "dynamic_line": "*shakes her head.  \"You are no better than the others.  This is a mercy.\"",
-    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": "hostile" } ]
+    "responses": [ { "text": "…", "topic": "TALK_DONE", "effect": [ { "u_faction_rep": -100 }, "hostile" ] } ]
   }
 ]
