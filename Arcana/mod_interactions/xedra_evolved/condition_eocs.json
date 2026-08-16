@@ -26,8 +26,14 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_DEDUCTION_SKILL_FIVE_OR_HIGHER",
+    "condition": { "math": [ "u_skill('deduction') >= 5" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE",
-    "condition": { "or": [ { "u_has_any_trait": [ "DREAMER", "EATER", "DREAMSMITH", "INVENTOR" ] } ] },
+    "condition": { "u_has_any_trait": [ "DREAMER", "EATER", "DREAMSMITH", "INVENTOR" ] },
     "effect": [  ]
   },
   {

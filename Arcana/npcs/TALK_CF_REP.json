@@ -746,7 +746,13 @@
       {
         "text": "There are no dream mages among you?",
         "topic": "TALK_CF_REP_XE_MAGIC_NO_DREAMERS",
-        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" }
+        "condition": {
+          "or": [
+            { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" },
+            { "test_eoc": "EOC_ARCANA_CONDITION_XE_DEDUCTION_SKILL_FIVE_OR_HIGHER" },
+            { "not": { "compare_string": [ "yes", { "u_val": "cf_sofia_told_dream_mage" } ] } }
+          ]
+        }
       },
       { "text": "Alright…", "topic": "TALK_CF_REP" }
     ]

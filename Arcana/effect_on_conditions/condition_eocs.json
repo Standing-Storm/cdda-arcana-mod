@@ -13,6 +13,12 @@
   },
   {
     "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_DEDUCTION_SKILL_FIVE_OR_HIGHER",
+    "condition": { "math": [ "0 == 1" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
     "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL",
     "condition": { "math": [ "0 == 1" ] },
     "effect": [  ]

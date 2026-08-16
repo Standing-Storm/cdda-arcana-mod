@@ -53,7 +53,43 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_XE_MAGIC_NO_DREAMERS",
-    "dynamic_line": "",
-    "responses": [ { "text": "Of course.  Anyway…", "topic": "TALK_CF_REP" } ]
+    "dynamic_line": "Dream mage?  I've only heard of them, never seen one.  But the stories I've heard…well, if you even know they exist you've heard the same.  Why do you ask?  Are you one of them?",
+    "responses": [
+      {
+        "text": "Yes, I am.",
+        "topic": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_YES",
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" },
+        "effect": { "u_add_var": "cf_sofia_told_dream_mage", "value": "yes" }
+      },
+      {
+        "text": "No, I'm not.",
+        "topic": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_NO",
+        "condition": {
+          "and": [ { "mod_is_loaded": "xedra_evolved" }, { "not": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" } } ]
+        },
+        "effect": { "u_add_var": "cf_sofia_told_dream_mage", "value": "yes" }
+      },
+      {
+        "text": "[Lie] No, I'm not.",
+        "topic": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_NO",
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" },
+        "effect": [
+          { "u_add_var": "cf_sofia_told_dream_mage", "value": "yes" },
+          { "u_add_var": "cf_sofia_lied_about_dream_mage", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_NO",
+    "dynamic_line": "Ah, well, I suppose they must be pretty rare.  Now, was there anything else?",
+    "responses": [ { "text": "Yes, about that…", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_YES",
+    "dynamic_line": "Are you now?\"  <npc_name> gives you a long look.  \"Well, I'll have to keep that in mind.  Was there anything else?",
+    "responses": [ { "text": "Yes, about that…", "topic": "TALK_CF_REP" } ]
   }
 ]
