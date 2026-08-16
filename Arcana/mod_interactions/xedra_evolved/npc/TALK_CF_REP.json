@@ -1,0 +1,95 @@
+[
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_FAIR_FOLK_ASK_SORCERERS",
+    "dynamic_line": "\"Sorcerers\"?  What an odd way to put it.  Technically, no.  Celine over there is a practitioner but she is not a membner of our Order.  That's not to say that we know nothing of the arcane, of course.  You must know what you fight to be able to beat it.",
+    "responses": [
+      { "text": "You let her stay here?", "topic": "TALK_CF_REP_ASK_ABOUT_CELINE" },
+      { "text": "Of course.  Anyway…", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_WHAT_SUPERNATURAL",
+    "dynamic_line": {
+      "u_has_trait": "VAMPIRE",
+      "yes": "I see why you'd ask.  You have a curse hanging heavily over you.  I've heard there is a way to break it, though I don't know the details myself.  I can tell you this; if you are a vampire in truth, a parasite and a blight upon the world, we will slay you without mercy.  If you're a vampire due to misfortune, we will help you as we can.",
+      "no": {
+        "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "HOMULLUS", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ],
+        "yes": "Ah, yes.  We have no quarrel with the Fair Folk, though we know of the divisions among you.  We will judge you by your actions.  Give us no cause for concern, and we will not harm you.",
+        "no": {
+          "u_has_trait": "GRACKEN",
+          "yes": "You-\"  <npc_name> pauses a moment.  \"You';re a brave one, to walk into the lion's den and ask me these questions.  But the others of your kind have never been hostile, and you've been peaceful so far.  Keep that up and we'll have no problems.\"",
+          "no": "Not all magic is evil, and not all creatures of the Beyond are monsters, but all of them are dangerous.  You can't always tell a monster by its face or its voice.  And some of the worst monsters out there walk in human skin.\"  She pauses.  \"Well, maybe that's not so meaningful anymore after <the_cataclysm>.  But nonetheless, you need to be careful.  The zombies are not the worst enemy you might find."
+        }
+      }
+    },
+    "responses": [
+      { "text": "Of course.  I'm no threat to you.", "topic": "TALK_CF_REP", "condition": { "u_has_trait": "VAMPIRE" } },
+      {
+        "text": "[Lie] Of course.  I'm no threat to you.",
+        "topic": "TALK_CF_REP",
+        "condition": { "u_has_trait": "VAMPIRE" }
+      },
+      {
+        "text": "See that you do not.",
+        "topic": "TALK_CF_REP",
+        "condition": {
+          "and": [
+            { "or": [ { "u_has_flag": "PSYCHOPATH" }, { "u_has_trait": "CHANGELING_COURT_WINTER" } ] },
+            { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK" }
+          ]
+        }
+      },
+      {
+        "text": "Thank you for your trust.",
+        "topic": "TALK_CF_REP",
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK" }
+      },
+      { "text": "We won't.", "topic": "TALK_CF_REP", "condition": { "u_has_trait": "GRACKEN" } },
+      { "text": "I see.  Anyway…", "topic": "TALK_CF_REP" }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_MAGIC_NO_DREAMERS",
+    "dynamic_line": "Dream mage?  I've only heard of them, never seen one.  But the stories I've heard…well, if you even know they exist you've heard the same.  Why do you ask?  Are you one of them?",
+    "responses": [
+      {
+        "text": "Yes, I am.",
+        "topic": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_YES",
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" },
+        "effect": { "u_add_var": "cf_sofia_told_dream_mage", "value": "yes" }
+      },
+      {
+        "text": "No, I'm not.",
+        "topic": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_NO",
+        "condition": {
+          "and": [ { "mod_is_loaded": "xedra_evolved" }, { "not": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" } } ]
+        },
+        "effect": { "u_add_var": "cf_sofia_told_dream_mage", "value": "yes" }
+      },
+      {
+        "text": "[Lie] No, I'm not.",
+        "topic": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_NO",
+        "condition": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE" },
+        "effect": [
+          { "u_add_var": "cf_sofia_told_dream_mage", "value": "yes" },
+          { "u_add_var": "cf_sofia_lied_about_dream_mage", "value": "yes" }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_NO",
+    "dynamic_line": "Ah, well, I suppose they must be pretty rare.  Now, was there anything else?",
+    "responses": [ { "text": "Yes, about that…", "topic": "TALK_CF_REP" } ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_CF_REP_XE_TOLD_ABOUT_DREAM_MAGE_YES",
+    "dynamic_line": "Are you now?\"  <npc_name> gives you a long look.  \"Well, I'll have to keep that in mind.  Was there anything else?",
+    "responses": [ { "text": "Yes, about that…", "topic": "TALK_CF_REP" } ]
+  }
+]

@@ -23,5 +23,10 @@
     "type": "effect_type",
     "id": "halo_flute_effect",
     "//": "Effectively combines some of the perks of Free Action and yellow potion."
+  },
+  {
+    "type": "effect_type",
+    "id": "cf_sofia_notes_given",
+    "//": "Effect for players, indicates that Sofia has already given the player a copy of Apprentice's Notes.  Intended to be permanent."
   }
 ]

@@ -164,11 +164,6 @@
   },
   {
     "type": "effect_type",
-    "id": "cf_sofia_notes_given",
-    "//": "Effect for players, indicates that Sofia has already given the player a copy of Apprentice's Notes.  Intended to be permanent."
-  },
-  {
-    "type": "effect_type",
     "id": "cf_sofia_traded",
     "//": "Effect for players, populates Sofia's initial menu with the trade option.  Intended to be permanent."
   },

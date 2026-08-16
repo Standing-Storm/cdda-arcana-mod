@@ -23,5 +23,37 @@
       ]
     },
     "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_DEDUCTION_SKILL_FIVE_OR_HIGHER",
+    "condition": { "math": [ "u_skill('deduction') >= 5" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_DREAM_MAGE",
+    "condition": { "u_has_any_trait": [ "DREAMER", "EATER", "DREAMSMITH", "INVENTOR" ] },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL",
+    "condition": {
+      "or": [
+        {
+          "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "HOMULLUS", "IERDE", "SALAMANDER", "SYLPH", "UNDINE", "GRACKEN", "VAMPIRE" ]
+        }
+      ]
+    },
+    "effect": [  ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_FAIR_FOLK",
+    "condition": {
+      "or": [ { "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "HOMULLUS", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ] } ]
+    },
+    "effect": [  ]
   }
 ]
