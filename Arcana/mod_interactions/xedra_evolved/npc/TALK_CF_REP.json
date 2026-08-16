@@ -16,7 +16,7 @@
       "yes": "I see why you'd ask.  You have a curse hanging heavily over you.  I've heard there is a way to break it, though I don't know the details myself.  I can tell you this; if you are a vampire in truth, a parasite and a blight upon the world, we will slay you without mercy.  If you're a vampire due to misfortune, we will help you as we can.",
       "no": {
         "u_has_any_trait": [ "CHANGELING_MAGIC", "ARVORE", "HOMULLUS", "IERDE", "SALAMANDER", "SYLPH", "UNDINE" ],
-        "yes": "We have no quarrel with the Fair Folk, though we know of the divisions among you.  We will judge you by your actions.  Give us no cause for concern, and we will not harm you.",
+        "yes": "Ah, yes.  We have no quarrel with the Fair Folk, though we know of the divisions among you.  We will judge you by your actions.  Give us no cause for concern, and we will not harm you.",
         "no": {
           "u_has_trait": "GRACKEN",
           "yes": "You-\"  <npc_name> pauses a moment.  \"You';re a brave one, to walk into the lion's den and ask me these questions.  But the others of your kind have never been hostile, and you've been peaceful so far.  Keep that up and we'll have no problems.\"",

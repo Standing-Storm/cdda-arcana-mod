@@ -781,7 +781,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_HEATHEN_ABRAHAMIC_COLLABORATION",
-    "dynamic_line": "We don't need to agree on what god to worship to understand the dangers of the Beyond.  We agree that we need to protect the innocant and eliminate arcane threats.  That's enough.",
+    "dynamic_line": "We don't need to agree on what god to worship to understand the dangers of the Beyond.  We agree that we need to protect the innocent and eliminate arcane threats.  That's enough.",
     "responses": [ { "text": "I see.  Anyway…", "topic": "TALK_CF_REP" } ]
   },
   {
@@ -859,7 +859,7 @@
       {
         "text": "They were idiots.  I can handle myself.",
         "topic": "TALK_CF_REP_MAGIC_DANGER_PUSH_THE_POINT",
-        "condition": { "not": { "u_has_any_trait": [ "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ] } }
+        "condition": { "u_has_any_trait": [ "PROF_SANGUINE", "THRESH_DRAGONBLOOD" ] }
       }
     ]
   },
@@ -964,7 +964,7 @@
           "and": [
             { "not": { "compare_string": [ "yes", { "u_val": "cf_sofia_fellow_heathen" } ] } },
             { "u_has_trait": "SPIRITUAL" },
-            { "not": { "tes_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" } }
+            { "not": { "test_eoc": "EOC_ARCANA_CONDITION_XE_CHECK_IF_YOURE_SUPERNATURAL" } }
           ]
         },
         "effect": { "u_add_var": "cf_sofia_fellow_heathen", "value": "yes" }
