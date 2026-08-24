@@ -1024,6 +1024,7 @@
   },
   {
     "id": "feral_fancy_death_drops_rapier",
+    "copy-from": "feral_fancy_death_drops_rapier",
     "//": "Orphaned Item group",
     "type": "item_group",
     "subtype": "collection",
@@ -1031,6 +1032,7 @@
   },
   {
     "id": "feral_fancy_death_drops_rapier_fake",
+    "copy-from": "feral_fancy_death_drops_rapier_fake",
     "//": "Orphaned Item group",
     "type": "item_group",
     "subtype": "collection",

@@ -142,7 +142,7 @@
     "m2c": 90,
     "power": "200 kW",
     "energy_consumption": "0 W",
-    "fuel_type": "essence_fake",
+    "fuel_type": "battery",
     "item": "displacement_surge_generator_item",
     "location": "engine_block",
     "requirements": {

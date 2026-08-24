@@ -14,11 +14,11 @@
     "book_learn": [ [ "book_bloodmagic", 4 ] ],
     "tools": [ [ [ "book_bloodmagic", -1 ] ] ],
     "using": [ [ "arcana_transcription_standard", 1 ] ],
+    "character_resources": { "vitamins": [ { "vitamin": "human_blood_vitamin", "value": 3000, "safe_level": -500 } ] },
     "flags": [ "SECRET", "NO_BENCH", "NO_ENCHANTMENT" ],
     "result_eocs": [
       {
         "id": "EOC_ARCANA_LEARN_BLOOD_MAGIC_VAMPIRE_FINALIZATION",
-        "condition": { "u_has_trait": "VAMPIRE" },
         "effect": [
           { "u_lose_trait": "ARCANA_NO_BLOOD_MAGIC" },
           { "u_add_trait": "ARCANA_BLOOD_MAGIC" },
@@ -26,8 +26,7 @@
             "u_message": "That was simpler than you could have dreamed.  You already have mastery over your own blood, and controlling the blood of others is child's play.",
             "type": "good"
           }
-        ],
-        "false_effect": [ { "u_message": "Not being a vampire, all you've done is wasted your time.", "type": "bad" } ]
+        ]
       }
     ]
   },
