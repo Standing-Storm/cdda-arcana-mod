@@ -267,6 +267,7 @@
   },
   {
     "id": "arcana_magic_consecrate",
+    "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Banish the Beyond" },
     "description": "Using this spell will alter the terrain around you, driving off various signs of otherworldly corruption afflicting the land.  It will also harm a limited selection of otherworldly monsters.",
@@ -356,6 +357,7 @@
   },
   {
     "id": "arcana_magic_translocation",
+    "//": "Lightning spell",
     "type": "SPELL",
     "name": { "str": "Ethereal Translocation" },
     "description": "Using this spell will swap your position with a hostile target of your choosing, leaving your victim dazed and creating a blast of fog ahead of the area you emerge from.",
@@ -677,6 +679,7 @@
   },
   {
     "id": "arcana_magic_insight",
+    "//": "Air spell",
     "type": "SPELL",
     "name": { "str": "Opening the Inner Eye" },
     "description": "Using this spell will grant a temporary boost to perception, and night vision.  It can be used on yourself or an ally.",
@@ -770,6 +773,7 @@
   },
   {
     "id": "arcana_magic_might",
+    "//": "Earth spell",
     "type": "SPELL",
     "name": { "str": "Otherworldly Potence" },
     "description": "Using this spell will grant a temporary boost to strength.  It can be used on yourself or an ally.",
@@ -923,7 +927,7 @@
   },
   {
     "id": "arcana_magic_serpentine_shield",
-    "//": "ID retained to avoid breaking saves.",
+    "//": "Water spell",
     "type": "SPELL",
     "name": { "str": "Obsidian Mantle of Shadows" },
     "description": "Using this spell will anoint you with an obsidian halo, granting a temporary defensive effect that will strike attackers blind with otherworldly darkness.",
@@ -1040,6 +1044,7 @@
   },
   {
     "id": "arcana_magic_create_rift_in_ground",
+    "//": "Earth spell",
     "type": "SPELL",
     "name": { "str": "Yawn Wide the Rift" },
     "description": "Using this spell will open a rift in the ground, damaging any structures and causing any creatures to fall into the chasm.",
