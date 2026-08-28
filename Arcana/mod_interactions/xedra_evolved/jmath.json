@@ -1,0 +1,50 @@
+[
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_air",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('SYLPH') * -5) + (u_has_trait('IERDE') * 5)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_earth",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('IERDE') * -5) + (u_has_trait('SYLPH') * 5)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_fire",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('SALAMANDER') * -5) + (u_has_trait('UNDINE') * 5) + (u_has_trait('BLOODTHORNE_DRUID_SYMBIOTIC_PLANT') * 3) + (u_has_trait('ARVORE') * 20) + (u_has_trait('LILIN_TRAITS') * 20)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_water",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('UNDINE') * -5) + (u_has_trait('SALAMANDER') * 5)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_metal",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('IERDE') * -3) + (u_has_trait('HOMULLUS') * 3) + (u_has_trait('WEREWOLF_HYBRID_FORM') * 5)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_lightning",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('SYLPH') * -3) + (u_has_trait('HOMULLUS') * 3) + (u_has_trait('LILIN_TRAITS') * 10)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_forest",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('ARVORE') * -5) + (u_has_trait('BLOODTHORNE_DRUID_SYMBIOTIC_PLANT') * -3) + (u_has_trait('HOMULLUS') * 3)"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_spirit",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0 + (u_has_trait('HOMULLUS') * -5) + (u_has_trait('LILIN_TRAITS') * -4) + (u_has_trait('WEREWOLF_HYBRID_FORM') * 10)"
+  }
+]
