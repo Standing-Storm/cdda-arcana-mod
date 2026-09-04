@@ -266,7 +266,8 @@
     "id": "tools_robotics",
     "copy-from": "tools_robotics",
     "type": "item_group",
-    "extend": { "items": [ [ "recipe_lab_arcana", 2 ] ] }
+    "subtype": "collection",
+    "extend": { "entries": [ { "item": "recipe_lab_arcana", "prob": 2 } ] }
   },
   {
     "id": "guns_energy",
