@@ -105,7 +105,7 @@
       {
         "values": [
           {
-            "value": "BLEEEDING_RATE",
+            "value": "BLEEDING_RATE",
             "multiply": { "math": [ "u_effect_intensity('effect_arcana_flesh_angel_increased_bleeding') * 0.1" ] }
           }
         ]

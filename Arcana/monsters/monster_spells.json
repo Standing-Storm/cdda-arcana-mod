@@ -443,6 +443,6 @@
       ]
     },
     "effect": { "npc_message": "You close your eyes just in time!" },
-    "false_effect": { "u_add_effect": "blind", "duration": [ 8, 18 ] }
+    "false_effect": { "u_add_effect": "blind", "duration": [ 8, 18 ], "bodypart": "eyes" }
   }
 ]
