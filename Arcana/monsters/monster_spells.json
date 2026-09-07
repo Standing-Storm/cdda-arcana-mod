@@ -439,10 +439,10 @@
     "id": "EOC_ARCANA_MONSTER_BLIND_CHECK",
     "condition": {
       "math": [
-        "min( (rand(u_val('perception) ) ),(u_val('perception) / 2) ) + (u_has_proficiency('prof_spotting') * (rng(4,8) ) ) + rng(-5,5) + rng(-5,5) > 18"
+        "(min( (rand(u_val('perception') ) ),(u_val('perception') / 2) ) + (u_has_proficiency('prof_spotting') * (rng(4,8) ) ) + rng(-5,5) + rng(-5,5) ) > 18"
       ]
     },
-    "effect": { "npc_message": "You close your eyes just in time!" },
-    "false_effect": { "u_add_effect": "blind", "duration": [ 8, 18 ], "bodypart": "eyes" }
+    "effect": { "u_message": "You close your eyes just in time!", "type": "good" },
+    "false_effect": { "u_add_effect": "blind", "duration": [ 8, 18 ] }
   }
 ]

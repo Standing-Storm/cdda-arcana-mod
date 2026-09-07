@@ -30,12 +30,14 @@
     "special_attacks": [
       {
         "type": "spell",
+        "id": "mon_flesh_angel_fear_paralyze",
         "spell_data": { "id": "fear_paralyze" },
         "monster_message": "The flesh angel's third eyes gazes at %3$s malevolently.",
         "cooldown": 40
       },
       {
         "type": "spell",
+        "id": "mon_flesh_angel_blinding_gaze",
         "spell_data": { "id": "arcana_monster_blinding_gaze" },
         "monster_message": "The flesh angel's eyes blaze brightly.",
         "cooldown": 25
