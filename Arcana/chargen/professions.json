@@ -328,7 +328,7 @@
     "type": "profession",
     "id": "arcanist_dark_priest",
     "name": "Dark Priest",
-    "description": "He From Beyond The Veil calls to you, to your brothers and sisters.  And the faithful, those who remain at least, shall bring him into this world.",
+    "description": "He From Beyond the Veil calls to you, to your brothers and sisters.  And the faithful, those who remain at least, shall bring him into this world.",
     "points": 6,
     "skills": [ { "level": 5, "name": "magic" }, { "level": 2, "name": "gun" }, { "level": 2, "name": "dodge" } ],
     "proficiencies": [ "prof_arcana_thaumatology" ],

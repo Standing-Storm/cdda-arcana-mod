@@ -273,7 +273,7 @@
     "type": "SPELL",
     "name": { "str": "Banish the Beyond" },
     "description": "Using this spell will alter the terrain, driving off various signs of otherworldly corruption afflicting the land, along with disrupting most intruders from Beyond, with hostile summoned creatures taking double damage.",
-    "message": "You channel the will of He From Beyond The Veil, to bring order to this unearthly intrusion.",
+    "message": "You channel the will of He From Beyond the Veil, to bring order to this unearthly intrusion.",
     "valid_targets": [ "ground" ],
     "flags": [ "NO_HANDS", "NO_LEGS", "IGNORE_WALLS", "NO_PROJECTILE" ],
     "effect": "ter_transform",

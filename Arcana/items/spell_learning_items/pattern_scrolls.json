@@ -168,7 +168,7 @@
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
     "name": { "str": "Pattern Scroll (Banish the Beyond)", "str_pl": "Pattern Scrolls (Banish the Beyond)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from the Beyond.\"",
     "price_postapoc": "110 USD",
     "use_action": {
       "type": "effect_on_conditions",

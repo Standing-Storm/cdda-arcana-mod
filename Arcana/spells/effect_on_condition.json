@@ -38,7 +38,7 @@
       { "math": [ "cause_early_portal_storm", "=", "0" ] },
       "next_weather",
       {
-        "u_message": "Reality re-asserts itself as the storm fades.  The worst has passed, as is the will of He From Beyond The Veil…",
+        "u_message": "Reality re-asserts itself as the storm fades.  The worst has passed, as is the will of He From Beyond the Veil…",
         "type": "good"
       },
       { "u_add_var": "global_portal_storms_u_witnessed_portal_storm", "value": "yes" }

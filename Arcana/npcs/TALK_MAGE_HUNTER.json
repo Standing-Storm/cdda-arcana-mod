@@ -326,7 +326,7 @@
         "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_DRAGONBLOOD"
       },
       {
-        "text": "I have been chosen by He From Beyond The Veil.",
+        "text": "I have been chosen by He From Beyond the Veil.",
         "condition": { "u_has_trait": "THRESH_VEIL" },
         "effect": { "u_add_effect": "cf_hunter_motive", "duration": "PERMANENT" },
         "topic": "TALK_MAGE_HUNTER_OTHERWORLDLY_VEIL"
@@ -519,7 +519,7 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_has_trait": "PROF_CLEANSINGFLAME2",
-      "yes": "I'm not sure how much of that intel you've been privy to, but you surely saw it more closely than I did.  A contaminant with its origins in the cities, that's likely to blame for the initial wave of deaths.  Likely from Beyond The Veil, as the abominations are, but other than reasonable evidence the cause wasn't arcane in origin, we have nothing but guesswork to go on.",
+      "yes": "I'm not sure how much of that intel you've been privy to, but you surely saw it more closely than I did.  A contaminant with its origins in the cities, that's likely to blame for the initial wave of deaths.  Likely from beyond the Veil, as the abominations are, but other than reasonable evidence the cause wasn't arcane in origin, we have nothing but guesswork to go on.",
       "no": "There was something in the water, all manner of madness and death, all preceding the overt intrusions into our world.  We suspect even those early signs were otherworldly in origin, something that started in the cities.  We've reasonably ruled out the root cause being supernatural, but that just means we have no experience to go off of.  I wish I had anything more than guesswork to offer."
     },
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
@@ -564,7 +564,7 @@
   {
     "id": "BGSS_CF_2_IDEAS2",
     "type": "talk_topic",
-    "dynamic_line": "A war.  That's the only thing that comes to mind.  There were signs of more than just the usual collateral damage.  Maybe WWIII just barely started happening, and the nuclear blasts weakened The Veil further.  Large enough spikes of energy can interact with anomalies, so it's possible at least.  Not like we can test it, though.",
+    "dynamic_line": "A war.  That's the only thing that comes to mind.  There were signs of more than just the usual collateral damage.  Maybe WWIII just barely started happening, and the nuclear blasts weakened the Veil further.  Large enough spikes of energy can interact with anomalies, so it's possible at least.  Not like we can test it, though.",
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_NONE" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {
@@ -586,7 +586,7 @@
   {
     "id": "BGSS_CF_3_IDEAS1",
     "type": "talk_topic",
-    "dynamic_line": "There was a growing instability in The Veil, and that's what caused these horrors to come spilling out into our world.  Whatever it was, it did more damage than the sanguinists and keepers combined.  Everything before, though…",
+    "dynamic_line": "There was a growing instability in the Veil, and that's what caused these horrors to come spilling out into our world.  Whatever it was, it did more damage than the sanguinists and keepers combined.  Everything before, though…",
     "responses": [
       { "text": "What about the stuff that happened beforehand?", "topic": "BGSS_CF_2_IDEAS2" },
       { "text": "<done_conversation_section>", "topic": "TALK_NONE" },

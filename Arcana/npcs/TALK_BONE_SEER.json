@@ -68,7 +68,7 @@
     "id": "TALK_BONE_SEER_POWER_CHALICE",
     "dynamic_line": "I have my beliefs that I keep close to heart, but I will not deny you your vision.  So long as it does not impede my work.  What purpose do you pursue?",
     "responses": [
-      { "text": "I would ask to show you the potential within The Beyond.", "topic": "TALK_BONE_SEER_POWER_POTENTIAL" },
+      { "text": "I would ask to show you the potential within the Beyond.", "topic": "TALK_BONE_SEER_POWER_POTENTIAL" },
       {
         "text": "Do you know of the powers from Beyond, that seek their myriad goals?",
         "topic": "TALK_BONE_SEER_POWER_MYRIAD"
@@ -108,7 +108,7 @@
         "topic": "TALK_BONE_SEER_POWER_OFFER_BONE_TWISTED"
       },
       {
-        "text": "These are the finger bones of a creature touched by The Beyond.  Would that suffice?",
+        "text": "These are the finger bones of a creature touched by the Beyond.  Would that suffice?",
         "condition": { "u_has_item": "gracken_knuckles" },
         "topic": "TALK_BONE_SEER_POWER_OFFER_GRACKEN_KNUCKLES"
       },
