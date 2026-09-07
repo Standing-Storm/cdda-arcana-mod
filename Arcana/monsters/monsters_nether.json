@@ -3,7 +3,7 @@
     "id": "mon_flesh_angel",
     "type": "MONSTER",
     "name": { "str": "flesh angel" },
-    "description": "A tall and slender humanoid lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.",
+    "description": "A tall and slender humanoid lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.  Both of its hands end in vicious claws.",
     "default_faction": "cult",
     "bodytype": "angel",
     "species": [ "NETHER" ],
@@ -49,6 +49,19 @@
       }
     ],
     "death_drops": "mon_flesh_angel_death_drops",
-    "flags": [ "SEES", "HEARS", "INFRARED_VISION", "SMELLS", "WARM", "HARDTOSHOOT", "ATTACKMON", "FLIES", "POISON" ]
+    "flags": [
+      "SEES",
+      "HEARS",
+      "INFRARED_VISION",
+      "SMELLS",
+      "WARM",
+      "HARDTOSHOOT",
+      "ATTACKMON",
+      "HAS_MIND",
+      "FLIES",
+      "SILENTMOVES",
+      "STUN_IMMUNE",
+      "POISON"
+    ]
   }
 ]
