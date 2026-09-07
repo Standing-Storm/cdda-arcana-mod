@@ -91,5 +91,25 @@
         "values": [ { "value": "SPEED", "add": -10 } ]
       }
     ]
+  },
+  {
+    "type": "effect_type",
+    "id": "effect_arcana_flesh_angel_increased_bleeding",
+    "name": [ "Flowing blood" ],
+    "desc": [ "Your wounds bleed profusely." ],
+    "max_intensity": 10,
+    "int_add_val": 1,
+    "show_in_info": true,
+    "rating": "bad",
+    "enchantments": [
+      {
+        "values": [
+          {
+            "value": "BLEEEDING_RATE",
+            "multiply": { "math": [ "u_effect_intensity('effect_arcana_flesh_angel_increased_bleeding') * 0.1" ] }
+          }
+        ]
+      }
+    ]
   }
 ]
