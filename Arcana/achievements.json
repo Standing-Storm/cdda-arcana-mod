@@ -346,7 +346,7 @@
     "id": "achievement_arcana_mutation_paragon",
     "type": "achievement",
     "name": { "str": "<color_cyan>(Arcana)</color> Anointed" },
-    "description": "Offer power to He From Beyond The Veil, and be rewarded.",
+    "description": "Offer power to He From Beyond the Veil, and be rewarded.",
     "hidden_by": [ "achievement_arcana_mission_sword" ],
     "requirements": [ { "event_statistic": "num_avatar_arcana_mutation_paragon", "is": ">=", "target": 1, "visible": "never" } ]
   },

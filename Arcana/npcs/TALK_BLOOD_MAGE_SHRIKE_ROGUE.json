@@ -366,7 +366,7 @@
   {
     "id": "BGSS_BLOOD_MAGE_2_IDEAS2",
     "type": "talk_topic",
-    "dynamic_line": "Short answer?  No.  The elder magi had been at this since before any of us came to truly understand The Path, before the first cracks in The Veil let a little light slip through.  I don't know for sure what caused it, and I don't care.  We just lasted long enough for the preparations to finally pay off.  World's gotta end eventually after all, and we got to be there to watch.",
+    "dynamic_line": "Short answer?  No.  The elder magi had been at this since before any of us came to truly understand the Path, before the first cracks in the Veil let a little light slip through.  I don't know for sure what caused it, and I don't care.  We just lasted long enough for the preparations to finally pay off.  World's gotta end eventually after all, and we got to be there to watch.",
     "responses": [ { "text": "<done_conversation_section>", "topic": "TALK_FRIEND" }, { "text": "<end_talking>", "topic": "TALK_DONE" } ]
   },
   {

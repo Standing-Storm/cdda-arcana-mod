@@ -837,7 +837,7 @@
     "type": "effect_type",
     "id": "spell_might",
     "name": [ "Otherworldly Potence" ],
-    "desc": [ "The fabric of The Veil is woven into your frame.  Your strength is augmented by magic." ],
+    "desc": [ "The fabric of the Veil is woven into your frame.  Your strength is augmented by magic." ],
     "remove_message": "You feel weakened as your magically-induced strength leaves you.",
     "decay_messages": [ [ "Your spell of might is waning.", "bad" ] ],
     "rating": "good",
@@ -874,7 +874,7 @@
     "id": "spell_insight",
     "name": [ "Opening the Inner Eye" ],
     "desc": [
-      "The eyes of The Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
+      "The eyes of the Beyond shall guide you.  Your perception is augmented by magic, and you can see clearly in darkness."
     ],
     "remove_message": "You feel deadened as your magically-induced perception leaves you.",
     "decay_messages": [ [ "Your spell of insight is waning.", "bad" ] ],
@@ -1201,7 +1201,7 @@
   {
     "type": "effect_type",
     "id": "arcane_pulse_side_effects",
-    "//": "Proper Chosen are more acclimated to channeling He From Beyond The Veil's blessings.",
+    "//": "Proper Chosen are more acclimated to channeling He From Beyond the Veil's blessings.",
     "resist_traits": [ "PROF_CHALICE", "PROF_CHALICE2" ],
     "name": [ "Arcane Burnout" ],
     "desc": [
@@ -1272,7 +1272,7 @@
       "Light seems to warp around you in an unnatural manner, rendering you invisible and protecting against various perception-related hazards."
     ],
     "remove_message": "The shroud of illusion magic around you fades.",
-    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole.  Does NOT protect against Glimpse of The Beyond, just because the host can't see you doesn't mean the archon can't…",
+    "//": "Immunity to blindness in general is the only way to make an effect reliably protect against flashbangs, so best justification is to counter things that mess with vision as a whole.  Does NOT protect against Glimpse of the Beyond, just because the host can't see you doesn't mean the archon can't…",
     "removes_effects": [
       "glowy_led",
       "laserlocked",
@@ -1346,7 +1346,7 @@
     "id": "archon_gaze_effect",
     "//": "Regular Ward Against Evil will only protect you a bit, you need Holy Ward to actually stop the effect.  This will be relevant once I add an encounter you can access after restoring the ritual blade.",
     "resist_effects": [ "cleric_warding" ],
-    "name": [ "Glimpse of The Beyond" ],
+    "name": [ "Glimpse of the Beyond" ],
     "desc": [ "You caught the attention of something that doesn't belong in this world…" ],
     "apply_message": "You feel cold inside…",
     "remove_message": "You feel a faint sense of relief wash over you.",

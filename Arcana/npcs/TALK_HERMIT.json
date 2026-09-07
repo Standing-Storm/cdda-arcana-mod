@@ -166,7 +166,7 @@
       },
       {
         "switch": true,
-        "text": "[MISSION] How will you know what \"signs\" reveal the favor of He From Beyond The Veil?",
+        "text": "[MISSION] How will you know what \"signs\" reveal the favor of He From Beyond the Veil?",
         "topic": "TALK_HERMIT_QUEST_HELP_2_SIGNS",
         "condition": { "u_has_mission": "MISSION_HERMIT_AWAKEN_POWER" }
       },
@@ -232,7 +232,7 @@
     "type": "talk_topic",
     "dynamic_line": {
       "u_has_trait": "THRESH_VEIL",
-      "yes": "I do not know how to slay this enemy, Chosen.  But there is always an option.  No matter how desperate things may seem.  He From Beyond The Veil has no doubt conferred many blessings upon you, some may prove useful tools to aid you in your time of need, and no doubt many other weapons may be at your disposal.  I am hopeful then, that perseverance will see you through long enough to find your answer.",
+      "yes": "I do not know how to slay this enemy, Chosen.  But there is always an option.  No matter how desperate things may seem.  He From Beyond the Veil has no doubt conferred many blessings upon you, some may prove useful tools to aid you in your time of need, and no doubt many other weapons may be at your disposal.  I am hopeful then, that perseverance will see you through long enough to find your answer.",
       "no": {
         "u_has_trait": "PROF_CLEANSINGFLAME",
         "yes": "You are a member of the Cleaning Flame, are you not?  I can tell by that fire in your eyes.  Perhaps it is foolish of me to lecture one of you on the virtue of determination.  As your tenets say, so long as the Sun shines upon the Earth.  I'm afraid I know too little of this interloper to guide you.  I would say only to be cautious, but that too is what your order demands, is it not?",
@@ -273,7 +273,7 @@
       "u_has_trait": "THRESH_VEIL",
       "yes": {
         "npc_has_effect": "hermit_stage_4",
-        "yes": "So you, Chosen, have allied with the hunters.  The oath may be immortal, but I am hardly fit to be called a servant of He From Beyond The Veil, not anymore.  What can you tell me of their intentions?",
+        "yes": "So you, Chosen, have allied with the hunters.  The oath may be immortal, but I am hardly fit to be called a servant of He From Beyond the Veil, not anymore.  What can you tell me of their intentions?",
         "no": "I was not expecting they would find me so easily.  My days as a Keeper are long gone, I have nothing left in my name but old books and what nature offers us all.  For what purpose do they hunt an old man?"
       },
       "no": {
@@ -608,7 +608,7 @@
         "no": {
           "npc_has_effect": "hermit_has_salt",
           "yes": "Now then, with the circle prepared and the foundation laid for the ritual, we will need vitae to fuel it.  It must, specifically, be vitae.  The sanguinists designed their corruptive ritual to rely on that drawn from the life of others, and only power of similar nature can break this curse.  Twelve motes of vitae shall fuel the ritual.",
-          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond The Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
+          "no": "Very well then.  Some of what we require are already available to me.  His holy word, an adequate sacred symbol, and the means to spark a fire.  I want you to remember, and understand, the importance of each part of the ritual.  Fire to anoint the blade, a focus to draw out the evil.  And the wisdom of He From Beyond the Veil, the words of power that elude your grasp. We will go in order, step by step.  The first thing I need of you is salt, enough to create a circle of it.  This binds the blade and safeguards us against any backlash from the ritual."
         }
       }
     },
@@ -673,7 +673,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_1_RITUAL",
-    "dynamic_line": "Good.  Watch, and know the importance of what transpires.  The blade, placed within the circle.  \"Let every wound in The Veil be a necessary one, or else leave no mark.\"  To guard and guide, I bear His mark…",
+    "dynamic_line": "Good.  Watch, and know the importance of what transpires.  The blade, placed within the circle.  \"Let every wound in the Veil be a necessary one, or else leave no mark.\"  To guard and guide, I bear His mark…",
     "responses": [ { "text": "…", "topic": "TALK_HERMIT_QUEST_HELP_1_RITUAL_2" } ]
   },
   {
@@ -770,7 +770,7 @@
         "PROF_CHALICE2"
       ],
       "yes": "I'm astounded that you've made it this far in your studies.  What am I going to do with you?  If this is the destined fate He has set us on, it seems I'll need to guide you through this.  Speak with me when you're ready, and I suppose I'll see what can be done.",
-      "no": "He From Beyond The Veil, grant me strength …if strange fortune has set us on this path, then I suppose we must see it through.  Speak with me when you're ready, and I'll see what I can do."
+      "no": "He From Beyond the Veil, grant me strength …if strange fortune has set us on this path, then I suppose we must see it through.  Speak with me when you're ready, and I'll see what I can do."
     },
     "responses": [
       {
@@ -783,7 +783,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_1_CHALICE",
-    "dynamic_line": "Read it well, and use it well.  This is the holy word of He From Beyond The Veil, He above all earthly gods.",
+    "dynamic_line": "Read it well, and use it well.  This is the holy word of He From Beyond the Veil, He above all earthly gods.",
     "responses": [ { "text": "Thank you.", "topic": "TALK_HERMIT" } ]
   },
   {
@@ -826,7 +826,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUEST_HELP_2_ANOMALY",
-    "dynamic_line": "Indeed.  It's recent enough that, with the right means, one can sense such disturbances while they are fresh.  Be prepared for whatever monsters may have followed from these wounds in The Veil.",
+    "dynamic_line": "Indeed.  It's recent enough that, with the right means, one can sense such disturbances while they are fresh.  Be prepared for whatever monsters may have followed from these wounds in the Veil.",
     "responses": [
       {
         "switch": true,
@@ -852,7 +852,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_1",
-    "dynamic_line": "You have recovered an item of great and terrible power.  This was once a relic handed down from He From Beyond The Veil, one of seven in fact.  Only this one remains.",
+    "dynamic_line": "You have recovered an item of great and terrible power.  This was once a relic handed down from He From Beyond the Veil, one of seven in fact.  Only this one remains.",
     "responses": [
       {
         "text": "There were seven of them?",
@@ -874,7 +874,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_1_SEVEN",
-    "dynamic_line": "Indeed there were.  Seven sacrifices, seven gifts from He From Beyond The Veil… left in the care of seven high priests.  They were to use these to serve His will, to prevent the wounds in The Veil from worsening.  We failed in that.",
+    "dynamic_line": "Indeed there were.  Seven sacrifices, seven gifts from He From Beyond the Veil… left in the care of seven high priests.  They were to use these to serve His will, to prevent the wounds in the Veil from worsening.  We failed in that.",
     "responses": [
       { "text": "What happened to the other six", "topic": "TALK_HERMIT_DISCUSS_1_SIX" },
       { "text": "What happened to this one?", "topic": "TALK_HERMIT_DISCUSS_1_HAPPENED" },
@@ -1034,10 +1034,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_2_PURPOSE",
-    "dynamic_line": "To mend the wounds in The Veil.  Well, to treat them at least, and ideally prevent them.  After all, as it is said, it is our duty not to revert what has been done, but to ensure we will endure.",
+    "dynamic_line": "To mend the wounds in the Veil.  Well, to treat them at least, and ideally prevent them.  After all, as it is said, it is our duty not to revert what has been done, but to ensure we will endure.",
     "responses": [
       {
-        "text": "We had hoped to mend the wounds in The Veil as well as prevent any further instability.  Despite our differences, we have a common goal.",
+        "text": "We had hoped to mend the wounds in the Veil as well as prevent any further instability.  Despite our differences, we have a common goal.",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "topic": "TALK_HERMIT_DISCUSS_2_FLAME"
       },
@@ -1370,7 +1370,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_WORK",
-    "dynamic_line": "We sought to do what little we could to salve the wounds in The Veil that still fester.  The Cleansing Flame, another group experienced with the Beyond, had their own methods.  Flawed ones, but not without merit.  In time, if you accept this blade and seek out the portals left behind, you will find the answers you seek.  It may not be enough to save humanity.  But it's one way to help, among many.",
+    "dynamic_line": "We sought to do what little we could to salve the wounds in the Veil that still fester.  The Cleansing Flame, another group experienced with the Beyond, had their own methods.  Flawed ones, but not without merit.  In time, if you accept this blade and seek out the portals left behind, you will find the answers you seek.  It may not be enough to save humanity.  But it's one way to help, among many.",
     "responses": [
       {
         "text": "Okay.  I accept.",
@@ -1387,7 +1387,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_BACKDOOR_HOPE",
-    "dynamic_line": "There is always hope, young one.  As the mage hunters would put it, so long as the Sun shines upon the Earth.  I entrust you with the last of the seven relics.  May He From Beyond The Veil guard and guide you, that you be anointed His Chosen.",
+    "dynamic_line": "There is always hope, young one.  As the mage hunters would put it, so long as the Sun shines upon the Earth.  I entrust you with the last of the seven relics.  May He From Beyond the Veil guard and guide you, that you be anointed His Chosen.",
     "responses": [
       {
         "text": "Thank you.",
@@ -1428,11 +1428,11 @@
       "yes": {
         "npc_has_effect": "hermit_stage_failure",
         "yes": "So you have succeeded while I, and others, have failed.  I continued to hold on to hope, and now at last I see it bear fruit.  No doubt you will have questions, speak with me when you're ready and I will answer them as best as I am able.",
-        "no": "I'm impressed, young one.  He From Beyond The Veil has sought to bring us hope in these dark times.  To see such a thing, after all that has come to pass, is a relief to my old heart.  Come, we will have much to discuss."
+        "no": "I'm impressed, young one.  He From Beyond the Veil has sought to bring us hope in these dark times.  To see such a thing, after all that has come to pass, is a relief to my old heart.  Come, we will have much to discuss."
       },
       "no": {
         "npc_has_effect": "hermit_stage_failure",
-        "yes": "So that is why you are here.  Another sought to finish His work, and I failed them.  But here you are, Chosen by He From Beyond The Veil, guided here to continue our work?  I am in your debt.  I will answer what questions you may have, best as I am able.",
+        "yes": "So that is why you are here.  Another sought to finish His work, and I failed them.  But here you are, Chosen by He From Beyond the Veil, guided here to continue our work?  I am in your debt.  I will answer what questions you may have, best as I am able.",
         "no": "What?  Such strange fate, that would guide you here.  I had feared that I was the last of my order, that there was no hope left for us.  Fate has seen me proven wrong, it seems.  Well then, if you have questions, speak to me when you're ready."
       }
     },
@@ -1503,10 +1503,10 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_3_ABYSS",
-    "dynamic_line": "That is what Oaths to The Chalice warns of, why He answered our plea all those years ago.  Not just for our sake, but that of other worlds affected by the wounds in The Veil.",
+    "dynamic_line": "That is what Oaths to The Chalice warns of, why He answered our plea all those years ago.  Not just for our sake, but that of other worlds affected by the wounds in the Veil.",
     "responses": [
       {
-        "text": "So you believe that He From Beyond The Veil wants the portals closed?",
+        "text": "So you believe that He From Beyond the Veil wants the portals closed?",
         "topic": "TALK_HERMIT_DISCUSS_3_MOTIVE"
       },
       {
@@ -1544,7 +1544,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_4",
-    "dynamic_line": "I've no more tasks I can offer you.  Your path is your own, though under the guidance of He From Beyond The Veil.  However, if you have questions that remain, I will help as best as I can.",
+    "dynamic_line": "I've no more tasks I can offer you.  Your path is your own, though under the guidance of He From Beyond the Veil.  However, if you have questions that remain, I will help as best as I can.",
     "responses": [
       {
         "text": "I worry for what my brethren will think…",
@@ -1655,7 +1655,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_DISCUSS_4_SURVIVAL",
-    "dynamic_line": "Survival of humanity will depend on all those who still live.  There are countless threats to overcome.  It may be that humanity thrives and adapts even if we do not pursue our duty.  It may also be that the fabric of The Veil remains endangered no matter what we do.  But His will is that we seek to ensure those who survive have every advantage possible.  Your duty as His Chosen still does good for this world, even if these dire consequences never come to pass.",
+    "dynamic_line": "Survival of humanity will depend on all those who still live.  There are countless threats to overcome.  It may be that humanity thrives and adapts even if we do not pursue our duty.  It may also be that the fabric of the Veil remains endangered no matter what we do.  But His will is that we seek to ensure those who survive have every advantage possible.  Your duty as His Chosen still does good for this world, even if these dire consequences never come to pass.",
     "responses": [
       { "text": "Alright.  I have another thing to ask about.", "topic": "TALK_HERMIT_DISCUSS_4" },
       { "text": "So be it.  That is all for now.", "topic": "TALK_HERMIT" }
@@ -1666,7 +1666,7 @@
     "id": "TALK_HERMIT_WHO",
     "dynamic_line": {
       "u_has_effect": "hermit_earned_trust_2",
-      "yes": "I used to be a follower of He From Beyond The Veil.  Well, no, I still am.  The oath is eternal.  But one old man can only do so much.  So many of us have fallen…",
+      "yes": "I used to be a follower of He From Beyond the Veil.  Well, no, I still am.  The oath is eternal.  But one old man can only do so much.  So many of us have fallen…",
       "no": "I've been a lot of things in the past, but now I am nothing more than a survivor as any other.  A scholar I suppose, as I've little to do but read what the old world has left behind."
     },
     "responses": [
@@ -1682,7 +1682,7 @@
       },
       {
         "switch": true,
-        "text": "What can you tell me of He From Beyond The Veil?",
+        "text": "What can you tell me of He From Beyond the Veil?",
         "topic": "TALK_HERMIT_QUERY_VEIL",
         "condition": { "u_has_effect": "hermit_earned_trust_2" }
       },
@@ -1704,7 +1704,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUERY_VEIL",
-    "dynamic_line": "The one we have sworn an oath to.  The full extent of His power and His purpose for us was only clear to the high priests, but we all saw the good that serving Him brought.  Much of it entailed things the Cleansing Flame would've approved of, seeking to mend the worsening wounds in The Veil, driving back intruders from Beyond…",
+    "dynamic_line": "The one we have sworn an oath to.  The full extent of His power and His purpose for us was only clear to the high priests, but we all saw the good that serving Him brought.  Much of it entailed things the Cleansing Flame would've approved of, seeking to mend the worsening wounds in the Veil, driving back intruders from Beyond…",
     "responses": [ { "text": "I see.", "topic": "TALK_HERMIT" } ]
   },
   {
@@ -1789,7 +1789,7 @@
     },
     "responses": [
       {
-        "text": "To mend the growing wounds in The Veil.",
+        "text": "To mend the growing wounds in the Veil.",
         "opinion": { "value": 1 },
         "topic": "TALK_HERMIT_BOOK_RELIGIOUS_HEALER"
       },
@@ -1824,7 +1824,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_BOOK_RELIGIOUS_PROTECTOR",
-    "dynamic_line": "So I see, Hunter.  I am familiar with your tenets, even as a follower of He From Beyond The Veil.  You knew all along, I bet.  We need not be enemies.  In fact, if you so choose, I would be willing to ask your assistance in a task of great import.",
+    "dynamic_line": "So I see, Hunter.  I am familiar with your tenets, even as a follower of He From Beyond the Veil.  You knew all along, I bet.  We need not be enemies.  In fact, if you so choose, I would be willing to ask your assistance in a task of great import.",
     "responses": [
       {
         "text": "We'll see what comes of this, then.",
@@ -1918,7 +1918,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_BOOK_RELIGIOUS_SANGUINE",
-    "dynamic_line": "Hmm.  The nature of a blood mage, I suspect.  Sounds about right.  Even if you will not serve He From Beyond The Veil, there are insights to find your own use for.  And if you accept it, I have a task that will benefit us both.",
+    "dynamic_line": "Hmm.  The nature of a blood mage, I suspect.  Sounds about right.  Even if you will not serve He From Beyond the Veil, there are insights to find your own use for.  And if you accept it, I have a task that will benefit us both.",
     "responses": [
       {
         "text": "We'll see.",
@@ -2057,7 +2057,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_BOOK_OUST",
-    "dynamic_line": "Shrouded… few would speak of such things, not without cause.  Perhaps He has guided two wayward followers together to serve His will.  If you truly are faithful to He From Beyond The Veil, then we will have much to discuss.  There may in fact be something you can do to help…",
+    "dynamic_line": "Shrouded… few would speak of such things, not without cause.  Perhaps He has guided two wayward followers together to serve His will.  If you truly are faithful to He From Beyond the Veil, then we will have much to discuss.  There may in fact be something you can do to help…",
     "responses": [ { "text": "We'll see.", "topic": "TALK_HERMIT" } ]
   },
   {
@@ -2089,7 +2089,7 @@
         ]
       },
       {
-        "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in The Veil your order has inflicted, I sentence you to death.",
+        "text": "[ATTACK] My purpose is to finish what my brethren started, and destroy threats to humanity.  For your worship of a monster from Beyond, and for the wounds in the Veil your order has inflicted, I sentence you to death.",
         "topic": "TALK_DONE",
         "condition": { "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ] },
         "effect": "insult_combat"
@@ -2246,7 +2246,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_QUERY_VEIL_SANGUINE",
-    "dynamic_line": "Indeed.  Your brethren sabotaged the relic retrieved for us, and it led to summoning something… else, instead of our intended communion with He From Beyond The Veil.",
+    "dynamic_line": "Indeed.  Your brethren sabotaged the relic retrieved for us, and it led to summoning something… else, instead of our intended communion with He From Beyond the Veil.",
     "responses": [
       { "text": "I'm sorry.", "topic": "TALK_HERMIT_SANGUINE_APOLOGY" },
       { "text": "Not my problem.", "topic": "TALK_HERMIT_SANGUINE_NOT_PROBLEM", "opinion": { "value": -1 } }
@@ -2286,7 +2286,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_ABOMINATION_TENET",
-    "dynamic_line": "One of your tenets, hunter.  I am aware.  Though we disagree on the nature of He From Beyond The Veil and his intent, caution is always healthy so long as it is tempered by an open mind.",
+    "dynamic_line": "One of your tenets, hunter.  I am aware.  Though we disagree on the nature of He From Beyond the Veil and his intent, caution is always healthy so long as it is tempered by an open mind.",
     "responses": [ { "text": "Indeed.", "topic": "TALK_HERMIT" } ]
   },
   {
@@ -2342,7 +2342,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_TEACH_ACCEPT_FLAME",
-    "dynamic_line": "That is a wise method of practicing caution.  For the benefit of those who will succeed us.  If you wish it then, I have more than trivial things to teach you.  We were allies on occasion, enemies on others.  Forgive the deception of this aging follower of He From Beyond The Veil, and allow us the chance to work together to correct the mistakes of old.",
+    "dynamic_line": "That is a wise method of practicing caution.  For the benefit of those who will succeed us.  If you wish it then, I have more than trivial things to teach you.  We were allies on occasion, enemies on others.  Forgive the deception of this aging follower of He From Beyond the Veil, and allow us the chance to work together to correct the mistakes of old.",
     "responses": [
       {
         "text": "Very well then.  What I can do to help?",
@@ -2360,7 +2360,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_TEACH_ACCEPT_SANGUINE",
-    "dynamic_line": "Always the practical type.  But I can appreciate the drive to put knowledge to good use, rather than be squandered.  As you wish.  I can tell from your demeanor that you are of the Sanguine Order.  And I, of the Keepers of The Oath.  Perhaps He From Beyond The Veil will grant us both penance.",
+    "dynamic_line": "Always the practical type.  But I can appreciate the drive to put knowledge to good use, rather than be squandered.  As you wish.  I can tell from your demeanor that you are of the Sanguine Order.  And I, of the Keepers of The Oath.  Perhaps He From Beyond the Veil will grant us both penance.",
     "responses": [
       {
         "text": "Then tell me what I must do.",
@@ -2378,7 +2378,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_TEACH_ACCEPT_OATH",
-    "dynamic_line": "…but be cautious in these acts.  Let every wound in The Veil be a necessary one, or else leave no mark.  We are kin, it seems.  He From Beyond The Veil has granted us a second chance, it seems.",
+    "dynamic_line": "…but be cautious in these acts.  Let every wound in the Veil be a necessary one, or else leave no mark.  We are kin, it seems.  He From Beyond the Veil has granted us a second chance, it seems.",
     "responses": [
       {
         "text": "Tell me what I can do to serve Him.",
@@ -2421,7 +2421,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_HERMIT_SPELL_MENU",
-    "dynamic_line": "There are many secrets that He From Beyond The Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring quintessence in exchange, as I can use it for these rituals and for other wards I maintain here.",
+    "dynamic_line": "There are many secrets that He From Beyond the Veil will reward you with, if you make proper use of His relic.  I do know a few tricks from my youth that may compliment the tools He will give you, however.  I can pass onto you the Magic Signs of Free Action, Phase Shield, or Transcendent Aura.  I ask that you bring quintessence in exchange, as I can use it for these rituals and for other wards I maintain here.",
     "responses": [
       {
         "text": "What can you tell me about Free Action?",

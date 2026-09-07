@@ -426,7 +426,7 @@
     "//": "Spirit spell",
     "type": "SPELL",
     "name": { "str": "Eclipse" },
-    "description": "Using this spell will inflict a shallow wound in The Veil, bringing forth monsters and darkness.  You have no control over the interlopers that spill forth due to the spell.",
+    "description": "Using this spell will inflict a shallow wound in the Veil, bringing forth monsters and darkness.  You have no control over the interlopers that spill forth due to the spell.",
     "message": "\"I am that which stands defiant, the finite made infinite…\"  You cast %s!",
     "valid_targets": [ "self" ],
     "flags": [ "VERBAL", "SOMATIC", "NO_LEGS" ],
