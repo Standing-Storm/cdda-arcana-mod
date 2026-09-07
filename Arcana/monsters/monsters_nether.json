@@ -1,0 +1,54 @@
+[
+  {
+    "id": "mon_flesh_angel",
+    "type": "MONSTER",
+    "name": { "str": "flesh angel" },
+    "description": "A tall and slender humanoid lacking skin and any normalcy of countenance.  Wings of muscle curl forth from its back and a third eye dominates the forehead.",
+    "default_faction": "cult",
+    "bodytype": "angel",
+    "species": [ "NETHER" ],
+    "categories": [ "CLASSIC" ],
+    "diff": 5,
+    "volume": "92500 ml",
+    "weight": "120 kg",
+    "hp": 200,
+    "speed": 120,
+    "material": [ "flesh" ],
+    "symbol": "H",
+    "color": "red",
+    "aggression": 100,
+    "morale": 100,
+    "melee_skill": 6,
+    "melee_dice": 3,
+    "melee_dice_sides": 4,
+    "dodge": 2,
+    "vision_day": 40,
+    "harvest": "exempt",
+    "special_attacks": [
+      {
+        "type": "spell",
+        "spell_data": { "id": "fear_paralyze" },
+        "monster_message": "The flesh angel's third eyes gazes at %3$s malevolently.",
+        "cooldown": 40
+      },
+      {
+        "type": "monster_attack",
+        "attack_type": "melee",
+        "id": "scratch",
+        "cooldown": 2,
+        "move_cost": 100,
+        "damage_max_instance": [ { "damage_type": "cut", "amount": 10 } ],
+        "hit_dmg_u": "%1$s claws at your %2$s!",
+        "hit_dmg_npc": "%1$s claws at <npcname>!",
+        "miss_msg_u": "%1$s claws at you, but you dodge!",
+        "miss_msg_npc": "%1$s tries to claw at <npcname>, but they dodge!",
+        "no_dmg_msg_u": "%1$s claws at your %2$s, but fails to penetrate armor.",
+        "no_dmg_msg_npc": "%1$s tries to claw at <npcname>, but fails to penetrate armor.",
+        "dodgeable": true,
+        "blockable": true
+      }
+    ],
+    "death_drops": "mon_flesh_angel_death_drops",
+    "flags": [ "SEES", "HEARS", "INFRARED_VISION", "SMELLS", "WARM", "HARDTOSHOOT", "ATTACKMON", "FLIES", "POISON" ]
+  }
+]
