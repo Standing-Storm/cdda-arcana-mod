@@ -234,7 +234,7 @@
     "type": "martial_art",
     "id": "style_veil_chosen",
     "name": { "str": "Ritual Art" },
-    "description": "Immersed in The Beyond, you have learned to defend against unconventional threats with otherworldly weapons, rewarding high intelligence and perception.  Though not of mortal origin, this art's greatest secrets resonate with specific ritual weapons, destined for their Chosen wielders.",
+    "description": "Immersed in the Beyond, you have learned to defend against unconventional threats with otherworldly weapons, rewarding high intelligence and perception.  Though not of mortal origin, this art's greatest secrets resonate with specific ritual weapons, destined for their Chosen wielders.",
     "initiate": [ "You focus your will through your weapon.", "%s focuses and readies their weapon." ],
     "autolearn": [ [ "magic", 10 ], [ "melee", 5 ] ],
     "strictly_melee": true,

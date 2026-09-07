@@ -173,7 +173,7 @@
     "dynamic_line": "You must be either lost or crazy.  This place isn't safe, and you're not welcome here.  Leave, and forget this place even exists.",
     "responses": [
       {
-        "text": "I am a servant of He From Beyond The Veil.  We are not enemies.",
+        "text": "I am a servant of He From Beyond the Veil.  We are not enemies.",
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
       },
@@ -388,7 +388,7 @@
     "dynamic_line": "You don't just barge in here and expect to walk out without explaining yourself.  Why should I let you leave?",
     "responses": [
       {
-        "text": "I am a servant of He From Beyond The Veil.  There is no need for quarrel.",
+        "text": "I am a servant of He From Beyond the Veil.  There is no need for quarrel.",
         "condition": { "u_has_any_trait": [ "PROF_CHALICE", "PROF_CHALICE2", "THRESH_VEIL" ] },
         "topic": "TALK_BLOOD_MAGE_APPRENTICE_VEIL"
       },

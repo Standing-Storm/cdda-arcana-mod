@@ -187,7 +187,7 @@
         "topic": "TALK_CF_REP_CHOSEN"
       },
       {
-        "text": "I am not here for a fight.  He From Beyond The Veil has seen fit to ensure our meeting.",
+        "text": "I am not here for a fight.  He From Beyond the Veil has seen fit to ensure our meeting.",
         "condition": {
           "and": [
             { "not": { "u_has_effect": "cf_mission_1" } },
@@ -269,7 +269,7 @@
   {
     "type": "talk_topic",
     "id": "TALK_CF_REP_JOHNATHAN_ADVICE_1_1",
-    "dynamic_line": "It was used by a group of scholars, mystics, and such.  Long before all this started, before the great wounds in The Veil, even before our group became involved in all these strange things.",
+    "dynamic_line": "It was used by a group of scholars, mystics, and such.  Long before all this started, before the great wounds in the Veil, even before our group became involved in all these strange things.",
     "responses": [
       { "text": "What did they do there, back then?", "topic": "TALK_CF_REP_JOHNATHAN_ADVICE_1_3" },
       {
@@ -612,7 +612,7 @@
     "id": "TALK_CF_REP_MISSION_1_HOW_KNOWN",
     "dynamic_line": {
       "u_has_any_trait": [ "PROF_CLEANSINGFLAME", "PROF_CLEANSINGFLAME2" ],
-      "yes": "Indeed.  There are still concerns that the fabric of The Veil may still be unstable and vulnerable to new anomalies, and the potential for otherworldly monsters being attracted to this place.  Same method by which we safeguarded our sanctums, until most of them were overwhelmed the day everything boiled over.",
+      "yes": "Indeed.  There are still concerns that the fabric of the Veil may still be unstable and vulnerable to new anomalies, and the potential for otherworldly monsters being attracted to this place.  Same method by which we safeguarded our sanctums, until most of them were overwhelmed the day everything boiled over.",
       "no": "You are correct.  Our methods may differ from that of the Keepers, but the objective is similar.  With the right rituals we can reduce the rest of any additional anomalies opening up too close to us, and make the place less visible to any interlopers already in this world.  That will allow us to use the arcane items at our disposal to the fullest, otherwise we'd basically be lighting up a beacon for every otherwordly monster within a couple miles."
     },
     "responses": [

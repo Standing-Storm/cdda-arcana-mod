@@ -137,7 +137,7 @@
   {
     "type": "mutation",
     "id": "SPELL_BEYOND_DRAGONBLOOD",
-    "name": { "str": "Mark of The Beyond" },
+    "name": { "str": "Mark of the Beyond" },
     "points": 6,
     "description": "Inhuman power has granted you otherworldly abilities, exploiting your ties to the Beyond to inflict terrible afflictions upon your victims.",
     "valid": false,
