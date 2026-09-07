@@ -420,5 +420,29 @@
     "shape": "blast",
     "min_duration": 84600,
     "max_duration": 84600
+  },
+  {
+    "id": "arcana_monster_blinding_gaze",
+    "type": "SPELL",
+    "name": { "str": "Blinding Gaze", "//~": "NO_I18N" },
+    "description": { "str": "Blinds the target.", "//~": "NO_I18N" },
+    "valid_targets": [ "hostile" ],
+    "flags": [ "SILENT", "NO_PROJECTILE" ],
+    "effect": "effect_on_condition",
+    "effect_str": "EOC_ARCANA_MONSTER_BLIND_CHECK",
+    "shape": "blast",
+    "min_range": 12,
+    "max_range": 12
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ARCANA_MONSTER_BLIND_CHECK",
+    "condition": {
+      "math": [
+        "(min( (rand(u_val('perception') ) ),(u_val('perception') / 2) ) + (u_has_proficiency('prof_spotting') * (rng(4,8) ) ) + rng(-5,5) + rng(-5,5) ) > 18"
+      ]
+    },
+    "effect": { "u_message": "You close your eyes just in time!", "type": "good" },
+    "false_effect": { "u_add_effect": "blind", "duration": [ 8, 18 ] }
   }
 ]

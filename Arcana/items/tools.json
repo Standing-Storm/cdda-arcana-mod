@@ -1137,7 +1137,7 @@
     "description": "A vibrant red chunk of petrified flesh, purified and set in an ornamental mounting like a morbid brooch.  It resonates with unnatural power, as though imbued with the essence of the creature it was cut away from.  Channeling vitae through it will start you down the path to becoming something …else.  A path you can't return from.",
     "weight": "2500 g",
     "volume": "1 L",
-    "//": "The dracolich was summoned during that nebulous window of time when The Veil was wide enough to allow things to be yanked through, but before Zero Day.  Actually completing what they wanted to do with is a post-cataclysm development, but as with the ritual blades we're still reflecting the value of its original form.",
+    "//": "The dracolich was summoned during that nebulous window of time when the Veil was wide enough to allow things to be yanked through, but before Zero Day.  Actually completing what they wanted to do with is a post-cataclysm development, but as with the ritual blades we're still reflecting the value of its original form.",
     "price": "80000 USD",
     "price_postapoc": "120 USD",
     "to_hit": -2,

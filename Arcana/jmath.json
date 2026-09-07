@@ -42,6 +42,54 @@
     "return": "u_skill('arcana_casting_skill') + ( rng(-5,5) + rng(-5,5) ) + min( ( ( u_val('intelligence') - 10) / 4 ), 0) + u_has_proficiency('prof_arcana_pattern_sorcery') + (u_has_proficiency('prof_arcana_pattern_sorcery_master') * 2)"
   },
   {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_air",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_earth",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_fire",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_water",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_metal",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_lightning",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_forest",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
+    "id": "arcana_pattern_scroll_difficulty_adjustments_spirit",
+    "type": "jmath_function",
+    "num_args": 0,
+    "return": "0"
+  },
+  {
     "id": "arcana_starting_trait_keeper_exemptions",
     "type": "jmath_function",
     "num_args": 0,

@@ -3,7 +3,7 @@
     "id": "VEIL",
     "type": "mutation_category",
     "threshold_mut": "THRESH_VEIL",
-    "name": "Explorer of The Veil",
+    "name": "Explorer of the Veil",
     "mutagen_message": "You feel an otherworldly presence reaching out to you.",
     "memorial_message": "Pierced the veil between worlds.",
     "vitamin": "null"

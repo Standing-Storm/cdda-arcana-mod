@@ -17,7 +17,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_phase_shield')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11 + arcana_pattern_scroll_difficulty_adjustments_air()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_phase_shield')", "=", "1" ] },
                 {
@@ -69,7 +71,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_earthweaving')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8 + arcana_pattern_scroll_difficulty_adjustments_earth()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_earthweaving')", "=", "1" ] },
                 {
@@ -121,7 +125,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11 + arcana_pattern_scroll_difficulty_adjustments_earth()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_summon_raging_thunderstorm')", "=", "1" ] },
                 {
@@ -162,7 +168,7 @@
     "copy-from": "scroll_magic_base",
     "type": "ITEM",
     "name": { "str": "Pattern Scroll (Banish the Beyond)", "str_pl": "Pattern Scrolls (Banish the Beyond)" },
-    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from The Beyond.\"",
+    "description": "This is a scroll with ornate patterns written on the paper, depicting strange geometric designs with an unnatural order to them.  Activate it to explore its secrets.\n\"This spell will drive off various signs of otherworldly corruption afflicting the land, and daze a handful of creatures from the Beyond.\"",
     "price_postapoc": "110 USD",
     "use_action": {
       "type": "effect_on_conditions",
@@ -173,7 +179,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_consecrate')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10 + arcana_pattern_scroll_difficulty_adjustments_spirit()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_consecrate')", "=", "1" ] },
                 {
@@ -225,7 +233,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_cold_ward')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9 + arcana_pattern_scroll_difficulty_adjustments_air()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_cold_ward')", "=", "1" ] },
                 {
@@ -274,7 +284,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "12" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "12 + arcana_pattern_scroll_difficulty_adjustments_earth()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_sundering_quake')", "=", "1" ] },
                 {
@@ -326,7 +338,13 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "11" ] },
+              "if": {
+                "math": [
+                  "arcana_pattern_scroll_learning_equation()",
+                  ">=",
+                  "11 + arcana_pattern_scroll_difficulty_adjustments_air() + arcana_pattern_scroll_difficulty_adjustments_earth() + arcana_pattern_scroll_difficulty_adjustments_fire() + arcana_pattern_scroll_difficulty_adjustments_water()"
+                ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_elemental_burst')", "=", "1" ] },
                 {
@@ -378,7 +396,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10 + arcana_pattern_scroll_difficulty_adjustments_earth()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_create_rift_in_ground')", "=", "1" ] },
                 {
@@ -430,7 +450,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_eclipse')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "13" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "13 + arcana_pattern_scroll_difficulty_adjustments_spirit()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_eclipse')", "=", "1" ] },
                 {
@@ -484,7 +506,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_agility')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10 + arcana_pattern_scroll_difficulty_adjustments_air()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_agility')", "=", "1" ] },
                 {
@@ -534,7 +558,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10 + arcana_pattern_scroll_difficulty_adjustments_spirit()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_clairvoyance')", "=", "1" ] },
                 {
@@ -584,7 +610,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8 + arcana_pattern_scroll_difficulty_adjustments_water()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_clarity_blood')", "=", "1" ] },
                 {
@@ -637,7 +665,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7 + arcana_pattern_scroll_difficulty_adjustments_spirit()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_confuse_monster')", "=", "1" ] },
                 {
@@ -690,7 +720,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_iron_skin')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9 + arcana_pattern_scroll_difficulty_adjustments_metal()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_iron_skin')", "=", "1" ] },
                 {
@@ -743,7 +775,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_free_action')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7 + arcana_pattern_scroll_difficulty_adjustments_air()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_free_action')", "=", "1" ] },
                 {
@@ -796,7 +830,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10 + arcana_pattern_scroll_difficulty_adjustments_forest()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_heal_gradually_over_time_reduce_bleeding')", "=", "1" ] },
                 {
@@ -849,7 +885,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_heat_ward')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9 + arcana_pattern_scroll_difficulty_adjustments_fire()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_heat_ward')", "=", "1" ] },
                 {
@@ -902,7 +940,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_insight')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7 + arcana_pattern_scroll_difficulty_adjustments_air()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_insight')", "=", "1" ] },
                 {
@@ -955,7 +995,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8 + arcana_pattern_scroll_difficulty_adjustments_lightning()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_lightning_ward')", "=", "1" ] },
                 {
@@ -1008,7 +1050,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_might')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9 + arcana_pattern_scroll_difficulty_adjustments_earth()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_might')", "=", "1" ] },
                 {
@@ -1061,7 +1105,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_overgrowth')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7 + arcana_pattern_scroll_difficulty_adjustments_earth()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_overgrowth')", "=", "1" ] },
                 {
@@ -1115,7 +1161,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "10 + arcana_pattern_scroll_difficulty_adjustments_water()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_serpentine_shield')", "=", "1" ] },
                 {
@@ -1168,7 +1216,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_shockstorm')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "6" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "6 + arcana_pattern_scroll_difficulty_adjustments_lightning()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_shockstorm')", "=", "1" ] },
                 {
@@ -1221,7 +1271,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "9 + arcana_pattern_scroll_difficulty_adjustments_spirit()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_ward_against_evil')", "=", "1" ] },
                 {
@@ -1274,7 +1326,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_conjure_flame')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8 + arcana_pattern_scroll_difficulty_adjustments_fire()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_conjure_flame')", "=", "1" ] },
                 {
@@ -1327,7 +1381,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_translocation')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "7 + arcana_pattern_scroll_difficulty_adjustments_lightning()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_translocation')", "=", "1" ] },
                 {
@@ -1380,7 +1436,9 @@
           "condition": { "math": [ "u_spell_level('arcana_magic_underwater_travel')", "<=", "0" ] },
           "effect": [
             {
-              "if": { "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8" ] },
+              "if": {
+                "math": [ "arcana_pattern_scroll_learning_equation()", ">=", "8 + arcana_pattern_scroll_difficulty_adjustments_water()" ]
+              },
               "then": [
                 { "math": [ "u_spell_level('arcana_magic_underwater_travel')", "=", "1" ] },
                 {
