@@ -180,7 +180,12 @@
       { "point": [ 0, 0, 0 ], "overmap": "cf_church_1" },
       { "point": [ 1, 0, 0 ], "overmap": "cf_church_2" },
       { "point": [ 0, 1, 0 ], "overmap": "cf_church_3" },
-      { "point": [ 1, 1, 0 ], "overmap": "cf_church_4" },
+      {
+        "point": [ 1, 1, 0 ],
+        "overmap": "cf_church_4",
+        "camp": "cleansing_flame",
+        "camp_name": "Rural Church Survivors"
+      },
       { "point": [ 0, 0, 1 ], "overmap": "cf_church_1_roof" },
       { "point": [ 1, 0, 1 ], "overmap": "cf_church_2_roof" },
       { "point": [ 0, 1, 1 ], "overmap": "cf_church_3_roof" },
