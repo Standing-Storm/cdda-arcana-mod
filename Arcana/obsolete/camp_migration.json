@@ -1,0 +1,6 @@
+[
+  {
+    "type": "camp_migration",
+    "camp_migrations": { "name": "Rural Church Survivors", "overmap_terrain": "cf_church_4", "faction": "cleansing_flame" }
+  }
+]
