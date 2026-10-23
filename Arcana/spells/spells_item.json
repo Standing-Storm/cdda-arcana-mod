@@ -477,8 +477,6 @@
     "flags": [ "NO_HANDS", "NO_LEGS", "SILENT" ],
     "effect_str": "effect_arcana_shrouded_amulet",
     "extra_effects": [ { "id": "arcana_item_amulet_exotic_empowered_sleepiness", "hit_self": true } ],
-    "min_damage": 1,
-    "max_damage": 1,
     "min_duration": 180000,
     "max_duration": 180000
   },
