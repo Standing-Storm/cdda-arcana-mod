@@ -495,11 +495,6 @@
     "flags": [ "BLIND_HARD", "SECRET" ]
   },
   {
-    "type": "recipe",
-    "result": "veilblade",
-    "obsolete": true
-  },
-  {
     "result": "chem_black_powder",
     "type": "recipe",
     "id_suffix": "magical",
