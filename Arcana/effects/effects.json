@@ -264,7 +264,6 @@
       "venom_weaken",
       "infected",
       "fungus",
-      "bleed",
       "common_cold",
       "flu",
       "tetanus",
@@ -284,7 +283,8 @@
       "pain_tick": [ 25 ],
       "pain_min": [ -5 ],
       "speed_mod": [ -10, -5 ]
-    }
+    },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -917,7 +917,7 @@
     "desc": [ "Unholy power fuels you, strengthening your body with an unnatural adrenaline surge." ],
     "remove_message": "You feel numb, hit with the sheer weight of the unnatural magic fading.",
     "decay_messages": [ [ "The blessing of the eclipse is waning.", "bad" ] ],
-    "blocks_effects": [ "bleed", "winded", "lack_sleep", "sleep", "redcells_anemia", "hypovolemia" ],
+    "blocks_effects": [ "winded", "lack_sleep", "sleep", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "max_duration": "120 m",
     "max_intensity": 120,
@@ -931,7 +931,8 @@
       "stamina_min": [ 20 ],
       "sleepiness_min": [ 1 ],
       "sleepiness_tick": [ 300 ]
-    }
+    },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -1033,7 +1034,6 @@
       "Immunity to debuffs such as blindness, bleeding, stunning, etc.  Targets additionally gain increased melee damage, accuracy, and dodge."
     ],
     "removes_effects": [
-      "bleed",
       "blind",
       "infected",
       "bite",
@@ -1051,7 +1051,6 @@
       "visuals"
     ],
     "blocks_effects": [
-      "bleed",
       "blind",
       "infected",
       "bite",
@@ -1079,7 +1078,8 @@
         ]
       }
     ],
-    "max_duration": "100 m"
+    "max_duration": "100 m",
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -1237,8 +1237,9 @@
   {
     "type": "effect_type",
     "id": "arcana_aegis_mending",
-    "blocks_effects": [ "bleed", "redcells_anemia", "hypovolemia" ],
-    "rating": "good"
+    "blocks_effects": [ "redcells_anemia", "hypovolemia" ],
+    "rating": "good",
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -1250,10 +1251,11 @@
   {
     "type": "effect_type",
     "id": "sword_mending",
-    "removes_effects": [ "bleed", "winded", "redcells_anemia", "hypovolemia" ],
+    "removes_effects": [ "winded", "redcells_anemia", "hypovolemia" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": { "pain_min": [ -6 ], "stamina_min": [ 60 ] }
+    "base_mods": { "pain_min": [ -6 ], "stamina_min": [ 60 ] },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -1496,7 +1498,7 @@
     "desc": [
       "Reduces the impact of Strange Anemia and mitigates its effects, outright preventing it if one uses the athame while under this effect, along with preventing wounds from bleeding.  Allows one to use the silver athame's sanguine rituals more freely."
     ],
-    "blocks_effects": [ "bleed", "blood_athame_side_effects" ],
+    "blocks_effects": [ "blood_athame_side_effects" ],
     "apply_message": "Something stirs in your veins as the staff's protective effect washes over you.",
     "decay_messages": [ [ "The effect of the staff's strange magic is waning.", "bad" ] ],
     "remove_message": "Your heart skips a beat briefly as your feel the staff's influence fade.",
@@ -1518,15 +1520,17 @@
       "thirst_chance_bot": [ 100 ],
       "thirst_tick": [ 600 ]
     },
-    "scaling_mods": { "str_mod": [ 0.02 ], "dex_mod": [ 0.02 ] }
+    "scaling_mods": { "str_mod": [ 0.02 ], "dex_mod": [ 0.02 ] },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
     "id": "sanguine_staff_mending",
-    "removes_effects": [ "bleed", "winded" ],
+    "removes_effects": [ "winded" ],
     "rating": "good",
     "max_duration": "15 s",
-    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "sleepiness_min": [ -100 ] }
+    "base_mods": { "pain_min": [ -20 ], "stamina_min": [ 200 ], "sleepiness_min": [ -100 ] },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -1538,7 +1542,6 @@
       "deaf",
       "infected",
       "bite",
-      "bleed",
       "poison",
       "badpoison",
       "venom_dmg",
@@ -1557,7 +1560,8 @@
       "h_mod_min": [ 0, -2 ],
       "pain_min": [ 0, 2 ],
       "hunger_min": [ 0, 5 ]
-    }
+    },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
@@ -1668,19 +1672,7 @@
     "max_duration": "30 m",
     "max_intensity": 30,
     "int_dur_factor": "1 m",
-    "removes_effects": [
-      "poison",
-      "badpoison",
-      "venom_dmg",
-      "venom_weaken",
-      "bite",
-      "infected",
-      "fungus",
-      "bleed",
-      "common_cold",
-      "flu",
-      "tetanus"
-    ],
+    "removes_effects": [ "poison", "badpoison", "venom_dmg", "venom_weaken", "bite", "infected", "fungus", "common_cold", "flu", "tetanus" ],
     "base_mods": {
       "stamina_min": [ 25 ],
       "pain_min": [ -1 ],
@@ -1691,7 +1683,8 @@
       "health_tick": [ 25 ],
       "h_mod_min": [ 1 ],
       "h_mod_tick": [ 25 ]
-    }
+    },
+    "flags": [ "BLEED_IMMUNE" ]
   },
   {
     "type": "effect_type",
