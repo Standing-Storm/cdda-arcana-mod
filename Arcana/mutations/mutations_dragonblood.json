@@ -285,6 +285,7 @@
           { "value": "BODYTEMP_SLEEP", "add": 0.25 },
           { "value": "REGEN_HP_AWAKE", "multiply": 0.5 },
           { "value": "REGEN_HP", "multiply": 0.25 },
+          { "value": "REGEN_WOUND", "multiply": 0.25 },
           { "value": "MENDING_MODIFIER", "multiply": 0.5 }
         ]
       }
@@ -317,6 +318,7 @@
           { "value": "BODYTEMP_SLEEP", "add": 0.5 },
           { "value": "REGEN_HP_AWAKE", "multiply": 1.0 },
           { "value": "REGEN_HP", "multiply": 0.5 },
+          { "value": "REGEN_WOUND", "multiply": 0.5 },
           { "value": "MENDING_MODIFIER", "multiply": 1 }
         ]
       }

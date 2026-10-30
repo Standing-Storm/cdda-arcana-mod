@@ -97,7 +97,7 @@
       {
         "condition": "ALWAYS",
         "mutations": [ "ARCANA_LIFE_SIGN_SUPPRESSION" ],
-        "values": [ { "value": "REGEN_HP", "multiply": -1.0 } ]
+        "values": [ { "value": "REGEN_HP", "multiply": -1.0 }, { "value": "REGEN_WOUND", "multiply": -1.0 } ]
       }
     ]
   },
