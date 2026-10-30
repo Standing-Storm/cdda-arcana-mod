@@ -310,7 +310,15 @@
     "rating": "good",
     "max_duration": "28 days",
     "base_mods": { "health_min": [ -1 ], "health_chance": [ 5 ], "health_tick": [ 1800 ] },
-    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": -0.2 }, { "value": "PAIN", "multiply": 0.25 } ] } ]
+    "enchantments": [
+      {
+        "values": [
+          { "value": "REGEN_HP", "multiply": -0.2 },
+          { "value": "REGEN_WOUND", "multiply": -0.2 },
+          { "value": "PAIN", "multiply": 0.25 }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
@@ -346,7 +354,7 @@
     "max_duration": "12 hours",
     "max_intensity": 720,
     "int_dur_factor": "1 m",
-    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": -0.75 } ] } ],
+    "enchantments": [ { "values": [ { "value": "REGEN_HP", "multiply": -0.75 }, { "value": "REGEN_WOUND", "multiply": -0.75 } ] } ],
     "removes_effects": [
       "poison",
       "badpoison",
@@ -1555,7 +1563,15 @@
     "type": "effect_type",
     "id": "effect_arcana_item_scroll_nature_healing_buff",
     "rating": "good",
-    "enchantments": [ { "values": [ { "value": "REGEN_HP_AWAKE", "multiply": 0.5 }, { "value": "REGEN_HP", "multiply": 3 } ] } ]
+    "enchantments": [
+      {
+        "values": [
+          { "value": "REGEN_HP_AWAKE", "multiply": 0.5 },
+          { "value": "REGEN_HP", "multiply": 3 },
+          { "value": "REGEN_WOUND", "multiply": 3 }
+        ]
+      }
+    ]
   },
   {
     "type": "effect_type",
