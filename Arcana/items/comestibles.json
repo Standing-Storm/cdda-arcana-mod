@@ -336,7 +336,6 @@
       "limb_power": 5,
       "head_power": 5,
       "torso_power": 5,
-      "bleed": 30,
       "bite": 0.95,
       "move_cost": 200,
       "effects": [ { "id": "potion_vulnerary", "duration": 300 } ]

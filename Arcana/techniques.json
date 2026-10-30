@@ -263,7 +263,8 @@
         "chance": 25,
         "duration": 60,
         "on_damage": true,
-        "message": "Your slash opens up bleeding gashes on %s!"
+        "message": "Your slash opens up bleeding gashes on %s!",
+        "condition": "npc_is_monster"
       }
     ],
     "flat_bonuses": [
@@ -307,26 +308,7 @@
     "reach_ok": false,
     "crit_ok": true,
     "attack_vectors": [ "vector_punch", "vector_palm", "vector_grasp" ],
-    "condition": {
-      "or": [
-        {
-          "and": [
-            "npc_is_character",
-            {
-              "or": [
-                { "u_has_effect": "bleed", "bodypart": "head" },
-                { "u_has_effect": "bleed", "bodypart": "torso" },
-                { "u_has_effect": "bleed", "bodypart": "arm_r" },
-                { "u_has_effect": "bleed", "bodypart": "arm_l" },
-                { "u_has_effect": "bleed", "bodypart": "leg_r" },
-                { "u_has_effect": "bleed", "bodypart": "leg_l" }
-              ]
-            }
-          ]
-        },
-        { "and": [ "npc_is_monster", { "npc_has_effect": "bleed" } ] }
-      ]
-    },
+    "condition": { "and": [ "npc_is_monster", { "npc_has_effect": "bleed" } ] },
     "eocs": [
       {
         "id": "EOC_ARCANA_BLOOD_KNIFE_BLOOD_DRINKER_GAIN_BLOOD_EMPOWERMENT",
@@ -356,7 +338,8 @@
         "chance": 75,
         "duration": 120,
         "on_damage": true,
-        "message": "Your slash opens up bleeding gashes on %s!"
+        "message": "Your slash opens up bleeding gashes on %s!",
+        "condition": "npc_is_monster"
       }
     ]
   },

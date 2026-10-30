@@ -125,7 +125,6 @@
       "limb_power": 15,
       "head_power": 15,
       "torso_power": 15,
-      "bleed": 15,
       "bite": 0.5,
       "move_cost": 150,
       "effects": [ { "id": "talisman_warding", "duration": 600 }, { "id": "effect_forest_talisman_aftermath", "duration": 3600 } ]

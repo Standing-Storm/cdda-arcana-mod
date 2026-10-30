@@ -120,7 +120,6 @@
         "cooldown": 2,
         "move_cost": 100,
         "damage_max_instance": [ { "damage_type": "cut", "amount": 8 } ],
-        "effects": [ { "id": "bleed", "duration": [ 10, 40 ], "chance": 65, "affect_hit_bp": true } ],
         "hit_dmg_u": "%1$s claws at your %2$s!",
         "hit_dmg_npc": "%1$s claws at <npcname>!",
         "miss_msg_u": "%1$s claws at you, but you dodge!",

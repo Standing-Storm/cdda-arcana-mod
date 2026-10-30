@@ -150,7 +150,6 @@
     "//": "Full damage with no spike effect, for single-target and line spells.",
     "min_damage": { "math": [ "( u_spell_level('arcana_mark_infernal_flame') * 7 ) + 50" ] },
     "max_damage": { "math": [ "( u_spell_level('arcana_mark_infernal_flame') * 12.5 ) + 120" ] },
-    "effect_str": "bleed",
     "min_duration": 1400,
     "max_duration": 3500,
     "duration_increment": 420,
