@@ -13,16 +13,19 @@
       { "id": "arcana_item_generate_blood_essence", "hit_self": true }
     ],
     "affected_body_parts": [ "torso" ],
-    "effect_str": "bleed",
-    "effect": "attack",
+    "effect_str": "EOC_ATHAME_SANGUINE_ART",
+    "effect": "effect_on_condition",
     "shape": "blast",
     "base_casting_time": 30000,
-    "final_casting_time": 30000,
-    "min_damage": 1,
-    "max_damage": 3,
-    "damage_type": "pure",
-    "min_duration": 30000,
-    "max_duration": 30000
+    "final_casting_time": 30000
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_ATHAME_SANGUINE_ART",
+    "effect": [
+      { "u_pick_bodypart": { "context_val": "bodypart" }, "pick_random": true },
+      { "u_add_wound": { "context_val": "bodypart" }, "wound_id": "bleeding_cut_medium" }
+    ]
   },
   {
     "id": "arcana_item_athame_sanguine_art_sleepiness",
@@ -1531,7 +1534,7 @@
     ],
     "valid_targets": [ "hostile", "ground" ],
     "flags": [ "RANDOM_DAMAGE", "RANDOM_DURATION", "NO_HANDS", "NO_LEGS", "SILENT" ],
-    "effect_str": "bleed",
+    "damage_type": "cut",
     "min_damage": 100,
     "max_damage": 300,
     "min_range": 40,
