@@ -4,7 +4,7 @@
 - A new skill: Incantation! Arcana is used for crafting enchanted items and studying the basis of the occult, and incantation is used for actually performing magical rituals. 
 - Rebalancing of some effects (mostly to make them weaker)
 - Added magic_type and class traits for Arcane Blessings and Magic Signs, so they'll be categorized properly in the powers menu.
-- Learning sorcery is hard! Using a pattern scroll has a chance to fail, affected by your Arcana skill, so the choice is to keep the Magic Seals (which always work) or process them into a Pattern Scroll, which might teach you the magic but you could fail to learn it.
+- Learning sorcery is hard! Using a pattern scroll has a chance to fail, affected by your Incantation skill, so the choice is to keep the Magic Seals (which always work) or process them into a Pattern Scroll, which might teach you the magic but you could fail to learn it.
   - Once you learn it, you can study the pattern scroll to increase the spell's level.
 - Recipes have been reshuffled and the number of books has been expanded. Also, recipes generally are not auto-learned--if determining how to do magic from first principles was easy, you wouldn't need to be an occult weirdo to do it. 
   - Autolearning remains possible Innawood
