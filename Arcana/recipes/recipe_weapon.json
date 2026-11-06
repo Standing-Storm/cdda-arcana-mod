@@ -564,5 +564,30 @@
       [ [ "material_quicklime", 1 ], [ "lye", 1 ], [ "lye_powder", 30 ] ]
     ],
     "flags": [ "SECRET" ]
+  },
+  {
+    "result": "veilblade",
+    "type": "recipe",
+    "category": "CC_ARCANA",
+    "subcategory": "CSC_ARCANA_WEAPON",
+    "skill_used": "magic",
+    "difficulty": 8,
+    "time": "6 h",
+    "activity_level": "LIGHT_EXERCISE",
+    "book_learn": [ [ "book_recipe_veilblade", 9 ] ],
+    "using": [ [ "arcana_purification_standard", 1 ] ],
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "proficiencies": [
+      { "proficiency": "prof_arcana_purification", "required": true },
+      { "proficiency": "prof_arcana_thaumatology", "required": true }
+    ],
+    "tools": [
+      [ [ "book_recipe_veilblade", -1 ] ],
+      [ [ "holy_symbol", -1 ], [ "holy_symbol_wood", -1 ] ],
+      [ [ "charm_bone", -1 ], [ "small_relic", -1 ], [ "amulet_exotic", -1 ], [ "thunder_sigil", -1 ] ],
+      [ [ "hexenhammer", -1 ], [ "sun_sword", -1 ] ]
+    ],
+    "components": [ [ [ "stormbringer", 1 ] ], [ [ "salt", 100 ] ], [ [ "essence_blood", 12 ] ], [ [ "essence_pure", 6 ] ] ],
+    "flags": [ "SECRET" ]
   }
 ]
